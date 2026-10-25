@@ -9,6 +9,20 @@ const scheme=id=>{const p=programs.find(p=>p.id===id);assert.ok(p,`scheme ${id} 
 const family=birthDate=>getFamilyChildren({children:[{id:'child-1',birthDate}]},'2026-10-25T00:00:00Z');
 const manual=(months,schoolGrade)=>[{id:'manual',birthDate:'',months,label:'',ordinal:1,...(schoolGrade===undefined?{}:{schoolGrade})}];
 
+test('an uncertain birthday boundary is not treated as a full extra month of eligibility',()=>{
+ const postpartum={minAgeMonths:0,maxAgeMonths:12,uncertainAgeRanges:[{minAgeMonths:12,maxAgeMonths:12}]};
+ assert.equal(ageTargetStatus(postpartum,manual(11)),'matching');
+ assert.equal(ageTargetStatus(postpartum,manual(12)),'unknown');
+ assert.equal(ageTargetStatus(postpartum,manual(13)),'not-matching');
+ const confirmedInfant={...postpartum,maxAgeMonths:11,ageGroups:['0歳']};
+ assert.equal(ageTargetStatus(confirmedInfant,manual(11)),'matching');
+ assert.equal(ageTargetStatus(confirmedInfant,manual(12)),'unknown');
+ assert.equal(ageTargetStatus(confirmedInfant,manual(13)),'not-matching');
+ assert.equal(ageTargetStatus(postpartum,[...manual(12),{id:'sibling',birthDate:'',months:3,label:'',ordinal:2}]),'matching');
+ const graded={...postpartum,maxSchoolGrade:6};
+ assert.equal(ageTargetStatus(graded,manual(12,7)),'not-matching');
+});
+
 test('all published string-form application steps are searchable',()=>{
  const withStringSteps=programs.filter(p=>p.steps?.some(step=>typeof step==='string'));
  assert.ok(withStringSteps.length>0);

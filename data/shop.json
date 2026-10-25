@@ -1,6 +1,6 @@
 {
   "asOf": "2026-10-25T08:57:48.228Z",
-  "updatedAt": "2026-10-25T14:16:04.393734Z",
+  "updatedAt": "2026-10-25T14:29:44.295Z",
   "products": [
     {
       "id": "haihai-810",
@@ -1533,22 +1533,42 @@
           "totalGrams": 820,
           "source": "https://www.yodobashi.com/product/100000001005511475/",
           "shippingSource": "https://www.yodobashi.com/product/100000001005511475/",
-          "checkedAt": "2026-10-25T12:00:00Z",
-          "condition": "単缶2,000円・送料0円の表示。",
-          "status": "要再確認",
+          "checkedAt": "2026-10-25T14:25:35.857725Z",
+          "condition": "通常購入1商品。税込価格・在庫表示・無料配送表示を確認。還元ポイントは差し引かない。配送先や注文時の条件を販売店で確認。",
+          "status": "在庫あり",
           "region": "全国・送料の例外地域あり",
-          "verified": false,
-          "verificationType": "掲載例",
+          "verified": true,
+          "verificationType": "公式の商品ページ本文を手動で再確認",
           "unitPrice": 243.9,
           "unitLabel": "100g",
           "discountRate": 0,
           "couponYen": 0,
           "live": false,
-          "refreshEligible": true,
-          "evidenceNote": "2026年10月25日に参照した掲載例。購入時の価格を保証するものではありません。",
+          "refreshEligible": false,
+          "evidenceNote": "公式商品ページの本文で商品名・規格・税込価格・在庫・無料配送を確認。自動取得には頼らず、次回も手動の確認が必要。",
           "total": 2000,
-          "lastAttemptAt": "2026-10-25T13:21:25.792Z",
-          "refreshError": "unambiguous_product_price_not_found"
+          "lastAttemptAt": "2026-10-25T14:25:35.857725Z",
+          "available": true,
+          "stockVerified": true,
+          "priceVerified": true,
+          "stockCheckedAt": "2026-10-25T14:25:35.857725Z",
+          "manualRefreshRequired": true,
+          "currency": "JPY",
+          "conditionClass": "new",
+          "purchaseChannel": "online",
+          "sourceEvidence": {
+            "kind": "official-product-page-body",
+            "sourceUrl": "https://www.yodobashi.com/product/100000001005511475/",
+            "checkedAt": "2026-10-25T14:25:35.857725Z",
+            "matchedFields": [
+              "商品名",
+              "容量・規格",
+              "入数"
+            ],
+            "price": 2000,
+            "available": true,
+            "shipping": 0
+          }
         },
         {
           "id": "nishi_pure_case",
@@ -2328,20 +2348,40 @@
           "quantity": 1,
           "totalGrams": null,
           "source": "https://www.yodobashi.com/product/100000001006947521/",
-          "checkedAt": "2026-10-25T12:00:00Z",
-          "condition": "税込・通常購入。還元ポイントは差し引かない。掲載の配送条件を購入時に確認。",
-          "status": "要再確認",
+          "checkedAt": "2026-10-25T14:25:35.857725Z",
+          "condition": "通常購入1商品。税込価格・在庫表示・無料配送表示を確認。還元ポイントは差し引かない。配送先や注文時の条件を販売店で確認。",
+          "status": "在庫あり",
           "region": "全国",
-          "verified": false,
-          "verificationType": "掲載例",
+          "verified": true,
+          "verificationType": "公式の商品ページ本文を手動で再確認",
           "unitPrice": 2500,
           "unitLabel": "本",
           "live": false,
-          "refreshEligible": true,
-          "evidenceNote": "公開された商品ページの掲載額を参照。更新前のキャッシュを含む場合があります。",
+          "refreshEligible": false,
+          "evidenceNote": "公式商品ページの本文で商品名・規格・税込価格・在庫・無料配送を確認。自動取得には頼らず、次回も手動の確認が必要。",
           "total": 2500,
-          "lastAttemptAt": "2026-10-25T13:21:25.792Z",
-          "refreshError": "unambiguous_product_price_not_found"
+          "lastAttemptAt": "2026-10-25T14:25:35.857725Z",
+          "available": true,
+          "stockVerified": true,
+          "priceVerified": true,
+          "stockCheckedAt": "2026-10-25T14:25:35.857725Z",
+          "manualRefreshRequired": true,
+          "currency": "JPY",
+          "conditionClass": "new",
+          "purchaseChannel": "online",
+          "sourceEvidence": {
+            "kind": "official-product-page-body",
+            "sourceUrl": "https://www.yodobashi.com/product/100000001006947521/",
+            "checkedAt": "2026-10-25T14:25:35.857725Z",
+            "matchedFields": [
+              "商品名",
+              "容量・規格",
+              "入数"
+            ],
+            "price": 2500,
+            "available": true,
+            "shipping": 0
+          }
         },
         {
           "id": "bottle-bonyu-glass240-ヨドバシカメラ-pickup-v4",
@@ -2475,6 +2515,75 @@
           "refreshEligible": false,
           "total": 2500,
           "jan": "4902508024488"
+        },
+        {
+          "id": "continue-matsukiyo-bottle-bonyu-glass240",
+          "store": "マツキヨココカラ",
+          "source": "https://www.matsukiyococokara-online.com/store/catalog/product/view/id/4902508024488",
+          "mode": "配送",
+          "purchaseChannel": "online",
+          "price": 2860,
+          "basePrice": 2860,
+          "shipping": 0,
+          "quantity": 1,
+          "totalGrams": null,
+          "unitLabel": "本",
+          "total": 2860,
+          "available": true,
+          "stockVerified": true,
+          "priceVerified": true,
+          "verified": true,
+          "checkedAt": "2026-10-25T14:24:03.501941Z",
+          "stockCheckedAt": "2026-10-25T14:24:03.501941Z",
+          "status": "在庫あり",
+          "currency": "JPY",
+          "conditionClass": "new",
+          "region": "本州・四国・九州。北海道・沖縄県は送料が異なる",
+          "condition": "通常購入1商品。税込価格とJAN・規格を照合。税込2480円以上で通常送料0円、未満は本州等550円。北海道770円・沖縄1100円は別条件。ポイントやクーポンは差し引かない。",
+          "jan": "4902508024488",
+          "verificationType": "公式の商品ページの本文と公開価格データを確認",
+          "refreshEligible": false,
+          "manualRefreshRequired": true,
+          "shippingSource": "https://www.matsukiyococokara-online.com/store/catalog/product/view/id/4902508024488",
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 550,
+            "freeFrom": 2480,
+            "verified": true,
+            "source": "https://www.matsukiyococokara-online.com/store/catalog/product/view/id/4902508024488",
+            "checkedAt": "2026-10-25T14:25:35.857725Z",
+            "description": "本州・四国・九州は税込2480円未満550円、以上0円。北海道・沖縄県を除く。"
+          },
+          "shippingRegions": [
+            {
+              "region": "北海道",
+              "fee": 770,
+              "freeFrom": 2480
+            },
+            {
+              "region": "沖縄県",
+              "fee": 1100,
+              "freeFrom": 2480
+            }
+          ],
+          "sourceEvidence": {
+            "kind": "official-product-page-body-and-published-product-data",
+            "sourceUrl": "https://www.matsukiyococokara-online.com/store/catalog/product/view/id/4902508024488",
+            "checkedAt": "2026-10-25T14:24:03.501941Z",
+            "matchedFields": [
+              "JAN",
+              "商品名",
+              "容量・規格",
+              "入数"
+            ],
+            "productName": "母乳実感哺乳びん 耐熱ガラス ２４０ｍｌ ピジョン",
+            "jan": "4902508024488",
+            "price": 2860,
+            "available": true,
+            "shippingFee": 550,
+            "freeShippingThreshold": 2480
+          },
+          "unitPrice": 2860
         }
       ],
       "unitType": "本",
@@ -2514,20 +2623,40 @@
           "quantity": 1,
           "totalGrams": 300,
           "source": "https://www.yodobashi.com/product/100000001006947561/",
-          "checkedAt": "2026-10-25T12:00:00Z",
-          "condition": "税込・通常購入。還元ポイントは差し引かない。掲載の配送条件を購入時に確認。",
-          "status": "要再確認",
+          "checkedAt": "2026-10-25T14:25:35.857725Z",
+          "condition": "通常購入1商品。税込価格・在庫表示・無料配送表示を確認。還元ポイントは差し引かない。配送先や注文時の条件を販売店で確認。",
+          "status": "在庫あり",
           "region": "全国",
-          "verified": false,
-          "verificationType": "掲載例",
+          "verified": true,
+          "verificationType": "公式の商品ページ本文を手動で再確認",
           "unitPrice": 253.67,
           "unitLabel": "100g",
           "live": false,
-          "refreshEligible": true,
-          "evidenceNote": "公開された商品ページの掲載額を参照。更新前のキャッシュを含む場合があります。",
+          "refreshEligible": false,
+          "evidenceNote": "公式商品ページの本文で商品名・規格・税込価格・在庫・無料配送を確認。自動取得には頼らず、次回も手動の確認が必要。",
           "total": 761,
-          "lastAttemptAt": "2026-10-25T13:21:25.792Z",
-          "refreshError": "unambiguous_product_price_not_found"
+          "lastAttemptAt": "2026-10-25T14:25:35.857725Z",
+          "available": true,
+          "stockVerified": true,
+          "priceVerified": true,
+          "stockCheckedAt": "2026-10-25T14:25:35.857725Z",
+          "manualRefreshRequired": true,
+          "currency": "JPY",
+          "conditionClass": "new",
+          "purchaseChannel": "online",
+          "sourceEvidence": {
+            "kind": "official-product-page-body",
+            "sourceUrl": "https://www.yodobashi.com/product/100000001006947561/",
+            "checkedAt": "2026-10-25T14:25:35.857725Z",
+            "matchedFields": [
+              "商品名",
+              "容量・規格",
+              "入数"
+            ],
+            "price": 761,
+            "available": true,
+            "shipping": 0
+          }
         },
         {
           "id": "lotion-pigeon300-ヨドバシカメラ-pickup-v4",
@@ -2638,6 +2767,75 @@
           "refreshEligible": false,
           "total": 761,
           "jan": "4902508084550"
+        },
+        {
+          "id": "continue-matsukiyo-lotion-pigeon300",
+          "store": "マツキヨココカラ",
+          "source": "https://www.matsukiyococokara-online.com/store/catalog/product/view/id/4902508084550",
+          "mode": "配送",
+          "purchaseChannel": "online",
+          "price": 987,
+          "basePrice": 987,
+          "shipping": 550,
+          "quantity": 1,
+          "totalGrams": 300,
+          "unitLabel": "100g",
+          "total": 1537,
+          "available": true,
+          "stockVerified": true,
+          "priceVerified": true,
+          "verified": true,
+          "checkedAt": "2026-10-25T14:24:03.713024Z",
+          "stockCheckedAt": "2026-10-25T14:24:03.713024Z",
+          "status": "在庫あり",
+          "currency": "JPY",
+          "conditionClass": "new",
+          "region": "本州・四国・九州。北海道・沖縄県は送料が異なる",
+          "condition": "通常購入1商品。税込価格とJAN・規格を照合。税込2480円以上で通常送料0円、未満は本州等550円。北海道770円・沖縄1100円は別条件。ポイントやクーポンは差し引かない。",
+          "jan": "4902508084550",
+          "verificationType": "公式の商品ページの本文と公開価格データを確認",
+          "refreshEligible": false,
+          "manualRefreshRequired": true,
+          "shippingSource": "https://www.matsukiyococokara-online.com/store/catalog/product/view/id/4902508084550",
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 550,
+            "freeFrom": 2480,
+            "verified": true,
+            "source": "https://www.matsukiyococokara-online.com/store/catalog/product/view/id/4902508084550",
+            "checkedAt": "2026-10-25T14:25:35.857725Z",
+            "description": "本州・四国・九州は税込2480円未満550円、以上0円。北海道・沖縄県を除く。"
+          },
+          "shippingRegions": [
+            {
+              "region": "北海道",
+              "fee": 770,
+              "freeFrom": 2480
+            },
+            {
+              "region": "沖縄県",
+              "fee": 1100,
+              "freeFrom": 2480
+            }
+          ],
+          "sourceEvidence": {
+            "kind": "official-product-page-body-and-published-product-data",
+            "sourceUrl": "https://www.matsukiyococokara-online.com/store/catalog/product/view/id/4902508084550",
+            "checkedAt": "2026-10-25T14:24:03.713024Z",
+            "matchedFields": [
+              "JAN",
+              "商品名",
+              "容量・規格",
+              "入数"
+            ],
+            "productName": "ベビーミルクローション ３００ｇ ピジョン",
+            "jan": "4902508084550",
+            "price": 987,
+            "available": true,
+            "shippingFee": 550,
+            "freeShippingThreshold": 2480
+          },
+          "unitPrice": 512.33
         }
       ],
       "unitType": "個",
@@ -2677,20 +2875,40 @@
           "quantity": 1,
           "totalGrams": null,
           "source": "https://www.yodobashi.com/product/100000001006947550/",
-          "checkedAt": "2026-10-25T12:00:00Z",
-          "condition": "税込・通常購入。還元ポイントは差し引かない。掲載の配送条件を購入時に確認。",
-          "status": "要再確認",
+          "checkedAt": "2026-10-25T14:25:35.857725Z",
+          "condition": "通常購入1商品。税込価格・在庫表示・無料配送表示を確認。還元ポイントは差し引かない。配送先や注文時の条件を販売店で確認。",
+          "status": "在庫あり",
           "region": "全国",
-          "verified": false,
-          "verificationType": "掲載例",
+          "verified": true,
+          "verificationType": "公式の商品ページ本文を手動で再確認",
           "unitPrice": 931,
           "unitLabel": "個",
           "live": false,
-          "refreshEligible": true,
-          "evidenceNote": "公開された商品ページの掲載額を参照。更新前のキャッシュを含む場合があります。",
+          "refreshEligible": false,
+          "evidenceNote": "公式商品ページの本文で商品名・規格・税込価格・在庫・無料配送を確認。自動取得には頼らず、次回も手動の確認が必要。",
           "total": 931,
-          "lastAttemptAt": "2026-10-25T13:21:25.792Z",
-          "refreshError": "unambiguous_product_price_not_found"
+          "lastAttemptAt": "2026-10-25T14:25:35.857725Z",
+          "available": true,
+          "stockVerified": true,
+          "priceVerified": true,
+          "stockCheckedAt": "2026-10-25T14:25:35.857725Z",
+          "manualRefreshRequired": true,
+          "currency": "JPY",
+          "conditionClass": "new",
+          "purchaseChannel": "online",
+          "sourceEvidence": {
+            "kind": "official-product-page-body",
+            "sourceUrl": "https://www.yodobashi.com/product/100000001006947550/",
+            "checkedAt": "2026-10-25T14:25:35.857725Z",
+            "matchedFields": [
+              "商品名",
+              "容量・規格",
+              "入数"
+            ],
+            "price": 931,
+            "available": true,
+            "shipping": 0
+          }
         },
         {
           "id": "soap-pigeon-moist500-ヨドバシカメラ-pickup-v4",
@@ -2823,6 +3041,75 @@
           "refreshEligible": false,
           "total": 931,
           "jan": "4902508084420"
+        },
+        {
+          "id": "continue-matsukiyo-soap-pigeon-moist500",
+          "store": "マツキヨココカラ",
+          "source": "https://www.matsukiyococokara-online.com/store/catalog/product/view/id/4902508084420",
+          "mode": "配送",
+          "purchaseChannel": "online",
+          "price": 1188,
+          "basePrice": 1188,
+          "shipping": 550,
+          "quantity": 1,
+          "totalGrams": null,
+          "unitLabel": "個",
+          "total": 1738,
+          "available": true,
+          "stockVerified": true,
+          "priceVerified": true,
+          "verified": true,
+          "checkedAt": "2026-10-25T14:24:03.263753Z",
+          "stockCheckedAt": "2026-10-25T14:24:03.263753Z",
+          "status": "在庫あり",
+          "currency": "JPY",
+          "conditionClass": "new",
+          "region": "本州・四国・九州。北海道・沖縄県は送料が異なる",
+          "condition": "通常購入1商品。税込価格とJAN・規格を照合。税込2480円以上で通常送料0円、未満は本州等550円。北海道770円・沖縄1100円は別条件。ポイントやクーポンは差し引かない。",
+          "jan": "4902508084420",
+          "verificationType": "公式の商品ページの本文と公開価格データを確認",
+          "refreshEligible": false,
+          "manualRefreshRequired": true,
+          "shippingSource": "https://www.matsukiyococokara-online.com/store/catalog/product/view/id/4902508084420",
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 550,
+            "freeFrom": 2480,
+            "verified": true,
+            "source": "https://www.matsukiyococokara-online.com/store/catalog/product/view/id/4902508084420",
+            "checkedAt": "2026-10-25T14:25:35.857725Z",
+            "description": "本州・四国・九州は税込2480円未満550円、以上0円。北海道・沖縄県を除く。"
+          },
+          "shippingRegions": [
+            {
+              "region": "北海道",
+              "fee": 770,
+              "freeFrom": 2480
+            },
+            {
+              "region": "沖縄県",
+              "fee": 1100,
+              "freeFrom": 2480
+            }
+          ],
+          "sourceEvidence": {
+            "kind": "official-product-page-body-and-published-product-data",
+            "sourceUrl": "https://www.matsukiyococokara-online.com/store/catalog/product/view/id/4902508084420",
+            "checkedAt": "2026-10-25T14:24:03.263753Z",
+            "matchedFields": [
+              "JAN",
+              "商品名",
+              "容量・規格",
+              "入数"
+            ],
+            "productName": "全身泡ソープ しっとりＮ ５００ｍｌ ピジョン",
+            "jan": "4902508084420",
+            "price": 1188,
+            "available": true,
+            "shippingFee": 550,
+            "freeShippingThreshold": 2480
+          },
+          "unitPrice": 1738
         }
       ],
       "unitType": "個",
@@ -2863,20 +3150,40 @@
           "quantity": 1,
           "totalGrams": 160,
           "source": "https://www.yodobashi.com/product/100000001003698561/",
-          "checkedAt": "2026-10-25T12:00:00Z",
-          "condition": "税込・通常購入。還元ポイントは差し引かない。掲載の配送条件を購入時に確認。",
-          "status": "要再確認",
+          "checkedAt": "2026-10-25T14:25:35.857725Z",
+          "condition": "通常購入1商品。税込価格・在庫表示・無料配送表示を確認。還元ポイントは差し引かない。配送先や注文時の条件を販売店で確認。",
+          "status": "在庫あり",
           "region": "全国",
-          "verified": false,
-          "verificationType": "掲載例",
+          "verified": true,
+          "verificationType": "公式の商品ページ本文を手動で再確認",
           "unitPrice": 183.75,
           "unitLabel": "100g",
           "live": false,
-          "refreshEligible": true,
-          "evidenceNote": "公開された商品ページの掲載額を参照。更新前のキャッシュを含む場合があります。",
+          "refreshEligible": false,
+          "evidenceNote": "公式商品ページの本文で商品名・規格・税込価格・在庫・無料配送を確認。自動取得には頼らず、次回も手動の確認が必要。",
           "total": 294,
-          "lastAttemptAt": "2026-10-25T13:21:25.792Z",
-          "refreshError": "unambiguous_product_price_not_found"
+          "lastAttemptAt": "2026-10-25T14:25:35.857725Z",
+          "available": true,
+          "stockVerified": true,
+          "priceVerified": true,
+          "stockCheckedAt": "2026-10-25T14:25:35.857725Z",
+          "manualRefreshRequired": true,
+          "currency": "JPY",
+          "conditionClass": "new",
+          "purchaseChannel": "online",
+          "sourceEvidence": {
+            "kind": "official-product-page-body",
+            "sourceUrl": "https://www.yodobashi.com/product/100000001003698561/",
+            "checkedAt": "2026-10-25T14:25:35.857725Z",
+            "matchedFields": [
+              "商品名",
+              "容量・規格",
+              "入数"
+            ],
+            "price": 294,
+            "available": true,
+            "shipping": 0
+          }
         },
         {
           "id": "meal-wakodo-wafu160-ヨドバシカメラ-pickup-v4",
@@ -2963,20 +3270,40 @@
           "quantity": 12,
           "totalGrams": null,
           "source": "https://www.yodobashi.com/product/100000001009564425/",
-          "checkedAt": "2026-10-25T12:00:00Z",
-          "condition": "税込・通常購入。還元ポイントは差し引かない。掲載の配送条件を購入時に確認。",
-          "status": "要再確認",
+          "checkedAt": "2026-10-25T14:25:35.857725Z",
+          "condition": "通常購入1商品。税込価格・在庫表示・無料配送表示を確認。還元ポイントは差し引かない。配送先や注文時の条件を販売店で確認。",
+          "status": "在庫あり",
           "region": "全国",
-          "verified": false,
-          "verificationType": "掲載例",
+          "verified": true,
+          "verificationType": "公式の商品ページ本文を手動で再確認",
           "unitPrice": 62.33,
           "unitLabel": "本",
           "live": false,
-          "refreshEligible": true,
-          "evidenceNote": "公開された商品ページの掲載額を参照。更新前のキャッシュを含む場合があります。",
+          "refreshEligible": false,
+          "evidenceNote": "公式商品ページの本文で商品名・規格・税込価格・在庫・無料配送を確認。自動取得には頼らず、次回も手動の確認が必要。",
           "total": 748,
-          "lastAttemptAt": "2026-10-25T13:21:25.792Z",
-          "refreshError": "unambiguous_product_price_not_found"
+          "lastAttemptAt": "2026-10-25T14:25:35.857725Z",
+          "available": true,
+          "stockVerified": true,
+          "priceVerified": true,
+          "stockCheckedAt": "2026-10-25T14:25:35.857725Z",
+          "manualRefreshRequired": true,
+          "currency": "JPY",
+          "conditionClass": "new",
+          "purchaseChannel": "online",
+          "sourceEvidence": {
+            "kind": "official-product-page-body",
+            "sourceUrl": "https://www.yodobashi.com/product/100000001009564425/",
+            "checkedAt": "2026-10-25T14:25:35.857725Z",
+            "matchedFields": [
+              "商品名",
+              "容量・規格",
+              "入数"
+            ],
+            "price": 748,
+            "available": true,
+            "shipping": 0
+          }
         },
         {
           "id": "pencil-palette-k56532b-ヨドバシカメラ-pickup-v4",
@@ -3166,20 +3493,40 @@
           "quantity": 1,
           "totalGrams": null,
           "source": "https://www.yodobashi.com/product/100000001001593424/",
-          "checkedAt": "2026-10-25T12:00:00Z",
-          "condition": "税込・通常購入。還元ポイントは差し引かない。掲載の配送条件を購入時に確認。",
-          "status": "要再確認",
+          "checkedAt": "2026-10-25T14:25:35.857725Z",
+          "condition": "通常購入1商品。税込価格・在庫表示・無料配送表示を確認。還元ポイントは差し引かない。配送先や注文時の条件を販売店で確認。",
+          "status": "在庫あり",
           "region": "全国",
-          "verified": false,
-          "verificationType": "掲載例",
+          "verified": true,
+          "verificationType": "公式の商品ページ本文を手動で再確認",
           "unitPrice": 1590,
           "unitLabel": "セット",
           "live": false,
-          "refreshEligible": true,
-          "evidenceNote": "公開された商品ページの掲載額を参照。更新前のキャッシュを含む場合があります。",
+          "refreshEligible": false,
+          "evidenceNote": "公式商品ページの本文で商品名・規格・税込価格・在庫・無料配送を確認。自動取得には頼らず、次回も手動の確認が必要。",
           "total": 1590,
-          "lastAttemptAt": "2026-10-25T13:21:25.792Z",
-          "refreshError": "unambiguous_product_price_not_found"
+          "lastAttemptAt": "2026-10-25T14:25:35.857725Z",
+          "available": true,
+          "stockVerified": true,
+          "priceVerified": true,
+          "stockCheckedAt": "2026-10-25T14:25:35.857725Z",
+          "manualRefreshRequired": true,
+          "currency": "JPY",
+          "conditionClass": "new",
+          "purchaseChannel": "online",
+          "sourceEvidence": {
+            "kind": "official-product-page-body",
+            "sourceUrl": "https://www.yodobashi.com/product/100000001001593424/",
+            "checkedAt": "2026-10-25T14:25:35.857725Z",
+            "matchedFields": [
+              "商品名",
+              "容量・規格",
+              "入数"
+            ],
+            "price": 1590,
+            "available": true,
+            "shipping": 0
+          }
         },
         {
           "id": "crayon-sankaku-fyl12-ヨドバシカメラ-pickup-v4",
@@ -9440,6 +9787,75 @@
           "condition": "東京都（北海道・沖縄・離島の条件は販売店案内で別途確認）",
           "id": "primary-nail-pigeon-3m-72eacbc99c24",
           "unitLabel": "個"
+        },
+        {
+          "id": "continue-matsukiyo-nail-pigeon-3m",
+          "store": "マツキヨココカラ",
+          "source": "https://www.matsukiyococokara-online.com/store/catalog/product/view/id/4902508151061",
+          "mode": "配送",
+          "purchaseChannel": "online",
+          "price": 924,
+          "basePrice": 924,
+          "shipping": 550,
+          "quantity": 1,
+          "totalGrams": null,
+          "unitLabel": "個",
+          "total": 1474,
+          "available": true,
+          "stockVerified": true,
+          "priceVerified": true,
+          "verified": true,
+          "checkedAt": "2026-10-25T14:24:12.382265Z",
+          "stockCheckedAt": "2026-10-25T14:24:12.382265Z",
+          "status": "在庫あり",
+          "currency": "JPY",
+          "conditionClass": "new",
+          "region": "本州・四国・九州。北海道・沖縄県は送料が異なる",
+          "condition": "通常購入1商品。税込価格とJAN・規格を照合。税込2480円以上で通常送料0円、未満は本州等550円。北海道770円・沖縄1100円は別条件。ポイントやクーポンは差し引かない。",
+          "jan": "4902508151061",
+          "verificationType": "公式の商品ページの本文と公開価格データを確認",
+          "refreshEligible": false,
+          "manualRefreshRequired": true,
+          "shippingSource": "https://www.matsukiyococokara-online.com/store/catalog/product/view/id/4902508151061",
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 550,
+            "freeFrom": 2480,
+            "verified": true,
+            "source": "https://www.matsukiyococokara-online.com/store/catalog/product/view/id/4902508151061",
+            "checkedAt": "2026-10-25T14:25:35.857725Z",
+            "description": "本州・四国・九州は税込2480円未満550円、以上0円。北海道・沖縄県を除く。"
+          },
+          "shippingRegions": [
+            {
+              "region": "北海道",
+              "fee": 770,
+              "freeFrom": 2480
+            },
+            {
+              "region": "沖縄県",
+              "fee": 1100,
+              "freeFrom": 2480
+            }
+          ],
+          "sourceEvidence": {
+            "kind": "official-product-page-body-and-published-product-data",
+            "sourceUrl": "https://www.matsukiyococokara-online.com/store/catalog/product/view/id/4902508151061",
+            "checkedAt": "2026-10-25T14:24:12.382265Z",
+            "matchedFields": [
+              "JAN",
+              "商品名",
+              "容量・規格",
+              "入数"
+            ],
+            "productName": "ベビーつめきりハサミ １個 ピジョン",
+            "jan": "4902508151061",
+            "price": 924,
+            "available": true,
+            "shippingFee": 550,
+            "freeShippingThreshold": 2480
+          },
+          "unitPrice": 1474
         }
       ],
       "imageUrl": "https://image.yodobashi.com/product/100/000/001/003/216/399/100000001003216399_10203_003.jpg",
@@ -11293,6 +11709,75 @@
           "refreshEligible": false,
           "total": 1870,
           "unitPrice": 935
+        },
+        {
+          "id": "continue-matsukiyo-nipple-bonyu-s2",
+          "store": "マツキヨココカラ",
+          "source": "https://www.matsukiyococokara-online.com/store/catalog/product/view/id/4902508024822",
+          "mode": "配送",
+          "purchaseChannel": "online",
+          "price": 1870,
+          "basePrice": 1870,
+          "shipping": 550,
+          "quantity": 2,
+          "totalGrams": null,
+          "unitLabel": "個",
+          "total": 2420,
+          "available": true,
+          "stockVerified": true,
+          "priceVerified": true,
+          "verified": true,
+          "checkedAt": "2026-10-25T14:24:11.911539Z",
+          "stockCheckedAt": "2026-10-25T14:24:11.911539Z",
+          "status": "在庫あり",
+          "currency": "JPY",
+          "conditionClass": "new",
+          "region": "本州・四国・九州。北海道・沖縄県は送料が異なる",
+          "condition": "通常購入1商品。税込価格とJAN・規格を照合。税込2480円以上で通常送料0円、未満は本州等550円。北海道770円・沖縄1100円は別条件。ポイントやクーポンは差し引かない。",
+          "jan": "4902508024822",
+          "verificationType": "公式の商品ページの本文と公開価格データを確認",
+          "refreshEligible": false,
+          "manualRefreshRequired": true,
+          "shippingSource": "https://www.matsukiyococokara-online.com/store/catalog/product/view/id/4902508024822",
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 550,
+            "freeFrom": 2480,
+            "verified": true,
+            "source": "https://www.matsukiyococokara-online.com/store/catalog/product/view/id/4902508024822",
+            "checkedAt": "2026-10-25T14:25:35.857725Z",
+            "description": "本州・四国・九州は税込2480円未満550円、以上0円。北海道・沖縄県を除く。"
+          },
+          "shippingRegions": [
+            {
+              "region": "北海道",
+              "fee": 770,
+              "freeFrom": 2480
+            },
+            {
+              "region": "沖縄県",
+              "fee": 1100,
+              "freeFrom": 2480
+            }
+          ],
+          "sourceEvidence": {
+            "kind": "official-product-page-body-and-published-product-data",
+            "sourceUrl": "https://www.matsukiyococokara-online.com/store/catalog/product/view/id/4902508024822",
+            "checkedAt": "2026-10-25T14:24:11.911539Z",
+            "matchedFields": [
+              "JAN",
+              "商品名",
+              "容量・規格",
+              "入数"
+            ],
+            "productName": "母乳実感乳首 １ヵ月／Ｓ ２個 ピジョン",
+            "jan": "4902508024822",
+            "price": 1870,
+            "available": true,
+            "shippingFee": 550,
+            "freeShippingThreshold": 2480
+          },
+          "unitPrice": 1210
         }
       ],
       "imageUrl": "https://image.yodobashi.com/product/100/000/001/006/913/260/100000001006913260_10203_002.jpg",
@@ -12478,7 +12963,7 @@
       "source": "https://shop.pigeon.co.jp/products/1040534?variant=46561522647261",
       "sourceName": "ピジョン公式オンラインショップ",
       "checkedAt": "2026-10-25T08:57:48.228Z",
-      "summary": "メーカー公式ショップで販売されている育児用品です。サイズ・内容量・使用対象は掲載元で確認できます。",
+      "summary": "マグマグ成長実感に取り付ける、ハリネズミ柄の交換用ボトルです。",
       "searchTerms": [
         "magmag成長実感 　210mlボトル",
         "ハリネズミ",
@@ -12521,7 +13006,12 @@
       "material": "ポリプロピレン",
       "capacity": "210ml",
       "informationCheckedAt": "2026-10-25T11:45:34.274252+00:00",
-      "informationSource": "https://shop.pigeon.co.jp/products/1040534?variant=46561522647261"
+      "informationSource": "https://shop.pigeon.co.jp/products/1040534?variant=46561522647261",
+      "features": [
+        "目盛りは210ml、容器の最大容量は230ml。",
+        "素材はポリプロピレン。",
+        "家庭用の食洗機で洗えます。電子レンジでの温めはできません。"
+      ]
     },
     {
       "id": "pigeon-1046551-48227731865821",
@@ -12533,7 +13023,7 @@
       "source": "https://shop.pigeon.co.jp/products/1046551?variant=48227731865821",
       "sourceName": "ピジョン公式オンラインショップ",
       "checkedAt": "2026-10-25T08:57:48.228Z",
-      "summary": "メーカー公式ショップで販売されている育児用品です。サイズ・内容量・使用対象は掲載元で確認できます。",
+      "summary": "作る量に合わせて熱湯と常温の水を分けて出す、調乳用のサーバーです。",
       "searchTerms": [
         "【10/6 10:00～10/29 09:59までポイント4%】調乳用適温サーバー ミルスマート",
         "1046551",
@@ -12579,7 +13069,13 @@
       ],
       "material": "本体:ABS など",
       "informationCheckedAt": "2026-10-25T11:45:34.274252+00:00",
-      "informationSource": "https://shop.pigeon.co.jp/products/1046551?variant=48227731865821"
+      "informationSource": "https://shop.pigeon.co.jp/products/1046551?variant=48227731865821",
+      "features": [
+        "調乳量は80〜320mlを20ml刻みで指定できます。",
+        "熱湯を出して粉ミルクを溶かし、その後に常温の水を足す方式。",
+        "熱湯モードでは75〜95℃を5℃刻みで選べます。",
+        "タンクの水はその日のうちに使い切るか捨て、調乳後の温度を確認します。"
+      ]
     },
     {
       "id": "pigeon-1046424-47296027590877",
@@ -12591,7 +13087,7 @@
       "source": "https://shop.pigeon.co.jp/products/1046424?variant=47296027590877",
       "sourceName": "ピジョン公式オンラインショップ",
       "checkedAt": "2026-10-25T08:57:48.228Z",
-      "summary": "メーカー公式ショップで販売されている育児用品です。サイズ・内容量・使用対象は掲載元で確認できます。",
+      "summary": "切った髪を本体に吸い込みながら、自宅で散髪できる電動バリカンです。",
       "searchTerms": [
         "【10/6 10:00～10/29 09:59までポイント9%】カットしながら吸引できる電動バリカン",
         "1046424",
@@ -12637,7 +13133,12 @@
       ],
       "manufacturerAgeNote": "６ヵ月頃から",
       "informationCheckedAt": "2026-10-25T11:45:34.274252+00:00",
-      "informationSource": "https://shop.pigeon.co.jp/products/1046424?variant=47296027590877"
+      "informationSource": "https://shop.pigeon.co.jp/products/1046424?variant=47296027590877",
+      "features": [
+        "髪型や長さに合わせるアタッチメントが3種類付属。",
+        "たまった髪は本体のカバーを外して捨てられます。",
+        "本体は丸洗いに対応。充電しながら浴室で使うことはできません。"
+      ]
     },
     {
       "id": "pigeon-1023427-43254945153245",
@@ -12761,7 +13262,7 @@
       "source": "https://shop.pigeon.co.jp/products/1042823?variant=45975891509469",
       "sourceName": "ピジョン公式オンラインショップ",
       "checkedAt": "2026-10-25T08:57:48.228Z",
-      "summary": "メーカー公式ショップで販売されている育児用品です。サイズ・内容量・使用対象は掲載元で確認できます。",
+      "summary": "おむつ替えや手足のふき取りに使える、乳液入りの厚手シートです。",
       "searchTerms": [
         "おしりナップ　オイル配合なめらか厚手仕上げ　(花畑のかくれんぼ)",
         "1042823",
@@ -12806,7 +13307,12 @@
         }
       ],
       "informationCheckedAt": "2026-10-25T11:45:34.274252+00:00",
-      "informationSource": "https://shop.pigeon.co.jp/products/1042823?variant=45975891509469"
+      "informationSource": "https://shop.pigeon.co.jp/products/1042823?variant=45975891509469",
+      "features": [
+        "ホホバ由来の保湿成分を配合。",
+        "シートの素材はレーヨンとポリエステル。",
+        "アルコール・香料・着色料は使用していません。"
+      ]
     },
     {
       "id": "pigeon-1045726-47314687787229",
@@ -12993,7 +13499,7 @@
       "source": "https://shop.pigeon.co.jp/products/1044552?variant=46558272651485",
       "sourceName": "ピジョン公式オンラインショップ",
       "checkedAt": "2026-10-25T08:57:48.228Z",
-      "summary": "メーカー公式ショップで販売されている育児用品です。サイズ・内容量・使用対象は掲載元で確認できます。",
+      "summary": "洗えるメッシュのシートと、片手で調節できる背もたれを備えたバウンサーです。",
       "searchTerms": [
         "Wuggy2（ウギー2）",
         "beige_wuggy2",
@@ -13039,7 +13545,13 @@
         }
       ],
       "informationCheckedAt": "2026-10-25T11:45:34.274252+00:00",
-      "informationSource": "https://shop.pigeon.co.jp/products/1044552?variant=46558272651485"
+      "informationSource": "https://shop.pigeon.co.jp/products/1044552?variant=46558272651485",
+      "features": [
+        "シートベルトはマグネット式のバックル。",
+        "シートは取り外して洗濯機で洗えます。",
+        "折りたたむと横向きで自立し、収納できます。",
+        "バウンサーといすでは使える体重などが異なるため、取扱説明書に従います。"
+      ]
     },
     {
       "id": "pigeon-1040528-46567955955933",
@@ -13051,7 +13563,7 @@
       "source": "https://shop.pigeon.co.jp/products/1040528?variant=46567955955933",
       "sourceName": "ピジョン公式オンラインショップ",
       "checkedAt": "2026-10-25T08:57:48.228Z",
-      "summary": "メーカー公式ショップで販売されている育児用品です。サイズ・内容量・使用対象は掲載元で確認できます。",
+      "summary": "母乳実感のプラスチック240mlなどに付け替えて使う、はむはむストローのパーツです。",
       "searchTerms": [
         "magmag成長実感 　替えパーツ",
         "はむはむストロー",
@@ -13097,7 +13609,13 @@
         }
       ],
       "informationCheckedAt": "2026-10-25T11:45:34.274252+00:00",
-      "informationSource": "https://shop.pigeon.co.jp/products/1040528?variant=46567955955933"
+      "informationSource": "https://shop.pigeon.co.jp/products/1040528?variant=46567955955933",
+      "features": [
+        "くわえて押す動きで飲み物を吸い上げるバルブ付き。",
+        "おもり付きのストローと、一体になったパッキンを採用。",
+        "取り付け先は母乳実感プラスチック240mlか、マグマグ成長実感の専用ボトルです。",
+        "寝た姿勢では飲ませず、電子レンジでの温めにも使いません。"
+      ]
     },
     {
       "id": "pigeon-1017227-43254991126749",
@@ -13109,7 +13627,7 @@
       "source": "https://shop.pigeon.co.jp/products/1017227?variant=43254991126749",
       "sourceName": "ピジョン公式オンラインショップ",
       "checkedAt": "2026-10-25T08:57:48.228Z",
-      "summary": "メーカー公式ショップで販売されている育児用品です。サイズ・内容量・使用対象は掲載元で確認できます。",
+      "summary": "布おむつの上に重ねて、便の後始末をしやすくするライナーです。",
       "searchTerms": [
         "ソフライナー 220枚入",
         "1017227",
@@ -13155,7 +13673,12 @@
       ],
       "capacity": "220枚",
       "informationCheckedAt": "2026-10-25T11:45:34.274252+00:00",
-      "informationSource": "https://shop.pigeon.co.jp/products/1017227?variant=43254991126749"
+      "informationSource": "https://shop.pigeon.co.jp/products/1017227?variant=43254991126749",
+      "features": [
+        "便をライナーで受け止め、布おむつの汚れを減らす用途。",
+        "接着剤を使わずに作られたシートです。",
+        "220枚入り。"
+      ]
     },
     {
       "id": "pigeon-1031562-46684013953245",
@@ -13338,7 +13861,7 @@
       "source": "https://shop.pigeon.co.jp/products/1046483?variant=46896852107485",
       "sourceName": "ピジョン公式オンラインショップ",
       "checkedAt": "2026-10-25T08:57:48.228Z",
-      "summary": "メーカー公式ショップで販売されている育児用品です。サイズ・内容量・使用対象は掲載元で確認できます。",
+      "summary": "家庭用のゴミ袋を使える、大容量のおむつ用ゴミ箱です。",
       "searchTerms": [
         "おむつステール BIG(ビッグ)",
         "1046483",
@@ -13384,7 +13907,12 @@
       ],
       "material": "材質",
       "informationCheckedAt": "2026-10-25T11:45:34.274252+00:00",
-      "informationSource": "https://shop.pigeon.co.jp/products/1046483?variant=46896852107485"
+      "informationSource": "https://shop.pigeon.co.jp/products/1046483?variant=46896852107485",
+      "features": [
+        "交換用の専用カセットは不要。45Lの袋が推奨されています。",
+        "Sサイズのおむつ約45個分が容量の目安です。",
+        "パッキンでふたを密閉し、袋を替える際も口を閉じやすい仕様。"
+      ]
     },
     {
       "id": "pigeon-1038456-44495564767453",
@@ -13396,7 +13924,7 @@
       "source": "https://shop.pigeon.co.jp/products/1038456?variant=44495564767453",
       "sourceName": "ピジョン公式オンラインショップ",
       "checkedAt": "2026-10-25T08:57:48.228Z",
-      "summary": "メーカー公式ショップで販売されている育児用品です。サイズ・内容量・使用対象は掲載元で確認できます。",
+      "summary": "入浴中のぬれた肌に吹きかけ、タオルでふいて使うミストタイプの乳液です。",
       "searchTerms": [
         "うるおいミスト乳液 300ml",
         "1038456",
@@ -13443,7 +13971,13 @@
       "material": "＜成分＞",
       "capacity": "300ml",
       "informationCheckedAt": "2026-10-25T11:45:34.274252+00:00",
-      "informationSource": "https://shop.pigeon.co.jp/products/1038456?variant=44495564767453"
+      "informationSource": "https://shop.pigeon.co.jp/products/1038456?variant=44495564767453",
+      "features": [
+        "洗い流しは不要。スプレーした後に手でなじませる使い方もできます。",
+        "顔に使う場合は、いったん手に出してから塗ります。",
+        "スプレーにはロックが付いています。",
+        "使用後は滑りやすいため、タオルでふく前に子どもを抱き上げません。"
+      ]
     },
     {
       "id": "pigeon-1042842-47704965906653",
@@ -13571,7 +14105,7 @@
       "source": "https://shop.pigeon.co.jp/products/1025875?variant=43254826533085",
       "sourceName": "ピジョン公式オンラインショップ",
       "checkedAt": "2026-10-25T08:57:48.228Z",
-      "summary": "メーカー公式ショップで販売されている育児用品です。サイズ・内容量・使用対象は掲載元で確認できます。",
+      "summary": "ウギーのクリアスカイ色に対応する、交換用の3Dメッシュシートです。",
       "searchTerms": [
         "ウギー シート 3Dメッシュ クリアスカイ",
         "1025875",
@@ -13611,7 +14145,11 @@
         }
       ],
       "informationCheckedAt": "2026-10-25T11:45:34.274252+00:00",
-      "informationSource": "https://shop.pigeon.co.jp/products/1025875?variant=43254826533085"
+      "informationSource": "https://shop.pigeon.co.jp/products/1025875?variant=43254826533085",
+      "features": [
+        "バウンサー本体ではなく、シートの専用部品です。",
+        "対応する本体のJANは4902508112888。"
+      ]
     },
     {
       "id": "pigeon-1040531-46567956054237",
@@ -13623,7 +14161,7 @@
       "source": "https://shop.pigeon.co.jp/products/1040531?variant=46567956054237",
       "sourceName": "ピジョン公式オンラインショップ",
       "checkedAt": "2026-10-25T08:57:48.228Z",
-      "summary": "メーカー公式ショップで販売されている育児用品です。サイズ・内容量・使用対象は掲載元で確認できます。",
+      "summary": "マグマグ成長実感の「はむはむストロー」を交換するための飲み口です。",
       "searchTerms": [
         "magmag成長実感 　飲み口",
         "はむはむストロー",
@@ -13669,7 +14207,12 @@
         }
       ],
       "informationCheckedAt": "2026-10-25T11:45:34.274252+00:00",
-      "informationSource": "https://shop.pigeon.co.jp/products/1040531?variant=46567956054237"
+      "informationSource": "https://shop.pigeon.co.jp/products/1040531?variant=46567956054237",
+      "features": [
+        "はむはむストロー・ごくごくストローに取り付けられます。",
+        "はむはむコップには取り付けられません。",
+        "おもりは付属していません。"
+      ]
     },
     {
       "id": "pigeon-1024438-43254853435613",
@@ -13903,7 +14446,7 @@
       "source": "https://shop.pigeon.co.jp/products/1018793?variant=43254837149917",
       "sourceName": "ピジョン公式オンラインショップ",
       "checkedAt": "2026-10-25T08:57:48.228Z",
-      "summary": "メーカー公式ショップで販売されている育児用品です。サイズ・内容量・使用対象は掲載元で確認できます。",
+      "summary": "布パンツの内側に取り付けて使う、夜のおねしょ対策用パッドです。",
       "searchTerms": [
         "とれっぴ～おねしょ対策パッド 24枚",
         "1018793",
@@ -13949,7 +14492,13 @@
       ],
       "capacity": "24枚",
       "informationCheckedAt": "2026-10-25T11:45:34.274252+00:00",
-      "informationSource": "https://shop.pigeon.co.jp/products/1018793?variant=43254837149917"
+      "informationSource": "https://shop.pigeon.co.jp/products/1018793?variant=43254837149917",
+      "features": [
+        "吸水材を上下に重ね、尿を吸収する仕様。",
+        "幅広のテープと二重のギャザーで固定します。",
+        "男女共用のフリーサイズで、24枚入り。",
+        "使用後のパッドはトイレに流せません。"
+      ]
     },
     {
       "id": "pigeon-1046037-47296027558109",
@@ -14134,7 +14683,7 @@
       "source": "https://shop.pigeon.co.jp/products/1025876?variant=43254826467549",
       "sourceName": "ピジョン公式オンラインショップ",
       "checkedAt": "2026-10-25T08:57:48.228Z",
-      "summary": "メーカー公式ショップで販売されている育児用品です。サイズ・内容量・使用対象は掲載元で確認できます。",
+      "summary": "ウギーのナイトオーシャン色に対応する、交換用の3Dメッシュシートです。",
       "searchTerms": [
         "ウギー シート 3Dメッシュ ナイトオーシャン",
         "1025876",
@@ -14174,7 +14723,11 @@
         }
       ],
       "informationCheckedAt": "2026-10-25T11:45:34.274252+00:00",
-      "informationSource": "https://shop.pigeon.co.jp/products/1025876?variant=43254826467549"
+      "informationSource": "https://shop.pigeon.co.jp/products/1025876?variant=43254826467549",
+      "features": [
+        "バウンサー本体ではなく、シートの専用部品です。",
+        "対応する本体のJANは4902508112871。"
+      ]
     },
     {
       "id": "pigeon-1040538-46561522581725",
@@ -14186,7 +14739,7 @@
       "source": "https://shop.pigeon.co.jp/products/1040538?variant=46561522581725",
       "sourceName": "ピジョン公式オンラインショップ",
       "checkedAt": "2026-10-25T08:57:48.228Z",
-      "summary": "メーカー公式ショップで販売されている育児用品です。サイズ・内容量・使用対象は掲載元で確認できます。",
+      "summary": "マグマグ成長実感のストローに使う、交換用のおもりです。",
       "searchTerms": [
         "magmag成長実感 ストローパーツ おもり",
         "1040538",
@@ -14226,7 +14779,11 @@
         }
       ],
       "informationCheckedAt": "2026-10-25T11:45:34.274252+00:00",
-      "informationSource": "https://shop.pigeon.co.jp/products/1040538?variant=46561522581725"
+      "informationSource": "https://shop.pigeon.co.jp/products/1040538?variant=46561522581725",
+      "features": [
+        "マグマグ成長実感に対応する専用部品。",
+        "ストローのチューブは別売りです。"
+      ]
     },
     {
       "id": "pigeon-1024439-43254853337309",
@@ -14291,7 +14848,7 @@
       "source": "https://shop.pigeon.co.jp/products/1024362?variant=43254899998941",
       "sourceName": "ピジョン公式オンラインショップ",
       "checkedAt": "2026-10-25T08:57:48.228Z",
-      "summary": "メーカー公式ショップで販売されている育児用品です。サイズ・内容量・使用対象は掲載元で確認できます。",
+      "summary": "保護者が仕上げみがきに使う、グリーン色の電動歯ブラシです。",
       "searchTerms": [
         "はじめての仕上げ専用電動歯ブラシ (グリーン)",
         "1024362",
@@ -14336,7 +14893,13 @@
         }
       ],
       "informationCheckedAt": "2026-10-25T11:45:34.274252+00:00",
-      "informationSource": "https://shop.pigeon.co.jp/products/1024362?variant=43254899998941"
+      "informationSource": "https://shop.pigeon.co.jp/products/1024362?variant=43254899998941",
+      "features": [
+        "振動の強さはソフトとしっかりの2段階。",
+        "口の中を照らすLEDライト付き。",
+        "薄いヘッドと曲がったネックのブラシが3個付属します。",
+        "電源は別売りの単4形アルカリ乾電池1本です。"
+      ]
     },
     {
       "id": "pigeon-1026118-43254837674205",
@@ -14408,7 +14971,7 @@
       "source": "https://shop.pigeon.co.jp/products/1018950?variant=46049504461021",
       "sourceName": "ピジョン公式オンラインショップ",
       "checkedAt": "2026-10-25T08:57:48.228Z",
-      "summary": "メーカー公式ショップで販売されている育児用品です。サイズ・内容量・使用対象は掲載元で確認できます。",
+      "summary": "水を加えて焼く、国産米粉を使ったプレーン味のパンケーキミックスです。",
       "searchTerms": [
         "お米のパンケーキ",
         "プレーン",
@@ -14454,7 +15017,12 @@
         }
       ],
       "informationCheckedAt": "2026-10-25T11:45:34.274252+00:00",
-      "informationSource": "https://shop.pigeon.co.jp/products/1018950?variant=46049504461021"
+      "informationSource": "https://shop.pigeon.co.jp/products/1018950?variant=46049504461021",
+      "features": [
+        "朝食にもおやつにも使える、甘さを抑えた味。",
+        "袋の中で混ぜれば、ボウルを使わずまとめて作れます。",
+        "焼いた後は冷凍して作り置きできます。"
+      ]
     },
     {
       "id": "pigeon-1018792-43254827417821",
@@ -14466,7 +15034,7 @@
       "source": "https://shop.pigeon.co.jp/products/1018792?variant=43254827417821",
       "sourceName": "ピジョン公式オンラインショップ",
       "checkedAt": "2026-10-25T08:57:48.228Z",
-      "summary": "メーカー公式ショップで販売されている育児用品です。サイズ・内容量・使用対象は掲載元で確認できます。",
+      "summary": "手持ちの布パンツに取り付けて使う、トイレの練習用パッドです。",
       "searchTerms": [
         "とれっぴ～トイレトレーニングパッド 33枚",
         "1018792",
@@ -14512,7 +15080,13 @@
       ],
       "capacity": "33枚",
       "informationCheckedAt": "2026-10-25T11:45:34.274252+00:00",
-      "informationSource": "https://shop.pigeon.co.jp/products/1018792?variant=43254827417821"
+      "informationSource": "https://shop.pigeon.co.jp/products/1018792?variant=43254827417821",
+      "features": [
+        "ぬれると、くまのイラストが現れます。",
+        "幅広のテープとギャザーでパンツに固定。",
+        "男女共用で、33枚入り。",
+        "パッドはトイレに流さず、使用後は地域の分別に従います。"
+      ]
     },
     {
       "id": "pigeon-1046036-47296027263197",
@@ -14524,7 +15098,7 @@
       "source": "https://shop.pigeon.co.jp/products/1046036?variant=47296027263197",
       "sourceName": "ピジョン公式オンラインショップ",
       "checkedAt": "2026-10-25T08:57:48.228Z",
-      "summary": "メーカー公式ショップで販売されている育児用品です。サイズ・内容量・使用対象は掲載元で確認できます。",
+      "summary": "汗をふき取るための、20枚入りの冷感シートです。",
       "searchTerms": [
         "ごきげんクール ひんやり全身シート 20枚入",
         "1046036",
@@ -14571,7 +15145,12 @@
       "material": "＜成分＞",
       "capacity": "20枚",
       "informationCheckedAt": "2026-10-25T11:45:34.274252+00:00",
-      "informationSource": "https://shop.pigeon.co.jp/products/1046036?variant=47296027263197"
+      "informationSource": "https://shop.pigeon.co.jp/products/1046036?variant=47296027263197",
+      "features": [
+        "アルコールとメントールを使っていません。",
+        "開封後は乾かないようにシールを閉じて保管。",
+        "水に溶けないため、使用後はトイレに流せません。"
+      ]
     },
     {
       "id": "pigeon-1025473-43254845210845",
@@ -14640,7 +15219,7 @@
       "source": "https://shop.pigeon.co.jp/products/2000510s?variant=43913662464221",
       "sourceName": "ピジョン公式オンラインショップ",
       "checkedAt": "2026-10-25T08:57:48.228Z",
-      "summary": "メーカー公式ショップで販売されている育児用品です。サイズ・内容量・使用対象は掲載元で確認できます。",
+      "summary": "全身用の泡ソープと、ベビー衣類用の洗剤を組み合わせたセットです。",
       "searchTerms": [
         "全身泡ソープ+無添加ピュア ベビー洗たく洗剤セット",
         "2000510S",
@@ -14680,7 +15259,12 @@
         }
       ],
       "informationCheckedAt": "2026-10-25T11:45:34.274252+00:00",
-      "informationSource": "https://shop.pigeon.co.jp/products/2000510s?variant=43913662464221"
+      "informationSource": "https://shop.pigeon.co.jp/products/2000510s?variant=43913662464221",
+      "features": [
+        "泡ソープはベーシックの500ml入り。",
+        "洗濯用の洗剤は植物由来の洗浄成分を使用しています。",
+        "洗剤はすすぎ1回に対応します。"
+      ]
     },
     {
       "id": "pigeon-1025874-43254826598621",
@@ -14692,7 +15276,7 @@
       "source": "https://shop.pigeon.co.jp/products/1025874?variant=43254826598621",
       "sourceName": "ピジョン公式オンラインショップ",
       "checkedAt": "2026-10-25T08:57:48.228Z",
-      "summary": "メーカー公式ショップで販売されている育児用品です。サイズ・内容量・使用対象は掲載元で確認できます。",
+      "summary": "ウギーのピュアサンド色に対応する、交換用の3Dメッシュシートです。",
       "searchTerms": [
         "ウギー シート 3Dメッシュ ピュアサンド",
         "1025874",
@@ -14732,7 +15316,11 @@
         }
       ],
       "informationCheckedAt": "2026-10-25T11:45:34.274252+00:00",
-      "informationSource": "https://shop.pigeon.co.jp/products/1025874?variant=43254826598621"
+      "informationSource": "https://shop.pigeon.co.jp/products/1025874?variant=43254826598621",
+      "features": [
+        "バウンサー本体ではなく、シートの専用部品です。",
+        "対応する本体のJANは4902508112895。"
+      ]
     },
     {
       "id": "pigeon-1040537-46561522614493",
@@ -14744,7 +15332,7 @@
       "source": "https://shop.pigeon.co.jp/products/1040537?variant=46561522614493",
       "sourceName": "ピジョン公式オンラインショップ",
       "checkedAt": "2026-10-25T08:57:48.228Z",
-      "summary": "メーカー公式ショップで販売されている育児用品です。サイズ・内容量・使用対象は掲載元で確認できます。",
+      "summary": "マグマグ成長実感のストローを交換するためのチューブです。",
       "searchTerms": [
         "magmag成長実感 ストローパーツ チューブ",
         "1040537",
@@ -14784,7 +15372,11 @@
         }
       ],
       "informationCheckedAt": "2026-10-25T11:45:34.274252+00:00",
-      "informationSource": "https://shop.pigeon.co.jp/products/1040537?variant=46561522614493"
+      "informationSource": "https://shop.pigeon.co.jp/products/1040537?variant=46561522614493",
+      "features": [
+        "マグマグ成長実感に対応する専用部品。",
+        "おもりは付属していません。"
+      ]
     },
     {
       "id": "pigeon-1006006-46683975090397",
@@ -14796,7 +15388,7 @@
       "source": "https://shop.pigeon.co.jp/products/1006006?variant=46683975090397",
       "sourceName": "ピジョン公式オンラインショップ",
       "checkedAt": "2026-10-25T08:57:48.228Z",
-      "summary": "メーカー公式ショップで販売されている育児用品です。サイズ・内容量・使用対象は掲載元で確認できます。",
+      "summary": "市販のゴミ袋を取り付けて使う、シルクホワイト色のおむつ処理器です。",
       "searchTerms": [
         "ピジョン ステール",
         "シルクホワイト",
@@ -14842,7 +15434,12 @@
         }
       ],
       "informationCheckedAt": "2026-10-25T11:45:34.274252+00:00",
-      "informationSource": "https://shop.pigeon.co.jp/products/1006006?variant=46683975090397"
+      "informationSource": "https://shop.pigeon.co.jp/products/1006006?variant=46683975090397",
+      "features": [
+        "交換用の専用カセットは不要。",
+        "推奨する袋の大きさは20〜30Lです。",
+        "密閉するふたを備え、袋の口を持って取り出せます。"
+      ]
     },
     {
       "id": "pigeon-1024363-43254898196701",
@@ -14854,7 +15451,7 @@
       "source": "https://shop.pigeon.co.jp/products/1024363?variant=43254898196701",
       "sourceName": "ピジョン公式オンラインショップ",
       "checkedAt": "2026-10-25T08:57:48.228Z",
-      "summary": "メーカー公式ショップで販売されている育児用品です。サイズ・内容量・使用対象は掲載元で確認できます。",
+      "summary": "「はじめての仕上げ専用電動歯ブラシ」に取り付ける交換用ブラシです。",
       "searchTerms": [
         "はじめての仕上げ専用電動歯ブラシ 替えブラシ 12ヵ月頃〜",
         "1024363",
@@ -14899,7 +15496,13 @@
         }
       ],
       "informationCheckedAt": "2026-10-25T11:45:34.274252+00:00",
-      "informationSource": "https://shop.pigeon.co.jp/products/1024363?variant=43254898196701"
+      "informationSource": "https://shop.pigeon.co.jp/products/1024363?variant=43254898196701",
+      "features": [
+        "毛の外側と内側で、硬さを変えています。",
+        "小さいヘッドと曲がったネックを採用。",
+        "対応する専用本体以外には使えません。",
+        "流水で洗う部品で、煮沸・薬液・電子レンジでの消毒はできません。"
+      ]
     },
     {
       "id": "pigeon-1005589-43255033135325",
@@ -14964,7 +15567,7 @@
       "source": "https://shop.pigeon.co.jp/products/1018937?variant=45943715102941",
       "sourceName": "ピジョン公式オンラインショップ",
       "checkedAt": "2026-10-25T08:57:48.228Z",
-      "summary": "メーカー公式ショップで販売されている育児用品です。サイズ・内容量・使用対象は掲載元で確認できます。",
+      "summary": "ごはんにかける量を調節しやすい、さけ味のふりかけです。",
       "searchTerms": [
         "お野菜ふりかけ （お徳用）",
         "さけ",
@@ -15010,7 +15613,12 @@
         }
       ],
       "informationCheckedAt": "2026-10-25T11:45:34.274252+00:00",
-      "informationSource": "https://shop.pigeon.co.jp/products/1018937?variant=45943715102941"
+      "informationSource": "https://shop.pigeon.co.jp/products/1018937?variant=45943715102941",
+      "features": [
+        "緑黄色野菜を5種類使用。",
+        "袋には保管用のジッパーが付いています。",
+        "カルシウム・鉄・食物繊維・DHAを含む配合です。"
+      ]
     },
     {
       "id": "pigeon-1034283-43835591000285",
@@ -15022,7 +15630,7 @@
       "source": "https://shop.pigeon.co.jp/products/1034283?variant=43835591000285",
       "sourceName": "ピジョン公式オンラインショップ",
       "checkedAt": "2026-10-25T08:57:48.228Z",
-      "summary": "メーカー公式ショップで販売されている育児用品です。サイズ・内容量・使用対象は掲載元で確認できます。",
+      "summary": "凹凸のある厚手シートでふき取る、50枚入り2個セットのおしりふきです。",
       "searchTerms": [
         "はじめてのおしりナップ プレミアム極上厚手 50枚2P",
         "1034283",
@@ -15074,7 +15682,13 @@
       "packageSource": "https://shop.pigeon.co.jp/products/1034283?variant=43835591000285",
       "packageCheckedAt": "2026-10-25T13:40:21.016326+00:00",
       "packageEvidenceNote": "公式の当該選択商品本文・商品タイトルで枚数と袋数を確認。販売SKUは1セットとしてquantity=1を維持。",
-      "packageResponseSha256": "33c58fa981ada350eefe672d777d219f8a4724a695b2619ee48965a39bbb08b8"
+      "packageResponseSha256": "33c58fa981ada350eefe672d777d219f8a4724a695b2619ee48965a39bbb08b8",
+      "features": [
+        "ホホバ由来の保湿成分を配合。",
+        "おしりだけでなく、体や手足にも使えます。",
+        "アルコール・香料・着色料は使用していません。",
+        "水には溶けないため、トイレに流せません。"
+      ]
     },
     {
       "id": "pigeon-1039619-46684053995741",
@@ -15086,7 +15700,7 @@
       "source": "https://shop.pigeon.co.jp/products/1039619?variant=46684053995741",
       "sourceName": "ピジョン公式オンラインショップ",
       "checkedAt": "2026-10-25T08:57:48.228Z",
-      "summary": "メーカー公式ショップで販売されている育児用品です。サイズ・内容量・使用対象は掲載元で確認できます。",
+      "summary": "汗や皮脂の汚れを洗う、子ども向けの泡シャンプーです。",
       "searchTerms": [
         "ぷちキッズ泡シャンプー・コンディショナー（本体300ml）",
         "ニオイすっきり",
@@ -15134,7 +15748,12 @@
       "material": "《ぷちキッズ泡シャンプーニオイすっきり 300ml》",
       "capacity": "300ml",
       "informationCheckedAt": "2026-10-25T11:45:34.274252+00:00",
-      "informationSource": "https://shop.pigeon.co.jp/products/1039619?variant=46684053995741"
+      "informationSource": "https://shop.pigeon.co.jp/products/1039619?variant=46684053995741",
+      "features": [
+        "選択したタイプは「ニオイすっきり」。本体300ml入りです。",
+        "パラベンとアルコールは使用していません。",
+        "硫酸系の洗浄成分とシリコーンは使用していません。"
+      ]
     },
     {
       "id": "pigeon-1040372-46724099965149",
@@ -15255,7 +15874,7 @@
       "source": "https://shop.pigeon.co.jp/products/1040225?variant=44890825195741",
       "sourceName": "ピジョン公式オンラインショップ",
       "checkedAt": "2026-10-25T08:57:48.228Z",
-      "summary": "メーカー公式ショップで販売されている育児用品です。サイズ・内容量・使用対象は掲載元で確認できます。",
+      "summary": "Playingストローボトルのパンダ柄に使う、交換用のストローです。",
       "searchTerms": [
         "Playingストローボトル パンダ 替えストロー",
         "1040225",
@@ -15301,7 +15920,11 @@
       ],
       "material": "シリコーンゴム部品、替えストロー",
       "informationCheckedAt": "2026-10-25T11:45:34.274252+00:00",
-      "informationSource": "https://shop.pigeon.co.jp/products/1040225?variant=44890825195741"
+      "informationSource": "https://shop.pigeon.co.jp/products/1040225?variant=44890825195741",
+      "features": [
+        "対応する専用ボトルの交換パーツ。",
+        "飲み口には、逆さにした際に漏れにくくするバルブが付いています。"
+      ]
     },
     {
       "id": "pigeon-1029783-43254759260381",
@@ -15313,7 +15936,7 @@
       "source": "https://shop.pigeon.co.jp/products/1029783?variant=43254759260381",
       "sourceName": "ピジョン公式オンラインショップ",
       "checkedAt": "2026-10-25T08:57:48.228Z",
-      "summary": "メーカー公式ショップで販売されている育児用品です。サイズ・内容量・使用対象は掲載元で確認できます。",
+      "summary": "髪や顔、体を洗える、固形のベビー石けん2個セットです。",
       "searchTerms": [
         "ベビ−石けん2個パック R",
         "1029783",
@@ -15358,7 +15981,12 @@
         }
       ],
       "informationCheckedAt": "2026-10-25T11:45:34.274252+00:00",
-      "informationSource": "https://shop.pigeon.co.jp/products/1029783?variant=43254759260381"
+      "informationSource": "https://shop.pigeon.co.jp/products/1029783?variant=43254759260381",
+      "features": [
+        "植物由来の洗浄成分を使用。",
+        "保湿成分としてスクワランを配合しています。",
+        "香料・着色料・防腐剤・石油系の洗浄成分は使用していません。"
+      ]
     },
     {
       "id": "pigeon-1044733-47314687721693",
@@ -15370,7 +15998,7 @@
       "source": "https://shop.pigeon.co.jp/products/1044733?variant=47314687721693",
       "sourceName": "ピジョン公式オンラインショップ",
       "checkedAt": "2026-10-25T08:57:48.228Z",
-      "summary": "メーカー公式ショップで販売されている育児用品です。サイズ・内容量・使用対象は掲載元で確認できます。",
+      "summary": "保護者が子どもの歯の間を掃除するための、30本入りフロスです。",
       "searchTerms": [
         "はじめてフロス 30本入",
         "1044733",
@@ -15417,7 +16045,12 @@
       "material": "柄の材質：ポリプロピレン",
       "capacity": "30本",
       "informationCheckedAt": "2026-10-25T11:45:34.274252+00:00",
-      "informationSource": "https://shop.pigeon.co.jp/products/1044733?variant=47314687721693"
+      "informationSource": "https://shop.pigeon.co.jp/products/1044733?variant=47314687721693",
+      "features": [
+        "小さいヘッドと角度の付いたネックを採用。",
+        "細い繊維を束ねた、ふんわりした糸を使っています。",
+        "仕上げ用の歯ブラシと併せて使うタイプです。"
+      ]
     },
     {
       "id": "pigeon-1005618-43255032283357",
@@ -15482,7 +16115,7 @@
       "source": "https://shop.pigeon.co.jp/products/1024903?variant=45943441653981",
       "sourceName": "ピジョン公式オンラインショップ",
       "checkedAt": "2026-10-25T08:57:48.228Z",
-      "summary": "メーカー公式ショップで販売されている育児用品です。サイズ・内容量・使用対象は掲載元で確認できます。",
+      "summary": "離乳食の和風メニューやスープに使える、粉末タイプのだしです。",
       "searchTerms": [
         "かんたん粉末＋鉄 お徳用",
         "和風だし ５０ｇ",
@@ -15528,7 +16161,12 @@
         }
       ],
       "informationCheckedAt": "2026-10-25T11:45:34.274252+00:00",
-      "informationSource": "https://shop.pigeon.co.jp/products/1024903?variant=45943441653981"
+      "informationSource": "https://shop.pigeon.co.jp/products/1024903?variant=45943441653981",
+      "features": [
+        "選択した味は、かつおと昆布を使った和風だし。",
+        "鉄を配合しています。",
+        "使う量を調節して保管できる、ジッパー付きの袋です。"
+      ]
     },
     {
       "id": "pigeon-1034284-43835591065821",
@@ -15540,7 +16178,7 @@
       "source": "https://shop.pigeon.co.jp/products/1034284?variant=43835591065821",
       "sourceName": "ピジョン公式オンラインショップ",
       "checkedAt": "2026-10-25T08:57:48.228Z",
-      "summary": "メーカー公式ショップで販売されている育児用品です。サイズ・内容量・使用対象は掲載元で確認できます。",
+      "summary": "凹凸のある厚手シートでふき取る、50枚入り6個セットのおしりふきです。",
       "searchTerms": [
         "はじめてのおしりナップ プレミアム極上厚手 50枚6P",
         "1034284",
@@ -15592,7 +16230,13 @@
       "packageSource": "https://shop.pigeon.co.jp/products/1034284?variant=43835591065821",
       "packageCheckedAt": "2026-10-25T13:40:21.016326+00:00",
       "packageEvidenceNote": "公式の当該選択商品本文・商品タイトルで枚数と袋数を確認。販売SKUは1セットとしてquantity=1を維持。",
-      "packageResponseSha256": "b51fd4d75cc2c4b3b6d515ae05800a6cd9bbde62feba97212a3df2e4f780bf2e"
+      "packageResponseSha256": "b51fd4d75cc2c4b3b6d515ae05800a6cd9bbde62feba97212a3df2e4f780bf2e",
+      "features": [
+        "ホホバ由来の保湿成分を配合。",
+        "おしりだけでなく、体や手足にも使えます。",
+        "アルコール・香料・着色料は使用していません。",
+        "水には溶けないため、トイレに流せません。"
+      ]
     },
     {
       "id": "pigeon-1039620-46684072476893",
@@ -15604,7 +16248,7 @@
       "source": "https://shop.pigeon.co.jp/products/1039620?variant=46684072476893",
       "sourceName": "ピジョン公式オンラインショップ",
       "checkedAt": "2026-10-25T08:57:48.228Z",
-      "summary": "メーカー公式ショップで販売されている育児用品です。サイズ・内容量・使用対象は掲載元で確認できます。",
+      "summary": "ぷちキッズ泡シャンプー「ニオイすっきり」の詰めかえ用です。",
       "searchTerms": [
         "ぷちキッズ泡シャンプー・コンディショナー（詰めかえ用240ml）",
         "ニオイすっきり",
@@ -15652,7 +16296,12 @@
       "material": "《ぷちキッズ泡シャンプーニオイすっきり 300ml》",
       "capacity": "240ml",
       "informationCheckedAt": "2026-10-25T11:45:34.274252+00:00",
-      "informationSource": "https://shop.pigeon.co.jp/products/1039620?variant=46684072476893"
+      "informationSource": "https://shop.pigeon.co.jp/products/1039620?variant=46684072476893",
+      "features": [
+        "詰めかえ用の容量は240mlです。",
+        "汗や皮脂の汚れを洗うためのシャンプー。",
+        "パラベンとアルコールは使用していません。"
+      ]
     },
     {
       "id": "pigeon-2000287s-43254836297949",
@@ -15721,7 +16370,7 @@
       "source": "https://shop.pigeon.co.jp/products/1042807?variant=46214221594845",
       "sourceName": "ピジョン公式オンラインショップ",
       "checkedAt": "2026-10-25T08:57:48.228Z",
-      "summary": "メーカー公式ショップで販売されている育児用品です。サイズ・内容量・使用対象は掲載元で確認できます。",
+      "summary": "対面と背面を切り替えられる、キャメル色のランフィRB5です。",
       "searchTerms": [
         "ピジョン ランフィRB5",
         "camel / 無し",
@@ -15767,7 +16416,13 @@
         }
       ],
       "informationCheckedAt": "2026-10-25T11:45:34.274252+00:00",
-      "informationSource": "https://shop.pigeon.co.jp/products/1042807?variant=46214221594845"
+      "informationSource": "https://shop.pigeon.co.jp/products/1042807?variant=46214221594845",
+      "features": [
+        "シングルタイヤに、回転を助けるベアリングを採用。",
+        "ハンドルの高さを、押す人に合わせて変えられます。",
+        "片手で折りたため、たたんだ状態で自立します。",
+        "リバーシブルのシートは、取り外して洗濯機で洗えます。"
+      ]
     },
     {
       "id": "pigeon-10001cs-44120958566621",
@@ -15779,7 +16434,7 @@
       "source": "https://shop.pigeon.co.jp/products/10001cs?variant=44120958566621",
       "sourceName": "ピジョン公式オンラインショップ",
       "checkedAt": "2026-10-25T08:57:48.228Z",
-      "summary": "メーカー公式ショップで販売されている育児用品です。サイズ・内容量・使用対象は掲載元で確認できます。",
+      "summary": "柄とパーツの色を組み合わせて選ぶ、160mlのプラスチック製哺乳びんです。",
       "searchTerms": [
         "【10/6 10:00～10/29 09:59までポイント9%】My母乳実感哺乳びん プラスチック (160ml)",
         "doodle / ash pink / off white",
@@ -15827,7 +16482,12 @@
       "material": "部品：フード・キャップ 材料の種類：ポリプロピレン",
       "capacity": "160ml",
       "informationCheckedAt": "2026-10-25T11:45:34.274252+00:00",
-      "informationSource": "https://shop.pigeon.co.jp/products/10001cs?variant=44120958566621"
+      "informationSource": "https://shop.pigeon.co.jp/products/10001cs?variant=44120958566621",
+      "features": [
+        "母乳実感の乳首SSが付属します。吸い穴は丸穴です。",
+        "乳首には、くわえ込む深さを示すラインがあります。",
+        "選択した柄・色の組み合わせは商品名に表示しています。"
+      ]
     },
     {
       "id": "pigeon-1035832-43863237886173",
@@ -15839,7 +16499,7 @@
       "source": "https://shop.pigeon.co.jp/products/1035832?variant=43863237886173",
       "sourceName": "ピジョン公式オンラインショップ",
       "checkedAt": "2026-10-25T08:57:48.228Z",
-      "summary": "メーカー公式ショップで販売されている育児用品です。サイズ・内容量・使用対象は掲載元で確認できます。",
+      "summary": "国産茶葉を使い、苦みを抑えて仕上げた500mlのほうじ茶です。",
       "searchTerms": [
         "ベビーほうじ茶５００ｍｌ",
         "1035832",
@@ -15885,7 +16545,11 @@
       ],
       "material": "有機ほうじ茶（国産）/酸化防止剤（ビタミンC)",
       "informationCheckedAt": "2026-10-25T11:45:34.274252+00:00",
-      "informationSource": "https://shop.pigeon.co.jp/products/1035832?variant=43863237886173"
+      "informationSource": "https://shop.pigeon.co.jp/products/1035832?variant=43863237886173",
+      "features": [
+        "国産の茶葉を100％使用。",
+        "一般向けのほうじ茶と比べて、カフェインを抑えたタイプです。"
+      ]
     },
     {
       "id": "pigeon-1046472-47739353235677",
@@ -15963,7 +16627,7 @@
       "source": "https://shop.pigeon.co.jp/products/1026457?variant=43254809034973",
       "sourceName": "ピジョン公式オンラインショップ",
       "checkedAt": "2026-10-25T08:57:48.228Z",
-      "summary": "メーカー公式ショップで販売されている育児用品です。サイズ・内容量・使用対象は掲載元で確認できます。",
+      "summary": "電動pro personal Rと組み合わせる、片胸分のさく乳用ボトルキットです。",
       "searchTerms": [
         "さく乳 ボトルキット",
         "1045819",
@@ -16004,7 +16668,11 @@
       ],
       "material": "部品：本体キャップ・本体・さく乳口・ボトルスタンド・キャップ",
       "informationCheckedAt": "2026-10-25T11:45:34.274252+00:00",
-      "informationSource": "https://shop.pigeon.co.jp/products/1026457?variant=43254809034973"
+      "informationSource": "https://shop.pigeon.co.jp/products/1026457?variant=43254809034973",
+      "features": [
+        "キットだけでは作動せず、対応する電動部と併せて使います。",
+        "対応機器に追加すると、両胸を同時にさく乳できます。"
+      ]
     },
     {
       "id": "pigeon-1048890-48487366623453",
@@ -16074,7 +16742,7 @@
       "source": "https://shop.pigeon.co.jp/products/1026657?variant=43254789210333",
       "sourceName": "ピジョン公式オンラインショップ",
       "checkedAt": "2026-10-25T08:57:48.228Z",
-      "summary": "メーカー公式ショップで販売されている育児用品です。サイズ・内容量・使用対象は掲載元で確認できます。",
+      "summary": "水流でほぐれるシートを使った、72枚入り2個セットのおしりふきです。",
       "searchTerms": [
         "トイレに流せるおしりナップ ふんわり厚手 72枚入×2個パック",
         "1026657",
@@ -16120,7 +16788,12 @@
       ],
       "capacity": "72枚",
       "informationCheckedAt": "2026-10-25T11:45:34.274252+00:00",
-      "informationSource": "https://shop.pigeon.co.jp/products/1026657?variant=43254789210333"
+      "informationSource": "https://shop.pigeon.co.jp/products/1026657?variant=43254789210333",
+      "features": [
+        "おしりだけでなく、体や手足にも使えます。",
+        "トイレに流すときは、1〜2枚ずつ「大」の水量で流します。",
+        "アルコール・香料・着色料は使用していません。"
+      ]
     },
     {
       "id": "pigeon-2000660s-46684074049757",
@@ -16132,7 +16805,7 @@
       "source": "https://shop.pigeon.co.jp/products/2000660s?variant=46684074049757",
       "sourceName": "ピジョン公式オンラインショップ",
       "checkedAt": "2026-10-25T08:57:48.228Z",
-      "summary": "メーカー公式ショップで販売されている育児用品です。サイズ・内容量・使用対象は掲載元で確認できます。",
+      "summary": "「ニオイすっきり」の泡シャンプーとコンディショナーを組み合わせたセットです。",
       "searchTerms": [
         "ぷちキッズ泡シャンプー＆コンディショナー（本体300ml）",
         "ニオイすっきり＆コンディショナー",
@@ -16180,7 +16853,12 @@
       "material": "《ぷちキッズ泡シャンプーニオイすっきり 300ml》",
       "capacity": "300ml",
       "informationCheckedAt": "2026-10-25T11:45:34.274252+00:00",
-      "informationSource": "https://shop.pigeon.co.jp/products/2000660s?variant=46684074049757"
+      "informationSource": "https://shop.pigeon.co.jp/products/2000660s?variant=46684074049757",
+      "features": [
+        "シャンプーは汗や皮脂の汚れを洗うタイプ。",
+        "コンディショナーは植物由来の成分を配合しています。",
+        "パラベンとアルコールは使用していません。"
+      ]
     },
     {
       "id": "pigeon-2000743s-46567956152541",
@@ -16244,7 +16922,7 @@
       "source": "https://shop.pigeon.co.jp/products/1044254?variant=46457632882909",
       "sourceName": "ピジョン公式オンラインショップ",
       "checkedAt": "2026-10-25T08:57:48.228Z",
-      "summary": "メーカー公式ショップで販売されている育児用品です。サイズ・内容量・使用対象は掲載元で確認できます。",
+      "summary": "ハンドルの操作で対面・背面を切り替えられる、両対面式のA形ベビーカーです。",
       "searchTerms": [
         "フェリーチェ(FELICE)",
         "なし",
@@ -16291,7 +16969,13 @@
       ],
       "material": "フェリーチェ(FELICE)",
       "informationCheckedAt": "2026-10-25T11:45:34.274252+00:00",
-      "informationSource": "https://shop.pigeon.co.jp/products/1044254?variant=46457632882909"
+      "informationSource": "https://shop.pigeon.co.jp/products/1044254?variant=46457632882909",
+      "features": [
+        "本体の重さは5.4kg。",
+        "背もたれは100〜175度の間で調節できます。",
+        "荷物を入れるカゴは22Lです。",
+        "片手で折りたため、たたんだ状態で自立します。"
+      ]
     },
     {
       "id": "pigeon-10076cs-44121044123869",
@@ -16303,7 +16987,7 @@
       "source": "https://shop.pigeon.co.jp/products/10076cs?variant=44121044123869",
       "sourceName": "ピジョン公式オンラインショップ",
       "checkedAt": "2026-10-25T08:57:48.228Z",
-      "summary": "メーカー公式ショップで販売されている育児用品です。サイズ・内容量・使用対象は掲載元で確認できます。",
+      "summary": "柄とパーツの色を組み合わせて選ぶ、240mlのプラスチック製哺乳びんです。",
       "searchTerms": [
         "【10/6 10:00～10/29 09:59までポイント9%】My母乳実感哺乳びん プラスチック (240ml)",
         "Doodle / Ash pink / Off white",
@@ -16351,7 +17035,12 @@
       "material": "部品：フード・キャップ 材料の種類：ポリプロピレン",
       "capacity": "240ml",
       "informationCheckedAt": "2026-10-25T11:45:34.274252+00:00",
-      "informationSource": "https://shop.pigeon.co.jp/products/10076cs?variant=44121044123869"
+      "informationSource": "https://shop.pigeon.co.jp/products/10076cs?variant=44121044123869",
+      "features": [
+        "母乳実感の乳首Mが付属します。吸い穴はY字形です。",
+        "乳首には、くわえ込む深さを示すラインがあります。",
+        "選択した柄・色の組み合わせは商品名に表示しています。"
+      ]
     },
     {
       "id": "pigeon-1024574-43254798483677",
@@ -16363,7 +17052,7 @@
       "source": "https://shop.pigeon.co.jp/products/1024574?variant=43254798483677",
       "sourceName": "ピジョン公式オンラインショップ",
       "checkedAt": "2026-10-25T08:57:48.228Z",
-      "summary": "メーカー公式ショップで販売されている育児用品です。サイズ・内容量・使用対象は掲載元で確認できます。",
+      "summary": "お湯に混ぜて使う、500ml入りのベビー沐浴料です。",
       "searchTerms": [
         "ベビー沐浴料 500ml (ベーシック)",
         "1024574",
@@ -16409,7 +17098,12 @@
       ],
       "capacity": "500ml",
       "informationCheckedAt": "2026-10-25T11:45:34.274252+00:00",
-      "informationSource": "https://shop.pigeon.co.jp/products/1024574?variant=43254798483677"
+      "informationSource": "https://shop.pigeon.co.jp/products/1024574?variant=43254798483677",
+      "features": [
+        "すすぎや上がり湯を必要としないタイプ。",
+        "ほのかにオレンジの香りが付いています。",
+        "保湿用の入浴料として、家族のお風呂にも使えます。"
+      ]
     },
     {
       "id": "pigeon-1046660-47296027918557",
@@ -16421,7 +17115,7 @@
       "source": "https://shop.pigeon.co.jp/products/1046660?variant=47296027918557",
       "sourceName": "ピジョン公式オンラインショップ",
       "checkedAt": "2026-10-25T08:57:48.228Z",
-      "summary": "メーカー公式ショップで販売されている育児用品です。サイズ・内容量・使用対象は掲載元で確認できます。",
+      "summary": "「カットしながら吸引できる電動バリカン」に使う、交換用の刃です。",
       "searchTerms": [
         "カットしながら吸引できる電動バリカン 替え刃",
         "1046660",
@@ -16466,7 +17160,11 @@
         }
       ],
       "informationCheckedAt": "2026-10-25T11:45:34.274252+00:00",
-      "informationSource": "https://shop.pigeon.co.jp/products/1046660?variant=47296027918557"
+      "informationSource": "https://shop.pigeon.co.jp/products/1046660?variant=47296027918557",
+      "features": [
+        "対応する専用バリカンの交換部品です。",
+        "バリカン本体を含む商品ではありません。"
+      ]
     },
     {
       "id": "pigeon-1026460-43254789636317",
@@ -16478,7 +17176,7 @@
       "source": "https://shop.pigeon.co.jp/products/1026460?variant=43254789636317",
       "sourceName": "ピジョン公式オンラインショップ",
       "checkedAt": "2026-10-25T08:57:48.228Z",
-      "summary": "メーカー公式ショップで販売されている育児用品です。サイズ・内容量・使用対象は掲載元で確認できます。",
+      "summary": "2022〜2025年発売の電動さく乳器に使う、ポリプロピレン製の本体パーツです。",
       "searchTerms": [
         "さく乳器 handy fit+ 電動 本体 【2022年〜2025年発売モデル専用】",
         "1026460",
@@ -16519,7 +17217,12 @@
       ],
       "compatibility": "さく乳器 電動 handy fit＋ 22（製品番号：4902508021050）",
       "informationCheckedAt": "2026-10-25T11:45:34.274252+00:00",
-      "informationSource": "https://shop.pigeon.co.jp/products/1026460?variant=43254789636317"
+      "informationSource": "https://shop.pigeon.co.jp/products/1026460?variant=43254789636317",
+      "features": [
+        "handy fit＋ 22とpro personal R 22で共通の部品。",
+        "部品の商品コードは1026460です。",
+        "2026年以降発売モデル用の部品とは分けて選びます。"
+      ]
     },
     {
       "id": "pigeon-1007746-43254977298653",
@@ -16531,7 +17234,7 @@
       "source": "https://shop.pigeon.co.jp/products/1007746?variant=43254977298653",
       "sourceName": "ピジョン公式オンラインショップ",
       "checkedAt": "2026-10-25T08:57:48.228Z",
-      "summary": "メーカー公式ショップで販売されている育児用品です。サイズ・内容量・使用対象は掲載元で確認できます。",
+      "summary": "軽くやわらかな生地で、離乳食の食べこぼしを受けるチェック柄のエプロンです。",
       "searchTerms": [
         "はじめての離乳食エプロン チェック",
         "1007746",
@@ -16576,7 +17279,13 @@
         }
       ],
       "informationCheckedAt": "2026-10-25T11:45:34.274252+00:00",
-      "informationSource": "https://shop.pigeon.co.jp/products/1007746?variant=43254977298653"
+      "informationSource": "https://shop.pigeon.co.jp/products/1007746?variant=43254977298653",
+      "features": [
+        "重さは約19g。留め具は首の横にあります。",
+        "裏側には、しみにくくする加工を施しています。",
+        "大きく開くポケット付き。",
+        "洗濯機で丸洗いできます。"
+      ]
     },
     {
       "id": "pigeon-1026655-43254789374173",
@@ -16588,7 +17297,7 @@
       "source": "https://shop.pigeon.co.jp/products/1026655?variant=43254789374173",
       "sourceName": "ピジョン公式オンラインショップ",
       "checkedAt": "2026-10-25T08:57:48.228Z",
-      "summary": "メーカー公式ショップで販売されている育児用品です。サイズ・内容量・使用対象は掲載元で確認できます。",
+      "summary": "外出先にも持ち歩ける、22枚入りの流せるおしりふきです。",
       "searchTerms": [
         "トイレに流せるおしりナップ ふんわり厚手 おでかけ 22枚1P",
         "1026655",
@@ -16634,7 +17343,12 @@
       ],
       "capacity": "22枚",
       "informationCheckedAt": "2026-10-25T11:45:34.274252+00:00",
-      "informationSource": "https://shop.pigeon.co.jp/products/1026655?variant=43254789374173"
+      "informationSource": "https://shop.pigeon.co.jp/products/1026655?variant=43254789374173",
+      "features": [
+        "厚手のシートで、おしりや手足をふけます。",
+        "トイレに流すときは、1〜2枚ずつ「大」の水量で流します。",
+        "アルコール・香料・着色料は使用していません。"
+      ]
     },
     {
       "id": "pigeon-1044463-47296025592029",
@@ -16756,7 +17470,7 @@
       "source": "https://shop.pigeon.co.jp/products/1036115?variant=44634664992989",
       "sourceName": "ピジョン公式オンラインショップ",
       "checkedAt": "2026-10-25T08:57:48.228Z",
-      "summary": "メーカー公式ショップで販売されている育児用品です。サイズ・内容量・使用対象は掲載元で確認できます。",
+      "summary": "くまの絵柄を選んだ、FunFriendsシリーズのSサイズおしゃぶりです。",
       "searchTerms": [
         "おしゃぶり FunFriends 0-3/Sサイズ",
         "くま",
@@ -16803,7 +17517,12 @@
       ],
       "material": "部品 乳首：原材料シリコーンゴム 耐熱温度120°C",
       "informationCheckedAt": "2026-10-25T11:45:34.274252+00:00",
-      "informationSource": "https://shop.pigeon.co.jp/products/1036115?variant=44634664992989"
+      "informationSource": "https://shop.pigeon.co.jp/products/1036115?variant=44634664992989",
+      "features": [
+        "口元に触れる板の部分には、肌との間に隙間を作る段差があります。",
+        "やわらかな乳首を採用。",
+        "成長に合わせてサイズを取り替えるシリーズです。"
+      ]
     },
     {
       "id": "pigeon-1004677-43254987194589",
@@ -16928,7 +17647,7 @@
       "source": "https://shop.pigeon.co.jp/products/1047761?variant=47378564808925",
       "sourceName": "ピジョン公式オンラインショップ",
       "checkedAt": "2026-10-25T08:57:48.228Z",
-      "summary": "メーカー公式ショップで販売されている育児用品です。サイズ・内容量・使用対象は掲載元で確認できます。",
+      "summary": "2026年2月以降発売のhandy fit＋などに使う、電動さく乳器の本体パーツです。",
       "searchTerms": [
         "さく乳器 handy fit+ 電動 本体 【2026年以降発売モデル専用】",
         "1047761",
@@ -16968,7 +17687,12 @@
         }
       ],
       "informationCheckedAt": "2026-10-25T11:45:34.274252+00:00",
-      "informationSource": "https://shop.pigeon.co.jp/products/1047761?variant=47378564808925"
+      "informationSource": "https://shop.pigeon.co.jp/products/1047761?variant=47378564808925",
+      "features": [
+        "handy fit＋とhandy fit＋Lightに対応する専用部品。",
+        "同じ製品番号でも、2025年以前のモデルには使えません。",
+        "購入前に本体の発売モデルを照合する必要があります。"
+      ]
     },
     {
       "id": "pigeon-1031533-43254763061469",
@@ -16980,7 +17704,7 @@
       "source": "https://shop.pigeon.co.jp/products/1031533?variant=43254763061469",
       "sourceName": "ピジョン公式オンラインショップ",
       "checkedAt": "2026-10-25T08:57:48.228Z",
-      "summary": "メーカー公式ショップで販売されている育児用品です。サイズ・内容量・使用対象は掲載元で確認できます。",
+      "summary": "付属のカップに水を加えて電子レンジで作る、4個入りの蒸しパンです。",
       "searchTerms": [
         "レンジで蒸しパン 4個入り",
         "1031533",
@@ -17026,7 +17750,12 @@
       ],
       "material": "(りんご&さつまいも)",
       "informationCheckedAt": "2026-10-25T11:45:34.274252+00:00",
-      "informationSource": "https://shop.pigeon.co.jp/products/1031533?variant=43254763061469"
+      "informationSource": "https://shop.pigeon.co.jp/products/1031533?variant=43254763061469",
+      "features": [
+        "野菜や果物などを使った、甘さを抑えた4種類の味。",
+        "加熱の目安は600Wで約50秒です。",
+        "カップには取っ手があり、手で切って取り分けられます。"
+      ]
     },
     {
       "id": "pigeon-1047228-47316206944477",
@@ -17038,7 +17767,7 @@
       "source": "https://shop.pigeon.co.jp/products/1047228?variant=47316206944477",
       "sourceName": "ピジョン公式オンラインショップ",
       "checkedAt": "2026-10-25T08:57:48.228Z",
-      "summary": "メーカー公式ショップで販売されている育児用品です。サイズ・内容量・使用対象は掲載元で確認できます。",
+      "summary": "厚手のシートを使った、72枚入り4個セットの流せるおしりふきです。",
       "searchTerms": [
         "トイレに流せるおしりナップ　72枚4P",
         "1047228",
@@ -17090,7 +17819,12 @@
       "packageSource": "https://shop.pigeon.co.jp/products/1047228?variant=47316206944477",
       "packageCheckedAt": "2026-10-25T13:40:21.016326+00:00",
       "packageEvidenceNote": "公式の当該選択商品本文・商品タイトルで枚数と袋数を確認。販売SKUは1セットとしてquantity=1を維持。",
-      "packageResponseSha256": "98c22dcae5d063371ef7d4562917402f87c5168cae9d4f8c2f75386fd8410f97"
+      "packageResponseSha256": "98c22dcae5d063371ef7d4562917402f87c5168cae9d4f8c2f75386fd8410f97",
+      "features": [
+        "おしりだけでなく、体や手足にも使えます。",
+        "トイレに流すときは、1〜2枚ずつ「大」の水量で流します。",
+        "アルコール・香料・着色料は使用していません。"
+      ]
     },
     {
       "id": "pigeon-1025275-43254862708957",
@@ -17213,7 +17947,7 @@
       "source": "https://shop.pigeon.co.jp/products/1036116?variant=46231946952925",
       "sourceName": "ピジョン公式オンラインショップ",
       "checkedAt": "2026-10-25T08:57:48.228Z",
-      "summary": "メーカー公式ショップで販売されている育児用品です。サイズ・内容量・使用対象は掲載元で確認できます。",
+      "summary": "ひつじの絵柄を選んだ、FunFriendsシリーズのMサイズおしゃぶりです。",
       "searchTerms": [
         "おしゃぶり FunFriends 3-6/Mサイズ",
         "ひつじ",
@@ -17260,7 +17994,12 @@
       ],
       "material": "部品 乳首：原材料シリコーンゴム 耐熱温度120°C",
       "informationCheckedAt": "2026-10-25T11:45:34.274252+00:00",
-      "informationSource": "https://shop.pigeon.co.jp/products/1036116?variant=46231946952925"
+      "informationSource": "https://shop.pigeon.co.jp/products/1036116?variant=46231946952925",
+      "features": [
+        "口元に触れる板の部分には、肌との間に隙間を作る段差があります。",
+        "やわらかな乳首を採用。",
+        "成長に合わせてサイズを取り替えるシリーズです。"
+      ]
     },
     {
       "id": "pigeon-1042622-46709951299805",
@@ -17441,7 +18180,7 @@
       "source": "https://shop.pigeon.co.jp/products/1031534?variant=43254762897629",
       "sourceName": "ピジョン公式オンラインショップ",
       "checkedAt": "2026-10-25T08:57:48.228Z",
-      "summary": "メーカー公式ショップで販売されている育児用品です。サイズ・内容量・使用対象は掲載元で確認できます。",
+      "summary": "付属のカップに水を加えて電子レンジで作る、8個入りの蒸しパンです。",
       "searchTerms": [
         "レンジで蒸しパン 8個入り",
         "1031534",
@@ -17487,7 +18226,12 @@
       ],
       "material": "(りんご&さつまいも)",
       "informationCheckedAt": "2026-10-25T11:45:34.274252+00:00",
-      "informationSource": "https://shop.pigeon.co.jp/products/1031534?variant=43254762897629"
+      "informationSource": "https://shop.pigeon.co.jp/products/1031534?variant=43254762897629",
+      "features": [
+        "野菜や果物などを使った、甘さを抑えた4種類の味。",
+        "加熱の目安は600Wで約50秒です。",
+        "カップには取っ手があり、手で切って取り分けられます。"
+      ]
     },
     {
       "id": "pigeon-2000340s-43254789013725",
@@ -17557,7 +18301,7 @@
       "source": "https://shop.pigeon.co.jp/products/1026209?variant=43254816702685",
       "sourceName": "ピジョン公式オンラインショップ",
       "checkedAt": "2026-10-25T08:57:48.228Z",
-      "summary": "メーカー公式ショップで販売されている育児用品です。サイズ・内容量・使用対象は掲載元で確認できます。",
+      "summary": "綿球に植物系のオイルを含ませた、細軸のベビー用綿棒です。",
       "searchTerms": [
         "オイルがついてるベビー綿棒（細軸） 50本入",
         "1026209",
@@ -17603,7 +18347,12 @@
       ],
       "capacity": "50本",
       "informationCheckedAt": "2026-10-25T11:45:34.274252+00:00",
-      "informationSource": "https://shop.pigeon.co.jp/products/1026209?variant=43254816702685"
+      "informationSource": "https://shop.pigeon.co.jp/products/1026209?variant=43254816702685",
+      "features": [
+        "綿球には天然コットンを使用。",
+        "1本ずつ包装され、持ち歩く際にも分けて使えます。",
+        "耳や鼻の奥へ入れず、表面の汚れのふき取りに使います。"
+      ]
     },
     {
       "id": "pigeon-1043047-46360738037981",
@@ -17615,7 +18364,7 @@
       "source": "https://shop.pigeon.co.jp/products/1043047?variant=46360738037981",
       "sourceName": "ピジョン公式オンラインショップ",
       "checkedAt": "2026-10-25T08:57:48.228Z",
-      "summary": "メーカー公式ショップで販売されている育児用品です。サイズ・内容量・使用対象は掲載元で確認できます。",
+      "summary": "ベビーカー「epa」にかぶせて使う、専用のレインカバーです。",
       "searchTerms": [
         "レインカバー〈epa(エパ)専用〉",
         "1043047",
@@ -17661,7 +18410,11 @@
       ],
       "material": "材質",
       "informationCheckedAt": "2026-10-25T11:45:34.274252+00:00",
-      "informationSource": "https://shop.pigeon.co.jp/products/1043047?variant=46360738037981"
+      "informationSource": "https://shop.pigeon.co.jp/products/1043047?variant=46360738037981",
+      "features": [
+        "epaに合わせた専用サイズ。",
+        "大きく開いて、子どもを乗せ降ろしできます。"
+      ]
     },
     {
       "id": "pigeon-1036117-46231948984541",
@@ -17673,7 +18426,7 @@
       "source": "https://shop.pigeon.co.jp/products/1036117?variant=46231948984541",
       "sourceName": "ピジョン公式オンラインショップ",
       "checkedAt": "2026-10-25T08:57:48.228Z",
-      "summary": "メーカー公式ショップで販売されている育児用品です。サイズ・内容量・使用対象は掲載元で確認できます。",
+      "summary": "くじらの絵柄を選んだ、FunFriendsシリーズのLサイズおしゃぶりです。",
       "searchTerms": [
         "おしゃぶり FunFriends 6-18/Lサイズ",
         "くじら",
@@ -17720,7 +18473,12 @@
       ],
       "material": "部品 乳首：原材料シリコーンゴム 耐熱温度120°C",
       "informationCheckedAt": "2026-10-25T11:45:34.274252+00:00",
-      "informationSource": "https://shop.pigeon.co.jp/products/1036117?variant=46231948984541"
+      "informationSource": "https://shop.pigeon.co.jp/products/1036117?variant=46231948984541",
+      "features": [
+        "口元に触れる板の部分には、肌との間に隙間を作る段差があります。",
+        "やわらかな乳首を採用。",
+        "成長に合わせてサイズを取り替えるシリーズです。"
+      ]
     },
     {
       "id": "pigeon-1038252-44890777911517",
@@ -17849,7 +18607,7 @@
       "source": "https://shop.pigeon.co.jp/products/1024153?variant=43254883942621",
       "sourceName": "ピジョン公式オンラインショップ",
       "checkedAt": "2026-10-25T08:57:48.228Z",
-      "summary": "メーカー公式ショップで販売されている育児用品です。サイズ・内容量・使用対象は掲載元で確認できます。",
+      "summary": "さく乳器に取り付ける、大きめのLサイズのさく乳口です。",
       "searchTerms": [
         "さく乳器 さく乳口 (Lサイズ)  21",
         "1024153",
@@ -17889,7 +18647,12 @@
         }
       ],
       "informationCheckedAt": "2026-10-25T11:45:34.274252+00:00",
-      "informationSource": "https://shop.pigeon.co.jp/products/1024153?variant=43254883942621"
+      "informationSource": "https://shop.pigeon.co.jp/products/1024153?variant=43254883942621",
+      "features": [
+        "Lサイズのさく乳口パッドと組み合わせて使う部品。",
+        "さく乳口パッドは別売りです。",
+        "部品の商品コードは1024153です。"
+      ]
     },
     {
       "id": "pigeon-2000874s-48487367344349",
@@ -18018,7 +18781,7 @@
       "source": "https://shop.pigeon.co.jp/products/1043755?variant=47296025100509",
       "sourceName": "ピジョン公式オンラインショップ",
       "checkedAt": "2026-10-25T08:57:48.228Z",
-      "summary": "メーカー公式ショップで販売されている育児用品です。サイズ・内容量・使用対象は掲載元で確認できます。",
+      "summary": "泡の色が白くなるまで洗う使い方の、子ども向けボディソープです。",
       "searchTerms": [
         "ピジョンキッズ 魔法のあわあわボディソープ・シャンプー 本体",
         "ボディソープ",
@@ -18065,7 +18828,12 @@
       ],
       "material": "＜ピジョンキッズ 魔法のあわあわボディソープ ４００ｍｌ＞",
       "informationCheckedAt": "2026-10-25T11:45:34.274252+00:00",
-      "informationSource": "https://shop.pigeon.co.jp/products/1043755?variant=47296025100509"
+      "informationSource": "https://shop.pigeon.co.jp/products/1043755?variant=47296025100509",
+      "features": [
+        "選択した商品はボディソープ本体の400mlです。",
+        "フラワーの香り付き。",
+        "パラベン・アルコール・シリコーンは使用していません。"
+      ]
     },
     {
       "id": "pigeon-1036121-44634722369757",
@@ -20206,7 +20974,7 @@
       "source": "https://shop.pigeon.co.jp/products/1026206?variant=43780591517917",
       "sourceName": "ピジョン公式オンラインショップ",
       "checkedAt": "2026-10-25T08:57:48.228Z",
-      "summary": "メーカー公式ショップで販売されている育児用品です。サイズ・内容量・使用対象は掲載元で確認できます。",
+      "summary": "小さく平らな刃先で、子どものつめを切るてこ型のつめきりです。",
       "searchTerms": [
         "ベビーつめきりてこ型",
         "1026206",
@@ -20251,7 +21019,12 @@
         }
       ],
       "informationCheckedAt": "2026-10-25T11:45:34.274252+00:00",
-      "informationSource": "https://shop.pigeon.co.jp/products/1026206?variant=43780591517917"
+      "informationSource": "https://shop.pigeon.co.jp/products/1026206?variant=43780591517917",
+      "features": [
+        "保護者が握りやすい大きさのハンドル。",
+        "切ったつめを受けるケースが付いています。",
+        "保管時に刃先を覆うキャップ付き。"
+      ]
     },
     {
       "id": "pigeon-1026463-43254789472477",
@@ -20610,7 +21383,7 @@
       "source": "https://shop.pigeon.co.jp/products/1026205?variant=43780591550685",
       "sourceName": "ピジョン公式オンラインショップ",
       "checkedAt": "2026-10-25T08:57:48.228Z",
-      "summary": "メーカー公式ショップで販売されている育児用品です。サイズ・内容量・使用対象は掲載元で確認できます。",
+      "summary": "小さく薄い刃で、赤ちゃんのやわらかなつめを切るハサミです。",
       "searchTerms": [
         "ベビーつめきりハサミ",
         "1026205",
@@ -20657,7 +21430,12 @@
       "informationCheckedAt": "2026-10-25T11:45:34.274252+00:00",
       "informationSource": "https://shop.pigeon.co.jp/products/1026205?variant=43780591550685",
       "model": "1026205",
-      "modelNumber": "1026205"
+      "modelNumber": "1026205",
+      "features": [
+        "刃先は丸い形に仕上げています。",
+        "ハンドルは3本の指で支える形。",
+        "保管時に刃先を覆うキャップ付き。"
+      ]
     },
     {
       "id": "pigeon-1026451-43254809854173",
@@ -21014,7 +21792,7 @@
       "source": "https://shop.pigeon.co.jp/products/1026208?variant=43254816768221",
       "sourceName": "ピジョン公式オンラインショップ",
       "checkedAt": "2026-10-25T08:57:48.228Z",
-      "summary": "メーカー公式ショップで販売されている育児用品です。サイズ・内容量・使用対象は掲載元で確認できます。",
+      "summary": "ピンクの粘着面と白い仕上げ面を使い分ける、細軸のベビー用綿棒です。",
       "searchTerms": [
         "ベビー粘着綿棒（細軸）　５０本入",
         "1026208",
@@ -21060,7 +21838,12 @@
       ],
       "capacity": "５０本",
       "informationCheckedAt": "2026-10-25T11:45:34.274252+00:00",
-      "informationSource": "https://shop.pigeon.co.jp/products/1026208?variant=43254816768221"
+      "informationSource": "https://shop.pigeon.co.jp/products/1026208?variant=43254816768221",
+      "features": [
+        "粘着面で、耳や鼻の表面にある乾いた汚れを取るタイプ。",
+        "綿球には天然コットンを使用しています。",
+        "耳や鼻の奥には入れず、保護者が使用します。"
+      ]
     },
     {
       "id": "pigeon-1003768-43254955344093",
@@ -21819,7 +22602,7 @@
       "source": "https://shop.pigeon.co.jp/products/1039448?variant=45523807043805",
       "sourceName": "ピジョン公式オンラインショップ",
       "checkedAt": "2026-10-25T08:57:48.228Z",
-      "summary": "メーカー公式ショップで販売されている育児用品です。サイズ・内容量・使用対象は掲載元で確認できます。",
+      "summary": "つめの長さや表面を、往復するやすりで手入れする電動つめやすりです。",
       "searchTerms": [
         "ベビー電動つめやすり",
         "1039448",
@@ -21865,7 +22648,12 @@
       ],
       "material": "材質 本体：ABSなど",
       "informationCheckedAt": "2026-10-25T11:45:34.274252+00:00",
-      "informationSource": "https://shop.pigeon.co.jp/products/1039448?variant=45523807043805"
+      "informationSource": "https://shop.pigeon.co.jp/products/1039448?variant=45523807043805",
+      "features": [
+        "削る用と仕上げ用、2種類のやすりが付いています。",
+        "動きの強さはソフトとノーマルの2段階。",
+        "やすり部分は外して洗えます。本体は水洗いできません。"
+      ]
     },
     {
       "id": "pigeon-1007687-43254955147485",

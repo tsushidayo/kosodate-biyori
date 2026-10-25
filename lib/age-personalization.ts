@@ -87,6 +87,10 @@ export function ageTargetStatus(item:Item,children:FamilyChild[]):AgeTargetStatu
   const direct=range(item);
   const declared=Array.isArray(item.ageRanges)?item.ageRanges.map(range).filter((v:any):v is {min:number;max:number}=>v!==null):[];
   const ranges=declared.length?declared:direct?[direct]:[];
+  // Boundary dates left unsettled by the source are possible matches, including
+  // when they sit just outside the confirmed age range or age group.
+  const uncertainRanges=Array.isArray(item.uncertainAgeRanges)?item.uncertainAgeRanges.map(range).filter((v:any):v is {min:number;max:number}=>v!==null):[];
+  const uncertainAge=(child:FamilyChild)=>uncertainRanges.some((r:{min:number;max:number})=>child.months>=r.min&&child.months<=r.max);
   const groups=Array.isArray(item.ageGroups)?item.ageGroups.map(normalizedGroup).filter((g:any):g is string=>g!==null):[];
   const hasGrade=finite(item.minSchoolGrade)||finite(item.maxSchoolGrade);
   const schoolYearEndAge=finite(item.schoolYearEndAge)&&item.schoolYearEndAge>=6?item.schoolYearEndAge:null;
@@ -103,9 +107,10 @@ export function ageTargetStatus(item:Item,children:FamilyChild[]):AgeTargetStatu
   };
   const base=(child:FamilyChild)=>(!ranges.length||ranges.some((r:{min:number;max:number})=>child.months>=r.min&&child.months<=r.max))&&groupMatches(child);
   const beforeYearEnd=(child:FamilyChild):boolean|null=>schoolYearEndAge===null?true:finite(child.schoolGrade)?child.schoolGrade<=schoolYearEndAge-6:child.months<schoolYearEndAge*12?true:child.months>=(schoolYearEndAge+1)*12?false:null;
-  if(children.some(child=>{const grade=gradeFor(child);return base(child)&&beforeYearEnd(child)===true&&(!hasGrade||finite(grade)&&(!finite(item.minSchoolGrade)||grade>=item.minSchoolGrade)&&(!finite(item.maxSchoolGrade)||grade<=item.maxSchoolGrade))}))return 'matching';
+  if(children.some(child=>{const grade=gradeFor(child);return base(child)&&!uncertainAge(child)&&beforeYearEnd(child)===true&&(!hasGrade||finite(grade)&&(!finite(item.minSchoolGrade)||grade>=item.minSchoolGrade)&&(!finite(item.maxSchoolGrade)||grade<=item.maxSchoolGrade))}))return 'matching';
   if(children.some(child=>base(child)&&beforeYearEnd(child)===null))return 'unknown';
   if(hasGrade&&children.some(child=>base(child)&&!finite(gradeFor(child))))return 'unknown';
+  if(children.some(child=>{const grade=gradeFor(child);return uncertainAge(child)&&beforeYearEnd(child)!==false&&(!hasGrade||finite(grade)&&(!finite(item.minSchoolGrade)||grade>=item.minSchoolGrade)&&(!finite(item.maxSchoolGrade)||grade<=item.maxSchoolGrade))}))return 'unknown';
   return 'not-matching';
 }
 export function matchesFamilyAge(item:Item,children:FamilyChild[],includeUnknown=true):boolean {

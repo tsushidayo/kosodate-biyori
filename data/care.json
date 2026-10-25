@@ -14764,6 +14764,1861 @@
         "国富町",
         "綾町"
       ]
+    },
+    {
+      "id": "continue-east-asahikawa-medical",
+      "title": "高校生年代までの子ども医療費助成",
+      "prefecture": "北海道",
+      "municipality": "旭川市",
+      "municipalityCode": "01204",
+      "area": "北海道 旭川市",
+      "scope": "municipality",
+      "category": "医療",
+      "summary": "高校生年代まで、保険診療の自己負担分を助成します。受給者証の交付申請が必要です。",
+      "eligibility": "旭川市に住民登録があり、公的医療保険に加入する0歳から18歳到達後最初の3月31日までの子。生活保護、ひとり親・重度心身障害者の医療助成を受けている場合は対象外。",
+      "how": "オンラインまたは市の窓口で受給者証を申請。道内の対応する医療機関では、保険資格を確認できるものと受給者証を提示します。道外受診等は払い戻しの手続きが必要です。",
+      "amountLabel": "対象の保険診療は自己負担なし。食事代や保険外の費用等は対象外",
+      "preparation": [
+        "子どもの公的医療保険の加入を確認できるもの",
+        "電子申請は同一世帯の20歳以上の方の本人確認書類画像",
+        "窓口申請は署名等をした同意書または印鑑。必要な対象者分を市の案内で確認"
+      ],
+      "steps": [
+        {
+          "title": "受給者証を申請",
+          "body": "保険資格等の書類を用意し、電子申請または窓口で手続きします。"
+        },
+        {
+          "title": "医療機関で提示",
+          "body": "保険資格が分かるものと受給者証を提示。道外受診等は領収書を保管し、市へ払い戻しを申請します。"
+        }
+      ],
+      "source": "https://www.city.asahikawa.hokkaido.jp/kurashi/218/228/230/p004567.html",
+      "sourceName": "旭川市公式サイト",
+      "checkedAt": "2026-10-25",
+      "official": true,
+      "ageNote": "0歳から18歳に達する日以後の最初の3月31日まで",
+      "minAgeMonths": 0,
+      "schoolYearEndAge": 18,
+      "notes": [
+        "入院時の食事代、検診、予防接種、文書料などは対象外。学校管理下のけがや交通事故等では別の手続きを確認。",
+        "払い戻しは総合庁舎の子育て助成課でのみ受付。オンラインや支所では受付していません。"
+      ],
+      "deadline": "道外受診等の払い戻しは、原則2年以内の保険診療の領収書で申請"
+    },
+    {
+      "id": "continue-east-asahikawa-postpartum",
+      "title": "宿泊・日帰り・訪問の産後ケア",
+      "prefecture": "北海道",
+      "municipality": "旭川市",
+      "municipalityCode": "01204",
+      "area": "北海道 旭川市",
+      "scope": "municipality",
+      "category": "妊娠・出産",
+      "summary": "宿泊、日帰り、自宅への訪問で、休息や授乳・育児の相談を受けられます。3種類を合わせて原則7日まで使えます。",
+      "eligibility": "産後1年未満で、体調不良や育児不安等がある母子。入院・加療が必要で利用に支障がある方は対象外。里帰りの訪問型は別途条件と事前申請があります。",
+      "how": "希望する施設へ電話または来所で申込み、利用申請書を提出します。非課税・生活保護世帯の減額は、事前の書類提出が必要です。",
+      "amountLabel": "一般：宿泊1泊2日3,000円、日帰り・訪問各1,000円。非課税・生活保護は減額申請で0円",
+      "preparation": [
+        "利用申請書",
+        "減額を申請する場合は減額申請書と課税状況・生活保護の確認書類"
+      ],
+      "steps": [
+        {
+          "title": "施設に申し込む",
+          "body": "利用希望日の原則2日前までに、希望施設へ電話または来所で申し込みます。"
+        },
+        {
+          "title": "必要書類を提出",
+          "body": "利用申請書を提出。減額を希望する方は市へ事前に手続きします。"
+        }
+      ],
+      "source": "https://www.city.asahikawa.hokkaido.jp/800/808/810/d064593.html",
+      "sourceName": "旭川市公式サイト",
+      "checkedAt": "2026-10-25",
+      "official": true,
+      "ageNote": "産後1年未満。里帰り利用は訪問型の条件を市に確認",
+      "minAgeMonths": 0,
+      "maxAgeMonths": 11,
+      "programYear": 2026,
+      "deadline": "利用希望日の原則2日前まで。土・日・祝日を除く",
+      "notes": [
+        "宿泊・日帰りの食事代と追加サービスは別料金。多胎は一般世帯の利用料が異なります。",
+        "宿泊の1泊2日は2日と数え、全種類を合わせて1回の出産につき原則7日以内。"
+      ]
+    },
+    {
+      "id": "continue-east-obihiro-medical",
+      "title": "中学校卒業前までの子ども医療費助成",
+      "prefecture": "北海道",
+      "municipality": "帯広市",
+      "municipalityCode": "01207",
+      "area": "北海道 帯広市",
+      "scope": "municipality",
+      "category": "医療",
+      "summary": "中学校卒業前までの保険診療を助成します。未就学児は自己負担なし、小中学生は世帯区分等で負担が異なります。",
+      "eligibility": "帯広市に住所があり、健康保険に加入する0歳から中学校卒業前までの子。所得制限なし。生活保護、ひとり親・重度心身障害者の医療助成を受ける場合は対象外。",
+      "how": "出生・転入時にこども課へ受給者証を申請。道内の医療機関で保険資格と受給者証を提示します。道外受診等は費用を支払い、払い戻しを申請します。",
+      "amountLabel": "未就学児は保険診療の自己負担なし。課税の小学生・全ての中学生は原則1割負担で月額上限あり",
+      "preparation": [
+        "申請書",
+        "子どもの健康保険情報を確認できるもの",
+        "所定日に市外に住んでいた保護者は同意書または所得課税証明書"
+      ],
+      "steps": [
+        {
+          "title": "こども課へ申請",
+          "body": "書類を持参または郵送し、受給者証の交付を受けます。"
+        },
+        {
+          "title": "受診・払い戻し",
+          "body": "道内では受給者証を提示。立替分は領収書、受給者証、保護者の口座が分かるもの等で申請します。"
+        }
+      ],
+      "source": "https://www.city.obihiro.hokkaido.jp/kyoiku/kosodate/teate/1004588.html",
+      "sourceName": "帯広市公式サイト",
+      "checkedAt": "2026-10-25",
+      "official": true,
+      "ageNote": "0歳から中学校卒業前まで",
+      "minAgeMonths": 0,
+      "maxSchoolGrade": 9,
+      "deadline": "立て替えた医療費の払い戻しは、診療を受けた日から5年以内",
+      "notes": [
+        "非課税等の小学生は保険診療の自己負担なし。1割負担の上限は、通常、入院月57,600円、通院月18,000円など。",
+        "保険外の費用や入院時の食事代は対象外。学校等の管理下のけがは災害共済給付を確認。"
+      ]
+    },
+    {
+      "id": "continue-east-obihiro-postpartum",
+      "title": "日帰り・訪問の産後ケア",
+      "prefecture": "北海道",
+      "municipality": "帯広市",
+      "municipalityCode": "01207",
+      "area": "北海道 帯広市",
+      "scope": "municipality",
+      "category": "妊娠・出産",
+      "summary": "医療機関等での日帰りケアか、自宅への助産師訪問を利用できます。授乳や育児の相談、体調の確認、休息などを支えます。",
+      "eligibility": "申請時・利用時とも帯広市民で、産後6か月未満の母子。体調や授乳・育児等に不安がある方。日帰りは医療行為が必要な方や上の子を連れての利用は不可。",
+      "how": "健康推進課へ電話で相談。保健師の訪問等で母子の様子や困りごとを伝え、利用方法の案内を受けます。",
+      "amountLabel": "課税世帯：日帰り1,600円・訪問1,300円。非課税・生活保護：800円・650円。合計4回まで",
+      "preparation": [
+        "転入した非課税世帯の方は、非課税であることを確認できる書類"
+      ],
+      "steps": [
+        {
+          "title": "市に相談",
+          "body": "健康推進課へ連絡し、利用希望や困りごとを相談します。"
+        },
+        {
+          "title": "保健師の確認を受ける",
+          "body": "訪問等で母子の状況を伝え、案内に沿って利用します。"
+        }
+      ],
+      "source": "https://www.city.obihiro.hokkaido.jp/kyoiku/ninshin/service/1006504.html",
+      "sourceName": "帯広市公式サイト",
+      "checkedAt": "2026-10-25",
+      "official": true,
+      "ageNote": "申請・利用時とも産後6か月未満",
+      "minAgeMonths": 0,
+      "maxAgeMonths": 5,
+      "programYear": 2026,
+      "preparationNote": "その他の必要書類は、保健師への相談時に確認。",
+      "deadlineNote": "利用前に市への相談が必要。統一の申込締切は公式本文に記載なし。",
+      "notes": [
+        "日帰り型と訪問型を合わせて4回まで。双子以上は別途料金あり。"
+      ]
+    },
+    {
+      "id": "continue-east-hachinohe-medical",
+      "title": "高校生年代までの子ども医療費助成",
+      "prefecture": "青森県",
+      "municipality": "八戸市",
+      "municipalityCode": "02203",
+      "area": "青森県 八戸市",
+      "scope": "municipality",
+      "category": "医療",
+      "summary": "所得に関係なく、高校生年代までの入院・通院の保険診療を助成します。県内は受給資格証を提示し、県外等は払い戻しを申請します。",
+      "eligibility": "八戸市に住所があり健康保険に加入する、0歳から18歳に到達した年度末までの子。高校在学の有無は問いません。",
+      "how": "子育て支援課へ認定を申請し受給資格証を受領。県内受診で保険情報と資格証を提示します。県外等で支払った分は、領収書等を添えて給付を申請します。",
+      "amountLabel": "対象となる入院・通院の保険診療の自己負担分を助成。所得制限なし",
+      "preparation": [
+        "受給資格認定申請書",
+        "子どもの健康保険情報を確認できるもの",
+        "はんこ",
+        "保護者の口座が分かるもの",
+        "本人確認書類。市外の保護者はマイナンバー確認書類も必要"
+      ],
+      "steps": [
+        {
+          "title": "認定を申請",
+          "body": "子育て支援課へ手続きし、受給資格証を受け取ります。郵送も可能です。"
+        },
+        {
+          "title": "受診・給付申請",
+          "body": "県内で資格証を提示。県外等の立替分は、給付申請書や領収書の原本等を提出します。"
+        }
+      ],
+      "source": "https://www.city.hachinohe.aomori.jp/soshikikarasagasu/kosodateshienka/kosodate/2/4006.html",
+      "sourceName": "八戸市公式サイト",
+      "checkedAt": "2026-10-25",
+      "official": true,
+      "ageNote": "0歳から18歳に到達した年度の3月31日まで",
+      "minAgeMonths": 0,
+      "schoolYearEndAge": 18,
+      "deadline": "立て替えた医療費の給付申請は受診の翌月から6か月以内",
+      "notes": [
+        "差額ベッド代、食事代、文書料、健診、予防接種など保険外の費用は対象外。健康保険の高額療養費・附加給付等との差額を支給。"
+      ]
+    },
+    {
+      "id": "continue-east-hachinohe-postnatal-check",
+      "title": "産婦健診2回の費用助成",
+      "prefecture": "青森県",
+      "municipality": "八戸市",
+      "municipalityCode": "02203",
+      "area": "青森県 八戸市",
+      "scope": "municipality",
+      "category": "妊娠・出産",
+      "summary": "産後2週間ごろと1か月ごろ、計2回の産婦健診に受診票を使えます。心身の状態や育児の悩みを相談する機会です。",
+      "eligibility": "健診を受ける時点で八戸市に住所のある方。問診・診察・体重血圧・尿検査・心の健康チェックの全てを実施する健診が対象。",
+      "how": "県内の受託医療機関へ予約し、母子健康手帳交付時に配られる受診票を1回分提出します。県外等での健診は、市に払い戻しの可否を相談してください。",
+      "amountLabel": "産婦健診の費用の一部を2回まで助成。上限超過分は自己負担",
+      "preparation": [
+        "産婦健康診査受診票",
+        "母子健康手帳",
+        "診察券",
+        "マイナ保険証または資格確認書"
+      ],
+      "steps": [
+        {
+          "title": "医療機関を予約",
+          "body": "通常は出産した医療機関等で、受診できる時期を確認します。"
+        },
+        {
+          "title": "受診票で健診",
+          "body": "必要なものを持参し、1回分の受診票を提出します。"
+        }
+      ],
+      "source": "https://www.city.hachinohe.aomori.jp/soshikikarasagasu/oyakokenko/ninshin_shussan/15231.html",
+      "sourceName": "八戸市公式サイト",
+      "checkedAt": "2026-10-25",
+      "official": true,
+      "ageNote": "産後2〜3週間と4〜6週間が目安。使用は産後56日まで",
+      "minAgeMonths": 0,
+      "maxAgeMonths": 1,
+      "programYear": 2026,
+      "deadline": "産後56日までに受診票を使用",
+      "notes": [
+        "医療機関によって産後2週間健診を行わない場合あり。県外等の払い戻しは健診項目等の確認が必要。",
+        "助成上限の具体額は受診票や市の窓口で確認。"
+      ]
+    },
+    {
+      "id": "continue-east-morioka-infant-medical",
+      "title": "就学前の子の医療費助成",
+      "prefecture": "岩手県",
+      "municipality": "盛岡市",
+      "municipalityCode": "03201",
+      "area": "岩手県 盛岡市",
+      "scope": "municipality",
+      "category": "医療",
+      "summary": "小学校入学前まで、保険診療の自己負担分を助成します。所得制限はなく、受給者証の交付申請が必要です。",
+      "eligibility": "0歳から就学前までで、盛岡市に住んで健康保険に加入している子。または市外在住で盛岡市国民健康保険に加入する子。",
+      "how": "医療助成年金課等へ受給者証を申請。県内受診では保険資格と受給者証を提示します。県外等で支払った分は、診療月の翌月以降に領収書等で申請します。",
+      "amountLabel": "対象となる保険診療の自己負担分を全額助成。所得制限なし",
+      "preparation": [
+        "母子健康手帳",
+        "子どもの保険加入状況が分かるもの",
+        "振込先の通帳やカード",
+        "妊産婦医療費受給者証がある方はその証",
+        "市外の保護者はマイナンバーが分かるもの"
+      ],
+      "steps": [
+        {
+          "title": "受給者証を申請",
+          "body": "窓口または郵送で手続き。郵送は受理後おおむね2週間で証が発送されます。"
+        },
+        {
+          "title": "受診・払い戻し",
+          "body": "県内では保険資格と受給者証を提示。県外等の立替分は領収書等で給付申請します。"
+        }
+      ],
+      "source": "https://www.city.morioka.iwate.jp/kenkou/kaigoiryo/iryohikyufu/1003812.html",
+      "sourceName": "盛岡市公式サイト",
+      "checkedAt": "2026-10-25",
+      "official": true,
+      "ageNote": "0歳から小学校入学前まで",
+      "minAgeMonths": 0,
+      "maxAgeMonths": 83,
+      "maxSchoolGrade": 0,
+      "deadline": "払い戻しは支払日の翌日から5年で時効。診療月の翌月から2年経過で給付額が変わる場合あり",
+      "notes": [
+        "健診、予防接種、文書料、入院時食事代、差額ベッド代等は対象外。学校等管理下のけがは災害共済給付を確認。"
+      ]
+    },
+    {
+      "id": "continue-east-morioka-postpartum",
+      "title": "訪問・日帰り・宿泊の産後ケア",
+      "prefecture": "岩手県",
+      "municipality": "盛岡市",
+      "municipalityCode": "03201",
+      "area": "岩手県 盛岡市",
+      "scope": "municipality",
+      "category": "妊娠・出産",
+      "summary": "自宅への助産師訪問、施設での日帰りや宿泊で、体調・授乳・育児の相談を受けられます。2026年度は基本の利用料が無料です。",
+      "eligibility": "盛岡市に住民票がある産後1年以内の母子。日帰り・宿泊の受入月齢は施設ごとに異なります。医療行為が必要な方、感染症状がある方は除きます。",
+      "how": "母子健康課へ電話で相談後、電子申請・窓口・郵送で申請。宿泊・日帰りは施設へ、訪問は母子健康課へ予約します。利用時は承認通知書を提示します。",
+      "amountLabel": "2026年度の基本利用料は無料。食事・追加サービスは自己負担。通算7日まで",
+      "preparation": [
+        "産後ケア事業利用申請書",
+        "非課税・生活保護世帯の証明書。省略できる場合あり",
+        "利用時に利用承認通知書"
+      ],
+      "steps": [
+        {
+          "title": "市に相談・申請",
+          "body": "母子健康課へ電話し、原則10営業日前までに申請書類を出します。"
+        },
+        {
+          "title": "予約して利用",
+          "body": "申請後に施設等へ予約し、当日は承認通知書を提示します。"
+        }
+      ],
+      "source": "https://www.city.morioka.iwate.jp/kodomo_kyoiku/shien_support/mama_ouen/1023161.html",
+      "sourceName": "盛岡市公式サイト",
+      "checkedAt": "2026-10-25",
+      "official": true,
+      "ageNote": "産後1年以内。施設別の月齢条件と年齢の境界は市・施設に確認 産後1年の境界の日付は未確定として、市・施設に確認。",
+      "minAgeMonths": 0,
+      "maxAgeMonths": 11,
+      "programYear": 2026,
+      "deadline": "原則、利用希望日の10日前までに書類提出。土日祝日を除く。出産予定日の2か月前から仮申請可",
+      "notes": [
+        "全種類を通算7日まで。日帰りと宿泊は合わせて4日まで、宿泊は1泊2日が上限で2日と数える。",
+        "赤ちゃんのみの預かり、託児・家事支援を目的とする利用は不可。"
+      ],
+      "uncertainAgeRanges": [
+        {
+          "minAgeMonths": 12,
+          "maxAgeMonths": 12
+        }
+      ]
+    },
+    {
+      "id": "continuation-east-akita-medical",
+      "title": "子ども福祉医療制度（マル福）",
+      "prefecture": "秋田県",
+      "municipality": "秋田市",
+      "municipalityCode": "05201",
+      "area": "秋田県 秋田市",
+      "scope": "municipality",
+      "category": "医療",
+      "summary": "保険診療の自己負担を助成。0歳児と住民税所得割の非課税世帯は自己負担なし、課税世帯の1歳以上は負担額に上限があります。",
+      "eligibility": "秋田市に住民票があり健康保険に加入する、18歳になった後の最初の3月31日までの子ども。所得による対象制限はないが課税状況を確認。生活保護、他制度で自己負担がない場合等は対象外。",
+      "how": "同居する保護者が電子申請・郵送・窓口で受給者証を申請。受診時は受給者証と保険資格が分かるものを提示する。",
+      "amountLabel": "0歳・住民税所得割非課税世帯は無料。課税世帯の1歳以上は保険自己負担の半額、1医療機関につき入院・外来別で月1,000円まで",
+      "preparation": [
+        "受給者証交付申請書",
+        "保護者の本人確認書類",
+        "子どもの保険資格が分かるもの。電子申請やマイナ保険証登録で省略できるものあり"
+      ],
+      "steps": [
+        {
+          "title": "対象を確認",
+          "body": "秋田市に住民票があり健康保険に加入する、18歳になった後の最初の3月31日までの子ども。所得による対象制限はないが課税状況を確認。生活保護、他制度で自己負担がない場合等は対象外。"
+        },
+        {
+          "title": "申請・利用",
+          "body": "同居する保護者が電子申請・郵送・窓口で受給者証を申請。受診時は受給者証と保険資格が分かるものを提示する。"
+        }
+      ],
+      "deadline": "出生から3か月以内、転入から14日以内に申請。原則毎年8月更新",
+      "source": "https://www.city.akita.lg.jp/kurashi/kosodate/1005867/1005945.html",
+      "sourceName": "秋田市公式サイト",
+      "checkedAt": "2026-10-25",
+      "official": true,
+      "ageNote": "18歳に達した後の最初の3月31日まで。0歳と1歳以上では自己負担の扱いが異なります。",
+      "minAgeMonths": 0,
+      "schoolYearEndAge": 18,
+      "ageGroups": [
+        "0歳",
+        "1〜2歳",
+        "3〜5歳",
+        "小学生",
+        "中学生以上"
+      ],
+      "additionalSources": [
+        {
+          "name": "受給者証の申請手続",
+          "url": "https://www.city.akita.lg.jp/kurashi/kosodate/1005867/1026678/1026535.html"
+        }
+      ]
+    },
+    {
+      "id": "continuation-east-akita-postpartum",
+      "title": "秋田市 産後ケア事業",
+      "prefecture": "秋田県",
+      "municipality": "秋田市",
+      "municipalityCode": "05201",
+      "area": "秋田県 秋田市",
+      "scope": "municipality",
+      "category": "妊娠・出産",
+      "summary": "宿泊や日帰りで、休息、授乳・育児の相談、体調や赤ちゃんの体重の確認を受けられます。",
+      "eligibility": "秋田市に住民票がある出産後1年以内の母親と赤ちゃん。施設によって受け入れ月齢や空き状況が異なる。",
+      "how": "利用予定日の2週間前までに子ども健康課へ電話し申請書を提出。利用承認通知が届いた後に施設を利用し、当日利用料を支払う。",
+      "amountLabel": "宿泊は1日2,800円＋食事代、通所は医療機関2,200円・その他施設2,500円。生活保護・市町村民税非課税世帯は無料。離乳食代別",
+      "preparation": [
+        "利用申請書。スマート申請も利用可",
+        "施設が指定する当日の持ち物"
+      ],
+      "steps": [
+        {
+          "title": "対象を確認",
+          "body": "秋田市に住民票がある出産後1年以内の母親と赤ちゃん。施設によって受け入れ月齢や空き状況が異なる。"
+        },
+        {
+          "title": "申請・利用",
+          "body": "利用予定日の2週間前までに子ども健康課へ電話し申請書を提出。利用承認通知が届いた後に施設を利用し、当日利用料を支払う。"
+        }
+      ],
+      "deadline": "予定日の2週間前までに申込み。宿泊は通算7日、通所は通算2日まで",
+      "source": "https://www.city.akita.lg.jp/kurashi/kosodate/1005860/1031990.html",
+      "sourceName": "秋田市公式サイト",
+      "checkedAt": "2026-10-25",
+      "official": true,
+      "ageNote": "市の対象案内は出産後1年以内。利用できる月齢は施設ごとに異なります。 産後1年の境界の日付は未確定として、市・施設に確認。",
+      "programYear": 2026,
+      "ageGroups": [
+        "0歳"
+      ],
+      "notes": [
+        "Growing upの翌月分は原則毎月10日に受付開始。土日祝日は前の金曜日。"
+      ],
+      "uncertainAgeRanges": [
+        {
+          "minAgeMonths": 12,
+          "maxAgeMonths": 12
+        }
+      ],
+      "minAgeMonths": 0,
+      "maxAgeMonths": 11
+    },
+    {
+      "id": "continuation-east-yamagata-medical",
+      "title": "こども医療の給付",
+      "prefecture": "山形県",
+      "municipality": "山形市",
+      "municipalityCode": "06201",
+      "area": "山形県 山形市",
+      "scope": "municipality",
+      "category": "医療",
+      "summary": "外来・入院・訪問看護の保険診療で支払う自己負担を助成。利用にはこども医療証の申請が必要です。",
+      "eligibility": "山形市のこども医療の対象となる、0歳から18歳に到達した年度末までの子ども。学校管理下のけが等は災害共済給付の手続を利用し、入院食事代や保険適用外の費用は対象外。",
+      "how": "市役所こども家庭支援課へ申請し、医療証を受け取る。3歳未満または高校生は電子申請も可能。受診時に医療証を提示する。",
+      "amountLabel": "外来・入院・訪問看護の保険診療の自己負担は無料。入院時食事療養費等は別",
+      "preparation": [
+        "子どもの健康保険資格が分かるもの",
+        "被保険者等と子どものマイナンバーが分かるもの",
+        "申請者の本人確認書類。代理申請は代理権を確認できる書類も必要"
+      ],
+      "steps": [
+        {
+          "title": "対象を確認",
+          "body": "山形市のこども医療の対象となる、0歳から18歳に到達した年度末までの子ども。学校管理下のけが等は災害共済給付の手続を利用し、入院食事代や保険適用外の費用は対象外。"
+        },
+        {
+          "title": "申請・利用",
+          "body": "市役所こども家庭支援課へ申請し、医療証を受け取る。3歳未満または高校生は電子申請も可能。受診時に医療証を提示する。"
+        }
+      ],
+      "deadline": "出生・転入から概ね1か月以内の申請で出生日・転入日から適用。それ以外は原則申請月の初日から",
+      "source": "https://www.city.yamagata-yamagata.lg.jp/kosodatekyoiku/kosodate/1006613/1002149.html",
+      "sourceName": "山形市公式サイト",
+      "checkedAt": "2026-10-25",
+      "official": true,
+      "ageNote": "0歳から18歳に達した年度の3月31日まで。",
+      "minAgeMonths": 0,
+      "schoolYearEndAge": 18,
+      "ageGroups": [
+        "0歳",
+        "1〜2歳",
+        "3〜5歳",
+        "小学生",
+        "中学生以上"
+      ]
+    },
+    {
+      "id": "continuation-east-yamagata-postpartum-stay",
+      "title": "産後ケアの宿泊・日帰り利用",
+      "prefecture": "山形県",
+      "municipality": "山形市",
+      "municipalityCode": "06201",
+      "area": "山形県 山形市",
+      "scope": "municipality",
+      "category": "妊娠・出産",
+      "summary": "宿泊または日帰りで、母子の体調確認、授乳や育児の相談、休息と食事の提供を受けられます。",
+      "eligibility": "山形市に住民票があり支援を必要とし、医療行為が必要でない産後5か月未満の母子。事業者によって受け入れ月齢が異なる。",
+      "how": "産後、利用前にやまがたe申請または郵送で申請。市が施設と日程を調整し、利用決定通知を送付する。通知を施設に提示し、料金を支払う。",
+      "amountLabel": "宿泊1泊2日6,000円、日帰り1日2,000円。市民税非課税世帯は半額、生活保護世帯は無料。オプション代は別",
+      "preparation": [
+        "利用申請書兼情報提供同意書。電子申請ではフォーム入力",
+        "利用決定通知書",
+        "施設が指定する持ち物"
+      ],
+      "steps": [
+        {
+          "title": "対象を確認",
+          "body": "山形市に住民票があり支援を必要とし、医療行為が必要でない産後5か月未満の母子。事業者によって受け入れ月齢が異なる。"
+        },
+        {
+          "title": "申請・利用",
+          "body": "産後、利用前にやまがたe申請または郵送で申請。市が施設と日程を調整し、利用決定通知を送付する。通知を施設に提示し、料金を支払う。"
+        }
+      ],
+      "deadline": "利用前に申請。宿泊・日帰りを合わせて7日まで",
+      "source": "https://www.city.yamagata-yamagata.lg.jp/kosodatekyoiku/kosodate/1006606/1007234/1005991.html",
+      "sourceName": "山形市公式サイト",
+      "checkedAt": "2026-10-25",
+      "official": true,
+      "ageNote": "宿泊・日帰りは産後5か月未満。乳房ケア等とは対象月齢が異なります。",
+      "programYear": 2026,
+      "minAgeMonths": 0,
+      "maxAgeMonths": 4,
+      "ageGroups": [
+        "0歳"
+      ],
+      "notes": [
+        "宿泊は1泊2日以降、1日追加ごとに一般3,000円・非課税1,500円。"
+      ]
+    },
+    {
+      "id": "continuation-east-koriyama-medical",
+      "title": "郡山市 こども医療費助成",
+      "prefecture": "福島県",
+      "municipality": "郡山市",
+      "municipalityCode": "07203",
+      "area": "福島県 郡山市",
+      "scope": "municipality",
+      "category": "医療",
+      "summary": "保険診療の自己負担や入院時の食事代を助成。受給資格者証を提示し、対応する医療機関では窓口負担なく受診できます。",
+      "eligibility": "郡山市に住民票があり健康保険に加入する、18歳になった後の最初の3月31日までの子ども。生活保護の医療扶助対象者は除く。市国保加入者は入院時の食事代のみ本制度の対象。",
+      "how": "オンライン・郵送・窓口で受給資格を申請。受診時は保険資格と受給資格者証を提示。支払った場合は受診月の翌月以降に領収書を添えて市へ請求する。",
+      "amountLabel": "対象となる保険診療の自己負担と入院食事代を助成。保険適用外の費用は対象外",
+      "preparation": [
+        "子どもの保険資格が分かる書類",
+        "被保険者名義の口座が分かるもの",
+        "申請者の本人確認書類。市外の被保険者は所得確認書類等も必要"
+      ],
+      "steps": [
+        {
+          "title": "対象を確認",
+          "body": "郡山市に住民票があり健康保険に加入する、18歳になった後の最初の3月31日までの子ども。生活保護の医療扶助対象者は除く。市国保加入者は入院時の食事代のみ本制度の対象。"
+        },
+        {
+          "title": "申請・利用",
+          "body": "オンライン・郵送・窓口で受給資格を申請。受診時は保険資格と受給資格者証を提示。支払った場合は受診月の翌月以降に領収書を添えて市へ請求する。"
+        }
+      ],
+      "deadline": "受給資格を事前に申請。払い戻しは受診月の翌月以降に手続",
+      "source": "https://www.city.koriyama.lg.jp/site/kosodate/36404.html",
+      "sourceName": "郡山市公式サイト",
+      "checkedAt": "2026-10-25",
+      "official": true,
+      "ageNote": "0歳から18歳に達した後の最初の3月31日まで。",
+      "minAgeMonths": 0,
+      "schoolYearEndAge": 18,
+      "ageGroups": [
+        "0歳",
+        "1〜2歳",
+        "3〜5歳",
+        "小学生",
+        "中学生以上"
+      ]
+    },
+    {
+      "id": "continuation-east-koriyama-postpartum",
+      "title": "郡山市 産後ケア事業",
+      "prefecture": "福島県",
+      "municipality": "郡山市",
+      "municipalityCode": "07203",
+      "area": "福島県 郡山市",
+      "scope": "municipality",
+      "category": "妊娠・出産",
+      "summary": "宿泊・日帰り・訪問で、母子の体調確認や授乳・育児の相談を受けられます。2026年度は妊娠32週頃からまとめて利用申請できます。",
+      "eligibility": "郡山市に住民票がある出産後1年以内の母親と子ども、または死産・流産後1年以内の方。医療行為が不要であること。受け入れ月齢は施設により異なる。",
+      "how": "市のオンライン申請サービスへ登録して利用を申請。承認通知・クーポン・利用券が届いたら委託機関へ予約し、利用時に券と本人確認書類を提示する。",
+      "amountLabel": "施設別の利用料・食事代あり。課税世帯は1回・1泊につき上限2,500円の助成を5回まで。非課税・生活保護世帯は軽減あり",
+      "preparation": [
+        "承認通知・クーポン券・サービス利用券",
+        "マイナンバーカード等の本人確認書類",
+        "母子健康手帳と施設が指定する持ち物"
+      ],
+      "steps": [
+        {
+          "title": "対象を確認",
+          "body": "郡山市に住民票がある出産後1年以内の母親と子ども、または死産・流産後1年以内の方。医療行為が不要であること。受け入れ月齢は施設により異なる。"
+        },
+        {
+          "title": "申請・利用",
+          "body": "市のオンライン申請サービスへ登録して利用を申請。承認通知・クーポン・利用券が届いたら委託機関へ予約し、利用時に券と本人確認書類を提示する。"
+        }
+      ],
+      "deadline": "妊娠32週頃から申請可。宿泊・日帰り・訪問はそれぞれ原則7日まで。書類到着に約1週間を要するため早めに申請",
+      "source": "https://www.city.koriyama.lg.jp/site/kosodate/1400.html",
+      "sourceName": "郡山市公式サイト",
+      "checkedAt": "2026-10-25",
+      "official": true,
+      "ageNote": "サービスは原則産後1年以内、施設別の月齢条件あり。妊娠32週頃から事前申請できます。 産後1年の境界の日付は未確定として、市・施設に確認。",
+      "programYear": 2026,
+      "ageRanges": [
+        {
+          "minAgeMonths": -1,
+          "maxAgeMonths": -1
+        },
+        {
+          "minAgeMonths": 0,
+          "maxAgeMonths": 11
+        }
+      ],
+      "ageGroups": [
+        "妊娠中",
+        "0歳"
+      ],
+      "additionalSources": [
+        {
+          "name": "2026年度 産後ケアの利用案内",
+          "url": "https://www.city.koriyama.lg.jp/uploaded/attachment/129064.pdf"
+        }
+      ],
+      "notes": [
+        "市外の委託機関を希望する場合はこども家庭課へ事前連絡。子どもだけの利用不可。"
+      ],
+      "uncertainAgeRanges": [
+        {
+          "minAgeMonths": 12,
+          "maxAgeMonths": 12
+        }
+      ]
+    },
+    {
+      "id": "continuation-east-iwaki-child-medical",
+      "title": "小学生から高校生年代の子ども医療費助成",
+      "prefecture": "福島県",
+      "municipality": "いわき市",
+      "municipalityCode": "07204",
+      "area": "福島県 いわき市",
+      "scope": "municipality",
+      "category": "医療",
+      "summary": "小学生から高校生年代までの保険診療の自己負担と入院時の食事代を助成。保険の種類や受診先で窓口無料・払い戻しの扱いが異なります。",
+      "eligibility": "いわき市に住所を持つ、小学校1年生から18歳に達する年度末までの子どもの保護者。医療保険に未加入の場合、生活保護を受けている場合は対象外。",
+      "how": "社会保険等は地区の窓口で受給資格を登録し受給者証を取得。市国保は原則登録不要だが入院食事代の助成には登録が必要。対象外の窓口で支払った分は市へ払い戻しを申請する。",
+      "amountLabel": "保険診療の自己負担と入院時食事療養費を助成。高額療養費・附加給付や保険適用外分は除く",
+      "preparation": [
+        "子どもの健康保険情報が分かるもの",
+        "保護者の口座が分かるもの",
+        "払い戻し時は領収書など、必要に応じ高額療養費関係の書類"
+      ],
+      "steps": [
+        {
+          "title": "対象を確認",
+          "body": "いわき市に住所を持つ、小学校1年生から18歳に達する年度末までの子どもの保護者。医療保険に未加入の場合、生活保護を受けている場合は対象外。"
+        },
+        {
+          "title": "申請・利用",
+          "body": "社会保険等は地区の窓口で受給資格を登録し受給者証を取得。市国保は原則登録不要だが入院食事代の助成には登録が必要。対象外の窓口で支払った分は市へ払い戻しを申請する。"
+        }
+      ],
+      "deadline": "社会保険等の加入者は受診前に資格登録。登録の変更があれば速やかに届出",
+      "source": "https://www.city.iwaki.lg.jp/www/contents/1001000000214/index.html",
+      "sourceName": "いわき市公式サイト",
+      "checkedAt": "2026-10-25",
+      "official": true,
+      "ageNote": "小学校1年生から18歳に達する年度の3月31日まで。就学前は別の乳幼児医療制度です。",
+      "minSchoolGrade": 1,
+      "schoolYearEndAge": 18,
+      "ageGroups": [
+        "小学生",
+        "中学生以上"
+      ],
+      "notes": [
+        "社会保険等は市内診療で月21,000円未満なら窓口無料、21,000円以上や市外診療は払い戻し。市民サービスセンターは資格登録を受け付けません。"
+      ]
+    },
+    {
+      "id": "continuation-east-iwaki-postpartum",
+      "title": "いわき市 産後ケア事業",
+      "prefecture": "福島県",
+      "municipality": "いわき市",
+      "municipalityCode": "07204",
+      "area": "福島県 いわき市",
+      "scope": "municipality",
+      "category": "妊娠・出産",
+      "summary": "宿泊・日帰りで母親の休息や乳房ケア、赤ちゃんの授乳等の支援を受けられます。2026年度から利用券を使います。",
+      "eligibility": "いわき市に住民票がある産後12か月以内の母子で、子どもの1歳の誕生日の前日まで。感染症状がなく、医療行為を必要としないこと。",
+      "how": "希望する事業所に仮予約してから、地区保健福祉センターへ電話・来所または電子申請。届いた利用券を当日提出し、記載された利用料と食事代を支払う。",
+      "amountLabel": "日帰り500円。宿泊は施設によって1泊2日3,000円または7,000円で、世帯や利用回数による減免あり。食事代は別",
+      "preparation": [
+        "市が交付する産後ケア事業利用券",
+        "母子健康手帳など施設が指定する持ち物"
+      ],
+      "steps": [
+        {
+          "title": "対象を確認",
+          "body": "いわき市に住民票がある産後12か月以内の母子で、子どもの1歳の誕生日の前日まで。感染症状がなく、医療行為を必要としないこと。"
+        },
+        {
+          "title": "申請・利用",
+          "body": "希望する事業所に仮予約してから、地区保健福祉センターへ電話・来所または電子申請。届いた利用券を当日提出し、記載された利用料と食事代を支払う。"
+        }
+      ],
+      "deadline": "電子申請は利用希望の1週間前まで。宿泊券は発行から1か月、日帰り券は1歳の誕生日前日まで有効",
+      "source": "https://www.city.iwaki.lg.jp/www/contents/1001000005163/index.html",
+      "sourceName": "いわき市公式サイト",
+      "checkedAt": "2026-10-25",
+      "official": true,
+      "ageNote": "子どもの1歳の誕生日前日まで。受け入れ月齢は事業所ごとに異なります。",
+      "programYear": 2026,
+      "minAgeMonths": 0,
+      "maxAgeMonths": 11,
+      "ageGroups": [
+        "0歳"
+      ],
+      "notes": [
+        "宿泊は原則6泊7日、日帰りは原則3日。市への事前申請がない利用は助成対象外。訪問ケアは実施していません。"
+      ],
+      "additionalSources": [
+        {
+          "name": "2026年度の実施事業所と利用料",
+          "url": "https://www.city.iwaki.lg.jp/www/contents/1001000005163/simple/iwaki2026.pdf"
+        }
+      ]
+    },
+    {
+      "id": "expand-central-funabashi-medical",
+      "title": "子ども医療費助成",
+      "prefecture": "千葉県",
+      "municipality": "船橋市",
+      "municipalityCode": "12204",
+      "area": "千葉県 船橋市",
+      "scope": "municipality",
+      "category": "医療",
+      "summary": "高校生年代まで、保険診療の通院・入院・調剤の費用を助成します。",
+      "eligibility": "市に住民登録があり健康保険に加入する子ども。他の公費の対象分などは優先制度があります。",
+      "how": "出生・転入時に受給券を申請。県内の対応医療機関では保険資格の確認書類と受給券を提示。県外などは窓口・郵送で払い戻しを申請します。",
+      "amountLabel": "通院1回・入院1日300円、調剤無料。所得割非課税世帯は無料。月の上限あり",
+      "source": "https://www.city.funabashi.lg.jp/kodomo/teate/002/p004273a.html",
+      "sourceName": "船橋市公式サイト",
+      "checkedAt": "2026-10-25",
+      "official": true,
+      "programYear": 2026,
+      "preparation": [
+        "子どもの保険資格が分かる書類",
+        "来庁者の本人確認書類",
+        "申請者と配偶者の個人番号が分かる書類"
+      ],
+      "minAgeMonths": 0,
+      "schoolYearEndAge": 18,
+      "ageGroups": [
+        "0歳",
+        "1〜2歳",
+        "3〜5歳",
+        "小学生",
+        "中学生以上"
+      ],
+      "ageNote": "18歳に達した後の最初の3月31日まで。",
+      "deadline": "払い戻しは医療費を支払った翌日から2年以内",
+      "notes": [
+        "同じ月・同じ医療機関で、入院11日目、通院6回目から自己負担なし。保険外費用は対象外。"
+      ]
+    },
+    {
+      "id": "expand-central-funabashi-postpartum",
+      "title": "宿泊・通所・訪問の産後ケア",
+      "prefecture": "千葉県",
+      "municipality": "船橋市",
+      "municipalityCode": "12204",
+      "area": "千葉県 船橋市",
+      "scope": "municipality",
+      "category": "妊娠・出産",
+      "summary": "休養や授乳・育児の相談を、宿泊・通所・訪問で受けられます。合計7日以内です。",
+      "eligibility": "市に住民票がある母子で、家族の支援が得られない、心身の不調や育児不安があるなど支援を必要とする方。医療が必要な場合は対象外。",
+      "how": "担当保健センターへ相談し、市による仮予約後に利用申請書を提出。決定通知を受け取り、施設などと日程を調整します。",
+      "amountLabel": "課税世帯：宿泊1泊2日6,000円、通所2,100円/日、訪問1,400円/日。非課税・生活保護は減免申請で無料",
+      "source": "https://www.city.funabashi.lg.jp/kodomo/ninshin/002/p051574.html",
+      "sourceName": "船橋市公式サイト",
+      "checkedAt": "2026-10-25",
+      "official": true,
+      "programYear": 2026,
+      "preparation": [
+        "産後ケア事業利用申請書",
+        "利用当日は決定通知書",
+        "減免を希望する場合は非課税・生活保護の証明書"
+      ],
+      "ageNote": "施設により受け入れる月齢が異なります。",
+      "deadline": "出産予定日の2か月前から申請可能。利用希望前に保健センターへ相談",
+      "notes": [
+        "多胎の加算や別途実費があります。宿泊1泊2日は2日分と数えます。"
+      ]
+    },
+    {
+      "id": "expand-central-kashiwa-medical",
+      "title": "子ども医療費助成",
+      "prefecture": "千葉県",
+      "municipality": "柏市",
+      "municipalityCode": "12217",
+      "area": "千葉県 柏市",
+      "scope": "municipality",
+      "category": "医療",
+      "summary": "高校生年代まで、保険診療にかかる通院・入院・調剤の費用を助成します。",
+      "eligibility": "市に居住・住民登録があり、健康保険の給付を受けられる子ども。婚姻している児童は対象外。",
+      "how": "出生・転入時に市役所こども福祉課、沼南支所、各出張所または郵送で申請。受給券と保険資格が分かる書類を県内の対応医療機関へ提示します。",
+      "amountLabel": "通院1回・入院1日300円、調剤無料。所得割非課税世帯は無料。月の上限あり",
+      "source": "https://www.city.kashiwa.lg.jp/kodomofukushi/haguhagu/navi/teate/iryohi/jose.html",
+      "sourceName": "柏市公式サイト",
+      "checkedAt": "2026-10-25",
+      "official": true,
+      "programYear": 2026,
+      "preparation": [
+        "登録申請書",
+        "子どもの保険資格確認書等の写し",
+        "海外転入や代理申請の場合は追加書類"
+      ],
+      "minAgeMonths": 0,
+      "schoolYearEndAge": 18,
+      "ageGroups": [
+        "0歳",
+        "1〜2歳",
+        "3〜5歳",
+        "小学生",
+        "中学生以上"
+      ],
+      "ageNote": "18歳に達した後の最初の3月31日まで。",
+      "notes": [
+        "同じ月・同じ医療機関で入院11日目、通院6回目から自己負担なし。受給券は毎年8月更新。"
+      ],
+      "deadlineNote": "出生・転入時に申請。県外受診など受給券が使えない場合の払い戻し条件は市の案内を確認。"
+    },
+    {
+      "id": "expand-central-kashiwa-postpartum",
+      "title": "柏市産後ケア事業",
+      "prefecture": "千葉県",
+      "municipality": "柏市",
+      "municipalityCode": "12217",
+      "area": "千葉県 柏市",
+      "scope": "municipality",
+      "category": "妊娠・出産",
+      "summary": "宿泊・通所・訪問を合計7日まで利用し、休息や授乳・育児の支援を受けられます。",
+      "eligibility": "市民で産後1年未満の母子のうち、育児不安や心身の負担がありケアが必要な方。復職後・保育園に入所している場合や、感染症・医療行為が必要な場合は利用不可。",
+      "how": "問い合わせフォームから連絡し、担当者との面談後にオンライン・郵送・窓口で申請。審査・決定後、本人が施設へ連絡します。",
+      "amountLabel": "一般：宿泊2,500円/日、個別通所1,500円/日、集団半日・訪問500円。生活保護・所得割非課税世帯は無料",
+      "source": "https://www.city.kashiwa.lg.jp/boshihoken/haguhagu/navi/ninshin/shussan/sango/index.html",
+      "sourceName": "柏市公式サイト",
+      "checkedAt": "2026-10-25",
+      "official": true,
+      "programYear": 2026,
+      "preparation": [
+        "産後ケア事業申請書",
+        "担当者が指定する質問票など"
+      ],
+      "minAgeMonths": 0,
+      "maxAgeMonths": 11,
+      "ageGroups": [
+        "0歳"
+      ],
+      "ageNote": "産後1年未満。施設ごとの受入月齢も確認してください。",
+      "deadline": "出産予定日の2か月前から、利用希望日初日の2週間前までに問い合わせ",
+      "notes": [
+        "多胎は2人目以降の加算あり。施設は原則1か所を選び、開始後の変更はできません。"
+      ]
+    },
+    {
+      "id": "expand-central-yokosuka-medical",
+      "title": "こども医療証による医療費の助成",
+      "prefecture": "神奈川県",
+      "municipality": "横須賀市",
+      "municipalityCode": "14201",
+      "area": "神奈川県 横須賀市",
+      "scope": "municipality",
+      "category": "医療",
+      "summary": "18歳の年度末まで、保険診療の入院・通院などの自己負担分を助成します。",
+      "eligibility": "市内に住所があり公的医療保険に加入する子ども。生活保護や福祉医療証など他の医療助成の対象者は除きます。",
+      "how": "出生・転入後に医療証を申請。窓口・郵送のほか、2026年5月からマイナポータルによる新規申請に対応。県内受診時に医療証と保険資格を提示します。",
+      "amountLabel": "対象の保険診療の自己負担なし。入院の食事代や保険外費用は対象外",
+      "source": "https://www.city.yokosuka.kanagawa.jp/3915/g_info/l100000592.html",
+      "sourceName": "横須賀市公式サイト",
+      "checkedAt": "2026-10-25",
+      "official": true,
+      "programYear": 2026,
+      "preparation": [
+        "医療証交付申請書",
+        "子どもの保険情報が分かるもの"
+      ],
+      "minAgeMonths": 0,
+      "schoolYearEndAge": 18,
+      "ageGroups": [
+        "0歳",
+        "1〜2歳",
+        "3〜5歳",
+        "小学生",
+        "中学生以上"
+      ],
+      "ageNote": "18歳に達した後の最初の3月31日まで。",
+      "deadlineNote": "出生・転入後に医療証を申請。県外受診などの払い戻しは別手続き。"
+    },
+    {
+      "id": "expand-central-yokosuka-postpartum",
+      "title": "施設・訪問で受ける産後ケア",
+      "prefecture": "神奈川県",
+      "municipality": "横須賀市",
+      "municipalityCode": "14201",
+      "area": "神奈川県 横須賀市",
+      "scope": "municipality",
+      "category": "妊娠・出産",
+      "summary": "助産師の授乳・育児相談や休息支援を、施設または自宅で受けられます。通常は合計7回までです。",
+      "eligibility": "市に住所がある産後1年未満の母子。母子と同居家族に感染症状がなく、医療行為が不要であること。",
+      "how": "テオテ産後ケアで市への利用申請を行い、希望施設を登録・予約。スマホでの手続きが難しい場合は市に郵送手続きを相談します。",
+      "amountLabel": "課税世帯：デイ・訪問3,500円/回、宿泊1泊2日8,000円。非課税世帯は減額、生活保護は無料",
+      "source": "https://www.city.yokosuka.kanagawa.jp/3910/20151001sangocare.html",
+      "sourceName": "横須賀市公式サイト",
+      "checkedAt": "2026-10-25",
+      "official": true,
+      "programYear": 2026,
+      "preparation": [
+        "母子健康手帳",
+        "施設利用では母子の保険資格が分かるもの・おむつ・ミルクなど"
+      ],
+      "minAgeMonths": 0,
+      "maxAgeMonths": 11,
+      "ageGroups": [
+        "0歳"
+      ],
+      "ageNote": "産後1年未満。施設ごとの受入月齢も確認してください。",
+      "deadline": "利用前の申請と予約が必要。施設ごとに受入月齢を確認",
+      "notes": [
+        "多胎は合計14回まで。宿泊は1泊を1回と数えて通常6回まで。変更・キャンセルの期限に注意。"
+      ]
+    },
+    {
+      "id": "expand-central-fujisawa-medical",
+      "title": "小児医療費の助成",
+      "prefecture": "神奈川県",
+      "municipality": "藤沢市",
+      "municipalityCode": "14205",
+      "area": "神奈川県 藤沢市",
+      "scope": "municipality",
+      "category": "医療",
+      "summary": "18歳の年度末まで、入院・通院の保険診療の自己負担分を助成します。",
+      "eligibility": "市に住民登録があり健康保険に加入している子ども。生活保護、一定の施設入所、里親委託、他の市の医療助成などの対象者は除きます。",
+      "how": "医療証を電子・窓口で申請。郵送の場合は申請書原本と保険加入が分かる書類の写しを子育て給付課へ送付します。",
+      "amountLabel": "対象の保険診療の自己負担分を助成。食事代・予防接種など保険外費用は対象外",
+      "source": "https://www.city.fujisawa.kanagawa.jp/kosodate/kenko/kosodate/teate/josesedo.html",
+      "sourceName": "藤沢市公式サイト",
+      "checkedAt": "2026-10-25",
+      "official": true,
+      "programYear": 2026,
+      "preparation": [
+        "医療証交付申請書",
+        "子どもの健康保険加入を示す書類",
+        "来庁者の本人確認書類"
+      ],
+      "minAgeMonths": 0,
+      "schoolYearEndAge": 18,
+      "ageGroups": [
+        "0歳",
+        "1〜2歳",
+        "3〜5歳",
+        "小学生",
+        "中学生以上"
+      ],
+      "ageNote": "18歳に達した後の最初の3月31日まで。",
+      "deadlineNote": "助成は出生・転入などの日から。医療証は申請が必要。"
+    },
+    {
+      "id": "expand-central-fujisawa-postpartum",
+      "title": "藤沢市産後ケア事業",
+      "prefecture": "神奈川県",
+      "municipality": "藤沢市",
+      "municipalityCode": "14205",
+      "area": "神奈川県 藤沢市",
+      "scope": "municipality",
+      "category": "妊娠・出産",
+      "summary": "宿泊・通所・訪問で授乳や育児の相談、休息の支援を受けられます。利用券7枚分まで利用できます。",
+      "eligibility": "市に住民登録がある産後1年未満の産婦と子。感染症の疑いや入院・治療の必要がある場合は利用不可。",
+      "how": "利用券を確認し、希望事業者へ直接予約。利用日に母子健康手帳と記入した利用券を提出し、利用料を支払います。",
+      "amountLabel": "課税世帯：宿泊1泊2日13,000円、通所6時間4,800円・3時間3,000円、訪問3,000円。免除の事前申請あり",
+      "source": "https://www.city.fujisawa.kanagawa.jp/oyako/sangocare.html",
+      "sourceName": "藤沢市公式サイト",
+      "checkedAt": "2026-10-25",
+      "official": true,
+      "programYear": 2026,
+      "preparation": [
+        "産後ケア事業利用券",
+        "母子健康手帳",
+        "免除を利用する場合は承認通知"
+      ],
+      "minAgeMonths": 0,
+      "maxAgeMonths": 11,
+      "ageGroups": [
+        "0歳"
+      ],
+      "ageNote": "産後1年未満。施設ごとの受入月齢も確認してください。",
+      "deadline": "免除は利用前の申請が必要。通知まで概ね2〜3週間",
+      "notes": [
+        "宿泊1泊2日は利用券2枚。施設ごとに受入月齢が異なります。利用後の免除申請による払い戻しはありません。",
+        "住民税非課税世帯・生活保護世帯は、利用前の申請と承認により自己負担を免除。"
+      ]
+    },
+    {
+      "id": "expand-central-hiratsuka-medical",
+      "title": "小児医療費の助成",
+      "prefecture": "神奈川県",
+      "municipality": "平塚市",
+      "municipalityCode": "14203",
+      "area": "神奈川県 平塚市",
+      "scope": "municipality",
+      "category": "医療",
+      "summary": "18歳の年度末まで、入院・通院の保険診療にかかる自己負担額を助成します。",
+      "eligibility": "市に住所がある子ども。所得制限なし。生活保護や他の医療助成などに該当する場合は対象外となります。",
+      "how": "出生・転入後に医療証を申請。県内の対応医療機関では医療証を使用し、県外などで支払った場合は払い戻しを申請します。",
+      "amountLabel": "対象の保険診療の自己負担分を助成。保険外診療や入院の食事代などは対象外",
+      "source": "https://www.city.hiratsuka.kanagawa.jp/kodomo/page-c_03167.html",
+      "sourceName": "平塚市公式サイト",
+      "checkedAt": "2026-10-25",
+      "official": true,
+      "programYear": 2026,
+      "preparation": [
+        "小児医療証交付申請書",
+        "保険加入が分かる書類。申請書へ保険情報を記載できれば省略可能"
+      ],
+      "minAgeMonths": 0,
+      "schoolYearEndAge": 18,
+      "ageGroups": [
+        "0歳",
+        "1〜2歳",
+        "3〜5歳",
+        "小学生",
+        "中学生以上"
+      ],
+      "ageNote": "18歳に達した後の最初の3月31日まで。",
+      "deadlineNote": "医療証は申請後、18歳の年度末まで有効。原則更新は不要。"
+    },
+    {
+      "id": "expand-central-hiratsuka-postpartum",
+      "title": "宿泊・通所・訪問の産後ケア",
+      "prefecture": "神奈川県",
+      "municipality": "平塚市",
+      "municipalityCode": "14203",
+      "area": "神奈川県 平塚市",
+      "scope": "municipality",
+      "category": "妊娠・出産",
+      "summary": "産後の体調不良や育児不安がある母子が、宿泊・通所・訪問を組み合わせ7回分まで利用できます。",
+      "eligibility": "市に住所のある母子。2026年4月1日以降の出産は産後1年未満、それ以前は4か月未満。早産時は修正月齢で確認。感染症や医療行為の必要がある場合は利用不可。",
+      "how": "電子申請で登録し、承認通知と利用券を受領してから施設を予約。利用日に通知・利用券を提示します。",
+      "amountLabel": "課税世帯：宿泊1泊2日18,000円、通所6時間4,800円・3時間3,000円、訪問2,700円。非課税等は減額",
+      "source": "https://www.city.hiratsuka.kanagawa.jp/kenko/page21_00244.html",
+      "sourceName": "平塚市公式サイト",
+      "checkedAt": "2026-10-25",
+      "official": true,
+      "programYear": 2026,
+      "preparation": [
+        "利用登録申請書",
+        "利用のための質問票",
+        "減免を受ける場合は減免申請書"
+      ],
+      "minAgeMonths": 0,
+      "maxAgeMonths": 11,
+      "ageGroups": [
+        "0歳"
+      ],
+      "ageNote": "出産日が2026年4月1日以降なら産後1年未満。それ以前の出産は4か月未満。早産は修正月齢の条件あり。",
+      "deadline": "利用前に申請・承認・予約が必要",
+      "notes": [
+        "宿泊1泊2日は利用券2枚。多胎加算とキャンセル料は予約時に確認。"
+      ]
+    },
+    {
+      "id": "expand-central-chigasaki-medical",
+      "title": "小児医療費の助成",
+      "prefecture": "神奈川県",
+      "municipality": "茅ヶ崎市",
+      "municipalityCode": "14207",
+      "area": "神奈川県 茅ヶ崎市",
+      "scope": "municipality",
+      "category": "医療",
+      "summary": "高校生世代まで、通院・入院・調剤など保険診療の自己負担を助成します。所得制限はありません。",
+      "eligibility": "市に住む健康保険加入の子ども。生活保護、施設措置、他の医療助成などの対象者は除きます。",
+      "how": "窓口または電子申請で医療証を申請。県内の対応医療機関で保険資格と医療証を提示。県外などの受診は診療翌月以降に払い戻しを申請します。",
+      "amountLabel": "対象の保険診療の自己負担分を全額助成。入院の食事代や保険外費用などは対象外",
+      "source": "https://www.city.chigasaki.kanagawa.jp/kosodate/1024750/teate/1014284/1004038.html",
+      "sourceName": "茅ヶ崎市公式サイト",
+      "checkedAt": "2026-10-25",
+      "official": true,
+      "programYear": 2026,
+      "preparation": [
+        "子どもの保険情報が分かるもの",
+        "届出人の本人確認書類",
+        "保護者・配偶者の個人番号が分かるもの"
+      ],
+      "minAgeMonths": 0,
+      "schoolYearEndAge": 18,
+      "ageGroups": [
+        "0歳",
+        "1〜2歳",
+        "3〜5歳",
+        "小学生",
+        "中学生以上"
+      ],
+      "ageNote": "18歳に達した後の最初の3月31日まで。",
+      "deadline": "払い戻しは診療月の翌月以降に申請。医療証の期限は18歳の年度末"
+    },
+    {
+      "id": "expand-central-chigasaki-hospital-postpartum",
+      "title": "市立病院で受ける産後ケア",
+      "prefecture": "神奈川県",
+      "municipality": "茅ヶ崎市",
+      "municipalityCode": "14207",
+      "area": "神奈川県 茅ヶ崎市",
+      "scope": "municipality",
+      "category": "妊娠・出産",
+      "summary": "茅ヶ崎市立病院で、通所または訪問による授乳・育児相談や母子のケアを受けられます。",
+      "eligibility": "市に住民登録があり、出産後4か月未満で心身の不調や育児不安がある母子。医療行為が不要で感染症がないこと。他院で出産した方も対象。",
+      "how": "初回は市こども育成相談課へ問い合わせた後、市立病院へ電話で予約します。2回目以降は病院へ連絡します。",
+      "amountLabel": "通所3時間1,000円・食事付き5時間1,800円、訪問90分900円。非課税世帯などは免除あり",
+      "source": "https://hosp.city.chigasaki.kanagawa.jp/4001480/4001493/4001782.html",
+      "sourceName": "茅ヶ崎市立病院公式サイト",
+      "checkedAt": "2026-10-25",
+      "official": true,
+      "programYear": 2026,
+      "minAgeMonths": 0,
+      "maxAgeMonths": 3,
+      "ageGroups": [
+        "0歳"
+      ],
+      "ageNote": "この市立病院で受けられるのは出産後4か月未満の母子。",
+      "deadline": "利用日の2日前16時を過ぎる変更・中止は利用料全額のキャンセル料",
+      "notes": [
+        "全施設の利用分を含む1回の出産当たり7回が上限。これは市立病院の受入条件・料金です。"
+      ],
+      "preparationNote": "必要な持ち物は予約時に病院へ確認してください。"
+    },
+    {
+      "id": "expand-central-kanazawa-medical",
+      "title": "子育て支援の医療費助成",
+      "prefecture": "石川県",
+      "municipality": "金沢市",
+      "municipalityCode": "17201",
+      "area": "石川県 金沢市",
+      "scope": "municipality",
+      "category": "医療",
+      "summary": "入院は18歳の年度末まで、通院は中学3年生までの保険診療を助成。対象年齢が入院と通院で異なります。",
+      "eligibility": "市に住所があり、健康保険に加入する子ども。2026年12月診療分までは入院が18歳の年度末まで、通院が15歳の年度末まで。",
+      "how": "県内の対応医療機関で医療証などを提示。現物給付が使えない場合は窓口で支払い、市民センター・福祉健康センター・市役所または郵送で払い戻しを申請します。",
+      "amountLabel": "入院の保険診療自己負担は全額。通院は月の自己負担合計から1,000円を差し引いた額を助成",
+      "source": "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/kenkoseisakuka/gyomuannai/3/7221.html",
+      "sourceName": "金沢市公式サイト",
+      "checkedAt": "2026-10-25",
+      "official": true,
+      "programYear": 2026,
+      "preparation": [
+        "払い戻し時は健康保険が分かるもの・医療証・領収書・印鑑など"
+      ],
+      "minAgeMonths": 0,
+      "schoolYearEndAge": 18,
+      "ageGroups": [
+        "0歳",
+        "1〜2歳",
+        "3〜5歳",
+        "小学生",
+        "中学生以上"
+      ],
+      "ageNote": "入院は18歳、通院は15歳に達した後の最初の3月31日まで。",
+      "deadline": "払い戻しは診療月の翌月以降2年以内",
+      "notes": [
+        "通院の窓口負担は1医療機関1日500円、調剤は無料。保険外費用は対象外。"
+      ],
+      "upcomingChange": "2027年1月診療分から、通院の対象を18歳の年度末までに拡大予定。"
+    },
+    {
+      "id": "expand-central-kanazawa-postpartum",
+      "title": "金沢市産後ケア事業",
+      "prefecture": "石川県",
+      "municipality": "金沢市",
+      "municipalityCode": "17201",
+      "area": "石川県 金沢市",
+      "scope": "municipality",
+      "category": "妊娠・出産",
+      "summary": "医療機関や助産院の宿泊・通所、自宅への訪問で、休息や授乳・育児の支援を受けられます。通算最大7日です。",
+      "eligibility": "市民で産後1年未満の母子のうち、産後ケアが必要な方。施設ごとに受入月齢が異なります。",
+      "how": "出産後に管轄の福祉健康センターへ相談・登録申請。決定通知を受けてから、市の担当課に希望日時を連絡します。施設への直接予約はできません。",
+      "amountLabel": "通所：医療機関3,000円・助産院4,190円/日。宿泊1泊2日15,000円、訪問740円/日。非課税等は減免あり",
+      "source": "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/soumu_hkc/gyomuannai/boshinokenkou/25780.html",
+      "sourceName": "金沢市公式サイト",
+      "checkedAt": "2026-10-25",
+      "official": true,
+      "programYear": 2026,
+      "minAgeMonths": 0,
+      "maxAgeMonths": 11,
+      "ageGroups": [
+        "0歳"
+      ],
+      "ageNote": "産後1年未満。施設ごとの受入月齢も確認してください。",
+      "deadline": "決定まで約1週間。利用前に余裕を持って申請",
+      "notes": [
+        "2026年7月1日利用分から、条件を満たす里帰り先の産後ケアに払い戻しあり。事前の利用登録が必要。"
+      ],
+      "preparationNote": "減免に必要な書類は福祉健康センターで確認してください。"
+    },
+    {
+      "id": "expand-central-fukui-medical",
+      "title": "子ども医療費の助成",
+      "prefecture": "福井県",
+      "municipality": "福井市",
+      "municipalityCode": "18201",
+      "area": "福井県 福井市",
+      "scope": "municipality",
+      "category": "医療",
+      "summary": "高校3年生相当までの保険診療などを助成。2025年1月受診分から自己負担金を無償化しています。",
+      "eligibility": "市に住民登録があり、健康保険に加入している18歳の年度末までの子ども。他の医療助成などが優先される場合は対象外。",
+      "how": "出生・転入時に受給者証をオンラインまたは窓口で申請。県外受診などの払い戻しは、窓口または郵送で別途申請します。",
+      "amountLabel": "対象の保険診療の自己負担なし。入院時の食事療養費標準負担金なども助成対象",
+      "source": "https://www.city.fukui.lg.jp/fukusi/kosodate/jidofukusi/p009323.html",
+      "sourceName": "福井市公式サイト",
+      "checkedAt": "2026-10-25",
+      "official": true,
+      "programYear": 2026,
+      "preparation": [
+        "子どもの健康保険資格が分かるもの",
+        "申請者の普通預金口座が分かるもの",
+        "本人確認書類",
+        "市外で出生届を出した場合は母子手帳の該当ページ"
+      ],
+      "minAgeMonths": 0,
+      "schoolYearEndAge": 18,
+      "ageGroups": [
+        "0歳",
+        "1〜2歳",
+        "3〜5歳",
+        "小学生",
+        "中学生以上"
+      ],
+      "ageNote": "18歳に達した後の最初の3月31日まで。",
+      "deadline": "払い戻しは診療を受けた月から1年以内",
+      "notes": [
+        "保険外費用・第三者行為・学校管理下の災害給付対象などは助成対象外。"
+      ]
+    },
+    {
+      "id": "expand-central-fukui-postpartum",
+      "title": "福井市産後ケア事業",
+      "prefecture": "福井県",
+      "municipality": "福井市",
+      "municipalityCode": "18201",
+      "area": "福井県 福井市",
+      "scope": "municipality",
+      "category": "妊娠・出産",
+      "summary": "宿泊・通所・訪問で授乳・育児の相談や母子のケアを受けられます。宿泊3泊4日、通所3日、訪問3回までです。",
+      "eligibility": "市に住民票がある産後1年までの母子で、ケアが必要な方。感染症の疑いや医療行為が必要な場合は利用できません。",
+      "how": "宿泊・通所はこども家庭センターへ連絡し、面談・申請・承認を経て利用。訪問は利用券を確認し、実施助産所等へ直接申し込みます。",
+      "amountLabel": "宿泊3,500円/泊、通所3,000円/日、訪問1,300円/回。多胎加算あり。非課税・生活保護は事前申請で免除",
+      "source": "https://www.city.fukui.lg.jp/fukusi/kosodate/ninsin/p020864.html",
+      "sourceName": "福井市公式サイト",
+      "checkedAt": "2026-10-25",
+      "official": true,
+      "programYear": 2026,
+      "preparation": [
+        "産後ケアの利用券または利用承認通知書",
+        "母子健康手帳",
+        "宿泊・通所は利用申請書兼情報提供書"
+      ],
+      "ageGroups": [
+        "0歳",
+        "1〜2歳"
+      ],
+      "ageNote": "公式案内は産後1年まで。12か月に達した境界は対象を断定せず、市へ確認。施設ごとの受入月齢も異なります。",
+      "deadline": "利用前の相談・申請が必要。前日以降の自己都合キャンセルは料金が生じる場合あり",
+      "notes": [
+        "流産・死産後に骨盤・乳房のケアが必要な方も対象。"
+      ],
+      "minAgeMonths": 0,
+      "maxAgeMonths": 12,
+      "uncertainAgeRanges": [
+        {
+          "minAgeMonths": 12,
+          "maxAgeMonths": 12
+        }
+      ]
+    },
+    {
+      "id": "expand-west-suita-medical",
+      "title": "吹田市 子ども医療費の助成",
+      "prefecture": "大阪府",
+      "municipality": "吹田市",
+      "municipalityCode": "27205",
+      "area": "大阪府 吹田市",
+      "scope": "municipality",
+      "category": "医療",
+      "summary": "高校生年代までの通院・入院などで、保険診療の自己負担の一部を助成します。所得による制限はありません。",
+      "eligibility": "吹田市に住み、健康保険に加入する18歳到達後最初の3月31日までの子ども。生活保護世帯、ひとり親家庭医療証・重度障がい者医療証を持つ場合は対象外です。",
+      "how": "出生・転入後に必要書類をそろえ、子育て給付課の窓口または郵送で医療証を申請します。府内の受診時は医療証を提示し、府外受診などは払い戻しを申請します。",
+      "amountLabel": "保険診療の自己負担から一部自己負担額を除いて助成。院外処方の薬代も対象",
+      "preparation": [
+        "子ども医療証交付申請書",
+        "子どもの健康保険資格が分かる書類",
+        "保護者の個人番号が分かるもの",
+        "市で所得を確認できない場合は課税証明書または同意書"
+      ],
+      "deadline": "出生・転入などの日から3か月以内に必要書類を提出。郵送は必着。遅れた場合は提出を確認できた月の1日から",
+      "caution": "入院時の食事代、健診、予防接種、差額ベッド代などは対象外です。",
+      "minAgeMonths": 0,
+      "schoolYearEndAge": 18,
+      "ageNote": "18歳到達後最初の3月31日まで。",
+      "source": "https://www.city.suita.osaka.jp/kosodate/1018219/1018222/1005604.html",
+      "sourceName": "吹田市公式サイト",
+      "checkedAt": "2026-10-25",
+      "official": true,
+      "steps": [
+        {
+          "title": "利用の前に",
+          "body": "出生・転入後に必要書類をそろえ、子育て給付課の窓口または郵送で医療証を申請します。府内の受診時は医療証を提示し、府外受診などは払い戻しを申請します。"
+        }
+      ]
+    },
+    {
+      "id": "expand-west-suita-postpartum",
+      "title": "吹田市 産後ケア事業",
+      "prefecture": "大阪府",
+      "municipality": "吹田市",
+      "municipalityCode": "27205",
+      "area": "大阪府 吹田市",
+      "scope": "municipality",
+      "category": "妊娠・出産",
+      "summary": "施設での宿泊・日帰りと、自宅への訪問で、休息や授乳、赤ちゃんのお世話の相談を受けられます。",
+      "eligibility": "吹田市に住む産後1年未満の母子で、家族の十分な援助が得られず、心身の不調や育児不安などがあり、母子とも入院を必要としない方。事前審査があります。",
+      "how": "出産後、市の電子申込から利用申請をして承認を受けます。審査・連絡に1〜2週間ほど必要です。利用歴のある施設は直接連絡し、初めての別施設は追加申請します。",
+      "amountLabel": "宿泊1泊2日4,000円、日帰り1,000円・1,500円、訪問500円。非課税等は減免あり",
+      "preparationNote": "非課税世帯の減免では、市で課税状況を確認できない場合に所得が分かる書類が必要です。利用時の持ち物は施設へ確認。",
+      "deadline": "宿泊・日帰りは各7日、訪問は3回まで。出産後に事前申請",
+      "minAgeMonths": 0,
+      "maxAgeMonths": 11,
+      "ageGroups": [
+        "0歳"
+      ],
+      "ageNote": "産後1年未満。施設の受入月齢や空き状況を確認。",
+      "notes": [
+        "施設によっては利用まで2か月前後かかる場合があります。",
+        "流産・死産等を経験した方には別の申請窓口があります。"
+      ],
+      "source": "https://www.city.suita.osaka.jp/kosodate/1018205/1018210/1018211/index.html",
+      "sourceName": "吹田市公式サイト",
+      "checkedAt": "2026-10-25",
+      "official": true,
+      "steps": [
+        {
+          "title": "利用の前に",
+          "body": "出産後、市の電子申込から利用申請をして承認を受けます。審査・連絡に1〜2週間ほど必要です。利用歴のある施設は直接連絡し、初めての別施設は追加申請します。"
+        }
+      ]
+    },
+    {
+      "id": "expand-west-takatsuki-medical",
+      "title": "高槻市 子どもの医療費の無償化",
+      "prefecture": "大阪府",
+      "municipality": "高槻市",
+      "municipalityCode": "27207",
+      "area": "大阪府 高槻市",
+      "scope": "municipality",
+      "category": "医療",
+      "summary": "2025年4月の診療分から、高校生年代までの保険診療の自己負担と入院時の食事代を助成しています。",
+      "eligibility": "高槻市内に住所があり、健康保険に加入する0歳から18歳到達後最初の3月31日までの子ども。生活保護、他の福祉医療、施設への措置入所等は対象外です。",
+      "how": "子ども政策課・支所の窓口または郵送で、子ども医療証を申請します。大阪府内では健康保険資格と医療証を提示。府外受診や医療証を使えなかった場合は払い戻しを申請します。",
+      "amountLabel": "対象となる入院・通院・訪問看護の保険診療と、入院時食事療養費の自己負担0円",
+      "preparation": [
+        "子ども医療証交付申請書",
+        "子どもの健康保険資格が分かるもの",
+        "申請者の本人確認ができるもの"
+      ],
+      "deadline": "出生・転入から1か月以内に申請。遅れた場合は申請月の1日からの資格",
+      "minAgeMonths": 0,
+      "schoolYearEndAge": 18,
+      "ageNote": "18歳到達後最初の3月31日まで。",
+      "caution": "健康診断、予防接種、選定療養費など保険の対象とならない費用は助成されません。",
+      "source": "https://www.city.takatsuki.osaka.jp/site/waiwai/3006.html",
+      "additionalSources": [
+        {
+          "name": "医療証の申請手続き",
+          "url": "https://www.city.takatsuki.osaka.jp/site/waiwai/3004.html"
+        },
+        {
+          "name": "医療費の無償化の案内",
+          "url": "https://www.city.takatsuki.osaka.jp/soshiki/42/3003.html"
+        }
+      ],
+      "sourceName": "高槻市公式サイト",
+      "checkedAt": "2026-10-25",
+      "official": true,
+      "steps": [
+        {
+          "title": "利用の前に",
+          "body": "子ども政策課・支所の窓口または郵送で、子ども医療証を申請します。大阪府内では健康保険資格と医療証を提示。府外受診や医療証を使えなかった場合は払い戻しを申請します。"
+        }
+      ]
+    },
+    {
+      "id": "expand-west-takatsuki-postpartum",
+      "title": "高槻市 宿泊・日帰りの産後ケア",
+      "prefecture": "大阪府",
+      "municipality": "高槻市",
+      "municipalityCode": "27207",
+      "area": "大阪府 高槻市",
+      "scope": "municipality",
+      "category": "妊娠・出産",
+      "summary": "宿泊や日帰りで、母体の休養、授乳や沐浴、育児の相談を利用できます。宿泊・通所はそれぞれ7日までです。",
+      "eligibility": "申請時と利用時の両方で母子とも高槻市に住民票があり、ケアを必要とする産後1年未満の母子。医療が必要な場合や感染症の疑いがある場合は利用できません。",
+      "how": "出産後、市の簡易電子申込で申請し、利用承認通知書兼利用管理票を受け取ってから施設へ予約します。市への申請は利用予定の2週間前、施設の予約は1週間前までが目安です。",
+      "amountLabel": "課税世帯は宿泊1泊2,000円、日帰り7時間1,000円・9時間1,500円。非課税等は減額",
+      "preparation": [
+        "利用承認通知書兼利用管理票",
+        "施設が指定する持ち物"
+      ],
+      "deadline": "市へは遅くとも利用予定日の2週間前に申請。出産後1週間以内の利用は事前に電話相談",
+      "minAgeMonths": 0,
+      "maxAgeMonths": 11,
+      "ageGroups": [
+        "0歳"
+      ],
+      "ageNote": "産後1年未満。施設ごとの受入月齢は別に確認。",
+      "source": "https://www.city.takatsuki.osaka.jp/site/waiwai/3441.html",
+      "sourceName": "高槻市公式サイト",
+      "checkedAt": "2026-10-25",
+      "official": true,
+      "steps": [
+        {
+          "title": "利用の前に",
+          "body": "出産後、市の簡易電子申込で申請し、利用承認通知書兼利用管理票を受け取ってから施設へ予約します。市への申請は利用予定の2週間前、施設の予約は1週間前までが目安です。"
+        }
+      ]
+    },
+    {
+      "id": "expand-west-ibaraki-medical",
+      "title": "茨木市 こども医療",
+      "prefecture": "大阪府",
+      "municipality": "茨木市",
+      "municipalityCode": "27211",
+      "area": "大阪府 茨木市",
+      "scope": "municipality",
+      "category": "医療",
+      "summary": "高校生年代までの保険診療を助成。医療機関ごとに一部の自己負担があり、月の合計が2,500円を超えた分は申請できます。",
+      "eligibility": "茨木市に住み、健康保険に加入している18歳到達後最初の3月31日までの子ども。所得制限は撤廃されていますが、未就学児は所得確認に必要な同意書を求める場合があります。",
+      "how": "こども政策課の窓口・郵送・マイナポータルで医療証を申請。府内で受診するときに保険資格と医療証を提示し、府外受診等は領収書を添えて還付を申請します。",
+      "amountLabel": "1医療機関の入院・通院ごとに1日500円、月2日まで。月合計2,500円を超えた分は申請で助成",
+      "preparation": [
+        "こども医療証の申請書",
+        "子どもの健康保険情報の写し。ただし情報連携への同意で省略できる場合あり",
+        "市外で所得確認が必要な未就学児の世帯は同意書"
+      ],
+      "deadline": "医療費の払い戻しは受診日から5年以内。交付申請は出生・転入後に早めに手続き",
+      "minAgeMonths": 0,
+      "schoolYearEndAge": 18,
+      "ageNote": "18歳到達後最初の3月31日まで。",
+      "caution": "入院時の食事代、健診、予防接種、差額ベッド代などは助成対象外です。",
+      "source": "https://www.city.ibaraki.osaka.jp/kikou/kodomoikusei/kodomos/menu/iryou/iryo.html",
+      "sourceName": "茨木市公式サイト",
+      "checkedAt": "2026-10-25",
+      "official": true,
+      "steps": [
+        {
+          "title": "利用の前に",
+          "body": "こども政策課の窓口・郵送・マイナポータルで医療証を申請。府内で受診するときに保険資格と医療証を提示し、府外受診等は領収書を添えて還付を申請します。"
+        }
+      ]
+    },
+    {
+      "id": "expand-west-ibaraki-postpartum",
+      "title": "茨木市 産後ケア事業",
+      "prefecture": "大阪府",
+      "municipality": "茨木市",
+      "municipalityCode": "27211",
+      "area": "大阪府 茨木市",
+      "scope": "municipality",
+      "category": "妊娠・出産",
+      "summary": "宿泊・通所で、休息や母子のケアを受けられます。初めて利用する施設は市に相談してから申請します。",
+      "eligibility": "茨木市に住民票のある産後1年未満の母子で、家族の十分な支援が得られず、体調不良や育児不安があり、母子とも入院等を必要としない方。事前審査があります。",
+      "how": "申請前にこども支援センターへ相談。施設の仮予約の案内後、電子・郵送・窓口で申請し、決定と利用管理表を受け取ります。同じ施設を再利用する場合は施設へ予約し、市の連絡フォームへ報告します。",
+      "amountLabel": "課税世帯は宿泊1泊2日5,500円、通所1日1,800円。非課税・生活保護世帯は減額",
+      "preparation": [
+        "産後ケア事業利用申請書",
+        "非課税・生活保護世帯は区分を証明する書類",
+        "利用時は利用管理表"
+      ],
+      "deadline": "利用前の相談・申請が必要。利用管理表は申請から約1〜2週間。宿泊・通所は各7日まで",
+      "minAgeMonths": 0,
+      "maxAgeMonths": 11,
+      "ageGroups": [
+        "0歳"
+      ],
+      "ageNote": "産後1年未満。妊娠中は相談可能ですが、申請は出産後。",
+      "source": "https://www.city.ibaraki.osaka.jp/kikou/kodomoikusei/kosodates/kosodatesupport/62412.html",
+      "sourceName": "茨木市公式サイト",
+      "checkedAt": "2026-10-25",
+      "official": true,
+      "steps": [
+        {
+          "title": "利用の前に",
+          "body": "申請前にこども支援センターへ相談。施設の仮予約の案内後、電子・郵送・窓口で申請し、決定と利用管理表を受け取ります。同じ施設を再利用する場合は施設へ予約し、市の連絡フォームへ報告します。"
+        }
+      ]
+    },
+    {
+      "id": "expand-west-yao-medical",
+      "title": "八尾市 子ども医療費の助成",
+      "prefecture": "大阪府",
+      "municipality": "八尾市",
+      "municipalityCode": "27212",
+      "area": "大阪府 八尾市",
+      "scope": "municipality",
+      "category": "医療",
+      "summary": "高校生年代までの通院・入院を助成します。所得制限はなく、院外処方の薬局では保険対象分の自己負担はありません。",
+      "eligibility": "八尾市に住み健康保険に加入する0歳から18歳到達後最初の3月31日までの子ども。生活保護、施設措置による医療費の支給、ひとり親家庭医療等は除きます。",
+      "how": "窓口・郵送・電子申請で医療証を申請。府内の医療機関へ健康保険資格と医療証を提示し、府外受診や未提示の分は市へ領収書等を持参して払い戻しを申請します。",
+      "amountLabel": "1医療機関につき1日500円を限度に月2回まで負担し、残りの保険診療分を助成",
+      "preparation": [
+        "子どもの健康保険資格が分かる書類",
+        "子ども医療証交付申請書",
+        "子どもと保護者の個人番号が分かる書類",
+        "本人確認ができるもの"
+      ],
+      "deadlineNote": "医療証の交付申請は出生・転入後に早めに手続きしてください。確認した案内に一律の申請期限の記載なし。",
+      "minAgeMonths": 0,
+      "schoolYearEndAge": 18,
+      "ageNote": "18歳到達後最初の3月31日まで。",
+      "caution": "保険対象外の費用は除外。入院時の食事代は、健康保険制度上の低所得者に限って払い戻しの助成対象です。",
+      "source": "https://www.city.yao.osaka.jp/kosodate_kyouiku/kosodateshien_teate/1003917/1003919/1003936.html",
+      "additionalSources": [
+        {
+          "name": "医療証の交付申請",
+          "url": "https://www.city.yao.osaka.jp/kosodate_kyouiku/kosodateshien_teate/1003917/1003919/1003938.html"
+        }
+      ],
+      "sourceName": "八尾市公式サイト",
+      "checkedAt": "2026-10-25",
+      "official": true,
+      "steps": [
+        {
+          "title": "利用の前に",
+          "body": "窓口・郵送・電子申請で医療証を申請。府内の医療機関へ健康保険資格と医療証を提示し、府外受診や未提示の分は市へ領収書等を持参して払い戻しを申請します。"
+        }
+      ]
+    },
+    {
+      "id": "expand-west-yao-postpartum",
+      "title": "八尾市 産後ケア事業",
+      "prefecture": "大阪府",
+      "municipality": "八尾市",
+      "municipalityCode": "27212",
+      "area": "大阪府 八尾市",
+      "scope": "municipality",
+      "category": "妊娠・出産",
+      "summary": "施設で母子一緒に過ごし、心身のケアや育児の相談を利用できます。通所7回、宿泊6回までです。",
+      "eligibility": "八尾市に住民票のある乳児とその母親。施設ごとに受入月齢が異なり、感染症の疑いや入院・治療が必要な場合は利用できません。",
+      "how": "妊娠8か月以降に電子申請。審査後に届く利用管理票等の管理番号を伝えて施設へ予約します。利用後は施設へ料金を支払います。",
+      "amountLabel": "通所300円、宿泊3,100円。双子・三つ子は加算、非課税・生活保護世帯等は減免あり",
+      "preparation": [
+        "利用管理票",
+        "申請書兼情報提供書の写し",
+        "母子健康手帳",
+        "健康保険の加入状況が分かるもの",
+        "施設が指定する持ち物"
+      ],
+      "deadline": "利用前に電子申請と施設予約が必要。審査は約1週間",
+      "ageGroups": [
+        "妊娠中",
+        "0歳"
+      ],
+      "ageNote": "申請は妊娠8か月以降。利用できる月齢は施設別に確認。",
+      "source": "https://www.city.yao.osaka.jp/kosodate_kyouiku/kosodateshien_teate/1004110/1003922.html",
+      "sourceName": "八尾市公式サイト",
+      "checkedAt": "2026-10-25",
+      "official": true,
+      "steps": [
+        {
+          "title": "利用の前に",
+          "body": "妊娠8か月以降に電子申請。審査後に届く利用管理票等の管理番号を伝えて施設へ予約します。利用後は施設へ料金を支払います。"
+        }
+      ]
+    },
+    {
+      "id": "expand-west-higashiosaka-medical",
+      "title": "東大阪市 子ども医療費の助成",
+      "prefecture": "大阪府",
+      "municipality": "東大阪市",
+      "municipalityCode": "27227",
+      "area": "大阪府 東大阪市",
+      "scope": "municipality",
+      "category": "医療",
+      "summary": "高校生年代までの保険診療を助成。入院時の食事代や院外処方の薬局も助成の対象です。",
+      "eligibility": "東大阪市に住み健康保険に加入している18歳到達後最初の3月末日までの子ども。所得制限なし。生活保護や他の公費による全額支給、ひとり親家庭医療等は除きます。",
+      "how": "医療助成課等の窓口・郵送・電子申請で医療証を申請。府内では保険資格と医療証を提示し、府外受診等は払い戻しを申請します。",
+      "amountLabel": "同一医療機関につき1日最大500円、月2日まで。院外薬局と入院時食事療養費の一部自己負担なし",
+      "preparation": [
+        "子どもの健康保険資格が分かる書類",
+        "子ども医療証交付申請書",
+        "未就学児で市が所得を確認できない場合は保護者の所得証明または本人確認ができるもの"
+      ],
+      "deadlineNote": "出生・転入後は早めに医療証を申請。更新は所定の学齢区分で自動送付され、申請不要です。",
+      "minAgeMonths": 0,
+      "schoolYearEndAge": 18,
+      "ageNote": "18歳到達後最初の3月末日まで。",
+      "caution": "予防接種・健診・差額ベッド代など保険対象外の費用は除外します。",
+      "source": "https://www.city.higashiosaka.lg.jp/0000010781.html",
+      "sourceName": "東大阪市公式サイト",
+      "checkedAt": "2026-10-25",
+      "official": true,
+      "steps": [
+        {
+          "title": "利用の前に",
+          "body": "医療助成課等の窓口・郵送・電子申請で医療証を申請。府内では保険資格と医療証を提示し、府外受診等は払い戻しを申請します。"
+        }
+      ]
+    },
+    {
+      "id": "expand-west-higashiosaka-postpartum",
+      "title": "東大阪市 宿泊・日帰り・訪問の産後ケア",
+      "prefecture": "大阪府",
+      "municipality": "東大阪市",
+      "municipalityCode": "27227",
+      "area": "大阪府 東大阪市",
+      "scope": "municipality",
+      "category": "妊娠・出産",
+      "summary": "宿泊7泊・日帰り7日・訪問7回まで利用できます。利用料を最大2,500円引く補助クーポンが5回分あります。",
+      "eligibility": "東大阪市に住民登録がある生後1歳未満の乳児と、ケアを希望する母親。妊娠37週未満で生まれた子は出産予定日を基準とする月齢で利用できます。感染症の疑い、入院・治療の必要、健診や予防接種の日等は利用不可です。",
+      "how": "おやこ手帳アプリ等のmila-e申請から申し込み、保健センターで面談を受けて利用用のデジタルクーポンを受け取ります。電子申請が難しい場合は母子保健課へ相談します。",
+      "amountLabel": "課税世帯は宿泊1泊5,600円、日帰り2,800円、訪問1,400円。非課税等は無料。補助クーポンあり",
+      "preparationNote": "電子申請の案内に沿って必要書類の画像を添付。面談後に発行されるクーポンを利用。具体的な持ち物は施設へ確認。",
+      "deadline": "妊娠28週以降に事前申請可。原則利用希望日の3日前までに申請。閉庁日の場合はその前日まで",
+      "ageNote": "原則1歳未満。早産児は出産予定日を基準とする月齢。妊娠28週以降は事前申請可。",
+      "notes": [
+        "早産児の修正月齢に対応するため、実際の誕生日だけで利用の可否を確定できません。",
+        "施設ごとの受入月齢と空きを確認してください。"
+      ],
+      "source": "https://www.city.higashiosaka.lg.jp/kosodate/0000015565.html",
+      "sourceName": "東大阪市公式サイト",
+      "checkedAt": "2026-10-25",
+      "official": true,
+      "steps": [
+        {
+          "title": "利用の前に",
+          "body": "おやこ手帳アプリ等のmila-e申請から申し込み、保健センターで面談を受けて利用用のデジタルクーポンを受け取ります。電子申請が難しい場合は母子保健課へ相談します。"
+        }
+      ]
+    },
+    {
+      "id": "expand-west-hirakata-medical",
+      "title": "枚方市 子ども医療",
+      "prefecture": "大阪府",
+      "municipality": "枚方市",
+      "municipalityCode": "27210",
+      "area": "大阪府 枚方市",
+      "scope": "municipality",
+      "category": "医療",
+      "summary": "高校生年代までの医療費と入院時の食事代の一部を助成します。保護者の所得による制限はありません。",
+      "eligibility": "枚方市に住民登録があり、健康保険に加入する18歳到達後最初の3月31日までの子ども。他の福祉医療や生活保護等は対象外。未就学児は所得の確認を行います。",
+      "how": "市の窓口・支所・郵送・ぴったりサービスで医療証を申請。府内では保険資格と医療証を提示し、府外受診等は払い戻しを申請します。",
+      "amountLabel": "医療機関の通院・入院・歯科ごとに1日500円を限度に月2日まで負担し、残りを助成",
+      "preparation": [
+        "子ども医療証交付申請書",
+        "子どもの健康保険資格が分かるもの",
+        "子ども・保護者の個人番号が分かるもの",
+        "保護者の本人確認ができるもの"
+      ],
+      "deadline": "医療費の払い戻しは受診して支払った翌日から5年以内",
+      "minAgeMonths": 0,
+      "schoolYearEndAge": 18,
+      "ageNote": "18歳到達後最初の3月31日まで。",
+      "source": "https://www.city.hirakata.osaka.jp/kosodate/0000035713.html",
+      "sourceName": "枚方市公式サイト",
+      "checkedAt": "2026-10-25",
+      "official": true,
+      "steps": [
+        {
+          "title": "利用の前に",
+          "body": "市の窓口・支所・郵送・ぴったりサービスで医療証を申請。府内では保険資格と医療証を提示し、府外受診等は払い戻しを申請します。"
+        }
+      ]
+    },
+    {
+      "id": "expand-west-hirakata-postpartum",
+      "title": "産後ママ安心ケアサービス",
+      "prefecture": "大阪府",
+      "municipality": "枚方市",
+      "municipalityCode": "27210",
+      "area": "大阪府 枚方市",
+      "scope": "municipality",
+      "category": "妊娠・出産",
+      "summary": "宿泊・日帰り・訪問で、体と心の休養や授乳、赤ちゃんのお世話の相談を利用できます。3種類を合計7回まで使えます。",
+      "eligibility": "枚方市民で、生後1年未満の子どもと母親。妊娠中の事前登録も可能。感染症状がある方や医療行為が必要な方は利用できません。",
+      "how": "テオテ産後ケアでアカウントを作り、市へ申請。電話による聞き取りと承認メールを受けた後、市内施設は同システム、市外施設は電話で予約します。",
+      "amountLabel": "課税世帯は宿泊3,100円、日帰り800円・1,200円、訪問1,500円。非課税等は減額・無料の区分あり",
+      "preparationNote": "申請時は妊娠・出産の情報を入力。減免に所得の証明書が必要な場合があります。施設で必要な持ち物は予約時に確認。",
+      "deadline": "利用前に市の承認と施設予約が必要。宿泊・日帰り・訪問を合わせて7回まで",
+      "ageGroups": [
+        "妊娠中",
+        "0歳"
+      ],
+      "ageNote": "利用は生後1年未満。施設によって受入月齢が異なります。妊娠中は事前登録可。",
+      "source": "https://www.city.hirakata.osaka.jp/kosodate/0000002217.html",
+      "sourceName": "枚方市公式サイト",
+      "checkedAt": "2026-10-25",
+      "official": true,
+      "steps": [
+        {
+          "title": "利用の前に",
+          "body": "テオテ産後ケアでアカウントを作り、市へ申請。電話による聞き取りと承認メールを受けた後、市内施設は同システム、市外施設は電話で予約します。"
+        }
+      ]
+    },
+    {
+      "id": "expand-west-toyonaka-medical",
+      "title": "豊中市 子ども医療費の助成",
+      "prefecture": "大阪府",
+      "municipality": "豊中市",
+      "municipalityCode": "27203",
+      "area": "大阪府 豊中市",
+      "scope": "municipality",
+      "category": "医療",
+      "summary": "高校生年代までの保険診療の自己負担と入院時の食事代を助成します。所得制限はありません。",
+      "eligibility": "豊中市に住み健康保険に加入する18歳到達後最初の3月31日までの子ども。生活保護や他の公費医療の対象者は除きます。",
+      "how": "子どもの保険資格と保護者の個人番号を用意し、医療証の交付を申請。オンラインでも申込みできます。医療証を受診時に提示し、府外受診等は払い戻しの手続きをします。",
+      "amountLabel": "1日500円・月最大2日分の一部自己負担を除いて助成。入院時の食事代も対象",
+      "preparation": [
+        "子どもの健康保険資格が確認できるもの",
+        "保護者の個人番号が分かるもの"
+      ],
+      "deadlineNote": "出生は誕生日、転入は転入日から助成。出生・転入後に医療証の交付を申し込んでください。",
+      "minAgeMonths": 0,
+      "schoolYearEndAge": 18,
+      "ageNote": "満18歳到達後最初の3月31日まで。4月1日に18歳になる場合はその前日まで。",
+      "source": "https://www.city.toyonaka.osaka.jp/kosodate/teate_josei/kosodate/kodomo.html",
+      "sourceName": "豊中市公式サイト",
+      "checkedAt": "2026-10-25",
+      "official": true,
+      "steps": [
+        {
+          "title": "利用の前に",
+          "body": "子どもの保険資格と保護者の個人番号を用意し、医療証の交付を申請。オンラインでも申込みできます。医療証を受診時に提示し、府外受診等は払い戻しの手続きをします。"
+        }
+      ]
+    },
+    {
+      "id": "expand-west-toyonaka-postpartum",
+      "title": "豊中市 産後ケア事業",
+      "prefecture": "大阪府",
+      "municipality": "豊中市",
+      "municipalityCode": "27203",
+      "area": "大阪府 豊中市",
+      "scope": "municipality",
+      "category": "妊娠・出産",
+      "summary": "宿泊・日帰り・自宅訪問で、産後の休養や授乳、育児の相談を受けられます。2026年度は合計10日まで利用できます。",
+      "eligibility": "登録と利用の時点で原則豊中市に住む、出産後1年未満の母子で、心身の不調や育児不安がある方。感染症の疑いや医療が必要な場合は利用できません。",
+      "how": "電子申込で利用登録を行い、郵送される承認通知書・利用管理表を受け取ります。2026年10月から、通知書到着後に施設へ直接予約する方法に変わっています。妊娠中は出産後に施設予約します。",
+      "amountLabel": "課税世帯は宿泊1泊2日3,000円、日帰り500円・1,000円、訪問500円。非課税等は減額",
+      "preparation": [
+        "利用登録承認通知書・利用管理表",
+        "施設が指定する持ち物"
+      ],
+      "deadline": "妊娠32週以降に登録可。利用希望日の10日前までに申込み。全種類を合計10日まで",
+      "ageGroups": [
+        "妊娠中",
+        "0歳"
+      ],
+      "ageNote": "利用は出産後1年未満。妊娠32週以降に登録でき、施設予約は出産後。",
+      "source": "https://www.city.toyonaka.osaka.jp/kenko/kenko_hokeneisei/boshi/kodomokenko/sangocare.html",
+      "sourceName": "豊中市公式サイト",
+      "checkedAt": "2026-10-25",
+      "official": true,
+      "steps": [
+        {
+          "title": "利用の前に",
+          "body": "電子申込で利用登録を行い、郵送される承認通知書・利用管理表を受け取ります。2026年10月から、通知書到着後に施設へ直接予約する方法に変わっています。妊娠中は出産後に施設予約します。"
+        }
+      ]
+    },
+    {
+      "id": "expand-west-tanabe-postpartum",
+      "title": "田辺市 産後ケア事業",
+      "prefecture": "和歌山県",
+      "municipality": "田辺市",
+      "municipalityCode": "30206",
+      "area": "和歌山県 田辺市",
+      "scope": "municipality",
+      "category": "妊娠・出産",
+      "summary": "宿泊・通所・訪問で、心身のケアや育児のサポートを利用できます。2026年度から県と契約する施設へ利用先が広がりました。",
+      "eligibility": "田辺市に住所登録があり、産後1年未満でケアを希望する母子。感染性の病気や入院等の医療が必要な場合は利用不可。流産・死産等から1年未満の方も対象です。",
+      "how": "利用前に健康増進課へ連絡し、利用申請書兼同意書と利用券の手続き、施設予約の進め方を確認してください。予約時に課税区分と補助券による負担額を施設へ確認します。",
+      "amountLabel": "課税世帯の補助前は宿泊1泊5,000円、通所500円・1,000円、訪問800円。最大5回の減免等あり",
+      "preparation": [
+        "田辺市産後ケア事業利用申請書兼同意書",
+        "課税区分に応じた利用券・補助券"
+      ],
+      "deadline": "宿泊は6回・最大6泊7日。通所と訪問は合わせて14回まで。利用前に申請方法を確認",
+      "minAgeMonths": 0,
+      "maxAgeMonths": 11,
+      "ageGroups": [
+        "0歳"
+      ],
+      "ageNote": "産後1年未満。施設ごとの受入月齢を確認。",
+      "preparationNote": "申請書の様式を市の公式ページで確認。詳細な添付書類や申請期限は健康増進課へ確認してください。",
+      "source": "https://www.city.tanabe.lg.jp/soshiki/hokenfukushi/6/8/1273.html",
+      "additionalSources": [
+        {
+          "name": "健康増進課の申請書一覧",
+          "url": "https://www.city.tanabe.lg.jp/soshiki/hokenfukushi/6/2/1287.html"
+        }
+      ],
+      "sourceName": "田辺市公式サイト",
+      "checkedAt": "2026-10-25",
+      "official": true,
+      "steps": [
+        {
+          "title": "利用の前に",
+          "body": "利用前に健康増進課へ連絡し、利用申請書兼同意書と利用券の手続き、施設予約の進め方を確認してください。予約時に課税区分と補助券による負担額を施設へ確認します。"
+        }
+      ]
+    },
+    {
+      "id": "expand-west-tanabe-single-parent-care-subsidy",
+      "title": "田辺市 ひとり親家庭等の育児支援助成",
+      "prefecture": "和歌山県",
+      "municipality": "田辺市",
+      "municipalityCode": "30206",
+      "area": "和歌山県 田辺市",
+      "scope": "municipality",
+      "category": "ひとり親",
+      "summary": "一時預かりや病児・病後児保育、ファミリー・サポート等の利用費を、上限15,000円まで助成します。",
+      "eligibility": "田辺市に住民登録がある、ひとり親家庭の配偶者のいない方または養育者。対象となる事業の利用料を支払った場合に、予算の範囲で助成します。",
+      "how": "利用事業の専用領収書等を用意し、窓口またはオンラインで交付申請。審査・決定通知後、請求書と領収書を提出すると、指定口座へ助成金が振り込まれます。",
+      "amountLabel": "対象となる育児支援の利用費を上限15,000円まで助成",
+      "preparation": [
+        "対象事業の利用料を支払った領収書",
+        "認印",
+        "振込先の口座情報が分かるもの",
+        "交付申請書・決定後の請求書"
+      ],
+      "deadlineNote": "ひとり親向け区分の申請期限・対象児童の年齢は、子育て推進課へ確認してください。",
+      "ageNote": "年齢の具体的な上限は、確認したひとり親向け区分の本文では明示されていません。",
+      "notes": [
+        "対象はファミリー・サポート、子育て短期支援、一時預かり、病児・病後児保育。",
+        "同じページの三子以上向け助成とは対象と事業の範囲が異なります。"
+      ],
+      "source": "https://www.city.tanabe.lg.jp/soshiki/hokenfukushi/3/2/shien/943.html",
+      "sourceName": "田辺市公式サイト",
+      "checkedAt": "2026-10-25",
+      "official": true,
+      "steps": [
+        {
+          "title": "利用の前に",
+          "body": "利用事業の専用領収書等を用意し、窓口またはオンラインで交付申請。審査・決定通知後、請求書と領収書を提出すると、指定口座へ助成金が振り込まれます。"
+        }
+      ]
     }
   ],
   "supportCoverage": {
@@ -14807,5 +16662,6 @@
       }
     ]
   },
-  "checkedAt": "2026-10-25"
+  "checkedAt": "2026-10-25",
+  "updatedAt": "2026-10-25T14:29:41.115Z"
 }
