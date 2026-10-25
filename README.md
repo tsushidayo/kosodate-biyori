@@ -1,0 +1,36 @@
+# こそだて日和｜バズアーカイブ
+
+育児・出産・子育て・教育情報の公開ポストを残す場所。
+超教科書（`chokyo-buzz-archive` / `chokyoukasho-backup`）とは別リポジトリ。サイトは作らない。
+
+- 1回の収集目標 **50件**
+- いいね100以上・表示1万以上
+- ゲーム・二次創作・性的投稿・キーワードだけの無関係投稿は入れない
+- PNGは置かない。JSONのみ
+- 同じポストIDは追記しない
+
+## 置き場
+
+```
+collections/
+  YYYY-MM-DD/
+    kosodate-HHMMSS.json
+    index.json
+```
+
+収集は1時間ごと。直近で条件を満たす新規が50件に満たないときは、直近数日まで幅を広げて新規だけを足す。閾値未満は入れない。
+
+各JSON:
+
+```json
+{
+  "query": "育児 OR 出産 OR 子育て OR 教育情報",
+  "genres": ["育児", "出産", "子育て", "教育"],
+  "collectedAt": "2026-10-25T04:41:00.000Z",
+  "target": 50,
+  "minLikes": 100,
+  "minViews": 10000,
+  "count": 50,
+  "posts": [{ "id": "", "url": "", "handle": "", "name": "", "text": "", "likes": 0, "rts": 0, "replies": 0, "views": 0, "time": "", "genre": "", "query": "" }]
+}
+```
