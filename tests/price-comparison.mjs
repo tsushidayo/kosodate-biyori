@@ -5,6 +5,8 @@ import ts from 'typescript';
 const code=ts.transpileModule(fs.readFileSync(new URL('../lib/price-comparison.ts',import.meta.url),'utf8'),{compilerOptions:{module:ts.ModuleKind.ESNext,target:ts.ScriptTarget.ES2022}}).outputText;
 const {normalizeOffer,compareOffers}=await import('data:text/javascript;base64,'+Buffer.from(code).toString('base64'));
 const data=JSON.parse(fs.readFileSync(new URL('./fixtures/shop-base.json',import.meta.url),'utf8'));
+// This arithmetic fixture represents confirmed stock; unknown stock is tested separately.
+for(const product of data.products)for(const offer of product.offers)offer.available=true;
 const NOW=Date.parse('2026-10-25T12:00:00Z');
 const hai=data.products.find(p=>p.id==='haihai-810');
 const pure=data.products.find(p=>p.id==='pure-820');

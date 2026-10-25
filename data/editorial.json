@@ -1799,24 +1799,38 @@
     },
     {
       "id": "feed-https%3A%2F%2Fkodomo-gov.note.jp%2Fn%2Fnbfba35566994",
-      "title": "「こども・若者の自殺対策集中取組期間」における広報啓発活動 ～夏休み中のこども・若者のみなさんへのメッセージ～",
-      "summary": "こんにちは。 こども家庭庁支援局総務課こどもの自殺対策推進室です。 続きをみる",
+      "title": "子どもの小さな変化に気づくための、保護者向け動画案内",
+      "summary": "子どもの不安や悩みに気づき、声をかけて話を聴くための公式動画を紹介。広報の活動報告の中から、保護者が家庭で参考にできる案内を確認しました。記事内の夏休み限定の受付期間は終了しています。",
       "url": "https://kodomo-gov.note.jp/n/nbfba35566994",
       "source": "こども家庭庁 公式note",
       "publishedAt": "2026-08-21T01:00:00.000Z",
-      "checkedAt": "2026-10-25T04:47:07.750Z",
+      "checkedAt": "2026-10-25",
       "category": "子育て",
       "section": "columns",
       "kind": "解説",
       "feedUrl": "https://kodomo-gov.note.jp/rss",
       "ingestion": "rss",
-      "summaryKind": "feed-excerpt",
-      "readingLabel": "配信の見出し",
+      "summaryKind": "editorial-summary",
+      "readingLabel": "公式記事のポイント",
       "ageGroups": [
         "小学生"
       ],
       "ageBasis": "editorial-topic",
-      "tags": []
+      "tags": [
+        "家族・心",
+        "園・学校"
+      ],
+      "practicalPoints": [
+        "子どもの小さな変化に気づくための約5分の解説動画を見られる",
+        "声をかけ、話を聴き、見守る大人の役割を確認できる",
+        "夏休み限定の受付情報は終了済み。現在の案内は出典で確認する"
+      ],
+      "practicalTopics": [
+        "教育・遊び"
+      ],
+      "directUsefulness": true,
+      "evidenceReviewed": true,
+      "caution": "記事内の夏休み限定の受付期間は終了しています。現在利用できる内容は公式ページで確認してください。"
     },
     {
       "id": "research-gakken-54",
@@ -2077,23 +2091,6 @@
       ],
       "ageBasis": "source-topic",
       "feedUrl": "https://kosodatemap.gakken.jp/feed/"
-    },
-    {
-      "id": "feed-https%3A%2F%2Fkodomo-gov.note.jp%2Fn%2Fn8aa2d61e2337",
-      "title": "こども性暴力防止法の公式キャラクター「こまもろう」の誕生ストーリー",
-      "summary": "こんにちは。こども性暴力防止担当です。 以前、令和８年12月25日に施行する、 こどもへの性暴力防止法について ご紹しましたが、この法律が施行までいよいよ半年を切り、担当一同、準備に奮闘しているところです。 続きをみる",
-      "url": "https://kodomo-gov.note.jp/n/n8aa2d61e2337",
-      "source": "こども家庭庁 公式note",
-      "publishedAt": "2026-07-17T01:40:05.000Z",
-      "checkedAt": "2026-10-25T04:47:07.750Z",
-      "category": "子育て",
-      "section": "columns",
-      "kind": "解説",
-      "feedUrl": "https://kodomo-gov.note.jp/rss",
-      "ingestion": "rss",
-      "summaryKind": "feed-excerpt",
-      "readingLabel": "配信の見出し",
-      "tags": []
     },
     {
       "id": "research-gakken-85",

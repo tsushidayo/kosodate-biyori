@@ -77,6 +77,14 @@ test("feed section and source keywords keep columns distinct from news and rejec
   const item=store.parseFeed('<rss><item><title>娘とはじめての遠足</title><link>https://example.org/column</link></item></rss>',column)[0];
   assert.equal(item.section,"columns");assert.equal(item.kind,"体験談");assert.equal(item.readingLabel,"配信の見出し");
 });
+test('a reviewed character-publicity exclusion survives parsing the same official RSS entry again',()=>{
+  const source={name:'こども家庭庁 公式note',url:'https://kodomo-gov.note.jp/rss',section:'columns',filterRequired:false};
+  const xml='<rss><channel><item><title>こども性暴力防止法の公式キャラクター「こまもろう」の誕生ストーリー</title><link>https://kodomo-gov.note.jp/n/n8aa2d61e2337</link><pubDate>Fri, 17 Jul 2026 01:40:05 GMT</pubDate><description>学校や保育所でこどもを守る制度を準備し、キャラクターのプロフィールを紹介します。</description></item></channel></rss>';
+  const [item]=store.parseFeed(xml,source);
+  assert.ok(item); assert.equal(isPracticalEditorial(item),true,'the saved editorial rejection must override broad relevance keywords');
+  assert.equal(store.relevantFeedItem(item,source),false);
+  assert.ok(globalThis.__PARENTING_TEST_EXCLUSIONS.columnIds.includes(item.id));
+});
 test("refresh persists only reviewed X, separate videos, tags and 500 articles per section",async()=>{
   const id="1987654321098765432";
   const oldFetch=globalThis.fetch,requests=[];

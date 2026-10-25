@@ -90,7 +90,8 @@
     "feed-https%3A%2F%2Fkodomo-gov.note.jp%2Fn%2Fnc6ce35e5262a",
     "feed-https%3A%2F%2Fkodomo-gov.note.jp%2Fn%2Fn961f0b680620",
     "feed-https%3A%2F%2Fameblo.jp%2Fdekkaiossan9%2Fentry-12982507617.html",
-    "feed-https%3A%2F%2Fameblo.jp%2Fdekkaiossan9%2Fentry-12982192301.html"
+    "feed-https%3A%2F%2Fameblo.jp%2Fdekkaiossan9%2Fentry-12982192301.html",
+    "feed-https%3A%2F%2Fkodomo-gov.note.jp%2Fn%2Fn8aa2d61e2337"
   ],
   "records": [
     {
@@ -582,6 +583,13 @@
       "title": "我が家に初めて学校の友達がやってきた",
       "url": "https://ameblo.jp/dekkaiossan9/entry-12982192301.html",
       "reason": "家庭で使う手順や工夫がない個人の日記。本文末の相談案内による自動採用を除外。"
+    },
+    {
+      "id": "feed-https%3A%2F%2Fkodomo-gov.note.jp%2Fn%2Fn8aa2d61e2337",
+      "url": "https://kodomo-gov.note.jp/n/n8aa2d61e2337",
+      "title": "こども性暴力防止法の公式キャラクター「こまもろう」の誕生ストーリー",
+      "reason": "公式本文を再確認。キャラクターの制作背景・プロフィール・表情の紹介が中心で、家庭で使える手順や利用条件の解説ではないため掲載を終了。",
+      "checkedAt": "2026-10-25"
     }
   ]
 }

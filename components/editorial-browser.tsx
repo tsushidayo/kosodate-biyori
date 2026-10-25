@@ -165,41 +165,38 @@ function OfficialPost({ item }: { item: Item }) {
   </div>;
 }
 
-function OfficialInstagram({ item }: { item: Item }) {
-  const [active, setActive] = useState(false);
+function OfficialInstagram({ item, autoLoad = false }: { item: Item; autoLoad?: boolean }) {
+  const [active, setActive] = useState(autoLoad);
   const [failed, setFailed] = useState(false);
   const embed = editorialInstagramEmbed(item);
   const title = text(item.title) || 'Instagramの子育て投稿';
   const image = safeUrl(item.thumbnail || item.thumbnailUrl || item.image);
-  useEffect(() => { setActive(false); setFailed(false); }, [embed?.url]);
+  useEffect(() => { setActive(autoLoad); setFailed(false); }, [embed?.url, autoLoad]);
   return <div className={`kb-editorial-instagram ${active && !failed ? 'is-active' : ''}`}>
     {active && embed && !failed ? <iframe src={embed.src} title={`${title}（Instagram公式埋め込み）`} loading="lazy" allow="encrypted-media; picture-in-picture; fullscreen" allowFullScreen referrerPolicy="strict-origin-when-cross-origin" onError={() => setFailed(true)} /> : <button type="button" className="kb-editorial-instagram-cover" onClick={() => embed && setActive(true)} disabled={!embed || failed} aria-label={`${title}のInstagram投稿を表示`}>
       {image && <img src={image} alt="" loading="lazy" referrerPolicy="no-referrer" />}
       <span className="kb-editorial-instagram-symbol"><InstagramIcon size={34} strokeWidth={1.5} aria-hidden="true" /></span>
       <span>{!embed || failed ? '投稿は元のリンクからご覧ください' : 'Instagramの投稿を表示'}</span>
-      <small>{!embed || failed ? '公開範囲などにより表示できない場合があります' : 'タップすると公式の埋め込みを読み込みます'}</small>
+      {(!embed || failed) && <small>公開範囲などにより表示できない場合があります</small>}
     </button>}
   </div>;
 }
 
 function ShortPlayer({ item }: { item: Item }) {
-  const [active, setActive] = useState(false);
   const [failed, setFailed] = useState(false);
   const embed = editorialVideoEmbed(item);
   const image = safeUrl(item.thumbnail || item.thumbnailUrl || item.image);
   const title = text(item.title) || '子育てのショート動画';
-  const format = videoFormatLabel(item);
-  if (embed?.platform === 'Instagram') return <OfficialInstagram item={item} />;
-  const duration = durationOf(item);
+  useEffect(() => setFailed(false), [embed?.src]);
+  if (embed?.platform === 'Instagram') return <OfficialInstagram item={item} autoLoad />;
   return <div className={`kb-editorial-video ${item.videoFormat === 'short-video' ? 'is-landscape' : ''}`}>
-    {active && embed && !failed ? <iframe src={embed.src} title={`${title}（${embed.platform}）`} loading="lazy" allow="encrypted-media; picture-in-picture; fullscreen" allowFullScreen referrerPolicy="strict-origin-when-cross-origin" onError={() => setFailed(true)} /> : <button className="kb-editorial-video-cover" type="button" onClick={() => embed && setActive(true)} disabled={!embed || failed} aria-label={embed && !failed ? `${title}のプレイヤーを開く` : '元の動画からご覧ください'}>
+    {embed && !failed ? <iframe src={embed.src} title={`${title}（${embed.platform}）`} loading="lazy" allow="encrypted-media; picture-in-picture; fullscreen" allowFullScreen referrerPolicy="strict-origin-when-cross-origin" onError={() => setFailed(true)} /> : <a className="kb-editorial-video-cover" href={safeUrl(item.url)||undefined} target="_blank" rel="noopener noreferrer" aria-label={`${title}を元のサイトで見る`}>
       {image && <img src={image} alt="" loading="lazy" referrerPolicy="no-referrer" />}
       <span className="kb-editorial-video-grain" />
-      <span className="kb-editorial-video-platform">{embed?.platform || text(item.platform) || '動画'}{format && <span> · {format}</span>}</span>
+      <span className="kb-editorial-video-platform">{embed?.platform || text(item.platform) || '動画'}</span>
       <span className="kb-editorial-play"><Play fill="currentColor" size={23} aria-hidden="true" /></span>
-      <span className="kb-editorial-video-caption">{!embed || failed ? '元の動画から見る' : 'タップして動画を見る'}</span>
-      {duration && <span className="kb-editorial-video-duration">{duration}</span>}
-    </button>}
+      <span className="kb-editorial-video-caption">元の動画から見る</span>
+    </a>}
   </div>;
 }
 

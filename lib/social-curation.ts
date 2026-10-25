@@ -101,6 +101,7 @@ export function isRelevantParentingVideo(value: Obj): boolean {
 }
 export function normalizeCuratedVideo(value: unknown): Obj | null {
   if (!object(value) || value.parentingUseful !== true && value.parentingRelevant !== true || typeof value.videoId !== 'string' || !isRelevantParentingVideo(value)) return null;
+  if (typeof value.durationSeconds === 'number' && Number.isFinite(value.durationSeconds) && value.durationSeconds > 180) return null;
   const u = web(value.url), title = clean(value.title, 180), sourceName = clean(value.sourceName, 160); if (!u || !title || !sourceName) return null;
   let url = '', platform = '';
   if (value.platform === 'YouTube' && /^[A-Za-z0-9_-]{11}$/.test(value.videoId)) {
@@ -141,16 +142,20 @@ const wasApproved = (item: Obj) => (item.parentingUseful === true || item.parent
 export function applySocialCuration(document: SocialCuration, incomingTopics: Obj[], previousTopics: Obj[], previousShorts: Obj[] = [], preservePreviousShorts = false, previousInstagram: Obj[] = []): {topics: Obj[]; instagram: Obj[]; shorts: Obj[]; rejectedX: number} {
   const reviews = new Map(document.reviews.map(v => [v.id, v]));
   const previous = new Map(previousTopics.map(v => [xStatusIdentity(v.url)?.id, v]).filter(([id]) => !!id) as [string, Obj][]);
+  const additionalById = new Map(document.additionalPosts.filter(v => normalizeCuratedXPost(v) !== null).map(v => [xStatusIdentity(v.url)!.id, v]) as [string, Obj][]);
   const topics: Obj[] = [], seen = new Set<string>();
-  for (const raw of [...document.additionalPosts, ...incomingTopics, ...previousTopics]) {
+  // Collection time records reactions; an editorial check date must not replace a newer observation.
+  const candidates = [...document.additionalPosts, ...incomingTopics, ...previousTopics].filter(object)
+    .sort((a, b) => (Date.parse(b.collectedAt || '') || 0) - (Date.parse(a.collectedAt || '') || 0));
+  for (const raw of candidates) {
     if (!object(raw)) continue; const identity = xStatusIdentity(raw.url); if (!identity || seen.has(identity.id)) continue;
-    const prior = previous.get(identity.id), review = reviews.get(identity.id);
+    const prior = previous.get(identity.id), review = reviews.get(identity.id), curated = additionalById.get(identity.id);
     if (review?.status === 'rejected') {seen.add(identity.id); continue;}
-    const additional = document.additionalPosts.includes(raw) && (raw.parentingUseful === true || raw.parentingRelevant === true);
+    const additional = !!curated && (curated.parentingUseful === true || curated.parentingRelevant === true);
     if (review?.status !== 'approved' && !wasApproved(raw) && !(prior && wasApproved(prior)) && !additional) continue;
-    const metadata: Obj = review?.status === 'approved' ? {tags: review.tags, ...ageMetadata(prior || {}), ...ageMetadata(review)} : prior && wasApproved(prior) ? {tags: labels(prior.tags), ...ageMetadata(prior)} : {tags: labels(raw.tags), ...ageMetadata(raw)};
-    const item = normalizeCuratedXPost({...raw, ...metadata, parentingUseful: true}); if (!item) continue;
-    const reason = review?.reason || clean(prior?.reviewReason || prior?.curation?.reason || raw.reviewReason || raw.reason, 500) || '子育てに関連する投稿として掲載。内容の正確性は未確認';
+    const metadata: Obj = review?.status === 'approved' ? {tags: review.tags, ...ageMetadata(curated || {}), ...ageMetadata(prior || {}), ...ageMetadata(review)} : prior && wasApproved(prior) ? {tags: labels(prior.tags), ...ageMetadata(prior)} : {tags: labels(curated?.tags || raw.tags), ...ageMetadata(curated || raw)};
+    const item = normalizeCuratedXPost({...curated, ...raw, ...metadata, parentingUseful: true}); if (!item) continue;
+    const reason = review?.reason || clean(prior?.reviewReason || prior?.curation?.reason || curated?.reviewReason || curated?.reason || raw.reviewReason || raw.reason, 500) || '子育てに関連する投稿として掲載。内容の正確性は未確認';
     const checkedAt = review?.status === 'approved' || additional ? document.checkedAt : date(prior?.curation?.checkedAt || raw.curation?.checkedAt) || document.checkedAt;
     topics.push({...item, reviewStatus: 'approved', reviewReason: reason, curation: {status: 'approved', reason, checkedAt}}); seen.add(identity.id);
   }

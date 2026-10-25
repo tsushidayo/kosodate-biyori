@@ -1,0 +1,273 @@
+{
+  "checkedAt": "2026-10-25",
+  "supportPrograms": [
+    {
+      "id": "pending-hakodate-medical",
+      "prefecture": "北海道",
+      "municipality": "函館市",
+      "source": "https://www.city.hakodate.hokkaido.jp/docs/2014012000574/"
+    },
+    {
+      "id": "pending-hakodate-postpartum",
+      "prefecture": "北海道",
+      "municipality": "函館市",
+      "source": "https://www.city.hakodate.hokkaido.jp/docs/2017051600057/"
+    },
+    {
+      "id": "pending-ichikawa-postpartum",
+      "prefecture": "千葉県",
+      "municipality": "市川市",
+      "source": "https://www.city.ichikawa.lg.jp/page/7071.html"
+    },
+    {
+      "id": "pending-ichikawa-postnatal-check",
+      "prefecture": "千葉県",
+      "municipality": "市川市",
+      "source": "https://www.city.ichikawa.lg.jp/page/7069.html"
+    },
+    {
+      "id": "pending-himeji-medical",
+      "prefecture": "兵庫県",
+      "municipality": "姫路市",
+      "source": "https://www.city.himeji.lg.jp/kurashi/0000007975.html"
+    },
+    {
+      "id": "pending-himeji-taxi",
+      "prefecture": "兵庫県",
+      "municipality": "姫路市",
+      "source": "https://www.city.himeji.lg.jp/kurashi/0000016252.html"
+    },
+    {
+      "id": "pending-himeji-home-help",
+      "prefecture": "兵庫県",
+      "municipality": "姫路市",
+      "source": "https://www.city.himeji.lg.jp/waku2child/0000013394.html"
+    },
+    {
+      "id": "pending-tottori-medical",
+      "prefecture": "鳥取県",
+      "municipality": "鳥取市",
+      "source": "https://www.city.tottori.lg.jp/site/kosodate/4697.html"
+    },
+    {
+      "id": "pending-tottori-postpartum",
+      "prefecture": "鳥取県",
+      "municipality": "鳥取市",
+      "source": "https://www.city.tottori.lg.jp/site/kosodate/4867.html"
+    },
+    {
+      "id": "pending-miyazaki-one-month-check",
+      "prefecture": "宮崎県",
+      "municipality": "宮崎市",
+      "source": "https://www.city.miyazaki.miyazaki.jp/education/support/support/320.html"
+    },
+    {
+      "id": "pending-miyazaki-family-support",
+      "prefecture": "宮崎県",
+      "municipality": "宮崎市",
+      "source": "https://www.city.miyazaki.miyazaki.jp/education/support/support/12434.html"
+    }
+  ],
+  "priceQuotes": [
+    {
+      "productId": "v11-4902705129535",
+      "retailerId": "matsukiyo",
+      "source": "https://www.matsukiyococokara-online.com/store/catalog/product/view/id/4902705129535",
+      "checkedAt": "2026-10-25",
+      "price": 570,
+      "shipping": null,
+      "stockVerified": false
+    },
+    {
+      "productId": "v11-4902705129535",
+      "retailerId": "create-sd",
+      "source": "https://netshop.create-sd.co.jp/shop/g/g4902705129535/",
+      "checkedAt": "2026-10-25",
+      "price": 516,
+      "shipping": null,
+      "stockVerified": false
+    },
+    {
+      "productId": "v11-4901525956505",
+      "retailerId": "tsuruha",
+      "source": "https://shop.tsuruha.co.jp/10016508.html",
+      "checkedAt": "2026-10-25",
+      "price": 459,
+      "shipping": null,
+      "stockVerified": false
+    },
+    {
+      "productId": "v11-4987286414263",
+      "retailerId": "matsukiyo",
+      "source": "https://www.matsukiyococokara-online.com/store/catalog/product/view/id/4987286414263",
+      "checkedAt": "2026-10-25",
+      "price": 767,
+      "shipping": null,
+      "stockVerified": false
+    },
+    {
+      "productId": "v11-4987107616036",
+      "retailerId": "matsukiyo",
+      "source": "https://www.matsukiyococokara-online.com/store/catalog/product/view/id/4987107616036",
+      "checkedAt": "2026-10-25",
+      "price": 1097,
+      "shipping": null,
+      "stockVerified": false
+    },
+    {
+      "productId": "v11-4901730075404",
+      "retailerId": "matsukiyo",
+      "source": "https://www.matsukiyococokara-online.com/store/catalog/product/view/id/4901730075404",
+      "checkedAt": "2026-10-25",
+      "price": 900,
+      "shipping": null,
+      "stockVerified": false
+    },
+    {
+      "productId": "v11-4987286414263",
+      "retailerId": "mrmax",
+      "source": "https://mrmax.jp/products/detail/53317",
+      "checkedAt": "2026-10-25",
+      "price": 746,
+      "shipping": 660,
+      "stockVerified": false
+    },
+    {
+      "productId": "v11-4901525004251",
+      "retailerId": "mrmax",
+      "source": "https://mrmax.jp/products/detail/11193",
+      "checkedAt": "2026-10-25",
+      "price": 383,
+      "shipping": 660,
+      "stockVerified": false
+    }
+  ],
+  "pendingCachedPrices": [
+    {
+      "productId": "v11-4902705129535",
+      "retailerId": "akachan",
+      "source": "https://shop.akachan.jp/shop/g/g251186500/",
+      "observedPrice": 518,
+      "sourceRetrievedAt": "2026-10-25T13:23:33.495672+00:00",
+      "sourceCrawledDate": "2026-10-24",
+      "priceFreshness": "cached-unknown",
+      "priceVerified": false,
+      "verified": false,
+      "checkedAt": null,
+      "status": "価格の鮮度を確認できず",
+      "note": "個別商品ページのJANと規格は一致。古いキャッシュを含み、現在価格として採用していません。"
+    },
+    {
+      "productId": "v11-4973512259623",
+      "retailerId": "aeon",
+      "source": "https://aeonretail.com/product/0/P-4973512259623/",
+      "observedPrice": 1089,
+      "sourceRetrievedAt": "2026-10-25T13:23:33.495672+00:00",
+      "sourceCrawledDate": null,
+      "priceFreshness": "cached-unknown",
+      "priceVerified": false,
+      "verified": false,
+      "checkedAt": null,
+      "status": "価格の鮮度を確認できず",
+      "note": "個別商品ページのJANと規格は一致。古いキャッシュを含み、現在価格として採用していません。"
+    },
+    {
+      "productId": "v11-4973512259623",
+      "retailerId": "yahoo",
+      "source": "https://store.shopping.yahoo.co.jp/soukai/4973512259623.html",
+      "observedPrice": 1123,
+      "sourceRetrievedAt": "2026-10-25T13:23:33.495672+00:00",
+      "sourceCrawledDate": null,
+      "priceFreshness": "cached-unknown",
+      "priceVerified": false,
+      "verified": false,
+      "checkedAt": null,
+      "status": "価格の鮮度を確認できず",
+      "note": "個別商品ページのJANと規格は一致。古いキャッシュを含み、現在価格として採用していません。"
+    },
+    {
+      "productId": "v11-4973512259623",
+      "retailerId": "akachan",
+      "source": "https://shop.akachan.jp/shop/g/g240610900/",
+      "observedPrice": 1207,
+      "sourceRetrievedAt": "2026-10-25T13:23:33.495672+00:00",
+      "sourceCrawledDate": null,
+      "priceFreshness": "cached-unknown",
+      "priceVerified": false,
+      "verified": false,
+      "checkedAt": null,
+      "status": "価格の鮮度を確認できず",
+      "note": "個別商品ページのJANと規格は一致。古いキャッシュを含み、現在価格として採用していません。"
+    },
+    {
+      "productId": "v11-4987244170736",
+      "retailerId": "tsuruha",
+      "source": "https://shop.tsuruha.co.jp/10165475.html",
+      "observedPrice": 1031,
+      "sourceRetrievedAt": "2026-10-25T13:23:33.495672+00:00",
+      "sourceCrawledDate": null,
+      "priceFreshness": "cached-unknown",
+      "priceVerified": false,
+      "verified": false,
+      "checkedAt": null,
+      "status": "価格の鮮度を確認できず",
+      "note": "個別商品ページのJANと規格は一致。古いキャッシュを含み、現在価格として採用していません。"
+    },
+    {
+      "productId": "v11-4987244170736",
+      "retailerId": "akachan",
+      "source": "https://shop.akachan.jp/shop/g/g532026200",
+      "observedPrice": 1042,
+      "sourceRetrievedAt": "2026-10-25T13:23:33.495672+00:00",
+      "sourceCrawledDate": null,
+      "priceFreshness": "cached-unknown",
+      "priceVerified": false,
+      "verified": false,
+      "checkedAt": null,
+      "status": "価格の鮮度を確認できず",
+      "note": "個別商品ページのJANと規格は一致。古いキャッシュを含み、現在価格として採用していません。"
+    },
+    {
+      "productId": "v11-4901525956505",
+      "retailerId": "welcia",
+      "source": "https://www.e-welcia.com/product/90370",
+      "observedPrice": 548.9,
+      "sourceRetrievedAt": "2026-10-25T13:23:33.495672+00:00",
+      "sourceCrawledDate": null,
+      "priceFreshness": "cached-unknown",
+      "priceVerified": false,
+      "verified": false,
+      "checkedAt": null,
+      "status": "価格の鮮度を確認できず",
+      "note": "個別商品ページのJANと規格は一致。古いキャッシュを含み、現在価格として採用していません。"
+    },
+    {
+      "productId": "v11-4987286414263",
+      "retailerId": "nishimatsuya",
+      "source": "https://www.24028-net.jp/item/4987286414263.html",
+      "observedPrice": 592,
+      "sourceRetrievedAt": "2026-10-25T13:23:33.495672+00:00",
+      "sourceCrawledDate": null,
+      "priceFreshness": "cached-unknown",
+      "priceVerified": false,
+      "verified": false,
+      "checkedAt": null,
+      "status": "価格の鮮度を確認できず",
+      "note": "個別商品ページのJANと規格は一致。古いキャッシュを含み、現在価格として採用していません。"
+    },
+    {
+      "productId": "v11-4987286414263",
+      "retailerId": "babiesrus",
+      "source": "https://www.babiesrus.co.jp/ja-jp/5574234-557423400.html",
+      "observedPrice": 649,
+      "sourceRetrievedAt": "2026-10-25T13:23:33.495672+00:00",
+      "sourceCrawledDate": null,
+      "priceFreshness": "cached-unknown",
+      "priceVerified": false,
+      "verified": false,
+      "checkedAt": null,
+      "status": "価格の鮮度を確認できず",
+      "note": "個別商品ページのJANと規格は一致。古いキャッシュを含み、現在価格として採用していません。"
+    }
+  ]
+}

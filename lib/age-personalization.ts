@@ -91,11 +91,21 @@ export function ageTargetStatus(item:Item,children:FamilyChild[]):AgeTargetStatu
   const hasGrade=finite(item.minSchoolGrade)||finite(item.maxSchoolGrade);
   const schoolYearEndAge=finite(item.schoolYearEndAge)&&item.schoolYearEndAge>=6?item.schoolYearEndAge:null;
   if(!ranges.length&&!groups.length&&!hasGrade&&schoolYearEndAge===null)return 'unknown';
-  const base=(child:FamilyChild)=>(!ranges.length||ranges.some((r:{min:number;max:number})=>child.months>=r.min&&child.months<=r.max))&&(!groups.length||groups.includes('*')||groups.includes(getAgeGroup(child.months)));
+  // A stated school-year condition takes precedence over the approximate age-group boundary.
+  // Pregnancy explicitly included by a scheme is not excluded for lacking a school grade.
+  const gradeFor=(child:FamilyChild)=>child.months<0&&groups.includes('妊娠中')?0:child.schoolGrade;
+  const groupMatches=(child:FamilyChild)=>{
+    if(!groups.length||groups.includes('*'))return true;
+    const grade=gradeFor(child);
+    if(hasGrade&&finite(grade)&&grade>0)return groups.includes(grade<=6?'小学生':'中学生以上');
+    if(hasGrade&&!finite(grade)&&child.months>=60&&groups.some(group=>group==='小学生'||group==='中学生以上'))return true;
+    return groups.includes(getAgeGroup(child.months));
+  };
+  const base=(child:FamilyChild)=>(!ranges.length||ranges.some((r:{min:number;max:number})=>child.months>=r.min&&child.months<=r.max))&&groupMatches(child);
   const beforeYearEnd=(child:FamilyChild):boolean|null=>schoolYearEndAge===null?true:finite(child.schoolGrade)?child.schoolGrade<=schoolYearEndAge-6:child.months<schoolYearEndAge*12?true:child.months>=(schoolYearEndAge+1)*12?false:null;
-  if(children.some(child=>base(child)&&beforeYearEnd(child)===true&&(!hasGrade||finite(child.schoolGrade)&&(!finite(item.minSchoolGrade)||child.schoolGrade>=item.minSchoolGrade)&&(!finite(item.maxSchoolGrade)||child.schoolGrade<=item.maxSchoolGrade))))return 'matching';
+  if(children.some(child=>{const grade=gradeFor(child);return base(child)&&beforeYearEnd(child)===true&&(!hasGrade||finite(grade)&&(!finite(item.minSchoolGrade)||grade>=item.minSchoolGrade)&&(!finite(item.maxSchoolGrade)||grade<=item.maxSchoolGrade))}))return 'matching';
   if(children.some(child=>base(child)&&beforeYearEnd(child)===null))return 'unknown';
-  if(hasGrade&&children.some(child=>base(child)&&!finite(child.schoolGrade)))return 'unknown';
+  if(hasGrade&&children.some(child=>base(child)&&!finite(gradeFor(child))))return 'unknown';
   return 'not-matching';
 }
 export function matchesFamilyAge(item:Item,children:FamilyChild[],includeUnknown=true):boolean {

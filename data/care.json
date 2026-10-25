@@ -2741,7 +2741,10 @@
       "scope": "national",
       "official": true,
       "checkedAt": "2026-10-25",
-      "programYear": "2026年度"
+      "programYear": "2026年度",
+      "minAgeMonths": 0,
+      "schoolYearEndAge": 18,
+      "ageBoundaryBasis": "official-school-year-end"
     },
     {
       "id": "national-pregnancy-benefit",
@@ -2890,7 +2893,10 @@
       "ageNote": "札幌市に住民登録があり、健康保険に加入している、18歳に達した後の最初の3月31日までの子ども。主たる生計維持者の所得が限度額未満であること。",
       "amountLabel": "対象の医療費の一部を助成",
       "scope": "municipality",
-      "previousIds": []
+      "previousIds": [],
+      "minAgeMonths": 0,
+      "schoolYearEndAge": 18,
+      "ageBoundaryBasis": "official-school-year-end"
     },
     {
       "id": "sendai-postpartum",
@@ -2941,7 +2947,10 @@
       "amountLabel": "保険診療の自己負担を全額助成",
       "ageNote": "18歳に達する日以後の最初の3月31日まで",
       "sourceUpdatedAt": "2026-10-02",
-      "previousIds": []
+      "previousIds": [],
+      "minAgeMonths": 0,
+      "schoolYearEndAge": 18,
+      "ageBoundaryBasis": "official-school-year-end"
     },
     {
       "id": "nagoya-postpartum",
@@ -3073,7 +3082,10 @@
       "ageNote": "18歳の誕生日前日以後最初の3月31日まで。通院の年齢区分は3歳誕生日の翌月から等の扱いあり",
       "sourceUpdatedAt": "2025-12-02",
       "caution": "入院の食事代・個室代、健診、選定療養費など健康保険が適用されない費用は対象外。",
-      "previousIds": []
+      "previousIds": [],
+      "minAgeMonths": 0,
+      "schoolYearEndAge": 18,
+      "ageBoundaryBasis": "official-school-year-end"
     },
     {
       "id": "naha-medical",
@@ -3275,7 +3287,10 @@
       ],
       "amountLabel": "窓口負担に上限あり",
       "ageNote": "18歳になった後の最初の3月31日まで",
-      "sourceUpdatedAt": "2026-10-19"
+      "sourceUpdatedAt": "2026-10-19",
+      "minAgeMonths": 0,
+      "schoolYearEndAge": 18,
+      "ageBoundaryBasis": "official-school-year-end"
     },
     {
       "id": "local-osaka-parent-helper",
@@ -3533,7 +3548,10 @@
       ],
       "amountLabel": "保険診療の窓口負担なし",
       "ageNote": "18歳になった後の最初の3月31日まで",
-      "sourceUpdatedAt": "2026-04-01"
+      "sourceUpdatedAt": "2026-04-01",
+      "minAgeMonths": 0,
+      "schoolYearEndAge": 18,
+      "ageBoundaryBasis": "official-school-year-end"
     },
     {
       "id": "local-akashi-second-child",
@@ -3775,7 +3793,9 @@
         "高取町",
         "明日香村"
       ],
-      "minAgeMonths": 6
+      "minAgeMonths": 6,
+      "maxSchoolGrade": 6,
+      "ageBasis": "official-minimum-age-and-school-grade"
     },
     {
       "id": "local-otsu-postnatal",
@@ -3895,7 +3915,10 @@
       "amountLabel": "1日1,500円。延長料金・補助条件あり",
       "ageNote": "生後6か月〜小学6年生。市外在住者も対象",
       "sourceUpdatedAt": "2026-08-07",
-      "acceptsNonResidents": true
+      "acceptsNonResidents": true,
+      "minAgeMonths": 6,
+      "maxSchoolGrade": 6,
+      "ageBasis": "official-minimum-age-and-school-grade"
     },
     {
       "id": "local-wakayama-postnatal",
@@ -3943,7 +3966,10 @@
       ],
       "amountLabel": "保険診療等の自己負担を助成",
       "ageNote": "18歳になった後の最初の3月31日まで",
-      "sourceUpdatedAt": "2026-03-11"
+      "sourceUpdatedAt": "2026-03-11",
+      "minAgeMonths": 0,
+      "schoolYearEndAge": 18,
+      "ageBoundaryBasis": "official-school-year-end"
     },
     {
       "id": "local-wakayama-inflation-pregnant",
@@ -4182,7 +4208,10 @@
       "amountLabel": "対象の保険診療の自己負担分を助成",
       "sourceUpdatedAt": "2026-09-01",
       "ageNote": "18歳に達した日以降の最初の3月31日まで。",
-      "scope": "municipality"
+      "scope": "municipality",
+      "minAgeMonths": 0,
+      "schoolYearEndAge": 18,
+      "ageBoundaryBasis": "official-school-year-end"
     },
     {
       "id": "kanto-sagamihara-homehelp",
@@ -4283,7 +4312,10 @@
       "amountLabel": "対象の保険診療の医療費を支給",
       "sourceUpdatedAt": "2024-12-02",
       "ageNote": "18歳到達後の最初の3月31日まで。",
-      "scope": "municipality"
+      "scope": "municipality",
+      "minAgeMonths": 0,
+      "schoolYearEndAge": 18,
+      "ageBoundaryBasis": "official-school-year-end"
     },
     {
       "id": "kanto-kawagoe-postpartum",
@@ -4377,7 +4409,10 @@
       "amountLabel": "対象の保険診療の自己負担分を助成",
       "sourceUpdatedAt": "2025-12-01",
       "ageNote": "18歳に達した日以後の最初の3月31日まで。",
-      "scope": "municipality"
+      "scope": "municipality",
+      "minAgeMonths": 0,
+      "schoolYearEndAge": 18,
+      "ageBoundaryBasis": "official-school-year-end"
     },
     {
       "id": "kanto-nagareyama-station",
@@ -4448,7 +4483,10 @@
       "amountLabel": "医療費の自己負担分を一部助成",
       "sourceUpdatedAt": "2026-05-01",
       "ageNote": "出生の日から高校3年生相当の学年末まで。",
-      "scope": "municipality"
+      "scope": "municipality",
+      "minAgeMonths": 0,
+      "schoolYearEndAge": 18,
+      "ageBoundaryBasis": "official-school-year-end"
     },
     {
       "id": "kanto-sakai-diaper",
@@ -8591,7 +8629,9 @@
         "病気・受診",
         "仕事・育休"
       ],
-      "municipalityCode": "04207"
+      "municipalityCode": "04207",
+      "maxSchoolGrade": 6,
+      "ageBasis": "official-minimum-age-and-school-grade"
     },
     {
       "id": "east-v11-ogawara-temporary",
@@ -8814,7 +8854,9 @@
         "仕事・育休"
       ],
       "deadlineNote": "確認した公式本文に一律の申請締切日の記載なし。利用前の申請・予約が必要なものは手順に記載。",
-      "municipalityCode": "09361"
+      "municipalityCode": "09361",
+      "maxSchoolGrade": 3,
+      "ageBasis": "official-school-grade"
     },
     {
       "id": "east-v11-namegawa-daredemo",
@@ -14239,6 +14281,489 @@
       "minSchoolGrade": 1,
       "maxSchoolGrade": 9,
       "municipalityCode": "47362"
+    },
+    {
+      "id": "pending-hakodate-medical",
+      "title": "高校卒業までの子ども医療費助成",
+      "prefecture": "北海道",
+      "municipality": "函館市",
+      "municipalityCode": "01202",
+      "area": "北海道 函館市",
+      "scope": "municipality",
+      "category": "医療",
+      "summary": "受給者証を使うと、保険診療にかかる自己負担が無料。道外での受診は後日払い戻しを申請します。",
+      "eligibility": "函館市に住民票がある、18歳に達する日以後の最初の3月31日までの子ども。所得制限なし。婚姻した子どもは対象外。",
+      "how": "子育て支援課・各支所または市公式LINEで受給者証の交付を申請。子どもの健康保険情報を用意します。",
+      "amountLabel": "保険診療の自己負担を助成。食事代・健診・予防接種等は対象外",
+      "preparation": [
+        "健康保険の資格確認書・資格情報のお知らせ等",
+        "交付申請書・同意書。転入等では追加資料が必要な場合あり"
+      ],
+      "steps": [
+        {
+          "title": "対象を確認",
+          "body": "函館市に住民票がある、18歳に達する日以後の最初の3月31日までの子ども。所得制限なし。婚姻した子どもは対象外。"
+        },
+        {
+          "title": "申し込む",
+          "body": "子育て支援課・各支所または市公式LINEで受給者証の交付を申請。子どもの健康保険情報を用意します。"
+        }
+      ],
+      "deadline": "出生・転入等の翌日から14日以内に届出。道外受診の払い戻しは2年以内",
+      "source": "https://www.city.hakodate.hokkaido.jp/docs/2014012000574/",
+      "sourceName": "函館市公式サイト",
+      "checkedAt": "2026-10-25",
+      "official": true,
+      "ageGroups": [
+        "0歳",
+        "1〜2歳",
+        "3〜5歳",
+        "小学生",
+        "中学生以上"
+      ],
+      "ageNote": "18歳に達する日以後の最初の3月31日まで。",
+      "schoolYearEndAge": 18
+    },
+    {
+      "id": "pending-hakodate-postpartum",
+      "title": "産後ケアの宿泊・通所・訪問",
+      "prefecture": "北海道",
+      "municipality": "函館市",
+      "municipalityCode": "01202",
+      "area": "北海道 函館市",
+      "scope": "municipality",
+      "category": "妊娠・出産",
+      "summary": "助産師等が授乳や沐浴を支援し、お母さんの休息を手伝います。宿泊・通所・訪問から相談できます。",
+      "eligibility": "函館市に住民票がある産後1年以内の母子で、ケアを必要とする方。施設別の受入月齢があり、医療行為が必要な場合は利用できません。",
+      "how": "マザーズ・サポート・ステーションへ事前相談し、利用申請。市公式LINEからも申請できます。",
+      "amountLabel": "宿泊1泊2日7,200円、通所3時間1,200円・6時間2,400円、訪問約2時間1,600円。非課税・生活保護世帯は免除",
+      "preparation": [
+        "産後ケア事業利用申請書",
+        "免除対象者は証明書類"
+      ],
+      "steps": [
+        {
+          "title": "対象を確認",
+          "body": "函館市に住民票がある産後1年以内の母子で、ケアを必要とする方。施設別の受入月齢があり、医療行為が必要な場合は利用できません。"
+        },
+        {
+          "title": "申し込む",
+          "body": "マザーズ・サポート・ステーションへ事前相談し、利用申請。市公式LINEからも申請できます。"
+        }
+      ],
+      "deadline": "利用前の申請が必要。宿泊は6泊7日まで、通所と訪問は合計7日まで",
+      "source": "https://www.city.hakodate.hokkaido.jp/docs/2017051600057/",
+      "sourceName": "函館市公式サイト",
+      "checkedAt": "2026-10-25",
+      "official": true,
+      "ageGroups": [
+        "0歳",
+        "1〜2歳"
+      ],
+      "ageNote": "産後1年以内。施設ごとに受け入れられる月齢が異なります。",
+      "minAgeMonths": 0,
+      "maxAgeMonths": 12
+    },
+    {
+      "id": "pending-ichikawa-postpartum",
+      "title": "2026年度の産後ケア",
+      "prefecture": "千葉県",
+      "municipality": "市川市",
+      "municipalityCode": "12203",
+      "area": "千葉県 市川市",
+      "scope": "municipality",
+      "category": "妊娠・出産",
+      "summary": "宿泊・日帰り・訪問を合計7日まで利用できます。2026年度は決定通知を受けた後、自分で希望施設へ予約します。",
+      "eligibility": "市川市に住民票がある産婦と乳児。宿泊は産後60日未満、日帰りは120日未満、訪問は1年未満。",
+      "how": "市の申請フォームで登録し、利用可否決定通知書を受け取ってから希望施設・助産師へ予約します。",
+      "amountLabel": "課税世帯は宿泊1日2,700円、日帰り1,600円、訪問1,320円。非課税世帯は半額相当、生活保護世帯は無料。多胎加算等あり",
+      "preparation": [
+        "利用可否決定通知書",
+        "母子健康手帳",
+        "非課税等の確認ができない場合は所得証明書等"
+      ],
+      "steps": [
+        {
+          "title": "対象を確認",
+          "body": "市川市に住民票がある産婦と乳児。宿泊は産後60日未満、日帰りは120日未満、訪問は1年未満。"
+        },
+        {
+          "title": "申し込む",
+          "body": "市の申請フォームで登録し、利用可否決定通知書を受け取ってから希望施設・助産師へ予約します。"
+        }
+      ],
+      "deadline": "出産予定日の3か月前から登録申請可。宿泊1泊2日は2日と数える",
+      "source": "https://www.city.ichikawa.lg.jp/page/7071.html",
+      "sourceName": "市川市公式サイト",
+      "checkedAt": "2026-10-25",
+      "official": true,
+      "ageGroups": [
+        "妊娠中",
+        "0歳"
+      ],
+      "ageNote": "申請は出産予定日の3か月前から。利用期限は宿泊60日・日帰り120日・訪問1年未満。",
+      "programYear": 2026,
+      "notes": [
+        "前日正午以降のキャンセル等では利用料が発生し、利用日数にも数えます。施設の休診日は前営業日が締切です。",
+        "施設によって別途実費が発生する場合があります。"
+      ],
+      "ageRanges": [
+        {
+          "minAgeMonths": -1,
+          "maxAgeMonths": 11
+        }
+      ]
+    },
+    {
+      "id": "pending-ichikawa-postnatal-check",
+      "title": "産婦健診の費用助成",
+      "prefecture": "千葉県",
+      "municipality": "市川市",
+      "municipalityCode": "12203",
+      "area": "千葉県 市川市",
+      "scope": "municipality",
+      "category": "妊娠・出産",
+      "summary": "産後2週間ごろと1か月ごろの健診を、合計2回まで助成します。お母さん自身の回復や心の状態を確かめる健診です。",
+      "eligibility": "受診日に市川市に住民票があり、産後おおむね1か月以内の方。受診結果を市へ提出し、産後の支援に使うことへの同意が必要。産後2か月以降は利用不可。",
+      "how": "母子健康手帳の別冊にある産婦健康診査受診票を利用。契約外の医療機関では払い戻しの申請が必要です。",
+      "amountLabel": "1回5,000円を上限に2回。上限超過や対象外検査は自己負担",
+      "preparation": [
+        "産婦健康診査受診票",
+        "母子健康手帳"
+      ],
+      "steps": [
+        {
+          "title": "対象を確認",
+          "body": "受診日に市川市に住民票があり、産後おおむね1か月以内の方。受診結果を市へ提出し、産後の支援に使うことへの同意が必要。産後2か月以降は利用不可。"
+        },
+        {
+          "title": "申し込む",
+          "body": "母子健康手帳の別冊にある産婦健康診査受診票を利用。契約外の医療機関では払い戻しの申請が必要です。"
+        }
+      ],
+      "deadline": "産後おおむね2週間・1か月に受診。産後2か月以降は対象外",
+      "source": "https://www.city.ichikawa.lg.jp/page/7069.html",
+      "sourceName": "市川市公式サイト",
+      "checkedAt": "2026-10-25",
+      "official": true,
+      "ageGroups": [
+        "0歳"
+      ],
+      "ageNote": "産後おおむね1か月以内。産後2か月以降は利用できません。",
+      "minAgeMonths": 0,
+      "maxAgeMonths": 1
+    },
+    {
+      "id": "pending-himeji-medical",
+      "title": "乳幼児等・こども医療費の助成",
+      "prefecture": "兵庫県",
+      "municipality": "姫路市",
+      "municipalityCode": "28201",
+      "area": "兵庫県 姫路市",
+      "scope": "municipality",
+      "category": "医療",
+      "summary": "保険診療の自己負担を全額助成。県外で受診する際などはいったん支払い、後日払い戻しを受けます。",
+      "eligibility": "姫路市に住所があり、医療保険に加入する0歳から18歳年度末までの方。",
+      "how": "オンライン、郵送、福祉総務課や支所等で受給者証を申請。即日交付の希望は本庁舎の福祉医療担当へ。",
+      "amountLabel": "保険診療の自己負担は無料。食事代・室料差額・健診等は対象外",
+      "preparation": [
+        "子どもの医療保険の資格情報",
+        "保護者等の本人確認書類",
+        "紙の手続きでは交付申請書。転入等により追加資料あり"
+      ],
+      "steps": [
+        {
+          "title": "対象を確認",
+          "body": "姫路市に住所があり、医療保険に加入する0歳から18歳年度末までの方。"
+        },
+        {
+          "title": "申し込む",
+          "body": "オンライン、郵送、福祉総務課や支所等で受給者証を申請。即日交付の希望は本庁舎の福祉医療担当へ。"
+        }
+      ],
+      "deadline": null,
+      "source": "https://www.city.himeji.lg.jp/kurashi/0000007975.html",
+      "sourceName": "姫路市公式サイト",
+      "checkedAt": "2026-10-25",
+      "official": true,
+      "ageGroups": [
+        "0歳",
+        "1〜2歳",
+        "3〜5歳",
+        "小学生",
+        "中学生以上"
+      ],
+      "ageNote": "18歳に達する日以後の最初の3月31日まで。",
+      "schoolYearEndAge": 18,
+      "notes": [
+        "駅前市役所は2026年7月31日から全日予約制です。"
+      ]
+    },
+    {
+      "id": "pending-himeji-taxi",
+      "title": "妊産婦のタクシークーポン",
+      "prefecture": "兵庫県",
+      "municipality": "姫路市",
+      "municipalityCode": "28201",
+      "area": "兵庫県 姫路市",
+      "scope": "municipality",
+      "category": "妊娠・出産",
+      "summary": "健診などの移動に使える、5,000円分のデジタルクーポンを妊娠1回につき受け取れます。",
+      "eligibility": "姫路市に住民票があり、新たに母子健康手帳の交付を受けた方。他市で交付を受けた方も、申請時に姫路市に住民票があれば対象。",
+      "how": "姫路市オンライン手続ポータルでユーザー登録し、「妊産婦タクシー優待助成申請」を行います。",
+      "amountLabel": "妊娠1回につき5,000円分のデジタルクーポン",
+      "preparation": [
+        "オンライン手続ポータルの利用者登録",
+        "母子健康手帳など申請画面で求められる資料"
+      ],
+      "steps": [
+        {
+          "title": "対象を確認",
+          "body": "姫路市に住民票があり、新たに母子健康手帳の交付を受けた方。他市で交付を受けた方も、申請時に姫路市に住民票があれば対象。"
+        },
+        {
+          "title": "申し込む",
+          "body": "姫路市オンライン手続ポータルでユーザー登録し、「妊産婦タクシー優待助成申請」を行います。"
+        }
+      ],
+      "deadline": "有効期限は、出産前申請なら予定日の1年後の前日、出産後申請なら分娩日の1年後の前日が属する月末",
+      "source": "https://www.city.himeji.lg.jp/kurashi/0000016252.html",
+      "sourceName": "姫路市公式サイト",
+      "checkedAt": "2026-10-25",
+      "official": true,
+      "ageGroups": [
+        "妊娠中",
+        "0歳"
+      ],
+      "ageNote": "妊娠中と出産後の方。クーポンの有効期限を確認。"
+    },
+    {
+      "id": "pending-himeji-home-help",
+      "title": "産前・産後の家事・育児サポート",
+      "prefecture": "兵庫県",
+      "municipality": "姫路市",
+      "municipalityCode": "28201",
+      "area": "兵庫県 姫路市",
+      "scope": "municipality",
+      "category": "妊娠・出産",
+      "summary": "提供会員が掃除・洗濯・簡単な調理・買い物・赤ちゃんのお世話を手伝います。1回2時間以内です。",
+      "eligibility": "姫路市内在住で妊娠中から産後6か月未満の方。心身の不調、または支援者不在で子育てに支障がある方。",
+      "how": "ファミリーサポートセンターへ相談し、会員登録して利用を申し込みます。援助内容や地域により希望どおり利用できない場合あり。",
+      "amountLabel": "平日7〜20時は1時間1,000円、土日祝や平日早朝・夜間は1,100円。交通費等は別途",
+      "preparation": [
+        "ファミリーサポートセンターの会員登録",
+        "事前打合せ票と希望する家事・育児内容"
+      ],
+      "steps": [
+        {
+          "title": "対象を確認",
+          "body": "姫路市内在住で妊娠中から産後6か月未満の方。心身の不調、または支援者不在で子育てに支障がある方。"
+        },
+        {
+          "title": "申し込む",
+          "body": "ファミリーサポートセンターへ相談し、会員登録して利用を申し込みます。援助内容や地域により希望どおり利用できない場合あり。"
+        }
+      ],
+      "deadline": "妊娠中から産後6か月未満。援助当日のキャンセルは料金が必要",
+      "source": "https://www.city.himeji.lg.jp/waku2child/0000013394.html",
+      "sourceName": "姫路市公式サイト",
+      "checkedAt": "2026-10-25",
+      "official": true,
+      "ageGroups": [
+        "妊娠中",
+        "0歳"
+      ],
+      "ageNote": "妊娠中から産後6か月未満。",
+      "ageRanges": [
+        {
+          "minAgeMonths": -1,
+          "maxAgeMonths": 5
+        }
+      ]
+    },
+    {
+      "id": "pending-tottori-medical",
+      "title": "小児の特別医療費助成",
+      "prefecture": "鳥取県",
+      "municipality": "鳥取市",
+      "municipalityCode": "31201",
+      "area": "鳥取県 鳥取市",
+      "scope": "municipality",
+      "category": "医療",
+      "summary": "18歳年度末までの入院・通院の保険診療について自己負担を助成。県内では受給資格証を提示して利用します。",
+      "eligibility": "18歳に達する日以後の最初の3月31日までの方。健康保険に関する情報などを用意して資格証を申請します。",
+      "how": "市役所の福祉総合窓口13番または各総合支所市民福祉課へ。県外受診等の払い戻しには領収書・通帳等も必要です。",
+      "amountLabel": "入院・通院の自己負担は0円。保険外の費用や食事代等は対象外",
+      "preparation": [
+        "子どもの健康保険情報が確認できるもの",
+        "窓口に行く方の本人確認書類",
+        "別世帯の代理人は委任状"
+      ],
+      "steps": [
+        {
+          "title": "対象を確認",
+          "body": "18歳に達する日以後の最初の3月31日までの方。健康保険に関する情報などを用意して資格証を申請します。"
+        },
+        {
+          "title": "申し込む",
+          "body": "市役所の福祉総合窓口13番または各総合支所市民福祉課へ。県外受診等の払い戻しには領収書・通帳等も必要です。"
+        }
+      ],
+      "deadline": "払い戻しは支払い日から5年で時効。高額療養費は別に2年以内の申請が必要",
+      "source": "https://www.city.tottori.lg.jp/site/kosodate/4697.html",
+      "sourceName": "鳥取市公式サイト",
+      "checkedAt": "2026-10-25",
+      "official": true,
+      "ageGroups": [
+        "0歳",
+        "1〜2歳",
+        "3〜5歳",
+        "小学生",
+        "中学生以上"
+      ],
+      "ageNote": "18歳に達する日以後の最初の3月31日まで。",
+      "schoolYearEndAge": 18
+    },
+    {
+      "id": "pending-tottori-postpartum",
+      "title": "産後ケアの宿泊・通所・訪問",
+      "prefecture": "鳥取県",
+      "municipality": "鳥取市",
+      "municipalityCode": "31201",
+      "area": "鳥取県 鳥取市",
+      "scope": "municipality",
+      "category": "妊娠・出産",
+      "summary": "助産師等が休息や授乳・育児を支援。ケアの利用料は無料ですが、宿泊の食事代などは別にかかります。",
+      "eligibility": "出産後1年以内で産後ケアを必要とする方。流産・死産から1年以内の方も利用可。施設ごとに受入月齢が異なります。医療行為が必要な場合は利用不可。",
+      "how": "こども家庭センターへ希望日を電話相談し、日程調整後に電子申請。初回は登録書兼同意書と申請書、2回目以降は申請書を提出します。",
+      "amountLabel": "ケア利用料は無料。宿泊の食事代等は別途。宿泊は7日まで、通所と訪問は合計7回まで",
+      "preparation": [
+        "おやこ健康手帳",
+        "子どもの着替え・紙おむつ等",
+        "必要に応じミルク・哺乳瓶"
+      ],
+      "steps": [
+        {
+          "title": "対象を確認",
+          "body": "出産後1年以内で産後ケアを必要とする方。流産・死産から1年以内の方も利用可。施設ごとに受入月齢が異なります。医療行為が必要な場合は利用不可。"
+        },
+        {
+          "title": "申し込む",
+          "body": "こども家庭センターへ希望日を電話相談し、日程調整後に電子申請。初回は登録書兼同意書と申請書、2回目以降は申請書を提出します。"
+        }
+      ],
+      "deadline": "利用前に日程調整・申請。宿泊の前日正午等を過ぎた中止はキャンセル料の対象",
+      "source": "https://www.city.tottori.lg.jp/site/kosodate/4867.html",
+      "sourceName": "鳥取市公式サイト",
+      "checkedAt": "2026-10-25",
+      "official": true,
+      "ageGroups": [
+        "0歳",
+        "1〜2歳"
+      ],
+      "ageNote": "出産後1年以内。施設別の受入月齢を確認。",
+      "additionalSources": [
+        {
+          "title": "2026年6月改定の産後ケア案内",
+          "url": "https://www.city.tottori.lg.jp/uploaded/attachment/47852.pdf"
+        }
+      ],
+      "notes": [
+        "助産院いのちねは2026年3月から受入休止中で再開日は未定。",
+        "宿泊の直前キャンセルは課税世帯1,800円、非課税世帯900円。生活保護世帯は0円。"
+      ],
+      "minAgeMonths": 0,
+      "maxAgeMonths": 12
+    },
+    {
+      "id": "pending-miyazaki-one-month-check",
+      "title": "1か月児健診の費用助成",
+      "prefecture": "宮崎県",
+      "municipality": "宮崎市",
+      "municipalityCode": "45201",
+      "area": "宮崎県 宮崎市",
+      "scope": "municipality",
+      "category": "医療",
+      "summary": "2026年4月から1か月児健診の費用を助成。県外で受ける場合は、申請により費用の一部または全部が払い戻されます。",
+      "eligibility": "宮崎市に住民票がある、生後28日から41日の乳児。2026年4月1日以降の受診が対象。",
+      "how": "つぐみセットの1か月児健診受診票を持ち、県内の実施医療機関へ予約して受診。県外受診の払い戻しはオンライン・窓口・郵送で申請できます。",
+      "amountLabel": "1か月児健診の費用を助成。県外受診の払い戻し額は市の案内を確認",
+      "preparation": [
+        "1か月児健康診査受診票",
+        "親子健康手帳",
+        "県外受診は市指定の払い戻し申請書類"
+      ],
+      "steps": [
+        {
+          "title": "対象を確認",
+          "body": "宮崎市に住民票がある、生後28日から41日の乳児。2026年4月1日以降の受診が対象。"
+        },
+        {
+          "title": "申し込む",
+          "body": "つぐみセットの1か月児健診受診票を持ち、県内の実施医療機関へ予約して受診。県外受診の払い戻しはオンライン・窓口・郵送で申請できます。"
+        }
+      ],
+      "deadline": "生後28日から41日までに受診",
+      "source": "https://www.city.miyazaki.miyazaki.jp/education/support/support/320.html",
+      "sourceName": "宮崎市公式サイト",
+      "checkedAt": "2026-10-25",
+      "official": true,
+      "ageGroups": [
+        "0歳"
+      ],
+      "ageNote": "生まれた日を0日目として生後28〜41日。月齢だけで対象を確定できないため受診日を確認。",
+      "programYear": 2026,
+      "minAgeMonths": 0,
+      "maxAgeMonths": 1
+    },
+    {
+      "id": "pending-miyazaki-family-support",
+      "title": "ファミリー・サポート・センターの預かり・送迎",
+      "prefecture": "宮崎県",
+      "municipality": "宮崎市",
+      "municipalityCode": "45201",
+      "area": "宮崎県 宮崎市",
+      "scope": "municipality",
+      "category": "保育",
+      "summary": "地域の援助会員へ子どもの送迎や一時的な預かりを依頼できます。病児の預かり・宿泊・家事は対象外です。",
+      "eligibility": "宮崎市・国富町・綾町に住み、0歳から12歳の小学生までの子どもがいる方。説明を受けて会員登録する必要があります。",
+      "how": "センターへ電話し登録会または個別登録を予約。会員登録、援助会員との顔合わせと事前打合せを経て利用します。",
+      "amountLabel": "曜日や時間帯を問わず1時間800円。交通費・食費等は別。世帯区分による補助は認定申請が必要",
+      "preparation": [
+        "約1時間の説明を受けて会員登録",
+        "子どもの送迎先・利用日程などの事前打合せ"
+      ],
+      "steps": [
+        {
+          "title": "対象を確認",
+          "body": "宮崎市・国富町・綾町に住み、0歳から12歳の小学生までの子どもがいる方。説明を受けて会員登録する必要があります。"
+        },
+        {
+          "title": "申し込む",
+          "body": "センターへ電話し登録会または個別登録を予約。会員登録、援助会員との顔合わせと事前打合せを経て利用します。"
+        }
+      ],
+      "deadline": "利用前の登録・調整が必要。補助の区分認定は毎年更新",
+      "source": "https://www.city.miyazaki.miyazaki.jp/education/support/support/12434.html",
+      "sourceName": "宮崎市公式サイト",
+      "checkedAt": "2026-10-25",
+      "official": true,
+      "ageGroups": [
+        "0歳",
+        "1〜2歳",
+        "3〜5歳",
+        "小学生"
+      ],
+      "ageNote": "0歳から12歳の小学生まで。",
+      "maxSchoolGrade": 6,
+      "notes": [
+        "国富町・綾町在住の方も登録できる広域の制度です。"
+      ],
+      "coveredMunicipalities": [
+        "宮崎市",
+        "国富町",
+        "綾町"
+      ]
     }
   ],
   "supportCoverage": {
@@ -14252,8 +14777,8 @@
   },
   "coverage": {
     "checkedAt": "2026-10-25",
-    "programs": 334,
-    "municipalitiesWithPrograms": 143,
+    "programs": 345,
+    "municipalitiesWithPrograms": 150,
     "indexedMunicipalities": 1741,
     "prefecturesWithMunicipalPrograms": 47,
     "notes": "自治体索引の全件掲載と、個別制度を調べた範囲は異なります。"
@@ -14281,5 +14806,6 @@
         "updated": 0
       }
     ]
-  }
+  },
+  "checkedAt": "2026-10-25"
 }

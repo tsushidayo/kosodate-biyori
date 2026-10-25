@@ -1,6 +1,6 @@
 {
   "asOf": "2026-10-25T08:57:48.228Z",
-  "updatedAt": "2026-10-25T10:40:39.271Z",
+  "updatedAt": "2026-10-25T14:16:04.393734Z",
   "products": [
     {
       "id": "haihai-810",
@@ -26,23 +26,59 @@
           "quantity": 2,
           "totalGrams": 1620,
           "source": "https://www.amazon.co.jp/dp/B09S5QL6F3",
-          "shippingSource": "https://www.amazon.co.jp/dp/B09S5QL6F3",
-          "checkedAt": "2026-10-25T12:00:00Z",
-          "condition": "掲載額の例。購入時の在庫と地域の送料を確認。",
-          "status": "要再確認",
+          "shippingSource": "https://www.amazon.co.jp/gp/help/customer/display.html?nodeId=201911210",
+          "checkedAt": "2026-10-25T14:16:04.393734Z",
+          "condition": "810g×2缶。通常の1回購入4409円。プライム会員でAmazon発送を選ぶ前提で通常送料0円。個別商品ページの購入ボタンとAmazon.co.jp発送を確認。非会員でも商品小計3500円以上は通常送料0円。対象外の配送や別出品者は注文画面で確認。",
+          "status": "注文受付表示あり",
           "region": "全国・送料の例外地域あり",
-          "verified": false,
-          "verificationType": "掲載例",
-          "unitPrice": 272.16,
+          "verified": true,
+          "verificationType": "Amazonの個別商品本文・ASIN・810g×2缶・通常/定期価格欄",
+          "unitPrice": null,
           "unitLabel": "100g",
           "discountRate": 0,
           "couponYen": 0,
           "live": false,
-          "refreshEligible": true,
-          "evidenceNote": "2026年10月25日に参照した掲載例。購入時の価格を保証するものではありません。",
+          "refreshEligible": false,
+          "evidenceNote": "2026/10/25にASIN・810g×2缶・1回限りの価格4409円・定期4189円・出荷元/販売元Amazon.co.jp・当該ASINの購入ボタンを照合。送料はユーザー指定のプライム会員前提と公式の配送条件で計算。",
           "total": 4409,
-          "lastAttemptAt": "2026-10-25T13:01:25.153Z",
-          "refreshError": "not_html"
+          "lastAttemptAt": "2026-10-25T13:21:25.792Z",
+          "priceInclTax": 4409,
+          "taxIncluded": true,
+          "priceVerified": true,
+          "identityVerified": true,
+          "sourceRetrievedAt": "2026-10-25T13:36:34.730098+00:00",
+          "priceFreshness": "source-crawled-today",
+          "priceSource": "https://www.amazon.co.jp/和光堂-レーベンスミルク-810g×2缶パック（おまけ付き）-0ヶ月から1歳頃-DHA・アラキドン酸配合/dp/B09S5QL6F3",
+          "seller": "Amazon.co.jp",
+          "shippedBy": "Amazon.co.jp",
+          "available": true,
+          "stockVerified": true,
+          "primeEligible": null,
+          "primeStatus": "プライム会員・Amazon発送を前提",
+          "primeCheckAttemptedAt": "2026-10-25T13:41:18.321636+00:00",
+          "primeEvidenceNote": "Primeロゴ自体の確認値とは区別し、プライム会員・Amazon発送を前提とした送料計算。",
+          "purchaseForm": "multipack",
+          "purchaseLabel": "810g×2缶パック",
+          "purchaseUnits": 1,
+          "conditional": false,
+          "previousRefreshError": "not_html",
+          "previousRefreshAttemptAt": "2026-10-25T13:21:25.792Z",
+          "manualRecheckAfterRefreshFailure": true,
+          "primeEvidenceMethod": "public-product-html",
+          "primeSource": "https://www.amazon.co.jp/dp/B09S5QL6F3",
+          "primeResponseSha256": "06c0e88819b554a58404a7aede1ff1493c4f54bb0fef1419173883a99fbf24c5",
+          "shippingBasis": "amazon-prime-assumption",
+          "requiresPrime": true,
+          "stockCheckedAt": "2026-10-25T14:16:04.393734Z",
+          "primePolicySource": "https://www.amazon.co.jp/gp/help/customer/display.html?nodeId=G6LDPN7YJHYKH2J6",
+          "shippingRule": {
+            "kind": "flat",
+            "fee": 0,
+            "verified": true,
+            "source": "https://www.amazon.co.jp/gp/help/customer/display.html?nodeId=201911210",
+            "checkedAt": "2026-10-25T14:16:04.393734Z",
+            "description": "プライム会員・Amazon発送の通常配送で送料0円。非会員でもAmazon発送の商品小計3500円以上は通常送料0円。"
+          }
         },
         {
           "id": "am_hai_sub",
@@ -54,21 +90,55 @@
           "quantity": 2,
           "totalGrams": 1620,
           "source": "https://www.amazon.co.jp/dp/B09S5QL6F3",
-          "shippingSource": "https://www.amazon.co.jp/dp/B09S5QL6F3",
-          "checkedAt": "2026-10-25T12:00:00Z",
-          "condition": "表示された5%引きを反映。2缶で4,189円。",
-          "status": "掲載あり",
+          "shippingSource": "https://www.amazon.co.jp/gp/help/customer/display.html?nodeId=201911210",
+          "checkedAt": "2026-10-25T14:16:04.393734Z",
+          "condition": "810g×2缶。定期おトク便5%引き4189円。通常購入とは別。プライム会員でAmazon発送を選ぶ前提で通常送料0円。個別商品ページの購入ボタンとAmazon.co.jp発送を確認。非会員でも商品小計3500円以上は通常送料0円。対象外の配送や別出品者は注文画面で確認。",
+          "status": "注文受付表示あり",
           "region": "全国・送料の例外地域あり",
           "verified": true,
-          "verificationType": "掲載例",
-          "unitPrice": 258.58,
+          "verificationType": "Amazonの個別商品本文・ASIN・810g×2缶・通常/定期価格欄",
+          "unitPrice": null,
           "unitLabel": "100g",
           "discountRate": 0.05,
           "couponYen": 0,
           "live": false,
           "refreshEligible": false,
-          "evidenceNote": "2026年10月25日に参照した掲載例。購入時の価格を保証するものではありません。",
-          "total": 4189
+          "evidenceNote": "2026/10/25にASIN・810g×2缶・1回限りの価格4409円・定期4189円・出荷元/販売元Amazon.co.jp・当該ASINの購入ボタンを照合。送料はユーザー指定のプライム会員前提と公式の配送条件で計算。",
+          "total": 4189,
+          "priceInclTax": 4189,
+          "taxIncluded": true,
+          "priceVerified": true,
+          "identityVerified": true,
+          "sourceRetrievedAt": "2026-10-25T13:36:34.730098+00:00",
+          "priceFreshness": "source-crawled-today",
+          "priceSource": "https://www.amazon.co.jp/和光堂-レーベンスミルク-810g×2缶パック（おまけ付き）-0ヶ月から1歳頃-DHA・アラキドン酸配合/dp/B09S5QL6F3",
+          "seller": "Amazon.co.jp",
+          "shippedBy": "Amazon.co.jp",
+          "available": true,
+          "stockVerified": true,
+          "primeEligible": null,
+          "primeStatus": "プライム会員・Amazon発送を前提",
+          "primeCheckAttemptedAt": "2026-10-25T13:41:18.321636+00:00",
+          "primeEvidenceNote": "Primeロゴ自体の確認値とは区別し、プライム会員・Amazon発送を前提とした送料計算。",
+          "purchaseForm": "multipack",
+          "purchaseLabel": "810g×2缶パック",
+          "purchaseUnits": 1,
+          "conditional": true,
+          "primeEvidenceMethod": "public-product-html",
+          "primeSource": "https://www.amazon.co.jp/dp/B09S5QL6F3",
+          "primeResponseSha256": "06c0e88819b554a58404a7aede1ff1493c4f54bb0fef1419173883a99fbf24c5",
+          "shippingBasis": "amazon-prime-assumption",
+          "requiresPrime": true,
+          "stockCheckedAt": "2026-10-25T14:16:04.393734Z",
+          "primePolicySource": "https://www.amazon.co.jp/gp/help/customer/display.html?nodeId=G6LDPN7YJHYKH2J6",
+          "shippingRule": {
+            "kind": "flat",
+            "fee": 0,
+            "verified": true,
+            "source": "https://www.amazon.co.jp/gp/help/customer/display.html?nodeId=201911210",
+            "checkedAt": "2026-10-25T14:16:04.393734Z",
+            "description": "プライム会員・Amazon発送の通常配送で送料0円。非会員でもAmazon発送の商品小計3500円以上は通常送料0円。"
+          }
         },
         {
           "id": "rak_snd_pack",
@@ -83,9 +153,9 @@
           "shippingSource": "https://item.rakuten.co.jp/sundrug/4987244600059/",
           "checkedAt": "2026-10-25T12:00:00Z",
           "condition": "楽天の検索一覧の掲載額。商品ページでは金額の取得不可。",
-          "status": "掲載あり",
+          "status": "要再確認",
           "region": "全国・送料の例外地域あり",
-          "verified": true,
+          "verified": false,
           "verificationType": "掲載例",
           "unitPrice": 288.89,
           "unitLabel": "100g",
@@ -94,7 +164,9 @@
           "live": false,
           "refreshEligible": true,
           "evidenceNote": "2026年10月25日に参照した掲載例。購入時の価格を保証するものではありません。",
-          "total": 4680
+          "total": 4680,
+          "lastAttemptAt": "2026-10-25T13:21:25.792Z",
+          "refreshError": "robots_disallowed"
         },
         {
           "id": "yahoo_snd_pack",
@@ -109,9 +181,9 @@
           "shippingSource": "https://store.shopping.yahoo.co.jp/sundrugec/4987244600059.html",
           "checkedAt": "2026-10-25T12:00:00Z",
           "condition": "掲載額の例。購入時の在庫と地域の送料を確認。",
-          "status": "掲載あり",
+          "status": "要再確認",
           "region": "全国・送料の例外地域あり",
-          "verified": true,
+          "verified": false,
           "verificationType": "掲載例",
           "unitPrice": 295.06,
           "unitLabel": "100g",
@@ -120,7 +192,9 @@
           "live": false,
           "refreshEligible": true,
           "evidenceNote": "2026年10月25日に参照した掲載例。購入時の価格を保証するものではありません。",
-          "total": 4780
+          "total": 4780,
+          "lastAttemptAt": "2026-10-25T13:21:25.792Z",
+          "refreshError": "robots_disallowed"
         },
         {
           "id": "au_snd_pack",
@@ -162,9 +236,9 @@
           "shippingSource": "https://lohaco.yahoo.co.jp/store/h-lohaco/item/j303146/",
           "checkedAt": "2026-10-25T12:00:00Z",
           "condition": "掲載額の例。購入時の在庫と地域の送料を確認。",
-          "status": "掲載あり",
+          "status": "要再確認",
           "region": "全国・送料の例外地域あり",
-          "verified": true,
+          "verified": false,
           "verificationType": "掲載例",
           "unitPrice": 275.31,
           "unitLabel": "100g",
@@ -173,7 +247,9 @@
           "live": false,
           "refreshEligible": true,
           "evidenceNote": "2026年10月25日に参照した掲載例。購入時の価格を保証するものではありません。",
-          "total": 4460
+          "total": 4460,
+          "lastAttemptAt": "2026-10-25T13:21:25.792Z",
+          "refreshError": "unambiguous_product_price_not_found"
         },
         {
           "id": "yodo_pack",
@@ -186,50 +262,114 @@
           "totalGrams": 1620,
           "source": "https://www.yodobashi.com/product/100000001006873993/",
           "shippingSource": "https://www.yodobashi.com/product/100000001006873993/",
-          "checkedAt": "2026-10-25T12:00:00Z",
-          "condition": "掲載額の例。購入時の在庫と地域の送料を確認。",
-          "status": "要再確認",
+          "checkedAt": "2026-10-25",
+          "condition": "810g×2缶パック。通常配送無料。単缶2点5060円のほうが20円安いため、2缶比較のヨドバシ欄ではこちらを代表にしない。",
+          "status": "注文受付表示あり",
           "region": "全国・送料の例外地域あり",
-          "verified": false,
-          "verificationType": "掲載例",
+          "verified": true,
+          "verificationType": "一次通販の商品本文・通常価格・注文受付",
           "unitPrice": 313.58,
           "unitLabel": "100g",
           "discountRate": 0,
           "couponYen": 0,
           "live": false,
           "refreshEligible": true,
-          "evidenceNote": "2026年10月25日に参照した掲載例。購入時の価格を保証するものではありません。",
+          "evidenceNote": "個別商品の価格欄・810g容量・注文受付・通常配送を照合。ポイントは控除しない。検索結果の価格は採用しない。 価格欄の取得本文は本日クロールと表示。sourceRetrievedAtは確認作業の日時。注文受付の表示を参照したが、注文受付の確認はstockEvidenceNoteを参照。",
           "total": 5080,
-          "lastAttemptAt": "2026-10-25T13:01:25.153Z",
-          "refreshError": "The operation was aborted due to timeout"
+          "lastAttemptAt": "2026-10-25T13:21:25.792Z",
+          "priceVerified": true,
+          "identityVerified": true,
+          "available": true,
+          "stockVerified": true,
+          "purchaseChannel": "online",
+          "sourceRetrievedAt": "2026-10-25T13:33:00.962161+00:00",
+          "priceFreshness": "source-crawled-today",
+          "itemCondition": "新品",
+          "conditionClass": "new",
+          "conditional": false,
+          "seller": "ヨドバシ.com",
+          "priceInclTax": 5080,
+          "taxIncluded": true,
+          "url": "https://www.yodobashi.com/product/100000001006873993/",
+          "baseProductJan": "4987244195869",
+          "orderUnits": 1,
+          "packCount": 2,
+          "containerGrams": 810,
+          "identityVerificationMethod": "メーカー名・商品名・810g/缶・缶数・個別販売ページを照合",
+          "identityNote": "JANはヨドバシ本文に表示されないため、商品名・メーカー・容量・缶数で照合。baseProductJanは当該810g商品の参照番号。",
+          "quantityVerificationSource": "https://www.yodobashi.com/product/100000001006873993/",
+          "priceCalculation": "商品ページの税込通常価格",
+          "stock": "当該販売単位の注文受付を確認",
+          "stockSourceUrl": "https://www.yodobashi.com/product/100000001006873993/",
+          "stockCheckedAt": "2026-10-25T13:37:03.941821+00:00",
+          "stockEvidenceNote": "当該商品の810g×2缶パック1点の購入欄に在庫あり・カートへ入れるを表示。 注文受付の表示確認であり、現物在庫数・決済完了・発送保証とは異なる。",
+          "previousRefreshError": "unambiguous_product_price_not_found",
+          "previousRefreshAttemptAt": "2026-10-25T13:21:25.792Z",
+          "manualRecheckAfterRefreshFailure": true
         },
         {
           "id": "yodo_hai_single",
           "store": "ヨドバシ.com",
           "mode": "配送",
-          "price": 2250,
-          "basePrice": 2250,
+          "price": 2530,
+          "basePrice": 2530,
           "shipping": 0,
           "quantity": 1,
           "totalGrams": 810,
           "source": "https://www.yodobashi.com/product/100000001006820159/",
           "shippingSource": "https://www.yodobashi.com/product/100000001006820159/",
-          "checkedAt": "2026-10-25T12:00:00Z",
-          "condition": "別ページで単缶2,580円の表示もあり。現在の購入額が確定できないため最安の集計から除外。",
-          "status": "要再確認",
+          "checkedAt": "2026-10-25",
+          "condition": "810g1缶。全国通常配送無料。旧2250円・2580円は現在の個別商品本文2530円に訂正。",
+          "status": "注文受付表示あり",
           "region": "全国・送料の例外地域あり",
-          "verified": false,
-          "verificationType": "掲載例",
-          "unitPrice": 277.78,
+          "verified": true,
+          "verificationType": "一次通販の商品本文・通常価格・注文受付",
+          "unitPrice": 312.35,
           "unitLabel": "100g",
           "discountRate": 0,
           "couponYen": 0,
           "live": false,
           "refreshEligible": true,
-          "evidenceNote": "2026年10月25日に参照した掲載例。購入時の価格を保証するものではありません。",
-          "total": 2250,
-          "lastAttemptAt": "2026-10-25T13:01:25.153Z",
-          "refreshError": "unambiguous_product_price_not_found"
+          "evidenceNote": "個別商品の価格欄・810g容量・注文受付・通常配送を照合。ポイントは控除しない。検索結果の価格は採用しない。 価格欄の取得本文は本日クロールと表示。sourceRetrievedAtは確認作業の日時。注文受付の表示を参照したが、注文受付の確認はstockEvidenceNoteを参照。",
+          "total": 2530,
+          "lastAttemptAt": "2026-10-25T13:21:25.792Z",
+          "priceVerified": true,
+          "identityVerified": true,
+          "available": true,
+          "stockVerified": true,
+          "purchaseChannel": "online",
+          "sourceRetrievedAt": "2026-10-25T13:33:00.962161+00:00",
+          "priceFreshness": "source-crawled-today",
+          "itemCondition": "新品",
+          "conditionClass": "new",
+          "conditional": false,
+          "seller": "ヨドバシ.com",
+          "priceInclTax": 2530,
+          "taxIncluded": true,
+          "url": "https://www.yodobashi.com/product/100000001006820159/",
+          "baseProductJan": "4987244195869",
+          "orderUnits": 1,
+          "packCount": 1,
+          "containerGrams": 810,
+          "identityVerificationMethod": "メーカー名・商品名・810g/缶・缶数・個別販売ページを照合",
+          "identityNote": "JANはヨドバシ本文に表示されないため、商品名・メーカー・容量・缶数で照合。baseProductJanは当該810g商品の参照番号。",
+          "quantityVerificationSource": "https://www.yodobashi.com/product/100000001006820159/",
+          "priceCalculation": "商品ページの税込通常価格",
+          "stock": "当該販売単位の注文受付を確認",
+          "stockSourceUrl": "https://www.yodobashi.com/product/100000001006820159/",
+          "stockCheckedAt": "2026-10-25T13:37:03.941821+00:00",
+          "stockEvidenceNote": "当該商品の810g1缶購入欄に在庫あり・カートへ入れるを表示。 注文受付の表示確認であり、現物在庫数・決済完了・発送保証とは異なる。",
+          "previousRefreshError": "unambiguous_product_price_not_found",
+          "previousRefreshAttemptAt": "2026-10-25T13:21:25.792Z",
+          "manualRecheckAfterRefreshFailure": true,
+          "shippingRule": {
+            "kind": "flat",
+            "fee": 0,
+            "verified": true,
+            "source": "https://www.yodobashi.com/product/100000001006820159/",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "ヨドバシ.comの通常配送無料。"
+          }
         },
         {
           "id": "bic_pack",
@@ -256,7 +396,7 @@
           "refreshEligible": true,
           "evidenceNote": "2026年10月25日に参照した掲載例。購入時の価格を保証するものではありません。",
           "total": 4850,
-          "lastAttemptAt": "2026-10-25T13:01:25.153Z",
+          "lastAttemptAt": "2026-10-25T13:21:25.792Z",
           "refreshError": "robots_disallowed"
         },
         {
@@ -310,7 +450,7 @@
           "refreshEligible": true,
           "evidenceNote": "2026年10月25日に参照した掲載例。購入時の価格を保証するものではありません。",
           "total": 2360,
-          "lastAttemptAt": "2026-10-25T13:01:25.153Z",
+          "lastAttemptAt": "2026-10-25T13:21:25.792Z",
           "refreshError": "robots_disallowed"
         },
         {
@@ -324,22 +464,37 @@
           "totalGrams": 810,
           "source": "https://shop.akachan.jp/shop/g/g220142000/",
           "shippingSource": "https://shop.akachan.jp/shop/g/g220142000/",
-          "checkedAt": "2026-10-25T12:00:00Z",
+          "checkedAt": "2026-10-25",
           "condition": "商品2,293円＋送料600円。5,500円以上で送料無料。",
-          "status": "要再確認",
+          "status": "注文受付表示あり",
           "region": "全国・送料の例外地域あり",
-          "verified": false,
-          "verificationType": "掲載例",
+          "verified": true,
+          "verificationType": "一次通販の商品本文・税込価格・容量を再確認",
           "unitPrice": 357.16,
           "unitLabel": "100g",
           "discountRate": 0,
           "couponYen": 0,
           "live": false,
           "refreshEligible": true,
-          "evidenceNote": "2026年10月25日に参照した掲載例。購入時の価格を保証するものではありません。",
+          "evidenceNote": "JAN4987244195869・810g単缶・税込2293円を本日再確認。一般商品の送料600円表示は地域例外あり。 取得本文のクロール日は本日と表示。確認作業の日時はsourceRetrievedAt。注文受付の確認はstockEvidenceNoteを参照。",
           "total": 2893,
-          "lastAttemptAt": "2026-10-25T13:01:25.153Z",
-          "refreshError": "robots_disallowed"
+          "lastAttemptAt": "2026-10-25T13:21:25.792Z",
+          "priceInclTax": 2293,
+          "taxIncluded": true,
+          "priceVerified": true,
+          "identityVerified": true,
+          "sourceRetrievedAt": "2026-10-25T13:35:06.183356+00:00",
+          "priceFreshness": "source-crawled-today",
+          "priceSource": "https://shop.akachan.jp/shop/g/g220142000/",
+          "available": true,
+          "stockVerified": true,
+          "stock": "当該販売単位の注文受付を確認",
+          "stockSourceUrl": "https://shop.akachan.jp/shop/g/g220142000/",
+          "stockCheckedAt": "2026-10-25T13:37:03.941821+00:00",
+          "stockEvidenceNote": "当該商品の810g単缶に税込価格と買い物かごに入れるを表示。店舗在庫欄とは分けて確認。 注文受付の表示確認であり、現物在庫数・決済完了・発送保証とは異なる。",
+          "previousRefreshError": "robots_disallowed",
+          "previousRefreshAttemptAt": "2026-10-25T13:21:25.792Z",
+          "manualRecheckAfterRefreshFailure": true
         },
         {
           "id": "ak_pack",
@@ -403,49 +558,134 @@
           "quantity": 1,
           "totalGrams": 810,
           "source": "https://sundrug-online.com/products/4987244195869",
-          "shippingSource": "https://sundrug-online.com/pages/guide",
-          "checkedAt": "2026-10-25T12:00:00Z",
-          "condition": "掲載額の例。購入時の在庫と地域の送料を確認。",
-          "status": "要再確認",
+          "shippingSource": "https://sundrug-online.com/products/4987244195869",
+          "checkedAt": "2026-10-25",
+          "condition": "810g1缶。単独注文は商品2300円＋送料600円＝2900円。沖縄・離島を除く通常配送。3980円以上で送料無料。",
+          "status": "注文受付表示あり",
           "region": "全国・送料の例外地域あり",
-          "verified": false,
-          "verificationType": "掲載例",
+          "verified": true,
+          "verificationType": "一次通販の商品本文・通常価格・注文受付",
           "unitPrice": 358.02,
           "unitLabel": "100g",
           "discountRate": 0,
           "couponYen": 0,
           "live": false,
           "refreshEligible": true,
-          "evidenceNote": "2026年10月25日に参照した掲載例。購入時の価格を保証するものではありません。",
+          "evidenceNote": "個別商品の価格欄・810g容量・注文受付・通常配送を照合。ポイントは控除しない。検索結果の価格は採用しない。 価格欄の取得本文は本日クロールと表示。sourceRetrievedAtは確認作業の日時。注文受付の表示を参照したが、注文受付の確認はstockEvidenceNoteを参照。",
           "total": 2900,
-          "lastAttemptAt": "2026-10-25T13:01:25.153Z",
-          "refreshError": "robots_disallowed"
+          "lastAttemptAt": "2026-10-25T13:21:25.792Z",
+          "priceVerified": true,
+          "identityVerified": true,
+          "available": true,
+          "stockVerified": true,
+          "purchaseChannel": "online",
+          "sourceRetrievedAt": "2026-10-25T13:33:00.962161+00:00",
+          "priceFreshness": "source-crawled-today",
+          "itemCondition": "新品",
+          "conditionClass": "new",
+          "conditional": false,
+          "seller": "サンドラッグ公式通販",
+          "priceInclTax": 2300,
+          "taxIncluded": true,
+          "url": "https://sundrug-online.com/products/4987244195869",
+          "jan": "4987244195869",
+          "baseProductJan": "4987244195869",
+          "orderUnits": 1,
+          "packCount": 1,
+          "containerGrams": 810,
+          "quantityVerificationSource": "https://sundrug-online.com/products/4987244195869",
+          "priceCalculation": "商品ページの税込通常価格",
+          "stock": "当該販売単位の注文受付を確認",
+          "stockSourceUrl": "https://sundrug-online.com/products/4987244195869",
+          "stockCheckedAt": "2026-10-25T13:37:03.941821+00:00",
+          "stockEvidenceNote": "当該商品の810g単缶購入欄に購入可能・配送先へお届けを表示。通常2〜4営業日の案内。 注文受付の表示確認であり、現物在庫数・決済完了・発送保証とは異なる。",
+          "previousRefreshError": "robots_disallowed",
+          "previousRefreshAttemptAt": "2026-10-25T13:21:25.792Z",
+          "manualRecheckAfterRefreshFailure": true,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         },
         {
           "id": "snd_hai_two",
           "store": "サンドラッグ公式通販",
           "mode": "配送",
           "price": 4600,
-          "basePrice": 2300,
+          "basePrice": 4600,
           "shipping": 0,
           "quantity": 2,
           "totalGrams": 1620,
           "source": "https://sundrug-online.com/products/4987244195869",
-          "shippingSource": "https://sundrug-online.com/pages/guide",
-          "checkedAt": "2026-10-25T12:00:00Z",
-          "condition": "単缶を2個で4,600円。2缶パック4,680円より80円安い。",
-          "status": "掲載あり",
+          "shippingSource": "https://sundrug-online.com/products/4987244195869",
+          "checkedAt": "2026-10-25",
+          "condition": "810g単缶を2点。2300円×2＝4600円。3980円以上で通常送料無料。2缶パック4680円より80円安い。沖縄・離島除く。",
+          "status": "2点の注文受付表示あり",
           "region": "全国・送料の例外地域あり",
           "verified": true,
-          "verificationType": "掲載例",
+          "verificationType": "一次通販の商品本文・通常価格・注文受付",
           "unitPrice": 283.95,
           "unitLabel": "100g",
           "discountRate": 0,
           "couponYen": 0,
           "live": false,
           "refreshEligible": false,
-          "evidenceNote": "2026年10月25日に参照した掲載例。購入時の価格を保証するものではありません。",
-          "total": 4600
+          "evidenceNote": "個別商品の価格欄・810g容量・注文受付・通常配送を照合。ポイントは控除しない。検索結果の価格は採用しない。 価格欄の取得本文は本日クロールと表示。sourceRetrievedAtは確認作業の日時。注文受付の表示を参照したが、注文受付の表示確認であり現物数を保証しない。 単缶の通常価格と購入用の数量欄を参照した手計算。数量2の注文受付はstockEvidenceNoteに公開HTMLの根拠を記録。まとめパックの商品価格とは区別。日次巡回で単缶の金額を2点合計へ直接代入しない。",
+          "total": 4600,
+          "priceVerified": true,
+          "identityVerified": true,
+          "available": true,
+          "stockVerified": true,
+          "purchaseChannel": "online",
+          "sourceRetrievedAt": "2026-10-25T13:33:00.962161+00:00",
+          "priceFreshness": "direct-source-response",
+          "itemCondition": "新品",
+          "conditionClass": "new",
+          "conditional": false,
+          "seller": "サンドラッグ公式通販",
+          "priceInclTax": 4600,
+          "taxIncluded": true,
+          "url": "https://sundrug-online.com/products/4987244195869",
+          "jan": "4987244195869",
+          "baseProductJan": "4987244195869",
+          "orderUnits": 2,
+          "packCount": 2,
+          "containerGrams": 810,
+          "quantityVerificationSource": "https://sundrug-online.com/products/4987244195869",
+          "priceCalculation": {
+            "unitPrice": 2300,
+            "purchaseUnits": 2,
+            "calculatedPrice": 4600
+          },
+          "derivedFromOfferId": "snd_hai_single",
+          "purchaseUnits": 2,
+          "purchaseQuantity": 2,
+          "purchaseForm": "single-items",
+          "purchaseLabel": "810g単缶を2点",
+          "stock": "単缶2点の注文受付を確認",
+          "stockCheckedAt": "2026-10-25T13:39:40.825969+00:00",
+          "stockSourceUrl": "https://sundrug-online.com/products/4987244195869",
+          "stockEvidenceNote": "公開HTMLの当該variant43823358116074にquantity_rule min1/maxnull/increment1、productInventoriesにinventory_quantity9999と購入可能表示を確認。単缶2300円で数量2を注文する条件に一致。inventory_quantityの値は公開注文システムの値であり現物数とは扱わない。 数量変更やカート追加はせず公開HTMLのみ読取。決済完了・発送の保証とは異なる。",
+          "purchaseQuantityVerified": true,
+          "purchaseQuantityCheckedAt": "2026-10-25T13:39:40.825969+00:00",
+          "purchaseQuantitySource": "https://sundrug-online.com/products/4987244195869",
+          "purchaseQuantityEvidence": "公開HTMLの当該variant43823358116074にquantity_rule min1/maxnull/increment1、productInventoriesにinventory_quantity9999と購入可能表示を確認。単缶2300円で数量2を注文する条件に一致。inventory_quantityの値は公開注文システムの値であり現物数とは扱わない。",
+          "priceCheckedAt": "2026-10-25T13:39:40.825969+00:00",
+          "evidenceResponseSha256": "8e7be92fa911e6d6642c7e05e60bbf9004fac2cf6f0da532901f1dd77e16e1e6",
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         },
         {
           "id": "haihai-810-サンドラッグ公式通販-pickup-v4",
@@ -484,20 +724,35 @@
           "totalGrams": 1620,
           "source": "https://www.matsukiyococokara-online.com/store/catalog/product/view/id/4987244600059",
           "shippingSource": "https://www.matsukiyococokara-online.com/store/catalog/product/view/id/4987244600059",
-          "checkedAt": "2026-10-25T12:00:00Z",
+          "checkedAt": "2026-10-25",
           "condition": "通販の税込価格。店頭の価格とは別。",
-          "status": "掲載あり",
+          "status": "注文受付表示あり",
           "region": "全国・送料の例外地域あり",
           "verified": true,
-          "verificationType": "掲載例",
+          "verificationType": "一次通販の商品本文・税込価格・容量を再確認",
           "unitPrice": 285.31,
           "unitLabel": "100g",
           "discountRate": 0,
           "couponYen": 0,
           "live": false,
           "refreshEligible": true,
-          "evidenceNote": "2026年10月25日に参照した掲載例。購入時の価格を保証するものではありません。",
-          "total": 4622
+          "evidenceNote": "JAN4987244600059・810g2缶・税込4622円を本日再確認。おしりふきの付属はミルクの容量に加算しない。 取得本文のクロール日は本日と表示。確認作業の日時はsourceRetrievedAt。注文受付の確認はstockEvidenceNoteを参照。",
+          "total": 4622,
+          "lastAttemptAt": "2026-10-25T13:21:25.792Z",
+          "previousPrice": 4622,
+          "priceVerified": true,
+          "priceInclTax": 4622,
+          "taxIncluded": true,
+          "identityVerified": true,
+          "sourceRetrievedAt": "2026-10-25T13:35:06.183356+00:00",
+          "priceFreshness": "source-crawled-today",
+          "priceSource": "https://www.matsukiyococokara-online.com/store/catalog/product/view/id/4987244600059",
+          "available": true,
+          "stockVerified": true,
+          "stock": "当該販売単位の注文受付を確認",
+          "stockSourceUrl": "https://www.matsukiyococokara-online.com/store/catalog/product/view/id/4987244600059",
+          "stockCheckedAt": "2026-10-25T13:37:03.941821+00:00",
+          "stockEvidenceNote": "当該商品の810g2缶パック1点に数量欄とカートに入れるを表示。通常3〜5日以内に発送の案内。 注文受付の表示確認であり、現物在庫数・決済完了・発送保証とは異なる。"
         },
         {
           "id": "mk_single",
@@ -510,20 +765,33 @@
           "totalGrams": 810,
           "source": "https://www.matsukiyococokara-online.com/store/catalog/product/view/id/4987244195869",
           "shippingSource": "https://www.matsukiyococokara-online.com/store/catalog/product/view/id/4987244195869",
-          "checkedAt": "2026-10-25T12:00:00Z",
+          "checkedAt": "2026-10-25",
           "condition": "単缶の元値の参考。送料未設定なので最安集計から除外。",
-          "status": "掲載あり",
+          "status": "注文受付表示あり",
           "region": "全国・送料の例外地域あり",
-          "verified": false,
-          "verificationType": "掲載例",
+          "verified": true,
+          "verificationType": "一次通販の商品本文・税込価格・容量を再確認",
           "unitPrice": null,
           "unitLabel": "100g",
           "discountRate": 0,
           "couponYen": 0,
           "live": false,
           "refreshEligible": false,
-          "evidenceNote": "2026年10月25日に参照した掲載例。購入時の価格を保証するものではありません。",
-          "total": null
+          "evidenceNote": "JAN4987244195869・810g単缶・本日の税込2354円を照合。送料の本文は今回取得できないためnullのまま。 取得本文のクロール日は本日と表示。確認作業の日時はsourceRetrievedAt。注文受付の確認はstockEvidenceNoteを参照。",
+          "total": null,
+          "priceInclTax": 2354,
+          "taxIncluded": true,
+          "priceVerified": true,
+          "identityVerified": true,
+          "sourceRetrievedAt": "2026-10-25T13:35:06.183356+00:00",
+          "priceFreshness": "source-crawled-today",
+          "priceSource": "https://www.matsukiyococokara-online.com/store/catalog/product/view/id/4987244195869",
+          "available": true,
+          "stockVerified": true,
+          "stock": "当該販売単位の注文受付を確認",
+          "stockSourceUrl": "https://www.matsukiyococokara-online.com/store/catalog/product/view/id/4987244195869",
+          "stockCheckedAt": "2026-10-25T13:37:03.941821+00:00",
+          "stockEvidenceNote": "当該商品の810g単缶に数量欄とカートに入れるを表示。通常3〜5日以内に発送の案内。 注文受付の表示確認であり、現物在庫数・決済完了・発送保証とは異なる。"
         },
         {
           "id": "wc_pack",
@@ -550,7 +818,7 @@
           "refreshEligible": true,
           "evidenceNote": "2026年10月25日に参照した掲載例。購入時の価格を保証するものではありません。",
           "total": 4643,
-          "lastAttemptAt": "2026-10-25T13:01:25.153Z",
+          "lastAttemptAt": "2026-10-25T13:21:25.792Z",
           "refreshError": "robots_disallowed"
         },
         {
@@ -604,7 +872,7 @@
           "refreshEligible": true,
           "evidenceNote": "2026年10月25日に参照した掲載例。購入時の価格を保証するものではありません。",
           "total": 2926,
-          "lastAttemptAt": "2026-10-25T13:01:25.153Z",
+          "lastAttemptAt": "2026-10-25T13:21:25.792Z",
           "refreshError": "unambiguous_product_price_not_found"
         },
         {
@@ -788,8 +1056,8 @@
           "refreshEligible": true,
           "evidenceNote": "2026年10月25日に参照した掲載例。購入時の価格を保証するものではありません。",
           "total": 3013,
-          "lastAttemptAt": "2026-10-25T13:01:25.153Z",
-          "refreshError": "robots_disallowed"
+          "lastAttemptAt": "2026-10-25T13:21:25.792Z",
+          "refreshError": "The operation was aborted due to timeout"
         },
         {
           "id": "mrmax_pickup",
@@ -1033,6 +1301,71 @@
           "priceType": "ネット注文時の掲載額・受取時に下がる場合あり",
           "total": 5080,
           "unitPrice": 313.58
+        },
+        {
+          "verified": true,
+          "priceVerified": true,
+          "identityVerified": true,
+          "available": true,
+          "stockVerified": true,
+          "status": "2点の注文受付表示あり",
+          "purchaseChannel": "online",
+          "mode": "配送",
+          "live": false,
+          "refreshEligible": false,
+          "checkedAt": "2026-10-25",
+          "sourceRetrievedAt": "2026-10-25T13:33:00.962161+00:00",
+          "priceFreshness": "direct-source-response",
+          "itemCondition": "新品",
+          "conditionClass": "new",
+          "unitLabel": "100g",
+          "conditional": false,
+          "couponYen": 0,
+          "discountRate": 0,
+          "id": "v14-yodo-hai-single-two",
+          "store": "ヨドバシ.com",
+          "seller": "ヨドバシ.com",
+          "price": 5060,
+          "basePrice": 5060,
+          "priceInclTax": 5060,
+          "taxIncluded": true,
+          "shipping": 0,
+          "quantity": 2,
+          "totalGrams": 1620,
+          "source": "https://www.yodobashi.com/product/100000001006820159/",
+          "url": "https://www.yodobashi.com/product/100000001006820159/",
+          "shippingSource": "https://www.yodobashi.com/product/100000001006820159/",
+          "baseProductJan": "4987244195869",
+          "orderUnits": 2,
+          "packCount": 2,
+          "containerGrams": 810,
+          "condition": "810g単缶を2点。2530円×2＝5060円、通常配送無料。2缶パック5080円より20円安い。1缶用購入欄で数量2を指定する想定。",
+          "evidenceNote": "個別商品の価格欄・810g容量・注文受付・通常配送を照合。ポイントは控除しない。検索結果の価格は採用しない。 価格欄の取得本文は本日クロールと表示。sourceRetrievedAtは確認作業の日時。注文受付の表示を参照したが、注文受付の表示確認であり現物数を保証しない。 単缶の通常価格と購入用の数量欄を参照した手計算。数量2の注文受付はstockEvidenceNoteに公開HTMLの根拠を記録。まとめパックの商品価格とは区別。日次巡回で単缶の金額を2点合計へ直接代入しない。",
+          "verificationType": "一次通販の商品本文・通常価格・注文受付",
+          "identityVerificationMethod": "メーカー名・商品名・810g/缶・缶数・個別販売ページを照合",
+          "identityNote": "JANはヨドバシ本文に表示されないため、商品名・メーカー・容量・缶数で照合。baseProductJanは当該810g商品の参照番号。",
+          "quantityVerificationSource": "https://www.yodobashi.com/product/100000001006820159/",
+          "priceCalculation": {
+            "unitPrice": 2530,
+            "purchaseUnits": 2,
+            "calculatedPrice": 5060
+          },
+          "derivedFromOfferId": "yodo_hai_single",
+          "purchaseUnits": 2,
+          "purchaseQuantity": 2,
+          "purchaseForm": "single-items",
+          "purchaseLabel": "810g単缶を2点",
+          "total": 5060,
+          "stock": "単缶2点の注文受付を確認",
+          "stockCheckedAt": "2026-10-25T13:39:40.825969+00:00",
+          "stockSourceUrl": "https://www.yodobashi.com/product/100000001006820159/",
+          "stockEvidenceNote": "公開HTMLの当該商品qtySelに1〜10のoptionがあり、数量2を選択可能。在庫あり・税込2530円・通常配送無料を当該購入欄で確認。 数量変更やカート追加はせず公開HTMLのみ読取。決済完了・発送の保証とは異なる。",
+          "purchaseQuantityVerified": true,
+          "purchaseQuantityCheckedAt": "2026-10-25T13:39:40.825969+00:00",
+          "purchaseQuantitySource": "https://www.yodobashi.com/product/100000001006820159/",
+          "purchaseQuantityEvidence": "公開HTMLの当該商品qtySelに1〜10のoptionがあり、数量2を選択可能。在庫あり・税込2530円・通常配送無料を当該購入欄で確認。",
+          "priceCheckedAt": "2026-10-25T13:39:40.825969+00:00",
+          "evidenceResponseSha256": "692ec27caad9280446c75b4e71b087abdc913d02b23946bc00aa06787cf130f5"
         }
       ],
       "compareBasis": "同じ銘柄。缶数・おまけを含む総量から100g単価を比較",
@@ -1049,7 +1382,16 @@
       "minAgeMonths": 0,
       "maxAgeMonths": 12,
       "ageSource": "https://www.wakodo.co.jp/product/howtochoose/milk/",
-      "ageCheckedAt": "2026-10-25"
+      "ageCheckedAt": "2026-10-25",
+      "retailerResearch": [
+        {
+          "retailerId": "amazon",
+          "status": "partial",
+          "checkedAt": "2026-10-25T13:36:34.730098+00:00",
+          "source": "https://www.amazon.co.jp/dp/B09S5QL6F3",
+          "note": "810g×2缶の通常価格/定期価格/販売元を再確認。Prime対象と送料は未確認。8缶ケースは2缶と混ぜない。"
+        }
+      ]
     },
     {
       "id": "pure-820",
@@ -1069,27 +1411,34 @@
           "id": "am_pure_normal",
           "store": "Amazon",
           "mode": "配送",
-          "price": 3508,
-          "basePrice": 1754,
-          "shipping": 0,
-          "quantity": 2,
-          "totalGrams": 1640,
+          "price": 1818,
+          "basePrice": 1818,
+          "shipping": null,
+          "quantity": 1,
+          "totalGrams": 820,
           "source": "https://www.amazon.co.jp/dp/B0872M8WP9",
           "shippingSource": "https://www.amazon.co.jp/dp/B0872M8WP9",
-          "checkedAt": "2026-10-25T12:00:00Z",
-          "condition": "通常の購入2缶。Amazon発送・3,500円以上の無料配送条件を想定。1缶に変える場合は送料を再確認。",
+          "checkedAt": "2026-10-25T14:16:04.393734Z",
+          "condition": "820g1缶。個別商品ページの新品4出品の最低表示1818円を確認。最低表示の出品者・発送元・Prime対象かは確認中であり、購入先の送料と総額は未確定。Amazonはプライム対象の出品を選ぶ前提だが、この1818円出品が対象とは断定しない。",
           "status": "掲載あり",
           "region": "全国・送料の例外地域あり",
           "verified": true,
           "verificationType": "掲載例",
-          "unitPrice": 213.9,
+          "unitPrice": null,
           "unitLabel": "100g",
           "discountRate": 0,
           "couponYen": 0,
           "live": false,
           "refreshEligible": false,
-          "evidenceNote": "2026年10月25日に参照した掲載例。購入時の価格を保証するものではありません。",
-          "total": 3508
+          "evidenceNote": "個別ASIN B0872M8WP9の820g1缶と新品4出品の最低表示1818円を照合。過去1754円の2点3508円や定期1666円は使わない。",
+          "total": null,
+          "priceVerified": true,
+          "available": true,
+          "stockVerified": true,
+          "offerType": "other-sellers-minimum-new-listing",
+          "seller": null,
+          "sellerConfirmed": false,
+          "shippingBasis": null
         },
         {
           "id": "am_pure_sub",
@@ -1097,16 +1446,16 @@
           "mode": "配送・定期便",
           "price": 1666,
           "basePrice": 1754,
-          "shipping": 0,
+          "shipping": null,
           "quantity": 1,
           "totalGrams": 820,
           "source": "https://www.amazon.co.jp/dp/B0872M8WP9",
           "shippingSource": "https://www.amazon.co.jp/dp/B0872M8WP9",
           "checkedAt": "2026-10-25T12:00:00Z",
-          "condition": "表示された5%引きで1,666円。",
-          "status": "掲載あり",
+          "condition": "ASIN B0872M8WP9は820g1缶の商品ページ。過去の通常購入額・定期便額は現在の購入欄を確認できず、順位には使用しません。",
+          "status": "通常購入欄の価格・送料・在庫を再確認",
           "region": "全国・送料の例外地域あり",
-          "verified": true,
+          "verified": false,
           "verificationType": "掲載例",
           "unitPrice": 203.17,
           "unitLabel": "100g",
@@ -1115,7 +1464,11 @@
           "live": false,
           "refreshEligible": false,
           "evidenceNote": "2026年10月25日に参照した掲載例。購入時の価格を保証するものではありません。",
-          "total": 1666
+          "total": 1666,
+          "priceVerified": false,
+          "available": null,
+          "stockVerified": false,
+          "refreshError": "amazon_selected_purchase_offer_not_confirmed"
         },
         {
           "id": "rak_pure_coupon",
@@ -1194,7 +1547,7 @@
           "refreshEligible": true,
           "evidenceNote": "2026年10月25日に参照した掲載例。購入時の価格を保証するものではありません。",
           "total": 2000,
-          "lastAttemptAt": "2026-10-25T13:01:25.153Z",
+          "lastAttemptAt": "2026-10-25T13:21:25.792Z",
           "refreshError": "unambiguous_product_price_not_found"
         },
         {
@@ -1248,7 +1601,7 @@
           "refreshEligible": true,
           "evidenceNote": "2026年10月25日に参照した掲載例。購入時の価格を保証するものではありません。",
           "total": 2479,
-          "lastAttemptAt": "2026-10-25T13:01:25.153Z",
+          "lastAttemptAt": "2026-10-25T13:21:25.792Z",
           "refreshError": "robots_disallowed"
         },
         {
@@ -1262,9 +1615,9 @@
           "totalGrams": 2460,
           "source": "https://sundrug-online.com/products/4903050507795",
           "shippingSource": "https://sundrug-online.com/pages/guide",
-          "checkedAt": "2026-10-25T12:00:00Z",
+          "checkedAt": "2026-10-25T14:09:51.588626Z",
           "condition": "掲載額の例。購入時の在庫と地域の送料を確認。",
-          "status": "掲載あり",
+          "status": "在庫あり",
           "region": "全国・送料の例外地域あり",
           "verified": true,
           "verificationType": "掲載例",
@@ -1275,7 +1628,26 @@
           "live": false,
           "refreshEligible": false,
           "evidenceNote": "2026年10月25日に参照した掲載例。購入時の価格を保証するものではありません。",
-          "total": 5637
+          "total": 5637,
+          "available": true,
+          "stockVerified": true,
+          "priceVerified": true,
+          "stockCheckedAt": "2026-10-25T14:09:51.588626Z",
+          "purchaseUnits": 3,
+          "priceCalculation": {
+            "unitPrice": 1879,
+            "purchaseUnits": 3,
+            "calculatedPrice": 5637
+          },
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         },
         {
           "id": "snd_pure_pickup",
@@ -1612,6 +1984,39 @@
           "priceType": "ネット注文時の掲載額・受取時に下がる場合あり",
           "total": 2000,
           "unitPrice": 243.9
+        },
+        {
+          "id": "audit-snd-pure-single",
+          "store": "サンドラッグ公式通販",
+          "source": "https://sundrug-online.com/products/4903050507795",
+          "mode": "配送",
+          "purchaseChannel": "online",
+          "price": 1879,
+          "basePrice": 1879,
+          "shipping": 600,
+          "quantity": 1,
+          "totalGrams": 820,
+          "unitLabel": "100g",
+          "available": true,
+          "stockVerified": true,
+          "priceVerified": true,
+          "verified": true,
+          "checkedAt": "2026-10-25T14:09:51.588626Z",
+          "stockCheckedAt": "2026-10-25T14:09:51.588626Z",
+          "status": "在庫あり",
+          "currency": "JPY",
+          "condition": "820g1缶。通常税込1879円と購入可能の表示を確認。単独注文は通常送料600円。税込3980円以上で送料0円、沖縄県・離島を除く。",
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          },
+          "refreshEligible": true,
+          "conditionClass": "new"
         }
       ],
       "compareBasis": "同じ銘柄。缶数・おまけを含む総量から100g単価を比較",
@@ -1741,7 +2146,7 @@
           "refreshEligible": true,
           "evidenceNote": "公開された商品ページの掲載額を参照。更新前のキャッシュを含む場合があります。",
           "total": 1750,
-          "lastAttemptAt": "2026-10-25T13:01:25.153Z",
+          "lastAttemptAt": "2026-10-25T13:21:25.792Z",
           "refreshError": "robots_disallowed"
         },
         {
@@ -1768,7 +2173,16 @@
           "live": false,
           "refreshEligible": false,
           "total": 6520,
-          "unitPrice": 35.43478260869565
+          "unitPrice": 35.43478260869565,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         },
         {
           "id": "v4-snd-4901301396549-4-pickup",
@@ -1794,7 +2208,16 @@
           "live": false,
           "refreshEligible": false,
           "total": 6520,
-          "unitPrice": 35.43478260869565
+          "unitPrice": 35.43478260869565,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         },
         {
           "id": "v4-snd-4901301396549-1-delivery",
@@ -1820,7 +2243,16 @@
           "live": false,
           "refreshEligible": false,
           "total": 2180,
-          "unitPrice": 47.391304347826086
+          "unitPrice": 47.391304347826086,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         },
         {
           "id": "v4-snd-4901301396549-1-pickup",
@@ -1846,7 +2278,16 @@
           "live": false,
           "refreshEligible": false,
           "total": 1580,
-          "unitPrice": 34.34782608695652
+          "unitPrice": 34.34782608695652,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         }
       ],
       "unitType": "枚",
@@ -1899,7 +2340,7 @@
           "refreshEligible": true,
           "evidenceNote": "公開された商品ページの掲載額を参照。更新前のキャッシュを含む場合があります。",
           "total": 2500,
-          "lastAttemptAt": "2026-10-25T13:01:25.153Z",
+          "lastAttemptAt": "2026-10-25T13:21:25.792Z",
           "refreshError": "unambiguous_product_price_not_found"
         },
         {
@@ -1971,7 +2412,16 @@
           "refreshEligible": false,
           "total": 2580,
           "unitPrice": 2580,
-          "jan": "4902508024488"
+          "jan": "4902508024488",
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         },
         {
           "id": "cross-bottle-bonyu-glass240-sundrug-online-com-delivery",
@@ -1993,7 +2443,16 @@
           "live": false,
           "refreshEligible": false,
           "total": 3180,
-          "jan": "4902508024488"
+          "jan": "4902508024488",
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         },
         {
           "id": "cross-bottle-bonyu-glass240-www-biccamera-com-delivery",
@@ -2067,7 +2526,7 @@
           "refreshEligible": true,
           "evidenceNote": "公開された商品ページの掲載額を参照。更新前のキャッシュを含む場合があります。",
           "total": 761,
-          "lastAttemptAt": "2026-10-25T13:01:25.153Z",
+          "lastAttemptAt": "2026-10-25T13:21:25.792Z",
           "refreshError": "unambiguous_product_price_not_found"
         },
         {
@@ -2116,7 +2575,16 @@
           "refreshEligible": false,
           "total": 836,
           "unitPrice": 278.67,
-          "jan": "4902508084550"
+          "jan": "4902508084550",
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         },
         {
           "id": "cross-lotion-pigeon300-sundrug-online-com-delivery",
@@ -2138,7 +2606,16 @@
           "live": false,
           "refreshEligible": false,
           "total": 1436,
-          "jan": "4902508084550"
+          "jan": "4902508084550",
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         },
         {
           "id": "cross-lotion-pigeon300-www-biccamera-com-delivery",
@@ -2212,7 +2689,7 @@
           "refreshEligible": true,
           "evidenceNote": "公開された商品ページの掲載額を参照。更新前のキャッシュを含む場合があります。",
           "total": 931,
-          "lastAttemptAt": "2026-10-25T13:01:25.153Z",
+          "lastAttemptAt": "2026-10-25T13:21:25.792Z",
           "refreshError": "unambiguous_product_price_not_found"
         },
         {
@@ -2283,7 +2760,16 @@
           "live": false,
           "refreshEligible": false,
           "total": 1540,
-          "jan": "4902508084420"
+          "jan": "4902508084420",
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         },
         {
           "id": "cross-soap-pigeon-moist500-sundrug-online-com-pickup",
@@ -2305,7 +2791,16 @@
           "live": false,
           "refreshEligible": false,
           "total": 940,
-          "jan": "4902508084420"
+          "jan": "4902508084420",
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         },
         {
           "id": "cross-soap-pigeon-moist500-www-biccamera-com-delivery",
@@ -2380,7 +2875,7 @@
           "refreshEligible": true,
           "evidenceNote": "公開された商品ページの掲載額を参照。更新前のキャッシュを含む場合があります。",
           "total": 294,
-          "lastAttemptAt": "2026-10-25T13:01:25.153Z",
+          "lastAttemptAt": "2026-10-25T13:21:25.792Z",
           "refreshError": "unambiguous_product_price_not_found"
         },
         {
@@ -2480,7 +2975,7 @@
           "refreshEligible": true,
           "evidenceNote": "公開された商品ページの掲載額を参照。更新前のキャッシュを含む場合があります。",
           "total": 748,
-          "lastAttemptAt": "2026-10-25T13:01:25.153Z",
+          "lastAttemptAt": "2026-10-25T13:21:25.792Z",
           "refreshError": "unambiguous_product_price_not_found"
         },
         {
@@ -2642,7 +3137,11 @@
       "ageGroups": [
         "3〜5歳",
         "小学生"
-      ]
+      ],
+      "model": "K56532B",
+      "modelNumber": "K56532B",
+      "modelNormalizationCheckedAt": "2026-10-25T13:41:18.321636+00:00",
+      "modelNormalizationBasis": "既存の商品名・メーカー品番・同一JANを確認済みの販売データで表記を統一。価格や規格は変更しない。"
     },
     {
       "id": "crayon-sankaku-fyl12",
@@ -2679,7 +3178,7 @@
           "refreshEligible": true,
           "evidenceNote": "公開された商品ページの掲載額を参照。更新前のキャッシュを含む場合があります。",
           "total": 1590,
-          "lastAttemptAt": "2026-10-25T13:01:25.153Z",
+          "lastAttemptAt": "2026-10-25T13:21:25.792Z",
           "refreshError": "unambiguous_product_price_not_found"
         },
         {
@@ -2836,7 +3335,11 @@
       "ageGroups": [
         "3〜5歳",
         "小学生"
-      ]
+      ],
+      "model": "FYL12",
+      "modelNumber": "FYL12",
+      "modelNormalizationCheckedAt": "2026-10-25T13:41:18.321636+00:00",
+      "modelNormalizationBasis": "既存の商品名・メーカー品番・同一JANを確認済みの販売データで表記を統一。価格や規格は変更しない。"
     },
     {
       "id": "thermometer-baby",
@@ -3058,7 +3561,16 @@
           "verificationType": "公式ページの商品価格と購入可能の表示",
           "live": false,
           "refreshEligible": false,
-          "evidenceNote": "JSON-LDの価格とInStock、同じページの送料案内を直接確認。"
+          "evidenceNote": "JSON-LDの価格とInStock、同じページの送料案内を直接確認。",
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         },
         {
           "id": "baby-nail-sundrug-pickup",
@@ -3082,7 +3594,16 @@
           "verificationType": "公式ページの商品価格と購入可能の表示",
           "live": false,
           "refreshEligible": false,
-          "evidenceNote": "JSON-LDの価格とInStock、同じページの送料案内を直接確認。"
+          "evidenceNote": "JSON-LDの価格とInStock、同じページの送料案内を直接確認。",
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         },
         {
           "id": "baby-nail-bic-delivery",
@@ -3146,18 +3667,31 @@
           "shippingSource": "https://www.yodobashi.com/product/100000001009510451/",
           "checkedAt": "2026-10-25",
           "condition": "1缶。通常配送は全国送料無料。ポイントは価格から差し引きません。",
-          "status": "在庫あり",
+          "status": "注文受付表示あり",
           "region": "全国",
           "verified": true,
-          "verificationType": "公式商品ページ",
+          "verificationType": "一次通販の商品本文・税込価格・容量を再確認",
           "unitLabel": "100g",
           "discountRate": 0,
           "couponYen": 0,
           "live": false,
           "refreshEligible": false,
-          "evidenceNote": "公式の商品ページで税込価格・内容量・注文可否を確認。店舗の棚価格ではありません。",
+          "evidenceNote": "780g単缶・税込3000円・通常配送無料を本日再確認。JANの本文表示がないためメーカー・商品名・容量を照合。 取得本文のクロール日は本日と表示。確認作業の日時はsourceRetrievedAt。注文受付の確認はstockEvidenceNoteを参照。",
           "total": 3000,
-          "unitPrice": 384.62
+          "unitPrice": 384.62,
+          "priceInclTax": 3000,
+          "taxIncluded": true,
+          "priceVerified": true,
+          "identityVerified": true,
+          "sourceRetrievedAt": "2026-10-25T13:35:06.183356+00:00",
+          "priceFreshness": "source-crawled-today",
+          "priceSource": "https://www.yodobashi.com/product/100000001009510451/",
+          "available": true,
+          "stockVerified": true,
+          "stock": "当該販売単位の注文受付を確認",
+          "stockSourceUrl": "https://www.yodobashi.com/product/100000001009510451/",
+          "stockCheckedAt": "2026-10-25T13:37:03.941821+00:00",
+          "stockEvidenceNote": "当該商品の780g単缶購入欄に在庫あり・カートへ入れるを表示。 注文受付の表示確認であり、現物在庫数・決済完了・発送保証とは異なる。"
         },
         {
           "id": "v4_snd_hohoemi-780_1",
@@ -3172,18 +3706,40 @@
           "shippingSource": "https://sundrug-online.com/pages/guide",
           "checkedAt": "2026-10-25",
           "condition": "1缶。税込3,980円以上で送料無料。沖縄・離島は対象外。",
-          "status": "在庫あり",
+          "status": "注文受付表示あり",
           "region": "全国（沖縄・離島を除く）",
           "verified": true,
-          "verificationType": "公式商品ページ",
+          "verificationType": "一次通販の商品本文・税込価格・容量を再確認",
           "unitLabel": "100g",
           "discountRate": 0,
           "couponYen": 0,
           "live": false,
           "refreshEligible": false,
-          "evidenceNote": "公式の商品ページで税込価格・内容量・注文可否を確認。店舗の棚価格ではありません。",
+          "evidenceNote": "780g単缶の選択欄・税込3000円を本日再確認。8缶セットの金額と区別。通常送料600円、3980円以上無料は沖縄・離島を除く。 取得本文のクロール日は本日と表示。確認作業の日時はsourceRetrievedAt。注文受付の確認はstockEvidenceNoteを参照。",
           "total": 3600,
-          "unitPrice": 461.54
+          "unitPrice": 461.54,
+          "priceInclTax": 3000,
+          "taxIncluded": true,
+          "priceVerified": true,
+          "identityVerified": true,
+          "sourceRetrievedAt": "2026-10-25T13:35:06.183356+00:00",
+          "priceFreshness": "source-crawled-today",
+          "priceSource": "https://sundrug-online.com/products/4902705129559?variant=45752481841386",
+          "available": true,
+          "stockVerified": true,
+          "stock": "当該販売単位の注文受付を確認",
+          "stockSourceUrl": "https://sundrug-online.com/products/4902705129559?variant=45752481841386",
+          "stockCheckedAt": "2026-10-25T13:37:03.941821+00:00",
+          "stockEvidenceNote": "780gの商品で個数1を選択した購入欄に購入可能・配送先へお届けを表示。8缶の別選択肢とは分けて確認。 注文受付の表示確認であり、現物在庫数・決済完了・発送保証とは異なる。",
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         },
         {
           "id": "v4_snd_pick_hohoemi-780_1",
@@ -3235,7 +3791,16 @@
           "refreshEligible": false,
           "evidenceNote": "公式の商品ページで税込価格・内容量・注文可否を確認。店舗の棚価格ではありません。",
           "total": 23801,
-          "unitPrice": 381.43
+          "unitPrice": 381.43,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         },
         {
           "id": "v4_snd_pick_hohoemi-780_8",
@@ -3276,18 +3841,31 @@
           "shippingSource": "https://shop.akachan.jp/shop/g/g251186600/",
           "checkedAt": "2026-10-25",
           "condition": "単缶を1点購入。税込5,500円以上で通常送料が無料。特別送料が必要な地域・商品は対象外。",
-          "status": "在庫あり",
+          "status": "注文受付表示あり",
           "region": "全国・一部地域は送料条件が異なります",
           "verified": true,
-          "verificationType": "公式商品ページ",
+          "verificationType": "一次通販の商品本文・税込価格・容量を再確認",
           "unitLabel": "100g",
           "discountRate": 0,
           "couponYen": 0,
           "live": false,
           "refreshEligible": false,
-          "evidenceNote": "公式の商品ページで税込価格・内容量・注文可否を確認。店舗の棚価格ではありません。",
+          "evidenceNote": "JAN4902705129559・780g単缶・税込3240円を本日再確認。一般送料600円、5500円以上無料の地域例外あり。 取得本文のクロール日は本日と表示。確認作業の日時はsourceRetrievedAt。注文受付の確認はstockEvidenceNoteを参照。",
           "total": 3840,
-          "unitPrice": 492.31
+          "unitPrice": 492.31,
+          "priceInclTax": 3240,
+          "taxIncluded": true,
+          "priceVerified": true,
+          "identityVerified": true,
+          "sourceRetrievedAt": "2026-10-25T13:35:06.183356+00:00",
+          "priceFreshness": "source-crawled-today",
+          "priceSource": "https://shop.akachan.jp/shop/g/g251186600/",
+          "available": true,
+          "stockVerified": true,
+          "stock": "当該販売単位の注文受付を確認",
+          "stockSourceUrl": "https://shop.akachan.jp/shop/g/g251186600/",
+          "stockCheckedAt": "2026-10-25T13:37:03.941821+00:00",
+          "stockEvidenceNote": "当該780g単缶に税込価格と買い物かごに入れるを表示。店舗在庫欄とは分けて確認。 注文受付の表示確認であり、現物在庫数・決済完了・発送保証とは異なる。"
         },
         {
           "id": "v4_ak_hohoemi-780_2",
@@ -3354,18 +3932,31 @@
           "shippingSource": "https://www.matsukiyococokara-online.com/store/info/info20260709.html",
           "checkedAt": "2026-10-25",
           "condition": "1缶。税込2,480円以上で送料無料。単缶を複数購入する場合は掲載単価の合計。ポイント・クーポンは差し引きません。",
-          "status": "在庫あり",
+          "status": "注文受付表示あり",
           "region": "全国",
           "verified": true,
-          "verificationType": "公式商品ページ",
+          "verificationType": "一次通販の商品本文・税込価格・容量を再確認",
           "unitLabel": "100g",
           "discountRate": 0,
           "couponYen": 0,
           "live": false,
           "refreshEligible": false,
-          "evidenceNote": "公式の商品ページで税込価格・内容量・注文可否を確認。店舗の棚価格ではありません。",
+          "evidenceNote": "JAN4902705129559・780g単缶・税込2894円を本日再確認。ポイント・クーポンは差し引かない。 取得本文のクロール日は本日と表示。確認作業の日時はsourceRetrievedAt。注文受付の確認はstockEvidenceNoteを参照。",
           "total": 2894,
-          "unitPrice": 371.03
+          "unitPrice": 371.03,
+          "priceInclTax": 2894,
+          "taxIncluded": true,
+          "priceVerified": true,
+          "identityVerified": true,
+          "sourceRetrievedAt": "2026-10-25T13:35:06.183356+00:00",
+          "priceFreshness": "source-crawled-today",
+          "priceSource": "https://www.matsukiyococokara-online.com/store/catalog/product/view/id/4902705129559",
+          "available": true,
+          "stockVerified": true,
+          "stock": "当該販売単位の注文受付を確認",
+          "stockSourceUrl": "https://www.matsukiyococokara-online.com/store/catalog/product/view/id/4902705129559",
+          "stockCheckedAt": "2026-10-25T13:37:03.941821+00:00",
+          "stockEvidenceNote": "当該780g単缶に数量欄・カートに入れる・最短翌日配送の表示を確認。 注文受付の表示確認であり、現物在庫数・決済完了・発送保証とは異なる。"
         },
         {
           "id": "v4_matsu_hohoemi-780_1_pickup",
@@ -3495,7 +4086,16 @@
           "refreshEligible": false,
           "evidenceNote": "公式の商品ページで税込価格・内容量・注文可否を確認。店舗の棚価格ではありません。",
           "total": 3180,
-          "unitPrice": 397.5
+          "unitPrice": 397.5,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         },
         {
           "id": "v4_snd_pick_hagukumi-800_1",
@@ -3547,7 +4147,16 @@
           "refreshEligible": false,
           "evidenceNote": "公式の商品ページで税込価格・内容量・注文可否を確認。店舗の棚価格ではありません。",
           "total": 20490,
-          "unitPrice": 320.16
+          "unitPrice": 320.16,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         },
         {
           "id": "v4_snd_pick_hagukumi-800_8",
@@ -3833,7 +4442,16 @@
           "refreshEligible": false,
           "evidenceNote": "公式の商品ページで税込価格・内容量・注文可否を確認。店舗の棚価格ではありません。",
           "total": 4340,
-          "unitPrice": 542.5
+          "unitPrice": 542.5,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         },
         {
           "id": "v4_snd_pick_eakachan-800_1",
@@ -4249,7 +4867,16 @@
           "refreshEligible": false,
           "evidenceNote": "公式の商品ページで税込価格・内容量・注文可否を確認。店舗の棚価格ではありません。",
           "total": 6350,
-          "unitPrice": 396.88
+          "unitPrice": 396.88,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         },
         {
           "id": "v4_snd_pick_icreo-balance-800_2",
@@ -4462,7 +5089,16 @@
           "live": false,
           "refreshEligible": false,
           "total": 2280,
-          "unitPrice": 42.22222222222222
+          "unitPrice": 42.22222222222222,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         },
         {
           "id": "v4-snd-4901301448385-1-pickup",
@@ -4488,7 +5124,16 @@
           "live": false,
           "refreshEligible": false,
           "total": 1680,
-          "unitPrice": 31.11111111111111
+          "unitPrice": 31.11111111111111,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         },
         {
           "id": "v4-snd-4901301448385-4-delivery",
@@ -4514,7 +5159,16 @@
           "live": false,
           "refreshEligible": false,
           "total": 5980,
-          "unitPrice": 27.685185185185187
+          "unitPrice": 27.685185185185187,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         },
         {
           "id": "v4-snd-4901301448385-4-pickup",
@@ -4540,7 +5194,16 @@
           "live": false,
           "refreshEligible": false,
           "total": 5980,
-          "unitPrice": 27.685185185185187
+          "unitPrice": 27.685185185185187,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         },
         {
           "id": "v4-yodo-100000001009026391-delivery",
@@ -4821,7 +5484,16 @@
           "live": false,
           "refreshEligible": false,
           "total": 2280,
-          "unitPrice": 38
+          "unitPrice": 38,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         },
         {
           "id": "v4-snd-4901301448378-1-pickup",
@@ -4847,7 +5519,16 @@
           "live": false,
           "refreshEligible": false,
           "total": 1680,
-          "unitPrice": 28
+          "unitPrice": 28,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         },
         {
           "id": "v4-snd-4901301448378-4-delivery",
@@ -4873,7 +5554,16 @@
           "live": false,
           "refreshEligible": false,
           "total": 5980,
-          "unitPrice": 24.916666666666668
+          "unitPrice": 24.916666666666668,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         },
         {
           "id": "v4-snd-4901301448378-4-pickup",
@@ -4899,7 +5589,16 @@
           "live": false,
           "refreshEligible": false,
           "total": 5980,
-          "unitPrice": 24.916666666666668
+          "unitPrice": 24.916666666666668,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         },
         {
           "id": "v4-aeon-merries-nb60-pickup",
@@ -5195,7 +5894,16 @@
           "live": false,
           "refreshEligible": false,
           "total": 2280,
-          "unitPrice": 47.5
+          "unitPrice": 47.5,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         },
         {
           "id": "v4-snd-4901301388032-1-pickup",
@@ -5221,7 +5929,16 @@
           "live": false,
           "refreshEligible": false,
           "total": 1680,
-          "unitPrice": 35
+          "unitPrice": 35,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         },
         {
           "id": "v4-snd-4901301388032-4-delivery",
@@ -5247,7 +5964,16 @@
           "live": false,
           "refreshEligible": false,
           "total": 5898,
-          "unitPrice": 30.71875
+          "unitPrice": 30.71875,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         },
         {
           "id": "v4-snd-4901301388032-4-pickup",
@@ -5273,7 +5999,16 @@
           "live": false,
           "refreshEligible": false,
           "total": 5898,
-          "unitPrice": 30.71875
+          "unitPrice": 30.71875,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         },
         {
           "id": "v4-yodo-100000001005842831-delivery",
@@ -5380,7 +6115,16 @@
           "live": false,
           "refreshEligible": false,
           "total": 2580,
-          "unitPrice": 49.61538461538461
+          "unitPrice": 49.61538461538461,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         },
         {
           "id": "v4-snd-4901301418579-1-pickup",
@@ -5406,7 +6150,16 @@
           "live": false,
           "refreshEligible": false,
           "total": 1980,
-          "unitPrice": 38.07692307692308
+          "unitPrice": 38.07692307692308,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         },
         {
           "id": "v4-snd-4901301418579-3-delivery",
@@ -5432,7 +6185,16 @@
           "live": false,
           "refreshEligible": false,
           "total": 5250,
-          "unitPrice": 33.65384615384615
+          "unitPrice": 33.65384615384615,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         },
         {
           "id": "v4-snd-4901301418579-3-pickup",
@@ -5458,7 +6220,16 @@
           "live": false,
           "refreshEligible": false,
           "total": 5250,
-          "unitPrice": 33.65384615384615
+          "unitPrice": 33.65384615384615,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         },
         {
           "id": "v4-yodo-100000001007707112-delivery",
@@ -5565,7 +6336,16 @@
           "live": false,
           "refreshEligible": false,
           "total": 2580,
-          "unitPrice": 58.63636363636363
+          "unitPrice": 58.63636363636363,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         },
         {
           "id": "v4-snd-4901301425874-1-pickup",
@@ -5591,7 +6371,16 @@
           "live": false,
           "refreshEligible": false,
           "total": 1980,
-          "unitPrice": 45
+          "unitPrice": 45,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         },
         {
           "id": "v4-snd-4901301425874-3-delivery",
@@ -5617,7 +6406,16 @@
           "live": false,
           "refreshEligible": false,
           "total": 5250,
-          "unitPrice": 39.77272727272727
+          "unitPrice": 39.77272727272727,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         },
         {
           "id": "v4-snd-4901301425874-3-pickup",
@@ -5643,7 +6441,16 @@
           "live": false,
           "refreshEligible": false,
           "total": 5250,
-          "unitPrice": 39.77272727272727
+          "unitPrice": 39.77272727272727,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         },
         {
           "id": "v4-yodo-100000001007707113-delivery",
@@ -5750,7 +6557,16 @@
           "live": false,
           "refreshEligible": false,
           "total": 2778,
-          "unitPrice": 44.806451612903224
+          "unitPrice": 44.806451612903224,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         },
         {
           "id": "v4-snd-4987176203403-1-pickup",
@@ -5776,7 +6592,16 @@
           "live": false,
           "refreshEligible": false,
           "total": 2178,
-          "unitPrice": 35.12903225806452
+          "unitPrice": 35.12903225806452,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         },
         {
           "id": "v4-snd-4987176203403-4-delivery",
@@ -5802,7 +6627,16 @@
           "live": false,
           "refreshEligible": false,
           "total": 8650,
-          "unitPrice": 34.87903225806452
+          "unitPrice": 34.87903225806452,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         },
         {
           "id": "v4-snd-4987176203403-4-pickup",
@@ -5828,7 +6662,16 @@
           "live": false,
           "refreshEligible": false,
           "total": 8650,
-          "unitPrice": 34.87903225806452
+          "unitPrice": 34.87903225806452,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         },
         {
           "id": "v4-yodo-100000001008123159-delivery",
@@ -5935,7 +6778,16 @@
           "live": false,
           "refreshEligible": false,
           "total": 2750,
-          "unitPrice": 32.73809523809524
+          "unitPrice": 32.73809523809524,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         },
         {
           "id": "v4-snd-4987176334978-1-pickup",
@@ -5961,7 +6813,16 @@
           "live": false,
           "refreshEligible": false,
           "total": 2150,
-          "unitPrice": 25.595238095238095
+          "unitPrice": 25.595238095238095,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         },
         {
           "id": "v4-snd-4987176334978-4-delivery",
@@ -5987,7 +6848,16 @@
           "live": false,
           "refreshEligible": false,
           "total": 8580,
-          "unitPrice": 25.535714285714285
+          "unitPrice": 25.535714285714285,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         },
         {
           "id": "v4-snd-4987176334978-4-pickup",
@@ -6013,7 +6883,16 @@
           "live": false,
           "refreshEligible": false,
           "total": 8580,
-          "unitPrice": 25.535714285714285
+          "unitPrice": 25.535714285714285,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         },
         {
           "id": "v10-de0a367dfa050d5",
@@ -6208,7 +7087,16 @@
           "live": false,
           "refreshEligible": false,
           "total": 2140,
-          "unitPrice": 62.94117647058823
+          "unitPrice": 62.94117647058823,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         },
         {
           "id": "v4-snd-4987176203434-1-pickup",
@@ -6234,7 +7122,16 @@
           "live": false,
           "refreshEligible": false,
           "total": 1540,
-          "unitPrice": 45.294117647058826
+          "unitPrice": 45.294117647058826,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         },
         {
           "id": "v4-snd-4987176203434-4-delivery",
@@ -6260,7 +7157,16 @@
           "live": false,
           "refreshEligible": false,
           "total": 6120,
-          "unitPrice": 45
+          "unitPrice": 45,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         },
         {
           "id": "v4-snd-4987176203434-4-pickup",
@@ -6286,7 +7192,16 @@
           "live": false,
           "refreshEligible": false,
           "total": 6120,
-          "unitPrice": 45
+          "unitPrice": 45,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         },
         {
           "id": "v4-yodo-100000001008123163-delivery",
@@ -6463,7 +7378,16 @@
           "live": false,
           "refreshEligible": false,
           "total": 2548,
-          "unitPrice": 49
+          "unitPrice": 49,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         },
         {
           "id": "v4-snd-4903111152360-1-pickup",
@@ -6489,7 +7413,16 @@
           "live": false,
           "refreshEligible": false,
           "total": 1948,
-          "unitPrice": 37.46153846153846
+          "unitPrice": 37.46153846153846,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         },
         {
           "id": "v4-snd-4903111152360-3-delivery",
@@ -6515,7 +7448,16 @@
           "live": false,
           "refreshEligible": false,
           "total": 5820,
-          "unitPrice": 37.30769230769231
+          "unitPrice": 37.30769230769231,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         },
         {
           "id": "v4-snd-4903111152360-3-pickup",
@@ -6541,7 +7483,16 @@
           "live": false,
           "refreshEligible": false,
           "total": 5820,
-          "unitPrice": 37.30769230769231
+          "unitPrice": 37.30769230769231,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         },
         {
           "id": "v4-yodo-100000001007461473-delivery",
@@ -6673,7 +7624,16 @@
           "live": false,
           "refreshEligible": false,
           "total": 2548,
-          "unitPrice": 36.4
+          "unitPrice": 36.4,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         },
         {
           "id": "v4-snd-4903111138302-1-pickup",
@@ -6699,7 +7659,16 @@
           "live": false,
           "refreshEligible": false,
           "total": 1948,
-          "unitPrice": 27.82857142857143
+          "unitPrice": 27.82857142857143,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         },
         {
           "id": "v4-snd-4903111138302-4-delivery",
@@ -6725,7 +7694,16 @@
           "live": false,
           "refreshEligible": false,
           "total": 7720,
-          "unitPrice": 27.571428571428573
+          "unitPrice": 27.571428571428573,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         },
         {
           "id": "v4-snd-4903111138302-4-pickup",
@@ -6751,7 +7729,16 @@
           "live": false,
           "refreshEligible": false,
           "total": 7720,
-          "unitPrice": 27.571428571428573
+          "unitPrice": 27.571428571428573,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         },
         {
           "id": "v10-552ebfed3e131e2",
@@ -6913,7 +7900,16 @@
           "live": false,
           "refreshEligible": false,
           "total": 2198,
-          "unitPrice": 42.26923076923077
+          "unitPrice": 42.26923076923077,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         },
         {
           "id": "v4-snd-4902011124347-1-pickup",
@@ -6939,7 +7935,16 @@
           "live": false,
           "refreshEligible": false,
           "total": 1598,
-          "unitPrice": 30.73076923076923
+          "unitPrice": 30.73076923076923,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         },
         {
           "id": "v4-snd-4902011124347-3-delivery",
@@ -6965,7 +7970,16 @@
           "live": false,
           "refreshEligible": false,
           "total": 4635,
-          "unitPrice": 29.71153846153846
+          "unitPrice": 29.71153846153846,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         },
         {
           "id": "v4-snd-4902011124347-3-pickup",
@@ -6991,7 +8005,16 @@
           "live": false,
           "refreshEligible": false,
           "total": 4635,
-          "unitPrice": 29.71153846153846
+          "unitPrice": 29.71153846153846,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         },
         {
           "id": "v4-yodo-100000001009762457-delivery",
@@ -7097,7 +8120,16 @@
           "live": false,
           "refreshEligible": false,
           "total": 1298,
-          "unitPrice": 2.8095238095238093
+          "unitPrice": 2.8095238095238093,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         },
         {
           "id": "v4-snd-4902508272674-1-pickup",
@@ -7123,7 +8155,16 @@
           "live": false,
           "refreshEligible": false,
           "total": 698,
-          "unitPrice": 1.5108225108225108
+          "unitPrice": 1.5108225108225108,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         },
         {
           "id": "v4-snd-4902508272674-6-delivery",
@@ -7149,7 +8190,16 @@
           "live": false,
           "refreshEligible": false,
           "total": 4079,
-          "unitPrice": 1.4715007215007214
+          "unitPrice": 1.4715007215007214,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         },
         {
           "id": "v4-snd-4902508272674-6-pickup",
@@ -7175,7 +8225,16 @@
           "live": false,
           "refreshEligible": false,
           "total": 4079,
-          "unitPrice": 1.4715007215007214
+          "unitPrice": 1.4715007215007214,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         },
         {
           "id": "v10-dbd7290af1b4748",
@@ -7256,7 +8315,16 @@
           "live": false,
           "refreshEligible": false,
           "total": 1125,
-          "unitPrice": 7.5
+          "unitPrice": 7.5,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         },
         {
           "id": "v4-snd-4903111120949-1-pickup",
@@ -7282,7 +8350,16 @@
           "live": false,
           "refreshEligible": false,
           "total": 525,
-          "unitPrice": 3.5
+          "unitPrice": 3.5,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         },
         {
           "id": "v10-df957137b06246c",
@@ -7577,7 +8654,16 @@
           "live": false,
           "refreshEligible": false,
           "total": 888,
-          "unitPrice": 4.228571428571429
+          "unitPrice": 4.228571428571429,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         },
         {
           "id": "v4-snd-4902011831900-1-pickup",
@@ -7603,7 +8689,16 @@
           "live": false,
           "refreshEligible": false,
           "total": 288,
-          "unitPrice": 1.3714285714285714
+          "unitPrice": 1.3714285714285714,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         },
         {
           "id": "v10-c92f131334221b0",
@@ -7823,7 +8918,16 @@
           "live": false,
           "refreshEligible": false,
           "total": 1958,
-          "unitPrice": 5.8273809523809526
+          "unitPrice": 5.8273809523809526,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         },
         {
           "id": "v4-snd-4987176180599-1-pickup",
@@ -7849,7 +8953,16 @@
           "live": false,
           "refreshEligible": false,
           "total": 1358,
-          "unitPrice": 4.041666666666667
+          "unitPrice": 4.041666666666667,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         },
         {
           "id": "v4-snd-4987176180599-3-delivery",
@@ -7875,7 +8988,16 @@
           "live": false,
           "refreshEligible": false,
           "total": 4568,
-          "unitPrice": 4.531746031746032
+          "unitPrice": 4.531746031746032,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         },
         {
           "id": "v4-snd-4987176180599-3-pickup",
@@ -7901,7 +9023,16 @@
           "live": false,
           "refreshEligible": false,
           "total": 3968,
-          "unitPrice": 3.9365079365079363
+          "unitPrice": 3.9365079365079363,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         },
         {
           "id": "wipes-pampers-hada336-ジョイフル本田-pickup-v4",
@@ -8315,7 +9446,11 @@
       "jan": "4902508151061",
       "ageBasis": "shopping-category",
       "ageNote": "使い方や対象は製品の説明で確認してください。",
-      "allAges": true
+      "allAges": true,
+      "model": "1026205",
+      "modelNumber": "1026205",
+      "modelNormalizationCheckedAt": "2026-10-25T13:41:18.321636+00:00",
+      "modelNormalizationBasis": "既存の商品名・メーカー品番・同一JANを確認済みの販売データで表記を統一。価格や規格は変更しない。"
     },
     {
       "id": "bath-richell-k-be",
@@ -8595,7 +9730,16 @@
           "verificationType": "公式ページの商品価格と購入可能の表示",
           "live": false,
           "refreshEligible": false,
-          "evidenceNote": "JSON-LDの価格とInStock、同じページの送料案内を直接確認。"
+          "evidenceNote": "JSON-LDの価格とInStock、同じページの送料案内を直接確認。",
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         },
         {
           "id": "bottle-bonyu-glass160-sundrug-pickup",
@@ -8619,7 +9763,16 @@
           "verificationType": "公式ページの商品価格と購入可能の表示",
           "live": false,
           "refreshEligible": false,
-          "evidenceNote": "JSON-LDの価格とInStock、同じページの送料案内を直接確認。"
+          "evidenceNote": "JSON-LDの価格とInStock、同じページの送料案内を直接確認。",
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         },
         {
           "id": "bottle-bonyu-glass160-bic-delivery",
@@ -8920,7 +10073,16 @@
           "verificationType": "公式ページの商品価格と購入可能の表示",
           "live": false,
           "refreshEligible": false,
-          "evidenceNote": "JSON-LDの価格とInStock、同じページの送料案内を直接確認。"
+          "evidenceNote": "JSON-LDの価格とInStock、同じページの送料案内を直接確認。",
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         },
         {
           "id": "bottle-bonyu-plastic160-sundrug-pickup",
@@ -8944,7 +10106,16 @@
           "verificationType": "公式ページの商品価格と購入可能の表示",
           "live": false,
           "refreshEligible": false,
-          "evidenceNote": "JSON-LDの価格とInStock、同じページの送料案内を直接確認。"
+          "evidenceNote": "JSON-LDの価格とInStock、同じページの送料案内を直接確認。",
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         }
       ],
       "imageUrl": "https://image.yodobashi.com/product/100/000/001/006/947/523/100000001006947523_10203_002.jpg",
@@ -9307,7 +10478,11 @@
           "statusScope": "retailer-search-no-exact-result",
           "scopeNote": "当該候補または今回の同一SKU調査の結果。EC全体の取扱なしを断定しない。"
         }
-      ]
+      ],
+      "model": "BL-22",
+      "modelNumber": "BL-22",
+      "modelNormalizationCheckedAt": "2026-10-25T13:41:18.321636+00:00",
+      "modelNormalizationBasis": "既存の商品名・メーカー品番・同一JANを確認済みの販売データで表記を統一。価格や規格は変更しない。"
     },
     {
       "id": "toy-kumon-wp43",
@@ -9576,7 +10751,11 @@
           "statusScope": "retailer-search-no-exact-result",
           "scopeNote": "当該候補または今回の同一SKU調査の結果。EC全体の取扱なしを断定しない。"
         }
-      ]
+      ],
+      "model": "WP-43",
+      "modelNumber": "WP-43",
+      "modelNormalizationCheckedAt": "2026-10-25T13:41:18.321636+00:00",
+      "modelNormalizationBasis": "既存の商品名・メーカー品番・同一JANを確認済みの販売データで表記を統一。価格や規格は変更しない。"
     },
     {
       "id": "toy-kumon-wp52",
@@ -9836,7 +11015,11 @@
           "statusScope": "retailer-search-no-exact-result",
           "scopeNote": "当該候補または今回の同一SKU調査の結果。EC全体の取扱なしを断定しない。"
         }
-      ]
+      ],
+      "model": "WP-52",
+      "modelNumber": "WP-52",
+      "modelNormalizationCheckedAt": "2026-10-25T13:41:18.321636+00:00",
+      "modelNormalizationBasis": "既存の商品名・メーカー品番・同一JANを確認済みの販売データで表記を統一。価格や規格は変更しない。"
     },
     {
       "id": "nipple-bonyu-m2",
@@ -9923,7 +11106,16 @@
           "verificationType": "公式ページの商品価格と購入可能の表示",
           "live": false,
           "refreshEligible": false,
-          "evidenceNote": "JSON-LDの価格とInStock、同じページの送料案内を直接確認。"
+          "evidenceNote": "JSON-LDの価格とInStock、同じページの送料案内を直接確認。",
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         },
         {
           "id": "nipple-bonyu-m2-sundrug-pickup",
@@ -9947,7 +11139,16 @@
           "verificationType": "公式ページの商品価格と購入可能の表示",
           "live": false,
           "refreshEligible": false,
-          "evidenceNote": "JSON-LDの価格とInStock、同じページの送料案内を直接確認。"
+          "evidenceNote": "JSON-LDの価格とInStock、同じページの送料案内を直接確認。",
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         },
         {
           "id": "nipple-bonyu-m2-bic-delivery",
@@ -13816,7 +15017,7 @@
       "name": "はじめてのおしりナップ プレミアム極上厚手 50枚2P",
       "brand": "ピジョン",
       "category": "おむつ・おしりふき",
-      "unit": "50枚",
+      "unit": "50枚×2袋",
       "manufacturerSku": "1034283",
       "source": "https://shop.pigeon.co.jp/products/1034283?variant=43835591000285",
       "sourceName": "ピジョン公式オンラインショップ",
@@ -13862,12 +15063,18 @@
           "live": false,
           "available": true,
           "priceCheckedAt": "2026-10-25T11:45:34.274252+00:00",
-          "stockVerified": true
+          "stockVerified": true,
+          "packageLabel": "50枚×2袋・1セット"
         }
       ],
-      "capacity": "50枚",
-      "informationCheckedAt": "2026-10-25T11:45:34.274252+00:00",
-      "informationSource": "https://shop.pigeon.co.jp/products/1034283?variant=43835591000285"
+      "capacity": "50枚×2袋",
+      "informationCheckedAt": "2026-10-25T13:40:21.016326+00:00",
+      "informationSource": "https://shop.pigeon.co.jp/products/1034283?variant=43835591000285",
+      "packageLabel": "50枚×2袋・1セット",
+      "packageSource": "https://shop.pigeon.co.jp/products/1034283?variant=43835591000285",
+      "packageCheckedAt": "2026-10-25T13:40:21.016326+00:00",
+      "packageEvidenceNote": "公式の当該選択商品本文・商品タイトルで枚数と袋数を確認。販売SKUは1セットとしてquantity=1を維持。",
+      "packageResponseSha256": "33c58fa981ada350eefe672d777d219f8a4724a695b2619ee48965a39bbb08b8"
     },
     {
       "id": "pigeon-1039619-46684053995741",
@@ -14328,7 +15535,7 @@
       "name": "はじめてのおしりナップ プレミアム極上厚手 50枚6P",
       "brand": "ピジョン",
       "category": "おむつ・おしりふき",
-      "unit": "50枚",
+      "unit": "50枚×6袋",
       "manufacturerSku": "1034284",
       "source": "https://shop.pigeon.co.jp/products/1034284?variant=43835591065821",
       "sourceName": "ピジョン公式オンラインショップ",
@@ -14374,12 +15581,18 @@
           "live": false,
           "available": true,
           "priceCheckedAt": "2026-10-25T11:45:34.274252+00:00",
-          "stockVerified": true
+          "stockVerified": true,
+          "packageLabel": "50枚×6袋・1セット"
         }
       ],
-      "capacity": "50枚",
-      "informationCheckedAt": "2026-10-25T11:45:34.274252+00:00",
-      "informationSource": "https://shop.pigeon.co.jp/products/1034284?variant=43835591065821"
+      "capacity": "50枚×6袋",
+      "informationCheckedAt": "2026-10-25T13:40:21.016326+00:00",
+      "informationSource": "https://shop.pigeon.co.jp/products/1034284?variant=43835591065821",
+      "packageLabel": "50枚×6袋・1セット",
+      "packageSource": "https://shop.pigeon.co.jp/products/1034284?variant=43835591065821",
+      "packageCheckedAt": "2026-10-25T13:40:21.016326+00:00",
+      "packageEvidenceNote": "公式の当該選択商品本文・商品タイトルで枚数と袋数を確認。販売SKUは1セットとしてquantity=1を維持。",
+      "packageResponseSha256": "b51fd4d75cc2c4b3b6d515ae05800a6cd9bbde62feba97212a3df2e4f780bf2e"
     },
     {
       "id": "pigeon-1039620-46684072476893",
@@ -15820,7 +17033,7 @@
       "name": "トイレに流せるおしりナップ 72枚4P",
       "brand": "ピジョン",
       "category": "おむつ・おしりふき",
-      "unit": "72枚",
+      "unit": "72枚×4袋",
       "manufacturerSku": "1047228",
       "source": "https://shop.pigeon.co.jp/products/1047228?variant=47316206944477",
       "sourceName": "ピジョン公式オンラインショップ",
@@ -15866,12 +17079,18 @@
           "live": false,
           "available": true,
           "priceCheckedAt": "2026-10-25T11:45:34.274252+00:00",
-          "stockVerified": true
+          "stockVerified": true,
+          "packageLabel": "72枚×4袋・1セット"
         }
       ],
-      "capacity": "72枚",
-      "informationCheckedAt": "2026-10-25T11:45:34.274252+00:00",
-      "informationSource": "https://shop.pigeon.co.jp/products/1047228?variant=47316206944477"
+      "capacity": "72枚×4袋",
+      "informationCheckedAt": "2026-10-25T13:40:21.016326+00:00",
+      "informationSource": "https://shop.pigeon.co.jp/products/1047228?variant=47316206944477",
+      "packageLabel": "72枚×4袋・1セット",
+      "packageSource": "https://shop.pigeon.co.jp/products/1047228?variant=47316206944477",
+      "packageCheckedAt": "2026-10-25T13:40:21.016326+00:00",
+      "packageEvidenceNote": "公式の当該選択商品本文・商品タイトルで枚数と袋数を確認。販売SKUは1セットとしてquantity=1を維持。",
+      "packageResponseSha256": "98c22dcae5d063371ef7d4562917402f87c5168cae9d4f8c2f75386fd8410f97"
     },
     {
       "id": "pigeon-1025275-43254862708957",
@@ -19436,7 +20655,9 @@
         }
       ],
       "informationCheckedAt": "2026-10-25T11:45:34.274252+00:00",
-      "informationSource": "https://shop.pigeon.co.jp/products/1026205?variant=43780591550685"
+      "informationSource": "https://shop.pigeon.co.jp/products/1026205?variant=43780591550685",
+      "model": "1026205",
+      "modelNumber": "1026205"
     },
     {
       "id": "pigeon-1026451-43254809854173",
@@ -21533,16 +22754,16 @@
           "conditionClass": "used",
           "listingTitle": "ErgoBaby オムニ ブリーズ オニキスブラック　OMNI Breeze】",
           "source": "https://jp.mercari.com/item/m49610134642",
-          "checkedAt": "2026-10-25T13:02:50.232Z",
+          "checkedAt": "2026-10-25T13:23:11.519Z",
           "verified": true,
           "status": "掲載あり",
           "condition": "出品者が示す中古品の状態・付属品を確認。送料込み表記の出品です。",
           "matchingBasis": "出品タイトル・説明にあるメーカー・モデル・色表記を照合。JANは未確認。",
-          "lastAttemptAt": "2026-10-25T13:02:50.232Z",
+          "lastAttemptAt": "2026-10-25T13:23:11.519Z",
           "previousPrice": 8300,
           "basePrice": 8300,
           "available": true,
-          "stockCheckedAt": "2026-10-25T13:02:50.232Z",
+          "stockCheckedAt": "2026-10-25T13:23:11.519Z",
           "total": 8300,
           "verificationType": "個別出品の公開データを再確認"
         },
@@ -21560,16 +22781,16 @@
           "conditionClass": "used",
           "listingTitle": "エルゴベビー　オムニブリーズ　オニキスブラック",
           "source": "https://jp.mercari.com/item/m93441798309",
-          "checkedAt": "2026-10-25T13:02:50.232Z",
+          "checkedAt": "2026-10-25T13:23:11.519Z",
           "verified": true,
           "status": "掲載あり",
           "condition": "出品者が示す中古品の状態・付属品を確認。送料込み表記の出品です。",
           "matchingBasis": "出品タイトル・説明にあるメーカー・モデル・色表記を照合。JANは未確認。",
-          "lastAttemptAt": "2026-10-25T13:02:50.232Z",
+          "lastAttemptAt": "2026-10-25T13:23:11.519Z",
           "previousPrice": 8000,
           "basePrice": 8000,
           "available": true,
-          "stockCheckedAt": "2026-10-25T13:02:50.232Z",
+          "stockCheckedAt": "2026-10-25T13:23:11.519Z",
           "total": 8000,
           "verificationType": "個別出品の公開データを再確認"
         },
@@ -21587,16 +22808,16 @@
           "conditionClass": "used",
           "listingTitle": "エルゴベビー　オムニブリーズ　オニキスブラック",
           "source": "https://jp.mercari.com/item/m70419161999",
-          "checkedAt": "2026-10-25T13:02:50.232Z",
+          "checkedAt": "2026-10-25T13:23:11.519Z",
           "verified": true,
           "status": "掲載あり",
           "condition": "出品者が示す中古品の状態・付属品を確認。送料込み表記の出品です。",
           "matchingBasis": "出品タイトル・説明にあるメーカー・モデル・色表記を照合。JANは未確認。",
-          "lastAttemptAt": "2026-10-25T13:02:50.232Z",
+          "lastAttemptAt": "2026-10-25T13:23:11.519Z",
           "previousPrice": 6500,
           "basePrice": 6500,
           "available": true,
-          "stockCheckedAt": "2026-10-25T13:02:50.232Z",
+          "stockCheckedAt": "2026-10-25T13:23:11.519Z",
           "total": 6500,
           "verificationType": "個別出品の公開データを再確認"
         },
@@ -21614,16 +22835,16 @@
           "conditionClass": "used",
           "listingTitle": "エルゴベビー／オムニブリーズ　ブラック／抱っこ紐【BCZ360PONYXDAD】",
           "source": "https://jp.mercari.com/item/m27087811290",
-          "checkedAt": "2026-10-25T13:02:50.232Z",
+          "checkedAt": "2026-10-25T13:23:11.519Z",
           "verified": true,
           "status": "掲載あり",
           "condition": "出品者が示す中古品の状態・付属品を確認。送料込み表記の出品です。",
           "matchingBasis": "出品タイトル・説明にあるメーカー・モデル・色表記を照合。JANは未確認。",
-          "lastAttemptAt": "2026-10-25T13:02:50.232Z",
+          "lastAttemptAt": "2026-10-25T13:23:11.519Z",
           "previousPrice": 8800,
           "basePrice": 8800,
           "available": true,
-          "stockCheckedAt": "2026-10-25T13:02:50.232Z",
+          "stockCheckedAt": "2026-10-25T13:23:11.519Z",
           "total": 8800,
           "verificationType": "個別出品の公開データを再確認"
         }
@@ -21669,16 +22890,16 @@
           "conditionClass": "used",
           "listingTitle": "Ergobaby OMNI Breeze 抱っこ紐　ブラック　黒",
           "source": "https://jp.mercari.com/item/m42987105933",
-          "checkedAt": "2026-10-25T13:02:50.232Z",
+          "checkedAt": "2026-10-25T13:23:11.519Z",
           "verified": true,
           "status": "掲載あり",
           "condition": "出品者が示す中古品の状態・付属品を確認。送料込み表記の出品です。",
           "matchingBasis": "出品タイトル・説明にあるメーカー・モデル・色表記を照合。JANは未確認。",
-          "lastAttemptAt": "2026-10-25T13:02:50.232Z",
-          "previousPrice": 8666,
+          "lastAttemptAt": "2026-10-25T13:23:11.519Z",
+          "previousPrice": 8566,
           "basePrice": 8566,
           "available": true,
-          "stockCheckedAt": "2026-10-25T13:02:50.232Z",
+          "stockCheckedAt": "2026-10-25T13:23:11.519Z",
           "total": 8566,
           "verificationType": "個別出品の公開データを再確認"
         },
@@ -21696,16 +22917,16 @@
           "conditionClass": "used",
           "listingTitle": "エルゴベビー オムニブリーズ ブラック　 SoftFlexメッシュ 抱っこ紐",
           "source": "https://jp.mercari.com/item/m23466280271",
-          "checkedAt": "2026-10-25T13:02:50.232Z",
+          "checkedAt": "2026-10-25T13:23:11.519Z",
           "verified": true,
           "status": "掲載あり",
           "condition": "出品者が示す中古品の状態・付属品を確認。送料込み表記の出品です。",
           "matchingBasis": "出品タイトル・説明にあるメーカー・モデル・色表記を照合。JANは未確認。",
-          "lastAttemptAt": "2026-10-25T13:02:50.232Z",
+          "lastAttemptAt": "2026-10-25T13:23:11.519Z",
           "previousPrice": 8800,
           "basePrice": 8800,
           "available": true,
-          "stockCheckedAt": "2026-10-25T13:02:50.232Z",
+          "stockCheckedAt": "2026-10-25T13:23:11.519Z",
           "total": 8800,
           "verificationType": "個別出品の公開データを再確認"
         }
@@ -21751,16 +22972,16 @@
           "conditionClass": "used",
           "listingTitle": "Ergobaby 抱っこ紐 ネイビー　オムニブリーズ",
           "source": "https://jp.mercari.com/item/m42203247068",
-          "checkedAt": "2026-10-25T13:02:50.232Z",
+          "checkedAt": "2026-10-25T13:23:11.519Z",
           "verified": true,
           "status": "掲載あり",
           "condition": "出品者が示す中古品の状態・付属品を確認。送料込み表記の出品です。",
           "matchingBasis": "出品タイトル・説明にあるメーカー・モデル・色表記を照合。JANは未確認。",
-          "lastAttemptAt": "2026-10-25T13:02:50.232Z",
+          "lastAttemptAt": "2026-10-25T13:23:11.519Z",
           "previousPrice": 7500,
           "basePrice": 7500,
           "available": true,
-          "stockCheckedAt": "2026-10-25T13:02:50.232Z",
+          "stockCheckedAt": "2026-10-25T13:23:11.519Z",
           "total": 7500,
           "verificationType": "個別出品の公開データを再確認"
         },
@@ -21778,16 +22999,16 @@
           "conditionClass": "used",
           "listingTitle": "Ergobaby OMNI Breeze 抱っこ紐 ネイビー",
           "source": "https://jp.mercari.com/item/m68818696160",
-          "checkedAt": "2026-10-25T13:02:50.232Z",
+          "checkedAt": "2026-10-25T13:23:11.519Z",
           "verified": true,
           "status": "掲載あり",
           "condition": "出品者が示す中古品の状態・付属品を確認。送料込み表記の出品です。",
           "matchingBasis": "出品タイトル・説明にあるメーカー・モデル・色表記を照合。JANは未確認。",
-          "lastAttemptAt": "2026-10-25T13:02:50.232Z",
+          "lastAttemptAt": "2026-10-25T13:23:11.519Z",
           "previousPrice": 8000,
           "basePrice": 8000,
           "available": true,
-          "stockCheckedAt": "2026-10-25T13:02:50.232Z",
+          "stockCheckedAt": "2026-10-25T13:23:11.519Z",
           "total": 8000,
           "verificationType": "個別出品の公開データを再確認"
         }
@@ -21833,16 +23054,16 @@
           "conditionClass": "used",
           "listingTitle": "BABYBJORN ベビービョルン バウンサー ブリス コットン サンドベージュ",
           "source": "https://jp.mercari.com/item/m90735220312",
-          "checkedAt": "2026-10-25T13:02:50.232Z",
+          "checkedAt": "2026-10-25T13:23:11.519Z",
           "verified": true,
           "status": "掲載あり",
           "condition": "出品者が示す中古品の状態・付属品を確認。送料込み表記の出品です。",
           "matchingBasis": "出品タイトル・説明にあるメーカー・モデル・色表記を照合。JANは未確認。",
-          "lastAttemptAt": "2026-10-25T13:02:50.232Z",
+          "lastAttemptAt": "2026-10-25T13:23:11.519Z",
           "previousPrice": 5780,
           "basePrice": 5780,
           "available": true,
-          "stockCheckedAt": "2026-10-25T13:02:50.232Z",
+          "stockCheckedAt": "2026-10-25T13:23:11.519Z",
           "total": 5780,
           "verificationType": "個別出品の公開データを再確認"
         }
@@ -21889,7 +23110,16 @@
           "matchEvidence": "公開商品JSON-LD gtin13/SKU4973512259098。450ml本体1本。",
           "evidenceNote": "税込684円、InStock。3,980円以上送料無料、全国送料一律600円。",
           "refreshEligible": false,
-          "live": false
+          "live": false,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         },
         {
           "id": "v10-e4a7869fa96d68d",
@@ -22541,7 +23771,16 @@
           "quantityMeaning": "メーカー小売1パック",
           "manufacturerVariantId": "44849867423978",
           "condition": "メーカー小売1パック / 沖縄県・離島を除く通常配送。税込3,980円以上は送料無料、未満は税込600円。店舗受取の無料送料を通販へ流用しない。",
-          "priceVerified": true
+          "priceVerified": true,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         },
         {
           "id": "v11-7a1237590fb377f7a1",
@@ -22664,7 +23903,16 @@
           "quantityMeaning": "メーカー小売1パック",
           "manufacturerVariantId": "44881311564010",
           "condition": "メーカー小売1パック / 沖縄県・離島を除く通常配送。税込3,980円以上は送料無料、未満は税込600円。店舗受取の無料送料を通販へ流用しない。",
-          "priceVerified": true
+          "priceVerified": true,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         }
       ],
       "checkedAt": "2026-10-25T11:34:31Z",
@@ -22754,7 +24002,16 @@
           "quantityMeaning": "メーカー小売1パック",
           "manufacturerVariantId": "45746149621994",
           "condition": "メーカー小売1パック / 沖縄県・離島を除く通常配送。税込3,980円以上は送料無料、未満は税込600円。店舗受取の無料送料を通販へ流用しない。",
-          "priceVerified": true
+          "priceVerified": true,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         }
       ],
       "checkedAt": "2026-10-25T11:34:31Z",
@@ -22844,7 +24101,16 @@
           "quantityMeaning": "メーカー小売1パック",
           "manufacturerVariantId": "44868700209386",
           "condition": "メーカー小売1パック / 沖縄県・離島を除く通常配送。税込3,980円以上は送料無料、未満は税込600円。店舗受取の無料送料を通販へ流用しない。",
-          "priceVerified": true
+          "priceVerified": true,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         }
       ],
       "checkedAt": "2026-10-25T11:34:31Z",
@@ -22934,7 +24200,16 @@
           "quantityMeaning": "メーカー小売1パック",
           "manufacturerVariantId": "44323225436394",
           "condition": "メーカー小売1パック / 沖縄県・離島を除く通常配送。税込3,980円以上は送料無料、未満は税込600円。店舗受取の無料送料を通販へ流用しない。",
-          "priceVerified": true
+          "priceVerified": true,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         }
       ],
       "checkedAt": "2026-10-25T11:34:31Z",
@@ -23024,7 +24299,16 @@
           "quantityMeaning": "メーカー小売1パック",
           "manufacturerVariantId": "44323225403626",
           "condition": "メーカー小売1パック / 沖縄県・離島を除く通常配送。税込3,980円以上は送料無料、未満は税込600円。店舗受取の無料送料を通販へ流用しない。",
-          "priceVerified": true
+          "priceVerified": true,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         }
       ],
       "checkedAt": "2026-10-25T11:34:31Z",
@@ -23114,7 +24398,16 @@
           "quantityMeaning": "メーカー小売1パック",
           "manufacturerVariantId": "44323226943722",
           "condition": "メーカー小売1パック / 沖縄県・離島を除く通常配送。税込3,980円以上は送料無料、未満は税込600円。店舗受取の無料送料を通販へ流用しない。",
-          "priceVerified": true
+          "priceVerified": true,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         }
       ],
       "checkedAt": "2026-10-25T11:34:31Z",
@@ -23204,7 +24497,16 @@
           "quantityMeaning": "メーカー小売1パック",
           "manufacturerVariantId": "45018084802794",
           "condition": "メーカー小売1パック / 沖縄県・離島を除く通常配送。税込3,980円以上は送料無料、未満は税込600円。店舗受取の無料送料を通販へ流用しない。",
-          "priceVerified": true
+          "priceVerified": true,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         },
         {
           "id": "v11-426f2f524f58d13bf4",
@@ -23360,7 +24662,16 @@
           "quantityMeaning": "メーカー小売1パック",
           "manufacturerVariantId": "45018084868330",
           "condition": "メーカー小売1パック / 沖縄県・離島を除く通常配送。税込3,980円以上は送料無料、未満は税込600円。店舗受取の無料送料を通販へ流用しない。",
-          "priceVerified": true
+          "priceVerified": true,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         },
         {
           "id": "v11-aa6f5e9f5264a15c75",
@@ -23516,7 +24827,16 @@
           "quantityMeaning": "メーカー小売1パック",
           "manufacturerVariantId": "45018084835562",
           "condition": "メーカー小売1パック / 沖縄県・離島を除く通常配送。税込3,980円以上は送料無料、未満は税込600円。店舗受取の無料送料を通販へ流用しない。",
-          "priceVerified": true
+          "priceVerified": true,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         },
         {
           "id": "v11-631db7e2b026240c10",
@@ -23639,7 +24959,16 @@
           "quantityMeaning": "メーカー小売1パック",
           "manufacturerVariantId": "45510128959722",
           "condition": "メーカー小売1パック / 沖縄県・離島を除く通常配送。税込3,980円以上は送料無料、未満は税込600円。店舗受取の無料送料を通販へ流用しない。",
-          "priceVerified": true
+          "priceVerified": true,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         },
         {
           "id": "v11-5565eb041d8482ffa0",
@@ -23762,7 +25091,16 @@
           "quantityMeaning": "メーカー小売1パック",
           "manufacturerVariantId": "43823211643114",
           "condition": "メーカー小売1パック / 沖縄県・離島を除く通常配送。税込3,980円以上は送料無料、未満は税込600円。店舗受取の無料送料を通販へ流用しない。",
-          "priceVerified": true
+          "priceVerified": true,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         },
         {
           "id": "v11-85ff72e10241d44499",
@@ -23918,7 +25256,16 @@
           "quantityMeaning": "メーカー小売1パック",
           "manufacturerVariantId": "43823289434346",
           "condition": "メーカー小売1パック / 沖縄県・離島を除く通常配送。税込3,980円以上は送料無料、未満は税込600円。店舗受取の無料送料を通販へ流用しない。",
-          "priceVerified": true
+          "priceVerified": true,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         },
         {
           "id": "v11-5e466b85a8afbc7277",
@@ -24074,7 +25421,16 @@
           "quantityMeaning": "メーカー小売1パック",
           "manufacturerVariantId": "43823172223210",
           "condition": "メーカー小売1パック / 沖縄県・離島を除く通常配送。税込3,980円以上は送料無料、未満は税込600円。店舗受取の無料送料を通販へ流用しない。",
-          "priceVerified": true
+          "priceVerified": true,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         },
         {
           "id": "v11-40ef7d8353ddba48da",
@@ -24108,6 +25464,41 @@
           "region": "東京都宛の通常配送を基本として確認。全国一律表示はその旨を送料根拠に保持。",
           "condition": "",
           "priceVerified": true
+        },
+        {
+          "id": "v13-tsuruha-4901525956505",
+          "store": "ツルハ公式通販",
+          "seller": "ツルハ公式通販",
+          "purchaseChannel": "online",
+          "mode": "配送",
+          "price": 459,
+          "priceInclTax": 459,
+          "taxIncluded": true,
+          "shipping": null,
+          "quantity": 1,
+          "totalGrams": null,
+          "unitLabel": "個",
+          "source": "https://shop.tsuruha.co.jp/10016508.html",
+          "url": "https://shop.tsuruha.co.jp/10016508.html",
+          "checkedAt": "2026-10-25",
+          "sourceRetrievedAt": "2026-10-25T13:23:33.495672+00:00",
+          "sourceCrawledDate": "2026-10-25",
+          "priceFreshness": "source-crawled-today",
+          "verified": true,
+          "priceVerified": true,
+          "identityVerified": true,
+          "available": null,
+          "stockVerified": false,
+          "status": "在庫未確認",
+          "live": false,
+          "refreshEligible": true,
+          "verificationType": "一次通販の商品本文・JAN・税込表示",
+          "evidenceNote": "JANと350ml詰替を照合。税込459円、購入は2個まで。 価格は検索結果の金額から採用せず個別商品ページ本文を確認。取得本文のクロール日は2026年10月25日。在庫の現時点確認は未完了。",
+          "condition": "ポイント・クーポンは価格から差し引いていません。送料・在庫が未確定の欄は送料込みの順位に含めません。",
+          "itemCondition": "新品",
+          "conditionClass": "new",
+          "discountRate": 0,
+          "couponYen": 0
         }
       ],
       "checkedAt": "2026-10-25T11:34:31Z",
@@ -24125,7 +25516,15 @@
         "variantId": "43823172223210",
         "retailerSku": "4901525956505"
       },
-      "sourceName": "牛乳石鹸 商品案内"
+      "sourceName": "牛乳石鹸 商品案内",
+      "retailerResearch": [
+        {
+          "retailerId": "tsuruha",
+          "status": "price-confirmed-stock-unconfirmed",
+          "source": "https://shop.tsuruha.co.jp/10016508.html",
+          "checkedAt": "2026-10-25"
+        }
+      ]
     },
     {
       "id": "v11-4901525004251",
@@ -24197,7 +25596,16 @@
           "quantityMeaning": "メーカー小売1パック",
           "manufacturerVariantId": "43823171961066",
           "condition": "メーカー小売1パック / 沖縄県・離島を除く通常配送。税込3,980円以上は送料無料、未満は税込600円。店舗受取の無料送料を通販へ流用しない。",
-          "priceVerified": true
+          "priceVerified": true,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         },
         {
           "id": "v11-1f2f89a34f499d21c4",
@@ -24231,6 +25639,45 @@
           "region": "東京都宛の通常配送を基本として確認。全国一律表示はその旨を送料根拠に保持。",
           "condition": "",
           "priceVerified": true
+        },
+        {
+          "id": "v13-mrmax-4901525004251",
+          "store": "ミスターマックス",
+          "seller": "ミスターマックス",
+          "purchaseChannel": "online",
+          "mode": "配送",
+          "price": 383,
+          "priceInclTax": 383,
+          "taxIncluded": true,
+          "shipping": 660,
+          "quantity": 1,
+          "totalGrams": null,
+          "unitLabel": "個",
+          "source": "https://mrmax.jp/products/detail/11193",
+          "url": "https://mrmax.jp/products/detail/11193",
+          "checkedAt": "2026-10-25",
+          "sourceRetrievedAt": "2026-10-25T13:23:33.495672+00:00",
+          "sourceCrawledDate": "2026-10-25",
+          "priceFreshness": "source-crawled-today",
+          "verified": true,
+          "priceVerified": true,
+          "identityVerified": true,
+          "available": null,
+          "stockVerified": false,
+          "status": "在庫未確認",
+          "live": false,
+          "refreshEligible": true,
+          "verificationType": "一次通販の商品本文・JAN・税込表示",
+          "evidenceNote": "JANとしっとり350ml詰替を照合。税込383円、通常427円からの表示値下げ。通常配送は離島を除き660円、11000円以上で無料。在庫はログイン後のため未確認。受取方法で価格が変わる場合があるため通常配送金額の確定は購入時に確認。 価格は検索結果の金額から採用せず個別商品ページ本文を確認。取得本文のクロール日は2026年10月25日。在庫の現時点確認は未完了。",
+          "condition": "ポイント・クーポンは価格から差し引いていません。送料・在庫が未確定の欄は送料込みの順位に含めません。",
+          "itemCondition": "新品",
+          "conditionClass": "new",
+          "discountRate": 0,
+          "couponYen": 0,
+          "shippingSource": "https://mrmax.jp/products/detail/11193",
+          "shippingVerified": true,
+          "shippingRegion": "通常配送・離島を除く",
+          "freeShippingThreshold": 11000
         }
       ],
       "checkedAt": "2026-10-25T11:34:31Z",
@@ -24248,7 +25695,15 @@
         "variantId": "43823171961066",
         "retailerSku": "4901525004251"
       },
-      "sourceName": "牛乳石鹸 商品案内"
+      "sourceName": "牛乳石鹸 商品案内",
+      "retailerResearch": [
+        {
+          "retailerId": "mrmax",
+          "status": "price-confirmed-stock-unconfirmed",
+          "source": "https://mrmax.jp/products/detail/11193",
+          "checkedAt": "2026-10-25"
+        }
+      ]
     },
     {
       "id": "v11-4987107616036",
@@ -24320,7 +25775,16 @@
           "quantityMeaning": "メーカー小売1パック",
           "manufacturerVariantId": "43823281733866",
           "condition": "メーカー小売1パック / 沖縄県・離島を除く通常配送。税込3,980円以上は送料無料、未満は税込600円。店舗受取の無料送料を通販へ流用しない。",
-          "priceVerified": true
+          "priceVerified": true,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         },
         {
           "id": "v11-36e2e4666b71f5050a",
@@ -24354,6 +25818,41 @@
           "region": "東京都宛の通常配送を基本として確認。全国一律表示はその旨を送料根拠に保持。",
           "condition": "",
           "priceVerified": true
+        },
+        {
+          "id": "v13-matsukiyo-4987107616036",
+          "store": "マツキヨココカラ",
+          "seller": "マツキヨココカラ",
+          "purchaseChannel": "online",
+          "mode": "配送",
+          "price": 1097,
+          "priceInclTax": 1097,
+          "taxIncluded": true,
+          "shipping": null,
+          "quantity": 1,
+          "totalGrams": null,
+          "unitLabel": "個",
+          "source": "https://www.matsukiyococokara-online.com/store/catalog/product/view/id/4987107616036",
+          "url": "https://www.matsukiyococokara-online.com/store/catalog/product/view/id/4987107616036",
+          "checkedAt": "2026-10-25",
+          "sourceRetrievedAt": "2026-10-25T13:23:33.495672+00:00",
+          "sourceCrawledDate": "2026-10-25",
+          "priceFreshness": "source-crawled-today",
+          "verified": true,
+          "priceVerified": true,
+          "identityVerified": true,
+          "available": null,
+          "stockVerified": false,
+          "status": "在庫未確認",
+          "live": false,
+          "refreshEligible": true,
+          "verificationType": "一次通販の商品本文・JAN・税込表示",
+          "evidenceNote": "JANと350mlボトルを照合。税込1097円。 価格は検索結果の金額から採用せず個別商品ページ本文を確認。取得本文のクロール日は2026年10月25日。在庫の現時点確認は未完了。",
+          "condition": "ポイント・クーポンは価格から差し引いていません。送料・在庫が未確定の欄は送料込みの順位に含めません。",
+          "itemCondition": "新品",
+          "conditionClass": "new",
+          "discountRate": 0,
+          "couponYen": 0
         }
       ],
       "checkedAt": "2026-10-25T11:34:31Z",
@@ -24371,7 +25870,15 @@
         "variantId": "43823281733866",
         "retailerSku": "4987107616036"
       },
-      "sourceName": "第一三共ヘルスケア 商品案内"
+      "sourceName": "第一三共ヘルスケア 商品案内",
+      "retailerResearch": [
+        {
+          "retailerId": "matsukiyo",
+          "status": "price-confirmed-stock-unconfirmed",
+          "source": "https://www.matsukiyococokara-online.com/store/catalog/product/view/id/4987107616036",
+          "checkedAt": "2026-10-25"
+        }
+      ]
     },
     {
       "id": "v11-4987286414263",
@@ -24443,7 +25950,16 @@
           "quantityMeaning": "メーカー小売1パック",
           "manufacturerVariantId": "43823290253546",
           "condition": "メーカー小売1パック / 沖縄県・離島を除く通常配送。税込3,980円以上は送料無料、未満は税込600円。店舗受取の無料送料を通販へ流用しない。",
-          "priceVerified": true
+          "priceVerified": true,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         },
         {
           "id": "v11-b0e5f048286f609991",
@@ -24477,6 +25993,80 @@
           "region": "東京都宛の通常配送を基本として確認。全国一律表示はその旨を送料根拠に保持。",
           "condition": "",
           "priceVerified": true
+        },
+        {
+          "id": "v13-matsukiyo-4987286414263",
+          "store": "マツキヨココカラ",
+          "seller": "マツキヨココカラ",
+          "purchaseChannel": "online",
+          "mode": "配送",
+          "price": 767,
+          "priceInclTax": 767,
+          "taxIncluded": true,
+          "shipping": null,
+          "quantity": 1,
+          "totalGrams": null,
+          "unitLabel": "個",
+          "source": "https://www.matsukiyococokara-online.com/store/catalog/product/view/id/4987286414263",
+          "url": "https://www.matsukiyococokara-online.com/store/catalog/product/view/id/4987286414263",
+          "checkedAt": "2026-10-25",
+          "sourceRetrievedAt": "2026-10-25T13:23:33.495672+00:00",
+          "sourceCrawledDate": "2026-10-25",
+          "priceFreshness": "source-crawled-today",
+          "verified": true,
+          "priceVerified": true,
+          "identityVerified": true,
+          "available": null,
+          "stockVerified": false,
+          "status": "在庫未確認",
+          "live": false,
+          "refreshEligible": true,
+          "verificationType": "一次通販の商品本文・JAN・税込表示",
+          "evidenceNote": "JANと100gを照合。税込767円。表示の40円引き案内は適用条件を確定できないため差し引かない。 価格は検索結果の金額から採用せず個別商品ページ本文を確認。取得本文のクロール日は2026年10月25日。在庫の現時点確認は未完了。",
+          "condition": "ポイント・クーポンは価格から差し引いていません。送料・在庫が未確定の欄は送料込みの順位に含めません。",
+          "itemCondition": "新品",
+          "conditionClass": "new",
+          "discountRate": 0,
+          "couponYen": 0
+        },
+        {
+          "id": "v13-mrmax-4987286414263",
+          "store": "ミスターマックス",
+          "seller": "ミスターマックス",
+          "purchaseChannel": "online",
+          "mode": "配送",
+          "price": 746,
+          "priceInclTax": 746,
+          "taxIncluded": true,
+          "shipping": 660,
+          "quantity": 1,
+          "totalGrams": null,
+          "unitLabel": "個",
+          "source": "https://mrmax.jp/products/detail/53317",
+          "url": "https://mrmax.jp/products/detail/53317",
+          "checkedAt": "2026-10-25",
+          "sourceRetrievedAt": "2026-10-25T13:23:33.495672+00:00",
+          "sourceCrawledDate": "2026-10-25",
+          "priceFreshness": "source-crawled-today",
+          "verified": true,
+          "priceVerified": true,
+          "identityVerified": true,
+          "available": null,
+          "stockVerified": false,
+          "status": "在庫未確認",
+          "live": false,
+          "refreshEligible": true,
+          "verificationType": "一次通販の商品本文・JAN・税込表示",
+          "evidenceNote": "JANと100gを照合。税込746円。通常配送は離島を除き660円、11000円以上で無料。在庫はログイン後のため未確認。受取方法で価格が変わる場合があるため通常配送金額の確定は購入時に確認。 価格は検索結果の金額から採用せず個別商品ページ本文を確認。取得本文のクロール日は2026年10月25日。在庫の現時点確認は未完了。",
+          "condition": "ポイント・クーポンは価格から差し引いていません。送料・在庫が未確定の欄は送料込みの順位に含めません。",
+          "itemCondition": "新品",
+          "conditionClass": "new",
+          "discountRate": 0,
+          "couponYen": 0,
+          "shippingSource": "https://mrmax.jp/products/detail/53317",
+          "shippingVerified": true,
+          "shippingRegion": "通常配送・離島を除く",
+          "freeShippingThreshold": 11000
         }
       ],
       "checkedAt": "2026-10-25T11:34:31Z",
@@ -24494,7 +26084,21 @@
         "variantId": "43823290253546",
         "retailerSku": "4987286414263"
       },
-      "sourceName": "健栄製薬 商品案内"
+      "sourceName": "健栄製薬 商品案内",
+      "retailerResearch": [
+        {
+          "retailerId": "matsukiyo",
+          "status": "price-confirmed-stock-unconfirmed",
+          "source": "https://www.matsukiyococokara-online.com/store/catalog/product/view/id/4987286414263",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "retailerId": "mrmax",
+          "status": "price-confirmed-stock-unconfirmed",
+          "source": "https://mrmax.jp/products/detail/53317",
+          "checkedAt": "2026-10-25"
+        }
+      ]
     },
     {
       "id": "v11-4901730075404",
@@ -24566,7 +26170,16 @@
           "quantityMeaning": "メーカー小売1パック",
           "manufacturerVariantId": "43823234711786",
           "condition": "メーカー小売1パック / 沖縄県・離島を除く通常配送。税込3,980円以上は送料無料、未満は税込600円。店舗受取の無料送料を通販へ流用しない。",
-          "priceVerified": true
+          "priceVerified": true,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         },
         {
           "id": "v11-845f7b34d26f13827e",
@@ -24600,6 +26213,41 @@
           "region": "東京都宛の通常配送を基本として確認。全国一律表示はその旨を送料根拠に保持。",
           "condition": "",
           "priceVerified": true
+        },
+        {
+          "id": "v13-matsukiyo-4901730075404",
+          "store": "マツキヨココカラ",
+          "seller": "マツキヨココカラ",
+          "purchaseChannel": "online",
+          "mode": "配送",
+          "price": 900,
+          "priceInclTax": 900,
+          "taxIncluded": true,
+          "shipping": null,
+          "quantity": 1,
+          "totalGrams": null,
+          "unitLabel": "個",
+          "source": "https://www.matsukiyococokara-online.com/store/catalog/product/view/id/4901730075404",
+          "url": "https://www.matsukiyococokara-online.com/store/catalog/product/view/id/4901730075404",
+          "checkedAt": "2026-10-25",
+          "sourceRetrievedAt": "2026-10-25T13:23:33.495672+00:00",
+          "sourceCrawledDate": "2026-10-25",
+          "priceFreshness": "source-crawled-today",
+          "verified": true,
+          "priceVerified": true,
+          "identityVerified": true,
+          "available": null,
+          "stockVerified": false,
+          "status": "在庫未確認",
+          "live": false,
+          "refreshEligible": true,
+          "verificationType": "一次通販の商品本文・JAN・税込表示",
+          "evidenceNote": "JANと無香料300mlを照合。税込900円。表示の40円引き案内は適用条件を確定できないため差し引かない。 価格は検索結果の金額から採用せず個別商品ページ本文を確認。取得本文のクロール日は2026年10月25日。在庫の現時点確認は未完了。",
+          "condition": "ポイント・クーポンは価格から差し引いていません。送料・在庫が未確定の欄は送料込みの順位に含めません。",
+          "itemCondition": "新品",
+          "conditionClass": "new",
+          "discountRate": 0,
+          "couponYen": 0
         }
       ],
       "checkedAt": "2026-10-25T11:34:31Z",
@@ -24617,7 +26265,15 @@
         "variantId": "43823234711786",
         "retailerSku": "4901730075404"
       },
-      "sourceName": "ジョンソン 商品案内"
+      "sourceName": "ジョンソン 商品案内",
+      "retailerResearch": [
+        {
+          "retailerId": "matsukiyo",
+          "status": "price-confirmed-stock-unconfirmed",
+          "source": "https://www.matsukiyococokara-online.com/store/catalog/product/view/id/4901730075404",
+          "checkedAt": "2026-10-25"
+        }
+      ]
     },
     {
       "id": "v11-4901797033416",
@@ -24689,7 +26345,16 @@
           "quantityMeaning": "メーカー小売1パック",
           "manufacturerVariantId": "43823235367146",
           "condition": "メーカー小売1パック / 沖縄県・離島を除く通常配送。税込3,980円以上は送料無料、未満は税込600円。店舗受取の無料送料を通販へ流用しない。",
-          "priceVerified": true
+          "priceVerified": true,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         },
         {
           "id": "v11-804fb581803aedc0aa",
@@ -24812,7 +26477,16 @@
           "quantityMeaning": "メーカー小売1パック",
           "manufacturerVariantId": "43823174811882",
           "condition": "メーカー小売1パック / 沖縄県・離島を除く通常配送。税込3,980円以上は送料無料、未満は税込600円。店舗受取の無料送料を通販へ流用しない。",
-          "priceVerified": true
+          "priceVerified": true,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         },
         {
           "id": "v11-cabedcbdb263df02de",
@@ -24935,7 +26609,16 @@
           "quantityMeaning": "メーカー小売1パック",
           "manufacturerVariantId": "44812107153642",
           "condition": "メーカー小売1パック / 沖縄県・離島を除く通常配送。税込3,980円以上は送料無料、未満は税込600円。店舗受取の無料送料を通販へ流用しない。",
-          "priceVerified": true
+          "priceVerified": true,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         },
         {
           "id": "v11-474c85c286bbedb117",
@@ -25058,7 +26741,16 @@
           "quantityMeaning": "メーカー小売1パック",
           "manufacturerVariantId": "43823228879082",
           "condition": "メーカー小売1パック / 沖縄県・離島を除く通常配送。税込3,980円以上は送料無料、未満は税込600円。店舗受取の無料送料を通販へ流用しない。",
-          "priceVerified": true
+          "priceVerified": true,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         }
       ],
       "checkedAt": "2026-10-25T11:34:11Z",
@@ -25148,7 +26840,16 @@
           "quantityMeaning": "メーカー小売1パック",
           "manufacturerVariantId": "46058327998698",
           "condition": "メーカー小売1パック / 沖縄県・離島を除く通常配送。税込3,980円以上は送料無料、未満は税込600円。店舗受取の無料送料を通販へ流用しない。",
-          "priceVerified": true
+          "priceVerified": true,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         },
         {
           "id": "v11-cc26ca338bb6136b69",
@@ -25271,7 +26972,16 @@
           "quantityMeaning": "メーカー小売1パック",
           "manufacturerVariantId": "43989633630442",
           "condition": "メーカー小売1パック / 沖縄県・離島を除く通常配送。税込3,980円以上は送料無料、未満は税込600円。店舗受取の無料送料を通販へ流用しない。",
-          "priceVerified": true
+          "priceVerified": true,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         }
       ],
       "checkedAt": "2026-10-25T11:34:31Z",
@@ -25363,7 +27073,16 @@
           "quantityMeaning": "メーカー小売1パック",
           "manufacturerVariantId": "43823281963242",
           "condition": "メーカー小売1パック / 沖縄県・離島を除く通常配送。税込3,980円以上は送料無料、未満は税込600円。店舗受取の無料送料を通販へ流用しない。",
-          "priceVerified": true
+          "priceVerified": true,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         },
         {
           "id": "v11-d35a3108222d001abf",
@@ -25486,7 +27205,16 @@
           "quantityMeaning": "メーカー小売1パック",
           "manufacturerVariantId": "44686982283498",
           "condition": "メーカー小売1パック / 沖縄県・離島を除く通常配送。税込3,980円以上は送料無料、未満は税込600円。店舗受取の無料送料を通販へ流用しない。",
-          "priceVerified": true
+          "priceVerified": true,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         }
       ],
       "checkedAt": "2026-10-25T11:34:31Z",
@@ -25576,7 +27304,16 @@
           "quantityMeaning": "メーカー小売1パック",
           "manufacturerVariantId": "44849861296362",
           "condition": "メーカー小売1パック / 沖縄県・離島を除く通常配送。税込3,980円以上は送料無料、未満は税込600円。店舗受取の無料送料を通販へ流用しない。",
-          "priceVerified": true
+          "priceVerified": true,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         },
         {
           "id": "v11-5be8452bdb5b8a00cd",
@@ -25699,7 +27436,16 @@
           "quantityMeaning": "メーカー小売1パック",
           "manufacturerVariantId": "44886261596394",
           "condition": "メーカー小売1パック / 沖縄県・離島を除く通常配送。税込3,980円以上は送料無料、未満は税込600円。店舗受取の無料送料を通販へ流用しない。",
-          "priceVerified": true
+          "priceVerified": true,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         }
       ],
       "checkedAt": "2026-10-25T11:34:11Z",
@@ -25789,7 +27535,16 @@
           "quantityMeaning": "メーカー小売1パック",
           "manufacturerVariantId": "44886261924074",
           "condition": "メーカー小売1パック / 沖縄県・離島を除く通常配送。税込3,980円以上は送料無料、未満は税込600円。店舗受取の無料送料を通販へ流用しない。",
-          "priceVerified": true
+          "priceVerified": true,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         }
       ],
       "checkedAt": "2026-10-25T11:34:31Z",
@@ -25878,7 +27633,16 @@
           "quantityMeaning": "メーカー小売1パック",
           "manufacturerVariantId": "43823281635562",
           "condition": "メーカー小売1パック / 沖縄県・離島を除く通常配送。税込3,980円以上は送料無料、未満は税込600円。店舗受取の無料送料を通販へ流用しない。",
-          "priceVerified": true
+          "priceVerified": true,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         },
         {
           "id": "v11-f702a7d5b6b6dba430",
@@ -26034,7 +27798,16 @@
           "quantityMeaning": "メーカー小売1パック",
           "manufacturerVariantId": "43823348252906",
           "condition": "メーカー小売1パック / 沖縄県・離島を除く通常配送。税込3,980円以上は送料無料、未満は税込600円。店舗受取の無料送料を通販へ流用しない。",
-          "priceVerified": true
+          "priceVerified": true,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         }
       ],
       "checkedAt": "2026-10-25T11:34:31Z",
@@ -26124,7 +27897,16 @@
           "quantityMeaning": "メーカー小売1パック",
           "manufacturerVariantId": "43823260991722",
           "condition": "メーカー小売1パック / 沖縄県・離島を除く通常配送。税込3,980円以上は送料無料、未満は税込600円。店舗受取の無料送料を通販へ流用しない。",
-          "priceVerified": true
+          "priceVerified": true,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         }
       ],
       "checkedAt": "2026-10-25T11:34:11Z",
@@ -26214,7 +27996,16 @@
           "quantityMeaning": "メーカー小売1パック",
           "manufacturerVariantId": "43823266922730",
           "condition": "メーカー小売1パック / 沖縄県・離島を除く通常配送。税込3,980円以上は送料無料、未満は税込600円。店舗受取の無料送料を通販へ流用しない。",
-          "priceVerified": true
+          "priceVerified": true,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         }
       ],
       "checkedAt": "2026-10-25T11:34:11Z",
@@ -26304,7 +28095,16 @@
           "quantityMeaning": "メーカー小売1パック",
           "manufacturerVariantId": "43823273967850",
           "condition": "メーカー小売1パック / 沖縄県・離島を除く通常配送。税込3,980円以上は送料無料、未満は税込600円。店舗受取の無料送料を通販へ流用しない。",
-          "priceVerified": true
+          "priceVerified": true,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         },
         {
           "id": "v11-706aec4748fd36d023",
@@ -26427,7 +28227,16 @@
           "quantityMeaning": "メーカー小売1パック",
           "manufacturerVariantId": "44812105646314",
           "condition": "メーカー小売1パック / 沖縄県・離島を除く通常配送。税込3,980円以上は送料無料、未満は税込600円。店舗受取の無料送料を通販へ流用しない。",
-          "priceVerified": true
+          "priceVerified": true,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         }
       ],
       "checkedAt": "2026-10-25T11:34:31Z",
@@ -26517,7 +28326,16 @@
           "quantityMeaning": "メーカー小売1パック",
           "manufacturerVariantId": "44787062735082",
           "condition": "メーカー小売1パック / 沖縄県・離島を除く通常配送。税込3,980円以上は送料無料、未満は税込600円。店舗受取の無料送料を通販へ流用しない。",
-          "priceVerified": true
+          "priceVerified": true,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         }
       ],
       "checkedAt": "2026-10-25T11:34:31Z",
@@ -26607,7 +28425,16 @@
           "quantityMeaning": "メーカー小売1パック",
           "manufacturerVariantId": "44176026206442",
           "condition": "メーカー小売1パック / 沖縄県・離島を除く通常配送。税込3,980円以上は送料無料、未満は税込600円。店舗受取の無料送料を通販へ流用しない。",
-          "priceVerified": true
+          "priceVerified": true,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         }
       ],
       "checkedAt": "2026-10-25T11:34:31Z",
@@ -26697,7 +28524,16 @@
           "quantityMeaning": "メーカー小売1パック",
           "manufacturerVariantId": "45061828641002",
           "condition": "メーカー小売1パック / 沖縄県・離島を除く通常配送。税込3,980円以上は送料無料、未満は税込600円。店舗受取の無料送料を通販へ流用しない。",
-          "priceVerified": true
+          "priceVerified": true,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         }
       ],
       "checkedAt": "2026-10-25T11:34:31Z",
@@ -26787,7 +28623,16 @@
           "quantityMeaning": "メーカー小売1パック",
           "manufacturerVariantId": "45934974566634",
           "condition": "メーカー小売1パック / 沖縄県・離島を除く通常配送。税込3,980円以上は送料無料、未満は税込600円。店舗受取の無料送料を通販へ流用しない。",
-          "priceVerified": true
+          "priceVerified": true,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         }
       ],
       "checkedAt": "2026-10-25T11:34:11Z",
@@ -26882,7 +28727,86 @@
           "manufacturerVariantId": "45752481808618",
           "condition": "メーカー小売1パック / 沖縄県・離島を除く通常配送。税込3,980円以上は送料無料、未満は税込600円。店舗受取の無料送料を通販へ流用しない。",
           "totalGrams": 108,
-          "priceVerified": true
+          "priceVerified": true,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
+        },
+        {
+          "id": "v13-matsukiyo-4902705129535",
+          "store": "マツキヨココカラ",
+          "seller": "マツキヨココカラ",
+          "purchaseChannel": "online",
+          "mode": "配送",
+          "price": 570,
+          "priceInclTax": 570,
+          "taxIncluded": true,
+          "shipping": null,
+          "quantity": 1,
+          "totalGrams": 108,
+          "unitLabel": "100g",
+          "source": "https://www.matsukiyococokara-online.com/store/catalog/product/view/id/4902705129535",
+          "url": "https://www.matsukiyococokara-online.com/store/catalog/product/view/id/4902705129535",
+          "checkedAt": "2026-10-25",
+          "sourceRetrievedAt": "2026-10-25T13:23:33.495672+00:00",
+          "sourceCrawledDate": "2026-10-25",
+          "priceFreshness": "source-crawled-today",
+          "verified": true,
+          "priceVerified": true,
+          "identityVerified": true,
+          "available": null,
+          "stockVerified": false,
+          "status": "在庫未確認",
+          "live": false,
+          "refreshEligible": true,
+          "verificationType": "一次通販の商品本文・JAN・税込表示",
+          "evidenceNote": "JANと108g/27g×4袋を照合。税率8%の税込570円。掲載ページは本日取得の本文。 価格は検索結果の金額から採用せず個別商品ページ本文を確認。取得本文のクロール日は2026年10月25日。在庫の現時点確認は未完了。",
+          "condition": "ポイント・クーポンは価格から差し引いていません。送料・在庫が未確定の欄は送料込みの順位に含めません。",
+          "itemCondition": "新品",
+          "conditionClass": "new",
+          "discountRate": 0,
+          "couponYen": 0
+        },
+        {
+          "id": "v13-create-sd-4902705129535",
+          "store": "クリエイトSD",
+          "seller": "クリエイトSD",
+          "purchaseChannel": "online",
+          "mode": "配送",
+          "price": 516,
+          "priceInclTax": 516,
+          "taxIncluded": true,
+          "shipping": null,
+          "quantity": 1,
+          "totalGrams": 108,
+          "unitLabel": "100g",
+          "source": "https://netshop.create-sd.co.jp/shop/g/g4902705129535/",
+          "url": "https://netshop.create-sd.co.jp/shop/g/g4902705129535/",
+          "checkedAt": "2026-10-25",
+          "sourceRetrievedAt": "2026-10-25T13:23:33.495672+00:00",
+          "sourceCrawledDate": "2026-10-25",
+          "priceFreshness": "source-crawled-today",
+          "verified": true,
+          "priceVerified": true,
+          "identityVerified": true,
+          "available": null,
+          "stockVerified": false,
+          "status": "在庫未確認",
+          "live": false,
+          "refreshEligible": true,
+          "verificationType": "一次通販の商品本文・JAN・税込表示",
+          "evidenceNote": "JANと108g/4袋を照合。税込516円。在庫○表示は取得本文の状態。 価格は検索結果の金額から採用せず個別商品ページ本文を確認。取得本文のクロール日は2026年10月25日。在庫の現時点確認は未完了。",
+          "condition": "ポイント・クーポンは価格から差し引いていません。送料・在庫が未確定の欄は送料込みの順位に含めません。",
+          "itemCondition": "新品",
+          "conditionClass": "new",
+          "discountRate": 0,
+          "couponYen": 0
         }
       ],
       "checkedAt": "2026-10-25T11:34:11Z",
@@ -26904,7 +28828,21 @@
       "subCategory": "キューブ状ミルク",
       "formulation": "solid",
       "packUnit": "個",
-      "sourceName": "明治 商品案内"
+      "sourceName": "明治 商品案内",
+      "retailerResearch": [
+        {
+          "retailerId": "matsukiyo",
+          "status": "price-confirmed-stock-unconfirmed",
+          "source": "https://www.matsukiyococokara-online.com/store/catalog/product/view/id/4902705129535",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "retailerId": "create-sd",
+          "status": "price-confirmed-stock-unconfirmed",
+          "source": "https://netshop.create-sd.co.jp/shop/g/g4902705129535/",
+          "checkedAt": "2026-10-25"
+        }
+      ]
     },
     {
       "id": "v11-4901147309895",
@@ -26976,7 +28914,16 @@
           "quantityMeaning": "メーカー小売1パック",
           "manufacturerVariantId": "44788438958314",
           "condition": "メーカー小売1パック / 沖縄県・離島を除く通常配送。税込3,980円以上は送料無料、未満は税込600円。店舗受取の無料送料を通販へ流用しない。",
-          "priceVerified": true
+          "priceVerified": true,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         }
       ],
       "checkedAt": "2026-10-25T11:34:11Z",
@@ -27066,7 +29013,16 @@
           "quantityMeaning": "メーカー小売1パック",
           "manufacturerVariantId": "44176018473194",
           "condition": "メーカー小売1パック / 沖縄県・離島を除く通常配送。税込3,980円以上は送料無料、未満は税込600円。店舗受取の無料送料を通販へ流用しない。",
-          "priceVerified": true
+          "priceVerified": true,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         }
       ],
       "checkedAt": "2026-10-25T11:34:11Z",
@@ -27156,7 +29112,16 @@
           "quantityMeaning": "メーカー小売1パック",
           "manufacturerVariantId": "45020865331434",
           "condition": "メーカー小売1パック / 沖縄県・離島を除く通常配送。税込3,980円以上は送料無料、未満は税込600円。店舗受取の無料送料を通販へ流用しない。",
-          "priceVerified": true
+          "priceVerified": true,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         }
       ],
       "checkedAt": "2026-10-25T11:34:11Z",
@@ -27246,7 +29211,16 @@
           "quantityMeaning": "メーカー小売1パック",
           "manufacturerVariantId": "44252115009770",
           "condition": "メーカー小売1パック / 沖縄県・離島を除く通常配送。税込3,980円以上は送料無料、未満は税込600円。店舗受取の無料送料を通販へ流用しない。",
-          "priceVerified": true
+          "priceVerified": true,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         },
         {
           "id": "v11-6663598fb3d9c871c3",
@@ -27370,7 +29344,16 @@
           "quantityMeaning": "メーカー小売1パック",
           "manufacturerVariantId": "44252115206378",
           "condition": "メーカー小売1パック / 沖縄県・離島を除く通常配送。税込3,980円以上は送料無料、未満は税込600円。店舗受取の無料送料を通販へ流用しない。",
-          "priceVerified": true
+          "priceVerified": true,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         },
         {
           "id": "v11-6d0406535811d65439",
@@ -27494,7 +29477,16 @@
           "quantityMeaning": "メーカー小売1パック",
           "manufacturerVariantId": "45710399308010",
           "condition": "メーカー小売1パック / 沖縄県・離島を除く通常配送。税込3,980円以上は送料無料、未満は税込600円。店舗受取の無料送料を通販へ流用しない。",
-          "priceVerified": true
+          "priceVerified": true,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         }
       ],
       "checkedAt": "2026-10-25T11:34:11Z",
@@ -27584,7 +29576,16 @@
           "quantityMeaning": "メーカー小売1パック",
           "manufacturerVariantId": "44203179737322",
           "condition": "メーカー小売1パック / 沖縄県・離島を除く通常配送。税込3,980円以上は送料無料、未満は税込600円。店舗受取の無料送料を通販へ流用しない。",
-          "priceVerified": true
+          "priceVerified": true,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         },
         {
           "id": "v11-e18f59dd980bfc7c72",
@@ -27707,7 +29708,16 @@
           "quantityMeaning": "メーカー小売1パック",
           "manufacturerVariantId": "44203179278570",
           "condition": "メーカー小売1パック / 沖縄県・離島を除く通常配送。税込3,980円以上は送料無料、未満は税込600円。店舗受取の無料送料を通販へ流用しない。",
-          "priceVerified": true
+          "priceVerified": true,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         }
       ],
       "checkedAt": "2026-10-25T11:34:11Z",
@@ -27797,7 +29807,16 @@
           "quantityMeaning": "メーカー小売1パック",
           "manufacturerVariantId": "44203179999466",
           "condition": "メーカー小売1パック / 沖縄県・離島を除く通常配送。税込3,980円以上は送料無料、未満は税込600円。店舗受取の無料送料を通販へ流用しない。",
-          "priceVerified": true
+          "priceVerified": true,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         }
       ],
       "checkedAt": "2026-10-25T11:34:11Z",
@@ -27887,7 +29906,16 @@
           "quantityMeaning": "メーカー小売1パック",
           "manufacturerVariantId": "44203179933930",
           "condition": "メーカー小売1パック / 沖縄県・離島を除く通常配送。税込3,980円以上は送料無料、未満は税込600円。店舗受取の無料送料を通販へ流用しない。",
-          "priceVerified": true
+          "priceVerified": true,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         }
       ],
       "checkedAt": "2026-10-25T11:34:11Z",
@@ -27977,7 +30005,16 @@
           "quantityMeaning": "メーカー小売1パック",
           "manufacturerVariantId": "44203179802858",
           "condition": "メーカー小売1パック / 沖縄県・離島を除く通常配送。税込3,980円以上は送料無料、未満は税込600円。店舗受取の無料送料を通販へ流用しない。",
-          "priceVerified": true
+          "priceVerified": true,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         }
       ],
       "checkedAt": "2026-10-25T11:34:11Z",
@@ -28067,7 +30104,16 @@
           "quantityMeaning": "メーカー小売1パック",
           "manufacturerVariantId": "44203179868394",
           "condition": "メーカー小売1パック / 沖縄県・離島を除く通常配送。税込3,980円以上は送料無料、未満は税込600円。店舗受取の無料送料を通販へ流用しない。",
-          "priceVerified": true
+          "priceVerified": true,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         }
       ],
       "checkedAt": "2026-10-25T11:34:11Z",
@@ -28157,7 +30203,16 @@
           "quantityMeaning": "メーカー小売1パック",
           "manufacturerVariantId": "43823212298474",
           "condition": "メーカー小売1パック / 沖縄県・離島を除く通常配送。税込3,980円以上は送料無料、未満は税込600円。店舗受取の無料送料を通販へ流用しない。",
-          "priceVerified": true
+          "priceVerified": true,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         }
       ],
       "checkedAt": "2026-10-25T11:34:11Z",
@@ -28247,7 +30302,16 @@
           "quantityMeaning": "メーカー小売1パック",
           "manufacturerVariantId": "43823212232938",
           "condition": "メーカー小売1パック / 沖縄県・離島を除く通常配送。税込3,980円以上は送料無料、未満は税込600円。店舗受取の無料送料を通販へ流用しない。",
-          "priceVerified": true
+          "priceVerified": true,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         }
       ],
       "checkedAt": "2026-10-25T11:34:11Z",
@@ -28337,7 +30401,16 @@
           "quantityMeaning": "メーカー小売1パック",
           "manufacturerVariantId": "43823209840874",
           "condition": "メーカー小売1パック / 沖縄県・離島を除く通常配送。税込3,980円以上は送料無料、未満は税込600円。店舗受取の無料送料を通販へ流用しない。",
-          "priceVerified": true
+          "priceVerified": true,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         }
       ],
       "checkedAt": "2026-10-25T11:34:11Z",
@@ -28427,7 +30500,16 @@
           "quantityMeaning": "メーカー小売1パック",
           "manufacturerVariantId": "43823212462314",
           "condition": "メーカー小売1パック / 沖縄県・離島を除く通常配送。税込3,980円以上は送料無料、未満は税込600円。店舗受取の無料送料を通販へ流用しない。",
-          "priceVerified": true
+          "priceVerified": true,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         },
         {
           "id": "v11-5274eab3a9a92d9d43",
@@ -28550,7 +30632,16 @@
           "quantityMeaning": "メーカー小売1パック",
           "manufacturerVariantId": "43823212527850",
           "condition": "メーカー小売1パック / 沖縄県・離島を除く通常配送。税込3,980円以上は送料無料、未満は税込600円。店舗受取の無料送料を通販へ流用しない。",
-          "priceVerified": true
+          "priceVerified": true,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         }
       ],
       "checkedAt": "2026-10-25T11:34:11Z",
@@ -28640,7 +30731,16 @@
           "quantityMeaning": "メーカー小売1パック",
           "manufacturerVariantId": "43823213150442",
           "condition": "メーカー小売1パック / 沖縄県・離島を除く通常配送。税込3,980円以上は送料無料、未満は税込600円。店舗受取の無料送料を通販へ流用しない。",
-          "priceVerified": true
+          "priceVerified": true,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         }
       ],
       "checkedAt": "2026-10-25T11:34:11Z",
@@ -28730,7 +30830,16 @@
           "quantityMeaning": "メーカー小売1パック",
           "manufacturerVariantId": "43823213215978",
           "condition": "メーカー小売1パック / 沖縄県・離島を除く通常配送。税込3,980円以上は送料無料、未満は税込600円。店舗受取の無料送料を通販へ流用しない。",
-          "priceVerified": true
+          "priceVerified": true,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         }
       ],
       "checkedAt": "2026-10-25T11:34:11Z",
@@ -28820,7 +30929,16 @@
           "quantityMeaning": "メーカー小売1パック",
           "manufacturerVariantId": "43823213314282",
           "condition": "メーカー小売1パック / 沖縄県・離島を除く通常配送。税込3,980円以上は送料無料、未満は税込600円。店舗受取の無料送料を通販へ流用しない。",
-          "priceVerified": true
+          "priceVerified": true,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         }
       ],
       "checkedAt": "2026-10-25T11:34:11Z",
@@ -28910,7 +31028,16 @@
           "quantityMeaning": "メーカー小売1パック",
           "manufacturerVariantId": "45843983630570",
           "condition": "メーカー小売1パック / 沖縄県・離島を除く通常配送。税込3,980円以上は送料無料、未満は税込600円。店舗受取の無料送料を通販へ流用しない。",
-          "priceVerified": true
+          "priceVerified": true,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         },
         {
           "id": "v11-39f3d9947436d818b3",
@@ -29033,7 +31160,16 @@
           "quantityMeaning": "メーカー小売1パック",
           "manufacturerVariantId": "45843983827178",
           "condition": "メーカー小売1パック / 沖縄県・離島を除く通常配送。税込3,980円以上は送料無料、未満は税込600円。店舗受取の無料送料を通販へ流用しない。",
-          "priceVerified": true
+          "priceVerified": true,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         }
       ],
       "checkedAt": "2026-10-25T11:34:11Z",
@@ -29123,7 +31259,16 @@
           "quantityMeaning": "メーカー小売1パック",
           "manufacturerVariantId": "45843983532266",
           "condition": "メーカー小売1パック / 沖縄県・離島を除く通常配送。税込3,980円以上は送料無料、未満は税込600円。店舗受取の無料送料を通販へ流用しない。",
-          "priceVerified": true
+          "priceVerified": true,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         }
       ],
       "checkedAt": "2026-10-25T11:34:11Z",
@@ -29213,7 +31358,16 @@
           "quantityMeaning": "メーカー小売1パック",
           "manufacturerVariantId": "45843984089322",
           "condition": "メーカー小売1パック / 沖縄県・離島を除く通常配送。税込3,980円以上は送料無料、未満は税込600円。店舗受取の無料送料を通販へ流用しない。",
-          "priceVerified": true
+          "priceVerified": true,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         }
       ],
       "checkedAt": "2026-10-25T11:34:11Z",
@@ -29303,7 +31457,16 @@
           "quantityMeaning": "メーカー小売1パック",
           "manufacturerVariantId": "45843984285930",
           "condition": "メーカー小売1パック / 沖縄県・離島を除く通常配送。税込3,980円以上は送料無料、未満は税込600円。店舗受取の無料送料を通販へ流用しない。",
-          "priceVerified": true
+          "priceVerified": true,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         },
         {
           "id": "v11-dfc2e67ce3a549a12b",
@@ -29426,7 +31589,16 @@
           "quantityMeaning": "メーカー小売1パック",
           "manufacturerVariantId": "45843981074666",
           "condition": "メーカー小売1パック / 沖縄県・離島を除く通常配送。税込3,980円以上は送料無料、未満は税込600円。店舗受取の無料送料を通販へ流用しない。",
-          "priceVerified": true
+          "priceVerified": true,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         }
       ],
       "checkedAt": "2026-10-25T11:34:11Z",
@@ -29516,7 +31688,16 @@
           "quantityMeaning": "メーカー小売1パック",
           "manufacturerVariantId": "45843983433962",
           "condition": "メーカー小売1パック / 沖縄県・離島を除く通常配送。税込3,980円以上は送料無料、未満は税込600円。店舗受取の無料送料を通販へ流用しない。",
-          "priceVerified": true
+          "priceVerified": true,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         }
       ],
       "checkedAt": "2026-10-25T11:34:11Z",
@@ -29606,7 +31787,16 @@
           "quantityMeaning": "メーカー小売1パック",
           "manufacturerVariantId": "45843982057706",
           "condition": "メーカー小売1パック / 沖縄県・離島を除く通常配送。税込3,980円以上は送料無料、未満は税込600円。店舗受取の無料送料を通販へ流用しない。",
-          "priceVerified": true
+          "priceVerified": true,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         }
       ],
       "checkedAt": "2026-10-25T11:34:11Z",
@@ -29696,7 +31886,16 @@
           "quantityMeaning": "メーカー小売1パック",
           "manufacturerVariantId": "45843980714218",
           "condition": "メーカー小売1パック / 沖縄県・離島を除く通常配送。税込3,980円以上は送料無料、未満は税込600円。店舗受取の無料送料を通販へ流用しない。",
-          "priceVerified": true
+          "priceVerified": true,
+          "shippingRule": {
+            "kind": "threshold",
+            "fee": 600,
+            "freeFrom": 3980,
+            "verified": true,
+            "source": "https://sundrug-online.com/products/4987244195869",
+            "checkedAt": "2026-10-25T14:09:51.588626Z",
+            "description": "税込3980円以上で通常送料0円、未満600円。沖縄県・離島を除く。"
+          }
         }
       ],
       "checkedAt": "2026-10-25T11:34:11Z",
@@ -54633,7 +56832,15 @@
     "marketplaceOffers": 9,
     "presentation": "online-and-marketplace",
     "commonRetailers": 18,
-    "brandCount": 64
+    "brandCount": 64,
+    "currentComparison": {
+      "checkedAt": "2026-10-25T13:49:34.676Z",
+      "products": 528,
+      "onlineRetailers": 18,
+      "storeSimulationChains": 1,
+      "productsWithComparableQuantityGroups": 85,
+      "quantityGroups": 559
+    }
   },
   "schemaNotes": {
     "price": "税込の注文金額。値引き後・送料別。",
@@ -54644,7 +56851,7 @@
     "unitPrice": "送料を含む100g/枚/本/個などの価格。異なる商品間の安さの判定には使わない。"
   },
   "marketplaceRefresh": {
-    "attemptedAt": "2026-10-25T13:02:50.232Z",
+    "attemptedAt": "2026-10-25T13:23:11.519Z",
     "attempted": 9,
     "updated": 9,
     "sold": 0,
@@ -54694,7 +56901,13 @@
     "newPrimaryOffers": 37,
     "brandsInBatch": 14,
     "retailersInBatch": 10,
-    "matchRule": "JAN・型番・容量・入数を照合。未知の送料はnull。"
+    "matchRule": "JAN・型番・容量・入数を照合。未知の送料はnull。",
+    "latestAddition": {
+      "checkedAt": "2026-10-25",
+      "products": 6,
+      "quotes": 8,
+      "stockNote": "追加分は在庫未確認のため送料込みの順位には含めない。"
+    }
   },
   "coverageNotes": "店頭価格の比較は現在扱わず、通販とフリマを表示。各商品に共通の通販検索先を付けるが、検索結果を確認済みの価格として扱わない。",
   "majorEcResearch": {
@@ -54745,12 +56958,69 @@
     "policy": "個別販売ページで実在・規格・価格を確認。色違いだけで増やさず、非ピジョンのカテゴリとメーカーを広げる。対象年齢は原典のあるものだけ。"
   },
   "lastPriceRefresh": {
-    "attemptedAt": "2026-10-25T13:01:25.153Z",
-    "requested": 10,
-    "success": 0,
-    "failed": 19,
-    "maxRequests": 20,
-    "scheduledPages": 19,
-    "remainingPages": 0
+    "attemptedAt": "2026-10-25T13:21:25.792Z",
+    "requested": 13,
+    "success": 1,
+    "failed": 22,
+    "maxRequests": 40,
+    "scheduledPages": 23,
+    "remainingPages": 0,
+    "skipped": [
+      {
+        "productId": "haihai-810",
+        "offerId": "au_snd_pack",
+        "reason": "unsupported_or_non_product_url"
+      },
+      {
+        "productId": "haihai-810",
+        "offerId": "ak_pack",
+        "reason": "unsupported_or_non_product_url"
+      }
+    ]
+  },
+  "comparisonPolicy": {
+    "version": "same-quantity-v1",
+    "defaultPurchase": "regular",
+    "defaultOrder": "total-including-shipping",
+    "sameProductSpecification": true,
+    "sameQuantityOnly": true,
+    "cheapestPerPurchaseDestination": true,
+    "keepEqualPriceDestinationsSeparate": true,
+    "showBulkSeparately": true,
+    "primeResearchPriority": true,
+    "unknownPrimeIsNotConfirmed": true,
+    "sugiStoreSimulationOnly": true,
+    "simulationsNeverEnterVerifiedRanking": true
+  },
+  "comparisonAudit": {
+    "checkedAt": "2026-10-25T14:09:51.588626Z",
+    "products": 528,
+    "offers": 939,
+    "checks": [
+      "同じ容量・枚数・色・型番で比較",
+      "商品代と通常送料の合計で順位を計算",
+      "単品の複数買いとセット売りを比較",
+      "送料条件の根拠がある場合だけ購入点数を増やして計算",
+      "在庫不明・期限切れ・取得失敗は順位から除外",
+      "Amazonぴゅあの未確認の通常購入・定期便額を除外",
+      "Amazonはプライム会員を前提とし、非会員の通常送料460〜500円と3500円以上の無料条件を併記"
+    ],
+    "limits": [
+      "掲載先の全販売店を網羅した最安保証ではない",
+      "全商品の現在価格を今回の巡回だけで再取得したものではない",
+      "スギは通常価格から割引を計算した仮額で、確認済みの店頭価格ではない"
+    ]
+  },
+  "amazonDeliveryPolicy": {
+    "checkedAt": "2026-10-25T14:16:04.393734Z",
+    "default": "prime-member",
+    "primeShipping": 0,
+    "nonPrimeFreeFrom": 3500,
+    "nonPrimeHonshuShikoku": 460,
+    "nonPrimeHokkaidoKyushuOkinawaIslands": 500,
+    "source": "https://www.amazon.co.jp/gp/help/customer/display.html?nodeId=201911210",
+    "primeSource": "https://www.amazon.co.jp/gp/help/customer/display.html?nodeId=G6LDPN7YJHYKH2J6",
+    "scope": "Amazon発送の通常配送。出品者発送の送料・対象外の商品や配送方法は別。",
+    "note": "最低表示の他出品者と、選択中の購入欄の発送元・Prime対象を混同しない。"
   }
 }
