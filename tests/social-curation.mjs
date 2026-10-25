@@ -50,6 +50,31 @@ test('additional X posts need explicit usefulness and exact canonical identity',
   assert.equal(long.summary.length, 180); assert.equal(long.text, undefined); assert.equal(long.children, undefined);
   assert.equal(applySocialCuration(doc({additionalPosts: [{...raw, parentingUseful: true}]}), [], []).topics.length, 1);
 });
+test('manually curated X posts receive fresh collection reactions without losing the editorial decision', () => {
+  const additional = {...raw, parentingUseful: true, collectedAt: undefined, checkedAt: '2026-10-25', tags: ['食事・栄養'], ageGroups: ['3〜5歳'], reason: '給食の相談を家庭で確認できる'};
+  const incoming = {...raw, collectedAt: '2026-10-25T02:00:00Z', recordedMetrics: {likes: 900, views: 5000}};
+  const result = applySocialCuration(doc({additionalPosts: [additional]}), [incoming], []).topics;
+  assert.equal(result.length, 1); assert.equal(result[0].recordedMetrics.likes, 900);
+  assert.equal(result[0].collectedAt, incoming.collectedAt); assert.equal(result[0].reviewStatus, 'approved');
+  assert.deepEqual(result[0].tags, additional.tags); assert.deepEqual(result[0].ageGroups, additional.ageGroups);
+  assert.equal(result[0].reviewReason, additional.reason);
+  const stale = {...incoming, collectedAt: '2026-10-24T02:00:00Z', recordedMetrics: {likes: 100, views: 1000}};
+  assert.equal(applySocialCuration(doc({additionalPosts: [additional]}), [stale], result).topics[0].recordedMetrics.likes, 900);
+  assert.deepEqual(applySocialCuration(doc({additionalPosts: [{...additional, handle: 'wrong_handle'}]}), [incoming], []).topics, []);
+});
+test('all video platforms exclude known durations above three minutes', () => {
+  const examples = [
+    video,
+    {...video, platform: 'Instagram', videoId: 'ABC_def1234', url: 'https://www.instagram.com/reel/ABC_def1234/'},
+    {...video, platform: 'TikTok', videoId: '7456789012345678901', url: 'https://www.tiktok.com/@official/video/7456789012345678901'},
+  ];
+  for (const item of examples) {
+    assert.equal(normalizeCuratedVideo({...item, durationSeconds: 181}), null, item.platform);
+    assert.equal(normalizeCuratedVideo({...item, durationSeconds: 4000}), null, item.platform);
+    assert.equal(normalizeCuratedVideo({...item, durationSeconds: 180}).durationSeconds, 180, item.platform);
+    assert.equal(normalizeCuratedVideo(item).durationSeconds ?? null, null, item.platform);
+  }
+});
 test('short video URLs reject unsafe hosts, credentials, mismatches and non-video paths', () => {
   assert.equal(normalizeCuratedVideo(video).publishedAt, null);
   const format = normalizeCuratedVideo({...video, videoFormat: 'short-video', durationSeconds: 85, publishedAt: '2025-04-01'});

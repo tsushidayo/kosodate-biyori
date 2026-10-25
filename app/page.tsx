@@ -8,7 +8,7 @@ import FamilyPreferences,{FamilyFilterBar} from '../components/family-preference
 import EditorialBrowser from '../components/editorial-browser';
 import SupportSearch,{type Municipality} from '../components/support-search';
 import {getFamilyChildren,personalizationEnabled,personalizeItems,ageTargetStatus,normalizeFamilyProfile} from '../lib/age-personalization';
-import {compareOffers} from '../lib/price-comparison';
+import {compareRetailerOffers} from '../lib/price-comparison';
 import seedCare from '../data/care.json';
 import seedShop from '../data/shop.json';
 import seedEditorial from '../data/editorial.json';
@@ -39,13 +39,13 @@ useEffect(()=>{if(!ready||!profileLoaded)return;localStorage.setItem('biyori-pro
 useEffect(()=>{if((page!=='support'&&modal?._kind!=='settings')||municipalities.length)return;let cancelled=false;setRegistryError(false);fetch('/api/municipalities').then(r=>{if(!r.ok)throw new Error();return r.json()}).then((d:any)=>{if(!cancelled)setMunicipalities(d.municipalities||[])}).catch(()=>!cancelled&&setRegistryError(true));return()=>{cancelled=true}},[page,municipalities.length,modal?._kind]);
 useEffect(()=>{setGuideLimit(12)},[page,category,familyEnabled]);
 
-useEffect(()=>{if(!ready||!products.length)return;let prev:Item={};try{prev=JSON.parse(localStorage.getItem('biyori-prices')||'{}')}catch{};const now:Item={},a:string[]=[];for(const p of products){const os=rank(p);if(os.length){now[p.id]=os[0].unitCost;if((profile.watchlist||[]).includes(p.id)&&typeof prev[p.id]==='number'&&now[p.id]<prev[p.id])a.push(`${p.name}が前回確認時より${money(prev[p.id]-now[p.id])}安くなりました`)}}localStorage.setItem('biyori-prices',JSON.stringify(now));if(a.length){setAlerts(a);if('Notification'in window&&Notification.permission==='granted')new Notification('こそだて日和 お買いもののお知らせ',{body:a[0]})}},[data.shop,ready,profile.watchlist]);
+useEffect(()=>{if(!ready||!products.length)return;let prev:Item={};try{prev=JSON.parse(localStorage.getItem('biyori-prices-by-quantity-v2')||'{}')}catch{};const now:Item={},a:string[]=[];for(const p of products){const os=rank(p);if(os.length){now[p.id]=os[0].unitCost;if((profile.watchlist||[]).includes(p.id)&&typeof prev[p.id]==='number'&&now[p.id]<prev[p.id])a.push(`${p.name}が前回確認時より${money(prev[p.id]-now[p.id])}安くなりました`)}}localStorage.setItem('biyori-prices-by-quantity-v2',JSON.stringify(now));if(a.length){setAlerts(a);if('Notification'in window&&Notification.permission==='granted')new Notification('こそだて日和 お買いもののお知らせ',{body:a[0]})}},[data.shop,ready,profile.watchlist]);
 useEffect(()=>{if(!toast)return;const t=setTimeout(()=>setToast(''),4200);return()=>clearTimeout(t)},[toast]);
 useEffect(()=>{if(!modal)return;const h=(e:KeyboardEvent)=>{if(e.key==='Escape')setModal(null)};addEventListener('keydown',h);const old=document.body.style.overflow;document.body.style.overflow='hidden';return()=>{document.body.style.overflow=old;removeEventListener('keydown',h)}},[modal]);
 function go(p:string){setPage(p);setCategory('すべて');setSearch('');setMobile(false);location.hash=p;setModal(null);window.scrollTo({top:0,behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'})}
 function toggle(key:string,id:string){setProfile(p=>({...p,[key]:(p[key]||[]).includes(id)?p[key].filter((x:string)=>x!==id):[...(p[key]||[]),id]}))}
 function save(i:Item){const id=i.id||i.title;toggle('bookmarks',id);setToast((profile.bookmarks||[]).includes(id)?'保存を解除しました':'あとで読むに保存しました')}
-function rank(p:Item){return compareOffers(p,{includeConditional:true})}
+function rank(p:Item){return compareRetailerOffers(p,{mode:'オンライン',includeConditional:false,sort:'total'})}
 function chooseStage(id:string){setProfile(p=>({...p,stage:id,autoAge:false}))}
 function open(i:Item,kind=i._kind||'article'){setStoreBase(0);setModal({...i,_kind:kind})}
 function setBirthday(key:string,value:string){const p={...profile,[key]:value};if(key==='childDate'&&value){const b=new Date(value),n=new Date();const m=(n.getFullYear()-b.getFullYear())*12+n.getMonth()-b.getMonth()-(n.getDate()<b.getDate()?1:0);const s=stages.find(x=>m>=x.minMonth&&m<=x.maxMonth);if(s)p.stage=s.id;p.autoAge=true}if(key==='dueDate'&&value)p.stage=stages[0]?.id;setProfile(p)}
