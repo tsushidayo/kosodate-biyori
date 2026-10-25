@@ -1,0 +1,1473 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-10-25",
+  "reviews": [
+    {
+      "id": "2114153553954807901",
+      "status": "approved",
+      "reason": "母親だけで抱えず、家族・地域・保育者の知恵を借りるという支援の視点が役立つ。個人の考えとして紹介する。",
+      "tags": [
+        "家族分担",
+        "地域のつながり",
+        "相談"
+      ],
+      "allAges": true
+    },
+    {
+      "id": "2113972243353276687",
+      "status": "rejected",
+      "reason": "声かけの具体例が途中で切れており、その後の状況や結果まで確認できない。",
+      "tags": [
+        "親子の会話",
+        "しつけ"
+      ]
+    },
+    {
+      "id": "2114006776005947557",
+      "status": "rejected",
+      "reason": "重篤な病気を強調する導入と未収集のスレッドに依存。受診判断に関わる主張を公的資料で裏付けられない。",
+      "tags": [
+        "感染症",
+        "受診",
+        "安全"
+      ]
+    },
+    {
+      "id": "2113970812248355297",
+      "status": "rejected",
+      "reason": "発達の図表やリンク先の内容が収集情報に含まれず、年齢ごとの根拠や実用性を確認できない。",
+      "tags": [
+        "発達",
+        "成長"
+      ]
+    },
+    {
+      "id": "2113953279524917394",
+      "status": "rejected",
+      "reason": "保護者を責める意見が中心で、園の準備を楽にする方法や手続きの説明がない。",
+      "tags": [
+        "園",
+        "持ち物準備"
+      ]
+    },
+    {
+      "id": "2113949899356242056",
+      "status": "rejected",
+      "reason": "一人っ子への発言に対する反論であり、子育てに使える工夫や情報を示していない。",
+      "tags": [
+        "子どもの個性",
+        "親の気持ち"
+      ]
+    },
+    {
+      "id": "2114119009063092536",
+      "status": "rejected",
+      "reason": "相手をさらし非難する文脈が中心。妊娠週数の健康情報としても一次資料の裏付けがない。",
+      "tags": [
+        "妊娠",
+        "出産"
+      ]
+    },
+    {
+      "id": "2114107665345577388",
+      "status": "approved",
+      "reason": "離乳食をまとめて一度に作る負担を減らし、日々の調理に小分けストックを組み込む体験が具体的。分量や保存日数の一般的な推奨には使わない。",
+      "tags": [
+        "離乳食",
+        "作り置き",
+        "時短",
+        "家事の工夫"
+      ],
+      "ageGroups": [
+        "0歳"
+      ]
+    },
+    {
+      "id": "2114103395800010802",
+      "status": "rejected",
+      "reason": "育休への嫌がらせを描く未完の物語で、相談先や利用できる手続きまで確認できない。",
+      "tags": [
+        "仕事育休",
+        "父親の育児"
+      ]
+    },
+    {
+      "id": "2114188195445473510",
+      "status": "rejected",
+      "reason": "写真共有の注意点は大切だが、重大な事件の伝聞を検証できず、不安をあおる例として流通させない。",
+      "tags": [
+        "写真共有",
+        "プライバシー",
+        "学校",
+        "安全"
+      ]
+    },
+    {
+      "id": "2113969880106168527",
+      "status": "rejected",
+      "reason": "不登校や学びの多様化学校への皮肉が中心で、家庭で利用できる支援情報がない。",
+      "tags": [
+        "不登校",
+        "学校"
+      ]
+    },
+    {
+      "id": "2114164205503082998",
+      "status": "rejected",
+      "reason": "海外の事業運営とインフラへの苦情が中心で、日本の家庭の子育てに使える情報が乏しい。",
+      "tags": [
+        "教育",
+        "デジタル"
+      ]
+    },
+    {
+      "id": "2114142404672688247",
+      "status": "rejected",
+      "reason": "学習速度や完全暗記を一律の基準にして不安を強める内容。子どもの状況に応じた学習支援の説明が不足している。",
+      "tags": [
+        "教育",
+        "算数",
+        "学校"
+      ]
+    },
+    {
+      "id": "2114111449991922034",
+      "status": "rejected",
+      "reason": "教材選びに関する夫婦の意見の相違を導入する途中までで、比較材料や結論が確認できない。",
+      "tags": [
+        "家庭学習",
+        "教材",
+        "家計"
+      ]
+    },
+    {
+      "id": "2114104160396488892",
+      "status": "rejected",
+      "reason": "AI教育を断定的・扇情的に扱い、学力や個人情報への影響を検証できる根拠が示されていない。",
+      "tags": [
+        "教育",
+        "デジタル",
+        "プライバシー"
+      ]
+    },
+    {
+      "id": "2114000080382628324",
+      "status": "rejected",
+      "reason": "政治家の実績紹介が中心で、支援の対象・申請方法・利用条件が分からない。制度は自治体の公式情報を別途掲載する。",
+      "tags": [
+        "制度",
+        "教育",
+        "自治体"
+      ]
+    },
+    {
+      "id": "2113997418266325286",
+      "status": "rejected",
+      "reason": "早生まれの損得に関する問いかけで、制度の正確な条件や家庭で使える対応策を示していない。",
+      "tags": [
+        "早生まれ",
+        "制度",
+        "親の気持ち"
+      ]
+    },
+    {
+      "id": "2113975048180760883",
+      "status": "rejected",
+      "reason": "行政への政治的批判が中心で、子育て世帯が使える支援情報や行動につながらない。",
+      "tags": [
+        "制度",
+        "家計"
+      ]
+    },
+    {
+      "id": "2113917379273269715",
+      "status": "rejected",
+      "reason": "他の保護者を侮辱する反応が中心で、児童手当の管理方法を説明していない。",
+      "tags": [
+        "家計",
+        "制度"
+      ]
+    },
+    {
+      "id": "2114156381918150972",
+      "status": "rejected",
+      "reason": "個別サポートを前向きに考える視点はあるが、引用元の状況も文の続きも確認できず、文脈を欠いたまま掲載しない。",
+      "tags": [
+        "発達",
+        "療育",
+        "園"
+      ]
+    },
+    {
+      "id": "2114137433839374525",
+      "status": "rejected",
+      "reason": "療育を勧められた保護者への皮肉が中心で、相談や支援利用を助ける具体的な情報がない。",
+      "tags": [
+        "発達",
+        "療育",
+        "園"
+      ]
+    },
+    {
+      "id": "2114007370527658226",
+      "status": "rejected",
+      "reason": "療育への不安の吐露が中心。悩みへの共感はできても、読者が使える相談手順や工夫が含まれない。",
+      "tags": [
+        "発達",
+        "療育",
+        "親の気持ち"
+      ]
+    },
+    {
+      "id": "2114135996258553884",
+      "status": "rejected",
+      "reason": "不登校や発達障害について他者を批評する内容で、家庭で再現できる支援方法が示されていない。",
+      "tags": [
+        "発達",
+        "不登校",
+        "教育"
+      ]
+    },
+    {
+      "id": "2114015462480826417",
+      "status": "rejected",
+      "reason": "特別養子縁組の条件や障害の確率などに根拠未確認の断定が含まれる。制度の案内として掲載できない。",
+      "tags": [
+        "制度",
+        "養子縁組",
+        "里親"
+      ]
+    },
+    {
+      "id": "2113993915950862420",
+      "status": "rejected",
+      "reason": "応答的な関わりは参考になるが、新生児の発声時期や発達への強い効果の断定を公的一次資料で一括検証できない。",
+      "tags": [
+        "発達",
+        "親子の会話",
+        "赤ちゃんとの関わり"
+      ]
+    },
+    {
+      "id": "2113917754638307457",
+      "status": "rejected",
+      "reason": "排尿感覚を診断名で一般化する健康・発達上の主張で、根拠や安全な対応方法が確認できない。",
+      "tags": [
+        "発達",
+        "トイレ",
+        "健康"
+      ]
+    },
+    {
+      "id": "2113831221256155532",
+      "status": "rejected",
+      "reason": "排尿・排便の問題を診断名ごとに単純化しており、医学的裏付けがないまま掲載しない。",
+      "tags": [
+        "発達",
+        "トイレ",
+        "健康"
+      ]
+    },
+    {
+      "id": "2113797906931368219",
+      "status": "rejected",
+      "reason": "他の保護者の価値観を批判する体験談で、子どもの個性を支える具体的な行動が示されていない。",
+      "tags": [
+        "子どもの個性",
+        "親の気持ち"
+      ]
+    },
+    {
+      "id": "2114140219834536441",
+      "status": "rejected",
+      "reason": "特定家庭の過去のしつけの賛否が中心。買い物や単独移動の方法を、年齢・環境・安全に応じて再現する条件が十分でない。",
+      "tags": [
+        "自立",
+        "買い物",
+        "親子の会話",
+        "小学生"
+      ]
+    },
+    {
+      "id": "2114033864612180416",
+      "status": "rejected",
+      "reason": "漫画の画像内容を確認できず、本文だけでは何が子育ての役に立つか判断できない。",
+      "tags": [
+        "育児漫画",
+        "家族分担"
+      ]
+    },
+    {
+      "id": "2114006352158928952",
+      "status": "rejected",
+      "reason": "夫婦のやり取りを誇張した冗談で、子育てを助ける実用情報を含まない。",
+      "tags": [
+        "家族分担",
+        "夫婦"
+      ]
+    },
+    {
+      "id": "2113968547370295789",
+      "status": "rejected",
+      "reason": "女の子の子育てを母親の能力と結び付ける一般化が中心で、具体的な支援や工夫がない。",
+      "tags": [
+        "子どもの個性",
+        "親の気持ち"
+      ]
+    },
+    {
+      "id": "2114099634541097033",
+      "status": "rejected",
+      "reason": "スープの栄養・回復効果を強くうたう一方、出典や安全な調理条件を確認できない。健康情報として掲載しない。",
+      "tags": [
+        "産後",
+        "栄養",
+        "食事"
+      ]
+    },
+    {
+      "id": "2114033037516398983",
+      "status": "rejected",
+      "reason": "産後の怒りを吐露する投稿で、負担を減らす方法や支援の利用手順がない。",
+      "tags": [
+        "産後",
+        "夫婦",
+        "親の気持ち"
+      ]
+    },
+    {
+      "id": "2114033017631146109",
+      "status": "rejected",
+      "reason": "配偶者への怒りの共有が中心で、家族の分担や休息を実現する具体的な工夫がない。",
+      "tags": [
+        "産後",
+        "家族分担",
+        "休息"
+      ]
+    },
+    {
+      "id": "2114017774171488595",
+      "status": "rejected",
+      "reason": "配偶者への侮辱を伴う対立的なコメントが中心。子育てに必要な安全・相談・生活手続きの案内になっていない。",
+      "tags": [
+        "夫婦",
+        "産後",
+        "相談"
+      ]
+    },
+    {
+      "id": "2113931523007111334",
+      "status": "rejected",
+      "reason": "学校給食の事故への批判で、確認できる公式情報や保護者の具体的な対応手順がない。",
+      "tags": [
+        "学校",
+        "給食",
+        "安全"
+      ]
+    },
+    {
+      "id": "2113793056294273136",
+      "status": "rejected",
+      "reason": "処方薬の効果に関する文脈のない短い断定。公的一次資料の裏付けと医療上の条件を確認できない。",
+      "tags": [
+        "発達",
+        "薬",
+        "健康"
+      ]
+    },
+    {
+      "id": "2113662010047258852",
+      "status": "rejected",
+      "reason": "本人と子どもの発達に関する体験談で、自己判断を避けて専門家に相談する等の再現可能な手順までは示されていない。",
+      "tags": [
+        "発達",
+        "療育",
+        "親の気持ち"
+      ]
+    },
+    {
+      "id": "2113964982782365848",
+      "status": "rejected",
+      "reason": "子どもの心の変化を年齢で一律に説明する発達上の主張を裏付けられず、具体的な関わり方も乏しい。",
+      "tags": [
+        "発達",
+        "親子の関係",
+        "小学生"
+      ]
+    },
+    {
+      "id": "2113953523067179469",
+      "status": "rejected",
+      "reason": "保湿量や疾患リスクなど医療上の断定を複数含む。全体の医学的な条件・量の推奨を公的一次資料で確認できない。",
+      "tags": [
+        "スキンケア",
+        "アレルギー",
+        "健康"
+      ]
+    },
+    {
+      "id": "2113793936452141357",
+      "status": "rejected",
+      "reason": "SNSの害を一律に断定するニュースへの反応で、年齢やサービスに応じた具体的な見守り設定がない。",
+      "tags": [
+        "SNS",
+        "デジタル",
+        "こころ"
+      ]
+    },
+    {
+      "id": "2113587440111997209",
+      "status": "rejected",
+      "reason": "感染症対策に触れるが、他者を責める反応が主で、医療情報の根拠や具体的な実施条件を確認できない。",
+      "tags": [
+        "感染症",
+        "予防",
+        "健康"
+      ]
+    },
+    {
+      "id": "2114121316018294825",
+      "status": "rejected",
+      "reason": "保護者との対立への不満が中心で、家庭と学校の連携を助ける方法がない。",
+      "tags": [
+        "学校",
+        "親の気持ち"
+      ]
+    },
+    {
+      "id": "2113957502840955349",
+      "status": "rejected",
+      "reason": "教職志望学生への批評が中心で、家庭が利用できる特別支援の情報ではない。",
+      "tags": [
+        "特別支援教育",
+        "学校"
+      ]
+    },
+    {
+      "id": "2112834007796965618",
+      "status": "approved",
+      "reason": "子どもを型に合わせるだけでなく、道具や環境を調整する視点が分かりやすい。教育者個人の考えとして紹介できる。",
+      "tags": [
+        "特別支援教育",
+        "子どもの個性",
+        "環境の工夫",
+        "学校"
+      ],
+      "ageGroups": [
+        "3〜5歳",
+        "小学生"
+      ]
+    },
+    {
+      "id": "2113738482833072511",
+      "status": "approved",
+      "reason": "家族以外の助けを借り、要求をすべてかなえずとも気持ちを言葉で受け止める具体例がある。効果の保証ではなく声かけの一例として紹介する。",
+      "tags": [
+        "親子の会話",
+        "子どもの気持ち",
+        "家族分担",
+        "地域のつながり"
+      ],
+      "ageGroups": [
+        "1〜2歳",
+        "3〜5歳",
+        "小学生"
+      ]
+    },
+    {
+      "id": "2113598232517656645",
+      "status": "approved",
+      "reason": "子どものSOSに気付き、否定せず聞き、安全を確保する具体的な関わり方がある。TALKの原則と主要統計を文部科学省・厚生労働省の一次資料で照合した。",
+      "tags": [
+        "子どものSOS",
+        "こころ",
+        "親子の会話",
+        "相談",
+        "安全",
+        "学校"
+      ],
+      "ageGroups": [
+        "小学生"
+      ],
+      "evidenceUrls": [
+        "https://www.mhlw.go.jp/stf/kaiken/daijin/0000194708_00981.html",
+        "https://www.mhlw.go.jp/content/001760192.pdf",
+        "https://www.mext.go.jp/component/b_menu/shingi/toushin/__icsFiles/afieldfile/2009/04/13/1259190_12.pdf"
+      ]
+    },
+    {
+      "id": "2113923662516752708",
+      "status": "rejected",
+      "reason": "電車での赤ちゃんとの触れ合いの逸話が中心で、読者が子育てに使える方法や配慮の説明がない。",
+      "tags": [
+        "おでかけ",
+        "赤ちゃんとの関わり"
+      ]
+    },
+    {
+      "id": "2112855167045697950",
+      "status": "rejected",
+      "reason": "女性を一括りにして攻撃する内容で、子どもに合った関わり方の具体的な説明がない。",
+      "tags": [
+        "しつけ",
+        "親子の会話"
+      ]
+    }
+  ],
+  "additionalPosts": [
+    {
+      "id": "1715232626246574202",
+      "xPostId": "1715232626246574202",
+      "status": "approved",
+      "url": "https://x.com/caa_kodomo/status/1715232626246574202",
+      "handle": "caa_kodomo",
+      "name": "消費者庁 みんなの消費安全ナビ",
+      "platform": "X",
+      "source": "消費者庁 みんなの消費安全ナビ",
+      "title": "薬の置き場所を見直す",
+      "summary": "薬を飲むときの一時置きや、子どもから見える保管場所を点検するきっかけに。家庭内の誤飲予防を消費者庁が案内しています。",
+      "tags": [
+        "安全",
+        "誤飲",
+        "薬",
+        "家の中の安全"
+      ],
+      "publishedAt": "2023-10-20",
+      "checkedAt": "2026-10-25",
+      "verifiedTrend": false,
+      "likes": null,
+      "rts": null,
+      "views": null,
+      "evidenceUrls": [
+        "https://www.caa.go.jp/policies/policy/consumer_safety/child/project_001/mail/20231020/"
+      ],
+      "evidence": "Xの実在する投稿URL・IDと検索インデックス上の発信内容を確認。X本文の直接取得は403のため、リンク先の公的資料も照合。反応数や現在の流行度は未確認。公式埋め込みで原文を表示する。",
+      "ageGroups": [
+        "0歳",
+        "1〜2歳",
+        "3〜5歳"
+      ],
+      "parentingUseful": true
+    },
+    {
+      "id": "1862362100250616280",
+      "xPostId": "1862362100250616280",
+      "status": "approved",
+      "url": "https://x.com/caa_kodomo/status/1862362100250616280",
+      "handle": "caa_kodomo",
+      "name": "消費者庁 みんなの消費安全ナビ",
+      "platform": "X",
+      "source": "消費者庁 みんなの消費安全ナビ",
+      "title": "パック型洗剤の保管を点検",
+      "summary": "洗濯用パック型液体洗剤を子どもが取り出せない場所に保管し、使った後の密閉や置き場所を見直すための注意喚起です。",
+      "tags": [
+        "安全",
+        "誤飲",
+        "洗濯",
+        "家の中の安全"
+      ],
+      "publishedAt": "2024-11-29",
+      "checkedAt": "2026-10-25",
+      "verifiedTrend": false,
+      "likes": null,
+      "rts": null,
+      "views": null,
+      "evidenceUrls": [
+        "https://www.caa.go.jp/policies/policy/consumer_safety/child/project_001/mail/20241129/"
+      ],
+      "evidence": "Xの実在する投稿URL・IDと検索インデックス上の発信内容を確認。X本文の直接取得は403のため、リンク先の公的資料も照合。反応数や現在の流行度は未確認。公式埋め込みで原文を表示する。",
+      "ageGroups": [
+        "0歳",
+        "1〜2歳",
+        "3〜5歳"
+      ],
+      "parentingUseful": true
+    },
+    {
+      "id": "1889541190145679680",
+      "xPostId": "1889541190145679680",
+      "status": "approved",
+      "url": "https://x.com/caa_kodomo/status/1889541190145679680",
+      "handle": "caa_kodomo",
+      "name": "消費者庁 みんなの消費安全ナビ",
+      "platform": "X",
+      "source": "消費者庁 みんなの消費安全ナビ",
+      "title": "親子で入浴するときの見守り",
+      "summary": "浴室に入る・出る順番や、大人が髪を洗うときの子どもの居場所など、入浴時の溺水事故を防ぐ具体策を確認できます。",
+      "tags": [
+        "安全",
+        "お風呂",
+        "見守り",
+        "家の中の安全"
+      ],
+      "publishedAt": "2025-02-12",
+      "checkedAt": "2026-10-25",
+      "verifiedTrend": false,
+      "likes": null,
+      "rts": null,
+      "views": null,
+      "evidenceUrls": [
+        "https://www.caa.go.jp/policies/policy/consumer_safety/caution/caution_052",
+        "https://www.caa.go.jp/policies/policy/consumer_safety/child/project_001/mail/20220208/"
+      ],
+      "evidence": "Xの実在する投稿URL・IDと検索インデックス上の発信内容を確認。X本文の直接取得は403のため、リンク先の公的資料も照合。反応数や現在の流行度は未確認。公式埋め込みで原文を表示する。",
+      "ageGroups": [
+        "0歳",
+        "1〜2歳",
+        "3〜5歳"
+      ],
+      "parentingUseful": true
+    },
+    {
+      "id": "1909507431945888002",
+      "xPostId": "1909507431945888002",
+      "status": "approved",
+      "url": "https://x.com/KodomoKatei/status/1909507431945888002",
+      "handle": "KodomoKatei",
+      "name": "こども家庭庁",
+      "platform": "X",
+      "source": "こども家庭庁",
+      "title": "児童手当の対象と申請を確認",
+      "summary": "所得制限の撤廃、高校生年代までの対象拡大、第3子以降の増額を案内する公式投稿。対象や申請の確認は、現在のQ&Aと居住自治体の窓口を併せて確認できます。",
+      "tags": [
+        "制度",
+        "児童手当",
+        "家計",
+        "申請",
+        "多子世帯"
+      ],
+      "publishedAt": "2025-04-08",
+      "checkedAt": "2026-10-25",
+      "verifiedTrend": false,
+      "likes": null,
+      "rts": null,
+      "views": null,
+      "evidenceUrls": [
+        "https://www.cfa.go.jp/resources/strategy/kakei-oen",
+        "https://www.cfa.go.jp/policies/kokoseido/jidouteate/faq/ippan"
+      ],
+      "evidence": "Xの実在する投稿URL・IDと検索インデックス上の発信内容を確認。X本文の直接取得は403のため、リンク先の公的資料も照合。反応数や現在の流行度は未確認。公式埋め込みで原文を表示する。",
+      "allAges": true,
+      "parentingUseful": true
+    },
+    {
+      "id": "2075446164661346648",
+      "xPostId": "2075446164661346648",
+      "status": "approved",
+      "url": "https://x.com/caa_kodomo/status/2075446164661346648",
+      "handle": "caa_kodomo",
+      "name": "消費者庁 みんなの消費安全ナビ",
+      "platform": "X",
+      "source": "消費者庁 みんなの消費安全ナビ",
+      "title": "家の中の転落リスクを点検",
+      "summary": "2026年の事故防止週間に合わせた公式案内。リンク先の資料で、窓・ベランダの足場や補助錠、遊具など、転落を防ぐ環境づくりを確認できます。",
+      "tags": [
+        "安全",
+        "転落",
+        "窓・ベランダ",
+        "家の中の安全",
+        "遊具"
+      ],
+      "publishedAt": "2026-07-10",
+      "checkedAt": "2026-10-25",
+      "verifiedTrend": false,
+      "likes": null,
+      "rts": null,
+      "views": null,
+      "evidenceUrls": [
+        "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/f1075494-88ff-42fd-977c-393fd693fa74/44d1acdf/20260707_councils_child-safety-actions-review-meetings_202601_01.pdf"
+      ],
+      "evidence": "Xの実在する投稿URL・IDと検索インデックス上の発信内容を確認。X本文の直接取得は403のため、リンク先の公的資料も照合。反応数や現在の流行度は未確認。公式埋め込みで原文を表示する。",
+      "ageGroups": [
+        "0歳",
+        "1〜2歳",
+        "3〜5歳",
+        "小学生"
+      ],
+      "parentingUseful": true
+    }
+  ],
+  "shorts": [
+    {
+      "id": "youtube-ffpebIACS_w",
+      "title": "携帯トイレの使い方",
+      "summary": "災害時などに備えて、携帯トイレの使い方を短く確認。",
+      "url": "https://www.youtube.com/shorts/ffpebIACS_w",
+      "platform": "YouTube",
+      "videoId": "ffpebIACS_w",
+      "sourceName": "横須賀市公式チャンネル",
+      "publishedAt": "2026-10-23",
+      "checkedAt": "2026-10-25",
+      "parentingUseful": true,
+      "tags": [
+        "防災",
+        "トイレ",
+        "持ち出し袋",
+        "備蓄"
+      ],
+      "usefulnessReason": "家族の避難生活に備えて使い方を確認できる",
+      "embedVerified": true,
+      "embedUrl": "https://www.youtube.com/embed/ffpebIACS_w",
+      "thumbnailUrl": "https://i.ytimg.com/vi/ffpebIACS_w/hqdefault.jpg",
+      "durationSeconds": 38,
+      "videoFormat": "shorts",
+      "channelId": "UCQDVaWThh91v2lgtCCqio5w",
+      "sourceUrl": "https://www.youtube.com/feeds/videos.xml?channel_id=UCQDVaWThh91v2lgtCCqio5w",
+      "ageClassification": "発信元の対象月齢・説明を参考にした編集分類",
+      "allAges": true
+    },
+    {
+      "id": "youtube-J7RPi1kZHVo",
+      "title": "子どもの感電や熱傷事故を防ぐために【商品テスト】",
+      "summary": "コンセントや充電ケーブルの近くで起きる、子どもの感電・やけどの予防を紹介。",
+      "url": "https://www.youtube.com/shorts/J7RPi1kZHVo",
+      "platform": "YouTube",
+      "videoId": "J7RPi1kZHVo",
+      "sourceName": "国民生活センター",
+      "publishedAt": "2026-10-21",
+      "checkedAt": "2026-10-25",
+      "parentingUseful": true,
+      "tags": [
+        "事故予防",
+        "感電",
+        "やけど",
+        "家の安全"
+      ],
+      "usefulnessReason": "子どもが過ごす場所の電源まわりを見直せる",
+      "embedVerified": true,
+      "embedUrl": "https://www.youtube.com/embed/J7RPi1kZHVo",
+      "thumbnailUrl": "https://i.ytimg.com/vi/J7RPi1kZHVo/hqdefault.jpg",
+      "durationSeconds": 85,
+      "videoFormat": "shorts",
+      "channelId": "UCh1FFDfkrworkAZUFKHKKAg",
+      "sourceUrl": "https://www.kokusen.go.jp/news/data/n-20261021_1.html",
+      "ageClassification": "発信元の対象月齢・説明を参考にした編集分類",
+      "ageGroups": [
+        "0歳",
+        "1〜2歳",
+        "3〜5歳",
+        "小学生"
+      ]
+    },
+    {
+      "id": "youtube-h14T_qokMzY",
+      "title": "【幼児の手遊び】自分にやさしくなる「グーチョキパーでなにつくろう♪」｜セルフコンパッションver. #shorts",
+      "summary": "グーチョキパーの歌に合わせて、自分にやさしい言葉と動きを楽しむ手遊び。",
+      "url": "https://www.youtube.com/shorts/h14T_qokMzY",
+      "platform": "YouTube",
+      "videoId": "h14T_qokMzY",
+      "sourceName": "こどもヨガ・マインドフルネス専門チャンネル | Kids Yoga Tokyo",
+      "publishedAt": "2026-10-08",
+      "checkedAt": "2026-10-25",
+      "parentingUseful": true,
+      "tags": [
+        "手遊び",
+        "気持ち",
+        "おうち遊び"
+      ],
+      "usefulnessReason": "親子でまねできる手遊びを紹介している",
+      "embedVerified": true,
+      "embedUrl": "https://www.youtube.com/embed/h14T_qokMzY",
+      "thumbnailUrl": "https://i.ytimg.com/vi/h14T_qokMzY/hqdefault.jpg",
+      "durationSeconds": 95,
+      "videoFormat": "shorts",
+      "channelId": "UCtizJxtlRYUrSVQ67rBxO1Q",
+      "sourceUrl": "https://ameblo.jp/groovykidsyoga/entry-12980578149.html",
+      "ageClassification": "発信元の対象月齢・説明を参考にした編集分類",
+      "ageGroups": [
+        "3〜5歳"
+      ]
+    },
+    {
+      "id": "youtube-xIZByD-6Nd8",
+      "title": "この事故の半数は骨折！自転車の幼児用座席に座った子どもの事故",
+      "summary": "自転車の幼児用座席で起きるけがの事例を、国民生活センターが紹介。",
+      "url": "https://www.youtube.com/shorts/xIZByD-6Nd8",
+      "platform": "YouTube",
+      "videoId": "xIZByD-6Nd8",
+      "sourceName": "国民生活センター",
+      "publishedAt": "2026-09-15",
+      "checkedAt": "2026-10-25",
+      "parentingUseful": true,
+      "tags": [
+        "事故予防",
+        "自転車",
+        "子ども乗せ自転車",
+        "お出かけ"
+      ],
+      "usefulnessReason": "子どもを自転車に乗せるときの危険を知る参考になる",
+      "embedVerified": true,
+      "embedUrl": "https://www.youtube.com/embed/xIZByD-6Nd8",
+      "thumbnailUrl": "https://i.ytimg.com/vi/xIZByD-6Nd8/hqdefault.jpg",
+      "durationSeconds": 31,
+      "videoFormat": "shorts",
+      "channelId": "UCh1FFDfkrworkAZUFKHKKAg",
+      "sourceUrl": "https://www.youtube.com/shorts/xIZByD-6Nd8",
+      "ageClassification": "発信元の対象月齢・説明を参考にした編集分類",
+      "ageGroups": [
+        "1〜2歳",
+        "3〜5歳"
+      ]
+    },
+    {
+      "id": "youtube-fOVx_1OBC0A",
+      "title": "その家具、地震対策してる？",
+      "summary": "家具の固定や配置を見直す、家庭の地震対策を紹介。",
+      "url": "https://www.youtube.com/watch?v=fOVx_1OBC0A",
+      "platform": "YouTube",
+      "videoId": "fOVx_1OBC0A",
+      "sourceName": "福岡チャンネル by Fukuoka city",
+      "publishedAt": "2026-09-01",
+      "checkedAt": "2026-10-25",
+      "parentingUseful": true,
+      "tags": [
+        "防災",
+        "家具の固定",
+        "事故予防"
+      ],
+      "usefulnessReason": "子どもが過ごす部屋の安全を見直せる",
+      "embedVerified": true,
+      "embedUrl": "https://www.youtube.com/embed/fOVx_1OBC0A",
+      "thumbnailUrl": "https://i.ytimg.com/vi/fOVx_1OBC0A/hqdefault.jpg",
+      "durationSeconds": 30,
+      "videoFormat": "short-video",
+      "channelId": "UCYv8ulRwRtKMNLh7ilSMf-w",
+      "sourceUrl": "https://www.city.fukuoka.lg.jp/bousai/bousai_shortmovie.html",
+      "ageClassification": "発信元の対象月齢・説明を参考にした編集分類",
+      "allAges": true
+    },
+    {
+      "id": "youtube-Zs23MU6NXEc",
+      "title": "その買い足し　実は防災です。（ローリングストック）",
+      "summary": "ふだんの食品を買い置きし、使った分を補うローリングストックを紹介。",
+      "url": "https://www.youtube.com/watch?v=Zs23MU6NXEc",
+      "platform": "YouTube",
+      "videoId": "Zs23MU6NXEc",
+      "sourceName": "福岡チャンネル by Fukuoka city",
+      "publishedAt": "2026-09-01",
+      "checkedAt": "2026-10-25",
+      "parentingUseful": true,
+      "tags": [
+        "防災",
+        "食品の備蓄",
+        "家事"
+      ],
+      "usefulnessReason": "家族の食料備蓄を普段の買い物に取り入れられる",
+      "embedVerified": true,
+      "embedUrl": "https://www.youtube.com/embed/Zs23MU6NXEc",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Zs23MU6NXEc/hqdefault.jpg",
+      "durationSeconds": 30,
+      "videoFormat": "short-video",
+      "channelId": "UCYv8ulRwRtKMNLh7ilSMf-w",
+      "sourceUrl": "https://www.city.fukuoka.lg.jp/bousai/bousai_shortmovie.html",
+      "ageClassification": "発信元の対象月齢・説明を参考にした編集分類",
+      "allAges": true
+    },
+    {
+      "id": "youtube-428ynvN3LEA",
+      "title": "子どもの備え　忘れていませんか？（子どもと備える）",
+      "summary": "離乳食、おむつ、母子手帳など、子どもに必要な災害時の備えを紹介。",
+      "url": "https://www.youtube.com/watch?v=428ynvN3LEA",
+      "platform": "YouTube",
+      "videoId": "428ynvN3LEA",
+      "sourceName": "福岡チャンネル by Fukuoka city",
+      "publishedAt": "2026-09-01",
+      "checkedAt": "2026-10-25",
+      "parentingUseful": true,
+      "tags": [
+        "防災",
+        "持ち出し袋",
+        "乳幼児"
+      ],
+      "usefulnessReason": "子ども用の持ち出し品を確認できる",
+      "embedVerified": true,
+      "embedUrl": "https://www.youtube.com/embed/428ynvN3LEA",
+      "thumbnailUrl": "https://i.ytimg.com/vi/428ynvN3LEA/hqdefault.jpg",
+      "durationSeconds": 30,
+      "videoFormat": "short-video",
+      "channelId": "UCYv8ulRwRtKMNLh7ilSMf-w",
+      "sourceUrl": "https://www.city.fukuoka.lg.jp/bousai/bousai_shortmovie.html",
+      "ageClassification": "発信元の対象月齢・説明を参考にした編集分類",
+      "ageGroups": [
+        "0歳",
+        "1〜2歳",
+        "3〜5歳"
+      ]
+    },
+    {
+      "id": "youtube-I5-zVprRRzM",
+      "title": "思わぬ場所でやけど！　強い日差しに注意",
+      "summary": "日差しで熱くなった遊具や地面など、屋外でのやけどを防ぐ注意点。",
+      "url": "https://www.youtube.com/shorts/I5-zVprRRzM",
+      "platform": "YouTube",
+      "videoId": "I5-zVprRRzM",
+      "sourceName": "国民生活センター",
+      "publishedAt": "2026-08-26",
+      "checkedAt": "2026-10-25",
+      "parentingUseful": true,
+      "tags": [
+        "事故予防",
+        "やけど",
+        "公園",
+        "夏",
+        "お出かけ"
+      ],
+      "usefulnessReason": "外遊びの前に熱くなる場所を確認できる",
+      "embedVerified": true,
+      "embedUrl": "https://www.youtube.com/embed/I5-zVprRRzM",
+      "thumbnailUrl": "https://i.ytimg.com/vi/I5-zVprRRzM/hqdefault.jpg",
+      "durationSeconds": 114,
+      "videoFormat": "shorts",
+      "channelId": "UCh1FFDfkrworkAZUFKHKKAg",
+      "sourceUrl": "https://www.kokusen.go.jp/mimamori/kmj_mailmag/kmj-support221.html",
+      "ageClassification": "発信元の対象月齢・説明を参考にした編集分類",
+      "ageGroups": [
+        "1〜2歳",
+        "3〜5歳",
+        "小学生"
+      ]
+    },
+    {
+      "id": "youtube-4afnh32cOUI",
+      "title": "パワーウインドによる事故に注意！窒息や切断、骨折など重篤なけが発生しています【商品テスト】",
+      "summary": "車の窓に子どもが挟まれる事故と、乗車時に確認したい対策を紹介。",
+      "url": "https://www.youtube.com/watch?v=4afnh32cOUI",
+      "platform": "YouTube",
+      "videoId": "4afnh32cOUI",
+      "sourceName": "国民生活センター",
+      "publishedAt": "2026-07-01",
+      "checkedAt": "2026-10-25",
+      "parentingUseful": true,
+      "tags": [
+        "事故予防",
+        "車",
+        "パワーウインド",
+        "チャイルドシート",
+        "お出かけ"
+      ],
+      "usefulnessReason": "車内で子どもの窓の事故を防ぐために確認できる",
+      "embedVerified": true,
+      "embedUrl": "https://www.youtube.com/embed/4afnh32cOUI",
+      "thumbnailUrl": "https://i.ytimg.com/vi/4afnh32cOUI/hqdefault.jpg",
+      "durationSeconds": 107,
+      "videoFormat": "short-video",
+      "channelId": "UCh1FFDfkrworkAZUFKHKKAg",
+      "sourceUrl": "https://www.kokusen.go.jp/news/data/n-20260701_3.html",
+      "ageClassification": "発信元の対象月齢・説明を参考にした編集分類",
+      "ageGroups": [
+        "0歳",
+        "1〜2歳",
+        "3〜5歳"
+      ]
+    },
+    {
+      "id": "youtube-eGYcJtxlX90",
+      "title": "簡単取り分け！アサリと野菜のチヂミ",
+      "summary": "1歳半頃からの幼児食に、アサリと野菜のチヂミを家族で取り分け。",
+      "url": "https://www.youtube.com/watch?v=eGYcJtxlX90",
+      "platform": "YouTube",
+      "videoId": "eGYcJtxlX90",
+      "sourceName": "松本のシンカ【松本市公式チャンネル】 / Matsumoto City official",
+      "publishedAt": "2026-03-23",
+      "checkedAt": "2026-10-25",
+      "parentingUseful": true,
+      "tags": [
+        "幼児食",
+        "取り分け",
+        "レシピ",
+        "1歳半から"
+      ],
+      "usefulnessReason": "家族で食べられる幼児食の献立を増やせる",
+      "embedVerified": true,
+      "embedUrl": "https://www.youtube.com/embed/eGYcJtxlX90",
+      "thumbnailUrl": "https://i.ytimg.com/vi/eGYcJtxlX90/hqdefault.jpg",
+      "durationSeconds": 107,
+      "videoFormat": "short-video",
+      "channelId": "UCUYwqlUZcN1gFNz-KQtwV1g",
+      "sourceUrl": "https://www.city.matsumoto.nagano.jp/soshiki/65/1738.html",
+      "ageClassification": "発信元の対象月齢・説明を参考にした編集分類",
+      "ageGroups": [
+        "1〜2歳",
+        "3〜5歳"
+      ],
+      "minAgeMonths": 18,
+      "ageBasis": "発信元が示す離乳食の時期・月齢に沿った編集分類"
+    },
+    {
+      "id": "youtube-xmHWuJAsTA4",
+      "title": "ぱくぱく食べよう",
+      "summary": "生後12〜18か月頃の食事のポイントを、横須賀市が短く紹介。",
+      "url": "https://www.youtube.com/shorts/xmHWuJAsTA4",
+      "platform": "YouTube",
+      "videoId": "xmHWuJAsTA4",
+      "sourceName": "横須賀市公式チャンネル",
+      "publishedAt": "2026-03-05",
+      "checkedAt": "2026-10-25",
+      "parentingUseful": true,
+      "tags": [
+        "離乳食",
+        "離乳食完了期",
+        "12〜18か月"
+      ],
+      "usefulnessReason": "離乳食完了期の食事を考える参考になる",
+      "embedVerified": true,
+      "embedUrl": "https://www.youtube.com/embed/xmHWuJAsTA4",
+      "thumbnailUrl": "https://i.ytimg.com/vi/xmHWuJAsTA4/hqdefault.jpg",
+      "durationSeconds": 37,
+      "videoFormat": "shorts",
+      "channelId": "UCQDVaWThh91v2lgtCCqio5w",
+      "sourceUrl": "https://www.city.yokosuka.kanagawa.jp/0533/yokosuka_plus/news/2026_186.html",
+      "ageClassification": "発信元の対象月齢・説明を参考にした編集分類",
+      "ageGroups": [
+        "1〜2歳"
+      ],
+      "minAgeMonths": 12,
+      "maxAgeMonths": 18,
+      "ageBasis": "発信元が示す離乳食の時期・月齢に沿った編集分類"
+    },
+    {
+      "id": "youtube-I2dN_U-csfo",
+      "title": "はじめての離乳食",
+      "summary": "生後5〜6か月頃の離乳食のポイントを、横須賀市が短く紹介。",
+      "url": "https://www.youtube.com/shorts/I2dN_U-csfo",
+      "platform": "YouTube",
+      "videoId": "I2dN_U-csfo",
+      "sourceName": "横須賀市公式チャンネル",
+      "publishedAt": "2026-03-05",
+      "checkedAt": "2026-10-25",
+      "parentingUseful": true,
+      "tags": [
+        "離乳食",
+        "離乳食初期",
+        "5〜6か月"
+      ],
+      "usefulnessReason": "離乳食を始める時期の参考にできる",
+      "embedVerified": true,
+      "embedUrl": "https://www.youtube.com/embed/I2dN_U-csfo",
+      "thumbnailUrl": "https://i.ytimg.com/vi/I2dN_U-csfo/hqdefault.jpg",
+      "durationSeconds": 61,
+      "videoFormat": "shorts",
+      "channelId": "UCQDVaWThh91v2lgtCCqio5w",
+      "sourceUrl": "https://www.city.yokosuka.kanagawa.jp/0533/yokosuka_plus/news/2026_186.html",
+      "ageClassification": "発信元の対象月齢・説明を参考にした編集分類",
+      "ageGroups": [
+        "0歳"
+      ],
+      "minAgeMonths": 5,
+      "maxAgeMonths": 6,
+      "ageBasis": "発信元が示す離乳食の時期・月齢に沿った編集分類"
+    },
+    {
+      "id": "youtube-BfydQVtNEb8",
+      "title": "かみかみ離乳食",
+      "summary": "生後9〜11か月頃の離乳食のポイントを、横須賀市が短く紹介。",
+      "url": "https://www.youtube.com/shorts/BfydQVtNEb8",
+      "platform": "YouTube",
+      "videoId": "BfydQVtNEb8",
+      "sourceName": "横須賀市公式チャンネル",
+      "publishedAt": "2026-03-05",
+      "checkedAt": "2026-10-25",
+      "parentingUseful": true,
+      "tags": [
+        "離乳食",
+        "離乳食後期",
+        "9〜11か月"
+      ],
+      "usefulnessReason": "離乳食後期の進め方を確認できる",
+      "embedVerified": true,
+      "embedUrl": "https://www.youtube.com/embed/BfydQVtNEb8",
+      "thumbnailUrl": "https://i.ytimg.com/vi/BfydQVtNEb8/hqdefault.jpg",
+      "durationSeconds": 31,
+      "videoFormat": "shorts",
+      "channelId": "UCQDVaWThh91v2lgtCCqio5w",
+      "sourceUrl": "https://www.city.yokosuka.kanagawa.jp/0533/yokosuka_plus/news/2026_186.html",
+      "ageClassification": "発信元の対象月齢・説明を参考にした編集分類",
+      "ageGroups": [
+        "0歳"
+      ],
+      "minAgeMonths": 9,
+      "maxAgeMonths": 11,
+      "ageBasis": "発信元が示す離乳食の時期・月齢に沿った編集分類"
+    },
+    {
+      "id": "youtube-2eeNiVr5KPQ",
+      "title": "もぐもぐ離乳食",
+      "summary": "生後7〜8か月頃の離乳食のポイントを、横須賀市が短く紹介。",
+      "url": "https://www.youtube.com/shorts/2eeNiVr5KPQ",
+      "platform": "YouTube",
+      "videoId": "2eeNiVr5KPQ",
+      "sourceName": "横須賀市公式チャンネル",
+      "publishedAt": "2026-03-05",
+      "checkedAt": "2026-10-25",
+      "parentingUseful": true,
+      "tags": [
+        "離乳食",
+        "離乳食中期",
+        "7〜8か月"
+      ],
+      "usefulnessReason": "離乳食中期の進め方を確認できる",
+      "embedVerified": true,
+      "embedUrl": "https://www.youtube.com/embed/2eeNiVr5KPQ",
+      "thumbnailUrl": "https://i.ytimg.com/vi/2eeNiVr5KPQ/hqdefault.jpg",
+      "durationSeconds": 33,
+      "videoFormat": "shorts",
+      "channelId": "UCQDVaWThh91v2lgtCCqio5w",
+      "sourceUrl": "https://www.city.yokosuka.kanagawa.jp/0533/yokosuka_plus/news/2026_186.html",
+      "ageClassification": "発信元の対象月齢・説明を参考にした編集分類",
+      "ageGroups": [
+        "0歳"
+      ],
+      "minAgeMonths": 7,
+      "maxAgeMonths": 8,
+      "ageBasis": "発信元が示す離乳食の時期・月齢に沿った編集分類"
+    },
+    {
+      "id": "youtube-ACvk2YO5C5c",
+      "title": "親子で遊ぼう！Part7",
+      "summary": "保育士のぴかるんとかわぴょんが、親子で楽しめる遊びを実演。",
+      "url": "https://www.youtube.com/shorts/ACvk2YO5C5c",
+      "platform": "YouTube",
+      "videoId": "ACvk2YO5C5c",
+      "sourceName": "とさまなチャンネル　高知県教育委員会事務局",
+      "publishedAt": "2026-01-20",
+      "checkedAt": "2026-10-25",
+      "parentingUseful": true,
+      "tags": [
+        "親子遊び",
+        "おうち遊び",
+        "保育士"
+      ],
+      "usefulnessReason": "保育士の実演を親子遊びの参考にできる",
+      "embedVerified": true,
+      "embedUrl": "https://www.youtube.com/embed/ACvk2YO5C5c",
+      "thumbnailUrl": "https://i.ytimg.com/vi/ACvk2YO5C5c/hqdefault.jpg",
+      "durationSeconds": 76,
+      "videoFormat": "shorts",
+      "channelId": "UCkUv8Ukv8Dhe2UlLOuDeiAg",
+      "sourceUrl": "https://www.pref.kochi.lg.jp/doc/2026022500340/",
+      "ageClassification": "発信元の対象月齢・説明を参考にした編集分類",
+      "ageGroups": [
+        "1〜2歳",
+        "3〜5歳"
+      ]
+    },
+    {
+      "id": "youtube-vOsiXVs2UzQ",
+      "title": "【予防】手洗い系官僚による手洗いレクチャー（食品安全）",
+      "summary": "農林水産省の職員が、食品安全の基本になる手洗いを実演。",
+      "url": "https://www.youtube.com/shorts/vOsiXVs2UzQ",
+      "platform": "YouTube",
+      "videoId": "vOsiXVs2UzQ",
+      "sourceName": "BUZZMAFF ばずまふ（農林水産省）",
+      "publishedAt": "2026-01-05",
+      "checkedAt": "2026-10-25",
+      "parentingUseful": true,
+      "tags": [
+        "手洗い",
+        "生活習慣",
+        "食中毒予防"
+      ],
+      "usefulnessReason": "家族で手洗いの方法を確認できる",
+      "embedVerified": true,
+      "embedUrl": "https://www.youtube.com/embed/vOsiXVs2UzQ",
+      "thumbnailUrl": "https://i.ytimg.com/vi/vOsiXVs2UzQ/hqdefault.jpg",
+      "durationSeconds": 57,
+      "videoFormat": "shorts",
+      "channelId": "UCk2ryX95GgVFSTcVCH2HS2g",
+      "sourceUrl": "https://www.maff.go.jp/kinki/syouhi/mn/sinrai/emg/2026/356.html",
+      "ageClassification": "発信元の対象月齢・説明を参考にした編集分類",
+      "allAges": true,
+      "mirrorUrls": [
+        "https://www.instagram.com/reel/DTH8BH5ERvm/"
+      ]
+    },
+    {
+      "id": "youtube-QW8ak39nVhQ",
+      "title": "親子で遊ぼう！Part2",
+      "summary": "保育士のぴかるんとかわぴょんが、親子で楽しめる遊びを実演。",
+      "url": "https://www.youtube.com/shorts/QW8ak39nVhQ",
+      "platform": "YouTube",
+      "videoId": "QW8ak39nVhQ",
+      "sourceName": "とさまなチャンネル　高知県教育委員会事務局",
+      "publishedAt": "2025-08-19",
+      "checkedAt": "2026-10-25",
+      "parentingUseful": true,
+      "tags": [
+        "親子遊び",
+        "おうち遊び",
+        "保育士"
+      ],
+      "usefulnessReason": "保育士の実演を親子遊びの参考にできる",
+      "embedVerified": true,
+      "embedUrl": "https://www.youtube.com/embed/QW8ak39nVhQ",
+      "thumbnailUrl": "https://i.ytimg.com/vi/QW8ak39nVhQ/hqdefault.jpg",
+      "durationSeconds": 96,
+      "videoFormat": "shorts",
+      "channelId": "UCkUv8Ukv8Dhe2UlLOuDeiAg",
+      "sourceUrl": "https://www.pref.kochi.lg.jp/doc/2026022500340/",
+      "ageClassification": "発信元の対象月齢・説明を参考にした編集分類",
+      "ageGroups": [
+        "1〜2歳",
+        "3〜5歳"
+      ]
+    },
+    {
+      "id": "youtube-qVvDhDVBxQw",
+      "title": "親子で遊ぼう！Part１",
+      "summary": "保育士のぴかるんとかわぴょんが、親子で楽しめる遊びを実演。",
+      "url": "https://www.youtube.com/shorts/qVvDhDVBxQw",
+      "platform": "YouTube",
+      "videoId": "qVvDhDVBxQw",
+      "sourceName": "とさまなチャンネル　高知県教育委員会事務局",
+      "publishedAt": "2025-07-22",
+      "checkedAt": "2026-10-25",
+      "parentingUseful": true,
+      "tags": [
+        "親子遊び",
+        "おうち遊び",
+        "保育士"
+      ],
+      "usefulnessReason": "保育士の実演を親子遊びの参考にできる",
+      "embedVerified": true,
+      "embedUrl": "https://www.youtube.com/embed/qVvDhDVBxQw",
+      "thumbnailUrl": "https://i.ytimg.com/vi/qVvDhDVBxQw/hqdefault.jpg",
+      "durationSeconds": 81,
+      "videoFormat": "shorts",
+      "channelId": "UCkUv8Ukv8Dhe2UlLOuDeiAg",
+      "sourceUrl": "https://www.pref.kochi.lg.jp/doc/2026022500340/",
+      "ageClassification": "発信元の対象月齢・説明を参考にした編集分類",
+      "ageGroups": [
+        "1〜2歳",
+        "3〜5歳"
+      ]
+    },
+    {
+      "id": "youtube-KvbCvKAzTSs",
+      "title": "食べ物による窒息・誤嚥事故に注意！",
+      "summary": "家庭や保育の場で起きる、食べ物の窒息・誤嚥事故への注意を紹介。",
+      "url": "https://www.youtube.com/shorts/KvbCvKAzTSs",
+      "platform": "YouTube",
+      "videoId": "KvbCvKAzTSs",
+      "sourceName": "こども家庭庁",
+      "publishedAt": "2025-01-21",
+      "checkedAt": "2026-10-25",
+      "parentingUseful": true,
+      "tags": [
+        "事故予防",
+        "食事",
+        "誤嚥・窒息"
+      ],
+      "usefulnessReason": "子どもの食事中の事故予防を見直せる",
+      "embedVerified": true,
+      "embedUrl": "https://www.youtube.com/embed/KvbCvKAzTSs",
+      "thumbnailUrl": "https://i.ytimg.com/vi/KvbCvKAzTSs/hqdefault.jpg",
+      "durationSeconds": 72,
+      "videoFormat": "shorts",
+      "channelId": "UCZMUbe4lORUMvFYuO_Prpgg",
+      "sourceUrl": "https://www.pref.yamaguchi.lg.jp/uploaded/attachment/215421.pdf",
+      "ageClassification": "発信元の対象月齢・説明を参考にした編集分類",
+      "ageGroups": [
+        "0歳",
+        "1〜2歳",
+        "3〜5歳"
+      ]
+    },
+    {
+      "id": "youtube-UR2yKeWEN5I",
+      "title": "すくすく離乳食　後期・幼児編　～お肉を食べやすくする調理法～",
+      "summary": "ひき肉や薄切り肉を食べやすくする、下ごしらえや調理の工夫を紹介。",
+      "url": "https://www.youtube.com/watch?v=UR2yKeWEN5I",
+      "platform": "YouTube",
+      "videoId": "UR2yKeWEN5I",
+      "sourceName": "松本のシンカ【松本市公式チャンネル】 / Matsumoto City official",
+      "publishedAt": "2025-01-10",
+      "checkedAt": "2026-10-25",
+      "parentingUseful": true,
+      "tags": [
+        "離乳食",
+        "幼児食",
+        "肉",
+        "食べにくさ",
+        "調理の工夫"
+      ],
+      "usefulnessReason": "肉の食べにくさに合わせた調理を考えられる",
+      "embedVerified": true,
+      "embedUrl": "https://www.youtube.com/embed/UR2yKeWEN5I",
+      "thumbnailUrl": "https://i.ytimg.com/vi/UR2yKeWEN5I/hqdefault.jpg",
+      "durationSeconds": 129,
+      "videoFormat": "short-video",
+      "channelId": "UCUYwqlUZcN1gFNz-KQtwV1g",
+      "sourceUrl": "https://www.city.matsumoto.nagano.jp/soshiki/65/1738.html",
+      "ageClassification": "発信元の対象月齢・説明を参考にした編集分類",
+      "ageGroups": [
+        "0歳",
+        "1〜2歳",
+        "3〜5歳"
+      ],
+      "minAgeMonths": 9,
+      "ageBasis": "発信元が示す離乳食の時期・月齢に沿った編集分類"
+    },
+    {
+      "id": "youtube-BdLcSgRbLmU",
+      "title": "親のカードでオンラインゲームに150万円以上課金した事例と対策",
+      "summary": "子どものゲーム課金の事例から、端末や支払い設定の対策を紹介。",
+      "url": "https://www.youtube.com/shorts/BdLcSgRbLmU",
+      "platform": "YouTube",
+      "videoId": "BdLcSgRbLmU",
+      "sourceName": "国民生活センター",
+      "publishedAt": "2024-11-11",
+      "checkedAt": "2026-10-25",
+      "parentingUseful": true,
+      "tags": [
+        "スマホ・ゲーム",
+        "課金",
+        "ネットの安全",
+        "家庭のルール"
+      ],
+      "usefulnessReason": "保護者がゲーム課金の予防策を確認できる",
+      "embedVerified": true,
+      "embedUrl": "https://www.youtube.com/embed/BdLcSgRbLmU",
+      "thumbnailUrl": "https://i.ytimg.com/vi/BdLcSgRbLmU/hqdefault.jpg",
+      "durationSeconds": 59,
+      "videoFormat": "shorts",
+      "channelId": "UCh1FFDfkrworkAZUFKHKKAg",
+      "sourceUrl": "https://www.kokusen.go.jp/mimamori/pdf/support167.pdf",
+      "ageClassification": "発信元の対象月齢・説明を参考にした編集分類",
+      "ageGroups": [
+        "小学生"
+      ]
+    },
+    {
+      "id": "youtube-oe5N9sI7dIU",
+      "title": "すくすく離乳食「一石三鳥！炊飯器マジック」",
+      "summary": "大人のごはんと離乳食用の野菜を一度に用意する調理例。",
+      "url": "https://www.youtube.com/watch?v=oe5N9sI7dIU",
+      "platform": "YouTube",
+      "videoId": "oe5N9sI7dIU",
+      "sourceName": "松本のシンカ【松本市公式チャンネル】 / Matsumoto City official",
+      "publishedAt": "2023-10-12",
+      "checkedAt": "2026-10-25",
+      "parentingUseful": true,
+      "tags": [
+        "離乳食",
+        "調理の工夫",
+        "炊飯器",
+        "家事"
+      ],
+      "usefulnessReason": "離乳食の下ごしらえの手間を減らす参考になる",
+      "embedVerified": true,
+      "embedUrl": "https://www.youtube.com/embed/oe5N9sI7dIU",
+      "thumbnailUrl": "https://i.ytimg.com/vi/oe5N9sI7dIU/hqdefault.jpg",
+      "durationSeconds": 76,
+      "videoFormat": "short-video",
+      "channelId": "UCUYwqlUZcN1gFNz-KQtwV1g",
+      "sourceUrl": "https://www.city.matsumoto.nagano.jp/soshiki/65/1738.html",
+      "ageClassification": "発信元の対象月齢・説明を参考にした編集分類",
+      "ageGroups": [
+        "0歳",
+        "1〜2歳"
+      ],
+      "minAgeMonths": 5,
+      "ageBasis": "発信元が示す離乳食の時期・月齢に沿った編集分類"
+    },
+    {
+      "id": "youtube-gkvbKhXTAVU",
+      "title": "すくすく離乳食～中期編～「簡単に離乳食が完成！取り分けテクニック」",
+      "summary": "大人の料理を味付けする前に取り分けて、離乳食を作る方法を紹介。",
+      "url": "https://www.youtube.com/watch?v=gkvbKhXTAVU",
+      "platform": "YouTube",
+      "videoId": "gkvbKhXTAVU",
+      "sourceName": "松本のシンカ【松本市公式チャンネル】 / Matsumoto City official",
+      "publishedAt": "2023-08-08",
+      "checkedAt": "2026-10-25",
+      "parentingUseful": true,
+      "tags": [
+        "離乳食",
+        "離乳食中期",
+        "取り分け",
+        "家事"
+      ],
+      "usefulnessReason": "家族の料理と離乳食を一緒に用意する参考になる",
+      "embedVerified": true,
+      "embedUrl": "https://www.youtube.com/embed/gkvbKhXTAVU",
+      "thumbnailUrl": "https://i.ytimg.com/vi/gkvbKhXTAVU/hqdefault.jpg",
+      "durationSeconds": 115,
+      "videoFormat": "short-video",
+      "channelId": "UCUYwqlUZcN1gFNz-KQtwV1g",
+      "sourceUrl": "https://www.city.matsumoto.nagano.jp/soshiki/65/1738.html",
+      "ageClassification": "発信元の対象月齢・説明を参考にした編集分類",
+      "ageGroups": [
+        "0歳"
+      ],
+      "minAgeMonths": 7,
+      "maxAgeMonths": 8,
+      "ageBasis": "発信元が示す離乳食の時期・月齢に沿った編集分類"
+    },
+    {
+      "id": "youtube-91RKmLWZDfE",
+      "title": "すくすく離乳食～後期編～「手づかみ食べにおすすめ　ツナとコーンのスティック蒸しパン」",
+      "summary": "生後10か月頃からの手づかみ食べに向けた、ツナとコーンの蒸しパン。",
+      "url": "https://www.youtube.com/watch?v=91RKmLWZDfE",
+      "platform": "YouTube",
+      "videoId": "91RKmLWZDfE",
+      "sourceName": "松本のシンカ【松本市公式チャンネル】 / Matsumoto City official",
+      "publishedAt": "2023-03-15",
+      "checkedAt": "2026-10-25",
+      "parentingUseful": true,
+      "tags": [
+        "離乳食",
+        "離乳食後期",
+        "手づかみ食べ",
+        "レシピ"
+      ],
+      "usefulnessReason": "手づかみ食べの献立を増やす参考になる",
+      "embedVerified": true,
+      "embedUrl": "https://www.youtube.com/embed/91RKmLWZDfE",
+      "thumbnailUrl": "https://i.ytimg.com/vi/91RKmLWZDfE/hqdefault.jpg",
+      "durationSeconds": 87,
+      "videoFormat": "short-video",
+      "channelId": "UCUYwqlUZcN1gFNz-KQtwV1g",
+      "sourceUrl": "https://www.city.matsumoto.nagano.jp/soshiki/65/1738.html",
+      "ageClassification": "発信元の対象月齢・説明を参考にした編集分類",
+      "ageGroups": [
+        "0歳",
+        "1〜2歳"
+      ],
+      "minAgeMonths": 10,
+      "ageBasis": "発信元が示す離乳食の時期・月齢に沿った編集分類"
+    },
+    {
+      "id": "youtube-ETL1LFZyn40",
+      "title": "すくすく離乳食　～初めての野菜　ほうれん草編～",
+      "summary": "冷凍した葉物野菜を使う、離乳食初期の下ごしらえを紹介。",
+      "url": "https://www.youtube.com/watch?v=ETL1LFZyn40",
+      "platform": "YouTube",
+      "videoId": "ETL1LFZyn40",
+      "sourceName": "松本のシンカ【松本市公式チャンネル】 / Matsumoto City official",
+      "publishedAt": "2020-11-26",
+      "checkedAt": "2026-10-25",
+      "parentingUseful": true,
+      "tags": [
+        "離乳食",
+        "離乳食初期",
+        "野菜",
+        "下ごしらえ"
+      ],
+      "usefulnessReason": "葉物野菜を食べやすくする調理例が分かる",
+      "embedVerified": true,
+      "embedUrl": "https://www.youtube.com/embed/ETL1LFZyn40",
+      "thumbnailUrl": "https://i.ytimg.com/vi/ETL1LFZyn40/hqdefault.jpg",
+      "durationSeconds": 99,
+      "videoFormat": "short-video",
+      "channelId": "UCUYwqlUZcN1gFNz-KQtwV1g",
+      "sourceUrl": "https://www.city.matsumoto.nagano.jp/soshiki/65/1738.html",
+      "ageClassification": "発信元の対象月齢・説明を参考にした編集分類",
+      "ageGroups": [
+        "0歳"
+      ],
+      "minAgeMonths": 5,
+      "maxAgeMonths": 6,
+      "ageBasis": "発信元が示す離乳食の時期・月齢に沿った編集分類"
+    }
+  ]
+}

@@ -82,7 +82,17 @@
       "status": "verified",
       "httpStatus": 200,
       "latestPublishedAt": "2026-10-25",
-      "filterRequired": false
+      "filterRequired": true,
+      "excludeKeywords": [
+        "アメブロの広告にモノ申す。",
+        "3ヶ月note書いた31歳、やっと「やりたいこと」が見つかった",
+        "意識高い系だと思われたくない、誰からも嫌われたくない",
+        "🌙今日の小さな幸せ日記｜2026.08.31",
+        "今日の小さな幸せ日記｜2026.08.17",
+        "🌙今日の小さな幸せ日記｜2026.08.13",
+        "🌙今日の小さな幸せ日記｜2026.08.11",
+        "🌙今日の小さな幸せ日記｜2026.08.10"
+      ]
     },
     {
       "id": "keiichi-note",
@@ -101,6 +111,12 @@
         "娘",
         "子ども",
         "家族"
+      ],
+      "excludeKeywords": [
+        "育児日記10/21",
+        "育児日記10/20",
+        "育児日記10/19",
+        "育児日記10/16"
       ]
     },
     {
@@ -127,6 +143,123 @@
         "婚活",
         "結婚相談所"
       ]
+    },
+    {
+      "id": "kosodate-hack",
+      "name": "こそだてハック",
+      "url": "https://192abc.com/feed/",
+      "format": "rss2",
+      "section": "columns",
+      "kind": "解説",
+      "status": "verified",
+      "httpStatus": 200,
+      "verifiedAt": "2026-10-25",
+      "latestPublishedAt": "2026-10-23",
+      "filterRequired": true,
+      "includeKeywords": [
+        "離乳食",
+        "授乳",
+        "ミルク",
+        "予防接種",
+        "夜泣き",
+        "寝かしつけ",
+        "発達",
+        "病気",
+        "食物アレルギー",
+        "妊娠",
+        "出産準備",
+        "安全"
+      ],
+      "excludeKeywords": [
+        "おしゃれ",
+        "人気アイテム",
+        "おすすめ商品",
+        "コーディネート",
+        "占い"
+      ],
+      "note": "RSS2を実解析し15件確認。現在は商品紹介が多いため、育児の具体的な疑問に答える記事だけを厳選。今回の手動追加記事には商品ランキングを採用していない。"
+    },
+    {
+      "id": "cocreco",
+      "name": "講談社 コクリコ",
+      "url": "https://cocreco.kodansha.co.jp/media.rss",
+      "format": "rss2",
+      "section": "columns",
+      "kind": "解説",
+      "status": "verified",
+      "httpStatus": 200,
+      "verifiedAt": "2026-10-25",
+      "latestPublishedAt": "2026-10-25",
+      "filterRequired": true,
+      "includeUrlPatterns": [
+        "/cocreco/general/"
+      ],
+      "includeKeywords": [
+        "子育て",
+        "保育",
+        "離乳食",
+        "幼児食",
+        "授乳",
+        "ミルク",
+        "親子",
+        "発達",
+        "不登校",
+        "小学校",
+        "中学受験",
+        "アレルギー",
+        "事故",
+        "性教育",
+        "折り紙",
+        "絵本"
+      ],
+      "excludeKeywords": [
+        "特撮",
+        "プリキュア",
+        "サイン会",
+        "プレゼント",
+        "会員限定",
+        "（PR）",
+        "更新特典",
+        "ログイン",
+        "全ページ公開"
+      ],
+      "note": "RSS2を実解析し30件確認。特撮番組・作品販促・会員連絡が混在。URLと育児テーマの両方を確認し、自社商品の販促だけの記事を除く。"
+    },
+    {
+      "id": "jpeds",
+      "name": "日本小児科学会",
+      "url": "https://www.jpeds.or.jp/feed/",
+      "format": "rss2",
+      "section": "news",
+      "kind": "解説",
+      "status": "verified",
+      "httpStatus": 200,
+      "verifiedAt": "2026-10-25",
+      "latestPublishedAt": "2026-10-23",
+      "filterRequired": true,
+      "includeKeywords": [
+        "予防接種",
+        "ワクチン",
+        "麻疹",
+        "感染症",
+        "事故",
+        "保護者",
+        "食物アレルギー",
+        "熱中症"
+      ],
+      "excludeKeywords": [
+        "メンテナンス",
+        "専門医試験",
+        "研修会",
+        "セミナー",
+        "代議員",
+        "会費",
+        "調査へのご協力",
+        "学術集会",
+        "審査結果",
+        "助成"
+      ],
+      "note": "RSS2を実解析し50件確認。医療者向けの会務案内が多数あるため、保護者が利用できる注意喚起や一般向け資料のみ掲載する。"
     }
   ],
   "discovery": [
@@ -183,7 +316,7 @@
   ],
   "refreshPolicy": {
     "frequency": "daily",
-    "maxItemsPerFeed": 15,
+    "maxItemsPerFeed": 25,
     "maxSummaryChars": 180,
     "retainPublishedAt": true,
     "retainCheckedAtOnFailure": true,
@@ -191,5 +324,7 @@
     "networkTimeoutMs": 12000,
     "maxParallel": 3,
     "failureBehavior": "前回の取得日時を保持し、取得失敗を記録。取得できなかった内容を最新とは表示しない。"
-  }
+  },
+  "videoSourcesFile": "data/video-sources.json",
+  "socialCurationFile": "data/social-curation.json"
 }

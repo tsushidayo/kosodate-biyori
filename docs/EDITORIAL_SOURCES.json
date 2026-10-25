@@ -1,0 +1,67 @@
+{
+  "checkedAt": "2026-10-25",
+  "sources": [
+    {
+      "source": "調査・編集方針",
+      "checkedAt": "2026-10-25",
+      "note": "一般保護者に実用性のある解説、育児経験、制度変更、事故防止、健康情報を選定。ニュースは会議開催や人事・採用・純粋な人口統計を追加しない。ニュースは公表時点が分かるもののみ。日付不明の現行案内はコラムへ置き、公表日は捏造しない。"
+    },
+    {
+      "source": "学研 こそだてまっぷ",
+      "evidencePaths": [
+        "probe-0.txt",
+        "candidate-10.txt",
+        "candidate-11.txt",
+        "gakken-page-4.txt",
+        "gakken-page-5.txt",
+        "gakken-page-6.txt",
+        "gakken-page-7.txt",
+        "gakken-page-8.txt",
+        "gakken-page-9.txt",
+        "gakken-page-10.txt",
+        "gakken-page-11.txt",
+        "gakken-page-12.txt"
+      ],
+      "note": "公開RSSのページ1〜12を実取得・XML解析。content:encodedの配信本文を確認して紹介文を独自作成。占い、終了イベント、プレゼント告知、宣伝だけの記事を除外。既存掲載URLと重複しない30件。"
+    },
+    {
+      "source": "講談社 コクリコ",
+      "evidencePaths": [
+        "cocreco-feed.txt",
+        "cocreco-catalogue.json",
+        "extracted-articles.json"
+      ],
+      "note": "RSSと公式記事ページを実取得。78件の全コラム中39件を追加。各ページのdatePublishedを採用しdateModifiedと区別。2026年に更新された古い記事を2026年の新着記事に見せない。"
+    },
+    {
+      "source": "マイナビ子育て",
+      "evidencePaths": [
+        "my-46266.txt",
+        "my-46282.txt",
+        "my-44218.txt",
+        "my-46251.txt",
+        "my-46288.txt",
+        "my-46029.txt"
+      ],
+      "note": "個別記事本文を実取得して6件追加。広告されているnewest.rssはHTMLが返りRSS解析できないため、新規RSSとして登録しない。"
+    },
+    {
+      "source": "国立成育医療研究センター",
+      "url": "https://www.ncchd.go.jp/press/2026/",
+      "note": "2026年のプレスリリース一覧と個別本文を実取得。家庭に関係する11件を選定。研究の対象や限界を短い説明に残し、治療の自己判断や単一研究からの断定を勧めない。RSワクチン費用の導入初期調査は現在の制度と混同しやすいため採用しない。"
+    },
+    {
+      "source": "消費者庁",
+      "url": "https://www.caa.go.jp/notice/caution/child/",
+      "note": "事故防止の個別ページ本文を読み、独自説明と原典リンクで12件追加。消費者庁RSSの案内は、RSSに基づくサイト作成・情報再配布を禁止しているため、自動RSS登録を見送った。2026年の啓発週間など終了済み期間を開催中として勧めない。"
+    },
+    {
+      "source": "公的制度・予防接種",
+      "note": "日本年金機構、東京労働局、文部科学省、こども家庭庁、日本小児科学会の公式ページを実取得。2026年10月の年金育児免除と社会保険の変更、8月の育休給付手続変更を追加。通園利用や給食費など地域で異なる条件は自治体・学校との確認を案内する。"
+    },
+    {
+      "source": "既存記事の掲載見直し",
+      "note": "removeExistingNewsIdsは会議開催3件、健診会議録1件、人口統計1件を通常ニュースから外す提案。removeExistingColumnIdsは既存の配信概要を確認し、生活日記で子育ての具体的な工夫が見出せない9件を除外する提案。療育・家事分担・寝かしつけなど具体的な体験は保持。"
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "checkedAt": "2026-10-25",
+  "newsIds": [
+    "news-support-council",
+    "news-curriculum-discussion",
+    "news-school-lunch",
+    "news-birth-statistics",
+    "news-health-check-discussion"
+  ],
+  "columnIds": [
+    "feed-https%3A%2F%2Fnote.com%2Fanarchism_ikuji%2Fn%2Fn0a9ae55fd343",
+    "feed-https%3A%2F%2Fnote.com%2Fanarchism_ikuji%2Fn%2Fn489ce2cdac97",
+    "feed-https%3A%2F%2Fnote.com%2Fanarchism_ikuji%2Fn%2Fn966960894098",
+    "feed-https%3A%2F%2Fnote.com%2Fanarchism_ikuji%2Fn%2Fn5f49d5ba51d3",
+    "feed-https%3A%2F%2Fnote.com%2Fellie_rhythm%2Fn%2Fn66a1c4bc6556",
+    "feed-https%3A%2F%2Fnote.com%2Fellie_rhythm%2Fn%2Fnf4988f27f0a7",
+    "feed-https%3A%2F%2Fnote.com%2Fellie_rhythm%2Fn%2Fne2dc0e8df9f2",
+    "feed-https%3A%2F%2Fnote.com%2Fellie_rhythm%2Fn%2Fne41229eb2bb8",
+    "feed-https%3A%2F%2Fnote.com%2Fellie_rhythm%2Fn%2Fnfe9251d2116f"
+  ],
+  "records": [
+    {
+      "id": "news-support-council",
+      "url": "https://www.cfa.go.jp/press/57551703-bf00-4a79-94df-628dc8f2ae25",
+      "title": "子ども・子育て支援の分科会開催を案内"
+    },
+    {
+      "id": "news-curriculum-discussion",
+      "url": "https://www.mext.go.jp/b_menu/shingi/chukyo/chukyo3/kaisai/mext_00157.html",
+      "title": "これからの教育課程を話し合う会議を案内"
+    },
+    {
+      "id": "news-school-lunch",
+      "url": "https://www.mext.go.jp/b_menu/shingi/chousa/shotou/205/gijiroku/mext_00004.html",
+      "title": "学校給食の衛生管理をめぐる議事録を公開"
+    },
+    {
+      "id": "news-birth-statistics",
+      "url": "https://www.mhlw.go.jp/toukei/saikin/hw/jinkou/geppo/s2026/08.html",
+      "title": "2026年8月の人口動態統計速報を公表"
+    },
+    {
+      "id": "news-health-check-discussion",
+      "url": "https://www.cfa.go.jp/councils/nyuyojinokenkoushinsatou-kentokai/a7bdb140",
+      "title": "乳幼児健診のあり方を検討する会議録を公開"
+    },
+    {
+      "id": "feed-https%3A%2F%2Fnote.com%2Fanarchism_ikuji%2Fn%2Fn0a9ae55fd343",
+      "url": "https://note.com/anarchism_ikuji/n/n0a9ae55fd343",
+      "title": "育児日記10/21"
+    },
+    {
+      "id": "feed-https%3A%2F%2Fnote.com%2Fanarchism_ikuji%2Fn%2Fn489ce2cdac97",
+      "url": "https://note.com/anarchism_ikuji/n/n489ce2cdac97",
+      "title": "育児日記10/20"
+    },
+    {
+      "id": "feed-https%3A%2F%2Fnote.com%2Fanarchism_ikuji%2Fn%2Fn966960894098",
+      "url": "https://note.com/anarchism_ikuji/n/n966960894098",
+      "title": "育児日記10/19"
+    },
+    {
+      "id": "feed-https%3A%2F%2Fnote.com%2Fanarchism_ikuji%2Fn%2Fn5f49d5ba51d3",
+      "url": "https://note.com/anarchism_ikuji/n/n5f49d5ba51d3",
+      "title": "育児日記10/16"
+    },
+    {
+      "id": "feed-https%3A%2F%2Fnote.com%2Fellie_rhythm%2Fn%2Fn66a1c4bc6556",
+      "url": "https://note.com/ellie_rhythm/n/n66a1c4bc6556",
+      "title": "🌙今日の小さな幸せ日記｜2026.08.31"
+    },
+    {
+      "id": "feed-https%3A%2F%2Fnote.com%2Fellie_rhythm%2Fn%2Fnf4988f27f0a7",
+      "url": "https://note.com/ellie_rhythm/n/nf4988f27f0a7",
+      "title": "今日の小さな幸せ日記｜2026.08.17"
+    },
+    {
+      "id": "feed-https%3A%2F%2Fnote.com%2Fellie_rhythm%2Fn%2Fne2dc0e8df9f2",
+      "url": "https://note.com/ellie_rhythm/n/ne2dc0e8df9f2",
+      "title": "🌙今日の小さな幸せ日記｜2026.08.13"
+    },
+    {
+      "id": "feed-https%3A%2F%2Fnote.com%2Fellie_rhythm%2Fn%2Fne41229eb2bb8",
+      "url": "https://note.com/ellie_rhythm/n/ne41229eb2bb8",
+      "title": "🌙今日の小さな幸せ日記｜2026.08.11"
+    },
+    {
+      "id": "feed-https%3A%2F%2Fnote.com%2Fellie_rhythm%2Fn%2Fnfe9251d2116f",
+      "url": "https://note.com/ellie_rhythm/n/nfe9251d2116f",
+      "title": "🌙今日の小さな幸せ日記｜2026.08.10"
+    }
+  ]
+}

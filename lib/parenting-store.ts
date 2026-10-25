@@ -3,7 +3,10 @@ import careSeed from "../data/care.json";
 import shopSeed from "../data/shop.json";
 import editorialSeed from "../data/editorial.json";
 import feedsSeed from "../data/feeds.json";
+import socialCurationSeed from "../data/social-curation.json";
 import { refreshGithubCollections } from "./github-collections";
+import { deriveEditorialTags } from "./editorial-tags";
+import { refreshSocialCuration } from "./social-curation";
 
 export const sections = ["care", "shop", "editorial", "feeds"] as const;
 export type Section = (typeof sections)[number];
@@ -48,9 +51,24 @@ export function validateContent(section:unknown,payload:unknown):Section{
 export function validateProfile(profile:unknown){
   if(!isObject(profile))throw new ApiError(400,"保存内容を確認してください。");validateTree(profile);
   if(new TextEncoder().encode(JSON.stringify(profile)).length>120_000)throw new ApiError(413,"保存する内容が多すぎます。");
-  for(const k of["childDate","birthDate","dueDate"])if(profile[k]&&(typeof profile[k]!=="string"||!/^\d{4}-\d{2}-\d{2}$/.test(profile[k])||!Number.isFinite(Date.parse(profile[k]))||new Date(profile[k]).toISOString().slice(0,10)!==profile[k]))throw new ApiError(400,"日付を確認してください。");
+  const parts=new Intl.DateTimeFormat("en-CA",{timeZone:"Asia/Tokyo",year:"numeric",month:"2-digit",day:"2-digit"}).formatToParts(new Date());
+  const value=(type:string)=>parts.find(p=>p.type===type)?.value||"";const today=`${value("year")}-${value("month")}-${value("day")}`;
+  const validDate=(date:unknown)=>typeof date==="string"&&/^\d{4}-\d{2}-\d{2}$/.test(date)&&Number.isFinite(Date.parse(date))&&new Date(date).toISOString().slice(0,10)===date;
+  for(const k of["childDate","birthDate","dueDate"])if(profile[k]!==undefined&&profile[k]!==""&&(!validDate(profile[k])||(k!=="dueDate"&&profile[k]>today)))throw new ApiError(400,"日付を確認してください。誕生日には今日までの日付を入力できます。");
+  if(profile.personalize!==undefined&&typeof profile.personalize!=="boolean")throw new ApiError(400,"年齢に合わせた表示の設定を確認してください。");
+  if(profile.children!==undefined){
+    if(!Array.isArray(profile.children)||profile.children.length>5)throw new ApiError(400,"お子さまは5人まで登録できます。");
+    const ids=new Set<string>();
+    for(const child of profile.children){
+      if(!isObject(child)||typeof child.id!=="string"||! /^[A-Za-z0-9_-]{1,40}$/.test(child.id)||ids.has(child.id))throw new ApiError(400,"お子さまの登録内容を確認してください。");
+      ids.add(child.id);
+      if(typeof child.birthDate!=="string"||(child.birthDate!==""&&(!validDate(child.birthDate)||child.birthDate>today)))throw new ApiError(400,"誕生日には今日までの正しい日付を入力してください。");
+    }
+  }
+  if(profile.activeChildId!==undefined&&(typeof profile.activeChildId!=="string"||(profile.activeChildId!==""&&! /^[A-Za-z0-9_-]{1,40}$/.test(profile.activeChildId))))throw new ApiError(400,"表示するお子さまの設定を確認してください。");
   for(const k of["bookmarks","todos","watchlist"])if(profile[k]!==undefined&&!Array.isArray(profile[k]))throw new ApiError(400,"保存する一覧の形式を確認してください。");return profile;
 }
+
 type Snapshot={section:Section;payload:string;updated_at:string;revision:number};
 export async function content(){
   let rows:Snapshot[]=[];let storageAvailable=false;
@@ -74,7 +92,7 @@ export async function writeContent(updates:any[]){
 }
 export async function readProfile(id:string){
   const row=await db().prepare("SELECT payload,updated_at,revision FROM parenting_profiles WHERE user_id=?").bind(id).first<{payload:string;updated_at:string;revision:number}>();
-  return{profile:row?JSON.parse(row.payload):{childDate:"",dueDate:"",stage:"",bookmarks:[],todos:[],watchlist:[]},updatedAt:row?.updated_at??null,revision:row?.revision??0};
+  return{profile:row?JSON.parse(row.payload):{childDate:"",dueDate:"",stage:"",children:[],personalize:false,activeChildId:"",bookmarks:[],todos:[],watchlist:[]},updatedAt:row?.updated_at??null,revision:row?.revision??0};
 }
 export async function saveProfile(id:string,profile:unknown,revision?:number){
   validateProfile(profile);if(revision!==undefined&&(!Number.isInteger(revision)||revision<0))throw new ApiError(400,"保存番号を確認してください。");const now=new Date().toISOString();
@@ -94,7 +112,8 @@ export function parseFeed(xml:string,source:Obj){
     const url=decodeXml(raw);if(!title||!safeWebUrl(url))return[];
     const date=Date.parse(decodeXml(tag(b,"pubDate")||tag(b,"published")||tag(b,"updated")||tag(b,"dc:date")));
     const summary=decodeXml(tag(b,"description")||tag(b,"summary")||tag(b,"content:encoded")).slice(0,140);
-    return[{id:"feed-"+encodeURIComponent(url).slice(-140),title,summary:summary||"見出しを確認した記事です。詳しい内容は出典をご覧ください。",url,source:source.name||source.source||new URL(url).hostname,publishedAt:Number.isFinite(date)?new Date(date).toISOString():null,checkedAt:new Date().toISOString(),category:source.category||"子育て",section:feedSection(source),kind:source.kind==="体験談"?"体験談":"解説",feedUrl:source.url,ingestion:"rss",summaryKind:"feed-excerpt",readingLabel:"配信の見出し"}];
+    const item={id:"feed-"+encodeURIComponent(url).slice(-140),title,summary:summary||"見出しを確認した記事です。詳しい内容は出典をご覧ください。",url,source:source.name||source.source||new URL(url).hostname,publishedAt:Number.isFinite(date)?new Date(date).toISOString():null,checkedAt:new Date().toISOString(),category:source.category||"子育て",section:feedSection(source),kind:source.kind==="体験談"?"体験談":"解説",feedUrl:source.url,ingestion:"rss",summaryKind:"feed-excerpt",readingLabel:"配信の見出し"};
+    return[{...item,tags:deriveEditorialTags(item)}];
   });
 }
 export function feedSection(source:Obj):"news"|"columns"{return source.section==="columns"||source.kind==="columns"?"columns":"news";}
@@ -102,15 +121,23 @@ export function relevantFeedItem(item:Obj,source:Obj){
   const text=(String(item.title||"")+" "+String(item.summary||"")).toLocaleLowerCase("ja");
   const has=(term:unknown)=>typeof term==="string"&&term.trim().length>0&&text.includes(term.toLocaleLowerCase("ja"));
   if(Array.isArray(source.excludeKeywords)&&source.excludeKeywords.some(has))return false;
-  // Procurement and staffing notices are not advice or news for families, even when a department name includes children.
-  if(feedSection(source)==="news"&&/入札|調達|落札|契約情報|競争参加|職員の?採用|採用試験|非常勤職員|会計年度任用|人材募集/.test(String(item.title||"")))return false;
+  if(Array.isArray(source.includeUrlPatterns)&&source.includeUrlPatterns.some((v:unknown)=>typeof v==="string"&&v.length>0)&&!source.includeUrlPatterns.some((v:unknown)=>typeof v==="string"&&v.length>0&&String(item.url||"").includes(v)))return false;
+  const title=String(item.title||"");
+  // Department names and advertisements are not sufficient evidence of practical relevance to families.
+  if(/入札|調達|落札|契約情報|競争参加|職員の?採用|採用試験|非常勤職員|会計年度任用|人材募集/.test(title))return false;
+  if(/(?:[【［\[](?:PR|ＰＲ|広告)[】］\]]|広告企画|タイアップ|購入特典|新発売|発売決定|予約受付|販売開始)/i.test(title))return false;
+  if(/仮面ライダー|スーパー戦隊|ウルトラマン|特撮/.test(title)&&/発売|付録|グッズ|プレゼント|予約|映画公開|新番組/.test(title))return false;
+  const meeting=/審議会|分科会|部会|検討会|有識者会議|会議/.test(title)&&/開催|傍聴|議事次第|委員募集/.test(title);
+  const familyChange=/給付|手当|助成|補助|無償化|育児休業|育休|保育|就学|子育て/.test(text)&&/改正|施行|拡充|新設|支給開始|申請受付|対象拡大|制度変更|利用開始/.test(text);
+  if(meeting&&!familyChange)return false;
+  if(/人口動態.*(?:統計|速報)|(?:統計調査|統計年報).*公表/.test(title)&&!familyChange)return false;
   if(Array.isArray(source.includeKeywords)&&source.includeKeywords.some((v:unknown)=>typeof v==="string"&&v.trim()))return source.includeKeywords.some(has);
   if(source.filterRequired===false)return true;
   return /妊娠|妊婦|産前|産後|出産|育児|子育て|子ども|こども|子供|赤ちゃん|乳児|幼児|離乳|保育|小学生|小学校|児童|学童|給食|産休|育休|おむつ|オムツ|ベビー|parent|baby|child/i.test(text);
 }
-function registeredFeeds():Obj[]{const raw:any=seeds.feeds;const list=Array.isArray(raw)?raw:raw.feeds??raw.sources??[];return list.filter((f:any)=>isObject(f)&&typeof f.url==="string"&&safeWebUrl(f.url)&&f.enabled!==false).slice(0,12);}
+function registeredFeeds(raw:unknown=seeds.feeds):Obj[]{const listFor=(value:any)=>Array.isArray(value)?value:isObject(value)&&Array.isArray(value.feeds??value.sources)?value.feeds??value.sources:null;const list=listFor(raw)??listFor(seeds.feeds)??[];return list.filter((f:any)=>isObject(f)&&typeof f.url==="string"&&safeWebUrl(f.url)&&f.enabled!==false).slice(0,24);}
 export async function refreshFeeds(){
-  const before=await content();const feeds=registeredFeeds();
+  const before=await content();const feeds=registeredFeeds(before.feeds);
   const githubPending=refreshGithubCollections(Array.isArray(before.editorial?.topics)?before.editorial.topics:[]);
   const outcomes=await Promise.all(feeds.map(async f=>{try{
     const res=await fetch(f.url,{headers:{"User-Agent":"KosodateBiyori/1.0 (parenting feed reader)",Accept:"application/rss+xml, application/atom+xml, application/xml, text/xml"},signal:AbortSignal.timeout(9000),redirect:"manual"});
@@ -120,10 +147,12 @@ export async function refreshFeeds(){
     return{name:f.name||f.url,url:f.url,section:feedSection(f),kind:f.kind,ok:true,items:parseFeed(new TextDecoder().decode(buf),f).filter(i=>relevantFeedItem(i,f)),error:null};
   }catch(e){return{name:f.name||f.url,url:f.url,section:feedSection(f),kind:f.kind,ok:false,items:[],error:e instanceof Error?e.message:"Fetch failed"};}}));
   const editor={...before.editorial};let added=0;
-  for(const kind of["news","columns"]as const){const existing=Array.isArray(editor[kind])?editor[kind]:[];const items=outcomes.filter(f=>f.ok&&f.section===kind).flatMap(f=>f.items);const seen=new Set(existing.map((i:any)=>i.url));const fresh=items.filter(i=>{if(seen.has(i.url))return false;seen.add(i.url);return true;});added+=fresh.length;editor[kind]=[...fresh,...existing].sort((a,b)=>(Date.parse(b.publishedAt||"")||0)-(Date.parse(a.publishedAt||"")||0)).slice(0,100);}
+  for(const kind of["news","columns"]as const){const existing=(Array.isArray(editor[kind])?editor[kind]:[]).filter((i:Obj)=>i.ingestion!=="rss"||relevantFeedItem(i,feeds.find(f=>f.url===i.feedUrl)??{section:kind,filterRequired:false}));const items=outcomes.filter(f=>f.ok&&f.section===kind).flatMap(f=>f.items);const seen=new Set(existing.map((i:Obj)=>i.url));const fresh=items.filter(i=>{if(seen.has(i.url))return false;seen.add(i.url);return true;});added+=fresh.length;editor[kind]=[...fresh,...existing].map(i=>({...i,tags:deriveEditorialTags(i)})).sort((a,b)=>(Date.parse(b.publishedAt||"")||0)-(Date.parse(a.publishedAt||"")||0)).slice(0,500);}
   const githubResult=await githubPending;const {topics,...github}=githubResult;
-  if(github.ok)editor.topics=topics;
-  editor.feedRefresh={attemptedAt:new Date().toISOString(),results:outcomes.map(({items,...rest})=>({...rest,count:items.length})),added,github};
-  const persisted=outcomes.some(o=>o.ok)||github.ok;if(persisted)await writeContent([{section:"editorial",payload:editor}]);
-  return{...editor.feedRefresh,persisted,total:{news:editor.news?.length??0,columns:editor.columns?.length??0,topics:editor.topics?.length??0}};
+  // 24 feeds + 20 collection files + their manifest + this fixed curation file = at most 46 requests.
+  const {topics:reviewedTopics,shorts,...curation}=await refreshSocialCuration({previousTopics:Array.isArray(before.editorial?.topics)?before.editorial.topics:[],incomingTopics:topics,previousShorts:Array.isArray(before.editorial?.shorts)?before.editorial.shorts:[],fallback:socialCurationSeed});
+  editor.topics=reviewedTopics;editor.shorts=shorts;
+  editor.feedRefresh={attemptedAt:new Date().toISOString(),results:outcomes.map(({items,...rest})=>({...rest,count:items.length})),added,github,curation:{...curation,shorts:shorts.length}};
+  const persisted=outcomes.some(o=>o.ok)||github.ok||curation.ok;if(persisted)await writeContent([{section:"editorial",payload:editor}]);
+  return{...editor.feedRefresh,persisted,total:{news:editor.news?.length??0,columns:editor.columns?.length??0,topics:editor.topics?.length??0,shorts:editor.shorts?.length??0}};
 }

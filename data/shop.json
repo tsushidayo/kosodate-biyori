@@ -1019,7 +1019,16 @@
       "matchTerms": [
         "はいはい",
         "810"
-      ]
+      ],
+      "ageBasis": "manufacturer",
+      "ageNote": "0か月〜1歳ごろの育児用ミルク。製品の表示を確認してください。",
+      "ageGroups": [
+        "0歳"
+      ],
+      "minAgeMonths": 0,
+      "maxAgeMonths": 12,
+      "ageSource": "https://www.wakodo.co.jp/product/howtochoose/milk/",
+      "ageCheckedAt": "2026-10-25"
     },
     {
       "id": "pure-820",
@@ -1585,7 +1594,16 @@
       "matchTerms": [
         "ぴゅあ",
         "820"
-      ]
+      ],
+      "ageBasis": "manufacturer",
+      "ageNote": "0か月〜1歳ごろの育児用ミルク。製品の表示を確認してください。",
+      "ageGroups": [
+        "0歳"
+      ],
+      "minAgeMonths": 0,
+      "maxAgeMonths": 12,
+      "ageSource": "https://www.meg-snow.com/snowbaby",
+      "ageCheckedAt": "2026-10-25"
     },
     {
       "id": "wipes-su-640",
@@ -1653,6 +1671,13 @@
         "おしりふき",
         "80",
         "8"
+      ],
+      "ageBasis": "shopping-category",
+      "ageNote": "おむつを使っているお子さま向けの分類です。サイズは月齢ではなく体重などで確認します。",
+      "ageGroups": [
+        "0歳",
+        "1〜2歳",
+        "3〜5歳"
       ]
     },
     {
@@ -1803,6 +1828,13 @@
         "メリーズ",
         "パンツ",
         "46"
+      ],
+      "ageBasis": "shopping-category",
+      "ageNote": "おむつを使っているお子さま向けの分類です。サイズは月齢ではなく体重などで確認します。",
+      "ageGroups": [
+        "0歳",
+        "1〜2歳",
+        "3〜5歳"
       ]
     },
     {
@@ -1963,6 +1995,12 @@
         "母乳実感",
         "耐熱ガラス",
         "240"
+      ],
+      "ageBasis": "shopping-category",
+      "ageNote": "授乳・幼児の食事の用品です。乳首のサイズや対象月齢は製品ごとに確認してください。",
+      "ageGroups": [
+        "0歳",
+        "1〜2歳"
       ]
     },
     {
@@ -2099,6 +2137,13 @@
       "matchTerms": [
         "ベビーミルクローション",
         "300g"
+      ],
+      "ageBasis": "shopping-category",
+      "ageNote": "乳幼児用のおふろ・お肌の用品です。使用条件は製品の表示で確認してください。",
+      "ageGroups": [
+        "0歳",
+        "1〜2歳",
+        "3〜5歳"
       ]
     },
     {
@@ -2258,6 +2303,13 @@
         "全身泡ソープ",
         "しっとり",
         "500"
+      ],
+      "ageBasis": "shopping-category",
+      "ageNote": "乳幼児用のおふろ・お肌の用品です。使用条件は製品の表示で確認してください。",
+      "ageGroups": [
+        "0歳",
+        "1〜2歳",
+        "3〜5歳"
       ]
     },
     {
@@ -2348,7 +2400,14 @@
       "matchTerms": [
         "栄養マルシェ",
         "和風弁当"
-      ]
+      ],
+      "ageBasis": "shopping-category",
+      "ageNote": "開始月齢だけでなく、食べる力と製品の対象時期も確認してください。",
+      "ageGroups": [
+        "0歳",
+        "1〜2歳"
+      ],
+      "minAgeMonths": 9
     },
     {
       "id": "pencil-palette-k56532b",
@@ -2439,6 +2498,12 @@
       "matchTerms": [
         "かきかた鉛筆",
         "K56532B"
+      ],
+      "ageBasis": "shopping-category",
+      "ageNote": "買い物の分類の目安です。サイズや使える時期は製品の表示を確認してください。",
+      "ageGroups": [
+        "3〜5歳",
+        "小学生"
       ]
     },
     {
@@ -2529,6 +2594,12 @@
       "matchTerms": [
         "さんかくクーピー",
         "FYL12"
+      ],
+      "ageBasis": "shopping-category",
+      "ageNote": "買い物の分類の目安です。サイズや使える時期は製品の表示を確認してください。",
+      "ageGroups": [
+        "3〜5歳",
+        "小学生"
       ]
     },
     {
@@ -2617,7 +2688,10 @@
       ],
       "unitType": "個",
       "compareBasis": "同じ型番・容量・個数の商品で比較",
-      "imageUrl": "https://image.yodobashi.com/product/100/000/001/001/940/459/100000001001940459_10203_001.jpg"
+      "imageUrl": "https://image.yodobashi.com/product/100/000/001/001/940/459/100000001001940459_10203_001.jpg",
+      "ageBasis": "shopping-category",
+      "ageNote": "使い方や対象は製品の説明で確認してください。",
+      "allAges": true
     },
     {
       "id": "baby-bath",
@@ -2657,7 +2731,14 @@
       ],
       "unitType": "個",
       "compareBasis": "同じ型番・容量・個数の商品で比較",
-      "imageUrl": "https://image.yodobashi.com/product/100/000/001/007/670/006/100000001007670006_10203_001.jpg"
+      "imageUrl": "https://image.yodobashi.com/product/100/000/001/007/670/006/100000001007670006_10203_001.jpg",
+      "ageBasis": "shopping-category",
+      "ageNote": "乳幼児用のおふろ・お肌の用品です。使用条件は製品の表示で確認してください。",
+      "ageGroups": [
+        "0歳",
+        "1〜2歳",
+        "3〜5歳"
+      ]
     },
     {
       "id": "baby-nail",
@@ -2794,7 +2875,10 @@
       "unitType": "個",
       "compareBasis": "同じ型番・容量・個数の商品で比較",
       "imageUrl": "https://image.yodobashi.com/product/100/000/001/003/216/398/100000001003216398_10203_002.jpg",
-      "jan": "4902508151054"
+      "jan": "4902508151054",
+      "ageBasis": "shopping-category",
+      "ageNote": "使い方や対象は製品の説明で確認してください。",
+      "allAges": true
     },
     {
       "id": "hohoemi-780",
@@ -3073,7 +3157,14 @@
           "total": 2894,
           "unitPrice": 371.03
         }
-      ]
+      ],
+      "ageBasis": "shopping-category",
+      "ageNote": "0か月〜1歳ごろの育児用ミルク。製品の表示を確認してください。",
+      "ageGroups": [
+        "0歳"
+      ],
+      "minAgeMonths": 0,
+      "maxAgeMonths": 12
     },
     {
       "id": "hagukumi-800",
@@ -3378,7 +3469,14 @@
           "total": 2689,
           "unitPrice": 336.12
         }
-      ]
+      ],
+      "ageBasis": "shopping-category",
+      "ageNote": "0か月〜1歳ごろの育児用ミルク。製品の表示を確認してください。",
+      "ageGroups": [
+        "0歳"
+      ],
+      "minAgeMonths": 0,
+      "maxAgeMonths": 12
     },
     {
       "id": "eakachan-800",
@@ -3605,7 +3703,14 @@
           "total": 3812,
           "unitPrice": 476.5
         }
-      ]
+      ],
+      "ageBasis": "shopping-category",
+      "ageNote": "0か月〜1歳ごろの育児用ミルク。製品の表示を確認してください。",
+      "ageGroups": [
+        "0歳"
+      ],
+      "minAgeMonths": 0,
+      "maxAgeMonths": 12
     },
     {
       "id": "sukoyaka-m1-800",
@@ -3728,7 +3833,14 @@
           "total": 5896,
           "unitPrice": 368.5
         }
-      ]
+      ],
+      "ageBasis": "shopping-category",
+      "ageNote": "0か月〜1歳ごろの育児用ミルク。製品の表示を確認してください。",
+      "ageGroups": [
+        "0歳"
+      ],
+      "minAgeMonths": 0,
+      "maxAgeMonths": 12
     },
     {
       "id": "icreo-balance-800",
@@ -3929,7 +4041,14 @@
           "total": 3345,
           "unitPrice": 418.13
         }
-      ]
+      ],
+      "ageBasis": "shopping-category",
+      "ageNote": "0か月〜1歳ごろの育児用ミルク。製品の表示を確認してください。",
+      "ageGroups": [
+        "0歳"
+      ],
+      "minAgeMonths": 0,
+      "maxAgeMonths": 12
     },
     {
       "id": "merries-premium-tape-s54",
@@ -4107,6 +4226,13 @@
           "total": 1610,
           "unitPrice": 29.814814814814813
         }
+      ],
+      "ageBasis": "shopping-category",
+      "ageNote": "おむつを使っているお子さま向けの分類です。サイズは月齢ではなく体重などで確認します。",
+      "ageGroups": [
+        "0歳",
+        "1〜2歳",
+        "3〜5歳"
       ]
     },
     {
@@ -4335,6 +4461,13 @@
           "total": 1610,
           "unitPrice": 26.833333333333332
         }
+      ],
+      "ageBasis": "shopping-category",
+      "ageNote": "おむつを使っているお子さま向けの分類です。サイズは月齢ではなく体重などで確認します。",
+      "ageGroups": [
+        "0歳",
+        "1〜2歳",
+        "3〜5歳"
       ]
     },
     {
@@ -4513,6 +4646,13 @@
           "total": 1650,
           "unitPrice": 34.375
         }
+      ],
+      "ageBasis": "shopping-category",
+      "ageNote": "おむつを使っているお子さま向けの分類です。サイズは月齢ではなく体重などで確認します。",
+      "ageGroups": [
+        "0歳",
+        "1〜2歳",
+        "3〜5歳"
       ]
     },
     {
@@ -4691,6 +4831,13 @@
           "total": 2050,
           "unitPrice": 39.42307692307692
         }
+      ],
+      "ageBasis": "shopping-category",
+      "ageNote": "おむつを使っているお子さま向けの分類です。サイズは月齢ではなく体重などで確認します。",
+      "ageGroups": [
+        "0歳",
+        "1〜2歳",
+        "3〜5歳"
       ]
     },
     {
@@ -4869,6 +5016,13 @@
           "total": 2050,
           "unitPrice": 46.59090909090909
         }
+      ],
+      "ageBasis": "shopping-category",
+      "ageNote": "おむつを使っているお子さま向けの分類です。サイズは月齢ではなく体重などで確認します。",
+      "ageGroups": [
+        "0歳",
+        "1〜2歳",
+        "3〜5歳"
       ]
     },
     {
@@ -5047,6 +5201,13 @@
           "total": 2130,
           "unitPrice": 34.354838709677416
         }
+      ],
+      "ageBasis": "shopping-category",
+      "ageNote": "おむつを使っているお子さま向けの分類です。サイズは月齢ではなく体重などで確認します。",
+      "ageGroups": [
+        "0歳",
+        "1〜2歳",
+        "3〜5歳"
       ]
     },
     {
@@ -5175,6 +5336,13 @@
           "total": 8580,
           "unitPrice": 25.535714285714285
         }
+      ],
+      "ageBasis": "shopping-category",
+      "ageNote": "おむつを使っているお子さま向けの分類です。サイズは月齢ではなく体重などで確認します。",
+      "ageGroups": [
+        "0歳",
+        "1〜2歳",
+        "3〜5歳"
       ]
     },
     {
@@ -5352,6 +5520,13 @@
           "total": 1540,
           "unitPrice": 45.294117647058826
         }
+      ],
+      "ageBasis": "shopping-category",
+      "ageNote": "おむつを使っているお子さま向けの分類です。サイズは月齢ではなく体重などで確認します。",
+      "ageGroups": [
+        "0歳",
+        "1〜2歳",
+        "3〜5歳"
       ]
     },
     {
@@ -5530,6 +5705,13 @@
           "total": 1900,
           "unitPrice": 36.53846153846154
         }
+      ],
+      "ageBasis": "shopping-category",
+      "ageNote": "おむつを使っているお子さま向けの分類です。サイズは月齢ではなく体重などで確認します。",
+      "ageGroups": [
+        "0歳",
+        "1〜2歳",
+        "3〜5歳"
       ]
     },
     {
@@ -5658,6 +5840,13 @@
           "total": 7720,
           "unitPrice": 27.571428571428573
         }
+      ],
+      "ageBasis": "shopping-category",
+      "ageNote": "おむつを使っているお子さま向けの分類です。サイズは月齢ではなく体重などで確認します。",
+      "ageGroups": [
+        "0歳",
+        "1〜2歳",
+        "3〜5歳"
       ]
     },
     {
@@ -5836,6 +6025,13 @@
           "total": 1760,
           "unitPrice": 33.84615384615385
         }
+      ],
+      "ageBasis": "shopping-category",
+      "ageNote": "おむつを使っているお子さま向けの分類です。サイズは月齢ではなく体重などで確認します。",
+      "ageGroups": [
+        "0歳",
+        "1〜2歳",
+        "3〜5歳"
       ]
     },
     {
@@ -5963,6 +6159,13 @@
           "total": 4079,
           "unitPrice": 1.4715007215007214
         }
+      ],
+      "ageBasis": "shopping-category",
+      "ageNote": "おむつを使っているお子さま向けの分類です。サイズは月齢ではなく体重などで確認します。",
+      "ageGroups": [
+        "0歳",
+        "1〜2歳",
+        "3〜5歳"
       ]
     },
     {
@@ -6038,6 +6241,13 @@
           "total": 525,
           "unitPrice": 3.5
         }
+      ],
+      "ageBasis": "shopping-category",
+      "ageNote": "おむつを使っているお子さま向けの分類です。サイズは月齢ではなく体重などで確認します。",
+      "ageGroups": [
+        "0歳",
+        "1〜2歳",
+        "3〜5歳"
       ]
     },
     {
@@ -6113,6 +6323,13 @@
           "total": 288,
           "unitPrice": 1.3714285714285714
         }
+      ],
+      "ageBasis": "shopping-category",
+      "ageNote": "おむつを使っているお子さま向けの分類です。サイズは月齢ではなく体重などで確認します。",
+      "ageGroups": [
+        "0歳",
+        "1〜2歳",
+        "3〜5歳"
       ]
     },
     {
@@ -6265,7 +6482,14 @@
           "priceType": "ネット取り寄せ注文時掲載額・店頭が安い場合は変更"
         }
       ],
-      "gtin13": "4987176180599"
+      "gtin13": "4987176180599",
+      "ageBasis": "shopping-category",
+      "ageNote": "おむつを使っているお子さま向けの分類です。サイズは月齢ではなく体重などで確認します。",
+      "ageGroups": [
+        "0歳",
+        "1〜2歳",
+        "3〜5歳"
+      ]
     },
     {
       "id": "nail-pigeon-3m",
@@ -6354,7 +6578,10 @@
         }
       ],
       "imageUrl": "https://image.yodobashi.com/product/100/000/001/003/216/399/100000001003216399_10203_003.jpg",
-      "jan": "4902508151061"
+      "jan": "4902508151061",
+      "ageBasis": "shopping-category",
+      "ageNote": "使い方や対象は製品の説明で確認してください。",
+      "allAges": true
     },
     {
       "id": "bath-richell-k-be",
@@ -6419,7 +6646,14 @@
           "shippingSource": "https://www.yodobashi.com/ec/support/beginner/delivery/receive"
         }
       ],
-      "imageUrl": "https://image.yodobashi.com/product/100/000/001/007/520/751/100000001007520751_10203_001.jpg"
+      "imageUrl": "https://image.yodobashi.com/product/100/000/001/007/520/751/100000001007520751_10203_001.jpg",
+      "ageBasis": "shopping-category",
+      "ageNote": "乳幼児用のおふろ・お肌の用品です。使用条件は製品の表示で確認してください。",
+      "ageGroups": [
+        "0歳",
+        "1〜2歳",
+        "3〜5歳"
+      ]
     },
     {
       "id": "bath-richell-plusk-be",
@@ -6459,7 +6693,14 @@
           "mode": "配送"
         }
       ],
-      "imageUrl": "https://image.yodobashi.com/product/100/000/001/007/520/752/100000001007520752_10203_001.jpg"
+      "imageUrl": "https://image.yodobashi.com/product/100/000/001/007/520/752/100000001007520752_10203_001.jpg",
+      "ageBasis": "shopping-category",
+      "ageNote": "乳幼児用のおふろ・お肌の用品です。使用条件は製品の表示で確認してください。",
+      "ageGroups": [
+        "0歳",
+        "1〜2歳",
+        "3〜5歳"
+      ]
     },
     {
       "id": "cutlery-edison-kj3271",
@@ -6524,7 +6765,17 @@
           "shippingSource": "https://www.yodobashi.com/ec/support/beginner/delivery/receive"
         }
       ],
-      "imageUrl": "https://image.yodobashi.com/product/100/000/001/007/501/998/100000001007501998_10203.jpg"
+      "imageUrl": "https://image.yodobashi.com/product/100/000/001/007/501/998/100000001007501998_10203.jpg",
+      "ageBasis": "manufacturer",
+      "ageNote": "メーカーの対象は1歳半ごろから。",
+      "ageGroups": [
+        "1〜2歳",
+        "3〜5歳",
+        "小学生"
+      ],
+      "minAgeMonths": 18,
+      "ageSource": "https://products.edisonmama.com/products/kj3271",
+      "ageCheckedAt": "2026-10-25"
     },
     {
       "id": "bottle-bonyu-glass160",
@@ -6661,7 +6912,13 @@
         }
       ],
       "imageUrl": "https://image.yodobashi.com/product/100/000/001/006/947/520/100000001006947520_10203_001.jpg",
-      "jan": "4902508024471"
+      "jan": "4902508024471",
+      "ageBasis": "shopping-category",
+      "ageNote": "授乳・幼児の食事の用品です。乳首のサイズや対象月齢は製品ごとに確認してください。",
+      "ageGroups": [
+        "0歳",
+        "1〜2歳"
+      ]
     },
     {
       "id": "bottle-bonyu-plastic160",
@@ -6750,7 +7007,13 @@
         }
       ],
       "imageUrl": "https://image.yodobashi.com/product/100/000/001/006/947/523/100000001006947523_10203_002.jpg",
-      "jan": "4902508024501"
+      "jan": "4902508024501",
+      "ageBasis": "shopping-category",
+      "ageNote": "授乳・幼児の食事の用品です。乳首のサイズや対象月齢は製品ごとに確認してください。",
+      "ageGroups": [
+        "0歳",
+        "1〜2歳"
+      ]
     },
     {
       "id": "toy-kumon-bl22",
@@ -6816,7 +7079,16 @@
         }
       ],
       "imageUrl": "https://image.yodobashi.com/product/100/000/001/007/807/519/100000001007807519_10203.jpg",
-      "jan": "4944121548149"
+      "jan": "4944121548149",
+      "ageBasis": "manufacturer",
+      "ageNote": "メーカーの対象は3歳以上。",
+      "ageGroups": [
+        "3〜5歳",
+        "小学生"
+      ],
+      "minAgeMonths": 36,
+      "ageSource": "https://shop.kumonshuppan.com/view/item/000000003407",
+      "ageCheckedAt": "2026-10-25"
     },
     {
       "id": "toy-kumon-wp43",
@@ -6882,7 +7154,16 @@
         }
       ],
       "imageUrl": "https://image.yodobashi.com/product/100/000/001/010/097/628/100000001010097628_10203.jpg",
-      "jan": "4944121548989"
+      "jan": "4944121548989",
+      "ageBasis": "manufacturer",
+      "ageNote": "メーカーの対象は3歳以上。",
+      "ageGroups": [
+        "3〜5歳",
+        "小学生"
+      ],
+      "minAgeMonths": 36,
+      "ageSource": "https://shop.kumonshuppan.com/view/item/000000003780",
+      "ageCheckedAt": "2026-10-25"
     },
     {
       "id": "toy-kumon-wp52",
@@ -6948,7 +7229,17 @@
         }
       ],
       "imageUrl": "https://image.yodobashi.com/product/100/000/001/007/847/387/100000001007847387_10203.jpg",
-      "jan": "4944121547821"
+      "jan": "4944121547821",
+      "ageBasis": "manufacturer",
+      "ageNote": "メーカーの対象は2歳以上。",
+      "ageGroups": [
+        "1〜2歳",
+        "3〜5歳",
+        "小学生"
+      ],
+      "minAgeMonths": 24,
+      "ageSource": "https://shop.kumonshuppan.com/view/item/007001000028",
+      "ageCheckedAt": "2026-10-25"
     },
     {
       "id": "nipple-bonyu-m2",
@@ -7110,7 +7401,14 @@
       ],
       "imageUrl": "https://image.yodobashi.com/product/100/000/001/006/913/261/100000001006913261_10203_002.jpg",
       "jan": "4902508024839",
-      "gtin13": "4902508024839"
+      "gtin13": "4902508024839",
+      "ageBasis": "shopping-category",
+      "ageNote": "授乳・幼児の食事の用品です。乳首のサイズや対象月齢は製品ごとに確認してください。",
+      "ageGroups": [
+        "0歳",
+        "1〜2歳"
+      ],
+      "minAgeMonths": 3
     },
     {
       "id": "nipple-bonyu-s2",
@@ -7201,7 +7499,14 @@
       ],
       "imageUrl": "https://image.yodobashi.com/product/100/000/001/006/913/260/100000001006913260_10203_002.jpg",
       "jan": "4902508024822",
-      "gtin13": "4902508024822"
+      "gtin13": "4902508024822",
+      "ageBasis": "shopping-category",
+      "ageNote": "授乳・幼児の食事の用品です。乳首のサイズや対象月齢は製品ごとに確認してください。",
+      "ageGroups": [
+        "0歳",
+        "1〜2歳"
+      ],
+      "minAgeMonths": 1
     },
     {
       "id": "brush-bonyu-nipple2",
@@ -7241,7 +7546,13 @@
           "mode": "配送"
         }
       ],
-      "imageUrl": "https://image.yodobashi.com/product/100/000/001/007/583/607/100000001007583607_10203.jpg"
+      "imageUrl": "https://image.yodobashi.com/product/100/000/001/007/583/607/100000001007583607_10203.jpg",
+      "ageBasis": "shopping-category",
+      "ageNote": "授乳・幼児の食事の用品です。乳首のサイズや対象月齢は製品ごとに確認してください。",
+      "ageGroups": [
+        "0歳",
+        "1〜2歳"
+      ]
     },
     {
       "id": "meal-wakodo-spinach21",
@@ -7307,7 +7618,14 @@
         }
       ],
       "imageUrl": "https://image.yodobashi.com/product/100/000/001/001/677/539/100000001001677539_10203_003.jpg",
-      "jan": "4987244163431"
+      "jan": "4987244163431",
+      "ageBasis": "shopping-category",
+      "ageNote": "開始月齢だけでなく、食べる力と製品の対象時期も確認してください。",
+      "ageGroups": [
+        "0歳",
+        "1〜2歳"
+      ],
+      "minAgeMonths": 5
     },
     {
       "id": "bottle-bonyu-plastic240",
@@ -7346,6 +7664,12 @@
           "total": 2860,
           "unitPrice": 2860
         }
+      ],
+      "ageBasis": "shopping-category",
+      "ageNote": "授乳・幼児の食事の用品です。乳首のサイズや対象月齢は製品ごとに確認してください。",
+      "ageGroups": [
+        "0歳",
+        "1〜2歳"
       ]
     },
     {
@@ -7385,7 +7709,14 @@
           "total": 990,
           "unitPrice": 990
         }
-      ]
+      ],
+      "ageBasis": "shopping-category",
+      "ageNote": "授乳・幼児の食事の用品です。乳首のサイズや対象月齢は製品ごとに確認してください。",
+      "ageGroups": [
+        "0歳",
+        "1〜2歳"
+      ],
+      "minAgeMonths": 0
     },
     {
       "id": "nipple-bonyu-l2",
@@ -7424,7 +7755,14 @@
           "total": 1870,
           "unitPrice": 935
         }
-      ]
+      ],
+      "ageBasis": "shopping-category",
+      "ageNote": "授乳・幼児の食事の用品です。乳首のサイズや対象月齢は製品ごとに確認してください。",
+      "ageGroups": [
+        "0歳",
+        "1〜2歳"
+      ],
+      "minAgeMonths": 6
     },
     {
       "id": "soap-pigeon-plain-refill400",
@@ -7463,6 +7801,13 @@
           "total": 650,
           "unitPrice": 650
         }
+      ],
+      "ageBasis": "shopping-category",
+      "ageNote": "乳幼児用のおふろ・お肌の用品です。使用条件は製品の表示で確認してください。",
+      "ageGroups": [
+        "0歳",
+        "1〜2歳",
+        "3〜5歳"
       ]
     },
     {
@@ -7503,6 +7848,13 @@
           "unitPrice": 1.3,
           "priceType": "ネット取り寄せ注文時掲載額・店頭が安い場合は変更"
         }
+      ],
+      "ageBasis": "shopping-category",
+      "ageNote": "おむつを使っているお子さま向けの分類です。サイズは月齢ではなく体重などで確認します。",
+      "ageGroups": [
+        "0歳",
+        "1〜2歳",
+        "3〜5歳"
       ]
     },
     {
@@ -7543,6 +7895,13 @@
           "unitPrice": 1320,
           "priceType": "ネット取り寄せ注文時掲載額・店頭が安い場合は変更"
         }
+      ],
+      "ageBasis": "shopping-category",
+      "ageNote": "乳幼児用のおふろ・お肌の用品です。使用条件は製品の表示で確認してください。",
+      "ageGroups": [
+        "0歳",
+        "1〜2歳",
+        "3〜5歳"
       ]
     },
     {
@@ -7583,6 +7942,13 @@
           "unitPrice": 877.8,
           "priceType": "税込表示額。会計時の端数処理により1円未満の差あり"
         }
+      ],
+      "ageBasis": "shopping-category",
+      "ageNote": "乳幼児用のおふろ・お肌の用品です。使用条件は製品の表示で確認してください。",
+      "ageGroups": [
+        "0歳",
+        "1〜2歳",
+        "3〜5歳"
       ]
     },
     {
@@ -7623,6 +7989,13 @@
           "unitPrice": 877.8,
           "priceType": "税込表示額。会計時の端数処理により1円未満の差あり"
         }
+      ],
+      "ageBasis": "shopping-category",
+      "ageNote": "乳幼児用のおふろ・お肌の用品です。使用条件は製品の表示で確認してください。",
+      "ageGroups": [
+        "0歳",
+        "1〜2歳",
+        "3〜5歳"
       ]
     },
     {
@@ -7662,6 +8035,13 @@
           "total": 668,
           "unitPrice": 556.67
         }
+      ],
+      "ageBasis": "shopping-category",
+      "ageNote": "乳幼児用のおふろ・お肌の用品です。使用条件は製品の表示で確認してください。",
+      "ageGroups": [
+        "0歳",
+        "1〜2歳",
+        "3〜5歳"
       ]
     },
     {
@@ -7701,6 +8081,13 @@
           "total": 866,
           "unitPrice": 346.4
         }
+      ],
+      "ageBasis": "shopping-category",
+      "ageNote": "乳幼児用のおふろ・お肌の用品です。使用条件は製品の表示で確認してください。",
+      "ageGroups": [
+        "0歳",
+        "1〜2歳",
+        "3〜5歳"
       ]
     },
     {
@@ -7740,6 +8127,12 @@
           "total": 545,
           "unitPrice": 545
         }
+      ],
+      "ageBasis": "shopping-category",
+      "ageNote": "授乳・幼児の食事の用品です。乳首のサイズや対象月齢は製品ごとに確認してください。",
+      "ageGroups": [
+        "0歳",
+        "1〜2歳"
       ]
     },
     {
@@ -7779,6 +8172,13 @@
           "total": 899,
           "unitPrice": 299.67
         }
+      ],
+      "ageBasis": "shopping-category",
+      "ageNote": "乳幼児用のおふろ・お肌の用品です。使用条件は製品の表示で確認してください。",
+      "ageGroups": [
+        "0歳",
+        "1〜2歳",
+        "3〜5歳"
       ]
     }
   ],
