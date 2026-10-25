@@ -1,0 +1,1274 @@
+{
+  "stages": [
+    {
+      "id": "prenatal",
+      "label": "妊娠中",
+      "minMonth": -9,
+      "maxMonth": -1,
+      "lead": "出産後に休めるよう、家事と手続きの相談を少しずつ。",
+      "tasks": [
+        {
+          "title": "母子手帳と相談窓口を確認",
+          "body": "妊娠届、健診の助成、妊婦のための給付について、お住まいの自治体で確認します。",
+          "source": "https://www.cfa.go.jp/policies/shussan-kosodate"
+        },
+        {
+          "title": "出産費用と退院後の手助けを相談",
+          "body": "病院の支払い方法と、食事・洗濯・上の子の送迎を誰に頼むかを書き出してみましょう。",
+          "source": "https://birth-navi.mhlw.go.jp/support/late-pregnancy"
+        }
+      ],
+      "needs": [
+        "母子手帳・健診の受診票",
+        "入院先が指定する持ち物",
+        "退院後の肌着・おむつ",
+        "赤ちゃん用の安全な寝床"
+      ],
+      "food": {
+        "title": "食事は主食・主菜・副菜を意識",
+        "body": "食べられるものを大切にし、つわりや貧血などの悩みは健診で相談します。特定の食品やサプリだけに頼らず、必要量は担当者に確かめましょう。",
+        "source": "https://birth-navi.mhlw.go.jp/support/late-pregnancy"
+      },
+      "play": {
+        "title": "近くの両親教室を調べる",
+        "body": "沐浴や抱っこを家族と練習できる場を探してみましょう。参加は体調を優先して。",
+        "source": "https://birth-navi.mhlw.go.jp/support/late-pregnancy"
+      },
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "m0",
+      "label": "生後0か月",
+      "minMonth": 0,
+      "maxMonth": 0,
+      "lead": "赤ちゃんのお世話と、産後の休息をいちばんに。",
+      "tasks": [
+        {
+          "title": "出生届と給付の申請を分担",
+          "body": "国内で生まれた場合、出生届は原則14日以内。児童手当や健康保険の手続きも確認します。",
+          "source": "https://www.moj.go.jp/ONLINE/FAMILYREGISTER/5-1.html"
+        },
+        {
+          "title": "健診・新生児訪問の案内を確認",
+          "body": "退院時に説明された受診日と、自治体の訪問相談の連絡先を控えます。",
+          "source": "https://www.cfa.go.jp/policies/boshihoken/nyuyojikenshin"
+        }
+      ],
+      "needs": [
+        "おむつ・おしり拭き",
+        "肌着",
+        "授乳に必要な物",
+        "硬く平らな赤ちゃん用寝床"
+      ],
+      "food": {
+        "title": "母乳・育児用ミルクが中心",
+        "body": "飲み方や量には個人差があります。体重の増え方やおしっこ、機嫌も含めて健診で相談しましょう。水分や離乳食を月齢だけで追加する必要はありません。",
+        "source": "https://www.cfa.go.jp/policies/boshihoken/junyuu"
+      },
+      "play": {
+        "title": "顔を見て、短く声をかける",
+        "body": "起きている時間に「おむつ替えようね」などの声かけを。反応の多さを比べなくて大丈夫です。",
+        "source": "https://mchbook.cfa.go.jp/"
+      },
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "m1",
+      "label": "生後1か月",
+      "minMonth": 1,
+      "maxMonth": 1,
+      "lead": "困りごとを健診で相談。大人の疲れも伝えてください。",
+      "tasks": [
+        {
+          "title": "1か月健診の予定を確認",
+          "body": "赤ちゃんの飲み方、体重、眠りについて、気になったことをメモして持参します。健診方法は地域で異なります。",
+          "source": "https://www.cfa.go.jp/policies/boshihoken/nyuyojikenshin"
+        },
+        {
+          "title": "予防接種の準備",
+          "body": "生後2か月から始まる接種があります。医療機関や自治体の案内で予約方法を確認します。",
+          "source": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/kenkou/kekkaku-kansenshou/yobou-sesshu/index.html"
+        }
+      ],
+      "needs": [
+        "母子手帳",
+        "健診用の着替え・おむつ",
+        "外出用の小さな荷物"
+      ],
+      "food": {
+        "title": "母乳・育児用ミルクが中心",
+        "body": "飲み方や量には個人差があります。体重の増え方やおしっこ、機嫌も含めて健診で相談しましょう。水分や離乳食を月齢だけで追加する必要はありません。",
+        "source": "https://www.cfa.go.jp/policies/boshihoken/junyuu"
+      },
+      "play": {
+        "title": "短いお散歩の準備",
+        "body": "健診で体調を確認し、無理のない時間から。暑さ・寒さや人混みを避け、授乳できる場所も見ておきます。",
+        "source": "https://mchbook.cfa.go.jp/"
+      },
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "m2",
+      "label": "生後2か月",
+      "minMonth": 2,
+      "maxMonth": 2,
+      "lead": "予防接種を始める時期。予定は医療機関と相談して。",
+      "tasks": [
+        {
+          "title": "予防接種を相談・予約",
+          "body": "ワクチンによって始められる時期や期限が異なります。母子手帳を見ながら医療機関で予定を立てます。",
+          "source": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/kenkou/kekkaku-kansenshou/yobou-sesshu/index.html"
+        },
+        {
+          "title": "寝床をもう一度チェック",
+          "body": "顔の近くにタオルやぬいぐるみを置かず、寝かせるときはあお向けに。",
+          "source": "https://www.cfa.go.jp/policies/child-safety-actions/handbook/content-1"
+        }
+      ],
+      "needs": [
+        "接種の予診票",
+        "母子手帳",
+        "体温計"
+      ],
+      "food": {
+        "title": "母乳・育児用ミルクが中心",
+        "body": "飲み方や量には個人差があります。体重の増え方やおしっこ、機嫌も含めて健診で相談しましょう。水分や離乳食を月齢だけで追加する必要はありません。",
+        "source": "https://www.cfa.go.jp/policies/boshihoken/junyuu"
+      },
+      "play": {
+        "title": "声や表情のやりとり",
+        "body": "赤ちゃんの表情を見ながら話しかけます。眠そうなときは遊びを切り上げて休みましょう。",
+        "source": "https://mchbook.cfa.go.jp/"
+      },
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "m3",
+      "label": "生後3か月",
+      "minMonth": 3,
+      "maxMonth": 3,
+      "lead": "健診の案内と、床まわりの安全を見直すころ。",
+      "tasks": [
+        {
+          "title": "3〜6か月ごろの健診を確認",
+          "body": "実施月齢は自治体で異なります。首の支え方や授乳の悩みも相談できます。",
+          "source": "https://www.cfa.go.jp/policies/boshihoken/nyuyojikenshin"
+        },
+        {
+          "title": "小さな物を手の届かない場所へ",
+          "body": "小銭、ボタン電池、薬などは大人の管理場所へ。ソファなど高い所に寝かせたまま離れません。",
+          "source": "https://www.cfa.go.jp/policies/child-safety-actions/handbook/content-1"
+        }
+      ],
+      "needs": [
+        "床で過ごせる安全な場所",
+        "口に入らない大きさのおもちゃ",
+        "健診の案内"
+      ],
+      "food": {
+        "title": "母乳・育児用ミルクが中心",
+        "body": "飲み方や量には個人差があります。体重の増え方やおしっこ、機嫌も含めて健診で相談しましょう。水分や離乳食を月齢だけで追加する必要はありません。",
+        "source": "https://www.cfa.go.jp/policies/boshihoken/junyuu"
+      },
+      "play": {
+        "title": "気になる音や絵を一緒に",
+        "body": "やわらかな音のおもちゃや絵本を短く楽しむ例です。音や光を強くしすぎず、反応を見て続けます。",
+        "source": "https://mchbook.cfa.go.jp/"
+      },
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "m4",
+      "label": "生後4か月",
+      "minMonth": 4,
+      "maxMonth": 4,
+      "lead": "離乳食の道具を少しずつ。始める日は発達を見て決めます。",
+      "tasks": [
+        {
+          "title": "健診の受診もれを確認",
+          "body": "自治体からの案内を確認し、受診できなかった場合は窓口へ相談します。",
+          "source": "https://www.cfa.go.jp/policies/boshihoken/nyuyojikenshin"
+        },
+        {
+          "title": "離乳食の準備を確認",
+          "body": "5〜6か月ごろが開始の目安。首のすわりや支えた姿勢、食への関心なども見て判断します。",
+          "source": "https://www.cfa.go.jp/policies/boshihoken/junyuu"
+        }
+      ],
+      "needs": [
+        "赤ちゃん用スプーン",
+        "小さな器",
+        "加熱・すりつぶし用の道具"
+      ],
+      "food": {
+        "title": "母乳・育児用ミルクが中心",
+        "body": "飲み方や量には個人差があります。体重の増え方やおしっこ、機嫌も含めて健診で相談しましょう。水分や離乳食を月齢だけで追加する必要はありません。",
+        "source": "https://www.cfa.go.jp/policies/boshihoken/junyuu"
+      },
+      "play": {
+        "title": "絵本を一緒に眺める",
+        "body": "読み切ることより、声や絵を一緒に楽しむ時間に。興味が続かない日は短く終えて大丈夫です。",
+        "source": "https://mchbook.cfa.go.jp/"
+      },
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "m5",
+      "label": "生後5か月",
+      "minMonth": 5,
+      "maxMonth": 5,
+      "lead": "離乳食の始めどき。月齢だけで急がなくて大丈夫。",
+      "tasks": [
+        {
+          "title": "始められそうか確認",
+          "body": "5〜6か月ごろを目安に、首がすわり、支えた姿勢で食べられそうかを見ます。不安があれば保健師に相談を。",
+          "source": "https://www.cfa.go.jp/policies/boshihoken/junyuu"
+        },
+        {
+          "title": "食材と反応をメモ",
+          "body": "新しい食材は少量から。食べた物と、気になった反応を記録すると相談時に役立ちます。",
+          "source": "https://www.cfa.go.jp/policies/boshihoken/junyuu"
+        }
+      ],
+      "needs": [
+        "スプーン・器",
+        "食事用エプロン",
+        "食材の記録メモ"
+      ],
+      "food": {
+        "title": "なめらかなおかゆから少しずつ",
+        "body": "食事例：なめらかにしたおかゆ。慣れたら加熱してすりつぶした野菜などへ。最初は1日1回を目安にし、授乳も続けます。",
+        "source": "https://www.cfa.go.jp/policies/boshihoken/junyuu"
+      },
+      "play": {
+        "title": "食卓の雰囲気を一緒に",
+        "body": "大人が食べる様子を見ながら会話するのも一例です。食べさせる練習を急がず、その子の様子を見ましょう。",
+        "source": "https://www.cfa.go.jp/policies/boshihoken/junyuu"
+      },
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "m6",
+      "label": "生後6か月",
+      "minMonth": 6,
+      "maxMonth": 6,
+      "lead": "食べることに慣れる時期。量より食べやすさを確認。",
+      "tasks": [
+        {
+          "title": "食感が合っているか見る",
+          "body": "口を閉じて飲み込めるか、姿勢が安定しているかを確認。嫌がるときは無理に口へ運びません。",
+          "source": "https://www.cfa.go.jp/policies/boshihoken/junyuu"
+        },
+        {
+          "title": "利用できる預かりを調べる",
+          "body": "保育所等に通っていない生後6か月〜満3歳未満は、こども誰でも通園制度の対象となり得ます。",
+          "source": "https://www.cfa.go.jp/policies/hoiku/daredemo-tsuen"
+        }
+      ],
+      "needs": [
+        "安定した食事の席",
+        "口に入らないおもちゃ",
+        "外出用の着替え"
+      ],
+      "food": {
+        "title": "慣れた食材をなめらかに",
+        "body": "食事例：おかゆと、なめらかにしたかぼちゃ。慣れたら豆腐や白身魚なども少しずつ。初めての食材は一つずつ確かめます。",
+        "source": "https://www.cfa.go.jp/policies/boshihoken/junyuu"
+      },
+      "play": {
+        "title": "布やおもちゃを一緒に見る",
+        "body": "大人が持った布で「いないいないばあ」を楽しむ例。布を顔に置いたままにせず、そばで見守ります。",
+        "source": "https://www.cfa.go.jp/policies/child-safety-actions/handbook/content-1"
+      },
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "m7",
+      "label": "生後7か月",
+      "minMonth": 7,
+      "maxMonth": 7,
+      "lead": "食べる回数は様子を見ながら。家の低い位置も確認。",
+      "tasks": [
+        {
+          "title": "2回食を考える",
+          "body": "7〜8か月ごろは1日2回へ進める目安です。食欲や生活に合わせて進め、授乳も続けます。",
+          "source": "https://www.cfa.go.jp/policies/boshihoken/junyuu"
+        },
+        {
+          "title": "手の届く収納を点検",
+          "body": "洗剤、薬、電池などは届かない場所へ。動き方には個人差があるため、早めに安全を確認します。",
+          "source": "https://www.cfa.go.jp/policies/child-safety-actions/handbook/content-1"
+        }
+      ],
+      "needs": [
+        "危険物をしまう収納",
+        "赤ちゃん用食器",
+        "お出かけ用おむつ"
+      ],
+      "food": {
+        "title": "舌でつぶせるやわらかさに",
+        "body": "食事例：やわらかいおかゆ、豆腐、十分に加熱した野菜。なめらかな状態から、舌でつぶせる固さへ少しずつ。",
+        "source": "https://www.cfa.go.jp/policies/boshihoken/junyuu"
+      },
+      "play": {
+        "title": "手を伸ばした先におもちゃ",
+        "body": "安全な床で、届きそうな場所に大きめのおもちゃを置く例です。動くことを強制せず、見守りながら。",
+        "source": "https://mchbook.cfa.go.jp/"
+      },
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "m8",
+      "label": "生後8か月",
+      "minMonth": 8,
+      "maxMonth": 8,
+      "lead": "大人と一緒に食卓へ。小さな物の誤飲にも注意。",
+      "tasks": [
+        {
+          "title": "食材の組み合わせを増やす",
+          "body": "穀類だけでなく、野菜や魚・肉・豆腐などを組み合わせます。アレルギーの診断がある場合は医師の指示を優先。",
+          "source": "https://www.cfa.go.jp/policies/boshihoken/junyuu"
+        },
+        {
+          "title": "おもちゃの対象年齢を見る",
+          "body": "部品が外れて口に入らないか点検します。上の子のおもちゃも分けて片付けましょう。",
+          "source": "https://www.cfa.go.jp/policies/child-safety-actions/handbook/content-1"
+        }
+      ],
+      "needs": [
+        "月齢に合うおもちゃ",
+        "食事の記録",
+        "安全な収納"
+      ],
+      "food": {
+        "title": "おかゆ＋野菜＋たんぱく源",
+        "body": "食事例：おかゆ、加熱して細かくした白身魚、やわらかいにんじん。食べやすい固さと大きさに調整します。",
+        "source": "https://www.cfa.go.jp/policies/boshihoken/junyuu"
+      },
+      "play": {
+        "title": "まねっこを楽しむ",
+        "body": "拍手や声のやりとりを楽しむ例です。できる・できないの確認にせず、赤ちゃんが楽しめる時間に。",
+        "source": "https://mchbook.cfa.go.jp/"
+      },
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "m9",
+      "label": "生後9か月",
+      "minMonth": 9,
+      "maxMonth": 9,
+      "lead": "3回食を考える時期。歯ぐきでつぶせる固さへ。",
+      "tasks": [
+        {
+          "title": "3回の食事を相談する",
+          "body": "9〜11か月ごろは1日3回の食事へ進める目安です。量や授乳とのバランスは個別に相談できます。",
+          "source": "https://www.cfa.go.jp/policies/boshihoken/junyuu"
+        },
+        {
+          "title": "9〜11か月ごろの健診を確認",
+          "body": "地域によって受診方法が違います。食事や動き、聞こえなどの気がかりも相談しましょう。",
+          "source": "https://www.cfa.go.jp/policies/boshihoken/nyuyojikenshin"
+        }
+      ],
+      "needs": [
+        "手づかみしやすい食器",
+        "洗いやすいエプロン",
+        "健診の案内"
+      ],
+      "food": {
+        "title": "鉄を含む食材も取り入れる",
+        "body": "食事例：やわらかいごはん、十分に加熱して細かくした赤身の肉、野菜。鉄を含む肉や魚などを無理のない範囲で取り入れます。",
+        "source": "https://www.cfa.go.jp/policies/boshihoken/junyuu"
+      },
+      "play": {
+        "title": "出したり入れたり",
+        "body": "大きな積み木を箱に出し入れする遊びの例です。指を挟まない箱を使い、小さな部品は避けます。",
+        "source": "https://www.cfa.go.jp/policies/child-safety-actions/handbook/content-1"
+      },
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "m10",
+      "label": "生後10か月",
+      "minMonth": 10,
+      "maxMonth": 10,
+      "lead": "手づかみも食べる練習の一つ。汚れは少し気楽に。",
+      "tasks": [
+        {
+          "title": "手づかみしやすい食材を用意",
+          "body": "つかみやすく、歯ぐきでつぶせる固さに。丸い物や固い物は窒息の危険があるため避けます。",
+          "source": "https://www.cfa.go.jp/policies/boshihoken/junyuu"
+        },
+        {
+          "title": "食事中はそばで見守る",
+          "body": "座って食べる環境にし、口に物を入れたまま歩かせたり遊ばせたりしません。",
+          "source": "https://www.cfa.go.jp/policies/child-safety-actions/handbook/content-1"
+        }
+      ],
+      "needs": [
+        "拭き取りやすい敷物",
+        "安定した椅子",
+        "手洗い用品"
+      ],
+      "food": {
+        "title": "やわらかい野菜で手づかみ",
+        "body": "食事例：おかゆ、ほぐした加熱魚、持ちやすく切ってやわらかく煮た野菜。食べ方に合わせて形を変えます。",
+        "source": "https://www.cfa.go.jp/policies/boshihoken/junyuu"
+      },
+      "play": {
+        "title": "「どうぞ」「ありがとう」のやりとり",
+        "body": "大きめのおもちゃを渡し合う例です。受け取らないときも、その子の気持ちを大切にしましょう。",
+        "source": "https://mchbook.cfa.go.jp/"
+      },
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "m11",
+      "label": "生後11か月",
+      "minMonth": 11,
+      "maxMonth": 11,
+      "lead": "1歳前後の予定を確認。食事の進み方は比べずに。",
+      "tasks": [
+        {
+          "title": "1歳以降の接種予定を確認",
+          "body": "受けていないワクチンも含め、母子手帳を医療機関で確認します。",
+          "source": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/kenkou/kekkaku-kansenshou/yobou-sesshu/index.html"
+        },
+        {
+          "title": "1歳未満は、はちみつを避ける",
+          "body": "加熱した食品や飲料に入っているはちみつも対象です。家族や預け先と共有しましょう。",
+          "source": "https://www.cfa.go.jp/policies/child-safety-actions/handbook/content-1"
+        }
+      ],
+      "needs": [
+        "母子手帳",
+        "食事のエプロン",
+        "家族で共有する予定表"
+      ],
+      "food": {
+        "title": "3回食のリズムを続ける",
+        "body": "食事例：やわらかいごはん、肉と野菜のやわらか煮。母乳・育児用ミルクも含め、食べ方や量に合わせて進めます。",
+        "source": "https://www.cfa.go.jp/policies/boshihoken/junyuu"
+      },
+      "play": {
+        "title": "絵本の中のものを一緒に探す",
+        "body": "大人が指さして名前を伝える遊びの例です。言葉を言わせようと急がず、見ているものに寄り添います。",
+        "source": "https://mchbook.cfa.go.jp/"
+      },
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "m12",
+      "label": "1歳〜1歳5か月",
+      "minMonth": 12,
+      "maxMonth": 17,
+      "lead": "食べる・歩く・ことば。進み方はそれぞれです。",
+      "tasks": [
+        {
+          "title": "接種予定と食事を見直す",
+          "body": "1歳から対象になるワクチンがあります。食事や授乳の進め方も、健診などで相談できます。",
+          "source": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/kenkou/kekkaku-kansenshou/yobou-sesshu/index.html"
+        },
+        {
+          "title": "水・熱い物の事故を防ぐ",
+          "body": "浴室への出入りや、熱い飲み物の置き場所を確認。水のそばでは必ず大人が付き添います。",
+          "source": "https://www.cfa.go.jp/policies/child-safety-actions/handbook/content-1"
+        }
+      ],
+      "needs": [
+        "動きやすい服",
+        "足に合った靴を試す準備",
+        "やわらかい食材"
+      ],
+      "food": {
+        "title": "3食を中心に、食べやすい献立へ",
+        "body": "食事例：やわらかいごはん、豆腐入り肉団子、やわらかい野菜。大人の食事から取り分ける場合は、味付け前に分け、固さも変えます。",
+        "source": "https://www.cfa.go.jp/policies/boshihoken/junyuu"
+      },
+      "play": {
+        "title": "近くの児童館や図書館へ",
+        "body": "短い時間から楽しめる行き先の例です。休館日、授乳・おむつ替え、ベビーカーの置き場を確認しましょう。",
+        "source": "https://pamatoco.city.yokohama.lg.jp/ctz/pamatoco-introduction"
+      },
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "m18",
+      "label": "1歳6か月〜1歳11か月",
+      "minMonth": 18,
+      "maxMonth": 23,
+      "lead": "「自分で」の気持ちを受け止めながら。",
+      "tasks": [
+        {
+          "title": "1歳6か月児健診を受ける",
+          "body": "歯や食事、ことば、育児の悩みを相談できます。通知の時期は自治体で確認します。",
+          "source": "https://www.cfa.go.jp/policies/boshihoken/nyuyojikenshin"
+        },
+        {
+          "title": "食べ物の大きさを見直す",
+          "body": "歯が増えても、固い物や丸い物を安全に食べられるとは限りません。食事中は見守ります。",
+          "source": "https://www.cfa.go.jp/policies/child-safety-actions/handbook/content-1"
+        }
+      ],
+      "needs": [
+        "自分で持ちやすい食具",
+        "着替え",
+        "健診の案内"
+      ],
+      "food": {
+        "title": "主食・おかず・野菜を組み合わせる",
+        "body": "食事例：ごはん、やわらかく煮た魚と野菜。食べむらがあっても1食だけで判断せず、続く悩みは保健師や栄養士へ。",
+        "source": "https://www.cfa.go.jp/policies/boshihoken/junyuu"
+      },
+      "play": {
+        "title": "まねっこやごっこ遊び",
+        "body": "ぬいぐるみにごはんをあげるなど、見たことをまねる遊びの例です。大人も一緒に楽しんでみましょう。",
+        "source": "https://www.mext.go.jp/a_menu/shotou/youchien/mext_02697.html"
+      },
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "m24",
+      "label": "2歳",
+      "minMonth": 24,
+      "maxMonth": 35,
+      "lead": "できた日も、甘えたい日も。生活を少しずつ。",
+      "tasks": [
+        {
+          "title": "預かりや園の予定を確認",
+          "body": "入園の希望がある場合は、申込時期・見学・必要書類を自治体で調べます。",
+          "source": "https://mchbook.cfa.go.jp/"
+        },
+        {
+          "title": "歯と食事の相談先を確認",
+          "body": "食べにくさや歯みがきの悩みを、歯科や自治体の相談で聞いてみましょう。",
+          "source": "https://www.cfa.go.jp/policies/boshihoken"
+        }
+      ],
+      "needs": [
+        "脱ぎ着しやすい服",
+        "手洗いの踏み台",
+        "年齢に合う大きめの遊具"
+      ],
+      "food": {
+        "title": "小さな量から盛り付ける",
+        "body": "食事例：ごはん、魚、野菜スープ。食べられる量を小さく盛って、おかわりで調整する方法もあります。",
+        "source": "https://www.cfa.go.jp/policies/boshihoken/junyuu"
+      },
+      "play": {
+        "title": "色や形を見つける散歩",
+        "body": "赤い葉っぱ、丸い石などを一緒に探す遊びの例です。拾った物を口に入れないよう見守ります。",
+        "source": "https://www.mext.go.jp/a_menu/shotou/youchien/mext_02697.html"
+      },
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "m36",
+      "label": "3歳",
+      "minMonth": 36,
+      "maxMonth": 47,
+      "lead": "遊びの中で、ことばや人とのやりとりを。",
+      "tasks": [
+        {
+          "title": "3歳児健診の案内を確認",
+          "body": "目や耳、歯、育ちの相談などを行います。家庭での検査など、案内にある準備を確認しましょう。",
+          "source": "https://www.cfa.go.jp/policies/boshihoken/nyuyojikenshin"
+        },
+        {
+          "title": "園の費用と支援を確認",
+          "body": "無償化の対象と、給食費や行事費などの自己負担は分けて確認します。",
+          "source": "https://www.cfa.go.jp/policies/hoiku"
+        }
+      ],
+      "needs": [
+        "園から指定された持ち物",
+        "動きやすい服と靴",
+        "お絵かき用品"
+      ],
+      "food": {
+        "title": "一緒に準備する食事の時間",
+        "body": "食事例：ごはん、鶏肉と野菜の煮物。野菜を洗うなど、安全にできるお手伝いも食に親しむきっかけです。",
+        "source": "https://www.cfa.go.jp/policies/boshihoken/junyuu"
+      },
+      "play": {
+        "title": "ごっこ遊びや絵本を楽しむ",
+        "body": "お店屋さんごっこなどを通じて、言葉のやりとりを楽しむ例です。ドリルの先取りを必須にしません。",
+        "source": "https://www.mext.go.jp/a_menu/shotou/youchien/mext_02697.html"
+      },
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "m48",
+      "label": "4歳",
+      "minMonth": 48,
+      "maxMonth": 59,
+      "lead": "気になることを、一緒に試す時間を。",
+      "tasks": [
+        {
+          "title": "健診や歯科の予定を確認",
+          "body": "園と自治体の案内を確認し、気になる様子はメモして相談します。",
+          "source": "https://www.cfa.go.jp/policies/boshihoken/nyuyojikenshin"
+        },
+        {
+          "title": "遊び場のルールを話す",
+          "body": "遊具の対象年齢や使い方を確認し、危ない場所は大人と一緒に見ておきます。",
+          "source": "https://www.cfa.go.jp/policies/child-safety-actions/handbook/content-1"
+        }
+      ],
+      "needs": [
+        "工作やお絵かきの道具",
+        "動きやすい靴",
+        "外遊び用の帽子"
+      ],
+      "food": {
+        "title": "好きな物と初めての物を一緒に",
+        "body": "食事例：ごはん、焼き魚、煮野菜。苦手な物は無理強いせず、形や調理方法を変えて試す方法もあります。",
+        "source": "https://www.cfa.go.jp/policies/boshihoken/junyuu"
+      },
+      "play": {
+        "title": "工作・虫や植物の観察",
+        "body": "葉っぱの形を比べたり、空き箱で作ったりする遊びの例です。答えを教える前に「どう思う？」と聞いてみます。",
+        "source": "https://www.mext.go.jp/a_menu/shotou/youchien/mext_02697.html"
+      },
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "m60",
+      "label": "5歳",
+      "minMonth": 60,
+      "maxMonth": 71,
+      "lead": "入学前は、生活の安心と遊びの時間を大切に。",
+      "tasks": [
+        {
+          "title": "就学に向けた案内を確認",
+          "body": "就学時健診、学校説明会、学童などの申込時期を自治体や学校で確認します。",
+          "source": "https://www.mext.go.jp/a_menu/shotou/youchien/1258019_00002.htm"
+        },
+        {
+          "title": "通学路を一緒に歩く準備",
+          "body": "入学先が分かったら、大人と道を歩き、安全な横断や困ったときの相談先を確認しましょう。",
+          "source": "https://www.mext.go.jp/a_menu/shotou/youchien/1258019_00002.htm"
+        }
+      ],
+      "needs": [
+        "学校から指定された用品の一覧",
+        "予定を共有するカレンダー",
+        "動きやすい靴"
+      ],
+      "food": {
+        "title": "朝ごはんを食べる時間を確保",
+        "body": "食事例：ごはん、卵や豆腐のおかず、野菜。食べる時間や寝る時間を家族で見直してみましょう。",
+        "source": "https://www.mext.go.jp/kids/find/kyoiku/mext_0020.html"
+      },
+      "play": {
+        "title": "文字・数を暮らしの中で楽しむ",
+        "body": "買い物の数を数える、好きな名前を書くなどの例です。読み書きの先取りを入学の条件にしません。",
+        "source": "https://www.mext.go.jp/a_menu/shotou/youchien/1258019_00002.htm"
+      },
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "m72",
+      "label": "6歳",
+      "minMonth": 72,
+      "maxMonth": 83,
+      "lead": "学校が始まる前後は、できごとを聞く時間を。",
+      "tasks": [
+        {
+          "title": "学童と学校の連絡を確認",
+          "body": "下校時刻、学童の申込、休み中の預かり、学校からの連絡方法を確かめます。",
+          "source": "https://www.mext.go.jp/a_menu/shotou/youchien/1258019_00002.htm"
+        },
+        {
+          "title": "学校に必要な費用の支援を調べる",
+          "body": "家計に不安がある場合は、学用品費などを支える就学援助について自治体へ相談できます。",
+          "source": "https://www.mext.go.jp/a_menu/shotou/career/05010502/017.htm"
+        }
+      ],
+      "needs": [
+        "学校指定の用品",
+        "連絡帳や予定表",
+        "通学用の安全用品"
+      ],
+      "food": {
+        "title": "朝・昼・夕の食事を大切に",
+        "body": "食事例：主食と、肉・魚・卵・豆などのおかず、野菜。給食の献立も見ながら、家庭の食事を考える方法があります。",
+        "source": "https://www.mext.go.jp/kids/find/kyoiku/mext_0020.html"
+      },
+      "play": {
+        "title": "今日楽しかったことを話す",
+        "body": "読み聞かせや外遊びのほか、「学校で何が楽しかった？」と会話する時間を。疲れが強い日は休息を優先します。",
+        "source": "https://www.mext.go.jp/a_menu/shotou/youchien/1258019_00002.htm"
+      },
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "m84",
+      "label": "7〜11歳",
+      "minMonth": 84,
+      "maxMonth": 143,
+      "lead": "学びも遊びも、本人の気持ちを聞きながら。",
+      "tasks": [
+        {
+          "title": "学年ごとの案内と支援を確認",
+          "body": "学用品、長期休み、就学援助などを学校や自治体の案内で確認します。",
+          "source": "https://www.mext.go.jp/a_menu/shotou/career/05010502/017.htm"
+        },
+        {
+          "title": "睡眠・食事・運動を家族で見直す",
+          "body": "習い事や画面を見る時間で睡眠が減っていないか、本人と相談して無理のない予定にします。",
+          "source": "https://www.mext.go.jp/kids/find/kyoiku/mext_0020.html"
+        }
+      ],
+      "needs": [
+        "学校指定の用品",
+        "体に合う運動靴",
+        "家庭で共有する予定表"
+      ],
+      "food": {
+        "title": "一日の食事をまとめて見る",
+        "body": "食事例：ごはん、肉や魚のおかず、野菜と汁物。朝ごはんも含め、主食・主菜・副菜を組み合わせる目安に。",
+        "source": "https://www.mext.go.jp/kids/find/kyoiku/mext_0020.html"
+      },
+      "play": {
+        "title": "図書館・公園・体験活動を選ぶ",
+        "body": "興味のある本や工作、科学館などを本人と選ぶ例です。学校の学びだけでなく、好きなことに取り組む時間も大切にします。",
+        "source": "https://www.mext.go.jp/a_menu/shotou/youchien/mext_02697.html"
+      },
+      "reviewedAt": "2026-10-25"
+    }
+  ],
+  "guides": [
+    {
+      "id": "formula",
+      "category": "授乳",
+      "title": "粉ミルクの作り方",
+      "summary": "手と道具を清潔にして、表示どおりの濃さで作ります。",
+      "steps": [
+        {
+          "title": "手と道具を清潔に",
+          "body": "手を洗い、製品の説明に沿って洗浄・消毒した哺乳瓶を用意します。",
+          "icon": "wash"
+        },
+        {
+          "title": "70℃以上のお湯で溶かす",
+          "body": "缶に書かれた量と手順を守り、粉と湯の量を変えません。やけどに注意します。",
+          "icon": "bottle"
+        },
+        {
+          "title": "飲める温度まで冷ます",
+          "body": "ふたを閉めて流水などで冷まします。冷却水が瓶の中に入らないように。",
+          "icon": "drop"
+        },
+        {
+          "title": "飲み残しを残さない",
+          "body": "飲み残しは捨てます。調乳後2時間以内に使わなかったミルクも廃棄します。",
+          "icon": "clock"
+        }
+      ],
+      "caution": "液体ミルクは粉ミルクと扱いが異なります。製品表示を確認してください。",
+      "source": "https://www.mhlw.go.jp/topics/syokuchu/kanren/kanshi/070605-1.html",
+      "sourceName": "厚生労働省",
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "feeding",
+      "category": "授乳",
+      "title": "ミルクを飲ませるとき",
+      "summary": "赤ちゃんの顔を見ながら、無理なく飲める姿勢に。",
+      "steps": [
+        {
+          "title": "頭と首を支える",
+          "body": "安定した姿勢で抱き、顔が見えるようにします。",
+          "icon": "baby"
+        },
+        {
+          "title": "口元へそっと運ぶ",
+          "body": "乳首を近づけ、赤ちゃんの様子に合わせて飲ませます。",
+          "icon": "bottle"
+        },
+        {
+          "title": "途中も様子を見る",
+          "body": "むせる、苦しそう、飲みたがらないときは中断して様子を見ます。",
+          "icon": "heart"
+        }
+      ],
+      "caution": "授乳量や飲み方の心配は、体重や排尿の様子と一緒に助産師・医療機関へ相談を。",
+      "source": "https://www.cfa.go.jp/policies/boshihoken/junyuu",
+      "sourceName": "こども家庭庁",
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "diaper",
+      "category": "お世話",
+      "title": "おむつ替えの基本",
+      "summary": "先に必要な物をそろえ、赤ちゃんから手を離さずに。",
+      "steps": [
+        {
+          "title": "新しいおむつを準備",
+          "body": "おむつ、おしり拭き、ごみ袋を手の届く所に用意します。",
+          "icon": "bag"
+        },
+        {
+          "title": "やさしく拭く",
+          "body": "汚れをこすらず拭き取ります。女の子は前から後ろへ。",
+          "icon": "drop"
+        },
+        {
+          "title": "締めつけを確認",
+          "body": "製品の説明に沿って付け、腰や脚に強く食い込んでいないか確認します。",
+          "icon": "diaper"
+        },
+        {
+          "title": "最後に手を洗う",
+          "body": "汚れたおむつを片付け、お世話した人も手を洗います。",
+          "icon": "wash"
+        }
+      ],
+      "caution": "おむつ替え台やベッドに赤ちゃんを残して離れません。赤みが続く場合は受診の相談を。",
+      "source": "https://www.city.hashima.lg.jp/2048.html",
+      "sourceName": "羽島市",
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "crying",
+      "category": "泣く・眠る",
+      "title": "泣きやまないとき",
+      "summary": "泣くことは赤ちゃんの大切な表現。泣きやまない時間もあります。",
+      "steps": [
+        {
+          "title": "基本の困りごとを確認",
+          "body": "空腹、おむつ、暑さ・寒さなどを一つずつ確認します。",
+          "icon": "baby"
+        },
+        {
+          "title": "そっと抱いて声をかける",
+          "body": "やさしい声や抱っこで落ち着くことがあります。激しく揺さぶりません。",
+          "icon": "heart"
+        },
+        {
+          "title": "つらいときはいったん離れる",
+          "body": "安全な寝床にあお向けに寝かせ、大人が少し落ち着く時間を取ります。ときどき様子を確認します。",
+          "icon": "bed"
+        }
+      ],
+      "caution": "激しく揺さぶる、口をふさぐ行為は危険です。いつもと違う泣き方、呼吸の異常、ぐったりなどは医療機関へ。",
+      "source": "https://www.cfa.go.jp/policies/jidougyakutai/nakiyamanai",
+      "sourceName": "こども家庭庁",
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "sleep",
+      "category": "泣く・眠る",
+      "title": "安全な寝かせ方",
+      "summary": "寝床の安全を先に確認しましょう。",
+      "steps": [
+        {
+          "title": "あお向けに寝かせる",
+          "body": "1歳になるまでは、寝かせるときはあお向けにします。",
+          "icon": "bed"
+        },
+        {
+          "title": "硬く平らな寝床を選ぶ",
+          "body": "赤ちゃん用の寝具を使い、顔が埋まるやわらかい物を避けます。",
+          "icon": "moon"
+        },
+        {
+          "title": "顔の周りは何も置かない",
+          "body": "枕、ぬいぐるみ、タオルなどが顔を覆わないようにします。",
+          "icon": "shield"
+        }
+      ],
+      "caution": "あお向けでも事故を完全に防げるわけではありません。医師から個別の指示がある場合はその指示を確認してください。",
+      "source": "https://www.cfa.go.jp/policies/child-safety-actions/handbook/content-1",
+      "sourceName": "こども家庭庁",
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "weaning",
+      "category": "ごはん",
+      "title": "離乳食を始める目安",
+      "summary": "5〜6か月ごろを目安に、赤ちゃんの様子を見て始めます。",
+      "steps": [
+        {
+          "title": "始められそうか確認",
+          "body": "首がすわり、支えた姿勢で食べられそうか、食べ物に関心があるかを見ます。",
+          "icon": "baby"
+        },
+        {
+          "title": "少しずつ試す",
+          "body": "なめらかな食事を少量から。最初は1日1回を目安にします。",
+          "icon": "spoon"
+        },
+        {
+          "title": "慣れたら種類を増やす",
+          "body": "食べ方に合わせて、野菜や豆腐・魚などの食材を少しずつ増やします。",
+          "icon": "bowl"
+        }
+      ],
+      "caution": "食事例は一般的な目安です。早産や持病、アレルギーの診断がある場合は担当の医療者と相談を。",
+      "source": "https://www.cfa.go.jp/policies/boshihoken/junyuu",
+      "sourceName": "こども家庭庁",
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "choking",
+      "category": "ごはん",
+      "title": "食べ物の窒息を防ぐ",
+      "summary": "丸い物、固い物、粘る物は、特に慎重に。",
+      "steps": [
+        {
+          "title": "食べやすい形にする",
+          "body": "固い物はやわらかく調理し、丸い物は形を変えるなど、年齢と食べ方に合わせます。",
+          "icon": "carrot"
+        },
+        {
+          "title": "座って食べる",
+          "body": "口に食べ物を入れたまま、歩く・遊ぶ・泣く状況を避けます。",
+          "icon": "chair"
+        },
+        {
+          "title": "大人がそばで見守る",
+          "body": "一度に口へ詰め込みすぎないよう、食べている間は様子を見ます。",
+          "icon": "eye"
+        }
+      ],
+      "caution": "0〜5歳には乾いた豆・ナッツ類、もちなど窒息しやすい食品を避けます。息ができないなどの緊急時は119番。",
+      "source": "https://www.cfa.go.jp/policies/child-safety-actions/handbook/content-1",
+      "sourceName": "こども家庭庁",
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "bath",
+      "category": "お世話",
+      "title": "沐浴・お風呂の準備",
+      "summary": "タオルと着替えを先に用意し、途中で離れなくて済むように。",
+      "steps": [
+        {
+          "title": "入る前に用意する",
+          "body": "洗う物、タオル、着替え、おむつをそろえ、室内や湯の状態を確かめます。",
+          "icon": "bath"
+        },
+        {
+          "title": "頭と首を支えて洗う",
+          "body": "病院や両親教室で教わった方法を確かめ、やさしく洗います。",
+          "icon": "baby"
+        },
+        {
+          "title": "すぐ拭いて着替える",
+          "body": "体を拭き、皮膚の様子を見ながら着替えます。",
+          "icon": "towel"
+        }
+      ],
+      "caution": "短時間でも浴室や浴槽に赤ちゃんだけを残しません。体調が悪いときの入浴は医療機関に確認を。",
+      "source": "https://www.city.yokohama.lg.jp/izumi/kosodate_kyoiku/kosodateshien/mokuyoku.html",
+      "sourceName": "横浜市泉区",
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "outing",
+      "category": "おでかけ",
+      "title": "赤ちゃんとの外出準備",
+      "summary": "近くで短い時間から。途中で休める場所も確認。",
+      "steps": [
+        {
+          "title": "行き先の設備を見る",
+          "body": "授乳室、おむつ替え、トイレ、ベビーカーで通れる道を調べます。",
+          "icon": "map"
+        },
+        {
+          "title": "使う分の荷物を用意",
+          "body": "おむつ、着替え、授乳に必要な物など、外出時間に合わせて準備します。",
+          "icon": "bag"
+        },
+        {
+          "title": "天気と体調で変える",
+          "body": "暑さや寒さ、混雑を見て、予定を短くしたり延期したりします。",
+          "icon": "sun"
+        }
+      ],
+      "caution": "授乳室やおむつ替え設備の有無、開館日、利用条件は施設の最新案内で確認してください。",
+      "source": "https://pamatoco.city.yokohama.lg.jp/ctz/pamatoco-introduction",
+      "sourceName": "横浜市・パマトコ",
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "learning",
+      "category": "遊び・学び",
+      "title": "幼児期の学びの見つけ方",
+      "summary": "遊びや暮らしの中にも、学ぶきっかけがあります。",
+      "steps": [
+        {
+          "title": "好きなことを見る",
+          "body": "何を見て、何を作りたいのか、本人の興味から始めます。",
+          "icon": "flower"
+        },
+        {
+          "title": "一緒にやってみる",
+          "body": "絵本、工作、ままごと、自然探しなどを一緒に楽しみます。",
+          "icon": "book"
+        },
+        {
+          "title": "結果より過程を話す",
+          "body": "「どこが面白かった？」と聞き、考えたことを受け止めます。",
+          "icon": "chat"
+        }
+      ],
+      "caution": "月齢ごとの必達目標や、入学前の読み書きの先取りを示すものではありません。",
+      "source": "https://www.mext.go.jp/a_menu/shotou/youchien/mext_02697.html",
+      "sourceName": "文部科学省",
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "school",
+      "category": "遊び・学び",
+      "title": "小学校に向けた準備",
+      "summary": "学校の案内と、毎日の暮らしを一つずつ確認します。",
+      "steps": [
+        {
+          "title": "学校・自治体の案内を集める",
+          "body": "健診、説明会、用品、学童の申込時期を確かめます。",
+          "icon": "calendar"
+        },
+        {
+          "title": "朝と帰宅後を相談",
+          "body": "起きる時刻、朝食、下校後の過ごし方を家族で話します。",
+          "icon": "sun"
+        },
+        {
+          "title": "不安を聞く",
+          "body": "楽しみなことも心配なことも、本人が話せる時間を作ります。",
+          "icon": "heart"
+        }
+      ],
+      "caution": "必要な用品や申込時期は学校・地域で異なります。早く買いすぎず、指定を確認してから用意を。",
+      "source": "https://www.mext.go.jp/a_menu/shotou/youchien/1258019_00002.htm",
+      "sourceName": "文部科学省",
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "habits",
+      "category": "遊び・学び",
+      "title": "小学生の生活リズム",
+      "summary": "睡眠・食事・体を動かす時間を、家族で振り返ります。",
+      "steps": [
+        {
+          "title": "寝る時間を先に考える",
+          "body": "学校や習い事の予定を見て、休む時間を確保します。",
+          "icon": "moon"
+        },
+        {
+          "title": "朝ごはんの時間を取る",
+          "body": "食べられる組み合わせから始め、朝の準備を家族で分けます。",
+          "icon": "bowl"
+        },
+        {
+          "title": "外遊びや休憩も予定に",
+          "body": "宿題や画面の時間だけで一日が終わらないよう、本人と相談します。",
+          "icon": "ball"
+        }
+      ],
+      "caution": "睡眠や食事の悩みが続くときは、学校や医療機関にも相談できます。",
+      "source": "https://www.mext.go.jp/kids/find/kyoiku/mext_0020.html",
+      "sourceName": "文部科学省",
+      "reviewedAt": "2026-10-25"
+    }
+  ],
+  "programs": [
+    {
+      "id": "national-child-benefit",
+      "title": "児童手当",
+      "area": "全国",
+      "prefecture": "全国",
+      "category": "お金",
+      "summary": "高校生年代までの子どもを育てる方への手当。出生・転入後の申請を確認します。",
+      "eligibility": "原則として国内に住む、18歳になった後の最初の3月31日までの子どもを養育する方。個別の条件があります。",
+      "how": "自治体の児童手当担当へ。公務員は勤務先へ確認。",
+      "source": "https://www.cfa.go.jp/policies/kokoseido/jidouteate",
+      "sourceName": "こども家庭庁",
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "national-pregnancy-benefit",
+      "title": "妊婦のための支援給付",
+      "area": "全国",
+      "prefecture": "全国",
+      "category": "妊娠・出産",
+      "summary": "妊娠中からの面談や相談と、給付を組み合わせて支える制度です。",
+      "eligibility": "妊婦給付認定などの手続きが必要です。転居や流産・死産等の場合も自治体に相談できます。",
+      "how": "妊娠届の窓口や、自治体のこども家庭センターなどへ確認。",
+      "source": "https://www.cfa.go.jp/policies/shussan-kosodate",
+      "sourceName": "こども家庭庁",
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "national-childbirth",
+      "title": "出産育児一時金",
+      "area": "全国",
+      "prefecture": "全国",
+      "category": "妊娠・出産",
+      "summary": "公的な医療保険から、出産に対して原則1児50万円が支給されます。",
+      "eligibility": "加入する保険や出産の状況に応じて条件・金額が異なります。",
+      "how": "加入する医療保険と出産施設へ。直接支払制度を利用できるかも確認。",
+      "source": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/iryouhoken/shussan/index.html",
+      "sourceName": "厚生労働省",
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "national-free-preschool",
+      "title": "幼児教育・保育の無償化",
+      "area": "全国",
+      "prefecture": "全国",
+      "category": "保育・教育",
+      "summary": "対象施設の利用料を支える制度。給食費や行事費などは別にかかる場合があります。",
+      "eligibility": "主に3〜5歳児クラス、住民税が非課税の世帯の0〜2歳児クラス。施設や利用形態で条件が異なります。",
+      "how": "利用する園と自治体で、対象・上限・事前の申請を確認。",
+      "source": "https://www.cfa.go.jp/policies/hoiku",
+      "sourceName": "こども家庭庁",
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "national-daredemo",
+      "title": "こども誰でも通園制度",
+      "area": "全国",
+      "prefecture": "全国",
+      "category": "預かり",
+      "summary": "保護者の就労要件を問わず、一定の時間まで通園できる制度です。",
+      "eligibility": "保育所等に通っていない、生後6か月から満3歳未満の子ども。利用条件の確認が必要です。",
+      "how": "自治体で認定・利用の手続きを確認し、施設や空き枠を調べます。",
+      "source": "https://www.cfa.go.jp/policies/hoiku/daredemo-tsuen",
+      "sourceName": "こども家庭庁",
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "national-school-aid",
+      "title": "就学援助",
+      "area": "全国",
+      "prefecture": "全国",
+      "category": "保育・教育",
+      "summary": "経済的な事情で就学が難しい家庭に、学用品や給食費などを支える制度です。",
+      "eligibility": "認定の基準や対象費目は市区町村ごとに異なります。",
+      "how": "お住まいの教育委員会または学校へ。入学前に申請できる費用があるかも確認。",
+      "source": "https://www.mext.go.jp/a_menu/shotou/career/05010502/017.htm",
+      "sourceName": "文部科学省",
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "sapporo-medical",
+      "title": "札幌市 子ども医療費助成",
+      "area": "札幌市",
+      "prefecture": "北海道",
+      "category": "医療",
+      "summary": "子どもの保険診療でかかる自己負担の一部を助成します。",
+      "eligibility": "札幌市に住む高校生年代までの子ども。健康保険や所得などの条件を確認します。",
+      "how": "受給者証の交付申請について、お住まいの区役所へ確認。",
+      "source": "https://www.city.sapporo.jp/hoken-iryo/iryojosei/nyuyoji.html",
+      "sourceName": "札幌市",
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "sendai-postpartum",
+      "title": "仙台市 産後ケア",
+      "area": "仙台市",
+      "prefecture": "宮城県",
+      "category": "産後ケア",
+      "summary": "宿泊、日帰り、訪問で、産後の心身や授乳・育児の相談を支えます。",
+      "eligibility": "対象となる産後の期間、母子の状態などの条件があります。",
+      "how": "市の案内で利用の流れ・料金・施設を確認し、必要に応じて区役所へ相談。",
+      "source": "https://www.city.sendai.jp/kodomo-hoken/kurashi/kenkotofukushi/kosodate/joho/joho/sangokea.html",
+      "sourceName": "仙台市",
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "yokohama-medical",
+      "title": "横浜市 小児医療費助成",
+      "area": "横浜市",
+      "prefecture": "神奈川県",
+      "category": "医療",
+      "summary": "保険診療の自己負担額を助成。2026年6月から対象年齢が18歳年度末まで広がりました。",
+      "eligibility": "横浜市に住所があり、健康保険に加入する対象年齢の子ども。対象外の費用があります。",
+      "how": "小児医療証の申請方法を、市の案内や区役所で確認。",
+      "source": "https://www.city.yokohama.lg.jp/kenko-iryo-fukushi/kenko-iryo/iryohijosei/shoni/child.html",
+      "sourceName": "横浜市",
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "nagoya-postpartum",
+      "title": "名古屋市 産後ケア",
+      "area": "名古屋市",
+      "prefecture": "愛知県",
+      "category": "産後ケア",
+      "summary": "なごやMommyCare＋で、産後の心身のケアや育児を支えます。",
+      "eligibility": "市の利用対象・期間・回数の条件を確認してください。",
+      "how": "市の申込案内を確認し、利用承認や利用券などの手続きを行います。",
+      "source": "https://www.city.nagoya.jp/kodomo/ninshin/1008971/1008978.html",
+      "sourceName": "名古屋市",
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "osaka-postpartum",
+      "title": "大阪市 産後ケア",
+      "area": "大阪市",
+      "prefecture": "大阪府",
+      "category": "産後ケア",
+      "summary": "宿泊・通所・訪問で、産後の体や心、育児の相談を支えます。",
+      "eligibility": "大阪市内に住む産後1年未満の母親と乳児など、利用条件があります。",
+      "how": "お住まいの区の保健福祉センターで、利用登録と施設への予約を確認。",
+      "source": "https://www.city.osaka.lg.jp/kodomo/page/0000370578.html",
+      "sourceName": "大阪市",
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "kobe-postpartum",
+      "title": "神戸市 産後ケア",
+      "area": "神戸市",
+      "prefecture": "兵庫県",
+      "category": "産後ケア",
+      "summary": "宿泊・通所・訪問などを通して、産後の回復や育児の不安を支えます。",
+      "eligibility": "神戸市に住む産後1年未満の母親と乳児など。医療行為が必要な場合などは条件を確認。",
+      "how": "市の案内で申込方法を確認し、区役所・支所の窓口にも相談できます。",
+      "source": "https://faq.city.kobe.lg.jp/faq/show/3117?site_domain=default",
+      "sourceName": "神戸市",
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "hiroshima-postpartum",
+      "title": "広島市 産後ケア",
+      "area": "広島市",
+      "prefecture": "広島県",
+      "category": "産後ケア",
+      "summary": "助産師による訪問や、医療機関・助産所への宿泊・通所で育児を支えます。",
+      "eligibility": "市の案内で、母子の対象条件や産後の期間を確認してください。",
+      "how": "利用する種類ごとの申込・予約方法、料金、施設を市のページで確認。",
+      "source": "https://www.city.hiroshima.lg.jp/living/kosodate/1021253/hiromaru/1032109/1032106/ninshin_shussan/1040504.html",
+      "sourceName": "広島市",
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "fukuoka-medical",
+      "title": "福岡市 子ども医療費助成",
+      "area": "福岡市",
+      "prefecture": "福岡県",
+      "category": "医療",
+      "summary": "子どもが保険診療を受ける際の医療費を助成する制度です。",
+      "eligibility": "対象年齢、健康保険、自己負担の区分などを市の最新案内で確認します。",
+      "how": "出生・転入後の医療証申請や、保険変更の届け出を確認。",
+      "source": "https://www.city.fukuoka.lg.jp/hofuku/hokennenkin/hp/01.html",
+      "sourceName": "福岡市",
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "naha-medical",
+      "title": "那覇市 こども医療費助成",
+      "area": "那覇市",
+      "prefecture": "沖縄県",
+      "category": "医療",
+      "summary": "保険診療の自己負担の一部を助成します。対象外の費用や他制度が優先される場合があります。",
+      "eligibility": "市の案内で、住所・年齢・健康保険などの要件を確認します。",
+      "how": "受給資格者証の申請方法や、払い戻しが必要な場合の書類を確認。",
+      "source": "https://www.city.naha.okinawa.jp/child/kosodateouen/1002858/1002860.html",
+      "sourceName": "那覇市",
+      "reviewedAt": "2026-10-25"
+    }
+  ]
+}

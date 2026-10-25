@@ -1,0 +1,195 @@
+{
+  "checkedAt": "2026-10-25",
+  "feeds": [
+    {
+      "id": "mhlw",
+      "name": "厚生労働省 新着情報",
+      "url": "https://www.mhlw.go.jp/stf/news.rdf",
+      "format": "rss1",
+      "section": "news",
+      "status": "verified",
+      "httpStatus": 200,
+      "latestPublishedAt": "2026-10-23",
+      "filterRequired": true,
+      "includeKeywords": [
+        "育児",
+        "出産",
+        "妊娠",
+        "子育て",
+        "出生",
+        "母子",
+        "育休",
+        "乳幼児"
+      ]
+    },
+    {
+      "id": "mext",
+      "name": "文部科学省 新着情報",
+      "url": "https://www.mext.go.jp/b_menu/news/index.rdf",
+      "format": "rss1",
+      "section": "news",
+      "status": "verified",
+      "httpStatus": 200,
+      "latestPublishedAt": "2026-10-23",
+      "filterRequired": true,
+      "includeKeywords": [
+        "小学校",
+        "子供",
+        "子ども",
+        "初等",
+        "給食",
+        "教育課程",
+        "学習指導",
+        "不登校",
+        "学校保健",
+        "学校安全"
+      ]
+    },
+    {
+      "id": "cfa-note",
+      "name": "こども家庭庁 公式note",
+      "url": "https://kodomo-gov.note.jp/rss",
+      "format": "rss2",
+      "section": "columns",
+      "kind": "解説",
+      "status": "verified",
+      "httpStatus": 200,
+      "latestPublishedAt": "2026-10-09",
+      "filterRequired": false
+    },
+    {
+      "id": "gakken",
+      "name": "学研 こそだてまっぷ",
+      "url": "https://kosodatemap.gakken.jp/feed/",
+      "format": "rss2",
+      "section": "columns",
+      "kind": "解説",
+      "status": "verified",
+      "httpStatus": 200,
+      "latestPublishedAt": "2026-10-24",
+      "filterRequired": true,
+      "excludeKeywords": [
+        "占い"
+      ]
+    },
+    {
+      "id": "ellie-note",
+      "name": "えりな 育児日記 / note",
+      "url": "https://note.com/ellie_rhythm/rss",
+      "format": "rss2",
+      "section": "columns",
+      "kind": "体験談",
+      "status": "verified",
+      "httpStatus": 200,
+      "latestPublishedAt": "2026-10-25",
+      "filterRequired": false
+    },
+    {
+      "id": "keiichi-note",
+      "name": "keiichikun 育児日記 / note",
+      "url": "https://note.com/anarchism_ikuji/rss",
+      "format": "rss2",
+      "section": "columns",
+      "kind": "体験談",
+      "status": "verified",
+      "httpStatus": 200,
+      "latestPublishedAt": "2026-10-21",
+      "filterRequired": true,
+      "includeKeywords": [
+        "育児",
+        "子育て",
+        "娘",
+        "子ども",
+        "家族"
+      ]
+    },
+    {
+      "id": "ameblo-dekkai",
+      "name": "でっかいおっさんの子育て相談ルーム / Ameba",
+      "url": "https://ameblo.jp/dekkaiossan9/rss.html",
+      "format": "rss1",
+      "section": "columns",
+      "kind": "体験談",
+      "status": "verified",
+      "httpStatus": 200,
+      "latestPublishedAt": null,
+      "filterRequired": true,
+      "includeKeywords": [
+        "子育て",
+        "育児",
+        "子ども",
+        "子供",
+        "学校",
+        "保育",
+        "家族"
+      ],
+      "excludeKeywords": [
+        "婚活",
+        "結婚相談所"
+      ]
+    }
+  ],
+  "discovery": [
+    {
+      "name": "こども家庭庁 新着情報",
+      "url": "https://www.cfa.go.jp/news",
+      "mode": "official_index",
+      "status": "verified",
+      "note": "公式RSSは今回確認できず。新着一覧の本文から確認する。"
+    },
+    {
+      "name": "Googleニュース",
+      "url": "https://news.google.com/",
+      "mode": "search_aggregate",
+      "status": "not_connected",
+      "note": "発見の入口として利用。記事本文の権利を持つ配信元を出典にし、全文は取り込みません。"
+    },
+    {
+      "name": "Yahoo!ニュース",
+      "url": "https://news.yahoo.co.jp/",
+      "mode": "search_aggregate",
+      "status": "not_connected",
+      "note": "包括的な記事取得は未接続。配信元の公開RSS・公式記事を優先します。"
+    },
+    {
+      "name": "SmartNews",
+      "url": "https://www.smartnews.com/ja/",
+      "mode": "aggregate",
+      "status": "not_connected",
+      "note": "一般公開された包括的な取得先は今回確認できていません。取得済みとは表示しません。"
+    }
+  ],
+  "socialCoverage": [
+    {
+      "platform": "Instagram",
+      "status": "curated_sources_only",
+      "note": "公開の個別投稿や出版社の許諾済み紹介を参照。横断した反応数の比較には取得先の接続が必要。"
+    },
+    {
+      "platform": "X",
+      "status": "official_sources_only",
+      "note": "公開情報を参照。現在の全体バズを継続集計するデータ接続は未設定。"
+    },
+    {
+      "platform": "Threads",
+      "status": "official_sources_only",
+      "note": "運営の公式発表を確認。育児投稿の最新ランキングを取得する接続は未設定。"
+    },
+    {
+      "platform": "Lemon8",
+      "status": "public_posts_only",
+      "note": "閲覧できた公開投稿を参照。投稿日時を保持し、反応の増加を未計測のままバズとは表記しません。"
+    }
+  ],
+  "refreshPolicy": {
+    "frequency": "daily",
+    "maxItemsPerFeed": 15,
+    "maxSummaryChars": 180,
+    "retainPublishedAt": true,
+    "retainCheckedAtOnFailure": true,
+    "noFullTextRepublishing": true,
+    "networkTimeoutMs": 12000,
+    "maxParallel": 3,
+    "failureBehavior": "前回の取得日時を保持し、取得失敗を記録。取得できなかった内容を最新とは表示しない。"
+  }
+}
