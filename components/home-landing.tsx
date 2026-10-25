@@ -13,7 +13,7 @@ export default function HomeLanding({stage,stages,news,go,chooseStage,open,setti
  return <div className="landing">
   <section className="landing-hero" aria-labelledby="home-title">
    <div className="landing-hero-copy"><span className="hero-label"><Sun size={18}/>妊娠中から、小学生まで</span><h1 id="home-title">{familyEnabled?<>マイホームの<br/>子育てガイド。</>:<>出産準備も、<br/>毎日の子育ても。</>}</h1><button className="primary" onClick={()=>go(familyEnabled?'guide':'age')}>{familyEnabled?'年齢に合う記事を見る':'月齢・年齢から探す'}<ArrowRight size={20}/></button></div>
-   <div className="landing-hero-photo"><>{schoolOnly?<div className="school-hero-art"><TopicIcon kind="guide"/><span>園・学校・遊びと学び</span></div>:<img src="/photos/family.jpg" alt="赤ちゃんと顔を合わせて遊ぶ親子" fetchPriority="high"/>}</><span className="photo-flower flower-one" aria-hidden="true">✳</span><span className="photo-flower flower-two" aria-hidden="true">✳</span></div>
+   <div className="landing-hero-photo">{schoolOnly?<div className="school-hero-art"><TopicIcon kind="guide"/><span>園・学校・遊びと学び</span></div>:<img src="/photos/home-parent-child.jpg" alt="積み木を並べて一緒に遊ぶ親子" width={1498} height={1000} fetchPriority="high"/>}</div>
   </section>
   <nav className="purpose-nav" aria-label="目的から探す">{menus.map(m=><button key={m.id} onClick={()=>go(m.id)} className={'purpose-item '+m.tone}><span className="purpose-icon"><TopicIcon kind={m.id}/></span><span>{m.title}</span><ChevronRight size={15}/></button>)}</nav>
   <section className="age-section" aria-labelledby="age-section-title"><div className="section-head"><div><span className="section-caption">成長に合わせて</span><h2 id="age-section-title">うちの子の、いま。</h2></div><button className="text-link" onClick={()=>go('age')}>月齢別ガイド<ArrowRight size={18}/></button></div>
