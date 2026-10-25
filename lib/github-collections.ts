@@ -4,7 +4,7 @@ const MANIFEST_PATH = 'collections/index.json';
 const MAX_FILES = 20;
 const MAX_FILE_BYTES = 600_000;
 const MAX_TOTAL_BYTES = 8_000_000;
-const MAX_TOPICS = 500;
+const MAX_TOPICS = 3000;
 type Obj = Record<string, any>;
 export type GithubCollectionResult = {ok:boolean;files:number;added:number;error:string|null;topics:Obj[]};
 const object=(value:unknown):value is Obj=>!!value&&typeof value==='object'&&!Array.isArray(value);

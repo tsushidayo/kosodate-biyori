@@ -147,7 +147,7 @@
     {
       "id": "kosodate-hack",
       "name": "こそだてハック",
-      "url": "https://192abc.com/feed/",
+      "url": "https://192abc.com/feed",
       "format": "rss2",
       "section": "columns",
       "kind": "解説",
@@ -177,7 +177,8 @@
         "コーディネート",
         "占い"
       ],
-      "note": "RSS2を実解析し15件確認。現在は商品紹介が多いため、育児の具体的な疑問に答える記事だけを厳選。今回の手動追加記事には商品ランキングを採用していない。"
+      "note": "RSS2を実解析し15件確認。現在は商品紹介が多いため、育児の具体的な疑問に答える記事だけを厳選。今回の手動追加記事には商品ランキングを採用していない。",
+      "canonicalCheckedAt": "2026-10-25"
     },
     {
       "id": "cocreco",
@@ -228,7 +229,7 @@
     {
       "id": "jpeds",
       "name": "日本小児科学会",
-      "url": "https://www.jpeds.or.jp/feed/",
+      "url": "https://www.jpeds.or.jp/feed",
       "format": "rss2",
       "section": "news",
       "kind": "解説",
@@ -259,7 +260,8 @@
         "審査結果",
         "助成"
       ],
-      "note": "RSS2を実解析し50件確認。医療者向けの会務案内が多数あるため、保護者が利用できる注意喚起や一般向け資料のみ掲載する。"
+      "note": "RSS2を実解析し50件確認。医療者向けの会務案内が多数あるため、保護者が利用できる注意喚起や一般向け資料のみ掲載する。",
+      "canonicalCheckedAt": "2026-10-25"
     }
   ],
   "discovery": [

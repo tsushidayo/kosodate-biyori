@@ -16,6 +16,7 @@ export type NormalizedOffer = PriceRecord & {
 export type ComparisonOptions = {
   mode?: string;
   includeConditional?: boolean;
+  includeUsed?: boolean;
   sort?: "unit" | "total";
   now?: number;
 };
@@ -31,7 +32,19 @@ function safeSource(source: unknown) {
   } catch { return false; }
 }
 function amount(n: number) { return n.toLocaleString("ja-JP", { maximumFractionDigits: 2 }); }
-function isStore(offer: PriceRecord) { return /店舗|店頭/.test(String(offer.mode ?? "")); }
+export function purchaseKind(offer: PriceRecord):'online'|'store'|'pickup'|'marketplace' {
+  if(offer.purchaseChannel==='marketplace'||offer.marketplace===true||/メルカリ|ラクマ|フリマ/.test(String(offer.store||'')))return 'marketplace';
+  if(offer.purchaseChannel==='in-store'||offer.mode==='店頭')return 'store';
+  if(offer.purchaseChannel==='pickup'||/店舗受取|店頭受取/.test(String(offer.mode||'')))return 'pickup';
+  return 'online';
+}
+export function matchesPurchaseMode(offer:PriceRecord,mode='すべて'){
+ const kind=purchaseKind(offer);if(mode==='すべて')return true;
+ if(['店舗','店頭','店頭購入'].includes(mode))return kind==='store';
+ if(mode==='店舗受取')return kind==='pickup';if(mode==='フリマ')return kind==='marketplace';
+ return kind==='online';
+}
+function isStore(offer:PriceRecord){return ['store','pickup'].includes(purchaseKind(offer));}
 export function normalizeOffer(product: PriceRecord, offer: PriceRecord, now = Date.now()): NormalizedOffer {
   const milk = product.category === "ミルク";
   const nominalGrams = Number(String(product.unit || product.name || "").match(/(\d+(?:\.\d+)?)\s*g/i)?.[1]) || null;
@@ -64,6 +77,7 @@ export function normalizeOffer(product: PriceRecord, offer: PriceRecord, now = D
   else if (!finiteNonnegative(offer.shipping)) ineligibleReason = "送料未確認";
   else if (!finitePositive(quantity) || !Number.isInteger(quantity)) ineligibleReason = "数量未確認";
   else if ((milk || offer.unitLabel === "100g") && !massUnit) ineligibleReason = "容量未確認";
+  else if (offer.available===false) ineligibleReason = "売り切れ";
   else if (/売り切れ|売切|在庫なし|入荷待ち|価格表示に差|価格不明|未確認|店舗未指定|要確認|要再確認/.test(String(offer.status ?? ""))) ineligibleReason = String(offer.status);
   else if (offer.verified !== true || offer.eligible === 0) ineligibleReason = "価格の確認待ち";
   else if (!safeSource(offer.source)) ineligibleReason = "販売ページ未確認";
@@ -73,15 +87,15 @@ export function normalizeOffer(product: PriceRecord, offer: PriceRecord, now = D
   return {
     ...offer, total, unitCost, unitLabel, perPack, perPackLabel, quantityLabel,
     bonusGrams, conditional, eligible: !ineligibleReason, ineligibleReason,
-    isStore: isStore(offer),
+    isStore: isStore(offer), purchaseKind:purchaseKind(offer),
   };
 }
 export function compareOffers(product: PriceRecord, options: ComparisonOptions = {}) {
-  const { mode = "すべて", includeConditional = false, sort = "unit", now = Date.now() } = options;
+  const { mode = "すべて", includeConditional = false, sort = "unit", now = Date.now(), includeUsed = mode === "フリマ" } = options;
   return (Array.isArray(product.offers) ? product.offers : [])
     .map((o: PriceRecord) => normalizeOffer(product, o, now))
-    .filter((o: ReturnType<typeof normalizeOffer>) => o.eligible && (includeConditional || !o.conditional) &&
-      (mode === "すべて" || (mode === "店頭購入" ? o.mode === "店頭" : mode === "店舗受取" ? o.mode !== "店頭" && o.isStore : mode === "店舗" || mode === "店頭" ? o.isStore : !o.isStore)))
+    .filter((o: ReturnType<typeof normalizeOffer>) => o.eligible && (includeConditional || !o.conditional) && (includeUsed || (o.conditionClass!=="used"&&!/中古|使用済|傷や汚れ/.test(String(o.itemCondition||"")))) &&
+      matchesPurchaseMode(o,mode))
     .sort((a: ReturnType<typeof normalizeOffer>, b: ReturnType<typeof normalizeOffer>) =>
       (sort === "total" ? a.total! - b.total! : a.unitCost! - b.unitCost!) || a.total! - b.total! || String(a.store).localeCompare(String(b.store), "ja"));
 }

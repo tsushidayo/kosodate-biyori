@@ -49,12 +49,16 @@ export function getFamilyChildren(profile:FamilyProfile,now:Now=new Date()):Fami
     if(!value||typeof value!=='object')return;const child=value as Item;
     const id=typeof child.id==='string'&&child.id?child.id:`child-${index+1}`;
     if(seen.has(id))return;seen.add(id);
-    const months=completedMonths(child.birthDate,now);if(months===null)return;
+    if(!validCalendarDate(child.birthDate))return;
     const ordinal=/^child-[1-5]$/.test(id)?Number(id.slice(-1)):index+1;
+    if(child.dateKind==='due'||child.birthDate>tokyoDate(now)){
+      result.push({id,birthDate:child.birthDate,months:-1,label:'妊娠中',ordinal,isPregnancy:true,dueDate:child.birthDate});return;
+    }
+    const months=completedMonths(child.birthDate,now);if(months===null)return;
     result.push({id,birthDate:child.birthDate,months,label:formatAge(months),ordinal,schoolGrade:schoolGradeForBirthday(child.birthDate,now)??0});
   });
   // A due date is a separate family context, rather than another copy of a registered birthday.
-  if(result.length<5&&validCalendarDate(p.dueDate)&&p.dueDate>=tokyoDate(now))result.push({id:'pregnancy',birthDate:'',months:-1,label:'妊娠中',ordinal:result.length+1,isPregnancy:true,dueDate:p.dueDate});
+  if(result.length<5&&validCalendarDate(p.dueDate)&&p.dueDate>=tokyoDate(now)&&!result.some(c=>c.isPregnancy&&c.dueDate===p.dueDate))result.push({id:'pregnancy',birthDate:'',months:-1,label:'妊娠中',ordinal:result.length+1,isPregnancy:true,dueDate:p.dueDate});
   return result;
 }
 export function normalizeFamilyProfile(profile:FamilyProfile={}):FamilyProfile {

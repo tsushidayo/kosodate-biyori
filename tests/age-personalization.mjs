@@ -76,6 +76,20 @@ test('school-year eligibility follows the April 1 birthday boundary',()=>{
   assert.equal(age.ageTargetStatus(lessons,[{id:'age-only',birthDate:'',months:125,label:'',ordinal:1}]),'unknown');
 });
 
+test('future child dates show pregnancy, and a due date never assumes a birth occurred',()=>{
+  const upcoming={personalize:true,children:[{...child('child-2','2027-01-21'),dateKind:'due'},child('child-1','2024-01-01')]};
+  const children=age.getFamilyChildren(upcoming,now);
+  assert.equal(children.length,2);assert.equal(children[0].id,'child-2');assert.equal(children[0].isPregnancy,true);assert.equal(children[0].months,-1);
+  assert.equal(age.ageTargetStatus({ageGroups:['妊娠中']},children),'matching');
+  assert.equal(age.personalizationEnabled(upcoming,now),true);
+  assert.equal(age.getFamilyChildren({...upcoming,dueDate:'2027-01-21'},now).length,2);
+  assert.equal(age.getFamilyChildren(upcoming,'2027-01-22T00:00:00Z')[0].isPregnancy,true);
+  const born={children:[{...child('child-2','2027-01-21'),dateKind:'birth'}]};
+  assert.equal(age.getFamilyChildren(born,'2027-01-22T00:00:00Z')[0].months,0);
+  assert.equal(age.getFamilyChildren(born,'2027-01-22T00:00:00Z')[0].isPregnancy,undefined);
+  assert.equal(age.getFamilyChildren({childDate:'2027-01-21'},now)[0].isPregnancy,true);
+});
+
 // Exercise actual private storage and its validation without loading a Cloudflare runtime.
 const sqlite=new DatabaseSync(':memory:');sqlite.exec(await fs.readFile(new URL('../drizzle/0000_mature_marvel_boy.sql',import.meta.url),'utf8'));
 const binding={prepare(sql){return{values:[],bind(...values){this.values=values;return this},async first(){return sqlite.prepare(sql).get(...this.values)??null},async all(){return{results:sqlite.prepare(sql).all(...this.values)}},async run(){return{meta:{changes:Number(sqlite.prepare(sql).run(...this.values).changes)}}}}},async batch(statements){const out=[];for(const s of statements)out.push(await s.run());return out}};
@@ -84,17 +98,20 @@ globalThis.__AGE_TEST_HELPERS={deriveEditorialTags,refreshSocialCuration,refresh
 let storeSource=(await fs.readFile(new URL('../lib/parenting-store.ts',import.meta.url),'utf8')).replace(/^import .*;\n/gm,'');
 storeSource='const env=globalThis.__AGE_TEST_ENV;const {deriveEditorialTags,refreshSocialCuration,refreshGithubCollections}=globalThis.__AGE_TEST_HELPERS;const careSeed={stages:[],guides:[],programs:[]},shopSeed={products:[],chains:[]},editorialSeed={news:[],columns:[],topics:[],shorts:[]},feedsSeed=[],socialCurationSeed={schemaVersion:1,checkedAt:"2026-10-25",reviews:[],additionalPosts:[],shorts:[]};\n'+storeSource;
 const store=await load(storeSource);
-test('profile validation rejects future, duplicate, invalid dates and more than five children',()=>{
+test('profile validation accepts due dates and rejects duplicate, invalid dates and more than five children',()=>{
   const valid={children:[child('child-1','2024-02-29'),child('child-2','')],personalize:true,activeChildId:'child-1'};
   assert.equal(store.validateProfile(valid),valid);
+  const future={children:[{...child('child-1','2027-01-21'),dateKind:'due'}],childDate:'2027-01-21'};
+  assert.equal(store.validateProfile(future),future);
   const bad=[
-    {children:[child('child-1','9999-01-01')]},
+    {children:[child('child-1','2025-02-29')]},
     {children:[child('child-1','2026-02-31')]},
     {children:[child('child-1','2026-01-01'),child('child-1','2024-01-01')]},
     {children:[1,2,3,4,5,6].map(n=>child('child-'+n,'2024-01-01'))},
     {children:{id:'child-1',birthDate:'2024-01-01'}},
     {children:[child('child-1',null)]},
-    {childDate:'9999-01-01'},
+    {childDate:'2026-02-30'},
+    {children:[{...child('child-1','2027-01-21'),dateKind:'unknown'}]},
     {personalize:'true'},
     {activeChildId:'<script>'}
   ];for(const p of bad)assert.throws(()=>store.validateProfile(p),e=>e.status===400,JSON.stringify(p));
@@ -106,4 +123,19 @@ test('birthdays are stored per signed-in user and never appear in shared content
   const shared=await store.content();const text=JSON.stringify(shared);
   for(const birthday of family.children.map(c=>c.birthDate))assert.equal(text.includes(birthday),false);
   assert.equal('children' in shared,false);assert.equal('profile' in shared,false);
+});
+
+test('future due dates persist only in the private profile',async()=>{
+  const profile={children:[{id:'child-1',birthDate:'2027-01-21',dateKind:'due'}],personalize:true};
+  await store.saveProfile('expectant-parent',profile,0);
+  assert.deepEqual((await store.readProfile('expectant-parent')).profile.children,profile.children);
+  assert.equal(JSON.stringify(await store.content()).includes('2027-01-21'),false);
+});
+
+test('residence and optional child gender remain in the private profile',async()=>{
+ const profile={residence:{prefecture:'大阪府',municipality:'大阪市',municipalityCode:'27100'},children:[{id:'child-1',birthDate:'2027-01-21',dateKind:'due',gender:'girl'},{id:'child-2',birthDate:'2024-01-01',gender:'boy'}]};
+ assert.equal(store.validateProfile(profile),profile);await store.saveProfile('location-parent',profile,0);
+ const saved=await store.readProfile('location-parent');assert.deepEqual(saved.profile.residence,profile.residence);assert.equal(saved.profile.children[0].gender,'girl');
+ assert.equal((await store.readProfile('unrelated-parent')).profile.residence,undefined);assert.equal(Object.hasOwn(await store.content(),'residence'),false);
+ for(const invalid of [{residence:'大阪府'},{residence:{municipalityCode:'bad'}},{children:[{id:'child-1',birthDate:'',gender:'unexpected'}]}])assert.throws(()=>store.validateProfile(invalid),e=>e.status===400);
 });

@@ -4,17 +4,22 @@ import { useEffect, useId, useMemo, useRef, useState, type KeyboardEvent } from 
 import { ArrowLeft, ArrowRight, Bookmark, Check, ChevronDown, ExternalLink, Film, MessageCircle, Newspaper, Play, Search, SlidersHorizontal, Sparkles, X } from 'lucide-react';
 import { ageTargetStatus, type FamilyChild } from '../lib/age-personalization';
 import './editorial-browser.css';
+import { isRelevantParentingVideo } from '../lib/social-curation';
 
 type Item = Record<string, any>;
-type Editorial = { news: Item[]; columns: Item[]; topics: Item[]; shorts?: Item[] };
-type Tab = 'news' | 'columns' | 'topics' | 'shorts';
+type Editorial = { news: Item[]; columns: Item[]; topics: Item[]; shorts?: Item[]; instagram?: Item[] };
+type Tab = 'news' | 'columns' | 'topics' | 'instagram' | 'shorts';
 type Props = { editorial: Editorial; onOpen: (item: Item) => void; onSave: (item: Item) => void; savedIds: string[]; familyChildren?: FamilyChild[]; familyEnabled?: boolean; includeUnknownAges?: boolean };
 type TwitterWidgets = { createTweet: (id: string, target: HTMLElement, options?: Record<string, unknown>) => Promise<HTMLElement | undefined> };
 type TwitterWindow = Window & { twttr?: { widgets?: TwitterWidgets; ready?: (callback: (api: { widgets: TwitterWidgets }) => void) => void } };
 
-const TABS: { key: Tab; label: string; icon: typeof Newspaper }[] = [
+function InstagramIcon({size=20,strokeWidth=1.8}:{size?:number;strokeWidth?:number}) {
+  return <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor" stroke="none"/></svg>;
+}
+
+const TABS: { key: Tab; label: string; icon: typeof Newspaper | typeof InstagramIcon }[] = [
   { key: 'news', label: 'ニュース', icon: Newspaper }, { key: 'columns', label: 'コラム', icon: Sparkles },
-  { key: 'topics', label: 'Xの投稿', icon: MessageCircle }, { key: 'shorts', label: '短い動画', icon: Film },
+  { key: 'topics', label: 'Xの投稿', icon: MessageCircle }, { key: 'instagram', label: 'Instagram', icon: InstagramIcon }, { key: 'shorts', label: 'ショート動画', icon: Film },
 ];
 const AGE_OPTIONS = [ ['all', '全年齢'], ['pregnancy', '妊娠中'], ['0', '0歳'], ['1', '1歳'], ['2', '2歳'], ['3', '3歳'], ['4', '4歳'], ['5', '5歳'], ['primary', '小学生'], ['teen', '中学生以上'] ];
 const PAGE_SIZE = 12;
@@ -54,6 +59,24 @@ function tweetId(item: Item): string | undefined {
   return /^\d{10,25}$/.test(explicit) ? explicit : undefined;
 }
 
+/** A native Instagram permalink is the only input accepted by the embed frame. */
+export function editorialInstagramEmbed(item: Item): { src: string; url: string } | null {
+  const source = safeUrl(item.url);
+  if (!source) return null;
+  const parsed = new URL(source);
+  if (parsed.protocol !== 'https:' || parsed.port || !['instagram.com', 'www.instagram.com'].includes(parsed.hostname.toLowerCase())) return null;
+  const match = /^\/(p|reel)\/([A-Za-z0-9_-]{5,50})\/?$/.exec(parsed.pathname);
+  if (!match || (text(item.shortcode) && text(item.shortcode) !== match[2]) || (text(item.videoId) && text(item.videoId) !== match[2])) return null;
+  const url = `https://www.instagram.com/${match[1]}/${match[2]}/`;
+  return { src: `${url}embed/captioned/`, url };
+}
+function videoFormatLabel(item: Item): string {
+  if (item.videoFormat === 'shorts') return '縦型ショート';
+  if (item.videoFormat === 'short-video') return '短い解説動画';
+  if (item.videoFormat === 'instagram-video' || text(item.platform).toLowerCase() === 'instagram') return 'Instagram動画';
+  return '動画';
+}
+
 /** Embed URLs are created from recognized public IDs, never from profile data or supplied HTML. */
 export function editorialVideoEmbed(item: Item): { src: string; platform: string } | null {
   const platform = text(item.platform).toLowerCase();
@@ -67,6 +90,8 @@ export function editorialVideoEmbed(item: Item): { src: string; platform: string
     if (!id && parsed && youtubeHost) id = host?.endsWith('youtu.be') ? parsed.pathname.split('/')[1] : /^\/(?:shorts|embed)\/([A-Za-z0-9_-]{11})(?:\/|$)/.exec(parsed.pathname)?.[1] || (parsed.pathname === '/watch' ? parsed.searchParams.get('v') || '' : '');
     if (/^[A-Za-z0-9_-]{11}$/.test(id)) return { src: `https://www.youtube-nocookie.com/embed/${id}?autoplay=0&rel=0`, platform: 'YouTube' };
   }
+  const instagram = editorialInstagramEmbed(item);
+  if (instagram) return { src: instagram.src, platform: 'Instagram' };
   const tiktokHost = host && ['tiktok.com', 'www.tiktok.com'].includes(host);
   if (platform === 'tiktok' || tiktokHost) {
     let id = text(item.videoId);
@@ -139,13 +164,31 @@ function OfficialPost({ item }: { item: Item }) {
   </div>;
 }
 
+function OfficialInstagram({ item }: { item: Item }) {
+  const [active, setActive] = useState(false);
+  const [failed, setFailed] = useState(false);
+  const embed = editorialInstagramEmbed(item);
+  const title = text(item.title) || 'Instagramの子育て投稿';
+  const image = safeUrl(item.thumbnail || item.thumbnailUrl || item.image);
+  useEffect(() => { setActive(false); setFailed(false); }, [embed?.url]);
+  return <div className={`kb-editorial-instagram ${active && !failed ? 'is-active' : ''}`}>
+    {active && embed && !failed ? <iframe src={embed.src} title={`${title}（Instagram公式埋め込み）`} loading="lazy" allow="encrypted-media; picture-in-picture; fullscreen" allowFullScreen referrerPolicy="strict-origin-when-cross-origin" onError={() => setFailed(true)} /> : <button type="button" className="kb-editorial-instagram-cover" onClick={() => embed && setActive(true)} disabled={!embed || failed} aria-label={`${title}のInstagram投稿を表示`}>
+      {image && <img src={image} alt="" loading="lazy" referrerPolicy="no-referrer" />}
+      <span className="kb-editorial-instagram-symbol"><InstagramIcon size={34} strokeWidth={1.5} aria-hidden="true" /></span>
+      <span>{!embed || failed ? '投稿は元のリンクからご覧ください' : 'Instagramの投稿を表示'}</span>
+      <small>{!embed || failed ? '公開範囲などにより表示できない場合があります' : 'タップすると公式の埋め込みを読み込みます'}</small>
+    </button>}
+  </div>;
+}
+
 function ShortPlayer({ item }: { item: Item }) {
   const [active, setActive] = useState(false);
   const [failed, setFailed] = useState(false);
   const embed = editorialVideoEmbed(item);
   const image = safeUrl(item.thumbnail || item.thumbnailUrl || item.image);
-  const title = text(item.title) || '子育ての短い動画';
-  const format = item.videoFormat === 'shorts' ? '縦型ショート' : item.videoFormat === 'short-video' ? '短い動画' : '';
+  const title = text(item.title) || '子育てのショート動画';
+  const format = videoFormatLabel(item);
+  if (embed?.platform === 'Instagram') return <OfficialInstagram item={item} />;
   const duration = durationOf(item);
   return <div className={`kb-editorial-video ${item.videoFormat === 'short-video' ? 'is-landscape' : ''}`}>
     {active && embed && !failed ? <iframe src={embed.src} title={`${title}（${embed.platform}）`} loading="lazy" allow="encrypted-media; picture-in-picture; fullscreen" allowFullScreen referrerPolicy="strict-origin-when-cross-origin" onError={() => setFailed(true)} /> : <button className="kb-editorial-video-cover" type="button" onClick={() => embed && setActive(true)} disabled={!embed || failed} aria-label={embed && !failed ? `${title}のプレイヤーを開く` : '元の動画からご覧ください'}>
@@ -200,11 +243,14 @@ export default function EditorialBrowser({ editorial, onOpen, onSave, savedIds, 
 
   const collections = useMemo(() => ({
     news: Array.isArray(editorial.news) ? editorial.news : [], columns: Array.isArray(editorial.columns) ? editorial.columns : [],
-    topics: (Array.isArray(editorial.topics) ? editorial.topics : []).filter(item => ['x', 'twitter'].includes(text(item.platform).toLowerCase()) && item.parentingUseful === true),
-    shorts: (Array.isArray(editorial.shorts) ? editorial.shorts : []).filter(item => item.parentingUseful === true),
+    topics: (Array.isArray(editorial.topics) ? editorial.topics : []).filter(item => ['x', 'twitter'].includes(text(item.platform).toLowerCase()) && (item.parentingRelevant === true || item.parentingUseful === true)),
+    instagram: (Array.isArray(editorial.instagram) ? editorial.instagram : []).filter(item => text(item.platform).toLowerCase() === 'instagram' && (item.parentingRelevant === true || item.parentingUseful === true) && (!(item.isVideo === true || item.videoFormat === 'instagram-video' || /\/reel\//.test(text(item.url))) || isRelevantParentingVideo(item))),
+    shorts: (Array.isArray(editorial.shorts) ? editorial.shorts : []).filter(item => (item.parentingRelevant === true || item.parentingUseful === true) && isRelevantParentingVideo(item)),
   }), [editorial]);
   const localAges = useMemo(() => ageChildren(age, month), [age, month]);
   const currentItems = collections[tab];
+  const socialTab = tab === 'topics' || tab === 'instagram';
+  const socialView = socialTab || tab === 'shorts';
   const ageItems = useMemo(() => currentItems.filter(item => (!familyOn || matchesAge(item, familyChildren, unknown)) && (!localAges.length || matchesAge(item, localAges, unknown))), [currentItems, familyOn, familyChildren, unknown, localAges]);
   const sources = useMemo(() => [...new Set(ageItems.map(sourceOf))].sort((a, b) => a.localeCompare(b, 'ja')), [ageItems]);
   const availableTags = useMemo(() => {
@@ -248,6 +294,7 @@ export default function EditorialBrowser({ editorial, onOpen, onSave, savedIds, 
     <header className="kb-editorial-heading"><div><span className="kb-editorial-eyebrow">READ & WATCH</span><h2 id={`${uid}-title`}>今日の子育てに、<br className="kb-editorial-mobile-break" />ひとつのヒント。</h2><p>知っておきたいニュースから、暮らしの工夫まで。</p></div><span className="kb-editorial-heading-mark" aria-hidden="true"><Sparkles size={34} strokeWidth={1.5} /></span></header>
     <div className="kb-editorial-tabs" role="tablist" aria-label="読む・見る情報の種類">{TABS.map(({ key, label, icon: Icon }, index) => <button key={key} ref={node => { tabRefs.current[index] = node; }} id={`${uid}-tab-${key}`} role="tab" aria-selected={tab === key} aria-controls={`${uid}-panel`} tabIndex={tab === key ? 0 : -1} onClick={() => changeTab(key)} onKeyDown={event => tabKey(event, index)}><Icon size={19} strokeWidth={1.8} aria-hidden="true" /><span>{label}</span><small>{collections[key].length}</small></button>)}</div>
     <div role="tabpanel" id={`${uid}-panel`} aria-labelledby={`${uid}-tab-${tab}`}>
+      {socialView && <p className="kb-editorial-social-note"><MessageCircle size={17} aria-hidden="true" /><span>投稿者の体験・意見を含みます。内容の正確さは確認できていません。</span></p>}
       <div className="kb-editorial-filters">
         <div className="kb-editorial-filter-heading"><span><SlidersHorizontal size={16} aria-hidden="true" />気になる情報を探す</span>{filterCount > 0 && <button type="button" onClick={clear}><X size={14} aria-hidden="true" />条件をクリア</button>}</div>
         <div className="kb-editorial-filter-row">
@@ -255,7 +302,7 @@ export default function EditorialBrowser({ editorial, onOpen, onSave, savedIds, 
           <label><span className="kb-editorial-label">情報元</span><span className="kb-editorial-select-wrap"><select value={source} onChange={event => setSource(event.target.value)}><option value="all">すべての情報元</option>{sources.map(value => <option key={value} value={value}>{value}</option>)}</select><ChevronDown size={15} aria-hidden="true" /></span></label>
           <label><span className="kb-editorial-label">{familyOn ? '追加で年齢を絞る' : '子どもの年齢'}</span><span className="kb-editorial-select-wrap"><select value={age} onChange={event => { setAge(event.target.value); setMonth('all'); }}>{AGE_OPTIONS.map(([value, label]) => <option key={value} value={value}>{familyOn && value === 'all' ? '追加で絞らない' : label}</option>)}</select><ChevronDown size={15} aria-hidden="true" /></span></label>
           {['0', '1', '2'].includes(age) && <label className="kb-editorial-month"><span className="kb-editorial-label">月齢</span><span className="kb-editorial-select-wrap"><select value={month} onChange={event => setMonth(event.target.value)}><option value="all">月齢指定なし</option>{Array.from({ length: 12 }, (_, index) => <option key={index} value={index}>{age === '0' ? `生後${index}か月` : `${age}歳${index}か月`}</option>)}</select><ChevronDown size={15} aria-hidden="true" /></span></label>}
-          {tab === 'shorts' && <label><span className="kb-editorial-label">動画の種類</span><span className="kb-editorial-select-wrap"><select value={videoFormat} onChange={event => setVideoFormat(event.target.value)}><option value="all">すべての短い動画</option><option value="shorts">縦型ショート</option><option value="short-video">通常形式の短い動画</option></select><ChevronDown size={15} aria-hidden="true" /></span></label>}
+          {tab === 'shorts' && <label><span className="kb-editorial-label">動画の種類</span><span className="kb-editorial-select-wrap"><select value={videoFormat} onChange={event => setVideoFormat(event.target.value)}><option value="all">すべての動画</option><option value="shorts">縦型ショート</option><option value="short-video">短い解説動画</option><option value="instagram-video">Instagram動画</option></select><ChevronDown size={15} aria-hidden="true" /></span></label>}
         </div>
         {(familyOn || age !== 'all') && <div className="kb-editorial-age-note">{familyOn && <span><Check size={14} aria-hidden="true" />登録したお子さんの年齢で表示中</span>}<label><input type="checkbox" checked={unknown} onChange={event => setUnknown(event.target.checked)} />対象年齢の記載がない情報も含める</label></div>}
         <div className="kb-editorial-tag-tools"><span className="kb-editorial-label">内容のラベル <small>複数選べます</small></span><fieldset className="kb-editorial-operator"><legend className="kb-editorial-sr">ラベルの絞り込み条件</legend><label className={operator === 'or' ? 'is-active' : ''}><input type="radio" name={`${uid}-operator`} value="or" checked={operator === 'or'} onChange={() => setOperator('or')} />いずれか</label><label className={operator === 'and' ? 'is-active' : ''}><input type="radio" name={`${uid}-operator`} value="and" checked={operator === 'and'} onChange={() => setOperator('and')} />すべて含む</label></fieldset></div>
@@ -263,23 +310,24 @@ export default function EditorialBrowser({ editorial, onOpen, onSave, savedIds, 
         <div className="kb-editorial-tags">{visibleTags.map(([tag, count]) => <button key={tag} type="button" aria-pressed={tags.includes(tag)} className={tags.includes(tag) ? 'is-active' : ''} onClick={() => toggleTag(tag)}>{tags.includes(tag) && <Check size={13} aria-hidden="true" />}{tag}<small>{count}</small></button>)}{!availableTags.length && <span className="kb-editorial-tag-empty">掲載時に付けられたラベルから探せます。</span>}</div>
         {availableTags.length > 14 && <button type="button" className="kb-editorial-more-tags" aria-expanded={allTags} onClick={() => { setAllTags(!allTags); setTagSearch(''); }}>{allTags ? 'ラベルを閉じる' : `ラベルをすべて見る（${availableTags.length}）`}<ChevronDown size={14} className={allTags ? 'is-open' : ''} aria-hidden="true" /></button>}
       </div>
-      <div ref={listRef} className="kb-editorial-results-heading"><p><strong>{results.length}</strong><span>件</span>{results.length > 0 && <small>{(currentPage - 1) * PAGE_SIZE + 1}〜{Math.min(currentPage * PAGE_SIZE, results.length)}件を表示</small>}</p><span>{tab === 'topics' || tab === 'shorts' ? '子育てに役立つ内容をピックアップ' : '新しい公開日から表示'}</span></div>
+      <div ref={listRef} className="kb-editorial-results-heading"><p><strong>{results.length}</strong><span>件</span>{results.length > 0 && <small>{(currentPage - 1) * PAGE_SIZE + 1}〜{Math.min(currentPage * PAGE_SIZE, results.length)}件を表示</small>}</p><span>{socialView ? '子育てに関連する投稿を掲載' : '新しい公開日から表示'}</span></div>
       {shown.length > 0 ? <div className={`kb-editorial-grid kb-editorial-grid-${tab}`}>{shown.map(item => {
         const id = itemId(item); const url = safeUrl(item.url || item.sourceUrl); const saved = savedIds.includes(id); const published = displayDate(dateOf(item));
         const image = safeUrl(item.image || item.imageUrl || item.thumbnail || item.thumbnailUrl);
-        return <article key={id} className={`kb-editorial-card kb-editorial-card-${tab} ${tab === 'shorts' && item.videoFormat === 'short-video' ? 'kb-editorial-card-landscape' : ''}`}>
-          {tab === 'shorts' ? <ShortPlayer item={item} /> : tab === 'topics' ? <OfficialPost item={item} /> : image ? <button className="kb-editorial-article-image" type="button" onClick={() => onOpen(item)} tabIndex={-1} aria-hidden="true"><img src={image} alt="" loading="lazy" /></button> : <div className="kb-editorial-article-kicker"><span>{text(item.kind) || (tab === 'news' ? 'NEWS' : 'COLUMN')}</span><span aria-hidden="true">{tab === 'news' ? '↗' : '✳'}</span></div>}
+        return <article key={id} className={`kb-editorial-card kb-editorial-card-${tab} ${tab === 'shorts' && item.videoFormat === 'short-video' ? 'kb-editorial-card-landscape' : ''} ${tab === 'shorts' && text(item.platform).toLowerCase() === 'instagram' ? 'kb-editorial-card-instagram-video' : ''}`}>
+          {tab === 'shorts' ? <ShortPlayer item={item} /> : tab === 'topics' ? <OfficialPost item={item} /> : tab === 'instagram' ? <OfficialInstagram item={item} /> : image ? <button className="kb-editorial-article-image" type="button" onClick={() => onOpen(item)} tabIndex={-1} aria-hidden="true"><img src={image} alt="" loading="lazy" /></button> : <div className="kb-editorial-article-kicker"><span>{text(item.kind) || (tab === 'news' ? 'NEWS' : 'COLUMN')}</span><span aria-hidden="true">{tab === 'news' ? '↗' : '✳'}</span></div>}
           <div className="kb-editorial-card-body">
-            <div className="kb-editorial-card-meta"><span title={sourceOf(item)}>{sourceOf(item)}</span>{published ? <time dateTime={dateOf(item)}>{published}{tab === 'shorts' ? ' 公開' : ''}</time> : tab === 'shorts' && <span>公開日未確認</span>}</div>
-            {tab === 'shorts' && <p className="kb-editorial-video-info"><span>{item.videoFormat === 'shorts' ? '縦型ショート' : '短い動画'}</span>{durationOf(item) && <span>{durationOf(item)}</span>}</p>}
-            {tab !== 'topics' && <h3>{tab === 'shorts' ? text(item.title) : <button type="button" onClick={() => onOpen(item)}>{text(item.title)}</button>}</h3>}
+            <div className="kb-editorial-card-meta"><span title={sourceOf(item)}>{sourceOf(item)}</span>{published ? <time dateTime={dateOf(item)}>{published}{tab === 'shorts' || tab === 'instagram' ? ' 公開' : ''}</time> : socialView && <span>公開日未確認</span>}</div>
+            {tab === 'shorts' && <p className="kb-editorial-video-info"><span>{videoFormatLabel(item)}</span><span>{durationOf(item) || '長さ未確認'}</span></p>}
+            {tab !== 'topics' && <h3>{tab === 'shorts' || tab === 'instagram' ? text(item.title) : <button type="button" onClick={() => onOpen(item)}>{text(item.title)}</button>}</h3>}
             {tab !== 'topics' && text(item.summary) && <p className="kb-editorial-summary">{text(item.summary)}</p>}
+            {socialView && <span className="kb-editorial-unverified">内容未確認</span>}
             <Tags item={item} selected={tags} toggle={toggleTag} />
-            <div className="kb-editorial-card-footer"><Save item={item} saved={saved} onSave={onSave} />{tab === 'topics' || tab === 'shorts' ? url && <a href={url} target="_blank" rel="noopener noreferrer">{tab === 'topics' ? '元の投稿' : '元の動画'}<ExternalLink size={13} aria-hidden="true" /></a> : <button className="kb-editorial-read" type="button" onClick={() => onOpen(item)}>読む<ArrowRight size={16} aria-hidden="true" /></button>}</div>
-            {tab === 'shorts' && <p className="kb-editorial-playback-note">再生できないときは「元の動画」からご覧ください。</p>}
+            <div className="kb-editorial-card-footer"><Save item={item} saved={saved} onSave={onSave} />{socialView ? url && <a href={url} target="_blank" rel="noopener noreferrer">{socialTab ? '元の投稿' : '元の動画'}<ExternalLink size={13} aria-hidden="true" /></a> : <button className="kb-editorial-read" type="button" onClick={() => onOpen(item)}>読む<ArrowRight size={16} aria-hidden="true" /></button>}</div>
+            {(tab === 'shorts' || tab === 'instagram') && <p className="kb-editorial-playback-note">{tab === 'instagram' ? '表示できないときは「元の投稿」からご覧ください。' : '再生できないときは「元の動画」からご覧ください。'}</p>}
           </div>
         </article>;
-      })}</div> : <div className="kb-editorial-empty"><Search size={30} strokeWidth={1.4} aria-hidden="true" /><h3>条件に合う情報はありませんでした</h3><p>{tab === 'topics' || tab === 'shorts' ? '役立つ内容を確認できた投稿から、順に掲載しています。' : 'ラベルや年齢の条件を少し広げてみてください。'}</p><button type="button" onClick={clear}>絞り込みをクリア<ArrowRight size={16} aria-hidden="true" /></button></div>}
+      })}</div> : <div className="kb-editorial-empty"><Search size={30} strokeWidth={1.4} aria-hidden="true" /><h3>条件に合う情報はありませんでした</h3><p>{socialView ? '子育てに関連する投稿を、順に追加しています。' : 'ラベルや年齢の条件を少し広げてみてください。'}</p><button type="button" onClick={clear}>絞り込みをクリア<ArrowRight size={16} aria-hidden="true" /></button></div>}
       {pages > 1 && <nav className="kb-editorial-pagination" aria-label="記事のページ"><button type="button" disabled={currentPage === 1} onClick={() => changePage(currentPage - 1)} aria-label="前のページ"><ArrowLeft size={17} aria-hidden="true" /><span>前へ</span></button><p><strong>{currentPage}</strong><span>/ {pages}</span></p><button type="button" disabled={currentPage === pages} onClick={() => changePage(currentPage + 1)} aria-label="次のページ"><span>次へ</span><ArrowRight size={17} aria-hidden="true" /></button></nav>}
     </div>
   </section>;

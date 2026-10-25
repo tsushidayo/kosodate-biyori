@@ -39,6 +39,27 @@ test('unit price is recomputed with shipping and bonus milk grams',()=>{
 });
 test('store pickup is separate, regions preserved, and input records remain unchanged',()=>{
  const wipes=data.products.find(p=>p.id==='wipes-su-640'),before=JSON.stringify(wipes);
- const online=compareOffers(wipes,{mode:'オンライン',now:NOW}),store=compareOffers(wipes,{mode:'店舗',now:NOW});
+ const online=compareOffers(wipes,{mode:'オンライン',now:NOW}),store=compareOffers(wipes,{mode:'店舗受取',now:NOW});
  assert.equal(online.length,1);assert.equal(store.length,1);assert.equal(online[0].total,1190);assert.equal(store[0].total,590);near(online[0].unitCost,1190/640);assert.equal(online[0].quantityLabel,'640枚');assert.equal(online[0].region,wipes.offers[0].region);assert.equal(JSON.stringify(wipes),before);
+});
+
+test('in-store purchases never contain online delivery, click-and-collect, or flea listings',()=>{
+ const product={id:'example',category:'育児用品',unit:'1個',offers:[
+ {...base,id:'online',mode:'配送',price:100,shipping:0,quantity:1},
+ {...base,id:'pickup',mode:'配送・店舗受取可',price:90,shipping:0,quantity:1},
+ {...base,id:'physical',mode:'店頭',price:120,shipping:0,quantity:1},
+ {...base,id:'flea',mode:'フリマ',purchaseChannel:'marketplace',price:50,shipping:0,quantity:1,store:'メルカリ'}]};
+ assert.deepEqual(compareOffers(product,{mode:'店舗',now:NOW}).map(o=>o.id),['physical']);
+ assert.deepEqual(compareOffers(product,{mode:'店頭購入',now:NOW}).map(o=>o.id),['physical']);
+ assert.deepEqual(compareOffers(product,{mode:'店舗受取',now:NOW}).map(o=>o.id),['pickup']);
+ assert.deepEqual(compareOffers(product,{mode:'オンライン',now:NOW}).map(o=>o.id),['online']);
+ assert.deepEqual(compareOffers(product,{mode:'フリマ',now:NOW}).map(o=>o.id),['flea']);
+});
+
+test('used marketplace prices require an explicit opt-in outside the flea tab',()=>{
+ const product={category:'育児用品',unit:'1個',offers:[{...base,id:'used',mode:'フリマ',purchaseChannel:'marketplace',itemCondition:'目立った傷や汚れなし',conditionClass:'used',price:50,shipping:0,quantity:1}]};
+ assert.equal(compareOffers(product,{mode:'すべて',now:NOW}).length,0);
+ assert.equal(compareOffers(product,{mode:'すべて',includeUsed:true,now:NOW}).length,1);
+ assert.equal(compareOffers(product,{mode:'フリマ',now:NOW}).length,1);
+ assert.equal(compareOffers(product,{mode:'フリマ',includeUsed:false,now:NOW}).length,0);
 });

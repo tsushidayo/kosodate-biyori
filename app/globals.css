@@ -35,3 +35,5 @@
 
 /* Compact reading cards keep long catalogs easy to scan. */
 @media(min-width:701px){.page-guide .card-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}.page-guide .guide-card{display:grid;grid-template-columns:135px minmax(0,1fr);min-height:204px;text-align:left}.page-guide .card-art{height:100%;min-height:204px}.page-guide .card-art>.art{width:100%;height:auto}.page-guide .card-copy{padding:22px}.page-guide .art-tag{left:9px;right:9px;width:max-content;max-width:calc(100% - 18px)}.page-guide .card-copy p{font-size:16px}}
+
+.family-residence{padding:20px 0 24px;margin-bottom:22px;border-bottom:1px solid var(--line)}.family-residence-fields{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:12px}.family-residence-fields label{display:flex;flex-direction:column;gap:7px}.family-residence p,.family-date-hint{font-size:14px!important;margin-top:12px}.family-date-grid label>select{width:100%;min-width:0;margin-top:8px;font-size:16px}@media(max-width:500px){.family-residence-fields{grid-template-columns:1fr}}
