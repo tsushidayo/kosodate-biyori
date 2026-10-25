@@ -4,6 +4,7 @@ import fs from "node:fs/promises";
 import { DatabaseSync } from "node:sqlite";
 import ts from "typescript";
 import { deriveEditorialTags } from "../lib/editorial-tags.ts";
+import { isPracticalEditorial } from "../lib/editorial-quality.ts";
 import { refreshSocialCuration } from "../lib/social-curation.ts";
 import { refreshGithubCollections } from "../lib/github-collections.ts";
 
@@ -12,11 +13,11 @@ const sqlite=new DatabaseSync(":memory:");
 sqlite.exec(await fs.readFile(new URL("../drizzle/0000_mature_marvel_boy.sql",import.meta.url),"utf8"));
 const binding={prepare(sql){return{values:[],bind(...values){this.values=values;return this;},async first(){return sqlite.prepare(sql).get(...this.values)??null;},async all(){return{results:sqlite.prepare(sql).all(...this.values)};},async run(){const r=sqlite.prepare(sql).run(...this.values);return{meta:{changes:Number(r.changes)}};}};},async batch(statements){sqlite.exec("BEGIN");try{const out=[];for(const s of statements)out.push(await s.run());sqlite.exec("COMMIT");return out;}catch(e){sqlite.exec("ROLLBACK");throw e;}}};
 globalThis.__PARENTING_TEST_ENV={DB:binding};
-globalThis.__PARENTING_TEST_HELPERS={deriveEditorialTags,refreshSocialCuration,refreshGithubCollections};
+globalThis.__PARENTING_TEST_HELPERS={deriveEditorialTags,refreshSocialCuration,refreshGithubCollections,isPracticalEditorial};
 globalThis.__PARENTING_TEST_EXCLUSIONS=JSON.parse(await fs.readFile(new URL("../data/editorial-exclusions.json",import.meta.url),"utf8"));
 let source=await fs.readFile(new URL("../lib/parenting-store.ts",import.meta.url),"utf8");
 source=source.replace(/^import .*;\n/gm,"");
-source="const env=globalThis.__PARENTING_TEST_ENV;const editorialExclusionsSeed=globalThis.__PARENTING_TEST_EXCLUSIONS;const {deriveEditorialTags,refreshSocialCuration,refreshGithubCollections}=globalThis.__PARENTING_TEST_HELPERS;const careSeed={stages:[],guides:[],programs:[]},shopSeed={products:[],chains:[]},editorialSeed={news:[],columns:[],topics:[],instagram:[],shorts:[]},feedsSeed=[],socialCurationSeed={schemaVersion:1,checkedAt:'2026-10-25',reviews:[],additionalPosts:[],shorts:[]};\n"+source;
+source="const env=globalThis.__PARENTING_TEST_ENV;const editorialExclusionsSeed=globalThis.__PARENTING_TEST_EXCLUSIONS;const {deriveEditorialTags,refreshSocialCuration,refreshGithubCollections,isPracticalEditorial}=globalThis.__PARENTING_TEST_HELPERS;const careSeed={stages:[],guides:[],programs:[]},shopSeed={products:[],chains:[]},editorialSeed={news:[],columns:[],topics:[],instagram:[],shorts:[]},feedsSeed=[],socialCurationSeed={schemaVersion:1,checkedAt:'2026-10-25',reviews:[],additionalPosts:[],shorts:[]};\n"+source;
 const output=ts.transpileModule(source,{compilerOptions:{target:ts.ScriptTarget.ES2022,module:ts.ModuleKind.ES2022}}).outputText;
 const store=await import("data:text/javascript;base64,"+Buffer.from(output).toString("base64"));
 const care={stages:[],guides:[],programs:[]};
@@ -61,7 +62,7 @@ test("feed section and source keywords keep columns distinct from news and rejec
   const column={section:"columns",kind:"体験談",includeKeywords:["娘","家族"],excludeKeywords:["婚活"]};
   assert.equal(store.feedSection(column),"columns");
   assert.equal(store.feedSection({section:"news",kind:"解説"}),"news");
-  assert.equal(store.relevantFeedItem({title:"娘とはじめての遠足",summary:""},column),true);
+  assert.equal(store.relevantFeedItem({title:"親子の遠足の持ち物を準備する",summary:"娘と出かける準備"},column),true);
   assert.equal(store.relevantFeedItem({title:"娘と婚活の相談",summary:""},column),false);
   assert.equal(store.relevantFeedItem({title:"新しいパソコンを購入しました",summary:""},column),false);
   const mext={section:"news",filterRequired:true,includeKeywords:["小学校","給食"]};
@@ -72,7 +73,7 @@ test("feed section and source keywords keep columns distinct from news and rejec
   assert.equal(store.relevantFeedItem({title:"子育て支援給付の対象拡大と申請受付を開始"},{section:"news",filterRequired:false}),true);
   assert.equal(store.relevantFeedItem({title:"仮面ライダーの新しい付録つき絵本を発売"},{section:"columns",filterRequired:false}),false);
   assert.equal(store.relevantFeedItem({title:"【PR】親子向け新発売商品"},{section:"columns",filterRequired:false}),false);
-  assert.equal(store.relevantFeedItem({title:"今日の日記"},{section:"columns",filterRequired:false}),true);
+  assert.equal(store.relevantFeedItem({title:"今日の日記"},{section:"columns",filterRequired:false}),false);
   const item=store.parseFeed('<rss><item><title>娘とはじめての遠足</title><link>https://example.org/column</link></item></rss>',column)[0];
   assert.equal(item.section,"columns");assert.equal(item.kind,"体験談");assert.equal(item.readingLabel,"配信の見出し");
 });
@@ -84,7 +85,7 @@ test("refresh persists only reviewed X, separate videos, tags and 500 articles p
     requests.push({url,options});
     if(url.endsWith("collections/index.json"))return Response.json({schemaVersion:1,updatedAt:"2026-10-25T00:00:00Z",files:["collections/2026-10-25/posts.json"]});
     if(url.endsWith("collections/2026-10-25/posts.json"))return Response.json({collectedAt:"2026-10-25T00:00:00Z",posts:[{id,handle:"family",name:"家族の情報",genre:"食事",time:"2026-10-24T00:00:00Z",likes:20,views:500,text:"給食とアレルギーの確認ポイント",url:"https://x.com/family/status/"+id},{id:"1987654321098765433",handle:"family",name:"家族の情報",genre:"育児",time:"2026-10-24T00:00:00Z",likes:900,views:99999,text:"未審査の投稿",url:"https://x.com/family/status/1987654321098765433"}]});
-    if(url.endsWith("data/social-curation.json"))return Response.json({schemaVersion:1,checkedAt:"2026-10-25",reviews:[{id,status:"approved",reason:"家庭で使える情報",tags:["食事・栄養","健康・安全"]}],additionalPosts:[],instagramPosts:[{id:"instagram-PARENT_123",url:"https://www.instagram.com/p/PARENT_123/",title:"親子で絵本を読む",sourceName:"育児の投稿者",parentingRelevant:true,tags:["絵本"],publishedAt:"2026-10-24"}],shorts:[{platform:"YouTube",videoId:"abcDEF12_-3",url:"https://www.youtube.com/shorts/abcDEF12_-3",title:"親子で絵本を読む",sourceName:"公式案内",parentingUseful:true,tags:["健康・安全"],publishedAt:null}]});
+    if(url.endsWith("data/social-curation.json"))return Response.json({schemaVersion:1,checkedAt:"2026-10-25",reviews:[{id,status:"approved",reason:"家庭で使える情報",tags:["食事・栄養","健康・安全"]}],additionalPosts:[],instagramPosts:[{id:"instagram-PARENT_123",url:"https://www.instagram.com/p/PARENT_123/",title:"親子で絵本を読む",sourceName:"育児の投稿者",parentingRelevant:true,isVideo:false,postFormat:"carousel",tags:["絵本"],publishedAt:"2026-10-24"}],shorts:[{platform:"YouTube",videoId:"abcDEF12_-3",url:"https://www.youtube.com/shorts/abcDEF12_-3",title:"親子で絵本を読む",sourceName:"公式案内",parentingUseful:true,tags:["健康・安全"],publishedAt:null}]});
     throw new Error("Unexpected endpoint "+url);
   };
   try{

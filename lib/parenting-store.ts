@@ -7,6 +7,7 @@ import socialCurationSeed from "../data/social-curation.json";
 import editorialExclusionsSeed from "../data/editorial-exclusions.json";
 import { refreshGithubCollections } from "./github-collections";
 import { deriveEditorialTags } from "./editorial-tags";
+import { isPracticalEditorial } from "./editorial-quality";
 import { refreshSocialCuration } from "./social-curation";
 
 export const sections = ["care", "shop", "editorial", "feeds"] as const;
@@ -163,6 +164,7 @@ export function parseFeed(xml:string,source:Obj){
 }
 export function feedSection(source:Obj):"news"|"columns"{return source.section==="columns"||source.kind==="columns"?"columns":"news";}
 export function relevantFeedItem(item:Obj,source:Obj){
+  if(!isPracticalEditorial(item))return false;
   if([...editorialExclusionsSeed.newsIds,...editorialExclusionsSeed.columnIds].includes(String(item.id||"")))return false;
   const text=(String(item.title||"")+" "+String(item.summary||"")).toLocaleLowerCase("ja");
   const has=(term:unknown)=>typeof term==="string"&&term.trim().length>0&&text.includes(term.toLocaleLowerCase("ja"));

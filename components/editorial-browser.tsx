@@ -4,7 +4,8 @@ import { useEffect, useId, useMemo, useRef, useState, type KeyboardEvent } from 
 import { ArrowLeft, ArrowRight, Bookmark, Check, ChevronDown, ExternalLink, Film, MessageCircle, Newspaper, Play, Search, SlidersHorizontal, Sparkles, X } from 'lucide-react';
 import { ageTargetStatus, type FamilyChild } from '../lib/age-personalization';
 import './editorial-browser.css';
-import { isRelevantParentingVideo } from '../lib/social-curation';
+import { splitSocialMedia } from '../lib/social-curation';
+import { EDITORIAL_TOPICS, editorialTopics, isPracticalEditorial, practicalVideoPriority } from '../lib/editorial-quality';
 
 type Item = Record<string, any>;
 type Editorial = { news: Item[]; columns: Item[]; topics: Item[]; shorts?: Item[]; instagram?: Item[] };
@@ -35,7 +36,7 @@ function tagsOf(item: Item): string[] {
   return [...new Set(values.filter((v: unknown): v is string => typeof v === 'string' && !!v.trim()).map((v: string) => v.trim()))];
 }
 function sourceOf(item: Item): string { return text(item.sourceName) || text(item.source) || text(item.authorName) || text(item.author) || text(item.platform) || '情報元'; }
-function dateOf(item: Item): string { return text(item.publishedAt) || text(item.publishedDate) || text(item.date); }
+function dateOf(item: Item): string { return text(item.publishedAt) || text(item.publishedDate) || text(item.sourceUpdatedAt) || text(item.date); }
 function displayDate(value: string): string {
   const match = /^(\d{4})-(\d{2})-(\d{2})/.exec(value);
   return match ? `${match[1]}.${match[2]}.${match[3]}` : '';
@@ -233,6 +234,8 @@ export default function EditorialBrowser({ editorial, onOpen, onSave, savedIds, 
   const [videoFormat, setVideoFormat] = useState('all');
   const [unknown, setUnknown] = useState(includeUnknownAges);
   const [tags, setTags] = useState<string[]>([]);
+  const [topic,setTopic]=useState('すべて');
+  const [prefecture,setPrefecture]=useState('all');
   const [operator, setOperator] = useState<'or' | 'and'>('or');
   const [tagSearch, setTagSearch] = useState('');
   const [allTags, setAllTags] = useState(false);
@@ -242,16 +245,16 @@ export default function EditorialBrowser({ editorial, onOpen, onSave, savedIds, 
   useEffect(() => setUnknown(includeUnknownAges), [includeUnknownAges]);
 
   const collections = useMemo(() => ({
-    news: Array.isArray(editorial.news) ? editorial.news : [], columns: Array.isArray(editorial.columns) ? editorial.columns : [],
+    news: (Array.isArray(editorial.news) ? editorial.news : []).filter(isPracticalEditorial), columns: (Array.isArray(editorial.columns) ? editorial.columns : []).filter(isPracticalEditorial),
     topics: (Array.isArray(editorial.topics) ? editorial.topics : []).filter(item => ['x', 'twitter'].includes(text(item.platform).toLowerCase()) && (item.parentingRelevant === true || item.parentingUseful === true)),
-    instagram: (Array.isArray(editorial.instagram) ? editorial.instagram : []).filter(item => text(item.platform).toLowerCase() === 'instagram' && (item.parentingRelevant === true || item.parentingUseful === true) && (!(item.isVideo === true || item.videoFormat === 'instagram-video' || /\/reel\//.test(text(item.url))) || isRelevantParentingVideo(item))),
-    shorts: (Array.isArray(editorial.shorts) ? editorial.shorts : []).filter(item => (item.parentingRelevant === true || item.parentingUseful === true) && isRelevantParentingVideo(item)),
+    ...splitSocialMedia(Array.isArray(editorial.instagram)?editorial.instagram:[],Array.isArray(editorial.shorts)?editorial.shorts:[]),
   }), [editorial]);
   const localAges = useMemo(() => ageChildren(age, month), [age, month]);
   const currentItems = collections[tab];
   const socialTab = tab === 'topics' || tab === 'instagram';
   const socialView = socialTab || tab === 'shorts';
   const ageItems = useMemo(() => currentItems.filter(item => (!familyOn || matchesAge(item, familyChildren, unknown)) && (!localAges.length || matchesAge(item, localAges, unknown))), [currentItems, familyOn, familyChildren, unknown, localAges]);
+  const prefectures=useMemo(()=>[...new Set(ageItems.map(item=>text(item.prefecture)).filter(Boolean))].sort((a,b)=>a.localeCompare(b,'ja')),[ageItems]);
   const sources = useMemo(() => [...new Set(ageItems.map(sourceOf))].sort((a, b) => a.localeCompare(b, 'ja')), [ageItems]);
   const availableTags = useMemo(() => {
     const counts = new Map<string, number>();
@@ -264,21 +267,23 @@ export default function EditorialBrowser({ editorial, onOpen, onSave, savedIds, 
     const needle = keyword.trim().toLocaleLowerCase('ja');
     return ageItems.filter(item => {
       if (source !== 'all' && sourceOf(item) !== source) return false;
+      if(topic!=='すべて'&&!editorialTopics(item).includes(topic))return false;
+      if(prefecture!=='all'&&text(item.prefecture)!==prefecture)return false;
       if (tab === 'shorts' && videoFormat !== 'all' && item.videoFormat !== videoFormat) return false;
       const itemTags = tagsOf(item);
       if (tags.length && !(operator === 'and' ? tags.every(tag => itemTags.includes(tag)) : tags.some(tag => itemTags.includes(tag)))) return false;
       if (needle && ![item.title, item.summary, item.text, item.authorName, item.author, sourceOf(item), ...itemTags].filter(v => typeof v === 'string').join(' ').toLocaleLowerCase('ja').includes(needle)) return false;
       return true;
-    }).sort((a, b) => dateOf(b).localeCompare(dateOf(a)));
-  }, [ageItems, source, tags, operator, keyword, tab, videoFormat]);
+    }).sort((a,b)=>(tab==='shorts'?practicalVideoPriority(b)-practicalVideoPriority(a):tab==='news'?Number(!!b.expiresAt&&Date.parse(b.expiresAt)>Date.now())-Number(!!a.expiresAt&&Date.parse(a.expiresAt)>Date.now()):0)||dateOf(b).localeCompare(dateOf(a)));
+  }, [ageItems, source, tags, operator, keyword, tab, videoFormat,topic,prefecture]);
   const pages = Math.max(1, Math.ceil(results.length / PAGE_SIZE));
   const currentPage = Math.min(page, pages);
   const shown = results.slice((currentPage - 1) * PAGE_SIZE, currentPage * PAGE_SIZE);
-  const filterCount = tags.length + Number(!!keyword.trim()) + Number(source !== 'all') + Number(age !== 'all') + Number(tab === 'shorts' && videoFormat !== 'all');
-  useEffect(() => setPage(1), [tab, keyword, source, age, month, unknown, tags, operator, familyOn, familyAgeKey, videoFormat]);
-  const changeTab = (value: Tab) => { setTab(value); setSource('all'); setTags([]); setTagSearch(''); setAllTags(false); };
+  const filterCount = Number(topic!=='すべて')+Number(prefecture!=='all')+tags.length + Number(!!keyword.trim()) + Number(source !== 'all') + Number(age !== 'all') + Number(tab === 'shorts' && videoFormat !== 'all');
+  useEffect(() => setPage(1), [tab, keyword, source, age, month, unknown, tags, operator, familyOn, familyAgeKey, videoFormat,topic,prefecture]);
+  const changeTab = (value: Tab) => { setTab(value); setSource('all'); setTags([]); setTagSearch(''); setAllTags(false);setTopic('すべて');setPrefecture('all'); };
   const toggleTag = (tag: string) => setTags(prev => prev.includes(tag) ? prev.filter(value => value !== tag) : [...prev, tag]);
-  const clear = () => { setKeyword(''); setSource('all'); setAge('all'); setMonth('all'); setVideoFormat('all'); setTags([]); setTagSearch(''); setOperator('or'); setUnknown(includeUnknownAges); };
+  const clear = () => {setTopic('すべて');setPrefecture('all'); setKeyword(''); setSource('all'); setAge('all'); setMonth('all'); setVideoFormat('all'); setTags([]); setTagSearch(''); setOperator('or'); setUnknown(includeUnknownAges); };
   const changePage = (next: number) => { setPage(next); listRef.current?.scrollIntoView({ behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth', block: 'start' }); };
   const tabKey = (event: KeyboardEvent<HTMLButtonElement>, index: number) => {
     let next = index;
@@ -294,13 +299,16 @@ export default function EditorialBrowser({ editorial, onOpen, onSave, savedIds, 
     <header className="kb-editorial-heading"><div><span className="kb-editorial-eyebrow">READ & WATCH</span><h2 id={`${uid}-title`}>今日の子育てに、<br className="kb-editorial-mobile-break" />ひとつのヒント。</h2><p>知っておきたいニュースから、暮らしの工夫まで。</p></div><span className="kb-editorial-heading-mark" aria-hidden="true"><Sparkles size={34} strokeWidth={1.5} /></span></header>
     <div className="kb-editorial-tabs" role="tablist" aria-label="読む・見る情報の種類">{TABS.map(({ key, label, icon: Icon }, index) => <button key={key} ref={node => { tabRefs.current[index] = node; }} id={`${uid}-tab-${key}`} role="tab" aria-selected={tab === key} aria-controls={`${uid}-panel`} tabIndex={tab === key ? 0 : -1} onClick={() => changeTab(key)} onKeyDown={event => tabKey(event, index)}><Icon size={19} strokeWidth={1.8} aria-hidden="true" /><span>{label}</span><small>{collections[key].length}</small></button>)}</div>
     <div role="tabpanel" id={`${uid}-panel`} aria-labelledby={`${uid}-tab-${tab}`}>
+      {tab==='instagram'&&<p className="kb-editorial-format-note">カルーセル・写真の投稿を掲載しています。Instagramの動画はショート動画へ。</p>}
       {socialView && <p className="kb-editorial-social-note"><MessageCircle size={17} aria-hidden="true" /><span>投稿者の体験・意見を含みます。内容の正確さは確認できていません。</span></p>}
+      <div className="kb-editorial-quick-topics" role="group" aria-label="テーマから探す">{['すべて',...EDITORIAL_TOPICS].map(value=><button key={value} type="button" aria-pressed={topic===value} onClick={()=>setTopic(value)}>{value}</button>)}</div>
       <div className="kb-editorial-filters">
         <div className="kb-editorial-filter-heading"><span><SlidersHorizontal size={16} aria-hidden="true" />気になる情報を探す</span>{filterCount > 0 && <button type="button" onClick={clear}><X size={14} aria-hidden="true" />条件をクリア</button>}</div>
         <div className="kb-editorial-filter-row">
           <label className="kb-editorial-keyword"><span className="kb-editorial-label">キーワード</span><span className="kb-editorial-input-wrap"><Search size={18} aria-hidden="true" /><input value={keyword} onChange={event => setKeyword(event.target.value)} placeholder="離乳食、保育園、給付金など" type="search" /></span></label>
           <label><span className="kb-editorial-label">情報元</span><span className="kb-editorial-select-wrap"><select value={source} onChange={event => setSource(event.target.value)}><option value="all">すべての情報元</option>{sources.map(value => <option key={value} value={value}>{value}</option>)}</select><ChevronDown size={15} aria-hidden="true" /></span></label>
           <label><span className="kb-editorial-label">{familyOn ? '追加で年齢を絞る' : '子どもの年齢'}</span><span className="kb-editorial-select-wrap"><select value={age} onChange={event => { setAge(event.target.value); setMonth('all'); }}>{AGE_OPTIONS.map(([value, label]) => <option key={value} value={value}>{familyOn && value === 'all' ? '追加で絞らない' : label}</option>)}</select><ChevronDown size={15} aria-hidden="true" /></span></label>
+          {prefectures.length>0&&<label><span className="kb-editorial-label">地域</span><span className="kb-editorial-select-wrap"><select value={prefecture} onChange={event=>setPrefecture(event.target.value)}><option value="all">全国の情報</option>{prefectures.map(value=><option key={value} value={value}>{value}</option>)}</select><ChevronDown size={15}/></span></label>}
           {['0', '1', '2'].includes(age) && <label className="kb-editorial-month"><span className="kb-editorial-label">月齢</span><span className="kb-editorial-select-wrap"><select value={month} onChange={event => setMonth(event.target.value)}><option value="all">月齢指定なし</option>{Array.from({ length: 12 }, (_, index) => <option key={index} value={index}>{age === '0' ? `生後${index}か月` : `${age}歳${index}か月`}</option>)}</select><ChevronDown size={15} aria-hidden="true" /></span></label>}
           {tab === 'shorts' && <label><span className="kb-editorial-label">動画の種類</span><span className="kb-editorial-select-wrap"><select value={videoFormat} onChange={event => setVideoFormat(event.target.value)}><option value="all">すべての動画</option><option value="shorts">縦型ショート</option><option value="short-video">短い解説動画</option><option value="instagram-video">Instagram動画</option></select><ChevronDown size={15} aria-hidden="true" /></span></label>}
         </div>
@@ -310,17 +318,19 @@ export default function EditorialBrowser({ editorial, onOpen, onSave, savedIds, 
         <div className="kb-editorial-tags">{visibleTags.map(([tag, count]) => <button key={tag} type="button" aria-pressed={tags.includes(tag)} className={tags.includes(tag) ? 'is-active' : ''} onClick={() => toggleTag(tag)}>{tags.includes(tag) && <Check size={13} aria-hidden="true" />}{tag}<small>{count}</small></button>)}{!availableTags.length && <span className="kb-editorial-tag-empty">掲載時に付けられたラベルから探せます。</span>}</div>
         {availableTags.length > 14 && <button type="button" className="kb-editorial-more-tags" aria-expanded={allTags} onClick={() => { setAllTags(!allTags); setTagSearch(''); }}>{allTags ? 'ラベルを閉じる' : `ラベルをすべて見る（${availableTags.length}）`}<ChevronDown size={14} className={allTags ? 'is-open' : ''} aria-hidden="true" /></button>}
       </div>
-      <div ref={listRef} className="kb-editorial-results-heading"><p><strong>{results.length}</strong><span>件</span>{results.length > 0 && <small>{(currentPage - 1) * PAGE_SIZE + 1}〜{Math.min(currentPage * PAGE_SIZE, results.length)}件を表示</small>}</p><span>{socialView ? '子育てに関連する投稿を掲載' : '新しい公開日から表示'}</span></div>
+      <div ref={listRef} className="kb-editorial-results-heading"><p><strong>{results.length}</strong><span>件</span>{results.length > 0 && <small>{(currentPage - 1) * PAGE_SIZE + 1}〜{Math.min(currentPage * PAGE_SIZE, results.length)}件を表示</small>}</p><span>{tab==='shorts'?'使い方・学びの動画を優先':socialView?'子育てに役立つ投稿を掲載':'公開日・更新日をもとに表示'}</span></div>
       {shown.length > 0 ? <div className={`kb-editorial-grid kb-editorial-grid-${tab}`}>{shown.map(item => {
         const id = itemId(item); const url = safeUrl(item.url || item.sourceUrl); const saved = savedIds.includes(id); const published = displayDate(dateOf(item));
         const image = safeUrl(item.image || item.imageUrl || item.thumbnail || item.thumbnailUrl);
         return <article key={id} className={`kb-editorial-card kb-editorial-card-${tab} ${tab === 'shorts' && item.videoFormat === 'short-video' ? 'kb-editorial-card-landscape' : ''} ${tab === 'shorts' && text(item.platform).toLowerCase() === 'instagram' ? 'kb-editorial-card-instagram-video' : ''}`}>
-          {tab === 'shorts' ? <ShortPlayer item={item} /> : tab === 'topics' ? <OfficialPost item={item} /> : tab === 'instagram' ? <OfficialInstagram item={item} /> : image ? <button className="kb-editorial-article-image" type="button" onClick={() => onOpen(item)} tabIndex={-1} aria-hidden="true"><img src={image} alt="" loading="lazy" /></button> : <div className="kb-editorial-article-kicker"><span>{text(item.kind) || (tab === 'news' ? 'NEWS' : 'COLUMN')}</span><span aria-hidden="true">{tab === 'news' ? '↗' : '✳'}</span></div>}
+          {tab === 'shorts' ? <ShortPlayer item={item} /> : tab === 'topics' ? <OfficialPost item={item} /> : tab === 'instagram' ? <OfficialInstagram item={item} /> : image ? <button className="kb-editorial-article-image" type="button" onClick={() => onOpen(item)} tabIndex={-1} aria-hidden="true"><img src={image} alt="" loading="lazy" /></button> : <div className="kb-editorial-article-kicker"><span>{text(item.kind) || (tab === 'news' ? 'NEWS' : 'COLUMN')}</span><span aria-hidden="true">{tab === 'news' ? <ArrowRight size={21}/> : <Sparkles size={21}/>}</span></div>}
           <div className="kb-editorial-card-body">
-            <div className="kb-editorial-card-meta"><span title={sourceOf(item)}>{sourceOf(item)}</span>{published ? <time dateTime={dateOf(item)}>{published}{tab === 'shorts' || tab === 'instagram' ? ' 公開' : ''}</time> : socialView && <span>公開日未確認</span>}</div>
+            <div className="kb-editorial-card-meta"><span title={sourceOf(item)}>{sourceOf(item)}</span>{published ? <time dateTime={dateOf(item)}>{published}{!item.publishedAt&&item.sourceUpdatedAt?' 更新':tab === 'shorts' || tab === 'instagram' ? ' 公開' : ''}</time> : socialView && <span>公開日未確認</span>}</div>
             {tab === 'shorts' && <p className="kb-editorial-video-info"><span>{videoFormatLabel(item)}</span><span>{durationOf(item) || '長さ未確認'}</span></p>}
+            {text(item.prefecture)&&<span className="kb-editorial-area">{text(item.prefecture)} {text(item.municipality)}</span>}
             {tab !== 'topics' && <h3>{tab === 'shorts' || tab === 'instagram' ? text(item.title) : <button type="button" onClick={() => onOpen(item)}>{text(item.title)}</button>}</h3>}
             {tab !== 'topics' && text(item.summary) && <p className="kb-editorial-summary">{text(item.summary)}</p>}
+            {!socialView&&Array.isArray(item.practicalPoints)&&item.practicalPoints[0]&&<p className="kb-editorial-takeaway">{String(item.practicalPoints[0])}</p>}
             {socialView && <span className="kb-editorial-unverified">内容未確認</span>}
             <Tags item={item} selected={tags} toggle={toggleTag} />
             <div className="kb-editorial-card-footer"><Save item={item} saved={saved} onSave={onSave} />{socialView ? url && <a href={url} target="_blank" rel="noopener noreferrer">{socialTab ? '元の投稿' : '元の動画'}<ExternalLink size={13} aria-hidden="true" /></a> : <button className="kb-editorial-read" type="button" onClick={() => onOpen(item)}>読む<ArrowRight size={16} aria-hidden="true" /></button>}</div>

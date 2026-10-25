@@ -83,6 +83,7 @@ export function normalizeCuratedInstagramPost(value: unknown): Obj | null {
   if (typeof value.sourceUrl === 'string' && web(value.sourceUrl)) result.sourceUrl = web(value.sourceUrl)!.href;
   if (typeof value.caution === 'string') result.caution = clean(value.caution, 500);
   if (typeof value.captionExcerpt === 'string') result.captionExcerpt = clean(value.captionExcerpt, 160);
+  result.postFormat=isVideo?'video':['image','carousel'].includes(value.postFormat)?value.postFormat:value.isVideo===false?'image':'unknown';
   if (isVideo) {
     result.videoFormat = 'instagram-video';
     result.durationSeconds = typeof value.durationSeconds === 'number' && Number.isFinite(value.durationSeconds) && value.durationSeconds > 0 && value.durationSeconds <= 3600 ? value.durationSeconds : null;
@@ -119,7 +120,21 @@ export function normalizeCuratedVideo(value: unknown): Obj | null {
   if (platform === 'Instagram') {result.videoFormat = 'instagram-video'; result.isVideo = true; result.durationSeconds = null; result.embedVerified = false;}
   if (typeof value.durationSeconds === 'number' && Number.isFinite(value.durationSeconds) && value.durationSeconds > 0 && value.durationSeconds <= 3600) result.durationSeconds = value.durationSeconds;
   if (value.embedVerified === true) result.embedVerified = true;
+  if(typeof value.captionExcerpt==='string')result.captionExcerpt=clean(value.captionExcerpt,160);
+  if(typeof value.sourceTitle==='string')result.sourceTitle=clean(value.sourceTitle,180);
   return result;
+}
+/** Instagram videos share the video shelf; the Instagram shelf contains confirmed feed formats only. */
+export function splitSocialMedia(instagramInput:Obj[]=[],videoInput:Obj[]=[]):{instagram:Obj[];shorts:Obj[]}{
+ const instagram:Obj[]=[],shorts:Obj[]=[],feedIds=new Set<string>(),videoIds=new Set<string>();
+ const candidates=[...videoInput];
+ for(const raw of instagramInput){
+  const item=normalizeCuratedInstagramPost(raw);if(!item)continue;
+  if(item.isVideo===true){if(item.durationSeconds===null||item.durationSeconds<=180)candidates.push(item);}
+  else if(['image','carousel'].includes(item.postFormat)&&!feedIds.has(item.id)){feedIds.add(item.id);instagram.push(item);}
+ }
+ for(const raw of candidates){const item=normalizeCuratedVideo(raw);if(!item||videoIds.has(item.id)||item.platform==='Instagram'&&typeof item.durationSeconds==='number'&&item.durationSeconds>180)continue;videoIds.add(item.id);shorts.push(item);}
+ return{instagram:instagram.slice(0,MAX_RESULTS),shorts:shorts.slice(0,MAX_RESULTS)};
 }
 const wasApproved = (item: Obj) => (item.parentingUseful === true || item.parentingRelevant === true) && (item.reviewStatus === 'approved' || item.curation?.status === 'approved');
 /** Merge fresh reactions with the prior editorial decision, using the canonical X status ID. */
@@ -139,10 +154,10 @@ export function applySocialCuration(document: SocialCuration, incomingTopics: Ob
     const checkedAt = review?.status === 'approved' || additional ? document.checkedAt : date(prior?.curation?.checkedAt || raw.curation?.checkedAt) || document.checkedAt;
     topics.push({...item, reviewStatus: 'approved', reviewReason: reason, curation: {status: 'approved', reason, checkedAt}}); seen.add(identity.id);
   }
-  const instagram: Obj[] = [], instagramIds = new Set<string>();
-  for (const raw of [...(document.instagramPosts || []), ...(preservePreviousShorts ? previousInstagram : [])]) {const item = normalizeCuratedInstagramPost(raw); if (item && !instagramIds.has(item.id)) {instagramIds.add(item.id); instagram.push(item);}}
-  const shorts: Obj[] = [], videos = new Set<string>();
-  for (const raw of [...document.shorts, ...(preservePreviousShorts ? previousShorts : [])]) {const item = normalizeCuratedVideo(raw); if (item && !videos.has(item.id)) {videos.add(item.id); shorts.push(item);}}
+  const collectedInstagram: Obj[] = [];
+  for (const raw of [...(document.instagramPosts || []), ...(preservePreviousShorts ? previousInstagram : [])]) {const item = normalizeCuratedInstagramPost(raw); if(item)collectedInstagram.push(item);}
+  const {instagram,shorts}=splitSocialMedia(collectedInstagram,[...document.shorts,...(preservePreviousShorts?previousShorts:[])]);
+
   return {topics: topics.slice(0, MAX_RESULTS), instagram: instagram.slice(0, MAX_RESULTS), shorts: shorts.slice(0, MAX_RESULTS), rejectedX: document.reviews.filter(v => v.status === 'rejected').length};
 }
 async function fetchCuration(fetcher: typeof fetch): Promise<SocialCuration> {

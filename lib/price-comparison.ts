@@ -28,7 +28,8 @@ function safeSource(source: unknown) {
   if (typeof source !== "string") return false;
   try {
     const u = new URL(source);
-    return u.protocol === "https:" && !u.username && !u.password && !u.port && u.hostname.includes(".") && !/^(localhost|.*\.local|[\d.]+)$/i.test(u.hostname);
+    const searchPage = /(?:^|\/)search(?:\/|$)|^\/s\/?$|^\/kw(?:\/|$)/i.test(u.pathname) || ['k','keyword','query','q'].some(key=>u.searchParams.has(key));
+    return !searchPage && u.protocol === "https:" && !u.username && !u.password && !u.port && u.hostname.includes(".") && !/^(localhost|.*\.local|[\d.]+)$/i.test(u.hostname);
   } catch { return false; }
 }
 function amount(n: number) { return n.toLocaleString("ja-JP", { maximumFractionDigits: 2 }); }
@@ -77,6 +78,7 @@ export function normalizeOffer(product: PriceRecord, offer: PriceRecord, now = D
   else if (!finiteNonnegative(offer.shipping)) ineligibleReason = "送料未確認";
   else if (!finitePositive(quantity) || !Number.isInteger(quantity)) ineligibleReason = "数量未確認";
   else if ((milk || offer.unitLabel === "100g") && !massUnit) ineligibleReason = "容量未確認";
+  else if (offer.available===null && (offer.stockVerified===false||offer.availabilityVerified===false)) ineligibleReason = "在庫未確認";
   else if (offer.available===false) ineligibleReason = "売り切れ";
   else if (/売り切れ|売切|在庫なし|入荷待ち|価格表示に差|価格不明|未確認|店舗未指定|要確認|要再確認/.test(String(offer.status ?? ""))) ineligibleReason = String(offer.status);
   else if (offer.verified !== true || offer.eligible === 0) ineligibleReason = "価格の確認待ち";

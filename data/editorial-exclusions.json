@@ -6,7 +6,24 @@
     "news-school-lunch",
     "news-birth-statistics",
     "news-health-check-discussion",
-    "feed-https%3A%2F%2Fwww.jpeds.or.jp%2Fnews%2Fevent%2Fpost-159484.html"
+    "feed-https%3A%2F%2Fwww.jpeds.or.jp%2Fnews%2Fevent%2Fpost-159484.html",
+    "news-100months-20261023",
+    "research-pension-wage-202610",
+    "research-pension-adjust-202610",
+    "research-ncchd-6",
+    "research-caa-5",
+    "research-ncchd-14",
+    "research-ncchd-16",
+    "research-caa-11",
+    "research-caa-12",
+    "research-ncchd-24",
+    "research-caa-16",
+    "research-jpeds-measles-202604",
+    "research-ncchd-33",
+    "research-ncchd-35",
+    "research-ncchd-39",
+    "research-ncchd-41",
+    "news-housework-survey"
   ],
   "columnIds": [
     "feed-https%3A%2F%2Fnote.com%2Fanarchism_ikuji%2Fn%2Fn0a9ae55fd343",
@@ -20,7 +37,58 @@
     "feed-https%3A%2F%2Fnote.com%2Fellie_rhythm%2Fn%2Fnfe9251d2116f",
     "feed-https%3A%2F%2Fcocreco.kodansha.co.jp%2Fcocreco%2Fgeneral%2Fbooks%2FKJUAH",
     "feed-https%3A%2F%2Fameblo.jp%2Fdekkaiossan9%2Fentry-12982293904.html",
-    "feed-https%3A%2F%2Fkodomo-gov.note.jp%2Fn%2Fn58f6e231712c"
+    "feed-https%3A%2F%2Fkodomo-gov.note.jp%2Fn%2Fn58f6e231712c",
+    "column-child-growth-manga",
+    "research-mynavi-44218",
+    "feed-https%3A%2F%2Fkosodatemap.gakken.jp%2Flife%2Fevent-life%2F108970%2F",
+    "research-cocreco-102",
+    "feed-https%3A%2F%2Fkosodatemap.gakken.jp%2Flife%2Ffamily%2F108938%2F",
+    "feed-https%3A%2F%2Fnote.com%2Fanarchism_ikuji%2Fn%2Fnbe10287262b8",
+    "feed-https%3A%2F%2Fnote.com%2Fanarchism_ikuji%2Fn%2Fnd591c9e10d54",
+    "column-father-diary",
+    "feed-https%3A%2F%2Fnote.com%2Fanarchism_ikuji%2Fn%2Fn4a1bbd51d441",
+    "feed-https%3A%2F%2Fnote.com%2Fellie_rhythm%2Fn%2Fndc2516404761",
+    "feed-https%3A%2F%2Fnote.com%2Fanarchism_ikuji%2Fn%2Fna941a7215590",
+    "feed-https%3A%2F%2Fnote.com%2Fanarchism_ikuji%2Fn%2Fndc585ba179b5",
+    "research-mynavi-46266",
+    "feed-https%3A%2F%2Fnote.com%2Fanarchism_ikuji%2Fn%2Fn5fef7cbbadf2",
+    "feed-https%3A%2F%2Fnote.com%2Fanarchism_ikuji%2Fn%2Fned473f85f05b",
+    "feed-https%3A%2F%2Fnote.com%2Fanarchism_ikuji%2Fn%2Fn00dae0dc160d",
+    "feed-https%3A%2F%2Fnote.com%2Fanarchism_ikuji%2Fn%2Fnacc05458a7e9",
+    "column-precon",
+    "feed-https%3A%2F%2Fnote.com%2Fanarchism_ikuji%2Fn%2Fn3ff851ff7ff7",
+    "feed-https%3A%2F%2Fkodomo-gov.note.jp%2Fn%2Fna3ba54e0dcbe",
+    "column-toddlers-diary",
+    "research-mynavi-46029",
+    "feed-https%3A%2F%2Fnote.com%2Fellie_rhythm%2Fn%2Fn0153b790729d",
+    "feed-https%3A%2F%2Fnote.com%2Fellie_rhythm%2Fn%2Fn10a8de6551ee",
+    "feed-https%3A%2F%2Fkodomo-gov.note.jp%2Fn%2Fn8c88c710bc76",
+    "feed-https%3A%2F%2Fnote.com%2Fellie_rhythm%2Fn%2Fn37fbba1683ca",
+    "feed-https%3A%2F%2Fkodomo-gov.note.jp%2Fn%2Fn7b5b78a3e1f3",
+    "feed-https%3A%2F%2Fkodomo-gov.note.jp%2Fn%2Fn0169add24365",
+    "feed-https%3A%2F%2Fkodomo-gov.note.jp%2Fn%2Fn557f887c4ce0",
+    "feed-https%3A%2F%2Fkodomo-gov.note.jp%2Fn%2Fndece0492d83d",
+    "feed-https%3A%2F%2Fnote.com%2Fellie_rhythm%2Fn%2Fn76ee0d5f5dd5",
+    "feed-https%3A%2F%2Fkodomo-gov.note.jp%2Fn%2Fndec0cc77b381",
+    "feed-https%3A%2F%2Fnote.com%2Fellie_rhythm%2Fn%2Fn2b031681d559",
+    "feed-https%3A%2F%2Fnote.com%2Fellie_rhythm%2Fn%2Fn1f63652786ed",
+    "feed-https%3A%2F%2Fkodomo-gov.note.jp%2Fn%2Fn1311c033e6d3",
+    "feed-https%3A%2F%2Fnote.com%2Fellie_rhythm%2Fn%2Fneb600888ef03",
+    "feed-https%3A%2F%2Fnote.com%2Fellie_rhythm%2Fn%2Fn22f510eaadf5",
+    "feed-https%3A%2F%2Fkodomo-gov.note.jp%2Fn%2Fn9c40e56e5e4d",
+    "research-gakken-60",
+    "feed-https%3A%2F%2Fkodomo-gov.note.jp%2Fn%2Fn1d42f844ce1b",
+    "feed-https%3A%2F%2Fnote.com%2Fellie_rhythm%2Fn%2Fn92b5352b4862",
+    "feed-https%3A%2F%2Fkodomo-gov.note.jp%2Fn%2Fnb64927529114",
+    "feed-https%3A%2F%2Fnote.com%2Fanarchism_ikuji%2Fn%2Fn5533ae2c9d90",
+    "research-gakken-77",
+    "research-gakken-80",
+    "feed-https%3A%2F%2Fkodomo-gov.note.jp%2Fn%2Fne74dd5c86e9c",
+    "feed-https%3A%2F%2Fkodomo-gov.note.jp%2Fn%2Fn5190c4a133ad",
+    "feed-https%3A%2F%2Fkodomo-gov.note.jp%2Fn%2Fnee5480c5d3e0",
+    "feed-https%3A%2F%2Fkodomo-gov.note.jp%2Fn%2Fn5abe8712412c",
+    "feed-https%3A%2F%2Fkodomo-gov.note.jp%2Fn%2Fnc6ce35e5262a",
+    "feed-https%3A%2F%2Fkodomo-gov.note.jp%2Fn%2Fn961f0b680620"
   ],
   "records": [
     {
@@ -92,6 +160,414 @@
       "id": "feed-https%3A%2F%2Fnote.com%2Fellie_rhythm%2Fn%2Fnfe9251d2116f",
       "url": "https://note.com/ellie_rhythm/n/nfe9251d2116f",
       "title": "🌙今日の小さな幸せ日記｜2026.08.10"
+    },
+    {
+      "id": "news-100months-20261023",
+      "url": "https://www.cfa.go.jp/press/764bd6b4-ffdc-4727-b16f-aaeb48087882",
+      "title": "はじめの100か月の育ちを考える全国大会",
+      "reason": "実用性を再確認。日記・研究発表・間接的な案内を中心とするため掲載を終了"
+    },
+    {
+      "id": "research-pension-wage-202610",
+      "url": "https://www.nenkin.go.jp/oshirase/taisetu/jigyosho/2026/202610/100104.html",
+      "title": "短時間で働く人の社会保険、賃金要件を撤廃",
+      "reason": "実用性を再確認。日記・研究発表・間接的な案内を中心とするため掲載を終了"
+    },
+    {
+      "id": "research-pension-adjust-202610",
+      "url": "https://www.nenkin.go.jp/oshirase/taisetu/jigyosho/2026/202610/100103.html",
+      "title": "新たに社会保険に入る短時間労働者向けの保険料調整",
+      "reason": "実用性を再確認。日記・研究発表・間接的な案内を中心とするため掲載を終了"
+    },
+    {
+      "id": "research-ncchd-6",
+      "url": "https://www.ncchd.go.jp/press/2026/0914.html",
+      "title": "子どもの抗菌薬処方が減少。種類や年代には課題も",
+      "reason": "実用性を再確認。日記・研究発表・間接的な案内を中心とするため掲載を終了"
+    },
+    {
+      "id": "research-caa-5",
+      "url": "https://www.caa.go.jp/policies/policy/consumer_safety/child/project_001/mail/20260821/",
+      "title": "地震後の電気火災、家庭の備えを点検しよう",
+      "reason": "実用性を再確認。日記・研究発表・間接的な案内を中心とするため掲載を終了"
+    },
+    {
+      "id": "research-ncchd-14",
+      "url": "https://www.ncchd.go.jp/press/2026/0710.html",
+      "title": "産後ケアの安全性と心の支援について提言",
+      "reason": "実用性を再確認。日記・研究発表・間接的な案内を中心とするため掲載を終了"
+    },
+    {
+      "id": "research-ncchd-16",
+      "url": "https://www.ncchd.go.jp/press/2026/0702.html",
+      "title": "小児アトピー、家族への説明とスキンケアの支援を検証",
+      "reason": "実用性を再確認。日記・研究発表・間接的な案内を中心とするため掲載を終了"
+    },
+    {
+      "id": "research-caa-11",
+      "url": "https://www.caa.go.jp/policies/policy/consumer_safety/child/project_001/mail/20260612/",
+      "title": "雨の日の転倒、傘の先、防水スプレーに注意",
+      "reason": "実用性を再確認。日記・研究発表・間接的な案内を中心とするため掲載を終了"
+    },
+    {
+      "id": "research-caa-12",
+      "url": "https://www.caa.go.jp/policies/policy/consumer_safety/child/project_001/mail/20260605/",
+      "title": "暑さに備える習慣を。熱中症予防のポイントを案内",
+      "reason": "実用性を再確認。日記・研究発表・間接的な案内を中心とするため掲載を終了"
+    },
+    {
+      "id": "research-ncchd-24",
+      "url": "https://www.ncchd.go.jp/press/2026/0511.html",
+      "title": "ナッツアレルギー、専門管理のもとで新たな治療を検証",
+      "reason": "実用性を再確認。日記・研究発表・間接的な案内を中心とするため掲載を終了"
+    },
+    {
+      "id": "research-caa-16",
+      "url": "https://www.caa.go.jp/policies/policy/consumer_safety/child/project_001/mail/20260424/",
+      "title": "トランポリンやアスレチック、施設で遊ぶ前に確認を",
+      "reason": "実用性を再確認。日記・研究発表・間接的な案内を中心とするため掲載を終了"
+    },
+    {
+      "id": "research-jpeds-measles-202604",
+      "url": "https://www.jpeds.or.jp/society-activities/post-156349.html",
+      "title": "はしかの報告増加を受け、MRワクチンの確認を呼びかけ",
+      "reason": "実用性を再確認。日記・研究発表・間接的な案内を中心とするため掲載を終了"
+    },
+    {
+      "id": "research-ncchd-33",
+      "url": "https://www.ncchd.go.jp/press/2026/0227.html",
+      "title": "産後の入浴制限を検討する研究結果を公表",
+      "reason": "実用性を再確認。日記・研究発表・間接的な案内を中心とするため掲載を終了"
+    },
+    {
+      "id": "research-ncchd-35",
+      "url": "https://www.ncchd.go.jp/press/2026/0220.html",
+      "title": "無痛分娩の麻酔薬と新生児の状態を調査",
+      "reason": "実用性を再確認。日記・研究発表・間接的な案内を中心とするため掲載を終了"
+    },
+    {
+      "id": "research-ncchd-39",
+      "url": "https://www.ncchd.go.jp/press/2026/0129.html",
+      "title": "妊娠前のやせと、出産時の母子の健康との関連を報告",
+      "reason": "実用性を再確認。日記・研究発表・間接的な案内を中心とするため掲載を終了"
+    },
+    {
+      "id": "research-ncchd-41",
+      "url": "https://www.ncchd.go.jp/press/2026/0121.html",
+      "title": "食物アレルギーの救急受診、原因食物の変化を報告",
+      "reason": "実用性を再確認。日記・研究発表・間接的な案内を中心とするため掲載を終了"
+    },
+    {
+      "id": "column-child-growth-manga",
+      "url": "https://kosodatemap.gakken.jp/life/family/108908/",
+      "title": "成長がうれしくて、少し寂しいとき",
+      "reason": "実用性を再確認。日記・研究発表・間接的な案内を中心とするため掲載を終了"
+    },
+    {
+      "id": "research-mynavi-44218",
+      "url": "https://kosodate.mynavi.jp/articles/44218",
+      "title": "園のおたより・お迎え・予定を、家族で共有する工夫",
+      "reason": "実用性を再確認。日記・研究発表・間接的な案内を中心とするため掲載を終了"
+    },
+    {
+      "id": "feed-https%3A%2F%2Fkosodatemap.gakken.jp%2Flife%2Fevent-life%2F108970%2F",
+      "url": "https://kosodatemap.gakken.jp/life/event-life/108970/",
+      "title": "【ハロウィン仮装】みんなは何に変身する？ Instagramで見つけた子ども＆親子のかわいい仮装10選♪",
+      "reason": "実用性を再確認。日記・研究発表・間接的な案内を中心とするため掲載を終了"
+    },
+    {
+      "id": "research-cocreco-102",
+      "url": "https://cocreco.kodansha.co.jp/cocreco/general/books/gift-ehon/Sk3ND",
+      "title": "色や絵を楽しむ、親子で開きたいアートの絵本",
+      "reason": "実用性を再確認。日記・研究発表・間接的な案内を中心とするため掲載を終了"
+    },
+    {
+      "id": "feed-https%3A%2F%2Fkosodatemap.gakken.jp%2Flife%2Ffamily%2F108938%2F",
+      "url": "https://kosodatemap.gakken.jp/life/family/108938/",
+      "title": "【マンガ】お母さんからバトンタッチ／けえこ",
+      "reason": "実用性を再確認。日記・研究発表・間接的な案内を中心とするため掲載を終了"
+    },
+    {
+      "id": "feed-https%3A%2F%2Fnote.com%2Fanarchism_ikuji%2Fn%2Fnbe10287262b8",
+      "url": "https://note.com/anarchism_ikuji/n/nbe10287262b8",
+      "title": "育児男のしんどみ",
+      "reason": "実用性を再確認。日記・研究発表・間接的な案内を中心とするため掲載を終了"
+    },
+    {
+      "id": "feed-https%3A%2F%2Fnote.com%2Fanarchism_ikuji%2Fn%2Fnd591c9e10d54",
+      "url": "https://note.com/anarchism_ikuji/n/nd591c9e10d54",
+      "title": "育児日記10/18",
+      "reason": "実用性を再確認。日記・研究発表・間接的な案内を中心とするため掲載を終了"
+    },
+    {
+      "id": "column-father-diary",
+      "url": "https://note.com/anarchism_ikuji/n/nd1a2d5ccf06e",
+      "title": "育児の合間に一人で外出した日の記録",
+      "reason": "実用性を再確認。日記・研究発表・間接的な案内を中心とするため掲載を終了"
+    },
+    {
+      "id": "feed-https%3A%2F%2Fnote.com%2Fanarchism_ikuji%2Fn%2Fn4a1bbd51d441",
+      "url": "https://note.com/anarchism_ikuji/n/n4a1bbd51d441",
+      "title": "育児日記10/15",
+      "reason": "実用性を再確認。日記・研究発表・間接的な案内を中心とするため掲載を終了"
+    },
+    {
+      "id": "feed-https%3A%2F%2Fnote.com%2Fellie_rhythm%2Fn%2Fndc2516404761",
+      "url": "https://note.com/ellie_rhythm/n/ndc2516404761",
+      "title": "離婚したかった夫と、子ども6時間預けてデートしてみた",
+      "reason": "実用性を再確認。日記・研究発表・間接的な案内を中心とするため掲載を終了"
+    },
+    {
+      "id": "feed-https%3A%2F%2Fnote.com%2Fanarchism_ikuji%2Fn%2Fna941a7215590",
+      "url": "https://note.com/anarchism_ikuji/n/na941a7215590",
+      "title": "育児日記10/14",
+      "reason": "実用性を再確認。日記・研究発表・間接的な案内を中心とするため掲載を終了"
+    },
+    {
+      "id": "feed-https%3A%2F%2Fnote.com%2Fanarchism_ikuji%2Fn%2Fndc585ba179b5",
+      "url": "https://note.com/anarchism_ikuji/n/ndc585ba179b5",
+      "title": "育児日記10/13",
+      "reason": "実用性を再確認。日記・研究発表・間接的な案内を中心とするため掲載を終了"
+    },
+    {
+      "id": "research-mynavi-46266",
+      "url": "https://kosodate.mynavi.jp/articles/46266",
+      "title": "いつも眠そうな子、睡眠の病気が隠れていることも",
+      "reason": "実用性を再確認。日記・研究発表・間接的な案内を中心とするため掲載を終了"
+    },
+    {
+      "id": "feed-https%3A%2F%2Fnote.com%2Fanarchism_ikuji%2Fn%2Fn5fef7cbbadf2",
+      "url": "https://note.com/anarchism_ikuji/n/n5fef7cbbadf2",
+      "title": "育児日記10/12",
+      "reason": "実用性を再確認。日記・研究発表・間接的な案内を中心とするため掲載を終了"
+    },
+    {
+      "id": "feed-https%3A%2F%2Fnote.com%2Fanarchism_ikuji%2Fn%2Fned473f85f05b",
+      "url": "https://note.com/anarchism_ikuji/n/ned473f85f05b",
+      "title": "育児日記10/11",
+      "reason": "実用性を再確認。日記・研究発表・間接的な案内を中心とするため掲載を終了"
+    },
+    {
+      "id": "feed-https%3A%2F%2Fnote.com%2Fanarchism_ikuji%2Fn%2Fn00dae0dc160d",
+      "url": "https://note.com/anarchism_ikuji/n/n00dae0dc160d",
+      "title": "育児日記10/10",
+      "reason": "実用性を再確認。日記・研究発表・間接的な案内を中心とするため掲載を終了"
+    },
+    {
+      "id": "feed-https%3A%2F%2Fnote.com%2Fanarchism_ikuji%2Fn%2Fnacc05458a7e9",
+      "url": "https://note.com/anarchism_ikuji/n/nacc05458a7e9",
+      "title": "育児日記10/9",
+      "reason": "実用性を再確認。日記・研究発表・間接的な案内を中心とするため掲載を終了"
+    },
+    {
+      "id": "column-precon",
+      "url": "https://kodomo-gov.note.jp/n/n4e355f42eb70",
+      "title": "自分の睡眠・食事・運動を振り返る",
+      "reason": "実用性を再確認。日記・研究発表・間接的な案内を中心とするため掲載を終了"
+    },
+    {
+      "id": "feed-https%3A%2F%2Fnote.com%2Fanarchism_ikuji%2Fn%2Fn3ff851ff7ff7",
+      "url": "https://note.com/anarchism_ikuji/n/n3ff851ff7ff7",
+      "title": "育児日記10/8",
+      "reason": "実用性を再確認。日記・研究発表・間接的な案内を中心とするため掲載を終了"
+    },
+    {
+      "id": "feed-https%3A%2F%2Fkodomo-gov.note.jp%2Fn%2Fna3ba54e0dcbe",
+      "url": "https://kodomo-gov.note.jp/n/na3ba54e0dcbe",
+      "title": "こどもまんなかニュース（2026年８月）",
+      "reason": "実用性を再確認。日記・研究発表・間接的な案内を中心とするため掲載を終了"
+    },
+    {
+      "id": "column-toddlers-diary",
+      "url": "https://note.com/ellie_rhythm/n/n575259f53c08",
+      "title": "1歳・2歳の子との日々を振り返る",
+      "reason": "実用性を再確認。日記・研究発表・間接的な案内を中心とするため掲載を終了"
+    },
+    {
+      "id": "research-mynavi-46029",
+      "url": "https://kosodate.mynavi.jp/articles/46029",
+      "title": "育休を分けて取った父親の、仕事と家庭の体験",
+      "reason": "実用性を再確認。日記・研究発表・間接的な案内を中心とするため掲載を終了"
+    },
+    {
+      "id": "feed-https%3A%2F%2Fnote.com%2Fellie_rhythm%2Fn%2Fn0153b790729d",
+      "url": "https://note.com/ellie_rhythm/n/n0153b790729d",
+      "title": "自宅保育の限界を感じています…",
+      "reason": "実用性を再確認。日記・研究発表・間接的な案内を中心とするため掲載を終了"
+    },
+    {
+      "id": "feed-https%3A%2F%2Fnote.com%2Fellie_rhythm%2Fn%2Fn10a8de6551ee",
+      "url": "https://note.com/ellie_rhythm/n/n10a8de6551ee",
+      "title": "自分が育児向いてるのか向いてないのかわからない",
+      "reason": "実用性を再確認。日記・研究発表・間接的な案内を中心とするため掲載を終了"
+    },
+    {
+      "id": "feed-https%3A%2F%2Fkodomo-gov.note.jp%2Fn%2Fn8c88c710bc76",
+      "url": "https://kodomo-gov.note.jp/n/n8c88c710bc76",
+      "title": "施行100日前。こまもろうが会いたかった相手～東京ヤクルトスワローズ つば九郎・つばみがコラボレーションしたわけ～",
+      "reason": "実用性を再確認。日記・研究発表・間接的な案内を中心とするため掲載を終了"
+    },
+    {
+      "id": "feed-https%3A%2F%2Fnote.com%2Fellie_rhythm%2Fn%2Fn37fbba1683ca",
+      "url": "https://note.com/ellie_rhythm/n/n37fbba1683ca",
+      "title": "ワンオペ育児ぶん回すためにやめた11のこと",
+      "reason": "実用性を再確認。日記・研究発表・間接的な案内を中心とするため掲載を終了"
+    },
+    {
+      "id": "feed-https%3A%2F%2Fkodomo-gov.note.jp%2Fn%2Fn7b5b78a3e1f3",
+      "url": "https://kodomo-gov.note.jp/n/n7b5b78a3e1f3",
+      "title": "こどもまんなかニュース（2026年7月）",
+      "reason": "実用性を再確認。日記・研究発表・間接的な案内を中心とするため掲載を終了"
+    },
+    {
+      "id": "feed-https%3A%2F%2Fkodomo-gov.note.jp%2Fn%2Fn0169add24365",
+      "url": "https://kodomo-gov.note.jp/n/n0169add24365",
+      "title": "熊本地震の被災地を支援したいみなさまへ",
+      "reason": "実用性を再確認。日記・研究発表・間接的な案内を中心とするため掲載を終了"
+    },
+    {
+      "id": "feed-https%3A%2F%2Fkodomo-gov.note.jp%2Fn%2Fn557f887c4ce0",
+      "url": "https://kodomo-gov.note.jp/n/n557f887c4ce0",
+      "title": "障害のあるこども・ご家族のみなさまへ熊本地震で利用できる支援をまとめました",
+      "reason": "実用性を再確認。日記・研究発表・間接的な案内を中心とするため掲載を終了"
+    },
+    {
+      "id": "feed-https%3A%2F%2Fkodomo-gov.note.jp%2Fn%2Fndece0492d83d",
+      "url": "https://kodomo-gov.note.jp/n/ndece0492d83d",
+      "title": "熊本地震で被災されたこども・子育て家庭のみなさまへ 利用できる支援情報をまとめました",
+      "reason": "実用性を再確認。日記・研究発表・間接的な案内を中心とするため掲載を終了"
+    },
+    {
+      "id": "feed-https%3A%2F%2Fnote.com%2Fellie_rhythm%2Fn%2Fn76ee0d5f5dd5",
+      "url": "https://note.com/ellie_rhythm/n/n76ee0d5f5dd5",
+      "title": "年子育児日記｜2026年8月｜2y8m・1y8m",
+      "reason": "実用性を再確認。日記・研究発表・間接的な案内を中心とするため掲載を終了"
+    },
+    {
+      "id": "feed-https%3A%2F%2Fkodomo-gov.note.jp%2Fn%2Fndec0cc77b381",
+      "url": "https://kodomo-gov.note.jp/n/ndec0cc77b381",
+      "title": "2026年「こども霞が関見学デー」を開催しました！",
+      "reason": "実用性を再確認。日記・研究発表・間接的な案内を中心とするため掲載を終了"
+    },
+    {
+      "id": "feed-https%3A%2F%2Fnote.com%2Fellie_rhythm%2Fn%2Fn2b031681d559",
+      "url": "https://note.com/ellie_rhythm/n/n2b031681d559",
+      "title": "ワンオペ育児ぶん回すためにやめた10のこと",
+      "reason": "実用性を再確認。日記・研究発表・間接的な案内を中心とするため掲載を終了"
+    },
+    {
+      "id": "feed-https%3A%2F%2Fnote.com%2Fellie_rhythm%2Fn%2Fn1f63652786ed",
+      "url": "https://note.com/ellie_rhythm/n/n1f63652786ed",
+      "title": "【療育日記#４】 3人ですごす“最後のいつもの一日”",
+      "reason": "実用性を再確認。日記・研究発表・間接的な案内を中心とするため掲載を終了"
+    },
+    {
+      "id": "feed-https%3A%2F%2Fkodomo-gov.note.jp%2Fn%2Fn1311c033e6d3",
+      "url": "https://kodomo-gov.note.jp/n/n1311c033e6d3",
+      "title": "こどもたちの本音から考える和光市こどもの権利条例と「こどもまんなかWEEK」で感じたこと、そしてこれからの課題",
+      "reason": "実用性を再確認。日記・研究発表・間接的な案内を中心とするため掲載を終了"
+    },
+    {
+      "id": "feed-https%3A%2F%2Fnote.com%2Fellie_rhythm%2Fn%2Fneb600888ef03",
+      "url": "https://note.com/ellie_rhythm/n/neb600888ef03",
+      "title": "久しぶりに“寝かしつけ”したら超絶ストレスだった🐏☁️",
+      "reason": "実用性を再確認。日記・研究発表・間接的な案内を中心とするため掲載を終了"
+    },
+    {
+      "id": "feed-https%3A%2F%2Fnote.com%2Fellie_rhythm%2Fn%2Fn22f510eaadf5",
+      "url": "https://note.com/ellie_rhythm/n/n22f510eaadf5",
+      "title": "数や文字いつ教える？モンテ学んで知育ママやめた私の答え🕯️",
+      "reason": "実用性を再確認。日記・研究発表・間接的な案内を中心とするため掲載を終了"
+    },
+    {
+      "id": "feed-https%3A%2F%2Fkodomo-gov.note.jp%2Fn%2Fn9c40e56e5e4d",
+      "url": "https://kodomo-gov.note.jp/n/n9c40e56e5e4d",
+      "title": "熊本地震ーこどもとそのまわりの人が、いまできること",
+      "reason": "実用性を再確認。日記・研究発表・間接的な案内を中心とするため掲載を終了"
+    },
+    {
+      "id": "research-gakken-60",
+      "url": "https://kosodatemap.gakken.jp/learning/science/106033/",
+      "title": "変わった疑問も研究になる。親子で探究を楽しむ",
+      "reason": "実用性を再確認。日記・研究発表・間接的な案内を中心とするため掲載を終了"
+    },
+    {
+      "id": "feed-https%3A%2F%2Fkodomo-gov.note.jp%2Fn%2Fn1d42f844ce1b",
+      "url": "https://kodomo-gov.note.jp/n/n1d42f844ce1b",
+      "title": "コラム：しんどいな、ゆううつだなと感じた時に",
+      "reason": "実用性を再確認。日記・研究発表・間接的な案内を中心とするため掲載を終了"
+    },
+    {
+      "id": "feed-https%3A%2F%2Fnote.com%2Fellie_rhythm%2Fn%2Fn92b5352b4862",
+      "url": "https://note.com/ellie_rhythm/n/n92b5352b4862",
+      "title": "動画依存を脱するまで。私の気分で見せることが、子どもを苦しめていた",
+      "reason": "実用性を再確認。日記・研究発表・間接的な案内を中心とするため掲載を終了"
+    },
+    {
+      "id": "feed-https%3A%2F%2Fkodomo-gov.note.jp%2Fn%2Fnb64927529114",
+      "url": "https://kodomo-gov.note.jp/n/nb64927529114",
+      "title": "こどもまんなかニュース（2026年6月）",
+      "reason": "実用性を再確認。日記・研究発表・間接的な案内を中心とするため掲載を終了"
+    },
+    {
+      "id": "feed-https%3A%2F%2Fnote.com%2Fanarchism_ikuji%2Fn%2Fn5533ae2c9d90",
+      "url": "https://note.com/anarchism_ikuji/n/n5533ae2c9d90",
+      "title": "夫婦の時間",
+      "reason": "実用性を再確認。日記・研究発表・間接的な案内を中心とするため掲載を終了"
+    },
+    {
+      "id": "research-gakken-77",
+      "url": "https://kosodatemap.gakken.jp/life/health/106191/",
+      "title": "家事も育児も増える時期、親の負担を軽くする考え方",
+      "reason": "実用性を再確認。日記・研究発表・間接的な案内を中心とするため掲載を終了"
+    },
+    {
+      "id": "research-gakken-80",
+      "url": "https://kosodatemap.gakken.jp/life/health/105729/",
+      "title": "災害などで傷ついた子どもの心を支えるには",
+      "reason": "実用性を再確認。日記・研究発表・間接的な案内を中心とするため掲載を終了"
+    },
+    {
+      "id": "feed-https%3A%2F%2Fkodomo-gov.note.jp%2Fn%2Fne74dd5c86e9c",
+      "url": "https://kodomo-gov.note.jp/n/ne74dd5c86e9c",
+      "title": "いのちの交差点で出会う声～こどもまんなか社会が生まれるヒント～",
+      "reason": "実用性を再確認。日記・研究発表・間接的な案内を中心とするため掲載を終了"
+    },
+    {
+      "id": "feed-https%3A%2F%2Fkodomo-gov.note.jp%2Fn%2Fn5190c4a133ad",
+      "url": "https://kodomo-gov.note.jp/n/n5190c4a133ad",
+      "title": "走って！学ぶ！子どもの権利イベント〜「こどもまんなかアクション」リレーシンポジウムinえべつ〜に参加してきました！",
+      "reason": "実用性を再確認。日記・研究発表・間接的な案内を中心とするため掲載を終了"
+    },
+    {
+      "id": "feed-https%3A%2F%2Fkodomo-gov.note.jp%2Fn%2Fnee5480c5d3e0",
+      "url": "https://kodomo-gov.note.jp/n/nee5480c5d3e0",
+      "title": "こどもまんなかニュース（2026年5月）",
+      "reason": "実用性を再確認。日記・研究発表・間接的な案内を中心とするため掲載を終了"
+    },
+    {
+      "id": "feed-https%3A%2F%2Fkodomo-gov.note.jp%2Fn%2Fn5abe8712412c",
+      "url": "https://kodomo-gov.note.jp/n/n5abe8712412c",
+      "title": "「こどもまんなかかるた」初披露かるた大会を開催しました",
+      "reason": "実用性を再確認。日記・研究発表・間接的な案内を中心とするため掲載を終了"
+    },
+    {
+      "id": "feed-https%3A%2F%2Fkodomo-gov.note.jp%2Fn%2Fnc6ce35e5262a",
+      "url": "https://kodomo-gov.note.jp/n/nc6ce35e5262a",
+      "title": "地域から広げる、「こどもまんなか社会」",
+      "reason": "実用性を再確認。日記・研究発表・間接的な案内を中心とするため掲載を終了"
+    },
+    {
+      "id": "feed-https%3A%2F%2Fkodomo-gov.note.jp%2Fn%2Fn961f0b680620",
+      "url": "https://kodomo-gov.note.jp/n/n961f0b680620",
+      "title": "こどもまんなかニュース（2026年4月）",
+      "reason": "実用性を再確認。日記・研究発表・間接的な案内を中心とするため掲載を終了"
+    },
+    {
+      "id": "news-housework-survey",
+      "title": "離乳食の準備や後片付け、親の負担を調査",
+      "url": "https://panasonic.jp/topics/2026/10/000001247.html",
+      "reason": "家庭で行う準備・手順・利用方法につながらない調査発表"
     }
   ]
 }
