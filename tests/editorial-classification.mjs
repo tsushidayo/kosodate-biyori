@@ -30,3 +30,15 @@ test('reviewed diary exclusions cannot reappear in bundled columns',()=>{
  const ids=new Set(exclusions.columnIds);
  assert.deepEqual(editorial.columns.filter(item=>ids.has(item.id)).map(item=>item.id),[]);
 });
+
+test('reviewed official articles distinguish family guidance from character publicity',()=>{
+ const editorial=JSON.parse(fs.readFileSync(new URL('../data/editorial.json',import.meta.url)));
+ const exclusions=JSON.parse(fs.readFileSync(new URL('../data/editorial-exclusions.json',import.meta.url)));
+ const publicityUrl='https://kodomo-gov.note.jp/n/n8aa2d61e2337';
+ assert.equal(editorial.columns.some(item=>item.url===publicityUrl),false);
+ assert.ok(exclusions.records.some(item=>item.url===publicityUrl&&exclusions.columnIds.includes(item.id)));
+ const guidance=editorial.columns.find(item=>item.url==='https://kodomo-gov.note.jp/n/nbfba35566994');
+ assert.ok(guidance); assert.equal(guidance.summaryKind,'editorial-summary');
+ assert.ok(guidance.practicalPoints.length>=2); assert.match(guidance.caution,/受付期間は終了/);
+ assert.equal(guidance.publishedAt,'2026-08-21T01:00:00.000Z');
+});

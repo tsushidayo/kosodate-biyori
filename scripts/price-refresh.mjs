@@ -5,12 +5,18 @@
  */
 import fs from 'node:fs/promises';
 import {pathToFileURL} from 'node:url';
-const HOSTS=new Set(['www.yodobashi.com','www.biccamera.com','sundrug-online.com','shop.akachan.jp','www.24028-net.jp','www.amazon.co.jp','fast-delivery-mart.rakuten.co.jp','shop.tsuruha.co.jp','www.e-welcia.com','e-welcia.com','aeonretail.com','netshop.create-sd.co.jp','mrmax.jp','www.seims.co.jp','joyfulhonda.jp']);
+const HOSTS=new Set(['www.yodobashi.com','www.biccamera.com','sundrug-online.com','shop.akachan.jp','www.24028-net.jp','www.amazon.co.jp','item.rakuten.co.jp','store.shopping.yahoo.co.jp','lohaco.yahoo.co.jp','www.matsukiyococokara-online.com','fast-delivery-mart.rakuten.co.jp','shop.tsuruha.co.jp','www.e-welcia.com','e-welcia.com','aeonretail.com','netshop.create-sd.co.jp','mrmax.jp','www.seims.co.jp','joyfulhonda.jp']);
 const MAX_BYTES=2500000;
 function registeredUrl(value){
  let u; try{u=new URL(value)}catch{return null}
  if(u.protocol!=='https:'||u.username||u.password||u.port||!HOSTS.has(u.hostname))return null;
- if(!(/\/product[s]?\//.test(u.pathname)||/\/bc\/item\//.test(u.pathname)||/\/shop\/g\//.test(u.pathname)||/\/category\//.test(u.pathname)||/\/dp\//.test(u.pathname)))return null;
+ if(['k','keyword','query','q'].some(key=>u.searchParams.has(key))||/(?:^|\/)search(?:\/|$)/i.test(u.pathname))return null;
+ const retailerPage=u.hostname==='item.rakuten.co.jp'?/^\/[^/]+\/[^/]+\/?$/.test(u.pathname)&&!/^\/[^/]+\/c\/?$/.test(u.pathname):
+  u.hostname==='store.shopping.yahoo.co.jp'?/^\/[^/]+\/[^/]+\.html$/.test(u.pathname):
+  u.hostname==='lohaco.yahoo.co.jp'?/^\/store\/[^/]+\/item\/[^/]+\/?$/.test(u.pathname):
+  u.hostname==='www.matsukiyococokara-online.com'?/^\/store\/catalog\/product\/view\/id\/[^/]+\/?$/.test(u.pathname):
+  u.hostname==='shop.tsuruha.co.jp'?/^\/\d+\.html$/.test(u.pathname):false;
+ if(!(retailerPage||/\/product[s]?\//.test(u.pathname)||/\/bc\/item\//.test(u.pathname)||/\/shop\/g\//.test(u.pathname)||/\/category\//.test(u.pathname)||/\/dp\//.test(u.pathname)))return null;
  return u;
 }
 const norm=s=>String(s??'').normalize('NFKC').toLowerCase().replace(/[\s・（）()\-－]+/g,'');
@@ -64,7 +70,7 @@ function robotsAllows(text,path){
  return !disallow.some(p=>p==='/'||path.startsWith(p.replace(/\*.*$/,'')));
 }
 export async function refreshPrices(input,{maxRequests=20,fetchImpl=fetch,now=new Date().toISOString()}={}){
- const data=structuredClone(input), cache=new Map(),robots=new Map();let requested=0,success=0,failed=0;
+ const data=structuredClone(input), cache=new Map(),robots=new Map();let requested=0,success=0,failed=0;const skipped=[];
  const cap=Math.max(1,Math.min(40,Number(maxRequests)||20));
  // Rotate product pages by the last attempt, including failed checks. A fixed
  // prefix would otherwise be checked every day while later products go stale.
@@ -72,7 +78,8 @@ export async function refreshPrices(input,{maxRequests=20,fetchImpl=fetch,now=ne
  // offer on that page without spending another slot.
  const pages=new Map();
  for(const product of data.products??[])for(const offer of product.offers??[]){
-  const url=registeredUrl(offer.source);if(!offer.refreshEligible||!url)continue;
+  if(!offer.refreshEligible)continue;
+  const url=registeredUrl(offer.source);if(!url){skipped.push({productId:product.id,offerId:offer.id,reason:'unsupported_or_non_product_url'});continue;}
   const attempted=Date.parse(offer.lastAttemptAt||offer.checkedAt||'')||0;
   const page=pages.get(url.href)||{url,attempted,entries:[]};
   page.attempted=Math.max(page.attempted,attempted);page.entries.push({product,offer});pages.set(url.href,page);
@@ -100,9 +107,11 @@ export async function refreshPrices(input,{maxRequests=20,fetchImpl=fetch,now=ne
     if(amount===null)throw Error('unambiguous_product_price_not_found');
     // Refresh supports one ordinary sale unit only. Coupons/subscriptions require explicit re-verification.
     offer.previousPrice=offer.price;
-    offer.price=amount;offer.basePrice=amount;offer.total=offer.shipping===null?null:amount+offer.shipping;
+    offer.price=amount;offer.basePrice=amount;offer.total=Number.isFinite(offer.shipping)?amount+offer.shipping:null;
     offer.unitPrice=offer.total===null?null:Math.round(offer.total/(offer.totalGrams?offer.totalGrams/100:offer.quantity)*100)/100;
-    offer.checkedAt=now;offer.status='掲載あり';offer.verified=Number.isFinite(offer.shipping);offer.live=false;
+    // The product price can be verified even when delivery remains unknown.
+    // normalizeOffer still excludes an unknown shipping charge from total-cost rankings.
+    offer.checkedAt=now;offer.status='掲載あり';offer.verified=true;offer.priceVerified=true;offer.live=false;
     offer.verificationType='公開ページの価格データ';delete offer.refreshError;success++;
    }catch(error){
     // Preserve the last amount/date as a dated reference, but remove it from confirmed cheapest results.
@@ -110,7 +119,7 @@ export async function refreshPrices(input,{maxRequests=20,fetchImpl=fetch,now=ne
    }
   }
  }
- data.lastPriceRefresh={attemptedAt:now,requested,success,failed,maxRequests:cap,scheduledPages:scheduled.length,remainingPages:Math.max(0,pages.size-scheduled.length)};
+ data.lastPriceRefresh={attemptedAt:now,requested,success,failed,maxRequests:cap,scheduledPages:scheduled.length,remainingPages:Math.max(0,pages.size-scheduled.length),skipped};
  if(success>0)data.updatedAt=now;
  return data;
 }

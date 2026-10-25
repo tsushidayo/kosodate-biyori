@@ -1,0 +1,701 @@
+{
+  "retailer": "スギ薬局",
+  "retailerId": "sugi",
+  "checkedAt": "2026-10-25",
+  "researchStatus": "completed-primary-source-review",
+  "scopeNote": "公式公開ページで確認できたものと仮入力枠を区別。全種類を網羅した一覧でも、現在利用者へ発行された一覧でもない。店頭用のクーポンを通販へ自動適用しない。",
+  "confirmationGuaranteesIssuedCoupon": false,
+  "sources": {
+    "app": {
+      "url": "https://www.sugi-net.jp/service/digital/sugi-app",
+      "confirmedAt": "2026-10-25",
+      "evidence": "現行の公式案内で初回登録全品10%OFF、15%OFF、+100ポイントの例を確認。個々の発券と条件を保証するページではない。"
+    },
+    "appBenefits": {
+      "url": "https://faq.sugi-net.jp/faq/show/20564?category_id=17&site_domain=default",
+      "publishedAt": "2026-09-29",
+      "confirmedAt": "2026-10-25",
+      "evidence": "1品15%引など、5000円ごと+250ポイントなどを例示。スギPayは税込100円につき通常1pt+特典2pt。"
+    },
+    "exclusionsFaq": {
+      "url": "https://faq.sugi-net.jp/faq/show/344?site_domain=default",
+      "updatedAt": "2026-08-24",
+      "confirmedAt": "2026-10-25"
+    },
+    "exclusionsList": {
+      "url": "https://www.sugi-net.jp/www2/itemlist",
+      "updatedAt": "2026-08-31",
+      "confirmedAt": "2026-10-25",
+      "method": "公式が掲載する画像3枚を直接取得して目視確認",
+      "images": [
+        "https://www.sugi-net.jp/contents/itemlist/image/text-1.jpg",
+        "https://www.sugi-net.jp/contents/itemlist/image/text-2.jpg",
+        "https://www.sugi-net.jp/contents/itemlist/image/text-3.jpg"
+      ]
+    },
+    "stacking": {
+      "url": "https://faq.sugi-net.jp/faq/show/1510?category_id=16&site_domain=default",
+      "updatedAt": "2025-12-03",
+      "confirmedAt": "2026-10-25"
+    },
+    "caseItem": {
+      "url": "https://faq.sugi-net.jp/faq/show/3820?site_domain=default",
+      "updatedAt": "2022-07-19",
+      "confirmedAt": "2026-10-25"
+    },
+    "distribution": {
+      "url": "https://faq.sugi-net.jp/faq/show/14416?category_id=16&site_domain=default",
+      "updatedAt": "2024-10-02",
+      "confirmedAt": "2026-10-25"
+    },
+    "u25": {
+      "url": "https://faq.sugi-net.jp/faq/show/3888?category_id=217&site_domain=default",
+      "updatedAt": "2023-10-15",
+      "confirmedAt": "2026-10-25"
+    },
+    "goHappy": {
+      "url": "https://faq.sugi-net.jp/faq/show/3393?site_domain=default",
+      "updatedAt": "2025-05-11",
+      "confirmedAt": "2026-10-25"
+    },
+    "birthday": {
+      "url": "https://faq.sugi-net.jp/faq/show/3404?site_domain=default",
+      "updatedAt": "2023-04-08",
+      "confirmedAt": "2026-10-25"
+    },
+    "pointMultipliers": {
+      "url": "https://faq.sugi-net.jp/faq/show/13307?category_id=16&site_domain=default",
+      "updatedAt": "2024-03-31",
+      "confirmedAt": "2026-10-25"
+    },
+    "sugitomo": {
+      "url": "https://faq.sugi-net.jp/faq/show/3395?category_id=16&site_domain=default",
+      "updatedAt": "2024-10-02",
+      "confirmedAt": "2026-10-25"
+    },
+    "parentingPassport": {
+      "url": "https://faq.sugi-net.jp/faq/show/2421?category_id=49&site_domain=default",
+      "updatedAt": "2024-05-07",
+      "confirmedAt": "2026-10-25"
+    },
+    "legacyArticle": {
+      "url": "https://www.sugi-net.jp/sugi-channel/1446",
+      "publishedAt": "2024-04-30",
+      "confirmedAt": "2026-10-25",
+      "readStatus": "検索で公式文面の一部を確認。open取得本文はパンくずのみのため詳細条件の根拠に使用しない。"
+    }
+  },
+  "presets": [
+    {
+      "id": "sugi-app-item15",
+      "label": "アプリの1品15%OFF",
+      "confirmed": true,
+      "confirmedMeaning": "公式公開ページで制度または例の存在を確認。現在この利用者へ発行済みであることは未確認。",
+      "discountType": "item_rate",
+      "rate": 0.15,
+      "minimumSpendYen": null,
+      "minimumSpendConfirmed": false,
+      "conditions": [
+        "1商品へ適用するクーポンの公式例",
+        "全員に毎回配信される固定特典とは扱わない",
+        "最低会計額や利用期間は一律に確定できない"
+      ],
+      "commonConditions": [
+        "会計前にクーポンを提示・アプリで選択する",
+        "有効期間、対象店舗、利用回数、最低購入額等は手元の券面を優先",
+        "ジャパンは当該クーポンの対象店舗か確認",
+        "同じ1品へ割引・値引・特典を重ねない"
+      ],
+      "exclusions": [
+        "ベビーミルク",
+        "食品（菓子類を除く）",
+        "酒類",
+        "ギフト",
+        "カウンセリング化粧品",
+        "アリナミンEX PLUS 270錠",
+        "リポビタンD 10本入・50本入",
+        "見切り品",
+        "処方せん",
+        "たばこ",
+        "灯油",
+        "雑誌・書籍",
+        "商品券",
+        "宅配便",
+        "切手を含むはがき",
+        "公式リストにあるその他の個別除外品",
+        "店舗限定の除外品"
+      ],
+      "sources": [
+        "https://faq.sugi-net.jp/faq/show/20564?category_id=17&site_domain=default",
+        "https://www.sugi-net.jp/service/digital/sugi-app",
+        "https://faq.sugi-net.jp/faq/show/14416?category_id=16&site_domain=default",
+        "https://faq.sugi-net.jp/faq/show/3820?site_domain=default",
+        "https://www.sugi-net.jp/www2/itemlist"
+      ]
+    },
+    {
+      "id": "sugi-paper-item15-hypothetical",
+      "label": "紙の1品15%OFFを仮入力",
+      "confirmed": false,
+      "confirmedMeaning": "現行の公式発行条件を確認できていない仮入力枠。発行の不存在を意味しない。",
+      "discountType": "item_rate",
+      "rate": 0.15,
+      "minimumSpendYen": null,
+      "minimumSpendConfirmed": false,
+      "conditions": [
+        "紙クーポン自体の配布は公式確認済み",
+        "紙の15%という固定率・現在の券面・最低額・期間は個別確認が必要"
+      ],
+      "commonConditions": [
+        "会計前にクーポンを提示・アプリで選択する",
+        "有効期間、対象店舗、利用回数、最低購入額等は手元の券面を優先",
+        "ジャパンは当該クーポンの対象店舗か確認",
+        "同じ1品へ割引・値引・特典を重ねない"
+      ],
+      "exclusions": [
+        "ベビーミルク",
+        "食品（菓子類を除く）",
+        "酒類",
+        "ギフト",
+        "カウンセリング化粧品",
+        "アリナミンEX PLUS 270錠",
+        "リポビタンD 10本入・50本入",
+        "見切り品",
+        "処方せん",
+        "たばこ",
+        "灯油",
+        "雑誌・書籍",
+        "商品券",
+        "宅配便",
+        "切手を含むはがき",
+        "公式リストにあるその他の個別除外品",
+        "店舗限定の除外品"
+      ],
+      "sources": [
+        "https://faq.sugi-net.jp/faq/show/14416?category_id=16&site_domain=default",
+        "https://faq.sugi-net.jp/faq/show/1510?category_id=16&site_domain=default",
+        "https://faq.sugi-net.jp/faq/show/3820?site_domain=default",
+        "https://www.sugi-net.jp/www2/itemlist"
+      ],
+      "channel": "paper"
+    },
+    {
+      "id": "sugi-all8-hypothetical",
+      "label": "全品8%OFFを仮入力",
+      "confirmed": false,
+      "confirmedMeaning": "現行の公式発行条件を確認できていない仮入力枠。発行の不存在を意味しない。",
+      "discountType": "basket_rate",
+      "rate": 0.08,
+      "minimumSpendYen": null,
+      "minimumSpendConfirmed": false,
+      "conditions": [
+        "現行の公式ページで固定の全品8%を確認できていない",
+        "手元にある紙/アプリの券面が8%ならその条件を入力する",
+        "スギともの日の割引率は都度異なり固定8%としない"
+      ],
+      "commonConditions": [
+        "会計前にクーポンを提示・アプリで選択する",
+        "有効期間、対象店舗、利用回数、最低購入額等は手元の券面を優先",
+        "ジャパンは当該クーポンの対象店舗か確認",
+        "同じ1品へ割引・値引・特典を重ねない"
+      ],
+      "exclusions": [
+        "ベビーミルク",
+        "食品（菓子類を除く）",
+        "酒類",
+        "ギフト",
+        "カウンセリング化粧品",
+        "アリナミンEX PLUS 270錠",
+        "リポビタンD 10本入・50本入",
+        "見切り品",
+        "処方せん",
+        "たばこ",
+        "灯油",
+        "雑誌・書籍",
+        "商品券",
+        "宅配便",
+        "切手を含むはがき",
+        "公式リストにあるその他の個別除外品",
+        "店舗限定の除外品"
+      ],
+      "sources": [
+        "https://faq.sugi-net.jp/faq/show/14416?category_id=16&site_domain=default",
+        "https://faq.sugi-net.jp/faq/show/3395?category_id=16&site_domain=default",
+        "https://www.sugi-net.jp/www2/itemlist"
+      ]
+    },
+    {
+      "id": "sugi-new-member10",
+      "label": "新規会員の全品10%OFF",
+      "confirmed": true,
+      "confirmedMeaning": "公式公開ページで制度または例の存在を確認。現在この利用者へ発行済みであることは未確認。",
+      "discountType": "basket_rate",
+      "rate": 0.1,
+      "minimumSpendYen": null,
+      "minimumSpendConfirmed": false,
+      "conditions": [
+        "アプリの初回ダウンロード・会員登録時の特典",
+        "会員登録後すぐ使えると公式案内",
+        "一部対象外。期間や最低額等は発行された券面で確認"
+      ],
+      "commonConditions": [
+        "会計前にクーポンを提示・アプリで選択する",
+        "有効期間、対象店舗、利用回数、最低購入額等は手元の券面を優先",
+        "ジャパンは当該クーポンの対象店舗か確認",
+        "同じ1品へ割引・値引・特典を重ねない"
+      ],
+      "exclusions": [
+        "ベビーミルク",
+        "食品（菓子類を除く）",
+        "酒類",
+        "ギフト",
+        "カウンセリング化粧品",
+        "アリナミンEX PLUS 270錠",
+        "リポビタンD 10本入・50本入",
+        "見切り品",
+        "処方せん",
+        "たばこ",
+        "灯油",
+        "雑誌・書籍",
+        "商品券",
+        "宅配便",
+        "切手を含むはがき",
+        "公式リストにあるその他の個別除外品",
+        "店舗限定の除外品"
+      ],
+      "sources": [
+        "https://www.sugi-net.jp/service/digital/sugi-app",
+        "https://www.sugi-net.jp/www2/itemlist"
+      ]
+    },
+    {
+      "id": "sugi-u25-item15",
+      "label": "U25スゴスギ割 1品15%OFF",
+      "confirmed": true,
+      "confirmedMeaning": "公式公開ページで制度または例の存在を確認。現在この利用者へ発行済みであることは未確認。",
+      "discountType": "item_rate",
+      "rate": 0.15,
+      "minimumSpendYen": null,
+      "minimumSpendConfirmed": false,
+      "conditions": [
+        "25歳以下のアプリ会員",
+        "毎週月曜に配信、利用期間は月曜〜金曜、週1回",
+        "配信5日前23:59までに登録を完了",
+        "同時点から過去12か月以内に購入履歴。ただし登録後12か月は履歴不問",
+        "予告なく終了する場合あり。実際の配信・券面を確認"
+      ],
+      "commonConditions": [
+        "会計前にクーポンを提示・アプリで選択する",
+        "有効期間、対象店舗、利用回数、最低購入額等は手元の券面を優先",
+        "ジャパンは当該クーポンの対象店舗か確認",
+        "同じ1品へ割引・値引・特典を重ねない"
+      ],
+      "exclusions": [
+        "ベビーミルク",
+        "食品（菓子類を除く）",
+        "酒類",
+        "ギフト",
+        "カウンセリング化粧品",
+        "アリナミンEX PLUS 270錠",
+        "リポビタンD 10本入・50本入",
+        "見切り品",
+        "処方せん",
+        "たばこ",
+        "灯油",
+        "雑誌・書籍",
+        "商品券",
+        "宅配便",
+        "切手を含むはがき",
+        "公式リストにあるその他の個別除外品",
+        "店舗限定の除外品"
+      ],
+      "sources": [
+        "https://faq.sugi-net.jp/faq/show/3888?category_id=217&site_domain=default",
+        "https://www.sugi-net.jp/www2/itemlist"
+      ],
+      "maxAge": 25,
+      "deliveryWeekday": 1,
+      "validWeekdays": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "usesPerWeek": 1
+    },
+    {
+      "id": "sugi-go-happy5",
+      "label": "Goハッピーデー 全品5%OFF",
+      "confirmed": true,
+      "confirmedMeaning": "公式公開ページで制度または例の存在を確認。現在この利用者へ発行済みであることは未確認。",
+      "discountType": "basket_rate",
+      "rate": 0.05,
+      "minimumSpendYen": null,
+      "minimumSpendConfirmed": false,
+      "conditions": [
+        "60歳以上のポイント会員",
+        "毎月15・16・17日",
+        "アプリクーポン、またはポイントカードと年齢確認書類を会計前に提示",
+        "アプリ配信は10日23:59までの登録・10日時点で60歳以上・過去12か月購入。新規登録12か月は履歴不問",
+        "10日時点条件を満たさなくても利用日に60歳以上なら年齢確認書類等で対応する案内あり"
+      ],
+      "commonConditions": [
+        "会計前にクーポンを提示・アプリで選択する",
+        "有効期間、対象店舗、利用回数、最低購入額等は手元の券面を優先",
+        "ジャパンは当該クーポンの対象店舗か確認",
+        "同じ1品へ割引・値引・特典を重ねない"
+      ],
+      "exclusions": [
+        "ベビーミルク",
+        "食品（菓子類を除く）",
+        "酒類",
+        "ギフト",
+        "カウンセリング化粧品",
+        "アリナミンEX PLUS 270錠",
+        "リポビタンD 10本入・50本入",
+        "見切り品",
+        "処方せん",
+        "たばこ",
+        "灯油",
+        "雑誌・書籍",
+        "商品券",
+        "宅配便",
+        "切手を含むはがき",
+        "公式リストにあるその他の個別除外品",
+        "店舗限定の除外品"
+      ],
+      "sources": [
+        "https://faq.sugi-net.jp/faq/show/3393?site_domain=default",
+        "https://www.sugi-net.jp/www2/itemlist"
+      ],
+      "minAge": 60,
+      "validMonthDays": [
+        15,
+        16,
+        17
+      ]
+    },
+    {
+      "id": "sugi-birthday",
+      "label": "誕生月クーポン 条件を入力",
+      "confirmed": true,
+      "confirmedMeaning": "公式公開ページで制度または例の存在を確認。現在この利用者へ発行済みであることは未確認。",
+      "discountType": "unknown",
+      "rate": null,
+      "minimumSpendYen": null,
+      "minimumSpendConfirmed": false,
+      "conditions": [
+        "誕生月の1日に配信",
+        "配信5日前23:59までにアプリ登録",
+        "同時点から過去12か月以内の購入。新規登録12か月は履歴不問",
+        "公式FAQは取得条件を記載するが、割引率・値引額・ポイント数を明記していない",
+        "15%等へ固定せず、手元の券面を入力する"
+      ],
+      "commonConditions": [
+        "会計前にクーポンを提示・アプリで選択する",
+        "有効期間、対象店舗、利用回数、最低購入額等は手元の券面を優先",
+        "ジャパンは当該クーポンの対象店舗か確認",
+        "同じ1品へ割引・値引・特典を重ねない"
+      ],
+      "exclusions": [
+        "ベビーミルク",
+        "食品（菓子類を除く）",
+        "酒類",
+        "ギフト",
+        "カウンセリング化粧品",
+        "アリナミンEX PLUS 270錠",
+        "リポビタンD 10本入・50本入",
+        "見切り品",
+        "処方せん",
+        "たばこ",
+        "灯油",
+        "雑誌・書籍",
+        "商品券",
+        "宅配便",
+        "切手を含むはがき",
+        "公式リストにあるその他の個別除外品",
+        "店舗限定の除外品"
+      ],
+      "sources": [
+        "https://faq.sugi-net.jp/faq/show/3404?site_domain=default",
+        "https://www.sugi-net.jp/service/digital/sugi-app"
+      ],
+      "rateConfirmed": false,
+      "requiresFaceInput": true
+    },
+    {
+      "id": "sugi-plus100-example",
+      "label": "+100ポイントの例",
+      "confirmed": true,
+      "confirmedMeaning": "公式公開ページで制度または例の存在を確認。現在この利用者へ発行済みであることは未確認。",
+      "discountType": "point_add",
+      "rate": null,
+      "minimumSpendYen": null,
+      "minimumSpendConfirmed": false,
+      "conditions": [
+        "公式アプリ案内に+100ポイントの例",
+        "最低額・対象商品・利用回数は券面を確認",
+        "現金100円引きとして扱わない"
+      ],
+      "commonConditions": [
+        "適用する券面の条件を確認",
+        "付与予定ポイントを今回の支払額から差し引かない"
+      ],
+      "exclusions": [
+        "ポイントの対象条件は各券面で確認。値引除外とポイント除外は別。"
+      ],
+      "sources": [
+        "https://www.sugi-net.jp/service/digital/sugi-app"
+      ],
+      "points": 100,
+      "exampleOnly": true
+    },
+    {
+      "id": "sugi-plus250-per5000-example",
+      "label": "5000円ごと+250ポイントの例",
+      "confirmed": true,
+      "confirmedMeaning": "公式公開ページで制度または例の存在を確認。現在この利用者へ発行済みであることは未確認。",
+      "discountType": "point_threshold",
+      "rate": null,
+      "minimumSpendYen": null,
+      "minimumSpendConfirmed": false,
+      "conditions": [
+        "2026/9/29公開の公式FAQに例示",
+        "5000円ごと+250ポイントという形式",
+        "現在の配信・券面・対象支払方法・除外品を確認",
+        "今回の支払額からポイントを引かない"
+      ],
+      "commonConditions": [
+        "適用する券面の条件を確認",
+        "付与予定ポイントを今回の支払額から差し引かない"
+      ],
+      "exclusions": [
+        "ポイントの対象条件は各券面で確認。値引除外とポイント除外は別。"
+      ],
+      "sources": [
+        "https://faq.sugi-net.jp/faq/show/20564?category_id=17&site_domain=default"
+      ],
+      "points": 250,
+      "thresholdYen": 5000,
+      "exampleOnly": true
+    },
+    {
+      "id": "sugi-points-multiplier",
+      "label": "ポイント倍クーポン 倍率を入力",
+      "confirmed": true,
+      "confirmedMeaning": "公式公開ページで制度または例の存在を確認。現在この利用者へ発行済みであることは未確認。",
+      "discountType": "point_multiplier",
+      "rate": null,
+      "minimumSpendYen": null,
+      "minimumSpendConfirmed": false,
+      "conditions": [
+        "通常ポイントは税込100円ごと1ポイント",
+        "券面の倍率は通常1倍分を含む",
+        "複数の倍率は掛算せず、通常1倍+各倍率から1を引いた販促分を合算",
+        "公式FAQでは割引・値引クーポン適用前の税込額が対象と記載",
+        "各券面と対象外条件の確認が必要"
+      ],
+      "commonConditions": [
+        "適用する券面の条件を確認",
+        "付与予定ポイントを今回の支払額から差し引かない"
+      ],
+      "exclusions": [
+        "ポイントの対象条件は各券面で確認。値引除外とポイント除外は別。"
+      ],
+      "sources": [
+        "https://faq.sugi-net.jp/faq/show/13307?category_id=16&site_domain=default"
+      ],
+      "multiplier": null,
+      "basePointsPer100Yen": 1,
+      "calculation": "1 + sum(each_multiplier - 1)",
+      "pointBase": "税込の割引・値引前の支払い対象額",
+      "pointCashValue": null
+    },
+    {
+      "id": "sugi-sugitomo-variable",
+      "label": "スギともの日 券面を入力",
+      "confirmed": true,
+      "confirmedMeaning": "公式公開ページで制度または例の存在を確認。現在この利用者へ発行済みであることは未確認。",
+      "discountType": "unknown",
+      "rate": null,
+      "minimumSpendYen": null,
+      "minimumSpendConfirmed": false,
+      "conditions": [
+        "毎月第2・第4火曜日に配信",
+        "内容や率はその都度異なる",
+        "利用期間中1回、登録端末を持つ本人のみ",
+        "会計時に選択済みの会員証提示。選択後6時間で解除",
+        "一部利用できない店舗あり"
+      ],
+      "commonConditions": [
+        "会計前にクーポンを提示・アプリで選択する",
+        "有効期間、対象店舗、利用回数、最低購入額等は手元の券面を優先",
+        "ジャパンは当該クーポンの対象店舗か確認",
+        "同じ1品へ割引・値引・特典を重ねない"
+      ],
+      "exclusions": [
+        "ベビーミルク",
+        "食品（菓子類を除く）",
+        "酒類",
+        "ギフト",
+        "カウンセリング化粧品",
+        "アリナミンEX PLUS 270錠",
+        "リポビタンD 10本入・50本入",
+        "見切り品",
+        "処方せん",
+        "たばこ",
+        "灯油",
+        "雑誌・書籍",
+        "商品券",
+        "宅配便",
+        "切手を含むはがき",
+        "公式リストにあるその他の個別除外品",
+        "店舗限定の除外品"
+      ],
+      "sources": [
+        "https://faq.sugi-net.jp/faq/show/3395?category_id=16&site_domain=default"
+      ],
+      "requiresFaceInput": true
+    },
+    {
+      "id": "sugi-parenting-passport-friday",
+      "label": "子育てパスポート 金曜2品5%OFF",
+      "confirmed": true,
+      "confirmedMeaning": "公式公開ページで制度または例の存在を確認。現在この利用者へ発行済みであることは未確認。",
+      "discountType": "selected_items_rate",
+      "rate": 0.05,
+      "minimumSpendYen": null,
+      "minimumSpendConfirmed": false,
+      "conditions": [
+        "協賛店舗で対象の子育てカード等を会計時提示",
+        "ベビー用品・医薬品あわせて2品",
+        "毎週金曜",
+        "愛知/岐阜/三重/埼玉/大阪の指定カードを公式FAQに列挙",
+        "都道府県相互利用は協賛店舗で確認",
+        "福井ふく育パスポートは別特典の1品15%なので混同しない"
+      ],
+      "commonConditions": [
+        "会計前にクーポンを提示・アプリで選択する",
+        "有効期間、対象店舗、利用回数、最低購入額等は手元の券面を優先",
+        "ジャパンは当該クーポンの対象店舗か確認",
+        "同じ1品へ割引・値引・特典を重ねない"
+      ],
+      "exclusions": [
+        "ベビーミルク",
+        "食品（菓子類を除く）",
+        "酒類",
+        "ギフト",
+        "カウンセリング化粧品",
+        "アリナミンEX PLUS 270錠",
+        "リポビタンD 10本入・50本入",
+        "見切り品",
+        "処方せん",
+        "たばこ",
+        "灯油",
+        "雑誌・書籍",
+        "商品券",
+        "宅配便",
+        "切手を含むはがき",
+        "公式リストにあるその他の個別除外品",
+        "店舗限定の除外品"
+      ],
+      "sources": [
+        "https://faq.sugi-net.jp/faq/show/2421?category_id=49&site_domain=default",
+        "https://www.sugi-net.jp/www2/itemlist"
+      ],
+      "validWeekdays": [
+        5
+      ],
+      "maxItems": 2
+    },
+    {
+      "id": "sugi-fukuiku-item15",
+      "label": "ふく育パスポート 1品15%OFF",
+      "confirmed": true,
+      "confirmedMeaning": "公式公開ページで制度または例の存在を確認。現在この利用者へ発行済みであることは未確認。",
+      "discountType": "item_rate",
+      "rate": 0.15,
+      "minimumSpendYen": null,
+      "minimumSpendConfirmed": false,
+      "conditions": [
+        "福井県ふく育パスポートの通常/プレミアム",
+        "割引除外品を除く1品",
+        "金曜の2品5%とは別の欄。金曜限定かはこのFAQから補わない",
+        "協賛店舗と券面を確認"
+      ],
+      "commonConditions": [
+        "会計前にクーポンを提示・アプリで選択する",
+        "有効期間、対象店舗、利用回数、最低購入額等は手元の券面を優先",
+        "ジャパンは当該クーポンの対象店舗か確認",
+        "同じ1品へ割引・値引・特典を重ねない"
+      ],
+      "exclusions": [
+        "ベビーミルク",
+        "食品（菓子類を除く）",
+        "酒類",
+        "ギフト",
+        "カウンセリング化粧品",
+        "アリナミンEX PLUS 270錠",
+        "リポビタンD 10本入・50本入",
+        "見切り品",
+        "処方せん",
+        "たばこ",
+        "灯油",
+        "雑誌・書籍",
+        "商品券",
+        "宅配便",
+        "切手を含むはがき",
+        "公式リストにあるその他の個別除外品",
+        "店舗限定の除外品"
+      ],
+      "sources": [
+        "https://faq.sugi-net.jp/faq/show/2421?category_id=49&site_domain=default",
+        "https://www.sugi-net.jp/www2/itemlist"
+      ]
+    }
+  ],
+  "categoryEligibility": {
+    "babyMilk": {
+      "status": "excluded",
+      "confirmed": true,
+      "appliesTo": "ベビーミルク",
+      "implementationNote": "粉・キューブ・液体等の赤ちゃん用ミルクに通常の%/円引クーポンを自動適用しない。ベビーミルクに該当しない授乳用品やミルクローションは名称のミルクだけで除外しない。",
+      "source": "https://www.sugi-net.jp/www2/itemlist"
+    },
+    "foodExceptConfectionery": {
+      "status": "excluded",
+      "confirmed": true,
+      "appliesTo": "食品。菓子類はこの一括除外から除かれる",
+      "implementationNote": "離乳食・通常食品は対象外として扱う。菓子・おやつは自動で対象と保証せず個別券面と店頭を確認。",
+      "source": "https://www.sugi-net.jp/www2/itemlist"
+    },
+    "diapers": {
+      "status": "not-listed-as-general-exclusion",
+      "confirmed": true,
+      "appliesTo": "おむつ・おしりふき",
+      "implementationNote": "公式一般除外欄や個別一覧に記載なし。すべての商品/店舗/クーポンで使用できるという保証ではない。券面と店頭を確認する。",
+      "source": "https://www.sugi-net.jp/www2/itemlist"
+    }
+  },
+  "stackingRules": {
+    "differentPaperAndAppCouponsSameCheckout": true,
+    "sameItemMultiplePriceDiscounts": false,
+    "source": "https://faq.sugi-net.jp/faq/show/1510?category_id=16&site_domain=default",
+    "notes": [
+      "種類の異なる券は同会計で利用できるが同一商品への割引・値引・特典の重複は不可。",
+      "1品15%と全品8%を同じ商品に順次掛けない。",
+      "ポイント倍クーポンの併用規定は別の公式FAQに従う。",
+      "セットで売場へ陳列された販売単位は1品。単品を複数買って段ボールで持ち帰るだけでは1品にまとめられない。",
+      "まとめ売りの値引きがある時は、その値引きを適用したうえで1品の元値から割引するという案内。単純な二重パーセント計算に置き換えない。"
+    ]
+  },
+  "limitations": [
+    "全品8%の現行公式発行条件を確認できていない。仮試算に限定する。",
+    "誕生日の率・額・ポイントを公式FAQから確定できない。",
+    "一般1品15%や初回10%の最低会計額・具体的期限は券面未取得のため不明。",
+    "紙クーポンの配布は公式確認したが、全店舗共通の紙15%発券条件は確認できない。",
+    "クーポンの存在確認と利用者の所持確認は別。公式FAQの更新が古いものはその日付も併記する。",
+    "丸め方・対象商品・利用上限など未取得条件を実レジと一致すると保証しない。"
+  ]
+}

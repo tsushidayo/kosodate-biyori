@@ -5,7 +5,7 @@ const normalize=(value:string)=>value.normalize('NFKC').toLocaleLowerCase('ja-JP
 export function programMatchesQuery(program:Item,query:string){
  const words=normalize(query).split(' ').filter(Boolean);if(!words.length)return true;
  const fields=['title','summary','eligibility','how','amountLabel','ageNote','area','prefecture','municipality','category','programYear','deadline','deadlineNote','preparation','preparationNote','notes','caution','upcomingChange','tags'];
- const steps=Array.isArray(program.steps)?program.steps.flatMap((step:Item)=>[text(step.title),text(step.body)]):[];
+ const steps=Array.isArray(program.steps)?program.steps.flatMap((step:Item|string)=>typeof step==='string'?[step]:[text(step.title),text(step.body)]):[];
  const sources=Array.isArray(program.additionalSources)?program.additionalSources.map((source:Item)=>text(source.name)):[];
  const haystack=normalize([...fields.map(field=>text(program[field])),...steps,...sources].join(' '));
  return words.every(word=>haystack.includes(word));

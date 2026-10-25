@@ -33,7 +33,7 @@ test('every product offers the same retailer paths without pretending a search U
  assert.equal(normalizeOffer({name:'同じ商品'},{...quoted,source:'https://wowma.jp/kw/baby'}).eligible,false);
  assert.equal(normalizeOffer({name:'同じ商品'},{...quoted,source:'https://www.amazon.co.jp/s?k=baby'}).eligible,false);
  const all=retailerComparisons({name:'同じ商品',offers:[{...quoted,source:'https://www.amazon.co.jp/dp/B123456789',store:'Amazon'},{...quoted,source:'https://shop.akachan.jp/shop/g/g1234/',store:'アカチャンホンポ',shipping:null}]});
- assert.equal(all.length,18);assert.equal(all[0].offer.price,1000);assert.equal(all[4].status,'送料未確認');assert.equal(all[4].offer.total,null);assert.equal(all[5].offer,null);assert.equal(all[5].status,'価格未確認');
+ assert.equal(all.filter(row=>row.channel==='online').length,18);assert.equal(all.filter(row=>row.channel==='store').length,1);assert.equal(all[0].offer.price,1000);assert.equal(all[4].status,'送料未確認');assert.equal(all[4].offer.total,null);assert.equal(all[5].offer,null);assert.equal(all[5].status,'価格未確認');
  const stale=retailerComparisons({name:'同じ商品',offers:[{...quoted,source:'https://www.amazon.co.jp/dp/B123456789',store:'Amazon',checkedAt:'2020-01-01'}]});assert.equal(stale[0].offer,null);
 });
 const offer={id:'market-1',source:'https://jp.mercari.com/item/m12345678901',listingTitle:'ベビービョルン ブリス サンドベージュ',price:9000,shipping:0,verified:true,checkedAt:'2026-10-24'};

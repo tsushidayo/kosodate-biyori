@@ -19,20 +19,72 @@ export type ComparisonOptions = {
   includeUsed?: boolean;
   sort?: "unit" | "total";
   now?: number;
+  groupKey?: string;
+};
+export type OfferComparisonGroup = {
+  key: string;
+  label: string;
+  quantity: number;
+  totalGrams: number | null;
+  unitLabel: string;
+  offerCount: number;
+  retailerCount: number;
+  isBase: boolean;
 };
 const TWO_DAYS = 48 * 60 * 60 * 1000;
 const ONE_DAY = 24 * 60 * 60 * 1000;
 const finiteNonnegative = (n: unknown): n is number => typeof n === "number" && Number.isFinite(n) && n >= 0;
 const finitePositive = (n: unknown): n is number => finiteNonnegative(n) && n > 0;
-function safeSource(source: unknown) {
+export function isProductPurchaseSource(source: unknown) {
   if (typeof source !== "string") return false;
   try {
     const u = new URL(source);
-    const searchPage = /(?:^|\/)search(?:\/|$)|^\/s\/?$|^\/kw(?:\/|$)/i.test(u.pathname) || ['k','keyword','query','q'].some(key=>u.searchParams.has(key));
-    return !searchPage && u.protocol === "https:" && !u.username && !u.password && !u.port && u.hostname.includes(".") && !/^(localhost|.*\.local|[\d.]+)$/i.test(u.hostname);
+    const searchPage = /(?:^|\/)(?:catalog)?search(?:\/|$)|^\/s\/?$|^\/kw(?:\/|$)/i.test(u.pathname) || ['k','keyword','query','q','word','search_keyword','gspsk','text'].some(key=>u.searchParams.has(key));
+    // A price shown on a category is not tied to a purchasable item. Keep known
+    // product pages whose legitimate path includes "category" (e.g. a numeric .html SKU).
+    const categoryPage=/^\/shop\/c(?:\/|$)|\/(?:collections|categories)(?:\/|$)|\/ProductList\.aspx$/i.test(u.pathname)||
+      /\/(?:category)(?:\/|$)/i.test(u.pathname)&&!/^\/(?:category)\/[^/]+\/\d+\.html?$/i.test(u.pathname)||
+      u.hostname==='item.rakuten.co.jp'&&/^\/[^/]+\/c(?:\/|$)/i.test(u.pathname)||
+      u.hostname==='itoyokado-netsuper.jp'&&/^\/[a-f0-9-]{36}\/[^/]+\/?$/i.test(u.pathname)||
+      u.hostname==='hula-la.com'&&/^\/milk\//i.test(u.pathname);
+    return !searchPage && !categoryPage && u.pathname!=='/' && u.protocol === "https:" && !u.username && !u.password && !u.port && u.hostname.includes(".") && !/^(localhost|.*\.local|[\d.]+)$/i.test(u.hostname);
   } catch { return false; }
 }
 function amount(n: number) { return n.toLocaleString("ja-JP", { maximumFractionDigits: 2 }); }
+const RETAILER_IDENTITIES = [
+  {key:'amazon',name:'Amazon',hosts:['amazon.co.jp']},
+  {key:'rakuten',name:'楽天市場',hosts:['rakuten.co.jp']},
+  {key:'yahoo',name:'Yahoo!ショッピング',hosts:['store.shopping.yahoo.co.jp']},
+  {key:'yodobashi',name:'ヨドバシ.com',hosts:['yodobashi.com']},
+  {key:'akachan',name:'アカチャンホンポ',hosts:['shop.akachan.jp']},
+  {key:'nishimatsuya',name:'西松屋オンライン',hosts:['24028-net.jp']},
+  {key:'babiesrus',name:'トイザらス・ベビーザらス',hosts:['toysrus.co.jp','babiesrus.co.jp']},
+  {key:'biccamera',name:'ビックカメラ.com',hosts:['biccamera.com']},
+  {key:'lohaco',name:'LOHACO',hosts:['lohaco.yahoo.co.jp','lohaco.jp']},
+  {key:'sundrug',name:'サンドラッグ公式通販',hosts:['sundrug-online.com']},
+  {key:'matsukiyo',name:'マツキヨココカラ',hosts:['matsukiyococokara-online.com']},
+  {key:'welcia',name:'ウエルシアドットコム',hosts:['e-welcia.com']},
+  {key:'aeon',name:'イオンスタイルオンライン',hosts:['aeonretail.com']},
+  {key:'create-sd',name:'クリエイトSD',hosts:['netshop.create-sd.co.jp']},
+  {key:'seims',name:'セイムス公式',hosts:['seims.co.jp']},
+  {key:'tsuruha',name:'ツルハ公式通販',hosts:['shop.tsuruha.co.jp']},
+  {key:'mrmax',name:'ミスターマックス',hosts:['mrmax.jp']},
+  {key:'aupay',name:'au PAY マーケット',hosts:['wowma.jp']},
+];
+function retailerIdentity(offer:PriceRecord){
+  let host='';try{host=new URL(String(offer.source)).hostname.toLowerCase().replace(/^www\./,'');}catch{}
+  const retailer=RETAILER_IDENTITIES.find(entry=>entry.hosts.some(domain=>host===domain||host.endsWith('.'+domain)));
+  return retailer||{key:host||String(offer.store||offer.id||'unknown'),name:String(offer.store||host||'販売店')};
+}
+/** A marketplace seller and that seller's own web shop remain different purchase destinations. */
+export function canonicalRetailerKey(offer:PriceRecord){return retailerIdentity(offer).key;}
+function sellerName(offer:PriceRecord,retailerKey:string){
+  if(offer.seller)return offer.seller;
+  const store=String(offer.store||'');
+  if(retailerKey==='yahoo')return /^(?:Yahoo!?(?:ショッピング)?)$/i.test(store)?null:store.replace(/^Yahoo!?(?:ショッピング)?[・\s\-]+/i,'').replace(/公式Yahoo!?店$/i,'公式店').replace(/Yahoo!?店$/i,'').trim()||null;
+  if(retailerKey==='rakuten')return /^(?:楽天|楽天市場)$/.test(store)?null:store.replace(/^楽天(?:市場)?[・\s\-]+/,'').replace(/[・\s]+楽天(?:市場)?$/,'').trim()||null;
+  return null;
+}
 export function purchaseKind(offer: PriceRecord):'online'|'store'|'pickup'|'marketplace' {
   if(offer.purchaseChannel==='marketplace'||offer.marketplace===true||/メルカリ|ラクマ|フリマ/.test(String(offer.store||'')))return 'marketplace';
   if(offer.purchaseChannel==='in-store'||offer.mode==='店頭')return 'store';
@@ -82,7 +134,7 @@ export function normalizeOffer(product: PriceRecord, offer: PriceRecord, now = D
   else if (offer.available===false) ineligibleReason = "売り切れ";
   else if (/売り切れ|売切|在庫なし|入荷待ち|価格表示に差|価格不明|未確認|店舗未指定|要確認|要再確認/.test(String(offer.status ?? ""))) ineligibleReason = String(offer.status);
   else if (offer.verified !== true || offer.eligible === 0) ineligibleReason = "価格の確認待ち";
-  else if (!safeSource(offer.source)) ineligibleReason = "販売ページ未確認";
+  else if (!isProductPurchaseSource(offer.source)) ineligibleReason = "販売ページ未確認";
   else if (!Number.isFinite(checked)) ineligibleReason = "確認日なし";
   else if (now - checked > TWO_DAYS) ineligibleReason = "確認から48時間以上";
   else if (checked - now > ONE_DAY) ineligibleReason = "確認日を要確認";
@@ -90,14 +142,84 @@ export function normalizeOffer(product: PriceRecord, offer: PriceRecord, now = D
     ...offer, total, unitCost, unitLabel, perPack, perPackLabel, quantityLabel,
     bonusGrams, conditional, eligible: !ineligibleReason, ineligibleReason,
     isStore: isStore(offer), purchaseKind:purchaseKind(offer),
+    retailerKey:canonicalRetailerKey(offer),retailerName:retailerIdentity(offer).name,
+    seller:sellerName(offer,canonicalRetailerKey(offer)),
   };
 }
+
+function comparisonUnit(product:PriceRecord,offer:PriceRecord){
+  return finitePositive(offer.totalGrams)?'100g':String(offer.unitLabel||product.unitType||'個');
+}
+function variationKey(product:PriceRecord,offer:PriceRecord){
+  return ['model','color','size'].map(field=>String(offer[field]??product[field]??'').normalize('NFKC').trim().toLowerCase()).concat(usedOffer(offer)?'used':String(offer.conditionClass||'new')).join('|');
+}
+function usedOffer(offer:PriceRecord){return offer.conditionClass==='used'||/中古|使用済|傷や汚れ/.test(String(offer.itemCondition||''));}
+/** Unknown amounts never join a confirmed purchase amount. Missing pack metadata alone is not a mismatch. */
+export function offerComparisonGroupKey(product:PriceRecord,offer:PriceRecord):string|null{
+  if(!finitePositive(offer.quantity)||!Number.isInteger(offer.quantity))return null;
+  const massRequired=product.category==='ミルク'&&product.formulation!=='liquid'||offer.unitLabel==='100g';
+  if(massRequired&&!finitePositive(offer.totalGrams))return null;
+  return JSON.stringify([comparisonUnit(product,offer),offer.quantity,finitePositive(offer.totalGrams)?offer.totalGrams:null,variationKey(product,offer)]);
+}
+function baseComparisonOffer(product:PriceRecord,offers:PriceRecord[]):PriceRecord{
+  const representative=offers.find(offer=>finitePositive(offer.quantity))||{};
+  const unit=String(product.unitType||representative.unitLabel||'個');
+  const text=String(product.unit||'').normalize('NFKC');
+  const powder=product.category==='ミルク'&&product.formulation!=='liquid';
+  const unitPattern=['枚','本','個','点','セット','組','包','袋','冊','台'].includes(unit)?new RegExp('(\\d+(?:\\.\\d+)?)\\s*'+unit):null;
+  const stated=unitPattern?Number(text.match(unitPattern)?.[1]):null;
+  const knownQuantities=[...new Set(offers.map(offer=>offer.quantity).filter(quantity=>finitePositive(quantity)&&Number.isInteger(quantity)))];
+  let quantity=finitePositive(stated)&&Number.isInteger(stated)?stated:1;
+  // Imported catalog records may count one entire SKU instead of its inner items.
+  // Preserve that confirmed sale unit rather than multiplying contents such as 2 x 100 wipes.
+  if(quantity>1&&!knownQuantities.includes(quantity)&&knownQuantities.includes(1))quantity=1;
+  // When the product has no explicit count, use the documented smallest sale unit;
+  // explicit single-can or single-pack amounts remain first even if only bulk quotes exist.
+  if(!powder&&!finitePositive(stated)&&knownQuantities.length&&!knownQuantities.includes(1))quantity=Math.min(...knownQuantities);
+  const sameAmount=offers.filter(offer=>offer.quantity===quantity);
+  const knownGrams=[...new Set(sameAmount.map(offer=>offer.totalGrams).filter(finitePositive))];
+  const grams=powder?Number(text.match(/(\d+(?:\.\d+)?)\s*g/i)?.[1]):knownGrams.length===1?knownGrams[0]:null;
+  return {quantity,totalGrams:finitePositive(grams)?grams:null,unitLabel:finitePositive(grams)||powder?'100g':unit,conditionClass:'new'};
+}
+function groupLabel(product:PriceRecord,offer:PriceRecord){
+  const normalized=normalizeOffer(product,offer);
+  const variation=['model','color','size'].map(field=>String(offer[field]??product[field]??'').trim()).filter(Boolean);
+  if(usedOffer(offer))variation.push('中古');
+  const suffix=variation.length?'・'+variation.join('・'):'';
+  if(product.category==='ミルク'&&product.formulation!=='liquid')return normalized.quantityLabel+suffix;
+  const base=baseComparisonOffer(product,[offer]);
+  if(comparisonUnit(product,offer)==='枚'&&finitePositive(base.quantity)&&offer.quantity%base.quantity===0){
+    const count=offer.quantity/base.quantity,pack=/\d+\s*枚\s*[×x✕]\s*\d+/i.test(String(product.name))?'セット':'パック';
+    return `${amount(base.quantity)}枚 × ${amount(count)}${pack}`+suffix;
+  }
+  return normalized.quantityLabel+suffix;
+}
+export function offerComparisonGroups(product:PriceRecord,options:ComparisonOptions={}):OfferComparisonGroup[]{
+  const {mode='オンライン',includeConditional=false,now=Date.now(),includeUsed=mode==='フリマ'}=options;
+  const offers=(Array.isArray(product.offers)?product.offers:[]).filter((offer:PriceRecord)=>matchesPurchaseMode(offer,mode)).map((offer:PriceRecord)=>normalizeOffer(product,offer,now)).filter((offer:PriceRecord)=>(includeConditional||!offer.conditional)&&(includeUsed||!usedOffer(offer)));
+  const groups=new Map<string,{group:OfferComparisonGroup;retailers:Set<string>}>();
+  const base=baseComparisonOffer(product,offers),baseKey=offerComparisonGroupKey(product,base);
+  if(baseKey)groups.set(baseKey,{group:{key:baseKey,label:groupLabel(product,base),quantity:base.quantity,totalGrams:base.totalGrams,unitLabel:comparisonUnit(product,base),offerCount:0,retailerCount:0,isBase:true},retailers:new Set()});
+  for(const offer of offers){
+    const key=offerComparisonGroupKey(product,offer);if(!key)continue;
+    const entry=groups.get(key)||{group:{key,label:groupLabel(product,offer),quantity:offer.quantity,totalGrams:finitePositive(offer.totalGrams)?offer.totalGrams:null,unitLabel:comparisonUnit(product,offer),offerCount:0,retailerCount:0,isBase:key===baseKey},retailers:new Set<string>()};
+    entry.group.offerCount++;if(offer.eligible)entry.retailers.add(canonicalRetailerKey(offer));entry.group.retailerCount=entry.retailers.size;groups.set(key,entry);
+  }
+  return [...groups.values()].map(entry=>entry.group).sort((a,b)=>Number(b.isBase)-Number(a.isBase)||a.quantity-b.quantity||(a.totalGrams||0)-(b.totalGrams||0)||a.label.localeCompare(b.label,'ja'));
+}
 export function compareOffers(product: PriceRecord, options: ComparisonOptions = {}) {
-  const { mode = "すべて", includeConditional = false, sort = "unit", now = Date.now(), includeUsed = mode === "フリマ" } = options;
-  return (Array.isArray(product.offers) ? product.offers : [])
+  const { mode = "すべて", includeConditional = false, sort = "unit", now = Date.now(), includeUsed = mode === "フリマ",groupKey } = options;
+  const ranked=(Array.isArray(product.offers) ? product.offers : [])
     .map((o: PriceRecord) => normalizeOffer(product, o, now))
-    .filter((o: ReturnType<typeof normalizeOffer>) => o.eligible && (includeConditional || !o.conditional) && (includeUsed || (o.conditionClass!=="used"&&!/中古|使用済|傷や汚れ/.test(String(o.itemCondition||"")))) &&
+    .filter((o: ReturnType<typeof normalizeOffer>) => (!groupKey||offerComparisonGroupKey(product,o)===groupKey)&&o.eligible && (includeConditional || !o.conditional) && (includeUsed || (o.conditionClass!=="used"&&!/中古|使用済|傷や汚れ/.test(String(o.itemCondition||"")))) &&
       matchesPurchaseMode(o,mode))
     .sort((a: ReturnType<typeof normalizeOffer>, b: ReturnType<typeof normalizeOffer>) =>
       (sort === "total" ? a.total! - b.total! : a.unitCost! - b.unitCost!) || a.total! - b.total! || String(a.store).localeCompare(String(b.store), "ja"));
+  if(!groupKey)return ranked;
+  const selected=new Set<string>();
+  return ranked.filter((offer:NormalizedOffer)=>{if(purchaseKind(offer)==='marketplace')return true;const key=purchaseKind(offer)+':'+canonicalRetailerKey(offer);if(selected.has(key))return false;selected.add(key);return true;});
+}
+export function compareRetailerOffers(product:PriceRecord,options:ComparisonOptions={}){
+  const groupKey=options.groupKey||offerComparisonGroups(product,options)[0]?.key;
+  return groupKey?compareOffers(product,{...options,sort:options.sort||'total',groupKey}):[];
 }
