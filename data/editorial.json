@@ -5225,6 +5225,339 @@
       "practicalTopics": [
         "おでかけ"
       ]
+    },
+    {
+      "id": "practical-20261026-yamanashi-science",
+      "title": "山梨県立科学館へ。赤ちゃんの休憩場所と当日チケットを確認",
+      "facilityName": "山梨県立科学館",
+      "summary": "甲府市で科学の展示と工作を楽しめる屋内施設。乳幼児連れは、靴を脱いで遊べる幼児コーナーと授乳・おむつ替えの場所を先に確認しておくと、きょうだいの予定を組みやすくなります。",
+      "description": "甲府市で科学の展示と工作を楽しめる屋内施設。乳幼児連れは、靴を脱いで遊べる幼児コーナーと授乳・おむつ替えの場所を先に確認しておくと、きょうだいの予定を組みやすくなります。",
+      "practicalPoints": [
+        "あそびの部屋に授乳室、おむつ替えコーナー、調乳用のお湯を用意。お湯はスタッフに声をかける",
+        "未就学児の入館は無料。通常のプラネタリウム・イベントは当日券または自由参加で、事前予約制の催しは別に確認",
+        "11月4〜6日はプラネタリウム投影を休止。通常の休館日以外にも臨時休館があるため、出発前にカレンダーを見る"
+      ],
+      "prefecture": "山梨県",
+      "municipality": "甲府市",
+      "prefectures": [
+        "山梨県"
+      ],
+      "municipalities": [
+        "甲府市"
+      ],
+      "category": "おでかけ",
+      "tags": [
+        "お出かけ",
+        "科学館",
+        "屋内",
+        "授乳室",
+        "おむつ替え",
+        "工作",
+        "幼児",
+        "小学生"
+      ],
+      "kind": "解説",
+      "section": "columns",
+      "contentType": "outing",
+      "url": "https://www.kagakukan.pref.yamanashi.jp/floor/playroom.php",
+      "source": "山梨県立科学館 公式案内",
+      "sourceName": "山梨県立科学館 公式案内",
+      "publishedAt": null,
+      "sourceUpdatedAt": null,
+      "checkedAt": "2026-10-26",
+      "additionalSources": [
+        "https://www.kagakukan.pref.yamanashi.jp/guide/",
+        "https://www.kagakukan.pref.yamanashi.jp/guide/faq.php",
+        "https://www.kagakukan.pref.yamanashi.jp/news/info.php?no=741"
+      ],
+      "outingDetails": {
+        "indoorOutdoor": "屋内。展望テラス等は屋外",
+        "reservation": "事前予約制イベント以外のプラネタリウム・イベントは当日チケット制または当日自由参加。通常入館の予約要否は本文で明記を確認できず",
+        "amenities": [
+          "授乳室（カーテンで区切られた2区画）",
+          "調乳用のお湯（スタッフへ申出）",
+          "おむつ替えコーナー",
+          "親子トイレ",
+          "幼児コーナー"
+        ],
+        "closures": [
+          "第1・2・3月曜日。祝日の場合は火曜日。年末年始12月29日〜1月1日とその他臨時休館",
+          "2026年11月4〜6日はプラネタリウム投影休止（2026年10月23日告知）",
+          "2026年10月26日は公式ページで休館表示を確認"
+        ],
+        "ageNote": "幼児コーナー・こどもクラフトは幼児向けの案内あり。催しや観覧料金の年齢条件はプログラムごとに確認"
+      },
+      "ingestion": "editorial-research",
+      "summaryKind": "editorial-summary",
+      "evidenceReviewed": true,
+      "directUsefulness": true,
+      "practicalTopics": [
+        "おでかけ",
+        "教育・遊び",
+        "お世話・食事"
+      ]
+    },
+    {
+      "id": "practical-20261026-furekon",
+      "title": "石川県ふれあい昆虫館へ。料金とベビーカーの貸出を確認",
+      "facilityName": "石川県ふれあい昆虫館",
+      "summary": "白山市の昆虫館は、館内をスロープで見学でき、乳幼児連れ向けの授乳室とベビーカー貸出も案内しています。季節で閉館時刻が変わるため、午後から出かける日は時間を確認できます。",
+      "description": "白山市の昆虫館は、館内をスロープで見学でき、乳幼児連れ向けの授乳室とベビーカー貸出も案内しています。季節で閉館時刻が変わるため、午後から出かける日は時間を確認できます。",
+      "practicalPoints": [
+        "授乳室は1階休憩コーナー。入口で無料ベビーカーを貸し出すが、台数には限りがある",
+        "小学生未満は入館無料。一般410円、小・中・高校生200円。公式オンラインチケットの事前購入も利用できる",
+        "11〜3月は16時30分閉館、入館は16時まで。原則火曜日と12月29日〜1月1日は休館し、祝日などは例外あり"
+      ],
+      "prefecture": "石川県",
+      "municipality": "白山市",
+      "prefectures": [
+        "石川県"
+      ],
+      "municipalities": [
+        "白山市"
+      ],
+      "category": "おでかけ",
+      "tags": [
+        "お出かけ",
+        "博物館",
+        "昆虫",
+        "屋内",
+        "授乳室",
+        "ベビーカー",
+        "自然観察"
+      ],
+      "kind": "解説",
+      "section": "columns",
+      "contentType": "outing",
+      "url": "https://www.furekon.jp/information/",
+      "source": "石川県ふれあい昆虫館 公式案内",
+      "sourceName": "石川県ふれあい昆虫館 公式案内",
+      "publishedAt": null,
+      "sourceUpdatedAt": null,
+      "checkedAt": "2026-10-26",
+      "additionalSources": [
+        "https://www.furekon.jp/display/"
+      ],
+      "outingDetails": {
+        "indoorOutdoor": "屋内の展示施設。公式の館内マップで1・2階を案内",
+        "reservation": "公式オンラインチケットの事前購入を案内。通常入館の予約必須との記載は今回確認できず",
+        "amenities": [
+          "1階休憩コーナーの授乳室",
+          "ベビーカー無料貸出（台数限定）",
+          "館内スロープ"
+        ],
+        "unconfirmedAmenities": [
+          "おむつ替え設備の場所"
+        ],
+        "closures": [
+          "火曜日。祝日の火曜日は開館し、その日以降最初の平日を休館。7月20日〜8月31日とゴールデンウィークの火曜日は開館",
+          "12月29日〜1月1日"
+        ],
+        "ageNote": "入館料金に幼児・小中高生の区分あり。体験プログラムの参加条件は個別に確認"
+      },
+      "ingestion": "editorial-research",
+      "summaryKind": "editorial-summary",
+      "evidenceReviewed": true,
+      "directUsefulness": true,
+      "practicalTopics": [
+        "おでかけ",
+        "教育・遊び"
+      ]
+    },
+    {
+      "id": "practical-20261026-ehime-kodomo",
+      "title": "えひめこどもの城で、屋内遊びと外遊びを組み合わせる",
+      "facilityName": "えひめこどもの城",
+      "summary": "松山市の児童館と広場を備えた施設。あいあい児童館には乳幼児向けの遊び場や絵本のコーナーがあり、天候や子どもの様子に合わせて屋内と屋外の遊びを選べます。",
+      "description": "松山市の児童館と広場を備えた施設。あいあい児童館には乳幼児向けの遊び場や絵本のコーナーがあり、天候や子どもの様子に合わせて屋内と屋外の遊びを選べます。",
+      "practicalPoints": [
+        "あいあい児童館2階に幼児コーナー、図書コーナー、授乳室と、お弁当・休憩に使えるフリースペースがある",
+        "ベビーカーは総合案内所で1台100円で貸出。各遊具の年齢・身長条件と料金は、乗る前に個別案内を確認する",
+        "原則月曜休園（祝日の場合は翌日）。年末年始と2027年2月2〜4日の臨時休園にも注意し、予約が必要な催しは個別に確認"
+      ],
+      "prefecture": "愛媛県",
+      "municipality": "松山市",
+      "prefectures": [
+        "愛媛県"
+      ],
+      "municipalities": [
+        "松山市"
+      ],
+      "category": "おでかけ",
+      "tags": [
+        "お出かけ",
+        "児童館",
+        "屋内",
+        "屋外",
+        "授乳室",
+        "ベビーカー",
+        "絵本",
+        "幼児",
+        "外遊び"
+      ],
+      "kind": "解説",
+      "section": "columns",
+      "contentType": "outing",
+      "url": "https://www.i-kodomo.jp/area/",
+      "source": "えひめこどもの城 公式案内",
+      "sourceName": "えひめこどもの城 公式案内",
+      "publishedAt": null,
+      "sourceUpdatedAt": null,
+      "checkedAt": "2026-10-26",
+      "additionalSources": [
+        "https://www.i-kodomo.jp/guide/",
+        "https://www.i-kodomo.jp/guide/schedule/",
+        "https://www.i-kodomo.jp/guide/support/",
+        "https://www.i-kodomo.jp/guide/access/"
+      ],
+      "outingDetails": {
+        "indoorOutdoor": "屋内・屋外。児童館の幼児コーナーや図書コーナーと、屋外の芝生広場等を併設",
+        "reservation": "通常入園の予約要否は今回本文で確定できず。工作・料理・イベント等は個別の実施案内を確認",
+        "amenities": [
+          "あいあい児童館2階授乳室",
+          "幼児コーナー",
+          "図書コーナー",
+          "飲食・休憩用フリースペース",
+          "ベビーカー有料貸出（1台100円）",
+          "多目的トイレ"
+        ],
+        "unconfirmedAmenities": [
+          "おむつ替え設備の場所"
+        ],
+        "closures": [
+          "月曜日（祝日の場合は翌日）",
+          "12月29日〜1月1日",
+          "2027年2月2〜4日はメンテナンス臨時休園",
+          "じゃぶじゃぶ水路は夏季限定。メンテナンス休止の場合あり"
+        ],
+        "ageNote": "幼児コーナーは乳幼児向け。遊具は年齢・身長の利用基準がそれぞれ異なる"
+      },
+      "ingestion": "editorial-research",
+      "summaryKind": "editorial-summary",
+      "evidenceReviewed": true,
+      "directUsefulness": true,
+      "practicalTopics": [
+        "おでかけ",
+        "教育・遊び",
+        "お世話・食事"
+      ]
+    },
+    {
+      "id": "practical-20261026-honda-colorpen",
+      "title": "小学生と、水性ペンの色を分ける実験をしてみよう",
+      "summary": "水性ペン、コーヒーフィルター、水を使って、1色に見えるインクにどんな色が含まれるかを比べる遊び。親子で予想を立て、変化を観察し、結果を並べる家庭学習に使えます。",
+      "description": "水性ペン、コーヒーフィルター、水を使って、1色に見えるインクにどんな色が含まれるかを比べる遊び。親子で予想を立て、変化を観察し、結果を並べる家庭学習に使えます。",
+      "practicalPoints": [
+        "フィルターの帯にペンで点を描き、帯の先を水につけて色の変化を見る。水がこぼれてよい場所で行う",
+        "違う色のペンだけでなく、同じ色で種類の違うペンも比べられる",
+        "実験した帯を厚紙に貼ってしおりにする発展例もある。実験に使った水は飲まない"
+      ],
+      "category": "家庭学習",
+      "tags": [
+        "小学生",
+        "家庭学習",
+        "親子遊び",
+        "実験",
+        "色",
+        "自由研究",
+        "理科"
+      ],
+      "kind": "解説",
+      "section": "columns",
+      "url": "https://www.honda.co.jp/kids/jiyuu-kenkyu/hakken-kenkyu/hk-2/",
+      "source": "Honda Kids（教材提供：Gakken）",
+      "sourceName": "Honda Kids（教材提供：Gakken）",
+      "publishedAt": null,
+      "sourceUpdatedAt": null,
+      "checkedAt": "2026-10-26",
+      "ageGroups": [
+        "小学生"
+      ],
+      "ageBasis": "source-topic",
+      "ingestion": "editorial-research",
+      "summaryKind": "editorial-summary",
+      "evidenceReviewed": true,
+      "directUsefulness": true,
+      "practicalTopics": [
+        "教育・遊び"
+      ]
+    },
+    {
+      "id": "practical-20261026-honda-paperplane",
+      "title": "紙ヒコーキを2種類折って、飛び方を比べよう",
+      "summary": "遠くへ飛ばす形と、長く空にとどまる形を比べる紙工作。Honda Kidsの折り方の図を使い、小学生と「どちらが遠くへ飛ぶか」「どう調整すると変わるか」を試せます。",
+      "description": "遠くへ飛ばす形と、長く空にとどまる形を比べる紙工作。Honda Kidsの折り方の図を使い、小学生と「どちらが遠くへ飛ぶか」「どう調整すると変わるか」を試せます。",
+      "practicalPoints": [
+        "距離型の「いかヒコーキ」と滞空型の「スカイキング」の折り方へ進める",
+        "同じ場所で飛ばし、距離や空にとどまる時間を記録して違いを比べられる",
+        "紙ヒコーキの調整と飛ばし方を解説する公式動画も掲載。折り方の図と合わせ、難しい部分を見直しながら進められる"
+      ],
+      "category": "工作",
+      "tags": [
+        "小学生",
+        "親子遊び",
+        "紙工作",
+        "紙ヒコーキ",
+        "家庭学習",
+        "自由研究"
+      ],
+      "kind": "解説",
+      "section": "columns",
+      "url": "https://www.honda.co.jp/kids/jiyuu-kenkyu/challenge/c-13/",
+      "source": "Honda Kids",
+      "sourceName": "Honda Kids",
+      "publishedAt": null,
+      "sourceUpdatedAt": null,
+      "checkedAt": "2026-10-26",
+      "ageGroups": [
+        "小学生"
+      ],
+      "ageBasis": "source-topic",
+      "ingestion": "editorial-research",
+      "summaryKind": "editorial-summary",
+      "evidenceReviewed": true,
+      "directUsefulness": true,
+      "practicalTopics": [
+        "教育・遊び"
+      ]
+    },
+    {
+      "id": "practical-20261026-kewpie-babyfood-storage",
+      "title": "キユーピーのベビーフード、取り分けと保存方法を確認",
+      "summary": "一度に使い切れないベビーフードをどう扱うか、メーカーの公式Q&Aから確認できます。食べさせる前に使う分を取り分け、開封後の保存方法は商品表示と合わせて確かめます。",
+      "description": "一度に使い切れないベビーフードをどう扱うか、メーカーの公式Q&Aから確認できます。食べさせる前に使う分を取り分け、開封後の保存方法は商品表示と合わせて確かめます。",
+      "practicalPoints": [
+        "キユーピーは、食べる分を先に別容器へ取り分け、残りを10℃以下で冷蔵して丸1日以内に使うと案内。口をつけた食べ残しは保存しない",
+        "冷凍する場合も開封時に清潔な容器へ小分けにし、瓶やパウチのまま凍らせない。メーカーが示すおいしく食べる目安は2週間",
+        "保存の条件はメーカー・商品で異なる。この案内を他社商品へ当てはめず、手元の表示を優先して確認する"
+      ],
+      "category": "離乳食",
+      "tags": [
+        "離乳食",
+        "ベビーフード",
+        "取り分け",
+        "保存方法",
+        "冷蔵",
+        "冷凍",
+        "お世話・食事"
+      ],
+      "kind": "解説",
+      "section": "columns",
+      "url": "https://www.kewpie.co.jp/customer/faq/babyfood/",
+      "source": "キユーピー お客様相談室",
+      "sourceName": "キユーピー お客様相談室",
+      "publishedAt": null,
+      "sourceUpdatedAt": null,
+      "checkedAt": "2026-10-26",
+      "ageBasis": "unknown",
+      "ageNote": "商品の月齢表示と子どもの発達に合わせて利用する。Q&Aだけから一律の対象月齢は設定しない",
+      "ingestion": "editorial-research",
+      "summaryKind": "editorial-summary",
+      "evidenceReviewed": true,
+      "directUsefulness": true,
+      "practicalTopics": [
+        "お世話・食事"
+      ]
     }
   ],
   "topics": [

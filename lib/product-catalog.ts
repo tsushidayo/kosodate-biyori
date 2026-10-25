@@ -1,5 +1,13 @@
 type Item=Record<string,any>;
 const normalized=(value:string)=>value.normalize('NFKC').toLocaleLowerCase('ja-JP').replace(/[\s　]+/g,' ').trim();
+/** Retailer bulk offers and promotional sets are opt-in catalog choices.
+ * A bottle with its normal teat or a manufacturer's cutlery set is one product. */
+export function isBulkCatalogProduct(product:Item){
+ if(product.catalogPurchaseKind==='bulk'||product.bulkOnly===true)return true;
+ if(product.catalogPurchaseKind==='single')return false;
+ const name=String(product.name||'').normalize('NFKC');
+ return /^(?:【|\[)\d+(?:枚[×x]\d+個入|個入|パック)(?:】|\])/.test(name)||/まとめ買い|ケース販売|おまけ|ノベルティ|特典付き|限定セット/.test(name);
+}
 /** Search actual product facts rather than merchant URLs or unrelated offer notes. */
 export function catalogMatches(product:Item,query:string){
  const words=normalized(query).split(' ').filter(Boolean);if(!words.length)return true;

@@ -30,6 +30,7 @@ export type OfferComparisonGroup = {
   offerCount: number;
   retailerCount: number;
   isBase: boolean;
+  hasExtras: boolean;
 };
 const TWO_DAYS = 48 * 60 * 60 * 1000;
 const ONE_DAY = 24 * 60 * 60 * 1000;
@@ -161,6 +162,14 @@ function variationKey(product:PriceRecord,offer:PriceRecord){
   return ['model','color','size'].map(field=>String(offer[field]??product[field]??'').normalize('NFKC').trim().toLowerCase()).concat(usedOffer(offer)?'used':String(offer.conditionClass||'new')).join('|');
 }
 function usedOffer(offer:PriceRecord){return offer.conditionClass==='used'||/中古|使用済|傷や汚れ/.test(String(offer.itemCondition||''));}
+/** A retailer's bonus is a different purchase from the plain item, even when
+ * the main item's weight and count are identical. Required product parts stay intact. */
+export function offerHasExtras(offer:PriceRecord){
+ if(offer.hasExtras===true||offer.comparisonKind==='bonus')return true;
+ const text=[offer.bundleLabel,offer.purchaseLabel,offer.sourceEvidence?.selectedProductTitle,offer.listingTitle].filter(Boolean).join(' ').normalize('NFKC');
+ return /おまけ|オマケ|ノベルティ|特典|プレゼント|(?:おしりふき|哺乳びん洗いスポンジ|哺乳瓶洗いスポンジ)付(?:き)?/.test(text);
+}
+function bonusKey(offer:PriceRecord){return offerHasExtras(offer)?String(offer.bundleKey||offer.source||offer.id||'bonus'):'';}
 
 /** Derive repeated purchases only from a confirmed ordinary sale unit and an
  * explicitly checked order shipping rule. Never reuse a bundle's price as a unit price. */
@@ -171,7 +180,7 @@ export function comparisonCandidates(product:PriceRecord, now=Date.now()):PriceR
  const derived:PriceRecord[]=[];
  for(const source of originals){
   const offer=normalizeOffer(product,source,now),rule=source.shippingRule;
-  if(!offer.eligible||offer.conditional||purchaseKind(offer)!=='online'||usedOffer(offer)||source.derivedOffer||!rule||rule.verified!==true||!isProductPurchaseSource(rule.source))continue;
+  if(!offer.eligible||offer.conditional||purchaseKind(offer)!=='online'||usedOffer(offer)||offerHasExtras(source)||source.derivedOffer||!rule||rule.verified!==true||!isProductPurchaseSource(rule.source))continue;
   const ruleDate=Date.parse(rule.checkedAt||'');if(!Number.isFinite(ruleDate)||now-ruleDate>TWO_DAYS||ruleDate-now>ONE_DAY)continue;
   if(!['flat','threshold'].includes(rule.kind)||!finiteNonnegative(rule.fee)||rule.kind==='threshold'&&!finitePositive(rule.freeFrom))continue;
   // A formula based on another page's sale unit must not be multiplied again.
@@ -194,7 +203,7 @@ export function offerComparisonGroupKey(product:PriceRecord,offer:PriceRecord):s
   if(!finitePositive(offer.quantity)||!Number.isInteger(offer.quantity))return null;
   const massRequired=product.category==='ミルク'&&product.formulation!=='liquid'||offer.unitLabel==='100g';
   if(massRequired&&!finitePositive(offer.totalGrams))return null;
-  return JSON.stringify([comparisonUnit(product,offer),offer.quantity,finitePositive(offer.totalGrams)?offer.totalGrams:null,variationKey(product,offer)]);
+  return JSON.stringify([comparisonUnit(product,offer),offer.quantity,finitePositive(offer.totalGrams)?offer.totalGrams:null,variationKey(product,offer),bonusKey(offer)]);
 }
 function baseComparisonOffer(product:PriceRecord,offers:PriceRecord[]):PriceRecord{
   const representative=offers.find(offer=>finitePositive(offer.quantity))||{};
@@ -210,7 +219,9 @@ function baseComparisonOffer(product:PriceRecord,offers:PriceRecord[]):PriceReco
   if(quantity>1&&!knownQuantities.includes(quantity)&&knownQuantities.includes(1))quantity=1;
   // When the product has no explicit count, use the documented smallest sale unit;
   // explicit single-can or single-pack amounts remain first even if only bulk quotes exist.
-  if(!powder&&!finitePositive(stated)&&knownQuantities.length&&!knownQuantities.includes(1))quantity=Math.min(...knownQuantities);
+  const explicitSingle=/[／/]\s*1(?:商品|パック|本|個|缶|袋|セット|点)(?:$|[／/])/.test(text);
+  if(!powder&&!explicitSingle&&!finitePositive(stated)&&knownQuantities.length&&!knownQuantities.includes(1))quantity=Math.min(...knownQuantities);
+  if(finitePositive(product.singlePurchaseQuantity)&&Number.isInteger(product.singlePurchaseQuantity))quantity=product.singlePurchaseQuantity;
   const sameAmount=offers.filter(offer=>offer.quantity===quantity);
   const knownGrams=[...new Set(sameAmount.map(offer=>offer.totalGrams).filter(finitePositive))];
   const grams=powder?Number(text.match(/(\d+(?:\.\d+)?)\s*g/i)?.[1]):knownGrams.length===1?knownGrams[0]:null;
@@ -220,7 +231,7 @@ function groupLabel(product:PriceRecord,offer:PriceRecord){
   const normalized=normalizeOffer(product,offer);
   const variation=['model','color','size'].map(field=>String(offer[field]??product[field]??'').trim()).filter(Boolean);
   if(usedOffer(offer))variation.push('中古');
-  const suffix=variation.length?'・'+variation.join('・'):'';
+  const suffix=(variation.length?'・'+variation.join('・'):'')+(offerHasExtras(offer)?'・おまけ付き':'');
   if(product.category==='ミルク'&&product.formulation!=='liquid')return normalized.quantityLabel+suffix;
   const base=baseComparisonOffer(product,[offer]);
   if(comparisonUnit(product,offer)==='枚'&&finitePositive(base.quantity)&&offer.quantity%base.quantity===0){
@@ -234,10 +245,10 @@ export function offerComparisonGroups(product:PriceRecord,options:ComparisonOpti
   const offers=comparisonCandidates(product,now).filter((offer:PriceRecord)=>matchesPurchaseMode(offer,mode)).map((offer:PriceRecord)=>normalizeOffer(product,offer,now)).filter((offer:PriceRecord)=>(includeConditional||!offer.conditional)&&(includeUsed||!usedOffer(offer)));
   const groups=new Map<string,{group:OfferComparisonGroup;retailers:Set<string>}>();
   const base=baseComparisonOffer(product,offers),baseKey=offerComparisonGroupKey(product,base);
-  if(baseKey)groups.set(baseKey,{group:{key:baseKey,label:groupLabel(product,base),quantity:base.quantity,totalGrams:base.totalGrams,unitLabel:comparisonUnit(product,base),offerCount:0,retailerCount:0,isBase:true},retailers:new Set()});
+  if(baseKey)groups.set(baseKey,{group:{key:baseKey,label:groupLabel(product,base),quantity:base.quantity,totalGrams:base.totalGrams,unitLabel:comparisonUnit(product,base),offerCount:0,retailerCount:0,isBase:true,hasExtras:false},retailers:new Set()});
   for(const offer of offers){
     const key=offerComparisonGroupKey(product,offer);if(!key)continue;
-    const entry=groups.get(key)||{group:{key,label:groupLabel(product,offer),quantity:offer.quantity,totalGrams:finitePositive(offer.totalGrams)?offer.totalGrams:null,unitLabel:comparisonUnit(product,offer),offerCount:0,retailerCount:0,isBase:key===baseKey},retailers:new Set<string>()};
+    const entry=groups.get(key)||{group:{key,label:groupLabel(product,offer),quantity:offer.quantity,totalGrams:finitePositive(offer.totalGrams)?offer.totalGrams:null,unitLabel:comparisonUnit(product,offer),offerCount:0,retailerCount:0,isBase:key===baseKey,hasExtras:offerHasExtras(offer)},retailers:new Set<string>()};
     entry.group.offerCount++;if(offer.eligible)entry.retailers.add(canonicalRetailerKey(offer));entry.group.retailerCount=entry.retailers.size;groups.set(key,entry);
   }
   return [...groups.values()].map(entry=>entry.group).sort((a,b)=>Number(b.isBase)-Number(a.isBase)||a.quantity-b.quantity||(a.totalGrams||0)-(b.totalGrams||0)||a.label.localeCompare(b.label,'ja'));

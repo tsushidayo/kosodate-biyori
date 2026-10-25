@@ -16773,6 +16773,328 @@
           "body": "世帯区分を確認できる書類を用意して申請し、助成券と登録学習塾一覧が届いたら利用先へ申し込みます。"
         }
       ]
+    },
+    {
+      "id": "continue-20261026-nankoku-medical",
+      "title": "南国市 乳幼児・児童医療費助成",
+      "prefecture": "高知県",
+      "municipality": "南国市",
+      "municipalityCode": "39204",
+      "area": "高知県 南国市",
+      "scope": "municipality",
+      "category": "医療",
+      "summary": "高校生年代までの入院・通院の保険診療自己負担分を助成します。出生・転入時に受給者証を申請しておくと、県内受診に使えます。",
+      "eligibility": "市内に住民登録があり健康保険に加入する、0歳から18歳到達後最初の3月末までの子ども。生活保護受給中や、施設入所等で別の医療費助成を受ける方は対象外。",
+      "amountLabel": "保険診療の自己負担分を助成。入院の食事代・保険外費用等は対象外",
+      "how": "子育て支援課窓口で受給者証を申請します。県外受診では一度支払い、領収書等で払戻しを申請してください。県内でも保険種別により福祉医療費請求書が必要です。",
+      "preparation": [
+        "子どもの保険加入状況が分かる資格確認書・資格情報のお知らせ・マイナポータル画面等",
+        "印鑑",
+        "県外受診の払戻しは領収書、受給者証、保護者名義の口座情報等"
+      ],
+      "deadlineNote": "出生・転入時に受給者証を申請。払戻しの期限は本文に明記がないため窓口に確認。",
+      "minAgeMonths": 0,
+      "schoolYearEndAge": 18,
+      "ageNote": "18歳の誕生日後、最初の3月末まで。",
+      "notes": [
+        "保険情報が変わったときは変更届が必要です。",
+        "県外では受給者証を使えないため領収書を保管してください。"
+      ],
+      "source": "https://www.city.nankoku.lg.jp/life/life_dtl.php?hdnKey=2094",
+      "sourceName": "南国市公式サイト",
+      "sourcePublishedAt": "2025-01-06",
+      "checkedAt": "2026-10-26",
+      "official": true
+    },
+    {
+      "id": "continue-20261026-nankoku-postpartum",
+      "title": "南国市 訪問・通所・宿泊の産後ケア",
+      "prefecture": "高知県",
+      "municipality": "南国市",
+      "municipalityCode": "39204",
+      "area": "高知県 南国市",
+      "scope": "municipality",
+      "category": "妊娠・出産",
+      "summary": "助産師への育児・授乳相談や休息を、自宅訪問・日帰り・宿泊から選べます。妊娠8か月から利用前の申請ができます。",
+      "eligibility": "南国市に住民票があり市内在住で、心身の不調や育児不安がある産後12か月未満の母子。感染症や医療管理が必要な場合は利用できません。施設別の月齢条件もあります。",
+      "amountLabel": "課税世帯：訪問500円/回、通所2,200円/回、宿泊4,000円/泊（一部施設9,000円）。非課税・生活保護世帯は無料",
+      "how": "こども家庭センターに事前申請し、承認通知書に同封された案内に沿って予約します。産後申請は利用まで数日必要です。",
+      "preparation": [
+        "利用申請書、認め印",
+        "必要に応じ非課税の確認書類・生活保護受給証明書",
+        "利用時は母子健康手帳、利用承認通知書、母子の日用品等"
+      ],
+      "deadlineNote": "妊娠8か月以降に事前申請。訪問原則4回、通所原則7回、宿泊原則7日まで。",
+      "minAgeMonths": 0,
+      "maxAgeMonths": 11,
+      "ageGroups": [
+        "0歳"
+      ],
+      "ageNote": "利用は産後12か月未満。施設によって4か月未満・2か月未満や寝返り前の条件があります。妊娠8か月から申請可能。",
+      "notes": [
+        "宿泊の1泊2日は利用日数2日として数えます。",
+        "多胎児の同時利用は2人目以降の利用者負担なし。キャンセルは前々日17時までに連絡。"
+      ],
+      "source": "https://www.city.nankoku.lg.jp/life/life_dtl.php?hdnKey=4996",
+      "additionalSources": [
+        {
+          "name": "2026年度産後ケア事業利用料",
+          "url": "https://www.city.nankoku.lg.jp/download/?fid=107305&id=4996&t=LD"
+        }
+      ],
+      "sourceName": "南国市公式サイト",
+      "sourcePublishedAt": "2026-04-01",
+      "checkedAt": "2026-10-26",
+      "official": true
+    },
+    {
+      "id": "continue-20261026-tosa-diaper-ticket",
+      "title": "土佐市 乳児紙おむつチケット",
+      "prefecture": "高知県",
+      "municipality": "土佐市",
+      "municipalityCode": "39205",
+      "area": "高知県 土佐市",
+      "scope": "municipality",
+      "category": "給付・助成",
+      "summary": "乳児の紙おむつ購入を月5,000円分、最大3万円分支援します。市内の登録店舗で使うチケットを出生届の後に申請できます。",
+      "eligibility": "2026年4月1日以降に生まれ、市に住民登録がある生後6か月までの乳児を、同一住所・同一生計で養育する保護者。申請時にも市内の住民票が必要です。",
+      "amountLabel": "乳児1人あたり月5,000円分、6か月で最大30,000円分。転入は転入月以降分",
+      "how": "出生届後、子育て支援課窓口へ申請書と必要書類を提出。対象月分のチケットをまとめて受け取り、市内取扱店で紙おむつの購入時に使います。",
+      "preparation": [
+        "乳児紙おむつチケット交付申請書",
+        "対象乳児の母子健康手帳",
+        "保護者の本人確認書類"
+      ],
+      "deadline": "申請は出生月または転入月から6か月後の末日まで。チケットは交付日の翌年度3月31日まで有効",
+      "minAgeMonths": 0,
+      "maxAgeMonths": 5,
+      "uncertainAgeRanges": [
+        {
+          "minAgeMonths": 6,
+          "maxAgeMonths": 6
+        }
+      ],
+      "ageNote": "公式案内は生後6か月まで。6か月の境界は窓口確認。2026年4月1日以降の出生条件が別にあります。",
+      "notes": [
+        "1枚1,000円で、購入額以下の額面分を使用。差額は自己負担です。",
+        "対象商品は紙おむつ。購入額が1,000円未満の場合は使えません。"
+      ],
+      "source": "https://www.city.tosa.lg.jp/life/detail.php?hdnKey=6471",
+      "sourceName": "土佐市公式サイト",
+      "sourcePublishedAt": "2026-06-22",
+      "sourceUpdatedAt": "2026-09-03",
+      "checkedAt": "2026-10-26",
+      "official": true
+    },
+    {
+      "id": "continue-20261026-tosa-home-helper",
+      "title": "土佐市 産前・産後ヘルパー派遣",
+      "prefecture": "高知県",
+      "municipality": "土佐市",
+      "municipalityCode": "39205",
+      "area": "高知県 土佐市",
+      "scope": "municipality",
+      "category": "妊娠・出産",
+      "summary": "日中の支援者がいない妊娠・産後の家庭へヘルパーを派遣し、調理・洗濯・掃除や授乳用品の洗浄、沐浴などを手伝います。",
+      "eligibility": "市に住民票があり、心身の不調・育児の難しさや日中頼れる人がいない妊婦、または出産後6か月未満で家事・育児の手助けがない母親。多胎は期間延長等を相談できます。",
+      "amountLabel": "1回500円。市民税非課税・生活保護世帯は無料。産前産後合計8回、多胎12回まで",
+      "how": "健康づくり課への窓口提出または電子申請で申し込み、承認後に委託事業者と利用日程を決めます。平日9時から17時15分の間、1回2時間以内です。",
+      "preparation": [
+        "産前産後ヘルパー派遣事業申請書",
+        "市で確認できない場合の非課税証明等",
+        "生活保護世帯は受給証明書"
+      ],
+      "deadlineNote": "利用前に申請。通常の産後対象期間は6か月未満。多胎の延長は事前相談。",
+      "ageRanges": [
+        {
+          "minAgeMonths": -1,
+          "maxAgeMonths": 5
+        }
+      ],
+      "ageGroups": [
+        "妊娠中",
+        "0歳"
+      ],
+      "ageNote": "妊娠中または産後6か月未満。多胎の延長条件は市に確認。",
+      "notes": [
+        "買い物支援は土佐市内での生活必需品の買い物です。",
+        "利用料金は市が送る納入通知書で支払います。"
+      ],
+      "source": "https://www.city.tosa.lg.jp/life/detail.php?hdnKey=3785",
+      "sourceName": "土佐市公式サイト",
+      "sourcePublishedAt": "2022-09-21",
+      "sourceUpdatedAt": "2026-04-09",
+      "checkedAt": "2026-10-26",
+      "official": true
+    },
+    {
+      "id": "continue-20261026-tosa-postpartum",
+      "title": "土佐市 訪問・通所・宿泊の産後ケア",
+      "prefecture": "高知県",
+      "municipality": "土佐市",
+      "municipalityCode": "39205",
+      "area": "高知県 土佐市",
+      "scope": "municipality",
+      "category": "妊娠・出産",
+      "summary": "助産師の自宅訪問や施設利用で、授乳・お世話の相談と休息を受けられます。妊娠中から申請でき、承認後に施設等へ予約します。",
+      "eligibility": "土佐市に住民票があり、産後ケアを必要とする産後1年以内の母子。宿泊型は産後4か月未満です。",
+      "amountLabel": "課税世帯：訪問基本1,000円・延長2,000円、通所2,200円/回、宿泊5,000円/泊。非課税・生活保護世帯は区分別の軽減あり",
+      "how": "健康づくり課へ申請書を提出、または電子申請。承認通知書を受け取ったら訪問助産師・利用施設へ予約し、利用時に通知書を提示します。",
+      "preparation": [
+        "産後ケア事業利用申請書、電子申請は本人確認書類の画像等",
+        "課税状況等の確認書類が必要な場合あり",
+        "利用承認通知書、母子健康手帳と施設指定の持ち物"
+      ],
+      "deadlineNote": "妊娠中から事前申請可。訪問・通所は合計8回、宿泊は6泊7日まで。",
+      "minAgeMonths": 0,
+      "maxAgeMonths": 11,
+      "uncertainAgeRanges": [
+        {
+          "minAgeMonths": 12,
+          "maxAgeMonths": 12
+        }
+      ],
+      "ageNote": "訪問・通所は産後1年以内。1年の境界は市に確認。宿泊は産後4か月未満。",
+      "notes": [
+        "通所は10〜16時で母親の昼食付き、宿泊は母親の3食付き。",
+        "キャンセルは2日前までに連絡し、直前の場合は料金が発生することがあります。"
+      ],
+      "source": "https://www.city.tosa.lg.jp/life/detail.php?hdnKey=3228",
+      "additionalSources": [
+        {
+          "name": "産後ケアパンフレット",
+          "url": "https://www.city.tosa.lg.jp/download/?fid=52000&id=3228&t=LD"
+        }
+      ],
+      "sourceName": "土佐市公式サイト",
+      "sourcePublishedAt": "2022-09-21",
+      "sourceUpdatedAt": "2026-04-09",
+      "checkedAt": "2026-10-26",
+      "official": true
+    },
+    {
+      "id": "continue-20261026-motoyama-freelance-maternity",
+      "title": "本山町 自営業・フリーランス等の産前産後出産応援金",
+      "prefecture": "高知県",
+      "municipality": "本山町",
+      "municipalityCode": "39341",
+      "area": "高知県 本山町",
+      "scope": "municipality",
+      "category": "妊娠・出産",
+      "summary": "公的な出産手当金の対象にならない自営業・フリーランス等の女性が、出産のため休業した際の生活を町独自の応援金で支えます。",
+      "eligibility": "町内に居住し自営業・フリーランス等で生計を立てる女性。国保の被保険者本人で扶養家族に当たらず、町税の滞納がないこと等が条件です。",
+      "amountLabel": "月16万円、産前1か月・産後2か月の最大3か月分",
+      "how": "住民生活課住民班へ相談して申請方法・様式を確認します。休業や国保加入等の条件を確認したうえで申し込んでください。",
+      "preparation": [
+        "申請様式と添付書類は住民生活課へ確認（公式案内に具体的な書類名の記載なし）"
+      ],
+      "deadlineNote": "対象期間は出産日以前1か月と出産日翌日から2か月。申請期限は公開本文に記載がないため住民生活課へ確認。",
+      "ageRanges": [
+        {
+          "minAgeMonths": -1,
+          "maxAgeMonths": 1
+        }
+      ],
+      "uncertainAgeRanges": [
+        {
+          "minAgeMonths": 2,
+          "maxAgeMonths": 2
+        }
+      ],
+      "ageGroups": [
+        "妊娠中",
+        "0歳"
+      ],
+      "ageNote": "産前1か月・産後2か月が対象期間。出産日を基に算定するため申請時に期間を確認。",
+      "notes": [
+        "その他の対象条件があり、町への相談が必要です。",
+        "問い合わせ先：住民生活課住民班 0887-76-2115。"
+      ],
+      "source": "https://www.town.motoyama.kochi.jp/soshikikarasagasu/juminseikatsuka/shussan_ikuji/2573.html",
+      "additionalSources": [
+        {
+          "name": "自営業・フリーランス等出産育児支援事業チラシ",
+          "url": "https://www.town.motoyama.kochi.jp/material/files/group/4/shussan_ikuji.pdf"
+        }
+      ],
+      "sourceName": "本山町公式サイト",
+      "sourceUpdatedAt": "2026-04-01",
+      "checkedAt": "2026-10-26",
+      "official": true
+    },
+    {
+      "id": "continue-20261026-motoyama-freelance-childcare-leave",
+      "title": "本山町 自営業・フリーランス等の育児休業応援金",
+      "prefecture": "高知県",
+      "municipality": "本山町",
+      "municipalityCode": "39341",
+      "area": "高知県 本山町",
+      "scope": "municipality",
+      "category": "給付・助成",
+      "summary": "町内の自営業・フリーランス等の父母が、乳児の育児のため休業する場合に、1日4,000円の町独自の応援金を申請できます。",
+      "eligibility": "町内居住で自営業等により生計を立て、国保の被保険者本人で扶養家族に当たらない父母。町税滞納がないこと等の条件があります。女性は産後8週間後から対象です。",
+      "amountLabel": "1人1日4,000円、最大100日分",
+      "how": "住民生活課住民班に対象期間や休業要件を相談し、町が案内する様式・書類で申請します。夫婦で利用する場合はパパ・ママ育休プラスの条件も確認してください。",
+      "preparation": [
+        "申請様式と必要な添付書類は住民生活課へ確認（公開本文には具体名の記載なし）"
+      ],
+      "deadlineNote": "原則は産後から1歳になる日前日まで。女性は産後8週間後から。所定のパパ・ママ育休プラスでは1歳2か月になるまで。申請期限は町へ確認。",
+      "minAgeMonths": 0,
+      "maxAgeMonths": 13,
+      "ageNote": "原則1歳未満。配偶者の育休・開始日の条件を満たす場合のみ1歳2か月まで延長。公式案内の対象日を申請時に確認。",
+      "notes": [
+        "延長には配偶者が1歳までに育休を取ること、本人の開始予定日が1歳誕生日以前かつ配偶者の育休初日以降であることが必要です。",
+        "その他の要件もあるため、休業計画の段階で住民生活課へ相談してください。"
+      ],
+      "source": "https://www.town.motoyama.kochi.jp/soshikikarasagasu/juminseikatsuka/shussan_ikuji/2573.html",
+      "additionalSources": [
+        {
+          "name": "自営業・フリーランス等出産育児支援事業チラシ",
+          "url": "https://www.town.motoyama.kochi.jp/material/files/group/4/shussan_ikuji.pdf"
+        }
+      ],
+      "sourceName": "本山町公式サイト",
+      "sourceUpdatedAt": "2026-04-01",
+      "checkedAt": "2026-10-26",
+      "official": true
+    },
+    {
+      "id": "continue-20261026-geisei-birth-grant",
+      "title": "芸西村 みらいへ届け出産祝金",
+      "prefecture": "高知県",
+      "municipality": "芸西村",
+      "municipalityCode": "39307",
+      "area": "高知県 芸西村",
+      "scope": "municipality",
+      "category": "妊娠・出産",
+      "summary": "子どもの出生後3か月以内に申請する村独自の出産祝金です。出生順位に応じて10万円・20万円・30万円が支給されます。",
+      "eligibility": "2025年4月1日以降に生まれた子の監護者。出生日から村内に連続1年以上住み続けることを誓約でき、世帯に村税・使用料等の滞納がないことが必要です。",
+      "amountLabel": "第1子10万円、第2子20万円、第3子以降30万円。出生順位は児童手当の基準に準拠",
+      "how": "出生日から3か月以内に、申請書・本人確認と口座の写しを健康福祉課へ提出します。申請書は公式ページまたは窓口で受け取れます。",
+      "preparation": [
+        "みらいへ届け出産祝金支給申請書",
+        "本人確認書類の写し",
+        "金融機関口座確認書類の写し"
+      ],
+      "deadline": "対象児の出生日から3か月以内",
+      "minAgeMonths": 0,
+      "maxAgeMonths": 2,
+      "uncertainAgeRanges": [
+        {
+          "minAgeMonths": 3,
+          "maxAgeMonths": 3
+        }
+      ],
+      "ageNote": "出生から3か月以内の申請。3か月の境界は生年月日で窓口確認。2025年4月1日以降の出生が条件。",
+      "notes": [
+        "出生後1年未満の転出などで条件を満たさなくなると返還を求められる場合があります。",
+        "申請先：芸西村役場健康福祉課 0887-33-2112。"
+      ],
+      "source": "https://www.vill.geisei.kochi.jp/pages/m001731.php",
+      "sourceName": "芸西村公式サイト",
+      "sourcePublishedAt": "2025-03-24",
+      "checkedAt": "2026-10-26",
+      "official": true
     }
   ],
   "supportCoverage": {
@@ -16786,8 +17108,8 @@
   },
   "coverage": {
     "checkedAt": "2026-10-26",
-    "programs": 397,
-    "municipalitiesWithPrograms": 176,
+    "programs": 405,
+    "municipalitiesWithPrograms": 180,
     "indexedMunicipalities": 1741,
     "prefecturesWithMunicipalPrograms": 47,
     "notes": "自治体索引の全件掲載と、個別制度を調べた範囲は異なります。"

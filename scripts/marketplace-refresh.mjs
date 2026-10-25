@@ -1,6 +1,7 @@
 /** Recheck registered public listings. New listings come from a reviewed research batch, never invented search results. */
 import fs from 'node:fs/promises';
 import {pathToFileURL} from 'node:url';
+import {robotsAllows} from './robots-policy.mjs';
 const MAX_BYTES=3_000_000;
 const norm=s=>String(s||'').normalize('NFKC').toLowerCase().replace(/[\s\p{P}\p{S}]/gu,'');
 export function marketplaceUrl(value){
@@ -37,6 +38,13 @@ export function parseMarketplaceListing(html,offer){
  let main=html.match(/<main\b[^>]*>([\s\S]*?)<\/main\s*>/i)?.[1]||'';
  main=main.replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi,'').replace(/<style\b[^>]*>[\s\S]*?<\/style>/gi,'').replace(/<[^>]*>/g,' ').split(/この商品に近い商品|おすすめの商品|おすすめアイテム/)[0];
  if(/売り切れました|SOLD\s*OUT|販売終了/.test(main))record.available=false;
+ // Rakuma can retain InStock JSON-LD after sale. Its current-item photo ribbon
+ // and postage badge are separate from the recommendation list and main tag.
+ if(expected.hostname==='item.fril.jp'){
+  const slider=html.match(/id=["']item-slider["'][\s\S]*?<\/section\s*>/i)?.[0]||'';
+  if(/class=["'][^"']*photo-box__soldout_ribbon[^"']*["'][^>]*>\s*SOLD\s*OUT/i.test(slider))record.available=false;
+  if(record.shipping===null&&/class=["'][^"']*postage-included[^"']*["'][^>]*>[\s\S]{0,100}?送料込/.test(html))record.shipping=0;
+ }
  if(record.shipping===null&&/送料込み|送料込|出品者負担/.test(main)&&!/着払い|購入者負担/.test(main))record.shipping=0;
  return record;
 }
@@ -44,14 +52,13 @@ async function limited(response){const reader=response.body?.getReader();if(!rea
  try{for(;;){const {done,value}=await reader.read();if(done)break;size+=value.length;if(size>MAX_BYTES)throw Error('response_too_large');chunks.push(value);}}catch(error){await reader.cancel().catch(()=>{});throw error;}
  const all=new Uint8Array(size);let offset=0;for(const part of chunks){all.set(part,offset);offset+=part.length;}return new TextDecoder().decode(all);
 }
-function allowedByRobots(text,path){let active=false;const denied=[];for(const line of text.split(/\r?\n/)){const [key,...rest]=line.split('#')[0].trim().split(':');const value=rest.join(':').trim();if(key?.toLowerCase()==='user-agent')active=value==='*'||value.toLowerCase()==='kosodatebiyori';else if(active&&key?.toLowerCase()==='disallow'&&value)denied.push(value);}return !denied.some(rule=>rule==='/'||path.startsWith(rule.replace(/\*.*$/,'')));}
 export async function refreshMarketplaces(input,{fetchImpl=fetch,maxRequests=40,now=new Date().toISOString()}={}){
  const data=structuredClone(input),robots=new Map();let attempted=0,updated=0,sold=0,failed=0;const results=[];
  for(const product of data.products||[])for(const offer of product.offers||[]){
   const url=marketplaceUrl(offer.source);if(!url||attempted>=Math.min(60,maxRequests))continue;attempted++;offer.lastAttemptAt=now;
   try{
    if(!robots.has(url.origin)){const response=await fetchImpl(url.origin+'/robots.txt',{redirect:'error',signal:AbortSignal.timeout(8000),headers:{'User-Agent':'KosodateBiyori/1.0 (public listing reader)'}});if(response.status===404)robots.set(url.origin,'');else if(response.ok)robots.set(url.origin,await limited(response));else throw Error('robots_unavailable_'+response.status);}
-   if(!allowedByRobots(robots.get(url.origin),url.pathname))throw Error('robots_disallowed');
+   if(!robotsAllows(robots.get(url.origin),url.pathname+url.search))throw Error('robots_disallowed');
    const response=await fetchImpl(url.href,{redirect:'error',signal:AbortSignal.timeout(10000),headers:{Accept:'text/html','User-Agent':'KosodateBiyori/1.0 (public listing reader)'}});
    if(response.status===404||response.status===410){offer.available=false;offer.verified=false;offer.status='出品終了';offer.stockCheckedAt=now;sold++;results.push({id:offer.id,status:'ended'});continue;}
    if(!response.ok)throw Error('http_'+response.status);

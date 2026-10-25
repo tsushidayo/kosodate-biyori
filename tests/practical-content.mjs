@@ -50,3 +50,10 @@ test('listing refresh distinguishes current price, sold, mismatch and unavailabl
  assert.equal(failed.products[0].offers[0].checkedAt,'2026-10-24');assert.equal(failed.products[0].offers[0].verified,false);
  const denied=await refreshMarketplaces(input,{fetchImpl:async()=>new Response('User-agent: *\nDisallow: /item/')});assert.equal(denied.marketplaceRefresh.failed,1);
 });
+test('Rakuma current-item sold ribbon overrides stale InStock data without reading related-item sales',()=>{
+ const rakuma={...offer,source:'https://item.fril.jp/0346a946f8ffa48cc6c6f93e4f26cb3a'};
+ const body=html().replace(offer.source,rakuma.source);
+ const current='<section><div id="item-slider"><div class="photo-box__soldout_ribbon">SOLD OUT</div></div></section>';
+ assert.equal(parseMarketplaceListing(body+current,rakuma).available,false);
+ assert.equal(parseMarketplaceListing(body+'<section id="recommendations">SOLD OUT</section>',rakuma).available,true);
+});

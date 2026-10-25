@@ -5,6 +5,7 @@
  */
 import fs from 'node:fs/promises';
 import {pathToFileURL} from 'node:url';
+import {robotsAllows} from './robots-policy.mjs';
 const HOSTS=new Set(['www.yodobashi.com','www.biccamera.com','sundrug-online.com','shop.akachan.jp','www.24028-net.jp','www.amazon.co.jp','item.rakuten.co.jp','store.shopping.yahoo.co.jp','lohaco.yahoo.co.jp','www.matsukiyococokara-online.com','fast-delivery-mart.rakuten.co.jp','shop.tsuruha.co.jp','www.e-welcia.com','e-welcia.com','aeonretail.com','netshop.create-sd.co.jp','mrmax.jp','www.seims.co.jp','joyfulhonda.jp']);
 const MAX_BYTES=2500000;
 function registeredUrl(value){
@@ -63,16 +64,6 @@ async function bodyLimited(response){
  while(true){const {value,done}=await reader.read();if(done)break;size+=value.byteLength;if(size>MAX_BYTES){await reader.cancel();throw Error('response_too_large')}chunks.push(value)}
  const merged=new Uint8Array(size);let offset=0;for(const c of chunks){merged.set(c,offset);offset+=c.byteLength}return new TextDecoder().decode(merged);
 }
-function robotsAllows(text,path){
- let active=false,disallow=[];
- for(const raw of text.split(/\r?\n/)){
-  const line=raw.split('#')[0].trim();const colon=line.indexOf(':');if(colon<0)continue;
-  const key=line.slice(0,colon).trim().toLowerCase(),value=line.slice(colon+1).trim();
-  if(key==='user-agent')active=value==='*'||value.toLowerCase()==='kosodatehiyori';
-  if(active&&key==='disallow'&&value)disallow.push(value);
- }
- return !disallow.some(p=>p==='/'||path.startsWith(p.replace(/\*.*$/,'')));
-}
 export async function refreshPrices(input,{maxRequests=20,fetchImpl=fetch,now=new Date().toISOString()}={}){
  const data=structuredClone(input), cache=new Map(),robots=new Map();let requested=0,success=0,failed=0;const skipped=[];
  const cap=Math.max(1,Math.min(40,Number(maxRequests)||20));
@@ -100,7 +91,7 @@ export async function refreshPrices(input,{maxRequests=20,fetchImpl=fetch,now=ne
      // Respect a robots fetch denial; do not infer permission from an error.
      if(rr.status===404)robots.set(url.origin,'');else if(rr.ok)robots.set(url.origin,await bodyLimited(rr));else throw Error('robots_unavailable_'+rr.status);
     }
-    if(!robotsAllows(robots.get(url.origin),url.pathname))throw Error('robots_disallowed');
+    if(!robotsAllows(robots.get(url.origin),url.pathname+url.search,'KosodateHiyori'))throw Error('robots_disallowed');
     if(!cache.has(url.href)){
      requested++;
      const res=await fetchImpl(url.href,{signal:AbortSignal.timeout(10000),redirect:'error',headers:{'User-Agent':'KosodateHiyori/1.0 (public price reader)','Accept':'text/html'}});
