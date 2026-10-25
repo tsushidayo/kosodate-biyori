@@ -63,3 +63,9 @@ test('used marketplace prices require an explicit opt-in outside the flea tab',(
  assert.equal(compareOffers(product,{mode:'フリマ',now:NOW}).length,1);
  assert.equal(compareOffers(product,{mode:'フリマ',includeUsed:false,now:NOW}).length,0);
 });
+
+test('liquid milk and cube packs retain their own quantity units without being forced into cans',()=>{
+ const offer={id:'liquid',store:'公式通販',mode:'配送',price:328,shipping:600,quantity:1,unitLabel:'個',source:'https://shop.example.org/products/liquid',checkedAt:'2026-10-25',verified:true,available:true};
+ const liquid=normalizeOffer({category:'ミルク',unit:'240ml',name:'液体ミルク',formulation:'liquid'},offer,NOW);assert.equal(liquid.eligible,true);assert.equal(liquid.quantityLabel,'1個');near(liquid.total,928);
+ const cubes=normalizeOffer({category:'ミルク',unit:'108g',name:'キューブミルク',packUnit:'個'},{...offer,totalGrams:108,unitLabel:'100g'},NOW);assert.equal(cubes.quantityLabel,'108g × 1個');near(cubes.unitCost,928/1.08);
+});

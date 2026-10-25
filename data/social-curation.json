@@ -2653,6 +2653,1690 @@
       "reviewKind": "topic-relevance",
       "sourceFactChecked": false,
       "allAges": true
+    },
+    {
+      "id": "2113618448064635219",
+      "status": "rejected",
+      "reason": "名前の変更を求められたという一文だけで、子育てに役立つ経緯や当事者の対応を本文から判断できない。",
+      "tags": [
+        "掲載対象外",
+        "内容未確認"
+      ],
+      "verificationStatus": "unverified",
+      "parentingRelevant": false,
+      "reviewKind": "topic-relevance",
+      "sourceFactChecked": false,
+      "allAges": true,
+      "collectionPath": "collections/2026-10-25/kosodate-213500.json",
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "2113382998532124732",
+      "status": "rejected",
+      "reason": "第三者の障害や産後の状態を推測しており、本人の体験や根拠を確認できない。",
+      "tags": [
+        "掲載対象外",
+        "内容未確認"
+      ],
+      "verificationStatus": "unverified",
+      "parentingRelevant": false,
+      "reviewKind": "topic-relevance",
+      "sourceFactChecked": false,
+      "allAges": true,
+      "collectionPath": "collections/2026-10-25/kosodate-213500.json",
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "2112348071719796969",
+      "status": "rejected",
+      "reason": "本文は読むことを勧めるだけで、引用先や画像を見ずに育児の内容を判断できない。",
+      "tags": [
+        "掲載対象外",
+        "内容未確認"
+      ],
+      "verificationStatus": "unverified",
+      "parentingRelevant": false,
+      "reviewKind": "topic-relevance",
+      "sourceFactChecked": false,
+      "allAges": true,
+      "collectionPath": "collections/2026-10-25/kosodate-213500.json",
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "2113668819151642895",
+      "status": "rejected",
+      "reason": "育児漫画の告知だけで、漫画の内容を収集本文から判断できない。",
+      "tags": [
+        "掲載対象外",
+        "内容未確認"
+      ],
+      "verificationStatus": "unverified",
+      "parentingRelevant": false,
+      "reviewKind": "topic-relevance",
+      "sourceFactChecked": false,
+      "allAges": true,
+      "collectionPath": "collections/2026-10-25/kosodate-213500.json",
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "2113236312497246660",
+      "status": "rejected",
+      "reason": "著名人への反応と意図の推測が中心で、育児の具体的な工夫や体験の内容を本文から確認できない。",
+      "tags": [
+        "掲載対象外",
+        "内容未確認"
+      ],
+      "verificationStatus": "unverified",
+      "parentingRelevant": false,
+      "reviewKind": "topic-relevance",
+      "sourceFactChecked": false,
+      "allAges": true,
+      "collectionPath": "collections/2026-10-25/kosodate-213500.json",
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "2113627494863835367",
+      "status": "rejected",
+      "reason": "本文から人の子育ての話かを判断できず、子どもや動物などの対象も特定できない。",
+      "tags": [
+        "掲載対象外",
+        "内容未確認"
+      ],
+      "verificationStatus": "unverified",
+      "parentingRelevant": false,
+      "reviewKind": "topic-relevance",
+      "sourceFactChecked": false,
+      "allAges": true,
+      "collectionPath": "collections/2026-10-25/kosodate-213500.json",
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "2113781303342739568",
+      "status": "rejected",
+      "reason": "夫との不和についての文章が途中で切れており、育児の分担や通院の経緯を十分に読み取れない。",
+      "tags": [
+        "掲載対象外",
+        "内容未確認"
+      ],
+      "verificationStatus": "unverified",
+      "parentingRelevant": false,
+      "reviewKind": "topic-relevance",
+      "sourceFactChecked": false,
+      "allAges": true,
+      "collectionPath": "collections/2026-10-25/kosodate-213500.json",
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "2113633423860576464",
+      "status": "rejected",
+      "reason": "容姿についての感想が中心で、子育ての実用情報や当事者の体験を本文から読み取れない。",
+      "tags": [
+        "掲載対象外",
+        "内容未確認"
+      ],
+      "verificationStatus": "unverified",
+      "parentingRelevant": false,
+      "reviewKind": "topic-relevance",
+      "sourceFactChecked": false,
+      "allAges": true,
+      "collectionPath": "collections/2026-10-25/kosodate-213500.json",
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "2113236102958223568",
+      "status": "rejected",
+      "reason": "第三者を容姿で評したうえで育休と雇用の条件を断定しており、制度の根拠や適用範囲を確認できない。",
+      "tags": [
+        "掲載対象外",
+        "内容未確認"
+      ],
+      "verificationStatus": "unverified",
+      "parentingRelevant": false,
+      "reviewKind": "topic-relevance",
+      "sourceFactChecked": false,
+      "allAges": true,
+      "collectionPath": "collections/2026-10-25/kosodate-213500.json",
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "2113040943180070916",
+      "status": "approved",
+      "reason": "育児中の休息を求める気持ちについての意見。休める時間を家族で考える話題として掲載し、事実の確認を済ませた案内とは扱わない。 審査は収集本文と子育てへの関連についてのみ行い、投稿内容の真偽は確認していない。",
+      "tags": [
+        "育児の負担",
+        "休息",
+        "意見・議論",
+        "内容未確認"
+      ],
+      "verificationStatus": "unverified",
+      "parentingRelevant": true,
+      "reviewKind": "topic-relevance",
+      "sourceFactChecked": false,
+      "allAges": true,
+      "collectionPath": "collections/2026-10-25/kosodate-213500.json",
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "2113783360036430076",
+      "status": "rejected",
+      "reason": "離婚や名字に関する個人の意向が中心で、育児に役立つ具体的な経験や対応を本文から読み取れない。",
+      "tags": [
+        "掲載対象外",
+        "内容未確認"
+      ],
+      "verificationStatus": "unverified",
+      "parentingRelevant": false,
+      "reviewKind": "topic-relevance",
+      "sourceFactChecked": false,
+      "allAges": true,
+      "collectionPath": "collections/2026-10-25/kosodate-213500.json",
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "2113602519641587809",
+      "status": "rejected",
+      "reason": "通報を巡る話が途中で終わっており、何が起きたかや当事者の対応を十分に判断できない。",
+      "tags": [
+        "掲載対象外",
+        "内容未確認"
+      ],
+      "verificationStatus": "unverified",
+      "parentingRelevant": false,
+      "reviewKind": "topic-relevance",
+      "sourceFactChecked": false,
+      "allAges": true,
+      "collectionPath": "collections/2026-10-25/kosodate-213500.json",
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "2113816589766451219",
+      "status": "rejected",
+      "reason": "受診や症状を巡る強い断定と保護者への非難が中心で、医療上の判断の根拠を確認できない。",
+      "tags": [
+        "掲載対象外",
+        "内容未確認"
+      ],
+      "verificationStatus": "unverified",
+      "parentingRelevant": false,
+      "reviewKind": "topic-relevance",
+      "sourceFactChecked": false,
+      "allAges": true,
+      "collectionPath": "collections/2026-10-25/kosodate-213500.json",
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "2112545160991256882",
+      "status": "rejected",
+      "reason": "仕事と育児の負担を一律に比べる断定が中心で、具体的な育児の工夫や本人の体験が示されていない。",
+      "tags": [
+        "掲載対象外",
+        "内容未確認"
+      ],
+      "verificationStatus": "unverified",
+      "parentingRelevant": false,
+      "reviewKind": "topic-relevance",
+      "sourceFactChecked": false,
+      "allAges": true,
+      "collectionPath": "collections/2026-10-25/kosodate-213500.json",
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "2114272270655029637",
+      "status": "rejected",
+      "reason": "妊娠を含む慰謝料の争いが中心で、当事者の経緯や法律上の根拠を確認できない。",
+      "tags": [
+        "掲載対象外",
+        "内容未確認"
+      ],
+      "verificationStatus": "unverified",
+      "parentingRelevant": false,
+      "reviewKind": "topic-relevance",
+      "sourceFactChecked": false,
+      "allAges": true,
+      "collectionPath": "collections/2026-10-25/kosodate-213500.json",
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "2114250311854608484",
+      "status": "rejected",
+      "reason": "画像を指す一文だけで、何が起きたかや投稿者本人の体験かを収集本文から判断できない。",
+      "tags": [
+        "掲載対象外",
+        "内容未確認"
+      ],
+      "verificationStatus": "unverified",
+      "parentingRelevant": false,
+      "reviewKind": "topic-relevance",
+      "sourceFactChecked": false,
+      "allAges": true,
+      "collectionPath": "collections/2026-10-25/kosodate-213500.json",
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "2113086315315204214",
+      "status": "approved",
+      "reason": "子どもの買い物と親自身の幼少期の感覚を比べた意見。家庭でのお金の使い方を考える話題として掲載する。 審査は収集本文と子育てへの関連についてのみ行い、投稿内容の真偽は確認していない。",
+      "tags": [
+        "買い物・家計",
+        "子どもとの会話",
+        "意見・議論",
+        "内容未確認"
+      ],
+      "verificationStatus": "unverified",
+      "parentingRelevant": true,
+      "reviewKind": "topic-relevance",
+      "sourceFactChecked": false,
+      "allAges": true,
+      "collectionPath": "collections/2026-10-25/kosodate-213500.json",
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "2112429772764787142",
+      "status": "rejected",
+      "reason": "言葉への短い感想だけで、育児の実用情報や体験の具体的な内容を判断できない。",
+      "tags": [
+        "掲載対象外",
+        "内容未確認"
+      ],
+      "verificationStatus": "unverified",
+      "parentingRelevant": false,
+      "reviewKind": "topic-relevance",
+      "sourceFactChecked": false,
+      "allAges": true,
+      "collectionPath": "collections/2026-10-25/kosodate-213500.json",
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "2114037927919690189",
+      "status": "approved",
+      "reason": "1歳10か月の子どもの言葉への反応を紹介する投稿。発達段階やイヤイヤ期の終わりを判断する根拠には用いない。 審査は収集本文と子育てへの関連についてのみ行い、投稿内容の真偽は確認していない。",
+      "tags": [
+        "成長",
+        "子どもとの会話",
+        "体験談",
+        "内容未確認"
+      ],
+      "verificationStatus": "unverified",
+      "parentingRelevant": true,
+      "reviewKind": "topic-relevance",
+      "sourceFactChecked": false,
+      "ageGroups": [
+        "1〜2歳"
+      ],
+      "ageBasis": "収集本文に明示された年齢・段階による分類。利用条件や発達の判断を示すものではない。",
+      "collectionPath": "collections/2026-10-25/kosodate-213500.json",
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "2113992547685326959",
+      "status": "rejected",
+      "reason": "第三者の離婚や職場の関係を巡る伝聞が中心で、子育てに直接役立つ内容ではない。",
+      "tags": [
+        "掲載対象外",
+        "内容未確認"
+      ],
+      "verificationStatus": "unverified",
+      "parentingRelevant": false,
+      "reviewKind": "topic-relevance",
+      "sourceFactChecked": false,
+      "allAges": true,
+      "collectionPath": "collections/2026-10-25/kosodate-213500.json",
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "2113073174841847826",
+      "status": "approved",
+      "reason": "乳幼児の育児を一緒に見守る大人がいることへの実感を述べた意見。育児の負担と声かけを考える話題として掲載する。 審査は収集本文と子育てへの関連についてのみ行い、投稿内容の真偽は確認していない。",
+      "tags": [
+        "家事・育児の分担",
+        "育児の負担",
+        "意見・議論",
+        "内容未確認"
+      ],
+      "verificationStatus": "unverified",
+      "parentingRelevant": true,
+      "reviewKind": "topic-relevance",
+      "sourceFactChecked": false,
+      "ageGroups": [
+        "0歳",
+        "1〜2歳",
+        "3〜5歳"
+      ],
+      "ageBasis": "収集本文に明示された年齢・段階による分類。利用条件や発達の判断を示すものではない。",
+      "collectionPath": "collections/2026-10-25/kosodate-213500.json",
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "2114126940785586219",
+      "status": "rejected",
+      "reason": "配偶者の職歴や容姿を侮辱し、子どもの学力と結び付けているため掲載しない。",
+      "tags": [
+        "掲載対象外",
+        "内容未確認"
+      ],
+      "verificationStatus": "unverified",
+      "parentingRelevant": false,
+      "reviewKind": "topic-relevance",
+      "sourceFactChecked": false,
+      "allAges": true,
+      "collectionPath": "collections/2026-10-25/kosodate-213500.json",
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "2114283730651242764",
+      "status": "approved",
+      "reason": "育児中に妊娠検査薬で陽性になったという本人の体験。症状から妊娠を判断する案内や、不妊治療後の経過の一般論には用いない。 審査は収集本文と子育てへの関連についてのみ行い、投稿内容の真偽は確認していない。",
+      "tags": [
+        "妊娠・出産",
+        "体験談",
+        "内容未確認"
+      ],
+      "verificationStatus": "unverified",
+      "parentingRelevant": true,
+      "reviewKind": "topic-relevance",
+      "sourceFactChecked": false,
+      "ageGroups": [
+        "妊娠中"
+      ],
+      "ageBasis": "収集本文に明示された年齢・段階による分類。利用条件や発達の判断を示すものではない。",
+      "collectionPath": "collections/2026-10-25/kosodate-213500.json",
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "2112267973952221307",
+      "status": "rejected",
+      "reason": "性別の役割を巡る皮肉が中心で、具体的な育児の工夫や当事者の子育て経験が示されていない。",
+      "tags": [
+        "掲載対象外",
+        "内容未確認"
+      ],
+      "verificationStatus": "unverified",
+      "parentingRelevant": false,
+      "reviewKind": "topic-relevance",
+      "sourceFactChecked": false,
+      "allAges": true,
+      "collectionPath": "collections/2026-10-25/kosodate-213500.json",
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "2114001222793638372",
+      "status": "rejected",
+      "reason": "離乳食中の出来事が途中で終わり、食べ物の扱いの経過を判断できないため、方法として紹介できない。",
+      "tags": [
+        "掲載対象外",
+        "内容未確認"
+      ],
+      "verificationStatus": "unverified",
+      "parentingRelevant": false,
+      "reviewKind": "topic-relevance",
+      "sourceFactChecked": false,
+      "allAges": true,
+      "collectionPath": "collections/2026-10-25/kosodate-213500.json",
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "2113587336261112242",
+      "status": "approved",
+      "reason": "娘への贈り物と言葉の行き違いを振り返る本人の体験。親子の会話を考える話題として掲載し、子どもの年齢は推測しない。 審査は収集本文と子育てへの関連についてのみ行い、投稿内容の真偽は確認していない。",
+      "tags": [
+        "子どもとの会話",
+        "体験談",
+        "内容未確認"
+      ],
+      "verificationStatus": "unverified",
+      "parentingRelevant": true,
+      "reviewKind": "topic-relevance",
+      "sourceFactChecked": false,
+      "allAges": true,
+      "collectionPath": "collections/2026-10-25/kosodate-213500.json",
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "2114136645067026564",
+      "status": "rejected",
+      "reason": "第三者の宗教や暮らし、職業を推測する話が中心で、育児の実用情報ではない。",
+      "tags": [
+        "掲載対象外",
+        "内容未確認"
+      ],
+      "verificationStatus": "unverified",
+      "parentingRelevant": false,
+      "reviewKind": "topic-relevance",
+      "sourceFactChecked": false,
+      "allAges": true,
+      "collectionPath": "collections/2026-10-25/kosodate-213500.json",
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "2114201640085651791",
+      "status": "rejected",
+      "reason": "発達障害のある子どもの体験や特徴を一括りに断定しており、根拠を確認できない。",
+      "tags": [
+        "掲載対象外",
+        "内容未確認"
+      ],
+      "verificationStatus": "unverified",
+      "parentingRelevant": false,
+      "reviewKind": "topic-relevance",
+      "sourceFactChecked": false,
+      "allAges": true,
+      "collectionPath": "collections/2026-10-25/kosodate-213500.json",
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "2112428260516856208",
+      "status": "rejected",
+      "reason": "画像や動画の内容が本文に示されておらず、育児の工夫を判断できない。",
+      "tags": [
+        "掲載対象外",
+        "内容未確認"
+      ],
+      "verificationStatus": "unverified",
+      "parentingRelevant": false,
+      "reviewKind": "topic-relevance",
+      "sourceFactChecked": false,
+      "allAges": true,
+      "collectionPath": "collections/2026-10-25/kosodate-213500.json",
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "2114209743036399800",
+      "status": "rejected",
+      "reason": "特定の家族の印象から産後のうつが起きないと断定しており、医療上の根拠を確認できない。",
+      "tags": [
+        "掲載対象外",
+        "内容未確認"
+      ],
+      "verificationStatus": "unverified",
+      "parentingRelevant": false,
+      "reviewKind": "topic-relevance",
+      "sourceFactChecked": false,
+      "allAges": true,
+      "collectionPath": "collections/2026-10-25/kosodate-213500.json",
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "2114117388161728627",
+      "status": "rejected",
+      "reason": "安全上の出来事と外国人への批判を結び付けており、園や個人に関する主張の真偽を確認できない。",
+      "tags": [
+        "掲載対象外",
+        "内容未確認"
+      ],
+      "verificationStatus": "unverified",
+      "parentingRelevant": false,
+      "reviewKind": "topic-relevance",
+      "sourceFactChecked": false,
+      "allAges": true,
+      "collectionPath": "collections/2026-10-25/kosodate-213500.json",
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "2114264979952250960",
+      "status": "rejected",
+      "reason": "大学生の家庭の所得についての推測が中心で、妊娠中から小学生までの子育ての実用情報ではない。",
+      "tags": [
+        "掲載対象外",
+        "内容未確認"
+      ],
+      "verificationStatus": "unverified",
+      "parentingRelevant": false,
+      "reviewKind": "topic-relevance",
+      "sourceFactChecked": false,
+      "allAges": true,
+      "collectionPath": "collections/2026-10-25/kosodate-213500.json",
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "2113869185134838253",
+      "status": "rejected",
+      "reason": "子どもの症状や薬の作用を巡る断定が含まれ、医療上の説明を支える根拠を確認できない。",
+      "tags": [
+        "掲載対象外",
+        "内容未確認"
+      ],
+      "verificationStatus": "unverified",
+      "parentingRelevant": false,
+      "reviewKind": "topic-relevance",
+      "sourceFactChecked": false,
+      "allAges": true,
+      "collectionPath": "collections/2026-10-25/kosodate-213500.json",
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "2111588410385461753",
+      "status": "approved",
+      "reason": "3人の子どもの登園準備を経験した夫と、育児の分担が変わったとする本人の体験。すべての家庭に当てはまる方法とは扱わない。 審査は収集本文と子育てへの関連についてのみ行い、投稿内容の真偽は確認していない。",
+      "tags": [
+        "保育園・幼稚園",
+        "家事・育児の分担",
+        "体験談",
+        "内容未確認"
+      ],
+      "verificationStatus": "unverified",
+      "parentingRelevant": true,
+      "reviewKind": "topic-relevance",
+      "sourceFactChecked": false,
+      "allAges": true,
+      "collectionPath": "collections/2026-10-25/kosodate-213500.json",
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "2114216688711618874",
+      "status": "rejected",
+      "reason": "居住地や学歴、所得層を巡る推測が中心で、子育ての具体的な工夫や本人の体験を読み取れない。",
+      "tags": [
+        "掲載対象外",
+        "内容未確認"
+      ],
+      "verificationStatus": "unverified",
+      "parentingRelevant": false,
+      "reviewKind": "topic-relevance",
+      "sourceFactChecked": false,
+      "allAges": true,
+      "collectionPath": "collections/2026-10-25/kosodate-213500.json",
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "2113556043330392304",
+      "status": "rejected",
+      "reason": "育児漫画の題名だけで、朝の出来事や工夫を収集本文から判断できない。",
+      "tags": [
+        "掲載対象外",
+        "内容未確認"
+      ],
+      "verificationStatus": "unverified",
+      "parentingRelevant": false,
+      "reviewKind": "topic-relevance",
+      "sourceFactChecked": false,
+      "allAges": true,
+      "collectionPath": "collections/2026-10-25/kosodate-213500.json",
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "2112687944402456704",
+      "status": "rejected",
+      "reason": "育児漫画の告知だけで、誕生日の出来事の内容を収集本文から判断できない。",
+      "tags": [
+        "掲載対象外",
+        "内容未確認"
+      ],
+      "verificationStatus": "unverified",
+      "parentingRelevant": false,
+      "reviewKind": "topic-relevance",
+      "sourceFactChecked": false,
+      "allAges": true,
+      "collectionPath": "collections/2026-10-25/kosodate-213500.json",
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "2113457996462531067",
+      "status": "rejected",
+      "reason": "子どもの育てやすさを性別で一括りに比較する話が中心で、具体的な育児の工夫を読み取れない。",
+      "tags": [
+        "掲載対象外",
+        "内容未確認"
+      ],
+      "verificationStatus": "unverified",
+      "parentingRelevant": false,
+      "reviewKind": "topic-relevance",
+      "sourceFactChecked": false,
+      "allAges": true,
+      "collectionPath": "collections/2026-10-25/kosodate-213500.json",
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "2114280806483181610",
+      "status": "rejected",
+      "reason": "育児漫画の告知と短い言葉だけで、食事の場面の内容を収集本文から判断できない。",
+      "tags": [
+        "掲載対象外",
+        "内容未確認"
+      ],
+      "verificationStatus": "unverified",
+      "parentingRelevant": false,
+      "reviewKind": "topic-relevance",
+      "sourceFactChecked": false,
+      "allAges": true,
+      "collectionPath": "collections/2026-10-25/kosodate-213500.json",
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "2114241435067470261",
+      "status": "rejected",
+      "reason": "特定の配信者やその家族への非難が中心で、子育ての実用情報ではない。",
+      "tags": [
+        "掲載対象外",
+        "内容未確認"
+      ],
+      "verificationStatus": "unverified",
+      "parentingRelevant": false,
+      "reviewKind": "topic-relevance",
+      "sourceFactChecked": false,
+      "allAges": true,
+      "collectionPath": "collections/2026-10-25/kosodate-213500.json",
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "2114229655893094888",
+      "status": "rejected",
+      "reason": "同僚の昇格や勤務を巡る職場の不満が中心で、本人の子育て経験や育休の条件を読み取れない。",
+      "tags": [
+        "掲載対象外",
+        "内容未確認"
+      ],
+      "verificationStatus": "unverified",
+      "parentingRelevant": false,
+      "reviewKind": "topic-relevance",
+      "sourceFactChecked": false,
+      "allAges": true,
+      "collectionPath": "collections/2026-10-25/kosodate-213500.json",
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "2112374961998614992",
+      "status": "rejected",
+      "reason": "少子化を巡る性別の対立が中心で、当事者の育児の工夫や具体的な体験を読み取れない。",
+      "tags": [
+        "掲載対象外",
+        "内容未確認"
+      ],
+      "verificationStatus": "unverified",
+      "parentingRelevant": false,
+      "reviewKind": "topic-relevance",
+      "sourceFactChecked": false,
+      "allAges": true,
+      "collectionPath": "collections/2026-10-25/kosodate-213500.json",
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "2106974484297343243",
+      "status": "approved",
+      "reason": "小学6年生の勉強時間と休息についての意見。特定の学校や家庭の実態を確認した資料とは扱わない。 審査は収集本文と子育てへの関連についてのみ行い、投稿内容の真偽は確認していない。",
+      "tags": [
+        "家庭学習",
+        "習い事・塾",
+        "休息",
+        "意見・議論",
+        "内容未確認"
+      ],
+      "verificationStatus": "unverified",
+      "parentingRelevant": true,
+      "reviewKind": "topic-relevance",
+      "sourceFactChecked": false,
+      "ageGroups": [
+        "小学生"
+      ],
+      "ageBasis": "収集本文に明示された年齢・段階による分類。利用条件や発達の判断を示すものではない。",
+      "collectionPath": "collections/2026-10-25/kosodate-213500.json",
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "2113134574507278502",
+      "status": "rejected",
+      "reason": "結婚と費用負担への一般的な批判が中心で、子育ての具体的な工夫や本人の体験が示されていない。",
+      "tags": [
+        "掲載対象外",
+        "内容未確認"
+      ],
+      "verificationStatus": "unverified",
+      "parentingRelevant": false,
+      "reviewKind": "topic-relevance",
+      "sourceFactChecked": false,
+      "allAges": true,
+      "collectionPath": "collections/2026-10-25/kosodate-213500.json",
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "2113912404178522348",
+      "status": "approved",
+      "reason": "育児中の遊び方や寝かしつけを家族に伝えたとする本人の体験。遊びと睡眠の因果を確かめた情報としては扱わない。 審査は収集本文と子育てへの関連についてのみ行い、投稿内容の真偽は確認していない。",
+      "tags": [
+        "家事・育児の分担",
+        "寝かしつけ",
+        "体験談",
+        "内容未確認"
+      ],
+      "verificationStatus": "unverified",
+      "parentingRelevant": true,
+      "reviewKind": "topic-relevance",
+      "sourceFactChecked": false,
+      "allAges": true,
+      "collectionPath": "collections/2026-10-25/kosodate-213500.json",
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "2113190056525693179",
+      "status": "rejected",
+      "reason": "産後の食事制限を否定する内容で、医療や栄養の助言を裏付ける根拠を確認できない。",
+      "tags": [
+        "掲載対象外",
+        "内容未確認"
+      ],
+      "verificationStatus": "unverified",
+      "parentingRelevant": false,
+      "reviewKind": "topic-relevance",
+      "sourceFactChecked": false,
+      "allAges": true,
+      "collectionPath": "collections/2026-10-25/kosodate-213500.json",
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "2113623619272376460",
+      "status": "approved",
+      "reason": "7歳・4歳・1歳の子どもがいる家庭を例に、復職と家事育児の分担を考える意見。特定の働き方を一律に勧める情報とは扱わない。 審査は収集本文と子育てへの関連についてのみ行い、投稿内容の真偽は確認していない。",
+      "tags": [
+        "共働き・育休",
+        "家事・育児の分担",
+        "意見・議論",
+        "内容未確認"
+      ],
+      "verificationStatus": "unverified",
+      "parentingRelevant": true,
+      "reviewKind": "topic-relevance",
+      "sourceFactChecked": false,
+      "ageGroups": [
+        "1〜2歳",
+        "3〜5歳",
+        "小学生"
+      ],
+      "ageBasis": "収集本文に明示された年齢・段階による分類。利用条件や発達の判断を示すものではない。",
+      "collectionPath": "collections/2026-10-25/kosodate-213500.json",
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "2112322656540520657",
+      "status": "approved",
+      "reason": "注射を嫌がる子どもに付き添った本人の体験。受診時の子どもとの関わり方として掲載し、接種方法や治療の案内には用いない。 審査は収集本文と子育てへの関連についてのみ行い、投稿内容の真偽は確認していない。",
+      "tags": [
+        "受診の体験",
+        "子どもとの会話",
+        "体験談",
+        "内容未確認"
+      ],
+      "verificationStatus": "unverified",
+      "parentingRelevant": true,
+      "reviewKind": "topic-relevance",
+      "sourceFactChecked": false,
+      "allAges": true,
+      "collectionPath": "collections/2026-10-25/kosodate-213500.json",
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "2113917441860587800",
+      "status": "approved",
+      "reason": "赤ちゃんの寝かしつけについて他の家庭の体験を求める相談。本文の例を推奨する方法として紹介するものではない。 審査は収集本文と子育てへの関連についてのみ行い、投稿内容の真偽は確認していない。",
+      "tags": [
+        "寝かしつけ",
+        "育児の悩み",
+        "質問・相談",
+        "内容未確認"
+      ],
+      "verificationStatus": "unverified",
+      "parentingRelevant": true,
+      "reviewKind": "topic-relevance",
+      "sourceFactChecked": false,
+      "ageGroups": [
+        "0歳"
+      ],
+      "ageBasis": "収集本文に明示された年齢・段階による分類。利用条件や発達の判断を示すものではない。",
+      "collectionPath": "collections/2026-10-25/kosodate-213500.json",
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "2113057882799558953",
+      "status": "approved",
+      "reason": "育児で疲れている保護者に声をかけたという本人の体験。周囲の支えを考える話題として掲載し、相手の状況や出来事の真偽は確認していない。 審査は収集本文と子育てへの関連についてのみ行い、投稿内容の真偽は確認していない。",
+      "tags": [
+        "産後",
+        "育児の負担",
+        "祖父母・地域",
+        "体験談",
+        "内容未確認"
+      ],
+      "verificationStatus": "unverified",
+      "parentingRelevant": true,
+      "reviewKind": "topic-relevance",
+      "sourceFactChecked": false,
+      "allAges": true,
+      "collectionPath": "collections/2026-10-25/kosodate-213500.json",
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "2107960661024067729",
+      "status": "approved",
+      "reason": "妊娠と出産の負担や自分の選択を語る本人の体験。症状や出産の間隔についての医療上の案内には用いない。 審査は収集本文と子育てへの関連についてのみ行い、投稿内容の真偽は確認していない。",
+      "tags": [
+        "妊娠・出産",
+        "育児の負担",
+        "体験談",
+        "内容未確認"
+      ],
+      "verificationStatus": "unverified",
+      "parentingRelevant": true,
+      "reviewKind": "topic-relevance",
+      "sourceFactChecked": false,
+      "ageGroups": [
+        "妊娠中"
+      ],
+      "ageBasis": "収集本文に明示された年齢・段階による分類。利用条件や発達の判断を示すものではない。",
+      "collectionPath": "collections/2026-10-25/kosodate-213500.json",
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "2113616844687073465",
+      "status": "rejected",
+      "reason": "著名人の振る舞いへの感想が中心で、育児の対応の内容が本文だけでは分からない。",
+      "tags": [
+        "掲載対象外",
+        "内容未確認"
+      ],
+      "verificationStatus": "unverified",
+      "parentingRelevant": false,
+      "reviewKind": "topic-relevance",
+      "sourceFactChecked": false,
+      "allAges": true,
+      "collectionPath": "collections/2026-10-25/kosodate-213500.json",
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "2112310098299437360",
+      "status": "rejected",
+      "reason": "教員の労働と授業の運営の議論が中心で、保護者や子どもが使える具体的な内容を本文から読み取れない。",
+      "tags": [
+        "掲載対象外",
+        "内容未確認"
+      ],
+      "verificationStatus": "unverified",
+      "parentingRelevant": false,
+      "reviewKind": "topic-relevance",
+      "sourceFactChecked": false,
+      "allAges": true,
+      "collectionPath": "collections/2026-10-25/kosodate-213500.json",
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "2114275375299826080",
+      "status": "rejected",
+      "reason": "大学の紹介が中心で、掲載対象である妊娠中から小学生までの実用情報ではない。",
+      "tags": [
+        "掲載対象外",
+        "内容未確認"
+      ],
+      "verificationStatus": "unverified",
+      "parentingRelevant": false,
+      "reviewKind": "topic-relevance",
+      "sourceFactChecked": false,
+      "allAges": true,
+      "collectionPath": "collections/2026-10-25/kosodate-213500.json",
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "2113741846275109375",
+      "status": "rejected",
+      "reason": "第三者の家庭への非難と事故の仮定が中心で、当事者の体験や安全上の根拠を確認できない。",
+      "tags": [
+        "掲載対象外",
+        "内容未確認"
+      ],
+      "verificationStatus": "unverified",
+      "parentingRelevant": false,
+      "reviewKind": "topic-relevance",
+      "sourceFactChecked": false,
+      "allAges": true,
+      "collectionPath": "collections/2026-10-25/kosodate-213500.json",
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "2114297519421456449",
+      "status": "rejected",
+      "reason": "写真を指す短い説明だけで子育ての内容を判断できず、本文に高校生の話も含まれている。",
+      "tags": [
+        "掲載対象外",
+        "内容未確認"
+      ],
+      "verificationStatus": "unverified",
+      "parentingRelevant": false,
+      "reviewKind": "topic-relevance",
+      "sourceFactChecked": false,
+      "allAges": true,
+      "collectionPath": "collections/2026-10-25/kosodate-213500.json",
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "2114281356050272496",
+      "status": "rejected",
+      "reason": "終了した出演の報告が中心で、家族が参加できる日程や子育ての実用情報が示されていない。",
+      "tags": [
+        "掲載対象外",
+        "内容未確認"
+      ],
+      "verificationStatus": "unverified",
+      "parentingRelevant": false,
+      "reviewKind": "topic-relevance",
+      "sourceFactChecked": false,
+      "allAges": true,
+      "collectionPath": "collections/2026-10-25/kosodate-213500.json",
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "2113971602782343514",
+      "status": "rejected",
+      "reason": "保育サービスの利用条件と変更時期を断定しており、自治体の制度の根拠や対象範囲を確認できない。",
+      "tags": [
+        "掲載対象外",
+        "内容未確認"
+      ],
+      "verificationStatus": "unverified",
+      "parentingRelevant": false,
+      "reviewKind": "topic-relevance",
+      "sourceFactChecked": false,
+      "allAges": true,
+      "collectionPath": "collections/2026-10-25/kosodate-213500.json",
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "2113390024268136749",
+      "status": "rejected",
+      "reason": "家庭への強い評価が中心で、状況に応じた子どもへの関わり方を本文から読み取れない。",
+      "tags": [
+        "掲載対象外",
+        "内容未確認"
+      ],
+      "verificationStatus": "unverified",
+      "parentingRelevant": false,
+      "reviewKind": "topic-relevance",
+      "sourceFactChecked": false,
+      "allAges": true,
+      "collectionPath": "collections/2026-10-25/kosodate-213500.json",
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "2114285839190794677",
+      "status": "rejected",
+      "reason": "募集企画で紹介された第三者の話で、本人の体験かや元の投稿の経緯を確認できない。",
+      "tags": [
+        "掲載対象外",
+        "内容未確認"
+      ],
+      "verificationStatus": "unverified",
+      "parentingRelevant": false,
+      "reviewKind": "topic-relevance",
+      "sourceFactChecked": false,
+      "allAges": true,
+      "collectionPath": "collections/2026-10-25/kosodate-213500.json",
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "2113637064470122592",
+      "status": "approved",
+      "reason": "母親を亡くした娘が語った夢についての家族の体験。子どもの気持ちとの関わりを考える話題として掲載し、専門的な助言とは扱わない。 審査は収集本文と子育てへの関連についてのみ行い、投稿内容の真偽は確認していない。",
+      "tags": [
+        "家族の会話",
+        "子どもの気持ち",
+        "体験談",
+        "内容未確認"
+      ],
+      "verificationStatus": "unverified",
+      "parentingRelevant": true,
+      "reviewKind": "topic-relevance",
+      "sourceFactChecked": false,
+      "allAges": true,
+      "collectionPath": "collections/2026-10-25/kosodate-213500.json",
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "2114317481418572147",
+      "status": "rejected",
+      "reason": "動画の見出しだけで、育児と仕事の具体的な体験や工夫を本文から判断できない。",
+      "tags": [
+        "掲載対象外",
+        "内容未確認"
+      ],
+      "verificationStatus": "unverified",
+      "parentingRelevant": false,
+      "reviewKind": "topic-relevance",
+      "sourceFactChecked": false,
+      "allAges": true,
+      "collectionPath": "collections/2026-10-25/kosodate-213500.json",
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "2114052500118732938",
+      "status": "rejected",
+      "reason": "里親と養子縁組、保育の仕組みを混同する推測が含まれ、制度の説明として掲載できない。",
+      "tags": [
+        "掲載対象外",
+        "内容未確認"
+      ],
+      "verificationStatus": "unverified",
+      "parentingRelevant": false,
+      "reviewKind": "topic-relevance",
+      "sourceFactChecked": false,
+      "allAges": true,
+      "collectionPath": "collections/2026-10-25/kosodate-213500.json",
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "2113889943420568016",
+      "status": "rejected",
+      "reason": "外国人の子どもや保護者への排他的な主張と伝聞が中心で、子育ての実用情報ではない。",
+      "tags": [
+        "掲載対象外",
+        "内容未確認"
+      ],
+      "verificationStatus": "unverified",
+      "parentingRelevant": false,
+      "reviewKind": "topic-relevance",
+      "sourceFactChecked": false,
+      "allAges": true,
+      "collectionPath": "collections/2026-10-25/kosodate-213500.json",
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "2114141804190949662",
+      "status": "rejected",
+      "reason": "特定の子どもの作品への批判が中心で、子育ての実用情報ではない。",
+      "tags": [
+        "掲載対象外",
+        "内容未確認"
+      ],
+      "verificationStatus": "unverified",
+      "parentingRelevant": false,
+      "reviewKind": "topic-relevance",
+      "sourceFactChecked": false,
+      "allAges": true,
+      "collectionPath": "collections/2026-10-25/kosodate-213500.json",
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "2113994140283482170",
+      "status": "rejected",
+      "reason": "特定の保護者への非難が中心で、本人の子育て経験や具体的な対応を読み取れない。",
+      "tags": [
+        "掲載対象外",
+        "内容未確認"
+      ],
+      "verificationStatus": "unverified",
+      "parentingRelevant": false,
+      "reviewKind": "topic-relevance",
+      "sourceFactChecked": false,
+      "allAges": true,
+      "collectionPath": "collections/2026-10-25/kosodate-213500.json",
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "2108763972530999390",
+      "status": "approved",
+      "reason": "子どもの納得を待つ難しさについて、公園から帰る場面を例に述べる意見。発達障害の特徴を断定する説明としては用いない。 審査は収集本文と子育てへの関連についてのみ行い、投稿内容の真偽は確認していない。",
+      "tags": [
+        "イヤイヤ期",
+        "発達",
+        "育児の負担",
+        "意見・議論",
+        "内容未確認"
+      ],
+      "verificationStatus": "unverified",
+      "parentingRelevant": true,
+      "reviewKind": "topic-relevance",
+      "sourceFactChecked": false,
+      "allAges": true,
+      "collectionPath": "collections/2026-10-25/kosodate-213500.json",
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "2114175112484417554",
+      "status": "rejected",
+      "reason": "食事の取り分を巡る話が途中で終わり、育児の分担についての結論や経緯を十分に読み取れない。",
+      "tags": [
+        "掲載対象外",
+        "内容未確認"
+      ],
+      "verificationStatus": "unverified",
+      "parentingRelevant": false,
+      "reviewKind": "topic-relevance",
+      "sourceFactChecked": false,
+      "allAges": true,
+      "collectionPath": "collections/2026-10-25/kosodate-213500.json",
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "2114206514043130136",
+      "status": "rejected",
+      "reason": "運動会の景品への感想だけで、参加できる催しの案内や子育ての具体的な工夫が示されていない。",
+      "tags": [
+        "掲載対象外",
+        "内容未確認"
+      ],
+      "verificationStatus": "unverified",
+      "parentingRelevant": false,
+      "reviewKind": "topic-relevance",
+      "sourceFactChecked": false,
+      "allAges": true,
+      "collectionPath": "collections/2026-10-25/kosodate-213500.json",
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "2113563197387030777",
+      "status": "rejected",
+      "reason": "実名風の登場人物を伴う家庭内の争いの話で、本人の体験かや出来事の経緯を判断できない。",
+      "tags": [
+        "掲載対象外",
+        "内容未確認"
+      ],
+      "verificationStatus": "unverified",
+      "parentingRelevant": false,
+      "reviewKind": "topic-relevance",
+      "sourceFactChecked": false,
+      "allAges": true,
+      "collectionPath": "collections/2026-10-25/kosodate-213500.json",
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "2114008867789259194",
+      "status": "rejected",
+      "reason": "商品を指す一文だけで商品名や用途を特定できず、効果の主張も確認できない。",
+      "tags": [
+        "掲載対象外",
+        "内容未確認"
+      ],
+      "verificationStatus": "unverified",
+      "parentingRelevant": false,
+      "reviewKind": "topic-relevance",
+      "sourceFactChecked": false,
+      "allAges": true,
+      "collectionPath": "collections/2026-10-25/kosodate-213500.json",
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "2113818207769575511",
+      "status": "approved",
+      "reason": "5歳の子どもの強い感情への関わり方に悩む本人の体験。年齢による症状や診断の情報とは扱わない。 審査は収集本文と子育てへの関連についてのみ行い、投稿内容の真偽は確認していない。",
+      "tags": [
+        "子どもの気持ち",
+        "育児の悩み",
+        "体験談",
+        "内容未確認"
+      ],
+      "verificationStatus": "unverified",
+      "parentingRelevant": true,
+      "reviewKind": "topic-relevance",
+      "sourceFactChecked": false,
+      "ageGroups": [
+        "3〜5歳"
+      ],
+      "ageBasis": "収集本文に明示された年齢・段階による分類。利用条件や発達の判断を示すものではない。",
+      "collectionPath": "collections/2026-10-25/kosodate-213500.json",
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "2106730584148148246",
+      "status": "rejected",
+      "reason": "妊娠や出産の合併症についての一般的な主張で、医療上の根拠を確認できない。",
+      "tags": [
+        "掲載対象外",
+        "内容未確認"
+      ],
+      "verificationStatus": "unverified",
+      "parentingRelevant": false,
+      "reviewKind": "topic-relevance",
+      "sourceFactChecked": false,
+      "allAges": true,
+      "collectionPath": "collections/2026-10-25/kosodate-213500.json",
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "2113500088949731501",
+      "status": "rejected",
+      "reason": "写真を参照する調理の勧めだけで、材料や手順、対象の月齢を本文から判断できない。",
+      "tags": [
+        "掲載対象外",
+        "内容未確認"
+      ],
+      "verificationStatus": "unverified",
+      "parentingRelevant": false,
+      "reviewKind": "topic-relevance",
+      "sourceFactChecked": false,
+      "allAges": true,
+      "collectionPath": "collections/2026-10-25/kosodate-213500.json",
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "2113251294265975171",
+      "status": "rejected",
+      "reason": "楽曲や芸能人のファンとしての話が中心で、保護者に役立つ育児の内容を読み取れない。",
+      "tags": [
+        "掲載対象外",
+        "内容未確認"
+      ],
+      "verificationStatus": "unverified",
+      "parentingRelevant": false,
+      "reviewKind": "topic-relevance",
+      "sourceFactChecked": false,
+      "allAges": true,
+      "collectionPath": "collections/2026-10-25/kosodate-213500.json",
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "2114182484925829410",
+      "status": "rejected",
+      "reason": "特定の不登校の家庭への侮辱が中心で、子どもや保護者を支える具体的な内容ではない。",
+      "tags": [
+        "掲載対象外",
+        "内容未確認"
+      ],
+      "verificationStatus": "unverified",
+      "parentingRelevant": false,
+      "reviewKind": "topic-relevance",
+      "sourceFactChecked": false,
+      "allAges": true,
+      "collectionPath": "collections/2026-10-25/kosodate-213500.json",
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "2114225659644141706",
+      "status": "rejected",
+      "reason": "子ども時代の下品な冗談の思い出が中心で、子育ての実用情報ではない。",
+      "tags": [
+        "掲載対象外",
+        "内容未確認"
+      ],
+      "verificationStatus": "unverified",
+      "parentingRelevant": false,
+      "reviewKind": "topic-relevance",
+      "sourceFactChecked": false,
+      "allAges": true,
+      "collectionPath": "collections/2026-10-25/kosodate-213500.json",
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "2113803194690416904",
+      "status": "approved",
+      "reason": "10か月の子どもが離乳食を食べず、疲れを感じている本人の体験。食べる量や形状の目安を勧める情報としては用いない。 審査は収集本文と子育てへの関連についてのみ行い、投稿内容の真偽は確認していない。",
+      "tags": [
+        "離乳食",
+        "育児の悩み",
+        "体験談",
+        "内容未確認"
+      ],
+      "verificationStatus": "unverified",
+      "parentingRelevant": true,
+      "reviewKind": "topic-relevance",
+      "sourceFactChecked": false,
+      "ageGroups": [
+        "0歳"
+      ],
+      "ageBasis": "収集本文に明示された年齢・段階による分類。利用条件や発達の判断を示すものではない。",
+      "collectionPath": "collections/2026-10-25/kosodate-213500.json",
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "2109782718670311641",
+      "status": "rejected",
+      "reason": "海外の教育に関する伝聞と数値が中心で、元の資料や発言の経緯を確認できない。",
+      "tags": [
+        "掲載対象外",
+        "内容未確認"
+      ],
+      "verificationStatus": "unverified",
+      "parentingRelevant": false,
+      "reviewKind": "topic-relevance",
+      "sourceFactChecked": false,
+      "allAges": true,
+      "collectionPath": "collections/2026-10-25/kosodate-213500.json",
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "2108135325197602849",
+      "status": "approved",
+      "reason": "家庭と学校それぞれの子どもへの関わりについての意見。学校の義務や個別の支援範囲を説明する資料とは扱わない。 審査は収集本文と子育てへの関連についてのみ行い、投稿内容の真偽は確認していない。",
+      "tags": [
+        "学校との関わり",
+        "家庭での関わり",
+        "意見・議論",
+        "内容未確認"
+      ],
+      "verificationStatus": "unverified",
+      "parentingRelevant": true,
+      "reviewKind": "topic-relevance",
+      "sourceFactChecked": false,
+      "allAges": true,
+      "collectionPath": "collections/2026-10-25/kosodate-213500.json",
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "2114255293945422307",
+      "status": "approved",
+      "reason": "購入済みと購入予定の出産準備品の費用を示す本人の体験。すべての家庭に必要な金額や、現在の商品の価格を示すものではない。 審査は収集本文と子育てへの関連についてのみ行い、投稿内容の真偽は確認していない。",
+      "tags": [
+        "出産準備",
+        "買い物・家計",
+        "体験談",
+        "内容未確認"
+      ],
+      "verificationStatus": "unverified",
+      "parentingRelevant": true,
+      "reviewKind": "topic-relevance",
+      "sourceFactChecked": false,
+      "ageGroups": [
+        "妊娠中"
+      ],
+      "ageBasis": "収集本文に明示された年齢・段階による分類。利用条件や発達の判断を示すものではない。",
+      "collectionPath": "collections/2026-10-25/kosodate-213500.json",
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "2113951804048490894",
+      "status": "rejected",
+      "reason": "育児漫画の告知だけで、子どもへの関わりの具体的な内容を収集本文から判断できない。",
+      "tags": [
+        "掲載対象外",
+        "内容未確認"
+      ],
+      "verificationStatus": "unverified",
+      "parentingRelevant": false,
+      "reviewKind": "topic-relevance",
+      "sourceFactChecked": false,
+      "allAges": true,
+      "collectionPath": "collections/2026-10-25/kosodate-213500.json",
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "2114220425349939664",
+      "status": "rejected",
+      "reason": "政党や選挙活動への批判が中心で、日々の子育てに直接使える実用情報ではない。",
+      "tags": [
+        "掲載対象外",
+        "内容未確認"
+      ],
+      "verificationStatus": "unverified",
+      "parentingRelevant": false,
+      "reviewKind": "topic-relevance",
+      "sourceFactChecked": false,
+      "allAges": true,
+      "collectionPath": "collections/2026-10-25/kosodate-213500.json",
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "2113184745685455091",
+      "status": "rejected",
+      "reason": "特定の人物の育児をからかう内容が中心で、当事者の体験や具体的な工夫を読み取れない。",
+      "tags": [
+        "掲載対象外",
+        "内容未確認"
+      ],
+      "verificationStatus": "unverified",
+      "parentingRelevant": false,
+      "reviewKind": "topic-relevance",
+      "sourceFactChecked": false,
+      "allAges": true,
+      "collectionPath": "collections/2026-10-25/kosodate-213500.json",
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "2114206816808898698",
+      "status": "approved",
+      "reason": "失敗を怖がる長男に生まれた日の話をしたという本人の体験。親子の会話として掲載し、出来事の真偽は確認していない。 審査は収集本文と子育てへの関連についてのみ行い、投稿内容の真偽は確認していない。",
+      "tags": [
+        "子どもとの会話",
+        "子どもの気持ち",
+        "体験談",
+        "内容未確認"
+      ],
+      "verificationStatus": "unverified",
+      "parentingRelevant": true,
+      "reviewKind": "topic-relevance",
+      "sourceFactChecked": false,
+      "allAges": true,
+      "collectionPath": "collections/2026-10-25/kosodate-213500.json",
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "2114161688664826297",
+      "status": "rejected",
+      "reason": "第三者の子どもの能力や家族の職業への推測を含み、元の動画を見ずに関わりの内容を判断できない。",
+      "tags": [
+        "掲載対象外",
+        "内容未確認"
+      ],
+      "verificationStatus": "unverified",
+      "parentingRelevant": false,
+      "reviewKind": "topic-relevance",
+      "sourceFactChecked": false,
+      "allAges": true,
+      "collectionPath": "collections/2026-10-25/kosodate-213500.json",
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "2113759945623802105",
+      "status": "rejected",
+      "reason": "性別を巡る対立が中心で、家庭での育児の分担や具体的な対応を読み取れない。",
+      "tags": [
+        "掲載対象外",
+        "内容未確認"
+      ],
+      "verificationStatus": "unverified",
+      "parentingRelevant": false,
+      "reviewKind": "topic-relevance",
+      "sourceFactChecked": false,
+      "allAges": true,
+      "collectionPath": "collections/2026-10-25/kosodate-213500.json",
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "2112493805849207088",
+      "status": "rejected",
+      "reason": "給付の対象や金額、在留の条件への断定を含む政治的な主張で、制度の根拠を確認できない。",
+      "tags": [
+        "掲載対象外",
+        "内容未確認"
+      ],
+      "verificationStatus": "unverified",
+      "parentingRelevant": false,
+      "reviewKind": "topic-relevance",
+      "sourceFactChecked": false,
+      "allAges": true,
+      "collectionPath": "collections/2026-10-25/kosodate-213500.json",
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "2113972143600070698",
+      "status": "rejected",
+      "reason": "離乳食の進め方を一律に勧める内容だが、対象条件や実際の手順を本文から判断できない。",
+      "tags": [
+        "掲載対象外",
+        "内容未確認"
+      ],
+      "verificationStatus": "unverified",
+      "parentingRelevant": false,
+      "reviewKind": "topic-relevance",
+      "sourceFactChecked": false,
+      "allAges": true,
+      "collectionPath": "collections/2026-10-25/kosodate-213500.json",
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "2114283052948173241",
+      "status": "rejected",
+      "reason": "性別と少子化を巡る一般的な主張が中心で、当事者の育児の工夫や具体的な体験が示されていない。",
+      "tags": [
+        "掲載対象外",
+        "内容未確認"
+      ],
+      "verificationStatus": "unverified",
+      "parentingRelevant": false,
+      "reviewKind": "topic-relevance",
+      "sourceFactChecked": false,
+      "allAges": true,
+      "collectionPath": "collections/2026-10-25/kosodate-213500.json",
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "2114219419727708531",
+      "status": "rejected",
+      "reason": "特定の保護者や子どもへの非難が中心で、子育ての実用情報ではない。",
+      "tags": [
+        "掲載対象外",
+        "内容未確認"
+      ],
+      "verificationStatus": "unverified",
+      "parentingRelevant": false,
+      "reviewKind": "topic-relevance",
+      "sourceFactChecked": false,
+      "allAges": true,
+      "collectionPath": "collections/2026-10-25/kosodate-213500.json",
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "2113970604441579566",
+      "status": "rejected",
+      "reason": "食べられない理由の分類や受診先を示しているが、医療や発達に関する根拠を確認できない。",
+      "tags": [
+        "掲載対象外",
+        "内容未確認"
+      ],
+      "verificationStatus": "unverified",
+      "parentingRelevant": false,
+      "reviewKind": "topic-relevance",
+      "sourceFactChecked": false,
+      "allAges": true,
+      "collectionPath": "collections/2026-10-25/kosodate-213500.json",
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "2114225721610518853",
+      "status": "rejected",
+      "reason": "運動会の楽曲と芸能人のファンとしての話が中心で、子育ての具体的な工夫や催しの案内ではない。",
+      "tags": [
+        "掲載対象外",
+        "内容未確認"
+      ],
+      "verificationStatus": "unverified",
+      "parentingRelevant": false,
+      "reviewKind": "topic-relevance",
+      "sourceFactChecked": false,
+      "allAges": true,
+      "collectionPath": "collections/2026-10-25/kosodate-213500.json",
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "2114235043703091345",
+      "status": "rejected",
+      "reason": "大学受験と性別を巡る批判が中心で、妊娠中から小学生までの子育ての実用情報ではない。",
+      "tags": [
+        "掲載対象外",
+        "内容未確認"
+      ],
+      "verificationStatus": "unverified",
+      "parentingRelevant": false,
+      "reviewKind": "topic-relevance",
+      "sourceFactChecked": false,
+      "allAges": true,
+      "collectionPath": "collections/2026-10-25/kosodate-213500.json",
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "2113181928061104314",
+      "status": "approved",
+      "reason": "産後のお宮参りで感じた家族の関わりを振り返る本人の体験。産前産後の支えを考える話題として掲載し、家庭一般への結論とは扱わない。 審査は収集本文と子育てへの関連についてのみ行い、投稿内容の真偽は確認していない。",
+      "tags": [
+        "産後",
+        "家族の関わり",
+        "体験談",
+        "内容未確認"
+      ],
+      "verificationStatus": "unverified",
+      "parentingRelevant": true,
+      "reviewKind": "topic-relevance",
+      "sourceFactChecked": false,
+      "allAges": true,
+      "collectionPath": "collections/2026-10-25/kosodate-213500.json",
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "2111998504466042948",
+      "status": "approved",
+      "reason": "自身の出産を友人に話したという本人の体験。帝王切開や陣痛、出血の経過を医療上の目安や一般的な経過として紹介するものではない。 審査は収集本文と子育てへの関連についてのみ行い、投稿内容の真偽は確認していない。",
+      "tags": [
+        "妊娠・出産",
+        "出産の体験",
+        "体験談",
+        "内容未確認"
+      ],
+      "verificationStatus": "unverified",
+      "parentingRelevant": true,
+      "reviewKind": "topic-relevance",
+      "sourceFactChecked": false,
+      "ageGroups": [
+        "妊娠中"
+      ],
+      "ageBasis": "収集本文に明示された年齢・段階による分類。利用条件や発達の判断を示すものではない。",
+      "collectionPath": "collections/2026-10-25/kosodate-213500.json",
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "2109954801286959315",
+      "status": "rejected",
+      "reason": "不登校の家庭を一括りに批判する内容が中心で、状況に応じた学びの支援を本文から読み取れない。",
+      "tags": [
+        "掲載対象外",
+        "内容未確認"
+      ],
+      "verificationStatus": "unverified",
+      "parentingRelevant": false,
+      "reviewKind": "topic-relevance",
+      "sourceFactChecked": false,
+      "allAges": true,
+      "collectionPath": "collections/2026-10-25/kosodate-213500.json",
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "2112371473616867553",
+      "status": "rejected",
+      "reason": "給付の対象を国籍で制限する政治的な主張で、制度の条件に関する根拠を確認できない。",
+      "tags": [
+        "掲載対象外",
+        "内容未確認"
+      ],
+      "verificationStatus": "unverified",
+      "parentingRelevant": false,
+      "reviewKind": "topic-relevance",
+      "sourceFactChecked": false,
+      "allAges": true,
+      "collectionPath": "collections/2026-10-25/kosodate-213500.json",
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "2114180700916371854",
+      "status": "rejected",
+      "reason": "政治の方針や予算への主張が中心で、家庭で利用できる支援や育児の具体的な案内ではない。",
+      "tags": [
+        "掲載対象外",
+        "内容未確認"
+      ],
+      "verificationStatus": "unverified",
+      "parentingRelevant": false,
+      "reviewKind": "topic-relevance",
+      "sourceFactChecked": false,
+      "allAges": true,
+      "collectionPath": "collections/2026-10-25/kosodate-213500.json",
+      "reviewedAt": "2026-10-25"
+    },
+    {
+      "id": "2114289862719484078",
+      "status": "rejected",
+      "reason": "発達障害と育て方の関係を断定しており、医療や発達に関する根拠を確認できない。",
+      "tags": [
+        "掲載対象外",
+        "内容未確認"
+      ],
+      "verificationStatus": "unverified",
+      "parentingRelevant": false,
+      "reviewKind": "topic-relevance",
+      "sourceFactChecked": false,
+      "allAges": true,
+      "collectionPath": "collections/2026-10-25/kosodate-213500.json",
+      "reviewedAt": "2026-10-25"
     }
   ],
   "additionalPosts": [

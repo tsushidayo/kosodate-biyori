@@ -48,7 +48,7 @@ export function matchesPurchaseMode(offer:PriceRecord,mode='すべて'){
 function isStore(offer:PriceRecord){return ['store','pickup'].includes(purchaseKind(offer));}
 export function normalizeOffer(product: PriceRecord, offer: PriceRecord, now = Date.now()): NormalizedOffer {
   const milk = product.category === "ミルク";
-  const nominalGrams = Number(String(product.unit || product.name || "").match(/(\d+(?:\.\d+)?)\s*g/i)?.[1]) || null;
+  const nominalGrams = Number([product.unit,product.name].filter(Boolean).join(' ').match(/(\d+(?:\.\d+)?)\s*g/i)?.[1]) || null;
   const quantity = offer.quantity;
   const grams = offer.totalGrams;
   const massUnit = finitePositive(grams);
@@ -60,7 +60,7 @@ export function normalizeOffer(product: PriceRecord, offer: PriceRecord, now = D
   let quantityLabel = finitePositive(quantity) ? `${amount(quantity)}${unitLabel === "100g" ? "個" : unitLabel}` : "数量未確認";
   let bonusGrams = 0;
   if (milk && nominalGrams && finitePositive(quantity)) {
-    quantityLabel = `${amount(nominalGrams)}g × ${amount(quantity)}缶`;
+    quantityLabel = `${amount(nominalGrams)}g × ${amount(quantity)}${product.packUnit||'缶'}`;
     if (massUnit && grams > nominalGrams * quantity) {
       bonusGrams = grams - nominalGrams * quantity;
       quantityLabel += ` ＋ ${amount(bonusGrams)}g`;
@@ -77,7 +77,7 @@ export function normalizeOffer(product: PriceRecord, offer: PriceRecord, now = D
   if (!finiteNonnegative(offer.price)) ineligibleReason = "価格未確認";
   else if (!finiteNonnegative(offer.shipping)) ineligibleReason = "送料未確認";
   else if (!finitePositive(quantity) || !Number.isInteger(quantity)) ineligibleReason = "数量未確認";
-  else if ((milk || offer.unitLabel === "100g") && !massUnit) ineligibleReason = "容量未確認";
+  else if ((milk&&product.formulation!=='liquid' || offer.unitLabel === "100g") && !massUnit) ineligibleReason = "容量未確認";
   else if (offer.available===null && (offer.stockVerified===false||offer.availabilityVerified===false)) ineligibleReason = "在庫未確認";
   else if (offer.available===false) ineligibleReason = "売り切れ";
   else if (/売り切れ|売切|在庫なし|入荷待ち|価格表示に差|価格不明|未確認|店舗未指定|要確認|要再確認/.test(String(offer.status ?? ""))) ineligibleReason = String(offer.status);

@@ -66,11 +66,21 @@ function robotsAllows(text,path){
 export async function refreshPrices(input,{maxRequests=20,fetchImpl=fetch,now=new Date().toISOString()}={}){
  const data=structuredClone(input), cache=new Map(),robots=new Map();let requested=0,success=0,failed=0;
  const cap=Math.max(1,Math.min(40,Number(maxRequests)||20));
- for(const product of data.products??[]){
-  for(const offer of product.offers??[]){
-   const url=registeredUrl(offer.source);
-   if(!offer.refreshEligible||!url)continue;
-   if(!cache.has(url.href)&&requested>=cap)continue;
+ // Rotate product pages by the last attempt, including failed checks. A fixed
+ // prefix would otherwise be checked every day while later products go stale.
+ // Group repeated URLs so one bounded page fetch can refresh every registered
+ // offer on that page without spending another slot.
+ const pages=new Map();
+ for(const product of data.products??[])for(const offer of product.offers??[]){
+  const url=registeredUrl(offer.source);if(!offer.refreshEligible||!url)continue;
+  const attempted=Date.parse(offer.lastAttemptAt||offer.checkedAt||'')||0;
+  const page=pages.get(url.href)||{url,attempted,entries:[]};
+  page.attempted=Math.max(page.attempted,attempted);page.entries.push({product,offer});pages.set(url.href,page);
+ }
+ const scheduled=[...pages.values()].sort((a,b)=>a.attempted-b.attempted).slice(0,cap);
+ for(const page of scheduled){
+  const {url}=page;
+  for(const {product,offer} of page.entries){
    offer.lastAttemptAt=now;
    try{
     if(!robots.has(url.origin)){
@@ -100,7 +110,7 @@ export async function refreshPrices(input,{maxRequests=20,fetchImpl=fetch,now=ne
    }
   }
  }
- data.lastPriceRefresh={attemptedAt:now,requested,success,failed,maxRequests:cap};
+ data.lastPriceRefresh={attemptedAt:now,requested,success,failed,maxRequests:cap,scheduledPages:scheduled.length,remainingPages:Math.max(0,pages.size-scheduled.length)};
  if(success>0)data.updatedAt=now;
  return data;
 }

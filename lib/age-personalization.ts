@@ -89,9 +89,12 @@ export function ageTargetStatus(item:Item,children:FamilyChild[]):AgeTargetStatu
   const ranges=declared.length?declared:direct?[direct]:[];
   const groups=Array.isArray(item.ageGroups)?item.ageGroups.map(normalizedGroup).filter((g:any):g is string=>g!==null):[];
   const hasGrade=finite(item.minSchoolGrade)||finite(item.maxSchoolGrade);
-  if(!ranges.length&&!groups.length&&!hasGrade)return 'unknown';
+  const schoolYearEndAge=finite(item.schoolYearEndAge)&&item.schoolYearEndAge>=6?item.schoolYearEndAge:null;
+  if(!ranges.length&&!groups.length&&!hasGrade&&schoolYearEndAge===null)return 'unknown';
   const base=(child:FamilyChild)=>(!ranges.length||ranges.some((r:{min:number;max:number})=>child.months>=r.min&&child.months<=r.max))&&(!groups.length||groups.includes('*')||groups.includes(getAgeGroup(child.months)));
-  if(children.some(child=>base(child)&&(!hasGrade||finite(child.schoolGrade)&&(!finite(item.minSchoolGrade)||child.schoolGrade>=item.minSchoolGrade)&&(!finite(item.maxSchoolGrade)||child.schoolGrade<=item.maxSchoolGrade))))return 'matching';
+  const beforeYearEnd=(child:FamilyChild):boolean|null=>schoolYearEndAge===null?true:finite(child.schoolGrade)?child.schoolGrade<=schoolYearEndAge-6:child.months<schoolYearEndAge*12?true:child.months>=(schoolYearEndAge+1)*12?false:null;
+  if(children.some(child=>base(child)&&beforeYearEnd(child)===true&&(!hasGrade||finite(child.schoolGrade)&&(!finite(item.minSchoolGrade)||child.schoolGrade>=item.minSchoolGrade)&&(!finite(item.maxSchoolGrade)||child.schoolGrade<=item.maxSchoolGrade))))return 'matching';
+  if(children.some(child=>base(child)&&beforeYearEnd(child)===null))return 'unknown';
   if(hasGrade&&children.some(child=>base(child)&&!finite(child.schoolGrade)))return 'unknown';
   return 'not-matching';
 }

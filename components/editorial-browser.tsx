@@ -5,7 +5,7 @@ import { ArrowLeft, ArrowRight, Bookmark, Check, ChevronDown, ExternalLink, Film
 import { ageTargetStatus, type FamilyChild } from '../lib/age-personalization';
 import './editorial-browser.css';
 import { splitSocialMedia } from '../lib/social-curation';
-import { EDITORIAL_TOPICS, editorialTopics, isPracticalEditorial, practicalVideoPriority } from '../lib/editorial-quality';
+import { EDITORIAL_TOPICS, editorialTopics, editorialSearchText, isPracticalEditorial, practicalVideoPriority } from '../lib/editorial-quality';
 
 type Item = Record<string, any>;
 type Editorial = { news: Item[]; columns: Item[]; topics: Item[]; shorts?: Item[]; instagram?: Item[] };
@@ -272,7 +272,7 @@ export default function EditorialBrowser({ editorial, onOpen, onSave, savedIds, 
       if (tab === 'shorts' && videoFormat !== 'all' && item.videoFormat !== videoFormat) return false;
       const itemTags = tagsOf(item);
       if (tags.length && !(operator === 'and' ? tags.every(tag => itemTags.includes(tag)) : tags.some(tag => itemTags.includes(tag)))) return false;
-      if (needle && ![item.title, item.summary, item.text, item.authorName, item.author, sourceOf(item), ...itemTags].filter(v => typeof v === 'string').join(' ').toLocaleLowerCase('ja').includes(needle)) return false;
+      if (needle && !editorialSearchText(item).includes(needle)) return false;
       return true;
     }).sort((a,b)=>(tab==='shorts'?practicalVideoPriority(b)-practicalVideoPriority(a):tab==='news'?Number(!!b.expiresAt&&Date.parse(b.expiresAt)>Date.now())-Number(!!a.expiresAt&&Date.parse(a.expiresAt)>Date.now()):0)||dateOf(b).localeCompare(dateOf(a)));
   }, [ageItems, source, tags, operator, keyword, tab, videoFormat,topic,prefecture]);

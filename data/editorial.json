@@ -670,23 +670,6 @@
       ]
     },
     {
-      "id": "feed-https%3A%2F%2Fameblo.jp%2Fdekkaiossan9%2Fentry-12982507617.html",
-      "title": "子どもの友達に出す お菓子を妻に再打診する",
-      "summary": "ど～も～でっかいおっさんです。 子どもの友達がやってきたら おめぇの作るパンやお菓子を食べさせてやれよおぉぉぉぉ おめぇのパンやお菓子の美味しさを 世に問うてみようぜぇぇぇ と思っているおっさんは 何度か伝えてみましたが これらがお客さんに出せるレベルだと思いますか？ 何かあった",
-      "url": "https://ameblo.jp/dekkaiossan9/entry-12982507617.html",
-      "source": "でっかいおっさんの子育て相談ルーム / Ameba",
-      "publishedAt": "2026-10-24T12:22:20.000Z",
-      "checkedAt": "2026-10-25T04:47:08.047Z",
-      "category": "子育て",
-      "section": "columns",
-      "kind": "体験談",
-      "feedUrl": "https://ameblo.jp/dekkaiossan9/rss.html",
-      "ingestion": "rss",
-      "summaryKind": "feed-excerpt",
-      "readingLabel": "配信の見出し",
-      "tags": []
-    },
-    {
       "id": "research-mynavi-46251",
       "title": "発達検査のあと、次の相談へつながるまで",
       "summary": "発達検査の結果を受け取っても内容が分からず、質問もしにくかった保護者の物語を漫画で紹介。療育につながる過程を知るきっかけになります。検査結果は個別なので、わが子の支援は担当の専門家と相談しながら。",
@@ -732,30 +715,6 @@
       "readingLabel": "配信の見出し",
       "tags": [
         "遊び・学び"
-      ]
-    },
-    {
-      "id": "feed-https%3A%2F%2Fameblo.jp%2Fdekkaiossan9%2Fentry-12982192301.html",
-      "title": "我が家に初めて学校の友達がやってきた",
-      "summary": "三男バトミントンを始めるの話最初から 『親の直感は当てになるのか？ 問題』 おっさんや読者さんへのお悩み相談のしかたはこちらから↓ 相談窓口がこの数か月不具合があったみたいで携帯から送れなくなっていた模様 なのでアメブロのメッセージ…ameblo.jp ど～も～でっかいおっさんで",
-      "url": "https://ameblo.jp/dekkaiossan9/entry-12982192301.html",
-      "source": "でっかいおっさんの子育て相談ルーム / Ameba",
-      "publishedAt": "2026-10-23T12:12:52.000Z",
-      "checkedAt": "2026-10-25T04:47:08.047Z",
-      "category": "子育て",
-      "section": "columns",
-      "kind": "体験談",
-      "feedUrl": "https://ameblo.jp/dekkaiossan9/rss.html",
-      "ingestion": "rss",
-      "summaryKind": "feed-excerpt",
-      "readingLabel": "配信の見出し",
-      "ageGroups": [
-        "小学生"
-      ],
-      "ageBasis": "editorial-topic",
-      "tags": [
-        "園・学校",
-        "家族・心"
       ]
     },
     {
@@ -5689,6 +5648,964 @@
       "curation": {
         "status": "approved",
         "reason": "子育てに関連する投稿として掲載。内容の正確性は未確認",
+        "checkedAt": "2026-10-25"
+      }
+    },
+    {
+      "id": "github-x-2113040943180070916",
+      "title": "小さい子を育ててるお母さんが少し子供と離れたいって当たり前じゃん。 離れて何がしたいって 寝たい ゆ…",
+      "summary": "小さい子を育ててるお母さんが少し子供と離れたいって当たり前じゃん。 離れて何がしたいって 寝たい ゆっくり噛んで食事したい 温かいコーヒーを温かいうちに飲みたい とかそんなんじゃん。 人間なら当たり前の感情よ。 言わせて…",
+      "url": "https://x.com/501lND9c3u37853/status/2113040943180070916",
+      "source": "X / @501lND9c3u37853",
+      "sourceName": "X / @501lND9c3u37853",
+      "platform": "X",
+      "handle": "501lND9c3u37853",
+      "publishedAt": "2026-10-21T22:53:13.000Z",
+      "tags": [
+        "育児の負担",
+        "休息",
+        "意見・議論",
+        "内容未確認"
+      ],
+      "parentingUseful": true,
+      "parentingRelevant": true,
+      "verificationStatus": "unverified",
+      "allAges": true,
+      "summaryKind": "post-excerpt",
+      "readingLabel": "投稿の一部",
+      "ingestion": "github-collection",
+      "author": "楕円球",
+      "category": "育児",
+      "collectedAt": "2026-10-25T12:35:00.000Z",
+      "caution": "投稿者の体験や意見を含みます。反応の数値は収集時点の記録です。健康に関する記載は、公的な案内や医療機関でも確認してください。",
+      "metricsLabel": "収集時点の反応",
+      "recordedMetrics": {
+        "likes": 20659,
+        "views": 1052992
+      },
+      "reviewStatus": "approved",
+      "reviewReason": "育児中の休息を求める気持ちについての意見。休める時間を家族で考える話題として掲載し、事実の確認を済ませた案内とは扱わない。 審査は収集本文と子育てへの関連についてのみ行い、投稿内容の真偽は確認していない。",
+      "curation": {
+        "status": "approved",
+        "reason": "育児中の休息を求める気持ちについての意見。休める時間を家族で考える話題として掲載し、事実の確認を済ませた案内とは扱わない。 審査は収集本文と子育てへの関連についてのみ行い、投稿内容の真偽は確認していない。",
+        "checkedAt": "2026-10-25"
+      }
+    },
+    {
+      "id": "github-x-2113086315315204214",
+      "title": "うんうん、こんな感じだったー。だから現代の子が500円のシールボンボン買ってもらってんの理解できない…",
+      "summary": "うんうん、こんな感じだったー。だから現代の子が500円のシールボンボン買ってもらってんの理解できない。こういう昔の感覚背負ったままだと子育てしんどいよなー",
+      "url": "https://x.com/dB8XavApmPx1Qw9/status/2113086315315204214",
+      "source": "X / @dB8XavApmPx1Qw9",
+      "sourceName": "X / @dB8XavApmPx1Qw9",
+      "platform": "X",
+      "handle": "dB8XavApmPx1Qw9",
+      "publishedAt": "2026-10-22T01:53:31.000Z",
+      "tags": [
+        "買い物・家計",
+        "子どもとの会話",
+        "意見・議論",
+        "内容未確認"
+      ],
+      "parentingUseful": true,
+      "parentingRelevant": true,
+      "verificationStatus": "unverified",
+      "allAges": true,
+      "summaryKind": "post-excerpt",
+      "readingLabel": "投稿の一部",
+      "ingestion": "github-collection",
+      "author": "pan®︎@5y🦖3y🎀",
+      "category": "子育て",
+      "collectedAt": "2026-10-25T12:35:00.000Z",
+      "caution": "投稿者の体験や意見を含みます。反応の数値は収集時点の記録です。健康に関する記載は、公的な案内や医療機関でも確認してください。",
+      "metricsLabel": "収集時点の反応",
+      "recordedMetrics": {
+        "likes": 3208,
+        "views": 602615
+      },
+      "reviewStatus": "approved",
+      "reviewReason": "子どもの買い物と親自身の幼少期の感覚を比べた意見。家庭でのお金の使い方を考える話題として掲載する。 審査は収集本文と子育てへの関連についてのみ行い、投稿内容の真偽は確認していない。",
+      "curation": {
+        "status": "approved",
+        "reason": "子どもの買い物と親自身の幼少期の感覚を比べた意見。家庭でのお金の使い方を考える話題として掲載する。 審査は収集本文と子育てへの関連についてのみ行い、投稿内容の真偽は確認していない。",
+        "checkedAt": "2026-10-25"
+      }
+    },
+    {
+      "id": "github-x-2114037927919690189",
+      "title": "「考えますか？」に反応して「考える人」をやる1歳10ヶ月児。これはもうイヤイヤ期抜けてるのでは？",
+      "summary": "「考えますか？」に反応して「考える人」をやる1歳10ヶ月児。これはもうイヤイヤ期抜けてるのでは？",
+      "url": "https://x.com/AI7295353484626/status/2114037927919690189",
+      "source": "X / @AI7295353484626",
+      "sourceName": "X / @AI7295353484626",
+      "platform": "X",
+      "handle": "AI7295353484626",
+      "publishedAt": "2026-10-24T16:54:53.000Z",
+      "tags": [
+        "成長",
+        "子どもとの会話",
+        "体験談",
+        "内容未確認"
+      ],
+      "parentingUseful": true,
+      "parentingRelevant": true,
+      "verificationStatus": "unverified",
+      "ageGroups": [
+        "1〜2歳"
+      ],
+      "ageBasis": "収集本文に明示された年齢・段階による分類。利用条件や発達の判断を示すものではない。",
+      "summaryKind": "post-excerpt",
+      "readingLabel": "投稿の一部",
+      "ingestion": "github-collection",
+      "author": "名無しの名無し",
+      "category": "育児",
+      "collectedAt": "2026-10-25T12:35:00.000Z",
+      "caution": "投稿者の体験や意見を含みます。反応の数値は収集時点の記録です。健康に関する記載は、公的な案内や医療機関でも確認してください。",
+      "metricsLabel": "収集時点の反応",
+      "recordedMetrics": {
+        "likes": 3850,
+        "views": 586837
+      },
+      "reviewStatus": "approved",
+      "reviewReason": "1歳10か月の子どもの言葉への反応を紹介する投稿。発達段階やイヤイヤ期の終わりを判断する根拠には用いない。 審査は収集本文と子育てへの関連についてのみ行い、投稿内容の真偽は確認していない。",
+      "curation": {
+        "status": "approved",
+        "reason": "1歳10か月の子どもの言葉への反応を紹介する投稿。発達段階やイヤイヤ期の終わりを判断する根拠には用いない。 審査は収集本文と子育てへの関連についてのみ行い、投稿内容の真偽は確認していない。",
+        "checkedAt": "2026-10-25"
+      }
+    },
+    {
+      "id": "github-x-2113073174841847826",
+      "title": "乳幼児期の子育て、こう合いの手を入れる大人がもう一人いるかいないかでしんどさが大分違うよね。見守りな…",
+      "summary": "乳幼児期の子育て、こう合いの手を入れる大人がもう一人いるかいないかでしんどさが大分違うよね。見守りながら可愛いねとかご機嫌斜めだねって言ってくれるだけで精神的な負担が減る気がする",
+      "url": "https://x.com/hy__ok/status/2113073174841847826",
+      "source": "X / @hy__ok",
+      "sourceName": "X / @hy__ok",
+      "platform": "X",
+      "handle": "hy__ok",
+      "publishedAt": "2026-10-22T01:01:18.000Z",
+      "tags": [
+        "家事・育児の分担",
+        "育児の負担",
+        "意見・議論",
+        "内容未確認"
+      ],
+      "parentingUseful": true,
+      "parentingRelevant": true,
+      "verificationStatus": "unverified",
+      "ageGroups": [
+        "0歳",
+        "1〜2歳",
+        "3〜5歳"
+      ],
+      "ageBasis": "収集本文に明示された年齢・段階による分類。利用条件や発達の判断を示すものではない。",
+      "summaryKind": "post-excerpt",
+      "readingLabel": "投稿の一部",
+      "ingestion": "github-collection",
+      "author": "はやおき",
+      "category": "育児",
+      "collectedAt": "2026-10-25T12:35:00.000Z",
+      "caution": "投稿者の体験や意見を含みます。反応の数値は収集時点の記録です。健康に関する記載は、公的な案内や医療機関でも確認してください。",
+      "metricsLabel": "収集時点の反応",
+      "recordedMetrics": {
+        "likes": 7407,
+        "views": 400386
+      },
+      "reviewStatus": "approved",
+      "reviewReason": "乳幼児の育児を一緒に見守る大人がいることへの実感を述べた意見。育児の負担と声かけを考える話題として掲載する。 審査は収集本文と子育てへの関連についてのみ行い、投稿内容の真偽は確認していない。",
+      "curation": {
+        "status": "approved",
+        "reason": "乳幼児の育児を一緒に見守る大人がいることへの実感を述べた意見。育児の負担と声かけを考える話題として掲載する。 審査は収集本文と子育てへの関連についてのみ行い、投稿内容の真偽は確認していない。",
+        "checkedAt": "2026-10-25"
+      }
+    },
+    {
+      "id": "github-x-2114283730651242764",
+      "title": "ここ数日気持ち悪いし頭痛するし背中が痛くて… 情緒不安定だし1人で大声あげて旦那にキレ散らかして爆泣…",
+      "summary": "ここ数日気持ち悪いし頭痛するし背中が痛くて… 情緒不安定だし1人で大声あげて旦那にキレ散らかして爆泣きしてって…とうとう育児ノイローゼなったわって思っててでも寒気するし熱あるし妊娠初期に似てるな？と思い検査薬したら…まさ…",
+      "url": "https://x.com/amh0_45/status/2114283730651242764",
+      "source": "X / @amh0_45",
+      "sourceName": "X / @amh0_45",
+      "platform": "X",
+      "handle": "amh0_45",
+      "publishedAt": "2026-10-25T09:11:37.000Z",
+      "tags": [
+        "妊娠・出産",
+        "体験談",
+        "内容未確認"
+      ],
+      "parentingUseful": true,
+      "parentingRelevant": true,
+      "verificationStatus": "unverified",
+      "ageGroups": [
+        "妊娠中"
+      ],
+      "ageBasis": "収集本文に明示された年齢・段階による分類。利用条件や発達の判断を示すものではない。",
+      "summaryKind": "post-excerpt",
+      "readingLabel": "投稿の一部",
+      "ingestion": "github-collection",
+      "author": "ラテ🧋☺︎2y🎀0y🎀",
+      "category": "出産",
+      "collectedAt": "2026-10-25T12:35:00.000Z",
+      "caution": "投稿者の体験や意見を含みます。反応の数値は収集時点の記録です。健康に関する記載は、公的な案内や医療機関でも確認してください。",
+      "metricsLabel": "収集時点の反応",
+      "recordedMetrics": {
+        "likes": 789,
+        "views": 350209
+      },
+      "reviewStatus": "approved",
+      "reviewReason": "育児中に妊娠検査薬で陽性になったという本人の体験。症状から妊娠を判断する案内や、不妊治療後の経過の一般論には用いない。 審査は収集本文と子育てへの関連についてのみ行い、投稿内容の真偽は確認していない。",
+      "curation": {
+        "status": "approved",
+        "reason": "育児中に妊娠検査薬で陽性になったという本人の体験。症状から妊娠を判断する案内や、不妊治療後の経過の一般論には用いない。 審査は収集本文と子育てへの関連についてのみ行い、投稿内容の真偽は確認していない。",
+        "checkedAt": "2026-10-25"
+      }
+    },
+    {
+      "id": "github-x-2113587336261112242",
+      "title": "なんかめっちゃ安かったから娘にあげようと思ってドヤ顔で渡したら 娘「わたしに香水はまだ早いでしょww…",
+      "summary": "なんかめっちゃ安かったから娘にあげようと思ってドヤ顔で渡したら 娘「わたしに香水はまだ早いでしょwwwいらない🙂‍↔️」 って言われて、ちょっと悲しい&悔しい&意地張って 父「パパが自分用に買ってきたパパの物ですけど？？…",
+      "url": "https://x.com/EJhCFBcI6g5ENmx/status/2113587336261112242",
+      "source": "X / @EJhCFBcI6g5ENmx",
+      "sourceName": "X / @EJhCFBcI6g5ENmx",
+      "platform": "X",
+      "handle": "EJhCFBcI6g5ENmx",
+      "publishedAt": "2026-10-23T11:04:24.000Z",
+      "tags": [
+        "子どもとの会話",
+        "体験談",
+        "内容未確認"
+      ],
+      "parentingUseful": true,
+      "parentingRelevant": true,
+      "verificationStatus": "unverified",
+      "allAges": true,
+      "summaryKind": "post-excerpt",
+      "readingLabel": "投稿の一部",
+      "ingestion": "github-collection",
+      "author": "らいじん",
+      "category": "子育て",
+      "collectedAt": "2026-10-25T12:35:00.000Z",
+      "caution": "投稿者の体験や意見を含みます。反応の数値は収集時点の記録です。健康に関する記載は、公的な案内や医療機関でも確認してください。",
+      "metricsLabel": "収集時点の反応",
+      "recordedMetrics": {
+        "likes": 3944,
+        "views": 287628
+      },
+      "reviewStatus": "approved",
+      "reviewReason": "娘への贈り物と言葉の行き違いを振り返る本人の体験。親子の会話を考える話題として掲載し、子どもの年齢は推測しない。 審査は収集本文と子育てへの関連についてのみ行い、投稿内容の真偽は確認していない。",
+      "curation": {
+        "status": "approved",
+        "reason": "娘への贈り物と言葉の行き違いを振り返る本人の体験。親子の会話を考える話題として掲載し、子どもの年齢は推測しない。 審査は収集本文と子育てへの関連についてのみ行い、投稿内容の真偽は確認していない。",
+        "checkedAt": "2026-10-25"
+      }
+    },
+    {
+      "id": "github-x-2111588410385461753",
+      "title": "ようやく2人分の保育園バッグと赤ちゃんの荷物を持って玄関へ。 上の子が「いつもの靴がいい」と泣き始め…",
+      "summary": "ようやく2人分の保育園バッグと赤ちゃんの荷物を持って玄関へ。 上の子が「いつもの靴がいい」と泣き始め、下の子は「抱っこ」と動かない。 赤ちゃんも泣き出して、夫は一度荷物を全部置いた。 なんとか3人を車に乗せ、予定より30…",
+      "url": "https://x.com/asuchin000/status/2111588410385461753",
+      "source": "X / @asuchin000",
+      "sourceName": "X / @asuchin000",
+      "platform": "X",
+      "handle": "asuchin000",
+      "publishedAt": "2026-10-17T22:41:23.000Z",
+      "tags": [
+        "保育園・幼稚園",
+        "家事・育児の分担",
+        "体験談",
+        "内容未確認"
+      ],
+      "parentingUseful": true,
+      "parentingRelevant": true,
+      "verificationStatus": "unverified",
+      "allAges": true,
+      "summaryKind": "post-excerpt",
+      "readingLabel": "投稿の一部",
+      "ingestion": "github-collection",
+      "author": "あすちん",
+      "category": "育児",
+      "collectedAt": "2026-10-25T12:35:00.000Z",
+      "caution": "投稿者の体験や意見を含みます。反応の数値は収集時点の記録です。健康に関する記載は、公的な案内や医療機関でも確認してください。",
+      "metricsLabel": "収集時点の反応",
+      "recordedMetrics": {
+        "likes": 467,
+        "views": 192412
+      },
+      "reviewStatus": "approved",
+      "reviewReason": "3人の子どもの登園準備を経験した夫と、育児の分担が変わったとする本人の体験。すべての家庭に当てはまる方法とは扱わない。 審査は収集本文と子育てへの関連についてのみ行い、投稿内容の真偽は確認していない。",
+      "curation": {
+        "status": "approved",
+        "reason": "3人の子どもの登園準備を経験した夫と、育児の分担が変わったとする本人の体験。すべての家庭に当てはまる方法とは扱わない。 審査は収集本文と子育てへの関連についてのみ行い、投稿内容の真偽は確認していない。",
+        "checkedAt": "2026-10-25"
+      }
+    },
+    {
+      "id": "github-x-2106974484297343243",
+      "title": "あなたが会社からこの生活を強制されたら、耐えられますか。 朝7時前に起きて勉強。 8時に学校。 放課…",
+      "summary": "あなたが会社からこの生活を強制されたら、耐えられますか。 朝7時前に起きて勉強。 8時に学校。 放課後は塾か自宅学習。 帰宅して夕食を食べたあとも勉強。 これを週6日以上。 春も夏も冬も、まとまった休みはほぼない。 やっ…",
+      "url": "https://x.com/chuujuwo/status/2106974484297343243",
+      "source": "X / @chuujuwo",
+      "sourceName": "X / @chuujuwo",
+      "platform": "X",
+      "handle": "chuujuwo",
+      "publishedAt": "2026-10-05T05:07:17.000Z",
+      "tags": [
+        "家庭学習",
+        "習い事・塾",
+        "休息",
+        "意見・議論",
+        "内容未確認"
+      ],
+      "parentingUseful": true,
+      "parentingRelevant": true,
+      "verificationStatus": "unverified",
+      "ageGroups": [
+        "小学生"
+      ],
+      "ageBasis": "収集本文に明示された年齢・段階による分類。利用条件や発達の判断を示すものではない。",
+      "summaryKind": "post-excerpt",
+      "readingLabel": "投稿の一部",
+      "ingestion": "github-collection",
+      "author": "中学受験を考える塾長",
+      "category": "教育",
+      "collectedAt": "2026-10-25T12:35:00.000Z",
+      "caution": "投稿者の体験や意見を含みます。反応の数値は収集時点の記録です。健康に関する記載は、公的な案内や医療機関でも確認してください。",
+      "metricsLabel": "収集時点の反応",
+      "recordedMetrics": {
+        "likes": 1223,
+        "views": 132457
+      },
+      "reviewStatus": "approved",
+      "reviewReason": "小学6年生の勉強時間と休息についての意見。特定の学校や家庭の実態を確認した資料とは扱わない。 審査は収集本文と子育てへの関連についてのみ行い、投稿内容の真偽は確認していない。",
+      "curation": {
+        "status": "approved",
+        "reason": "小学6年生の勉強時間と休息についての意見。特定の学校や家庭の実態を確認した資料とは扱わない。 審査は収集本文と子育てへの関連についてのみ行い、投稿内容の真偽は確認していない。",
+        "checkedAt": "2026-10-25"
+      }
+    },
+    {
+      "id": "github-x-2113912404178522348",
+      "title": "今日ほとんど離乳食作ってたので夫chan💖がﾍﾞﾋﾞ見ててくれたんだけど「全然寝ないいつもこんな感じ…",
+      "summary": "今日ほとんど離乳食作ってたので夫chan💖がﾍﾞﾋﾞ見ててくれたんだけど「全然寝ないいつもこんな感じ？💦」って聞くから、「うーん夫ﾁｬﾝは放牧styleで遊ばせてるけど、私いつもつきっきりで遊んで笑わせて絵本読んでるから…",
+      "url": "https://x.com/hottokenaii/status/2113912404178522348",
+      "source": "X / @hottokenaii",
+      "sourceName": "X / @hottokenaii",
+      "platform": "X",
+      "handle": "hottokenaii",
+      "publishedAt": "2026-10-24T08:36:06.000Z",
+      "tags": [
+        "家事・育児の分担",
+        "寝かしつけ",
+        "体験談",
+        "内容未確認"
+      ],
+      "parentingUseful": true,
+      "parentingRelevant": true,
+      "verificationStatus": "unverified",
+      "allAges": true,
+      "summaryKind": "post-excerpt",
+      "readingLabel": "投稿の一部",
+      "ingestion": "github-collection",
+      "author": "山ねこ",
+      "category": "育児",
+      "collectedAt": "2026-10-25T12:35:00.000Z",
+      "caution": "投稿者の体験や意見を含みます。反応の数値は収集時点の記録です。健康に関する記載は、公的な案内や医療機関でも確認してください。",
+      "metricsLabel": "収集時点の反応",
+      "recordedMetrics": {
+        "likes": 1509,
+        "views": 122015
+      },
+      "reviewStatus": "approved",
+      "reviewReason": "育児中の遊び方や寝かしつけを家族に伝えたとする本人の体験。遊びと睡眠の因果を確かめた情報としては扱わない。 審査は収集本文と子育てへの関連についてのみ行い、投稿内容の真偽は確認していない。",
+      "curation": {
+        "status": "approved",
+        "reason": "育児中の遊び方や寝かしつけを家族に伝えたとする本人の体験。遊びと睡眠の因果を確かめた情報としては扱わない。 審査は収集本文と子育てへの関連についてのみ行い、投稿内容の真偽は確認していない。",
+        "checkedAt": "2026-10-25"
+      }
+    },
+    {
+      "id": "github-x-2113623619272376460",
+      "title": "「子ども3人（7、4、1）で妻は専業主婦だけど、いつになったら妻は働く？」 と思っている夫さんへ S…",
+      "summary": "「子ども3人（7、4、1）で妻は専業主婦だけど、いつになったら妻は働く？」 と思っている夫さんへ SNSで聞く前に、妻がやっている家事育児を片っ端から引き受け、「余裕あるかも」と思わせてください そして妻が見つけた仕事が…",
+      "url": "https://x.com/YokoBlankCafe/status/2113623619272376460",
+      "source": "X / @YokoBlankCafe",
+      "sourceName": "X / @YokoBlankCafe",
+      "platform": "X",
+      "handle": "YokoBlankCafe",
+      "publishedAt": "2026-10-23T13:28:34.000Z",
+      "tags": [
+        "共働き・育休",
+        "家事・育児の分担",
+        "意見・議論",
+        "内容未確認"
+      ],
+      "parentingUseful": true,
+      "parentingRelevant": true,
+      "verificationStatus": "unverified",
+      "ageGroups": [
+        "1〜2歳",
+        "3〜5歳",
+        "小学生"
+      ],
+      "ageBasis": "収集本文に明示された年齢・段階による分類。利用条件や発達の判断を示すものではない。",
+      "summaryKind": "post-excerpt",
+      "readingLabel": "投稿の一部",
+      "ingestion": "github-collection",
+      "author": "hahaha｜ブランクから子育てしながらのキャリア再形成",
+      "category": "子育て",
+      "collectedAt": "2026-10-25T12:35:00.000Z",
+      "caution": "投稿者の体験や意見を含みます。反応の数値は収集時点の記録です。健康に関する記載は、公的な案内や医療機関でも確認してください。",
+      "metricsLabel": "収集時点の反応",
+      "recordedMetrics": {
+        "likes": 2162,
+        "views": 110380
+      },
+      "reviewStatus": "approved",
+      "reviewReason": "7歳・4歳・1歳の子どもがいる家庭を例に、復職と家事育児の分担を考える意見。特定の働き方を一律に勧める情報とは扱わない。 審査は収集本文と子育てへの関連についてのみ行い、投稿内容の真偽は確認していない。",
+      "curation": {
+        "status": "approved",
+        "reason": "7歳・4歳・1歳の子どもがいる家庭を例に、復職と家事育児の分担を考える意見。特定の働き方を一律に勧める情報とは扱わない。 審査は収集本文と子育てへの関連についてのみ行い、投稿内容の真偽は確認していない。",
+        "checkedAt": "2026-10-25"
+      }
+    },
+    {
+      "id": "github-x-2112322656540520657",
+      "title": "先日インフルワクチン打ちに行ったけど 家では クリニックの名前言って「行く！ちゅうしゃ！」って言って…",
+      "summary": "先日インフルワクチン打ちに行ったけど 家では クリニックの名前言って「行く！ちゅうしゃ！」って言ってたけどクリニックの駐車場停めたらイヤイヤになってしまって チョウチョになれば注射頑張れると言ったのでチョウチョで打ちに行…",
+      "url": "https://x.com/marumaru0239/status/2112322656540520657",
+      "source": "X / @marumaru0239",
+      "sourceName": "X / @marumaru0239",
+      "platform": "X",
+      "handle": "marumaru0239",
+      "publishedAt": "2026-10-19T23:19:01.000Z",
+      "tags": [
+        "受診の体験",
+        "子どもとの会話",
+        "体験談",
+        "内容未確認"
+      ],
+      "parentingUseful": true,
+      "parentingRelevant": true,
+      "verificationStatus": "unverified",
+      "allAges": true,
+      "summaryKind": "post-excerpt",
+      "readingLabel": "投稿の一部",
+      "ingestion": "github-collection",
+      "author": "▼まる ☺︎2y+🥚",
+      "category": "育児",
+      "collectedAt": "2026-10-25T12:35:00.000Z",
+      "caution": "投稿者の体験や意見を含みます。反応の数値は収集時点の記録です。健康に関する記載は、公的な案内や医療機関でも確認してください。",
+      "metricsLabel": "収集時点の反応",
+      "recordedMetrics": {
+        "likes": 3647,
+        "views": 108344
+      },
+      "reviewStatus": "approved",
+      "reviewReason": "注射を嫌がる子どもに付き添った本人の体験。受診時の子どもとの関わり方として掲載し、接種方法や治療の案内には用いない。 審査は収集本文と子育てへの関連についてのみ行い、投稿内容の真偽は確認していない。",
+      "curation": {
+        "status": "approved",
+        "reason": "注射を嫌がる子どもに付き添った本人の体験。受診時の子どもとの関わり方として掲載し、接種方法や治療の案内には用いない。 審査は収集本文と子育てへの関連についてのみ行い、投稿内容の真偽は確認していない。",
+        "checkedAt": "2026-10-25"
+      }
+    },
+    {
+      "id": "github-x-2113917441860587800",
+      "title": "SNSには「赤ちゃん何しても寝ない…」って投稿が多いですが(お仲間さん🥹)、逆に「こうすれば寝るのに…",
+      "summary": "SNSには「赤ちゃん何しても寝ない…」って投稿が多いですが(お仲間さん🥹)、逆に「こうすれば寝るのに…」みたいな技をひっそりと持ってる方、教えていただけませんか？🥹 例えば「寝かしつけには30分かけてじっくり深い眠りにさ…",
+      "url": "https://x.com/mionotoko/status/2113917441860587800",
+      "source": "X / @mionotoko",
+      "sourceName": "X / @mionotoko",
+      "platform": "X",
+      "handle": "mionotoko",
+      "publishedAt": "2026-10-24T08:56:07.000Z",
+      "tags": [
+        "寝かしつけ",
+        "育児の悩み",
+        "質問・相談",
+        "内容未確認"
+      ],
+      "parentingUseful": true,
+      "parentingRelevant": true,
+      "verificationStatus": "unverified",
+      "ageGroups": [
+        "0歳"
+      ],
+      "ageBasis": "収集本文に明示された年齢・段階による分類。利用条件や発達の判断を示すものではない。",
+      "summaryKind": "post-excerpt",
+      "readingLabel": "投稿の一部",
+      "ingestion": "github-collection",
+      "author": "maotoko)ずぼら女レポ🌷",
+      "category": "育児",
+      "collectedAt": "2026-10-25T12:35:00.000Z",
+      "caution": "投稿者の体験や意見を含みます。反応の数値は収集時点の記録です。健康に関する記載は、公的な案内や医療機関でも確認してください。",
+      "metricsLabel": "収集時点の反応",
+      "recordedMetrics": {
+        "likes": 474,
+        "views": 101432
+      },
+      "reviewStatus": "approved",
+      "reviewReason": "赤ちゃんの寝かしつけについて他の家庭の体験を求める相談。本文の例を推奨する方法として紹介するものではない。 審査は収集本文と子育てへの関連についてのみ行い、投稿内容の真偽は確認していない。",
+      "curation": {
+        "status": "approved",
+        "reason": "赤ちゃんの寝かしつけについて他の家庭の体験を求める相談。本文の例を推奨する方法として紹介するものではない。 審査は収集本文と子育てへの関連についてのみ行い、投稿内容の真偽は確認していない。",
+        "checkedAt": "2026-10-25"
+      }
+    },
+    {
+      "id": "github-x-2113057882799558953",
+      "title": "つい先日、目の前のベビーカーから落ちた帽子を渡したら泣き出したママさんがいて赤ちゃん寝てて｢急いでな…",
+      "summary": "つい先日、目の前のベビーカーから落ちた帽子を渡したら泣き出したママさんがいて赤ちゃん寝てて｢急いでないなら｣って声かけてお茶したんだけど。産後のしんどさにSNSでの子育て論争、旦那さんは仕事柄夜勤が多いって重なって、いっ…",
+      "url": "https://x.com/mayancha1/status/2113057882799558953",
+      "source": "X / @mayancha1",
+      "sourceName": "X / @mayancha1",
+      "platform": "X",
+      "handle": "mayancha1",
+      "publishedAt": "2026-10-22T00:00:32.000Z",
+      "tags": [
+        "産後",
+        "育児の負担",
+        "祖父母・地域",
+        "体験談",
+        "内容未確認"
+      ],
+      "parentingUseful": true,
+      "parentingRelevant": true,
+      "verificationStatus": "unverified",
+      "allAges": true,
+      "summaryKind": "post-excerpt",
+      "readingLabel": "投稿の一部",
+      "ingestion": "github-collection",
+      "author": "mayan | 歩くトレンドウィキペディア",
+      "category": "育児",
+      "collectedAt": "2026-10-25T12:35:00.000Z",
+      "caution": "投稿者の体験や意見を含みます。反応の数値は収集時点の記録です。健康に関する記載は、公的な案内や医療機関でも確認してください。",
+      "metricsLabel": "収集時点の反応",
+      "recordedMetrics": {
+        "likes": 1094,
+        "views": 100062
+      },
+      "reviewStatus": "approved",
+      "reviewReason": "育児で疲れている保護者に声をかけたという本人の体験。周囲の支えを考える話題として掲載し、相手の状況や出来事の真偽は確認していない。 審査は収集本文と子育てへの関連についてのみ行い、投稿内容の真偽は確認していない。",
+      "curation": {
+        "status": "approved",
+        "reason": "育児で疲れている保護者に声をかけたという本人の体験。周囲の支えを考える話題として掲載し、相手の状況や出来事の真偽は確認していない。 審査は収集本文と子育てへの関連についてのみ行い、投稿内容の真偽は確認していない。",
+        "checkedAt": "2026-10-25"
+      }
+    },
+    {
+      "id": "github-x-2107960661024067729",
+      "title": "妊娠・出産って、 冷静に考えたら女性側の負担デカすぎません？🤣 10ヶ月近く妊娠。 つわり。 体重増…",
+      "summary": "妊娠・出産って、 冷静に考えたら女性側の負担デカすぎません？🤣 10ヶ月近く妊娠。 つわり。 体重増加。 体調不良。 出産。 産後の身体。 寝不足。 産後脱毛。 私なんて今年、 1月に出産して12月にまた出産します。 ……",
+      "url": "https://x.com/matsuda_rie58/status/2107960661024067729",
+      "source": "X / @matsuda_rie58",
+      "sourceName": "X / @matsuda_rie58",
+      "platform": "X",
+      "handle": "matsuda_rie58",
+      "publishedAt": "2026-10-07T22:26:00.000Z",
+      "tags": [
+        "妊娠・出産",
+        "育児の負担",
+        "体験談",
+        "内容未確認"
+      ],
+      "parentingUseful": true,
+      "parentingRelevant": true,
+      "verificationStatus": "unverified",
+      "ageGroups": [
+        "妊娠中"
+      ],
+      "ageBasis": "収集本文に明示された年齢・段階による分類。利用条件や発達の判断を示すものではない。",
+      "summaryKind": "post-excerpt",
+      "readingLabel": "投稿の一部",
+      "ingestion": "github-collection",
+      "author": "松田リエ",
+      "category": "出産",
+      "collectedAt": "2026-10-25T12:35:00.000Z",
+      "caution": "投稿者の体験や意見を含みます。反応の数値は収集時点の記録です。健康に関する記載は、公的な案内や医療機関でも確認してください。",
+      "metricsLabel": "収集時点の反応",
+      "recordedMetrics": {
+        "likes": 315,
+        "views": 98498
+      },
+      "reviewStatus": "approved",
+      "reviewReason": "妊娠と出産の負担や自分の選択を語る本人の体験。症状や出産の間隔についての医療上の案内には用いない。 審査は収集本文と子育てへの関連についてのみ行い、投稿内容の真偽は確認していない。",
+      "curation": {
+        "status": "approved",
+        "reason": "妊娠と出産の負担や自分の選択を語る本人の体験。症状や出産の間隔についての医療上の案内には用いない。 審査は収集本文と子育てへの関連についてのみ行い、投稿内容の真偽は確認していない。",
+        "checkedAt": "2026-10-25"
+      }
+    },
+    {
+      "id": "github-x-2113637064470122592",
+      "title": "娘が昨晩、天国から１日だけママが家に帰ってくる夢を見たと喜んでた。学校から帰ってくると、料理を作って…",
+      "summary": "娘が昨晩、天国から１日だけママが家に帰ってくる夢を見たと喜んでた。学校から帰ってくると、料理を作って待っててくれたんだって。 「どうして家にいるの？」と娘が問うと 「ママは天国で試験を頑張ったから、１回だけ帰ってこれたん…",
+      "url": "https://x.com/aki_keySecret/status/2113637064470122592",
+      "source": "X / @aki_keySecret",
+      "sourceName": "X / @aki_keySecret",
+      "platform": "X",
+      "handle": "aki_keySecret",
+      "publishedAt": "2026-10-23T14:22:00.000Z",
+      "tags": [
+        "家族の会話",
+        "子どもの気持ち",
+        "体験談",
+        "内容未確認"
+      ],
+      "parentingUseful": true,
+      "parentingRelevant": true,
+      "verificationStatus": "unverified",
+      "allAges": true,
+      "summaryKind": "post-excerpt",
+      "readingLabel": "投稿の一部",
+      "ingestion": "github-collection",
+      "author": "あき𝕏",
+      "category": "子育て",
+      "collectedAt": "2026-10-25T12:35:00.000Z",
+      "caution": "投稿者の体験や意見を含みます。反応の数値は収集時点の記録です。健康に関する記載は、公的な案内や医療機関でも確認してください。",
+      "metricsLabel": "収集時点の反応",
+      "recordedMetrics": {
+        "likes": 1321,
+        "views": 63295
+      },
+      "reviewStatus": "approved",
+      "reviewReason": "母親を亡くした娘が語った夢についての家族の体験。子どもの気持ちとの関わりを考える話題として掲載し、専門的な助言とは扱わない。 審査は収集本文と子育てへの関連についてのみ行い、投稿内容の真偽は確認していない。",
+      "curation": {
+        "status": "approved",
+        "reason": "母親を亡くした娘が語った夢についての家族の体験。子どもの気持ちとの関わりを考える話題として掲載し、専門的な助言とは扱わない。 審査は収集本文と子育てへの関連についてのみ行い、投稿内容の真偽は確認していない。",
+        "checkedAt": "2026-10-25"
+      }
+    },
+    {
+      "id": "github-x-2108763972530999390",
+      "title": "子育て層なら少しピンとくるかなと思うんですけど 「毎日イヤイヤ期の子と公園に行き、抱っこやベビーカー…",
+      "summary": "子育て層なら少しピンとくるかなと思うんですけど 「毎日イヤイヤ期の子と公園に行き、抱っこやベビーカー以外の方法で帰ってきてください」 「なお本人は帰りたがりません」 と言われたら余裕だと思いますか？ それともキツイと感じ…",
+      "url": "https://x.com/ryouikuhoikushi/status/2108763972530999390",
+      "source": "X / @ryouikuhoikushi",
+      "sourceName": "X / @ryouikuhoikushi",
+      "platform": "X",
+      "handle": "ryouikuhoikushi",
+      "publishedAt": "2026-10-10T03:38:04.000Z",
+      "tags": [
+        "イヤイヤ期",
+        "発達",
+        "育児の負担",
+        "意見・議論",
+        "内容未確認"
+      ],
+      "parentingUseful": true,
+      "parentingRelevant": true,
+      "verificationStatus": "unverified",
+      "allAges": true,
+      "summaryKind": "post-excerpt",
+      "readingLabel": "投稿の一部",
+      "ingestion": "github-collection",
+      "author": "ほっかむりゆり子",
+      "category": "教育",
+      "collectedAt": "2026-10-25T12:35:00.000Z",
+      "caution": "投稿者の体験や意見を含みます。反応の数値は収集時点の記録です。健康に関する記載は、公的な案内や医療機関でも確認してください。",
+      "metricsLabel": "収集時点の反応",
+      "recordedMetrics": {
+        "likes": 517,
+        "views": 53464
+      },
+      "reviewStatus": "approved",
+      "reviewReason": "子どもの納得を待つ難しさについて、公園から帰る場面を例に述べる意見。発達障害の特徴を断定する説明としては用いない。 審査は収集本文と子育てへの関連についてのみ行い、投稿内容の真偽は確認していない。",
+      "curation": {
+        "status": "approved",
+        "reason": "子どもの納得を待つ難しさについて、公園から帰る場面を例に述べる意見。発達障害の特徴を断定する説明としては用いない。 審査は収集本文と子育てへの関連についてのみ行い、投稿内容の真偽は確認していない。",
+        "checkedAt": "2026-10-25"
+      }
+    },
+    {
+      "id": "github-x-2113818207769575511",
+      "title": "地雷を踏まないよう 慎重に慎重に関わっていても 毎日大爆発する５歳児。 これはいったい何期なんですか…",
+      "summary": "地雷を踏まないよう 慎重に慎重に関わっていても 毎日大爆発する５歳児。 これはいったい何期なんですか？ イヤイヤ期Part.2？？？ 思春期予行演習？？？",
+      "url": "https://x.com/ys_endo/status/2113818207769575511",
+      "source": "X / @ys_endo",
+      "sourceName": "X / @ys_endo",
+      "platform": "X",
+      "handle": "ys_endo",
+      "publishedAt": "2026-10-24T02:21:48.000Z",
+      "tags": [
+        "子どもの気持ち",
+        "育児の悩み",
+        "体験談",
+        "内容未確認"
+      ],
+      "parentingUseful": true,
+      "parentingRelevant": true,
+      "verificationStatus": "unverified",
+      "ageGroups": [
+        "3〜5歳"
+      ],
+      "ageBasis": "収集本文に明示された年齢・段階による分類。利用条件や発達の判断を示すものではない。",
+      "summaryKind": "post-excerpt",
+      "readingLabel": "投稿の一部",
+      "ingestion": "github-collection",
+      "author": "Ｊ.えんどう𓃰",
+      "category": "育児",
+      "collectedAt": "2026-10-25T12:35:00.000Z",
+      "caution": "投稿者の体験や意見を含みます。反応の数値は収集時点の記録です。健康に関する記載は、公的な案内や医療機関でも確認してください。",
+      "metricsLabel": "収集時点の反応",
+      "recordedMetrics": {
+        "likes": 544,
+        "views": 32791
+      },
+      "reviewStatus": "approved",
+      "reviewReason": "5歳の子どもの強い感情への関わり方に悩む本人の体験。年齢による症状や診断の情報とは扱わない。 審査は収集本文と子育てへの関連についてのみ行い、投稿内容の真偽は確認していない。",
+      "curation": {
+        "status": "approved",
+        "reason": "5歳の子どもの強い感情への関わり方に悩む本人の体験。年齢による症状や診断の情報とは扱わない。 審査は収集本文と子育てへの関連についてのみ行い、投稿内容の真偽は確認していない。",
+        "checkedAt": "2026-10-25"
+      }
+    },
+    {
+      "id": "github-x-2113803194690416904",
+      "title": "オデ、、ツカレタ、、 離乳食、ムスコ、タベナイ、、、 10ヶ月でまだペースト、、食べて20g、、オデ…",
+      "summary": "オデ、、ツカレタ、、 離乳食、ムスコ、タベナイ、、、 10ヶ月でまだペースト、、食べて20g、、オデツカレタ、、、 グズグズで食べさせるの本当にヤダ、、離乳食ヤメタイ、、、 本当に食べるようになるのかよお😭 息子離乳食拒…",
+      "url": "https://x.com/chamuchandesu/status/2113803194690416904",
+      "source": "X / @chamuchandesu",
+      "sourceName": "X / @chamuchandesu",
+      "platform": "X",
+      "handle": "chamuchandesu",
+      "publishedAt": "2026-10-24T01:22:08.000Z",
+      "tags": [
+        "離乳食",
+        "育児の悩み",
+        "体験談",
+        "内容未確認"
+      ],
+      "parentingUseful": true,
+      "parentingRelevant": true,
+      "verificationStatus": "unverified",
+      "ageGroups": [
+        "0歳"
+      ],
+      "ageBasis": "収集本文に明示された年齢・段階による分類。利用条件や発達の判断を示すものではない。",
+      "summaryKind": "post-excerpt",
+      "readingLabel": "投稿の一部",
+      "ingestion": "github-collection",
+      "author": "ちゃむ🐨☺︎",
+      "category": "育児",
+      "collectedAt": "2026-10-25T12:35:00.000Z",
+      "caution": "投稿者の体験や意見を含みます。反応の数値は収集時点の記録です。健康に関する記載は、公的な案内や医療機関でも確認してください。",
+      "metricsLabel": "収集時点の反応",
+      "recordedMetrics": {
+        "likes": 213,
+        "views": 25961
+      },
+      "reviewStatus": "approved",
+      "reviewReason": "10か月の子どもが離乳食を食べず、疲れを感じている本人の体験。食べる量や形状の目安を勧める情報としては用いない。 審査は収集本文と子育てへの関連についてのみ行い、投稿内容の真偽は確認していない。",
+      "curation": {
+        "status": "approved",
+        "reason": "10か月の子どもが離乳食を食べず、疲れを感じている本人の体験。食べる量や形状の目安を勧める情報としては用いない。 審査は収集本文と子育てへの関連についてのみ行い、投稿内容の真偽は確認していない。",
+        "checkedAt": "2026-10-25"
+      }
+    },
+    {
+      "id": "github-x-2108135325197602849",
+      "title": "「学校は何をしているんですか？」 子どもに問題が起きると、学校へ説明を求める親は多い。 でも、その前…",
+      "summary": "「学校は何をしているんですか？」 子どもに問題が起きると、学校へ説明を求める親は多い。 でも、その前に聞きたい。 「家庭では何をしていますか？」 授業中に騒ぐ。 先生の話を聞かない。 友達とトラブルになる。 勉強をしない…",
+      "url": "https://x.com/kirishima_teach/status/2108135325197602849",
+      "source": "X / @kirishima_teach",
+      "sourceName": "X / @kirishima_teach",
+      "platform": "X",
+      "handle": "kirishima_teach",
+      "publishedAt": "2026-10-08T10:00:03.000Z",
+      "tags": [
+        "学校との関わり",
+        "家庭での関わり",
+        "意見・議論",
+        "内容未確認"
+      ],
+      "parentingUseful": true,
+      "parentingRelevant": true,
+      "verificationStatus": "unverified",
+      "allAges": true,
+      "summaryKind": "post-excerpt",
+      "readingLabel": "投稿の一部",
+      "ingestion": "github-collection",
+      "author": "きりしま先生＠現役教師🔥思春期のトリセツ📗家庭教育の赤ペン先生",
+      "category": "教育",
+      "collectedAt": "2026-10-25T12:35:00.000Z",
+      "caution": "投稿者の体験や意見を含みます。反応の数値は収集時点の記録です。健康に関する記載は、公的な案内や医療機関でも確認してください。",
+      "metricsLabel": "収集時点の反応",
+      "recordedMetrics": {
+        "likes": 604,
+        "views": 24817
+      },
+      "reviewStatus": "approved",
+      "reviewReason": "家庭と学校それぞれの子どもへの関わりについての意見。学校の義務や個別の支援範囲を説明する資料とは扱わない。 審査は収集本文と子育てへの関連についてのみ行い、投稿内容の真偽は確認していない。",
+      "curation": {
+        "status": "approved",
+        "reason": "家庭と学校それぞれの子どもへの関わりについての意見。学校の義務や個別の支援範囲を説明する資料とは扱わない。 審査は収集本文と子育てへの関連についてのみ行い、投稿内容の真偽は確認していない。",
+        "checkedAt": "2026-10-25"
+      }
+    },
+    {
+      "id": "github-x-2114255293945422307",
+      "title": "出産準備ほぼほぼ終了👏🏻👏🏻 費用総額は…約155,000円！！ ・購入済み 100,948円 ・産…",
+      "summary": "出産準備ほぼほぼ終了👏🏻👏🏻 費用総額は…約155,000円！！ ・購入済み 100,948円 ・産後購入予定(オムツ・ベビーカー) 約54,000円 チャイルドシート、抱っこ紐など両親からのプレゼントに感謝🙏✨️",
+      "url": "https://x.com/hane_nobaso/status/2114255293945422307",
+      "source": "X / @hane_nobaso",
+      "sourceName": "X / @hane_nobaso",
+      "platform": "X",
+      "handle": "hane_nobaso",
+      "publishedAt": "2026-10-25T07:18:37.000Z",
+      "tags": [
+        "出産準備",
+        "買い物・家計",
+        "体験談",
+        "内容未確認"
+      ],
+      "parentingUseful": true,
+      "parentingRelevant": true,
+      "verificationStatus": "unverified",
+      "ageGroups": [
+        "妊娠中"
+      ],
+      "ageBasis": "収集本文に明示された年齢・段階による分類。利用条件や発達の判断を示すものではない。",
+      "summaryKind": "post-excerpt",
+      "readingLabel": "投稿の一部",
+      "ingestion": "github-collection",
+      "author": "よも☺︎37w",
+      "category": "出産",
+      "collectedAt": "2026-10-25T12:35:00.000Z",
+      "caution": "投稿者の体験や意見を含みます。反応の数値は収集時点の記録です。健康に関する記載は、公的な案内や医療機関でも確認してください。",
+      "metricsLabel": "収集時点の反応",
+      "recordedMetrics": {
+        "likes": 414,
+        "views": 24006
+      },
+      "reviewStatus": "approved",
+      "reviewReason": "購入済みと購入予定の出産準備品の費用を示す本人の体験。すべての家庭に必要な金額や、現在の商品の価格を示すものではない。 審査は収集本文と子育てへの関連についてのみ行い、投稿内容の真偽は確認していない。",
+      "curation": {
+        "status": "approved",
+        "reason": "購入済みと購入予定の出産準備品の費用を示す本人の体験。すべての家庭に必要な金額や、現在の商品の価格を示すものではない。 審査は収集本文と子育てへの関連についてのみ行い、投稿内容の真偽は確認していない。",
+        "checkedAt": "2026-10-25"
+      }
+    },
+    {
+      "id": "github-x-2114206816808898698",
+      "title": "俺は失敗したくない！やらかしたくない！って長男は言うんだけど… 諦めろ。 君の人生は、生まれたとき、…",
+      "summary": "俺は失敗したくない！やらかしたくない！って長男は言うんだけど… 諦めろ。 君の人生は、生まれたとき、出てくるのと同時にオシッコしちゃって、両手がふさがってる無防備なドクターの顔面に命中させるという「やらかし」から始まって…",
+      "url": "https://x.com/okan_3boys/status/2114206816808898698",
+      "source": "X / @okan_3boys",
+      "sourceName": "X / @okan_3boys",
+      "platform": "X",
+      "handle": "okan_3boys",
+      "publishedAt": "2026-10-25T04:05:59.000Z",
+      "tags": [
+        "子どもとの会話",
+        "子どもの気持ち",
+        "体験談",
+        "内容未確認"
+      ],
+      "parentingUseful": true,
+      "parentingRelevant": true,
+      "verificationStatus": "unverified",
+      "allAges": true,
+      "summaryKind": "post-excerpt",
+      "readingLabel": "投稿の一部",
+      "ingestion": "github-collection",
+      "author": "ワンオペ母",
+      "category": "育児",
+      "collectedAt": "2026-10-25T12:35:00.000Z",
+      "caution": "投稿者の体験や意見を含みます。反応の数値は収集時点の記録です。健康に関する記載は、公的な案内や医療機関でも確認してください。",
+      "metricsLabel": "収集時点の反応",
+      "recordedMetrics": {
+        "likes": 880,
+        "views": 20698
+      },
+      "reviewStatus": "approved",
+      "reviewReason": "失敗を怖がる長男に生まれた日の話をしたという本人の体験。親子の会話として掲載し、出来事の真偽は確認していない。 審査は収集本文と子育てへの関連についてのみ行い、投稿内容の真偽は確認していない。",
+      "curation": {
+        "status": "approved",
+        "reason": "失敗を怖がる長男に生まれた日の話をしたという本人の体験。親子の会話として掲載し、出来事の真偽は確認していない。 審査は収集本文と子育てへの関連についてのみ行い、投稿内容の真偽は確認していない。",
+        "checkedAt": "2026-10-25"
+      }
+    },
+    {
+      "id": "github-x-2113181928061104314",
+      "title": "息子のお宮参りの日「危ないからね」と優しく手を繋いでくれた（元）夫は、約1年半後の娘のお宮参りの時に…",
+      "summary": "息子のお宮参りの日「危ないからね」と優しく手を繋いでくれた（元）夫は、約1年半後の娘のお宮参りの時には手を繋いでくれなくて、スタスタと先にひとりで歩いて行ってしまったことが当時すごく悲しくて寂しかったこのエピを離婚しても…",
+      "url": "https://x.com/kitwell_tanaca/status/2113181928061104314",
+      "source": "X / @kitwell_tanaca",
+      "sourceName": "X / @kitwell_tanaca",
+      "platform": "X",
+      "handle": "kitwell_tanaca",
+      "publishedAt": "2026-10-22T08:13:27.000Z",
+      "tags": [
+        "産後",
+        "家族の関わり",
+        "体験談",
+        "内容未確認"
+      ],
+      "parentingUseful": true,
+      "parentingRelevant": true,
+      "verificationStatus": "unverified",
+      "allAges": true,
+      "summaryKind": "post-excerpt",
+      "readingLabel": "投稿の一部",
+      "ingestion": "github-collection",
+      "author": "🐴田中です",
+      "category": "出産",
+      "collectedAt": "2026-10-25T12:35:00.000Z",
+      "caution": "投稿者の体験や意見を含みます。反応の数値は収集時点の記録です。健康に関する記載は、公的な案内や医療機関でも確認してください。",
+      "metricsLabel": "収集時点の反応",
+      "recordedMetrics": {
+        "likes": 574,
+        "views": 12829
+      },
+      "reviewStatus": "approved",
+      "reviewReason": "産後のお宮参りで感じた家族の関わりを振り返る本人の体験。産前産後の支えを考える話題として掲載し、家庭一般への結論とは扱わない。 審査は収集本文と子育てへの関連についてのみ行い、投稿内容の真偽は確認していない。",
+      "curation": {
+        "status": "approved",
+        "reason": "産後のお宮参りで感じた家族の関わりを振り返る本人の体験。産前産後の支えを考える話題として掲載し、家庭一般への結論とは扱わない。 審査は収集本文と子育てへの関連についてのみ行い、投稿内容の真偽は確認していない。",
+        "checkedAt": "2026-10-25"
+      }
+    },
+    {
+      "id": "github-x-2111998504466042948",
+      "title": "昨日(日曜日)は、 午前中はベビ太郎とたくさん公園で遊んで、 そのあとベビーシッターさんに引き継ぎ、…",
+      "summary": "昨日(日曜日)は、 午前中はベビ太郎とたくさん公園で遊んで、 そのあとベビーシッターさんに引き継ぎ、 午後は大学(女子大)の同窓生の子たちと3人でご飯食べた✨(ベビーシッターさんいてる間だけだから2時間くらい) うち1人…",
+      "url": "https://x.com/chomado/status/2111998504466042948",
+      "source": "X / @chomado",
+      "sourceName": "X / @chomado",
+      "platform": "X",
+      "handle": "chomado",
+      "publishedAt": "2026-10-19T01:50:57.000Z",
+      "tags": [
+        "妊娠・出産",
+        "出産の体験",
+        "体験談",
+        "内容未確認"
+      ],
+      "parentingUseful": true,
+      "parentingRelevant": true,
+      "verificationStatus": "unverified",
+      "ageGroups": [
+        "妊娠中"
+      ],
+      "ageBasis": "収集本文に明示された年齢・段階による分類。利用条件や発達の判断を示すものではない。",
+      "summaryKind": "post-excerpt",
+      "readingLabel": "投稿の一部",
+      "ingestion": "github-collection",
+      "author": "ちょまど🦕ITエンジニア",
+      "category": "出産",
+      "collectedAt": "2026-10-25T12:35:00.000Z",
+      "caution": "投稿者の体験や意見を含みます。反応の数値は収集時点の記録です。健康に関する記載は、公的な案内や医療機関でも確認してください。",
+      "metricsLabel": "収集時点の反応",
+      "recordedMetrics": {
+        "likes": 101,
+        "views": 12790
+      },
+      "reviewStatus": "approved",
+      "reviewReason": "自身の出産を友人に話したという本人の体験。帝王切開や陣痛、出血の経過を医療上の目安や一般的な経過として紹介するものではない。 審査は収集本文と子育てへの関連についてのみ行い、投稿内容の真偽は確認していない。",
+      "curation": {
+        "status": "approved",
+        "reason": "自身の出産を友人に話したという本人の体験。帝王切開や陣痛、出血の経過を医療上の目安や一般的な経過として紹介するものではない。 審査は収集本文と子育てへの関連についてのみ行い、投稿内容の真偽は確認していない。",
         "checkedAt": "2026-10-25"
       }
     },

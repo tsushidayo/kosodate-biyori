@@ -44,7 +44,7 @@ export function validateContent(section:unknown,payload:unknown):Section{
   if(!(isObject(payload)||(s==="feeds"&&Array.isArray(payload))))throw new ApiError(400,"内容の形式を確認してください。");
   const shape:Record<string,string[]>={care:["stages","guides","programs"],shop:["products","chains"],editorial:["news","columns","topics"]};
   for(const key of shape[s]??[])if(!Array.isArray((payload as any)[key]))throw new ApiError(400,`${key} の一覧が必要です。`);
-  validateTree(payload);if(new TextEncoder().encode(JSON.stringify(payload)).length>(s==="editorial"?8_000_000:1_500_000))throw new ApiError(413,"更新する内容が大きすぎます。");
+  validateTree(payload);if(new TextEncoder().encode(JSON.stringify(payload)).length>(s==="feeds"?1_500_000:8_000_000))throw new ApiError(413,"更新する内容が大きすぎます。");
   if(s==="shop")for(const p of(payload as any).products){
     if(!isObject(p)||typeof p.id!=="string"||typeof p.name!=="string")throw new ApiError(400,"商品名と商品IDを確認してください。");
     for(const o of p.offers??[]){if(o.price!==null&&o.price!==undefined&&(typeof o.price!=="number"||o.price<0))throw new ApiError(400,"商品の価格を確認してください。");if(o.verified===true&&(!safeWebUrl(o.source||"")||!Number.isFinite(Date.parse(o.checkedAt||""))))throw new ApiError(400,"確認済みの価格には出典と確認日が必要です。");}
@@ -184,9 +184,10 @@ export function relevantFeedItem(item:Obj,source:Obj){
   if(source.filterRequired===false)return true;
   return /妊娠|妊婦|産前|産後|出産|育児|子育て|子ども|こども|子供|赤ちゃん|乳児|幼児|離乳|保育|小学生|小学校|児童|学童|給食|産休|育休|おむつ|オムツ|ベビー|parent|baby|child/i.test(text);
 }
-function registeredFeeds(raw:unknown=seeds.feeds):Obj[]{const listFor=(value:any)=>Array.isArray(value)?value:isObject(value)&&Array.isArray(value.feeds??value.sources)?value.feeds??value.sources:null;const list=listFor(raw)??listFor(seeds.feeds)??[];return list.filter((f:any)=>isObject(f)&&typeof f.url==="string"&&safeWebUrl(f.url)&&f.enabled!==false).slice(0,24);}
+function feedRegistrations(raw:unknown=seeds.feeds):Obj[]{const listFor=(value:any)=>Array.isArray(value)?value:isObject(value)&&Array.isArray(value.feeds??value.sources)?value.feeds??value.sources:null;const list=listFor(raw)??listFor(seeds.feeds)??[];return list.filter((f:any)=>isObject(f)&&typeof f.url==="string"&&safeWebUrl(f.url));}
+function registeredFeeds(raw:unknown=seeds.feeds):Obj[]{return feedRegistrations(raw).filter(f=>f.enabled!==false).slice(0,24);}
 export async function refreshFeeds(){
-  const before=await content();const feeds=registeredFeeds(before.feeds);
+  const before=await content();const registrations=feedRegistrations(before.feeds);const feeds=registeredFeeds(before.feeds);
   const githubPending=refreshGithubCollections(Array.isArray(before.editorial?.topics)?before.editorial.topics:[]);
   const outcomes=await Promise.all(feeds.map(async f=>{try{
     const res=await fetch(f.url,{headers:{"User-Agent":"KosodateBiyori/1.0 (parenting feed reader)",Accept:"application/rss+xml, application/atom+xml, application/xml, text/xml"},signal:AbortSignal.timeout(9000),redirect:"manual"});
@@ -196,7 +197,7 @@ export async function refreshFeeds(){
     return{name:f.name||f.url,url:f.url,section:feedSection(f),kind:f.kind,ok:true,items:parseFeed(new TextDecoder().decode(buf),f).filter(i=>relevantFeedItem(i,f)),error:null};
   }catch(e){return{name:f.name||f.url,url:f.url,section:feedSection(f),kind:f.kind,ok:false,items:[],error:e instanceof Error?e.message:"Fetch failed"};}}));
   const editor={...before.editorial};let added=0;
-  for(const kind of["news","columns"]as const){const existing=(Array.isArray(editor[kind])?editor[kind]:[]).filter((i:Obj)=>i.ingestion!=="rss"||relevantFeedItem(i,feeds.find(f=>f.url===i.feedUrl)??{section:kind,filterRequired:false}));const items=outcomes.filter(f=>f.ok&&f.section===kind).flatMap(f=>f.items);const seen=new Set(existing.map((i:Obj)=>i.url));const fresh=items.filter(i=>{if(seen.has(i.url))return false;seen.add(i.url);return true;});added+=fresh.length;editor[kind]=[...fresh,...existing].map(i=>({...i,tags:deriveEditorialTags(i)})).sort((a,b)=>(Date.parse(b.publishedAt||"")||0)-(Date.parse(a.publishedAt||"")||0)).slice(0,500);}
+  for(const kind of["news","columns"]as const){const existing=(Array.isArray(editor[kind])?editor[kind]:[]).filter((i:Obj)=>i.ingestion!=="rss"||(()=>{const registration=registrations.find(f=>f.url===i.feedUrl);return registration?.enabled!==false&&relevantFeedItem(i,registration??{section:kind,filterRequired:false});})());const items=outcomes.filter(f=>f.ok&&f.section===kind).flatMap(f=>f.items);const seen=new Set(existing.map((i:Obj)=>i.url));const fresh=items.filter(i=>{if(seen.has(i.url))return false;seen.add(i.url);return true;});added+=fresh.length;editor[kind]=[...fresh,...existing].map(i=>({...i,tags:deriveEditorialTags(i)})).sort((a,b)=>(Date.parse(b.publishedAt||"")||0)-(Date.parse(a.publishedAt||"")||0)).slice(0,500);}
   const githubResult=await githubPending;const {topics,...github}=githubResult;
   // 24 feeds + 20 collection files + their manifest + this fixed curation file = at most 46 requests.
   const {topics:reviewedTopics,instagram,shorts,...curation}=await refreshSocialCuration({previousTopics:Array.isArray(before.editorial?.topics)?before.editorial.topics:[],incomingTopics:topics,previousShorts:Array.isArray(before.editorial?.shorts)?before.editorial.shorts:[],previousInstagram:Array.isArray(before.editorial?.instagram)?before.editorial.instagram:[],fallback:socialCurationSeed});

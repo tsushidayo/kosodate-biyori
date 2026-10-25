@@ -96,13 +96,28 @@ test("refresh persists only reviewed X, separate videos, tags and 500 articles p
     for(const request of requests){assert.equal(request.options.body,undefined);assert.equal(request.options.redirect,"manual");}
   }finally{globalThis.fetch=oldFetch;}
 });
-test("saved feed registrations are used up to 24 and prune only disallowed RSS records",async()=>{
+test("saved feed registrations cap requests at 24 while retaining every source's editorial conditions",async()=>{
   const feeds=Array.from({length:25},(_,i)=>({url:"https://feed.example.org/"+i,name:"registered "+i,section:"columns",filterRequired:true,includeKeywords:["育児"],excludeKeywords:["広告企画"]}));
-  const columns=[{id:"old-rss",title:"育児の広告企画",url:"https://example.org/excluded",ingestion:"rss",feedUrl:feeds[0].url},{id:"manual",title:"育児の広告企画を見分ける",url:"https://example.org/manual"}];
+  feeds[24].includeUrlPatterns=["/allowed/"];
+  const disabled={url:"https://feed.example.org/disabled",name:"disabled",section:"columns",enabled:false,filterRequired:false};
+  feeds.push(disabled);
+  const columns=[
+    {id:"old-rss",title:"育児の広告企画",url:"https://example.org/excluded",ingestion:"rss",feedUrl:feeds[0].url},
+    {id:"manual",title:"育児の広告企画を見分ける",url:"https://example.org/manual"},
+    {id:"disabled-rss",title:"子どもの離乳食の進め方",url:"https://example.org/disabled",ingestion:"rss",feedUrl:disabled.url},
+    {id:"outside-keyword",title:"子どもの工作の作り方",url:"https://example.org/allowed/missing-keyword",ingestion:"rss",feedUrl:feeds[24].url},
+    {id:"outside-url",title:"育児の準備で確認すること",url:"https://example.org/outside-url",ingestion:"rss",feedUrl:feeds[24].url},
+    {id:"outside-excluded",title:"育児の準備と広告企画",url:"https://example.org/allowed/excluded",ingestion:"rss",feedUrl:feeds[24].url},
+    {id:"outside-approved",title:"育児と保育園の申請手順",url:"https://example.org/allowed/approved",ingestion:"rss",feedUrl:feeds[24].url},
+  ];
   await store.writeContent([{section:"feeds",payload:{feeds}},{section:"editorial",payload:{news:[],columns,topics:[],shorts:[]}}]);
   const original=globalThis.fetch,seen=[];
   globalThis.fetch=async url=>{seen.push(url);if(url.startsWith("https://feed.example.org/"))return new Response("<rss/>");if(url.endsWith("collections/index.json"))return Response.json({schemaVersion:1,updatedAt:"2026-10-25T00:00:00Z",files:[]});if(url.endsWith("data/social-curation.json"))return Response.json({schemaVersion:1,checkedAt:"2026-10-25",reviews:[],additionalPosts:[],shorts:[]});throw new Error("Unexpected endpoint");};
-  try{const result=await store.refreshFeeds();assert.equal(result.results.length,24);assert.equal(seen.length,26);assert.equal(seen.includes(feeds[24].url),false);assert.deepEqual((await store.content()).editorial.columns.map(i=>i.id),["manual"]);}finally{globalThis.fetch=original;}
+  try{
+    const result=await store.refreshFeeds();assert.equal(result.results.length,24);assert.equal(seen.length,26);
+    assert.equal(seen.includes(feeds[24].url),false);assert.equal(seen.includes(disabled.url),false);
+    assert.deepEqual((await store.content()).editorial.columns.map(i=>i.id),["manual","outside-approved"]);
+  }finally{globalThis.fetch=original;}
 });
 
 const largeEditorial={news:[],columns:[],topics:Array.from({length:1000},(_,i)=>({id:'x-'+i,title:'子育ての投稿 '+i,url:'https://x.com/family/status/'+(1987654321098000000n+BigInt(i)),summary:'親子の子育て😀'.repeat(100),parentingRelevant:true})),instagram:Array.from({length:1000},(_,i)=>({id:'instagram-POST_'+i,title:'親子の投稿 '+i,url:'https://www.instagram.com/p/POST_'+i+'/',summary:'赤ちゃんの成長🌱'.repeat(100),parentingRelevant:true})),shorts:[]};
@@ -135,7 +150,22 @@ test('snapshot limits reject reserved storage markers and oversized content whil
  const editorial={news:[],columns:[],topics:[]};
  for(const payload of [{...editorial,__chunkedSnapshot:{id:'user-supplied',parts:1}},{...editorial,topics:[{__chunkedSnapshot:{}}]}])assert.throws(()=>store.validateContent('editorial',payload),e=>e.status===400);
  const oversized={...editorial,topics:Array.from({length:2000},()=>({summary:'あ'.repeat(1400)}))};assert.throws(()=>store.validateContent('editorial',oversized),e=>e.status===413);
- assert.throws(()=>store.validateContent('care',{...care,guides:Array.from({length:1000},()=>({summary:'あ'.repeat(600)}))}),e=>e.status===413);
+ assert.throws(()=>store.validateContent('care',{...care,guides:Array.from({length:1000},()=>({summary:'あ'.repeat(3000)}))}),e=>e.status===413);
  const request=new Request('https://example.chatgpt.site/api/update',{method:'POST',body:JSON.stringify({section:'editorial',payload:largeEditorial})});assert.equal((await store.readJson(request)).payload.topics.length,1000);
  await assert.rejects(store.readJson(new Request('https://example.chatgpt.site/api/update',{method:'POST',headers:{'content-length':'8000001'},body:'{}'})),e=>e.status===413);
+});
+
+
+test('expanded shop and municipal support collections round-trip beyond the old section limit',async()=>{
+ const before=await store.content();const summary='子育ての記録😀'.repeat(80);
+ const shop={products:Array.from({length:1100},(_,i)=>({id:'product-'+i,name:'子育て用品 '+i,summary,offers:[{price:1000,shipping:0,quantity:1,verified:true,source:'https://shop.example.org/products/'+i,checkedAt:'2026-10-25'}]})),chains:[]};
+ const care={stages:[],guides:[],programs:Array.from({length:1100},(_,i)=>({id:'city-program-'+i,title:'地域の子育て支援 '+i,prefecture:'北海道',municipality:'美瑛町',summary,source:'https://city.example.org/programs/'+i}))};
+ assert.ok(Buffer.byteLength(JSON.stringify(shop))>1_500_000);assert.ok(Buffer.byteLength(JSON.stringify(care))>1_500_000);
+ await store.writeContent([{section:'shop',payload:shop,expectedRevision:before.meta.sections.shop.revision}]);
+ await store.writeContent([{section:'care',payload:care,expectedRevision:before.meta.sections.care.revision}]);
+ const loaded=await store.content();assert.equal(loaded.meta.storageAvailable,true);assert.deepEqual(loaded.shop,shop);assert.deepEqual(loaded.care,care);
+ for(const section of ['shop','care'])assert.ok(JSON.parse(sqlite.prepare('SELECT payload FROM content_snapshots WHERE section=?').get(section).payload).__chunkedSnapshot);
+ await assert.rejects(store.writeContent([{section:'shop',payload:shop,expectedRevision:before.meta.sections.shop.revision}]),error=>error.status===409);
+ await store.writeContent([{section:'shop',payload:before.shop,expectedRevision:loaded.meta.sections.shop.revision}]);
+ await store.writeContent([{section:'care',payload:before.care,expectedRevision:loaded.meta.sections.care.revision}]);
 });

@@ -88,7 +88,9 @@
     "feed-https%3A%2F%2Fkodomo-gov.note.jp%2Fn%2Fnee5480c5d3e0",
     "feed-https%3A%2F%2Fkodomo-gov.note.jp%2Fn%2Fn5abe8712412c",
     "feed-https%3A%2F%2Fkodomo-gov.note.jp%2Fn%2Fnc6ce35e5262a",
-    "feed-https%3A%2F%2Fkodomo-gov.note.jp%2Fn%2Fn961f0b680620"
+    "feed-https%3A%2F%2Fkodomo-gov.note.jp%2Fn%2Fn961f0b680620",
+    "feed-https%3A%2F%2Fameblo.jp%2Fdekkaiossan9%2Fentry-12982507617.html",
+    "feed-https%3A%2F%2Fameblo.jp%2Fdekkaiossan9%2Fentry-12982192301.html"
   ],
   "records": [
     {
@@ -568,6 +570,18 @@
       "title": "離乳食の準備や後片付け、親の負担を調査",
       "url": "https://panasonic.jp/topics/2026/10/000001247.html",
       "reason": "家庭で行う準備・手順・利用方法につながらない調査発表"
+    },
+    {
+      "id": "feed-https%3A%2F%2Fameblo.jp%2Fdekkaiossan9%2Fentry-12982507617.html",
+      "title": "子どもの友達に出す お菓子を妻に再打診する",
+      "url": "https://ameblo.jp/dekkaiossan9/entry-12982507617.html",
+      "reason": "家庭で使う手順や工夫がない個人の日記。本文末の相談案内による自動採用を除外。"
+    },
+    {
+      "id": "feed-https%3A%2F%2Fameblo.jp%2Fdekkaiossan9%2Fentry-12982192301.html",
+      "title": "我が家に初めて学校の友達がやってきた",
+      "url": "https://ameblo.jp/dekkaiossan9/entry-12982192301.html",
+      "reason": "家庭で使う手順や工夫がない個人の日記。本文末の相談案内による自動採用を除外。"
     }
   ]
 }

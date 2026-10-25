@@ -33,9 +33,19 @@
 1. Sites `get_site`、GitHubの最新mainと収集ファイルを読む。コードを変える場合はSitesのソースヘルパーで最新状態を開く。トークンはメモリーから標準入力で使い、引数・ファイル・ログへ書かない。
 2. `/api/content` を読み、今回の調査分を最新の共有情報へ統合する。既存の `collections`、別の更新、利用者の私的な設定を上書きしない。
 3. ニュース・コラム・SNSの編集データをGitHubへ同期してからフィード更新を行う。本文やUIを変えた場合は型チェック・関連テスト・ビルドを通してSitesへ保存・公開する。
-4. `node scripts/daily-refresh.mjs` を実行。標準入力に小さなJSONを1行で渡す：`{"url":"<Sitesの公開URL>","token":"<セッション内の値>","marketplaceLimit":60,"outputDirectory":"<公開データだけの作業先>"}`。登録フリマの再確認、shopのrevision付き保存、RSS・GitHub・SNSの再読込、読み戻しを行う。
+4. `node scripts/daily-refresh.mjs` を実行。標準入力に小さなJSONを1行で渡す：`{"url":"<Sitesの公開URL>","token":"<セッション内の値>","priceLimit":20,"marketplaceLimit":60,"outputDirectory":"<公開データだけの作業先>"}`。登録通販価格の巡回確認、登録フリマの再確認、shopのrevision付き保存、RSS・GitHub・SNSの再読込、読み戻しを行う。
 5. 出力された共有care/shop/editorial/feedsをGitHubにも反映する。競合したら最新を読んで統合し直す。単に成功したと報告せず、保存先の状態・実件数・配信元ごとの成否を確認する。未取得情報を最新と表記しない。
 
 誕生日、出産予定日、住まい、性別、保存記事、チェックリスト、通知条件、トークンは利用者ごとの情報。共有JSON・公開GitHub・ログ・タスク本文へ保存しない。
 
-API: GET `/api/content`、POST `/api/update`、POST `/api/refresh`、GET `/api/status`。利用者の私的設定はGET/PUT `/api/profile`。共有editorialは8MBまで、1.2MB超はD1内で分割保存。各SNSは最大3,000件、ニュース・コラムは各500件まで。画面の文章と見た目は `DESIGN_GUIDE.md` に従う。
+API: GET `/api/content`、POST `/api/update`、POST `/api/refresh`、GET `/api/status`。利用者の私的設定はGET/PUT `/api/profile`。共有care/shop/editorialは各8MBまで、各1.2MB超はD1内で分割保存。各SNSは最大3,000件、ニュース・コラムは各500件まで。画面の文章と見た目は `DESIGN_GUIDE.md` に従う。
+
+
+## 商品・自治体の不足を見つける
+
+- `node scripts/research-coverage.mjs data /tmp/kosodate-coverage.json`でブランド・カテゴリの偏り、個別制度が未掲載の自治体、未確認の通販を確認する。索引を詳細制度の確認済み件数に数えない。
+- 商品には短い独自要約、特徴、JAN/型番、容量・サイズ・素材・適応体重、原典のある対象年齢を保存。年齢不明をallAgesとして扱わない。配送用の重量を正味容量へ流用しない。
+- 個別商品の有効な購入欄や公開在庫で注文受付を確認できればavailable:trueとし、現物在庫数・決済・出荷保証とは分ける。不明はnull、売り切れ・予約は通常の順位に入れない。
+- 明示的な画像リンク禁止は守る。利用制限を表示側で扱えない商品は、扱えるまで保留する。
+- 18歳年度末の条件はschoolYearEndAge等で扱う。登録した生年月日なら年度境界を確認できるが、手動の年齢だけで確定できない場合は未確定として扱う。
+- 大きいcare/shopも分割保存に対応。revision付き更新は1セクションずつ送り、409なら最新を再読込して統合し直す。

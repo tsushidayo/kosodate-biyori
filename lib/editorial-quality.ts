@@ -1,16 +1,21 @@
 type Item=Record<string,any>;
 export const EDITORIAL_TOPICS=['出産準備','お世話・食事','教育・遊び','グッズ','おでかけ','保育・制度','体験談'] as const;
 const words=(item:Item)=>[item.title,item.summary,item.description].filter(v=>typeof v==='string').join(' ');
+const strings=(value:unknown):string[]=>Array.isArray(value)?value.filter((v):v is string=>typeof v==='string'):[];
+/** Search the public details shown on cards and article pages, including outing locations. */
+export function editorialSearchText(item:Item):string{
+ return [words(item),item.text,item.category,item.kind,item.sourceName,item.source,item.authorName,item.author,item.prefecture,item.municipality,item.facilityName,...strings(item.prefectures),...strings(item.municipalities),...strings(item.tags),...strings(item.labels),...strings(item.practicalPoints)].filter(v=>typeof v==='string').join(' ').toLocaleLowerCase('ja');
+}
 /** Topic labels help find useful actions; a parenting keyword alone is not editorial approval. */
 export function editorialTopics(item:Item):string[]{
- const text=words(item)+' '+(Array.isArray(item.tags)?item.tags.join(' '):'');
+ const text=[words(item),item.category,...strings(item.tags)].filter(v=>typeof v==='string').join(' ');
  const result=new Set<string>(Array.isArray(item.practicalTopics)?item.practicalTopics.filter((v:unknown)=>typeof v==='string'&&(EDITORIAL_TOPICS as readonly string[]).includes(v)):[]);
  if(/妊娠|妊婦|産前|出産|入院準備|つわり|妊活/.test(text))result.add('出産準備');
- if(/離乳食|幼児食|授乳|ミルク|おむつ|オムツ|お世話|寝かしつけ|夜泣き|栄養|歯みがき|歯磨き|沐浴|スキンケア|トイレトレ/.test(text))result.add('お世話・食事');
- if(/教育|学習|小学校|小学生|習い事|知育|おもちゃ|玩具|絵本|読み聞かせ|工作|折り紙|手遊び|遊び|ことば|発達/.test(text))result.add('教育・遊び');
- if(/グッズ|用品|アイテム|ベビーカー|抱っこひも|抱っこ紐|チャイルドシート|哺乳びん|哺乳瓶|おもちゃ|玩具|マグ|スプーン|ベビー服|搾乳器|さく乳器|ケープ/.test(text))result.add('グッズ');
- if(item.kind==='おでかけ'||/おでかけ|お出かけ|子連れ|親子旅|動物園|水族館|博物館|科学館|美術館|テーマパーク|遊園地|屋内遊び場|室内遊び場/.test(text))result.add('おでかけ');
- if(/保育|幼稚園|学童|給付|手当|助成|補助|支援制度|申請|年金|育休|育児休業|産休|保活|入園|無償化/.test(text))result.add('保育・制度');
+ if(/離乳食|幼児食|授乳|ミルク|おむつ|オムツ|お世話|寝かしつけ|夜泣き|栄養|食事|料理|調理|献立|レシピ|歯みがき|歯磨き|沐浴|スキンケア|トイレトレ|予防接種|ワクチン|病気|受診|健康・安全|感染症|暑さ対策|酷暑対策/.test(text))result.add('お世話・食事');
+ if(/教育|学習|学校|小学生|勉強|不登校|習い事|知育|おもちゃ|玩具|絵本|読み聞かせ|工作|折り紙|手遊び|遊び|ことば|発達|練習|声かけ|声掛け|片づけ|片付け|親子の会話|手話|ネット|性教育/.test(text))result.add('教育・遊び');
+ if(/グッズ|用品|アイテム|ベビーカー|抱っこひも|抱っこ紐|チャイルドシート|哺乳びん|哺乳瓶|おもちゃ|玩具|マグ|スプーン|ベビー服|搾乳器|さく乳器|ケープ|ヒーター|暖房|防寒/.test(text))result.add('グッズ');
+ if(item.kind==='おでかけ'||item.contentType==='outing'||/おでかけ|お出かけ|子連れ|親子旅|動物園|水族館|博物館|科学館|美術館|テーマパーク|遊園地|屋内遊び場|室内遊び場|七五三/.test(text))result.add('おでかけ');
+ if(/保育|幼稚園|学童|通園|給付|手当|助成|補助|支援制度|申請|年金|育休|育児休業|産休|保活|入園|無償化/.test(text))result.add('保育・制度');
  if(/体験談|あるある|育児記録|成長記録|育児日記/.test(text))result.add('体験談');
  return [...result];
 }
