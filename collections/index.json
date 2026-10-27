@@ -1,1 +1,34 @@
-PLACEHOLDER
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-10-27T03:20:00.000Z",
+  "files": [
+    "collections/2026-10-25/kosodate-134100.json",
+    "collections/2026-10-25/kosodate-171250.json",
+    "collections/2026-10-25/kosodate-213500.json",
+    "collections/2026-10-26/kosodate-012405.json",
+    "collections/2026-10-26/kosodate-052403.json",
+    "collections/2026-10-26/kosodate-081513.json",
+    "collections/2026-10-26/kosodate-151840-p01.json",
+    "collections/2026-10-26/kosodate-151840-p02.json",
+    "collections/2026-10-26/kosodate-151840-p03.json",
+    "collections/2026-10-26/kosodate-151840-p04.json",
+    "collections/2026-10-26/kosodate-151840-p05.json",
+    "collections/2026-10-26/kosodate-151840-p06.json",
+    "collections/2026-10-26/kosodate-151840-p07.json",
+    "collections/2026-10-26/kosodate-151840-p08.json",
+    "collections/2026-10-26/kosodate-151840-p09.json",
+    "collections/2026-10-26/kosodate-151840-p10.json",
+    "collections/2026-10-26/kosodate-153100.json",
+    "collections/2026-10-26/kosodate-162000.json",
+    "collections/2026-10-26/kosodate-171640.json",
+    "collections/2026-10-26/kosodate-193258.json",
+    "collections/2026-10-26/kosodate-204143.json",
+    "collections/2026-10-27/kosodate-000740.json",
+    "collections/2026-10-27/kosodate-033637.json",
+    "collections/2026-10-27/kosodate-062136.json",
+    "collections/2026-10-27/kosodate-092433.json",
+    "collections/2026-10-27/kosodate-112723.json",
+    "collections/2026-10-27/kosodate-113531.json",
+    "collections/2026-10-27/kosodate-122000.json"
+  ]
+}
