@@ -1,0 +1,19 @@
+{
+  "date": "2026-11-03",
+  "project": "こそだて日和",
+  "files": [
+    {
+      "path": "collections/2026-11-03/kosodate-003031.json",
+      "collectedAt": "2026-11-02T15:30:31.000Z",
+      "count": 100,
+      "minLikes": 100,
+      "minViews": 10000,
+      "genres": {
+        "育児": 35,
+        "子育て": 15,
+        "出産": 18,
+        "教育": 32
+      }
+    }
+  ]
+}
