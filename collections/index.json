@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-19T08:12:45.000Z",
+  "updatedAt": "2026-11-19T08:20:41.000Z",
   "files": [
     "collections/2026-10-25/kosodate-213500.json",
     "collections/2026-10-26/kosodate-012405.json",
@@ -281,6 +281,7 @@
     "collections/2026-11-19/kosodate-154116.json",
     "collections/2026-11-19/kosodate-155052.json",
     "collections/2026-11-19/kosodate-155603.json",
-    "collections/2026-11-19/kosodate-171245.json"
+    "collections/2026-11-19/kosodate-171245.json",
+    "collections/2026-11-19/kosodate-172041.json"
   ]
 }
